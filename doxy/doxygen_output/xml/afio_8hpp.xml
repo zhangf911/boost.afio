@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="afio_8hpp" kind="file">
+    <compoundname>afio.hpp</compoundname>
+    <includes refid="config_8hpp" local="yes">config.hpp</includes>
+    <includes local="yes">boost/asio.hpp</includes>
+    <includes local="yes">boost/foreach.hpp</includes>
+    <includes local="yes">boost/make_shared.hpp</includes>
+    <includes local="yes">detail/Preprocessor_variadic.hpp</includes>
+    <includes local="no">boost/preprocessor.hpp</includes>
+    <includes local="yes">boost/detail/scoped_enum_emulation.hpp</includes>
+    <includes local="yes">detail/Utility.hpp</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="yes">/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/detail/Undoer.hpp</includes>
+    <includes local="yes">boost/config.hpp</includes>
+    <includes local="no">utility</includes>
+    <includes local="no">type_traits</includes>
+    <includes local="yes">/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/detail/ErrorHandling.hpp</includes>
+    <includes local="yes">/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/detail/std_filesystem.hpp</includes>
+    <includes local="yes">boost/filesystem/convenience.hpp</includes>
+    <includes local="yes">boost/filesystem/fstream.hpp</includes>
+    <includes local="no">string</includes>
+    <includes local="no">stdexcept</includes>
+    <includes local="yes">/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/detail/std_atomic_mutex_chrono.hpp</includes>
+    <includes local="yes">boost/thread/thread.hpp</includes>
+    <includes local="yes">boost/thread/future.hpp</includes>
+    <includes local="no">cstdint</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">thread</includes>
+    <includes local="no">atomic</includes>
+    <includes local="no">mutex</includes>
+    <includes local="no">system_error</includes>
+    <includes local="no">boost/functional/hash.hpp</includes>
+    <includes local="no">initializer_list</includes>
+    <includes local="no">exception</includes>
+    <includes local="no">algorithm</includes>
+    <includes local="no">functional</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>boost/config/auto_link.hpp</label>
+      </node>
+      <node id="33">
+        <label>atomic</label>
+      </node>
+      <node id="35">
+        <label>system_error</label>
+      </node>
+      <node id="23">
+        <label>boost/filesystem/convenience.hpp</label>
+      </node>
+      <node id="40">
+        <label>functional</label>
+      </node>
+      <node id="36">
+        <label>boost/functional/hash.hpp</label>
+      </node>
+      <node id="18">
+        <label>/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/detail/Undoer.hpp</label>
+      </node>
+      <node id="30">
+        <label>cstdint</label>
+      </node>
+      <node id="27">
+        <label>/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/detail/std_atomic_mutex_chrono.hpp</label>
+      </node>
+      <node id="5">
+        <label>config.hpp</label>
+        <link refid="config_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>boost/foreach.hpp</label>
+      </node>
+      <node id="24">
+        <label>boost/filesystem/fstream.hpp</label>
+      </node>
+      <node id="26">
+        <label>stdexcept</label>
+      </node>
+      <node id="28">
+        <label>boost/thread/thread.hpp</label>
+      </node>
+      <node id="15">
+        <label>boost/detail/scoped_enum_emulation.hpp</label>
+      </node>
+      <node id="13">
+        <label>detail/Preprocessor_variadic.hpp</label>
+      </node>
+      <node id="25">
+        <label>string</label>
+      </node>
+      <node id="8">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="38">
+        <label>exception</label>
+      </node>
+      <node id="14">
+        <label>boost/preprocessor.hpp</label>
+      </node>
+      <node id="10">
+        <label>boost/asio.hpp</label>
+      </node>
+      <node id="16">
+        <label>detail/Utility.hpp</label>
+      </node>
+      <node id="29">
+        <label>boost/thread/future.hpp</label>
+      </node>
+      <node id="19">
+        <label>utility</label>
+      </node>
+      <node id="21">
+        <label>/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/detail/ErrorHandling.hpp</label>
+      </node>
+      <node id="4">
+        <label>/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp</label>
+        <link refid="afio.hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>unordered_map</label>
+      </node>
+      <node id="34">
+        <label>mutex</label>
+      </node>
+      <node id="31">
+        <label>chrono</label>
+      </node>
+      <node id="6">
+        <label>boost/config.hpp</label>
+      </node>
+      <node id="32">
+        <label>thread</label>
+      </node>
+      <node id="22">
+        <label>/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/detail/std_filesystem.hpp</label>
+      </node>
+      <node id="7">
+        <label>boost/system/api_config.hpp</label>
+      </node>
+      <node id="20">
+        <label>type_traits</label>
+      </node>
+      <node id="12">
+        <label>boost/make_shared.hpp</label>
+      </node>
+      <node id="39">
+        <label>algorithm</label>
+      </node>
+      <node id="37">
+        <label>initializer_list</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl" prot="public">boost::afio::detail::enqueued_task_impl</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1enqueued__task__impl_1_1_private" prot="protected">boost::afio::detail::enqueued_task_impl::Private</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1enqueued__task_3_01_r_07_08_4" prot="public">boost::afio::enqueued_task&lt; R()&gt;</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1enqueued__task_3_01void_07_08_4" prot="public">boost::afio::enqueued_task&lt; void()&gt;</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1thread__source" prot="public">boost::afio::thread_source</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1std__thread__pool" prot="public">boost::afio::std_thread_pool</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1std__thread__pool_1_1worker" prot="private">boost::afio::std_thread_pool::worker</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1get__future__type" prot="public">boost::afio::detail::get_future_type</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1select__when__futures__return__type" prot="public">boost::afio::detail::select_when_futures_return_type</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1select__when__futures__return__type_3_01false_00_01_t_01_4" prot="public">boost::afio::detail::select_when_futures_return_type&lt; false, T &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1enable__if__future" prot="public">boost::afio::detail::enable_if_future</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1enable__if__future_3_01is__all_00_01future_3_01_t_01_4_01_4" prot="public">boost::afio::detail::enable_if_future&lt; is_all, future&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1enable__if__future_3_01is__all_00_01shared__future_3_01_t_01_4_01_4" prot="public">boost::afio::detail::enable_if_future&lt; is_all, shared_future&lt; T &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1stat__t" prot="public">boost::afio::stat_t</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1directory__entry" prot="public">boost::afio::directory_entry</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1directory__entry__hash" prot="public">boost::afio::directory_entry_hash</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1async__io__handle" prot="public">boost::afio::async_io_handle</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__io__op" prot="public">boost::afio::async_io_op</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1vs2013__variadic__overload__resolution__workaround" prot="public">boost::afio::detail::vs2013_variadic_overload_resolution_workaround</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1async__file__io__dispatcher__base" prot="public">boost::afio::async_file_io_dispatcher_base</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1when__all__state" prot="public">boost::afio::detail::when_all_state</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1when__any__state" prot="public">boost::afio::detail::when_any_state</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1select__when__ops__return__type" prot="public">boost::afio::detail::select_when_ops_return_type</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1select__when__ops__return__type_3_01false_01_4" prot="public">boost::afio::detail::select_when_ops_return_type&lt; false &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1enable__if__async__op" prot="public">boost::afio::detail::enable_if_async_op</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1enable__if__async__op_3_01is__all_00_01async__io__op_01_4" prot="public">boost::afio::detail::enable_if_async_op&lt; is_all, async_io_op &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__path__op__req" prot="public">boost::afio::async_path_op_req</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4" prot="public">boost::afio::detail::async_data_op_req_impl&lt; false &gt;</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4" prot="public">boost::afio::detail::async_data_op_req_impl&lt; true &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req" prot="public">boost::afio::async_data_op_req</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4" prot="public">boost::afio::async_data_op_req&lt; const T &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4" prot="public">boost::afio::async_data_op_req&lt; void &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4" prot="public">boost::afio::async_data_op_req&lt; const void &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::vector&lt; T, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::array&lt; T, N &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1mutable__buffer_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::vector&lt; boost::asio::mutable_buffer, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::vector&lt; boost::asio::const_buffer, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1mutable__buffer_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::array&lt; boost::asio::mutable_buffer, N &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::array&lt; boost::asio::const_buffer, N &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::basic_string&lt; C, T, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1mutable__buffer_01_4" prot="public">boost::afio::async_data_op_req&lt; boost::asio::mutable_buffer &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4" prot="public">boost::afio::async_data_op_req&lt; boost::asio::const_buffer &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__enumerate__op__req" prot="public">boost::afio::async_enumerate_op_req</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1async__file__io__dispatcher__rwconverter" prot="public">boost::afio::detail::async_file_io_dispatcher_rwconverter</innerclass>
+    <innerclass refid="structstd_1_1hash_3_01boost_1_1afio_1_1directory__entry_01_4" prot="public">std::hash&lt; boost::afio::directory_entry &gt;</innerclass>
+    <innernamespace refid="namespaceboost">boost</innernamespace>
+    <innernamespace refid="namespaceboost_1_1afio">boost::afio</innernamespace>
+    <innernamespace refid="namespaceboost_1_1afio_1_1detail">boost::afio::detail</innernamespace>
+    <innernamespace refid="namespacestd">std</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__macros_1ga8abeb465d2ca6fa15b3c3754697e5577" prot="public" static="no">
+        <name>BOOST_AFIO_VALIDATE_INPUTS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Validate inputs at the point of instantiation. </para>        </briefdescription>
+        <detaileddescription>
+<para>Turns on the checking of inputs for validity and throwing of exception conditions at the point of instantiation rather than waiting until those inputs are sent for dispatch. This, being very useful for debugging, defaults to 1 except when `NDEBUG` is defined i.e. final release builds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="39" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="afio_8hpp_1a933046d7a31248aa271a978579ee8977" prot="public" static="no">
+        <name>BOOST_AFIO_DECLARE_CLASS_ENUM_AS_BITFIELD</name>
+        <param><defname>type</defname></param>
+        <initializer>inline BOOST_CONSTEXPR type operator&amp;(type a, type b) \
+{ \
+    return static_cast&lt;type&gt;(static_cast&lt;size_t&gt;(a) &amp; static_cast&lt;size_t&gt;(b)); \
+} \
+inline BOOST_CONSTEXPR type operator|(type a, type b) \
+{ \
+    return static_cast&lt;type&gt;(static_cast&lt;size_t&gt;(a) | static_cast&lt;size_t&gt;(b)); \
+} \
+inline BOOST_CONSTEXPR type operator~(type a) \
+{ \
+    return static_cast&lt;type&gt;(~static_cast&lt;size_t&gt;(a)); \
+} \
+inline BOOST_CONSTEXPR bool operator!(type a) \
+{ \
+    return 0==static_cast&lt;size_t&gt;(a); \
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="466" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="450" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="afio_8hpp_1ac794ed8c3e9fc1a99bd54d5b993d2b6c" prot="public" static="no">
+        <name>BOOST_AFIO_DIRECTORY_ENTRY_ACCESS_METHOD</name>
+        <param><defname>field</defname></param>
+        <initializer>fieldtype st_##field(std::shared_ptr&lt;async_io_handle&gt; dirh=std::shared_ptr&lt;async_io_handle&gt;()) { if(!(have_metadata&amp;metadata_flags::field)) { _int_fetch(metadata_flags::field, dirh); } return stat.st_##field; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="796" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="795" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Provides a batch asynchronous file i/o implementation based on Boost.ASIO. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp"/>
+  </compounddef>
+</doxygen>

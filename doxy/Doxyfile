@@ -1,0 +1,220 @@
+# Doxyfile 1.5.5
+
+#---------------------------------------------------------------------------
+# Project related configuration options
+#---------------------------------------------------------------------------
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = "Boost.AFIO"
+PROJECT_NUMBER         = 
+OUTPUT_DIRECTORY       = ./doxygen_output
+CREATE_SUBDIRS         = NO
+OUTPUT_LANGUAGE        = English
+BRIEF_MEMBER_DESC      = YES
+REPEAT_BRIEF           = YES
+ABBREVIATE_BRIEF       = 
+ALWAYS_DETAILED_SEC    = YES
+INLINE_INHERITED_MEMB  = YES
+FULL_PATH_NAMES        = YES
+STRIP_FROM_PATH        = 
+STRIP_FROM_INC_PATH    = 
+SHORT_NAMES            = NO
+JAVADOC_AUTOBRIEF      = NO
+QT_AUTOBRIEF           = NO
+MULTILINE_CPP_IS_BRIEF = NO
+INHERIT_DOCS           = YES
+SEPARATE_MEMBER_PAGES  = NO
+TAB_SIZE               = 8
+
+# The aliases are shortcuts for Doxygen documentation. 
+# Within Boost.Geometry they are used in the top section, so for both
+# Doxygen documentation and QuickBook documentation.
+# They avoid repetations and make the documentation more structured.
+# There are also qbk expressions, which might qbk defines and templates.
+
+# There are sections for
+# \brief* for various brief descriptions
+# \tparam* for various template parameters
+# \param* for various parameters
+# \return* for various return cases
+ALIASES                = qbk{1}="\xmlonly <qbk>\1</qbk> \endxmlonly" \
+			qbk{2}="\xmlonly <qbk.\1>\2</qbk.\1> \endxmlonly" \
+			complexity{1}="\xmlonly <qbk>[heading Complexity]\1</qbk> \endxmlonly" \
+			exceptionmodel{1}="\xmlonly <qbk>[heading Exception Model]\1</qbk> \endxmlonly" \
+            exceptionmodelstd="\xmlonly <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk> \endxmlonly" \
+            direct_io_note="Note that on Windows this call issues a separate async file operation for each buffer supplied, thus making scatter/gather i/o no more efficient than making separate calls. The big exception to this is when doing unbuffered page aligned i/o for which Windows provides special scatter/gather i/o functions." \
+			constr="Default constructor." \
+			cconstr="Copy constructor." \
+			mconstr="Move constructor." \
+			cassign="Copy assignment." \
+			massign="Move assignment." \
+            async_data_op_req1="\brief Constructs an instance. \
+	\param _precondition An optional precondition for this operation \
+	\param v A pointer to memory or reference to object into which to read or write \
+	\param _where The offset at which to transfer" \
+            async_data_op_req2="\brief Constructs an instance. \
+	\param _precondition An optional precondition for this operation \
+	\param _buffers A sequence of mutable/const Boost.ASIO buffers to read into/write from \
+	\param _where The offset at which to transfer" \
+            async_data_op_req3="\brief Constructs an instance. \
+	\param _precondition An optional precondition for this operation \
+	\param _buffer A mutable/const Boost.ASIO buffer to read into/write from \
+	\param _where The offset at which to transfer" \
+            qexample{1}="\xmlonly <qbk>[heading Example][\1]</qbk> \endxmlonly"
+
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_JAVA   = NO
+OPTIMIZE_FOR_FORTRAN   = NO
+OPTIMIZE_OUTPUT_VHDL   = NO
+BUILTIN_STL_SUPPORT    = YES
+CPP_CLI_SUPPORT        = NO
+SIP_SUPPORT            = NO
+DISTRIBUTE_GROUP_DOC   = NO
+SUBGROUPING            = YES
+TYPEDEF_HIDES_STRUCT   = NO
+#---------------------------------------------------------------------------
+# Build related configuration options
+#---------------------------------------------------------------------------
+EXTRACT_ALL            = NO
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = NO
+EXTRACT_LOCAL_METHODS  = NO
+EXTRACT_ANON_NSPACES   = NO
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+HIDE_FRIEND_COMPOUNDS  = NO
+HIDE_IN_BODY_DOCS      = NO
+INTERNAL_DOCS          = NO
+CASE_SENSE_NAMES       = NO
+HIDE_SCOPE_NAMES       = NO
+SHOW_INCLUDE_FILES     = NO
+INLINE_INFO            = NO
+SORT_MEMBER_DOCS       = NO
+SORT_BRIEF_DOCS        = NO
+SORT_GROUP_NAMES       = YES
+SORT_BY_SCOPE_NAME     = YES
+GENERATE_TODOLIST      = NO
+GENERATE_TESTLIST      = YES
+GENERATE_BUGLIST       = YES
+GENERATE_DEPRECATEDLIST= YES
+ENABLED_SECTIONS       = 
+MAX_INITIALIZER_LINES  = 30
+SHOW_USED_FILES        = NO
+FILE_VERSION_FILTER    = 
+#---------------------------------------------------------------------------
+# configuration options related to warning and progress messages
+#---------------------------------------------------------------------------
+QUIET                  = YES
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = NO
+WARN_IF_DOC_ERROR      = YES
+WARN_NO_PARAMDOC       = NO
+WARN_FORMAT            = "$file:$line: $text"
+WARN_LOGFILE           = 
+#---------------------------------------------------------------------------
+# configuration options related to the input files
+#---------------------------------------------------------------------------
+INPUT                  = ../../include/boost/afio \
+			./doxygen_input/pages \
+			./doxygen_input/groups
+INPUT_ENCODING         = UTF-8
+FILE_PATTERNS          = *.hpp
+RECURSIVE              = NO
+EXCLUDE                = ./doxygen_extension_examples.hpp 
+EXCLUDE_SYMLINKS       = NO
+EXCLUDE_PATTERNS       = 
+EXCLUDE_SYMBOLS        = 
+EXAMPLE_PATH           = ../../example
+EXAMPLE_PATTERNS       = *.cpp
+EXAMPLE_RECURSIVE      = NO
+IMAGE_PATH             = doxygen_input/images
+INPUT_FILTER           = 
+FILTER_PATTERNS        = 
+FILTER_SOURCE_FILES    = NO
+#---------------------------------------------------------------------------
+# configuration options related to source browsing
+#---------------------------------------------------------------------------
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = NO
+STRIP_CODE_COMMENTS    = YES
+REFERENCED_BY_RELATION = NO
+REFERENCES_RELATION    = NO
+REFERENCES_LINK_SOURCE = NO
+USE_HTAGS              = NO
+VERBATIM_HEADERS       = NO
+#---------------------------------------------------------------------------
+# configuration options related to the alphabetical class index
+#---------------------------------------------------------------------------
+COLS_IN_ALPHA_INDEX    = 3
+IGNORE_PREFIX          = 
+#---------------------------------------------------------------------------
+# configuration options related to the HTML output
+#---------------------------------------------------------------------------
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_HEADER            = doxygen_input/doxygen_header.html
+HTML_FOOTER            = doxygen_input/doxygen_footer.html
+HTML_STYLESHEET        = 
+GENERATE_HTMLHELP      = NO
+GENERATE_DOCSET        = NO
+DOCSET_FEEDNAME        = "Generated documentation, by Doxygen"
+DOCSET_BUNDLE_ID       = org.doxygen.Project
+HTML_DYNAMIC_SECTIONS  = NO
+CHM_FILE               = 
+HHC_LOCATION           = 
+GENERATE_CHI           = NO
+BINARY_TOC             = NO
+TOC_EXPAND             = NO
+DISABLE_INDEX          = NO
+ENUM_VALUES_PER_LINE   = 4
+GENERATE_TREEVIEW      = NO
+TREEVIEW_WIDTH         = 250
+
+#---------------------------------------------------------------------------
+# configuration options related to the XML output
+#---------------------------------------------------------------------------
+GENERATE_XML           = YES
+XML_OUTPUT             = xml
+XML_SCHEMA             = 
+XML_DTD                = 
+XML_PROGRAMLISTING     = NO
+
+#---------------------------------------------------------------------------
+# Configuration options turned off
+#---------------------------------------------------------------------------
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_RTF           = NO
+GENERATE_AUTOGEN_DEF   = NO
+GENERATE_PERLMOD       = NO
+
+
+#---------------------------------------------------------------------------
+# Configuration options related to the preprocessor   
+#---------------------------------------------------------------------------
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = YES
+SEARCH_INCLUDES        = YES
+INCLUDE_PATH           = 
+INCLUDE_FILE_PATTERNS  = 
+PREDEFINED             = BOOST_CONCEPT_REQUIRES(x)= \
+                         BOOST_CONCEPT_ASSERT(x) = \
+                         BOOST_STATIC_ASSERT(x) = \
+						 BOOST_AFIO_HEADERS_ONLY=0 \
+                         DOXYGEN_SHOULD_SKIP_THIS \
+                         DOXYGEN_NO_CLASS_ENUMS
+EXPAND_AS_DEFINED      = BOOST_AFIO_DIRECTORY_ENTRY_ACCESS_METHOD \
+                         BOOST_AFIO_DECL \
+                         BOOST_AFIO_HEADERS_ONLY_FUNC_SPEC \
+						 BOOST_AFIO_HEADERS_ONLY_MEMFUNC_SPEC \
+						 BOOST_AFIO_HEADERS_ONLY_VIRTUAL_SPEC \
+						 BOOST_AFIO_HEADERS_ONLY_VIRTUAL_UNDEFINED_SPEC
+SKIP_FUNCTION_MACROS   = YES
+
+
+#---------------------------------------------------------------------------
+# Configuration::additions related to the search engine   
+#---------------------------------------------------------------------------
+SEARCHENGINE           = NO

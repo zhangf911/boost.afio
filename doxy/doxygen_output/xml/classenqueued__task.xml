@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classenqueued__task" kind="class" prot="public">
+    <compoundname>enqueued_task</compoundname>
+    <briefdescription>
+<para>Effectively our own custom std::packaged_task&lt;&gt;, with copy semantics and letting us early set value to significantly improve performance. </para>    </briefdescription>
+    <detaileddescription>
+<para>Unlike `std::packaged_task&lt;&gt;`, this custom variant is copyable though each copy always refers to the same internal state. Early future value setting is possible, with any subsequent value setting including that by the function being executed being ignored. Note that this behaviour opens the potential to lose exception state - if you set the future value early and then an exception is later thrown, the exception is swallowed.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>class R</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The return type of the callable which must be without parameters. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="127" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="126" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

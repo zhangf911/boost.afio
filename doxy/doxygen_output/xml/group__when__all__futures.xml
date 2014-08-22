@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__when__all__futures" kind="group">
+    <compoundname>when_all_futures</compoundname>
+    <title>x</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__when__all__futures_1gabb88d1b03f90e1fd689dcb629ab8ecd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Iterator</type>
+          </param>
+        </templateparamlist>
+        <type>detail::enable_if_future&lt; true, typename Iterator::value_type &gt;::type</type>
+        <definition>detail::enable_if_async_op&lt; true, typename Iterator::value_type &gt;::type boost::afio::when_all</definition>
+        <argsstring>(Iterator first, Iterator last)</argsstring>
+        <name>when_all</name>
+        <param>
+          <type>Iterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Makes a future vector of results from all the supplied futures. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns a result when all the supplied ops complete. Propagates exception states.</para><para>This is an implementation of WG21 N3634&apos;s <ref refid="group__when__all__futures_1gabb88d1b03f90e1fd689dcb629ab8ecd7" kindref="member">when_all()</ref> which uses <ref refid="group__process__threadpool_1gabb4747cc11ef3ee1bbb969bc78c238bb" kindref="member">process_threadpool()</ref> to allow you to create a future which only becomes available when all the supplied futures become available.</para><para><simplesect kind="return"><para>A future vector of the results of the input futures </para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>class Iterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A type modelling an iterator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing to the first item to wait upon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing to after the last future to wait upon</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk.distinguish> from ___WG21_N3634__ for range of futures</qbk.distinguish>   <qbk>[heading Complexity]O(N)</qbk>   <qbk>[heading Exception Model]The same as a future</qbk> </para><para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>class Iterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing to the first <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing after the last <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk.distinguish> iterator batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="410" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="409" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="group__when__all__futures_1gab467b102949ffdc46639c0b197b204d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Iterator</type>
+          </param>
+        </templateparamlist>
+        <type>detail::enable_if_future&lt; false, typename Iterator::value_type &gt;::type</type>
+        <definition>detail::enable_if_async_op&lt; false, typename Iterator::value_type &gt;::type boost::afio::when_any</definition>
+        <argsstring>(Iterator first, Iterator last)</argsstring>
+        <name>when_any</name>
+        <param>
+          <type>Iterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Returns a future tuple of results from all the supplied futures. </para>        </briefdescription>
+        <detaileddescription>
+<para>Returns a result when any the supplied ops complete. Propagates exception states.</para><para>Makes a future result from the first of the supplied futures to become available</para><para>This is an implementation of WG21 N3634&apos;s <ref refid="group__when__all__futures_1gab467b102949ffdc46639c0b197b204d2" kindref="member">when_any()</ref> which uses <ref refid="group__process__threadpool_1gabb4747cc11ef3ee1bbb969bc78c238bb" kindref="member">process_threadpool()</ref> to allow you to create a future which only becomes available when the first of the supplied futures become available.</para><para><simplesect kind="return"><para>A future pair of the first future to become available and its result </para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>class Iterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A type modelling an iterator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing to the first future to wait upon </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing to after the last future to wait upon</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk.distinguish> from ___WG21_N3634__ for range of futures</qbk.distinguish>   <qbk>[heading Complexity]The same as boost::wait_for_any()</qbk>   <qbk>[heading Exception Model]The same as a future</qbk> </para><para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>class Iterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing to the first <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing after the last <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk.distinguish> iterator batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="431" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="430" bodyend="433"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

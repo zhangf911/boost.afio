@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structboost_1_1afio_1_1stat__t" kind="struct" prot="public">
+    <compoundname>boost::afio::stat_t</compoundname>
+    <includes refid="afio_8hpp" local="no">afio.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1a622b2751e150496cf4e4d1f8b2bf1bb7" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t boost::afio::stat_t::st_dev</definition>
+        <argsstring></argsstring>
+        <name>st_dev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>inode of device containing file (POSIX only) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="676" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="676" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1a4ebb8f90634cf37d7092607e7719fee6" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t boost::afio::stat_t::st_ino</definition>
+        <argsstring></argsstring>
+        <name>st_ino</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>inode of file (Windows, POSIX) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="678" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="678" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1ad354c4fac339fe43daf043a83dd93203" prot="public" static="no" mutable="no">
+        <type>std::filesystem::file_type</type>
+        <definition>std::filesystem::file_type boost::afio::stat_t::st_type</definition>
+        <argsstring></argsstring>
+        <name>st_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>type of file (Windows, POSIX) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="679" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="679" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1a7ed3d272d0f2d67c60ba7515a728ba4f" prot="public" static="no" mutable="no">
+        <type>std::filesystem::perms</type>
+        <definition>std::filesystem::perms boost::afio::stat_t::st_perms</definition>
+        <argsstring></argsstring>
+        <name>st_perms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>uint16_t bitfield perms of file (POSIX only) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="684" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1a781bda0716cb898de0448ea0dd0ddf60" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t boost::afio::stat_t::st_nlink</definition>
+        <argsstring></argsstring>
+        <name>st_nlink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of hard links (Windows, POSIX) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="687" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="687" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1a76fd06124910152cbc797b1383ead904" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t boost::afio::stat_t::st_uid</definition>
+        <argsstring></argsstring>
+        <name>st_uid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>user ID of the file (POSIX only) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="689" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1a4d8f11dc30db281ba32ca3ead5bbbad2" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t boost::afio::stat_t::st_gid</definition>
+        <argsstring></argsstring>
+        <name>st_gid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>group ID of the file (POSIX only) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="690" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1a7900aec1d4324e38262bc8fb80dbcc42" prot="public" static="no" mutable="no">
+        <type>dev_t</type>
+        <definition>dev_t boost::afio::stat_t::st_rdev</definition>
+        <argsstring></argsstring>
+        <name>st_rdev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>id of file if special (POSIX only) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="691" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="691" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1a5f0750b171f73338cf6ddbd324092928" prot="public" static="no" mutable="no">
+        <type>chrono::system_clock::time_point</type>
+        <definition>chrono::system_clock::time_point boost::afio::stat_t::st_atim</definition>
+        <argsstring></argsstring>
+        <name>st_atim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>time of last access (Windows, POSIX) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="693" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="693" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1a9e5c878c6facdcc75262652eb0b3f8c2" prot="public" static="no" mutable="no">
+        <type>chrono::system_clock::time_point</type>
+        <definition>chrono::system_clock::time_point boost::afio::stat_t::st_mtim</definition>
+        <argsstring></argsstring>
+        <name>st_mtim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>time of last data modification (Windows, POSIX) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="694" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="694" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1a285d5f85d1caa82466e556a2cb0873a1" prot="public" static="no" mutable="no">
+        <type>chrono::system_clock::time_point</type>
+        <definition>chrono::system_clock::time_point boost::afio::stat_t::st_ctim</definition>
+        <argsstring></argsstring>
+        <name>st_ctim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>time of last status change (Windows, POSIX) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="695" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1aee7529c3b338325e0019f962763597e9" prot="public" static="no" mutable="no">
+        <type>off_t</type>
+        <definition>off_t boost::afio::stat_t::st_size</definition>
+        <argsstring></argsstring>
+        <name>st_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>file size, in bytes (Windows, POSIX) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="696" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="696" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1adfb66a9f1e84b80cd5df99d0a60412a6" prot="public" static="no" mutable="no">
+        <type>off_t</type>
+        <definition>off_t boost::afio::stat_t::st_allocated</definition>
+        <argsstring></argsstring>
+        <name>st_allocated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>bytes allocated for file (Windows, POSIX) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="697" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="697" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1ae92dd570cdae23d25a8ec4f4d2bb2135" prot="public" static="no" mutable="no">
+        <type>off_t</type>
+        <definition>off_t boost::afio::stat_t::st_blocks</definition>
+        <argsstring></argsstring>
+        <name>st_blocks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>number of blocks allocated (Windows, POSIX) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="698" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="698" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1a532236ecf6e50f237aa5b35f38f7e227" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t boost::afio::stat_t::st_blksize</definition>
+        <argsstring></argsstring>
+        <name>st_blksize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>block size used by this device (Windows, POSIX) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="699" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="699" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1a253eb4ef155a41e7e9467c495da84b26" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t boost::afio::stat_t::st_flags</definition>
+        <argsstring></argsstring>
+        <name>st_flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>user defined flags for file (FreeBSD, OS X, zero otherwise) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="700" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="700" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1acc43e767165df3ca381b22042a835ac8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t boost::afio::stat_t::st_gen</definition>
+        <argsstring></argsstring>
+        <name>st_gen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>file generation number (FreeBSD, OS X, zero otherwise) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="701" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="701" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1stat__t_1a0b724b94e5448ffc9f9711bb72ecdd7e" prot="public" static="no" mutable="no">
+        <type>chrono::system_clock::time_point</type>
+        <definition>chrono::system_clock::time_point boost::afio::stat_t::st_birthtim</definition>
+        <argsstring></argsstring>
+        <name>st_birthtim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>time of file creation (Windows, FreeBSD, OS X, zero otherwise) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="702" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="702" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structboost_1_1afio_1_1stat__t_1afb18968f051d98b865059156862189e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::afio::stat_t::stat_t</definition>
+        <argsstring>()</argsstring>
+        <name>stat_t</name>
+        <briefdescription>
+<para>Constructs a UNINITIALIZED instance i.e. full of random garbage. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="705" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="705" bodyend="705"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1afio_1_1stat__t_1a2d68ccbef69bb7d3786eea023c00cd62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::afio::stat_t::stat_t</definition>
+        <argsstring>(std::nullptr_t)</argsstring>
+        <name>stat_t</name>
+        <param>
+          <type>std::nullptr_t</type>
+        </param>
+        <briefdescription>
+<para>Constructs a zeroed instance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="720" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="707" bodyend="720"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Metadata about a directory entry. </para>    </briefdescription>
+    <detaileddescription>
+<para>This structure looks somewhat like a `struct stat`, and indeed it was derived from BSD&apos;s `struct stat`. However there are a number of changes to better interoperate with modern practice, specifically: (i) inode value containers are forced to 64 bits. (ii) Timestamps use C++11&apos;s `std::chrono::system_clock::time_point` or Boost equivalent. The resolution of these may or may not equal what a `struct timespec` can do depending on your STL. (iii) The type of a file, which is available on Windows and on POSIX without needing an additional syscall, is provided by `st_type` which is one of the values from `std::filesystem::file_type`. (iv) As type is now separate from permissions, there is no longer a `st_mode`, instead being a `st_perms` which is solely the permissions bits. If you want to test permission bits in `st_perms` but don&apos;t want to include platform specific headers, note that `std::filesystem::perms` contains definitions of the POSIX permissions flags. </para>    </detaileddescription>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="674" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="673" bodyend="721"/>
+    <listofallmembers>
+      <member refid="structboost_1_1afio_1_1stat__t_1adfb66a9f1e84b80cd5df99d0a60412a6" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_allocated</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1a5f0750b171f73338cf6ddbd324092928" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_atim</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1a0b724b94e5448ffc9f9711bb72ecdd7e" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_birthtim</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1a532236ecf6e50f237aa5b35f38f7e227" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_blksize</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1ae92dd570cdae23d25a8ec4f4d2bb2135" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_blocks</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1a285d5f85d1caa82466e556a2cb0873a1" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_ctim</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1a622b2751e150496cf4e4d1f8b2bf1bb7" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_dev</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1a253eb4ef155a41e7e9467c495da84b26" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_flags</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1acc43e767165df3ca381b22042a835ac8" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_gen</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1a4d8f11dc30db281ba32ca3ead5bbbad2" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_gid</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1a4ebb8f90634cf37d7092607e7719fee6" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_ino</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1a9e5c878c6facdcc75262652eb0b3f8c2" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_mtim</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1a781bda0716cb898de0448ea0dd0ddf60" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_nlink</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1a7ed3d272d0f2d67c60ba7515a728ba4f" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_perms</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1a7900aec1d4324e38262bc8fb80dbcc42" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_rdev</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1aee7529c3b338325e0019f962763597e9" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_size</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1ad354c4fac339fe43daf043a83dd93203" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_type</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1a76fd06124910152cbc797b1383ead904" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>st_uid</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1afb18968f051d98b865059156862189e4" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>stat_t</name></member>
+      <member refid="structboost_1_1afio_1_1stat__t_1a2d68ccbef69bb7d3786eea023c00cd62" prot="public" virt="non-virtual"><scope>boost::afio::stat_t</scope><name>stat_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

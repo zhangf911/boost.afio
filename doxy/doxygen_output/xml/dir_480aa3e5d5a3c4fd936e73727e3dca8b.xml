@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_480aa3e5d5a3c4fd936e73727e3dca8b" kind="dir">
+    <compoundname>doxygen_input/groups/</compoundname>
+    <innerfile refid="groups_8hpp">groups.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/doc/doxy/doxygen_input/groups/"/>
+  </compounddef>
+</doxygen>

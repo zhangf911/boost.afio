@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="config_8hpp" kind="file">
+    <compoundname>config.hpp</compoundname>
+    <includes local="no">boost/config.hpp</includes>
+    <includes local="no">boost/system/api_config.hpp</includes>
+    <includes local="no">boost/detail/workaround.hpp</includes>
+    <includes local="no">boost/config/auto_link.hpp</includes>
+    <includedby refid="afio_8hpp" local="yes">/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp</includedby>
+    <incdepgraph>
+      <node id="46">
+        <label>boost/config/auto_link.hpp</label>
+      </node>
+      <node id="42">
+        <label>/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/config.hpp</label>
+        <link refid="config.hpp"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="43">
+        <label>boost/config.hpp</label>
+      </node>
+      <node id="44">
+        <label>boost/system/api_config.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="47">
+        <label>/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/config.hpp</label>
+        <link refid="config.hpp"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp</label>
+        <link refid="afio_8hpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="config_8hpp_1af63c7b3e623e800e9eb3b0b077610d3b" prot="public" static="no">
+        <name>BOOST_AFIO_DECL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/config.hpp" line="64" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/config.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8hpp_1a1ea38d94fe2f4015ec1a59732d863da2" prot="public" static="no">
+        <name>BOOST_LIB_NAME</name>
+        <initializer>boost_afio</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/config.hpp" line="73" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/config.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8hpp_1ad8f3e2fb1aa278110cc8d7952abab5b6" prot="public" static="no">
+        <name>BOOST_AFIO_HEADERS_ONLY_FUNC_SPEC</name>
+        <initializer>extern BOOST_AFIO_DECL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/config.hpp" line="99" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/config.hpp" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8hpp_1a5a75b0e1ac1a86e60b2666ed2f64d36f" prot="public" static="no">
+        <name>BOOST_AFIO_HEADERS_ONLY_MEMFUNC_SPEC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/config.hpp" line="100" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/config.hpp" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8hpp_1ab4f63024aa1238f1d6a067b3d7fb23c7" prot="public" static="no">
+        <name>BOOST_AFIO_HEADERS_ONLY_VIRTUAL_SPEC</name>
+        <initializer>virtual</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/config.hpp" line="101" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/config.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8hpp_1abd3f523d7f62a4f1ded49b40475c134d" prot="public" static="no">
+        <name>BOOST_AFIO_HEADERS_ONLY_VIRTUAL_UNDEFINED_SPEC</name>
+        <initializer>=0;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/config.hpp" line="102" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/config.hpp" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/config.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structboost_1_1afio_1_1async__enumerate__op__req" kind="struct" prot="public">
+    <compoundname>boost::afio::async_enumerate_op_req</compoundname>
+    <includes refid="afio_8hpp" local="no">afio.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structboost_1_1afio_1_1async__enumerate__op__req_1ae96062366baba220f33af9deedbf990f" prot="public" static="no" mutable="no">
+        <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
+        <definition>async_io_op boost::afio::async_enumerate_op_req::precondition</definition>
+        <argsstring></argsstring>
+        <name>precondition</name>
+        <briefdescription>
+<para>A precondition for this operation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2682" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2682" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1async__enumerate__op__req_1a15fdfa2ce921f73499f1d7c103b1acf2" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t boost::afio::async_enumerate_op_req::maxitems</definition>
+        <argsstring></argsstring>
+        <name>maxitems</name>
+        <briefdescription>
+<para>The maximum number of items to return in this request. Note that setting to one will often invoke two syscalls. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2683" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1async__enumerate__op__req_1a298f40232240a52a4036c146890c2c1a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool boost::afio::async_enumerate_op_req::restart</definition>
+        <argsstring></argsstring>
+        <name>restart</name>
+        <briefdescription>
+<para>Restarts the enumeration for this open directory handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2684" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1async__enumerate__op__req_1a36131335bc990c9a662ef5fb7e051c18" prot="public" static="no" mutable="no">
+        <type>std::filesystem::path</type>
+        <definition>std::filesystem::path boost::afio::async_enumerate_op_req::glob</definition>
+        <argsstring></argsstring>
+        <name>glob</name>
+        <briefdescription>
+<para>An optional shell glob by which to filter the items returned. Done kernel side on Windows, user side on POSIX. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2685" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2685" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structboost_1_1afio_1_1async__enumerate__op__req_1a546fae278cf10bf3c9d9bb2751b1800d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__metadata__flags_1ga228a95ca96f053e74e69e6d1ab23eccb" kindref="member">metadata_flags</ref></type>
+        <definition>metadata_flags boost::afio::async_enumerate_op_req::metadata</definition>
+        <argsstring></argsstring>
+        <name>metadata</name>
+        <briefdescription>
+<para>The metadata to prefetch for each item enumerated. AFIO may fetch more metadata than requested if it is cost free. . </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2687" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2686" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structboost_1_1afio_1_1async__enumerate__op__req_1ae66aaf796fad21b63b95c3d00d23e619" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::afio::async_enumerate_op_req::async_enumerate_op_req</definition>
+        <argsstring>()</argsstring>
+        <name>async_enumerate_op_req</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2688" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2688" bodyend="2688"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1afio_1_1async__enumerate__op__req_1a1290dff8300971c6bad50ae8177ad9d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::afio::async_enumerate_op_req::async_enumerate_op_req</definition>
+        <argsstring>(async_io_op _precondition, size_t _maxitems=2, bool _restart=true, std::filesystem::path _glob=std::filesystem::path(), metadata_flags _metadata=metadata_flags::None)</argsstring>
+        <name>async_enumerate_op_req</name>
+        <param>
+          <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
+          <declname>_precondition</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_maxitems</declname>
+          <defval>2</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_restart</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>std::filesystem::path</type>
+          <declname>_glob</declname>
+          <defval>std::filesystem::path()</defval>
+        </param>
+        <param>
+          <type><ref refid="group__metadata__flags_1ga228a95ca96f053e74e69e6d1ab23eccb" kindref="member">metadata_flags</ref></type>
+          <declname>_metadata</declname>
+          <defval>metadata_flags::None</defval>
+        </param>
+        <briefdescription>
+<para>Constructs an instance. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_precondition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The precondition for this operation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_maxitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum number of items to return in this request. Note that setting to one will often invoke two syscalls. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_restart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Restarts the enumeration for this open directory handle. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_glob</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional shell glob by which to filter the items returned. Done kernel side on Windows, user side on POSIX. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The metadata to prefetch for each item enumerated. AFIO may fetch more metadata than requested if it is cost free. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2697" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2697" bodyend="2697"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1afio_1_1async__enumerate__op__req_1a50e81868200b0af95810831ca414bcf7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::afio::async_enumerate_op_req::async_enumerate_op_req</definition>
+        <argsstring>(async_io_op _precondition, std::filesystem::path _glob, size_t _maxitems=2, bool _restart=true, metadata_flags _metadata=metadata_flags::None)</argsstring>
+        <name>async_enumerate_op_req</name>
+        <param>
+          <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
+          <declname>_precondition</declname>
+        </param>
+        <param>
+          <type>std::filesystem::path</type>
+          <declname>_glob</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_maxitems</declname>
+          <defval>2</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_restart</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type><ref refid="group__metadata__flags_1ga228a95ca96f053e74e69e6d1ab23eccb" kindref="member">metadata_flags</ref></type>
+          <declname>_metadata</declname>
+          <defval>metadata_flags::None</defval>
+        </param>
+        <briefdescription>
+<para>Constructs an instance. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_precondition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The precondition for this operation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_glob</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A shell glob by which to filter the items returned. Done kernel side on Windows, user side on POSIX. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_maxitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum number of items to return in this request. Note that setting to one will often invoke two syscalls. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_restart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Restarts the enumeration for this open directory handle. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The metadata to prefetch for each item enumerated. AFIO may fetch more metadata than requested if it is cost free. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2706" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2706" bodyend="2706"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1afio_1_1async__enumerate__op__req_1accdf04fee4da7697e046d358a0dadcaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boost::afio::async_enumerate_op_req::async_enumerate_op_req</definition>
+        <argsstring>(async_io_op _precondition, metadata_flags _metadata, size_t _maxitems=2, bool _restart=true, std::filesystem::path _glob=std::filesystem::path())</argsstring>
+        <name>async_enumerate_op_req</name>
+        <param>
+          <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
+          <declname>_precondition</declname>
+        </param>
+        <param>
+          <type><ref refid="group__metadata__flags_1ga228a95ca96f053e74e69e6d1ab23eccb" kindref="member">metadata_flags</ref></type>
+          <declname>_metadata</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>_maxitems</declname>
+          <defval>2</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>_restart</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>std::filesystem::path</type>
+          <declname>_glob</declname>
+          <defval>std::filesystem::path()</defval>
+        </param>
+        <briefdescription>
+<para>Constructs an instance. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_precondition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The precondition for this operation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_metadata</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The metadata to prefetch for each item enumerated. AFIO may fetch more metadata than requested if it is cost free. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_maxitems</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum number of items to return in this request. Note that setting to one will often invoke two syscalls. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_restart</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Restarts the enumeration for this open directory handle. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_glob</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional shell glob by which to filter the items returned. Done kernel side on Windows, user side on POSIX. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2715" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2715" bodyend="2715"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1afio_1_1async__enumerate__op__req_1a437e9cc90c9a9ddeca6d15c601b073fd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool boost::afio::async_enumerate_op_req::validate</definition>
+        <argsstring>() const </argsstring>
+        <name>validate</name>
+        <briefdescription>
+<para>Validates contents. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2718" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2717" bodyend="2721"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="structboost_1_1afio_1_1async__enumerate__op__req_1a6a42d7fcc688f9189aec9068b99b227e" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void boost::afio::async_enumerate_op_req::_validate</definition>
+        <argsstring>() const </argsstring>
+        <name>_validate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2724" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2723" bodyend="2729"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A convenience bundle of precondition, number of items to enumerate, item pattern match and metadata to prefetch. </para>    </briefdescription>
+    <detaileddescription>
+<para>You should note that shell globs must use a restricted form for portability:</para><para>Microsoft Windows NT oddly does not specify what wildcards are permitted, but I think the documentation for the kernel function FsRtlIsNameInExpression() is probably sound: * means zero or more characters, ? means any one character. Do not use &lt;, &gt; or " as these have special MS-DOS compatibility inducing consequences. Do not use ^ as this is the Windows wildcard escape character.</para><para>POSIX further extends NT&apos;s wildcards with [seq] which is a subset of characters and [!seq] which is not any subset of characters. Here a \ is the wildcard escape character. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="114">
+        <label>boost::afio::async_io_op</label>
+        <link refid="structboost_1_1afio_1_1async__io__op"/>
+        <childnode refid="115" relation="usage">
+          <edgelabel>parent</edgelabel>
+        </childnode>
+      </node>
+      <node id="113">
+        <label>boost::afio::async_enumerate_op_req</label>
+        <link refid="structboost_1_1afio_1_1async__enumerate__op__req"/>
+        <childnode refid="114" relation="usage">
+          <edgelabel>precondition</edgelabel>
+        </childnode>
+      </node>
+      <node id="115">
+        <label>boost::afio::async_file_io_dispatcher_base</label>
+        <link refid="classboost_1_1afio_1_1async__file__io__dispatcher__base"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2681" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2680" bodyend="2730"/>
+    <listofallmembers>
+      <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a6a42d7fcc688f9189aec9068b99b227e" prot="private" virt="non-virtual"><scope>boost::afio::async_enumerate_op_req</scope><name>_validate</name></member>
+      <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1ae66aaf796fad21b63b95c3d00d23e619" prot="public" virt="non-virtual"><scope>boost::afio::async_enumerate_op_req</scope><name>async_enumerate_op_req</name></member>
+      <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a1290dff8300971c6bad50ae8177ad9d9" prot="public" virt="non-virtual"><scope>boost::afio::async_enumerate_op_req</scope><name>async_enumerate_op_req</name></member>
+      <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a50e81868200b0af95810831ca414bcf7" prot="public" virt="non-virtual"><scope>boost::afio::async_enumerate_op_req</scope><name>async_enumerate_op_req</name></member>
+      <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1accdf04fee4da7697e046d358a0dadcaa" prot="public" virt="non-virtual"><scope>boost::afio::async_enumerate_op_req</scope><name>async_enumerate_op_req</name></member>
+      <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a36131335bc990c9a662ef5fb7e051c18" prot="public" virt="non-virtual"><scope>boost::afio::async_enumerate_op_req</scope><name>glob</name></member>
+      <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a15fdfa2ce921f73499f1d7c103b1acf2" prot="public" virt="non-virtual"><scope>boost::afio::async_enumerate_op_req</scope><name>maxitems</name></member>
+      <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a546fae278cf10bf3c9d9bb2751b1800d" prot="public" virt="non-virtual"><scope>boost::afio::async_enumerate_op_req</scope><name>metadata</name></member>
+      <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1ae96062366baba220f33af9deedbf990f" prot="public" virt="non-virtual"><scope>boost::afio::async_enumerate_op_req</scope><name>precondition</name></member>
+      <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a298f40232240a52a4036c146890c2c1a" prot="public" virt="non-virtual"><scope>boost::afio::async_enumerate_op_req</scope><name>restart</name></member>
+      <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a437e9cc90c9a9ddeca6d15c601b073fd" prot="public" virt="non-virtual"><scope>boost::afio::async_enumerate_op_req</scope><name>validate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

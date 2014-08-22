@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structboost_1_1afio_1_1detail_1_1enable__if__future_3_01is__all_00_01shared__future_3_01_t_01_4_01_4" kind="struct" prot="public">
+    <compoundname>boost::afio::detail::enable_if_future&lt; is_all, shared_future&lt; T &gt; &gt;</compoundname>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>is_all</declname>
+        <defname>is_all</defname>
+      </param>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structboost_1_1afio_1_1detail_1_1enable__if__future_3_01is__all_00_01shared__future_3_01_t_01_4_01_4_1acf2bea3ca4e8ccdc53066a554fc9c2e5" prot="public" static="no">
+        <type><ref refid="structboost_1_1afio_1_1detail_1_1select__when__futures__return__type" kindref="compound">select_when_futures_return_type</ref>&lt; is_all, T &gt;::type</type>
+        <definition>typedef select_when_futures_return_type&lt;is_all, T&gt;::type boost::afio::detail::enable_if_future&lt; is_all, shared_future&lt; T &gt; &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="391" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="390" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="389" bodyend="392"/>
+    <listofallmembers>
+      <member refid="structboost_1_1afio_1_1detail_1_1enable__if__future_3_01is__all_00_01shared__future_3_01_t_01_4_01_4_1acf2bea3ca4e8ccdc53066a554fc9c2e5" prot="public" virt="non-virtual"><scope>boost::afio::detail::enable_if_future&lt; is_all, shared_future&lt; T &gt; &gt;</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

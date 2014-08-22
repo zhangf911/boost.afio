@@ -133,8 +133,13 @@
     <span class="comment">// Something a bit surprising for many people is that writing off</span>
     <span class="comment">// the end of a file in AFIO does NOT extend the file and writes</span>
     <span class="comment">// which go past the end will simply fail instead. Why not?</span>
-    <span class="comment">// Simple: that's the convention with async file i/o. You must </span>
-    <span class="comment">// explicitly extend files before writing, like this:</span>
+    <span class="comment">// Simple: that's the convention with async file i/o, because</span>
+    <span class="comment">// synchronising multiple processes concurrently adjusting a</span>
+    <span class="comment">// file's length has significant overhead which is wasted if you</span>
+    <span class="comment">// don't need that functionality. Luckily, there is an easy</span>
+    <span class="comment">// workaround: either open a file for append-only access, in which</span>
+    <span class="comment">// case all writes extend the file for you, or else you explicitly</span>
+    <span class="comment">// extend files before writing, like this:</span>
     <span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">async_io_op</span> <span class="identifier">resizedfile</span><span class="special">(</span><span class="identifier">dispatcher</span><span class="special">-&gt;</span><span class="identifier">truncate</span><span class="special">(</span><span class="identifier">openfile</span><span class="special">,</span> <span class="number">12</span><span class="special">));</span> <a class="co" name="afio.quickstart.async_file_io.hello_world.c14" href="hello_world.html#afio.quickstart.async_file_io.hello_world.c15"><img src="../../../../../doc/src/images/callouts/2.png" alt="2" border="0"></a>
 
     <span class="comment">// Config a write gather. You could do this of course as a batch</span>

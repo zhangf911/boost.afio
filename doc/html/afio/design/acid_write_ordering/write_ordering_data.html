@@ -27,6 +27,17 @@
 <a name="afio.design.acid_write_ordering.write_ordering_data"></a><a class="link" href="write_ordering_data.html" title="Write ordering data and durability: why does it matter?">Write
         ordering data and durability: why does it matter?</a>
 </h4></div></div></div>
+<div class="note"><table border="0" summary="Note">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../../../../../doc/src/images/note.png"></td>
+<th align="left">Note</th>
+</tr>
+<tr><td align="left" valign="top"><p>
+            You may find the paper presented at C++ Now 2014 <a href="http://arxiv.org/abs/1405.3323" target="_top"><span class="quote">&#8220;<span class="quote">Large
+            Code Base Change Ripple Management in C++: My thoughts on how a new Boost
+            C++ Library could help</span>&#8221;</span></a> of interest here.
+          </p></td></tr>
+</table></div>
 <p>
           Implementing performant Durability essentially reduces down to answering
           two questions: (i) how long does it take to restore a consistent state
@@ -167,28 +178,31 @@
                 </th>
 <th>
                   <p>
-                    <span class="aligncenter">Metadata no longer matches data<sup>[<a name="afio.design.acid_write_ordering.write_ordering_data.f3" href="#ftn.afio.design.acid_write_ordering.write_ordering_data.f3" class="footnote">a</a>]</sup></span>
+                    <span class="aligncenter">Newly created file content corruptable
+                    after close</span>
                   </p>
                 </th>
 <th>
                   <p>
-                    <span class="aligncenter">Newly created file content corrupted</span>
+                    <span class="aligncenter">File data content rewrite corruptable
+                    after close</span>
                   </p>
                 </th>
 <th>
                   <p>
-                    <span class="aligncenter">File data content rewrite corrupted</span>
+                    <span class="aligncenter">Cosmic ray bitrot corruptable</span>
+                  </p>
+                </th>
+<th>
+                  <p>
+                    <span class="aligncenter">Can punch holes into physical storage
+                    of files<sup>[<a name="afio.design.acid_write_ordering.write_ordering_data.f3" href="#ftn.afio.design.acid_write_ordering.write_ordering_data.f3" class="footnote">a</a>]</sup></span>
                   </p>
                 </th>
 <th>
                   <p>
                     <span class="aligncenter">Default max seconds of writes reordered
                     without using <code class="computeroutput"><span class="identifier">fsync</span><span class="special">()</span></code></span>
-                  </p>
-                </th>
-<th>
-                  <p>
-                    <span class="aligncenter">Default max seconds of writes lost</span>
                   </p>
                 </th>
 </tr></thead>
@@ -216,7 +230,7 @@
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter">?</span>
+                    <span class="aligncenter"><span class="red">&#10008;</span></span>
                   </p>
                 </td>
 <td>
@@ -248,12 +262,12 @@
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter">5</span>
+                    <span class="aligncenter"><span class="red">&#10008;</span></span>
                   </p>
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter">5</span>
+                    <span class="aligncenter">35</span>
                   </p>
                 </td>
 </tr>
@@ -280,12 +294,12 @@
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter">5<sup>[<a name="afio.design.acid_write_ordering.write_ordering_data.f4" href="#ftn.afio.design.acid_write_ordering.write_ordering_data.f4" class="footnote">b</a>]</sup></span>
+                    <span class="aligncenter"><span class="green">ext4 only</span></span>
                   </p>
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter">30<sup>[<a name="afio.design.acid_write_ordering.write_ordering_data.f5" href="#ftn.afio.design.acid_write_ordering.write_ordering_data.f5" class="footnote">c</a>]</sup></span>
+                    <span class="aligncenter">35<sup>[<a name="afio.design.acid_write_ordering.write_ordering_data.f4" href="#ftn.afio.design.acid_write_ordering.write_ordering_data.f4" class="footnote">b</a>]</sup></span>
                   </p>
                 </td>
 </tr>
@@ -303,7 +317,7 @@
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter"><span class="green">&#10008;</span></span>
+                    <span class="aligncenter"><span class="red">&#10004;</span></span>
                   </p>
                 </td>
 <td>
@@ -313,24 +327,19 @@
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter">5</span>
+                    <span class="aligncenter"><span class="green">ext4 only</span></span>
                   </p>
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter">30</span>
+                    <span class="aligncenter">35</span>
                   </p>
                 </td>
 </tr>
 <tr>
 <td>
                   <p>
-                    <span class="alignright">UFS + soft updates<sup>[<a name="afio.design.acid_write_ordering.write_ordering_data.f6" href="#ftn.afio.design.acid_write_ordering.write_ordering_data.f6" class="footnote">d</a>]</sup></span>
-                  </p>
-                </td>
-<td>
-                  <p>
-                    <span class="aligncenter"><span class="green">&#10008;</span></span>
+                    <span class="alignright">UFS + soft updates<sup>[<a name="afio.design.acid_write_ordering.write_ordering_data.f5" href="#ftn.afio.design.acid_write_ordering.write_ordering_data.f5" class="footnote">c</a>]</sup></span>
                   </p>
                 </td>
 <td>
@@ -345,7 +354,12 @@
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter">30</span>
+                    <span class="aligncenter"><span class="red">&#10004;</span></span>
+                  </p>
+                </td>
+<td>
+                  <p>
+                    <span class="aligncenter"><span class="red">&#10008;</span></span><sup>[<a name="afio.design.acid_write_ordering.write_ordering_data.f6" href="#ftn.afio.design.acid_write_ordering.write_ordering_data.f6" class="footnote">d</a>]</sup>
                   </p>
                 </td>
 <td>
@@ -367,7 +381,7 @@
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter"><span class="green">&#10008;</span></span>
+                    <span class="aligncenter"><span class="red">&#10004;</span></span>
                   </p>
                 </td>
 <td>
@@ -377,7 +391,7 @@
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter">?</span>
+                    <span class="aligncenter"><span class="green">&#10004;</span></span>
                   </p>
                 </td>
 <td>
@@ -399,7 +413,7 @@
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter"><span class="green">&#10008;</span></span>
+                    <span class="aligncenter"><span class="red">&#10004;</span></span>
                   </p>
                 </td>
 <td>
@@ -409,7 +423,7 @@
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter">Until idle or write limit</span>
+                    <span class="aligncenter"><span class="green">&#10004;</span></span>
                   </p>
                 </td>
 <td>
@@ -436,12 +450,12 @@
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter"><span class="green">&#10008;</span></span>
+                    <span class="aligncenter"><span class="red">&#10004;</span></span>
                   </p>
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter">5</span>
+                    <span class="aligncenter"><span class="green">ext4 only</span></span>
                   </p>
                 </td>
 <td>
@@ -473,7 +487,7 @@
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter">30</span>
+                    <span class="aligncenter"><span class="green">&#10004;</span></span>
                   </p>
                 </td>
 <td>
@@ -505,7 +519,7 @@
                 </td>
 <td>
                   <p>
-                    <span class="aligncenter">5</span>
+                    <span class="aligncenter"><span class="green">&#10004;</span></span>
                   </p>
                 </td>
 <td>
@@ -517,21 +531,25 @@
 </tbody>
 <tbody class="footnotes"><tr><td colspan="6">
 <div class="footnote"><p><sup>[<a id="ftn.afio.design.acid_write_ordering.write_ordering_data.f3" href="#afio.design.acid_write_ordering.write_ordering_data.f3" class="para">a</a>] </sup>
-                      This doesn't mean that metadata is corrupted, this means for
-                      example that a file is said to have 100Kb but is in fact partially
-                      garbage because metadata was updated before data was fully
-                      changed on storage.
+                      This is where a filing system permits you to deallocate the
+                      physical storage of a region of a file, so a file claiming
+                      to occupy 8Mb could be reduced to 1Mb of actual storage consumption.
+                      This may sound like sparse file support, but transparent compression
+                      support also counts as it would reduce a region written with
+                      all zeros to nearly zero physical storage
                     </p></div>
 <div class="footnote"><p><sup>[<a id="ftn.afio.design.acid_write_ordering.write_ordering_data.f4" href="#afio.design.acid_write_ordering.write_ordering_data.f4" class="para">b</a>] </sup>
                       This is the <code class="computeroutput"><span class="identifier">commit</span></code>
-                      mount setting. Source: <a href="https://www.kernel.org/doc/Documentation/filesystems/ext4.txt" target="_top">https://www.kernel.org/doc/Documentation/filesystems/ext4.txt</a>
+                      mount setting added to the <code class="computeroutput"><span class="special">/</span><span class="identifier">proc</span><span class="special">/</span><span class="identifier">sys</span><span class="special">/</span><span class="identifier">vm</span><span class="special">/</span><span class="identifier">dirty_expire_centiseconds</span></code>
+                      value. Sources: <a href="https://www.kernel.org/doc/Documentation/filesystems/ext4.txt" target="_top">https://www.kernel.org/doc/Documentation/filesystems/ext4.txt</a>
+                      and <a href="http://www.westnet.com/~gsmith/content/linux-pdflush.htm" target="_top">http://www.westnet.com/~gsmith/content/linux-pdflush.htm</a>
                     </p></div>
 <div class="footnote"><p><sup>[<a id="ftn.afio.design.acid_write_ordering.write_ordering_data.f5" href="#afio.design.acid_write_ordering.write_ordering_data.f5" class="para">c</a>] </sup>
-                      This is the <code class="computeroutput"><span class="special">/</span><span class="identifier">proc</span><span class="special">/</span><span class="identifier">sys</span><span class="special">/</span><span class="identifier">vm</span><span class="special">/</span><span class="identifier">dirty_expire_centiseconds</span></code>
-                      value. Source: <a href="http://www.westnet.com/~gsmith/content/linux-pdflush.htm" target="_top">http://www.westnet.com/~gsmith/content/linux-pdflush.htm</a>
+                      Source: <a href="http://www.freebsd.org/cgi/man.cgi?query=syncer" target="_top">http://www.freebsd.org/cgi/man.cgi?query=syncer</a>
                     </p></div>
 <div class="footnote"><p><sup>[<a id="ftn.afio.design.acid_write_ordering.write_ordering_data.f6" href="#afio.design.acid_write_ordering.write_ordering_data.f6" class="para">d</a>] </sup>
-                      Source: <a href="http://www.freebsd.org/cgi/man.cgi?query=syncer" target="_top">http://www.freebsd.org/cgi/man.cgi?query=syncer</a>
+                      UFS itself supports sparse files, yet I could not find an API
+                      with which you can punch holes for arbitrary regions
                     </p></div>
 <div class="footnote"><p><sup>[<a id="ftn.afio.design.acid_write_ordering.write_ordering_data.f7" href="#afio.design.acid_write_ordering.write_ordering_data.f7" class="para">e</a>] </sup>
                       Source: <a href="http://technet.microsoft.com/en-us/library/bb742613.aspx" target="_top">http://technet.microsoft.com/en-us/library/bb742613.aspx</a>

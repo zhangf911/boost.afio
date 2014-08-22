@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__async__data__op__req" kind="group">
+    <compoundname>async_data_op_req</compoundname>
+    <title>x</title>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4" prot="public">boost::afio::async_data_op_req&lt; const T &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4" prot="public">boost::afio::async_data_op_req&lt; void &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4" prot="public">boost::afio::async_data_op_req&lt; const void &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::vector&lt; T, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::array&lt; T, N &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1mutable__buffer_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::vector&lt; boost::asio::mutable_buffer, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::vector&lt; boost::asio::const_buffer, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1mutable__buffer_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::array&lt; boost::asio::mutable_buffer, N &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::array&lt; boost::asio::const_buffer, N &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::basic_string&lt; C, T, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1mutable__buffer_01_4" prot="public">boost::afio::async_data_op_req&lt; boost::asio::mutable_buffer &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4" prot="public">boost::afio::async_data_op_req&lt; boost::asio::const_buffer &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req" prot="public">boost::afio::async_data_op_req</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

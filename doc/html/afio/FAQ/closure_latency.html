@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>What is the latency of AFIO's closure execution engine aka how quickly can I push a single op with AFIO?</title>
+<link rel="stylesheet" href="../../../../libs/afio/doc/html/myboostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.2">
+<link rel="up" href="../FAQ.html" title="Frequently Asked Questions">
+<link rel="prev" href="closure_performance.html" title="What is the maximum throughput of AFIO's closure execution engine aka how many IOPS can I push with AFIO?">
+<link rel="next" href="stuck_ops.html" title="I'm seeing &#8220;WARNING: ~async_file_dispatcher_base() detects stuck async_io_op in total of X ops&#8221; during process close. What does this mean?">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table cellpadding="2" width="100%"><tr>
+<td valign="top"><img alt="Boost C++ Libraries" width="277" height="86" src="../../../../boost.png"></td>
+<td align="center"><a href="../../../../index.html">Home</a></td>
+<td align="center"><a href="../../../../libs/libraries.htm">Libraries</a></td>
+<td align="center"><a href="http://www.boost.org/users/people.html">People</a></td>
+<td align="center"><a href="http://www.boost.org/users/faq.html">FAQ</a></td>
+<td align="center"><a href="../../../../more/index.htm">More</a></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="closure_performance.html"><img src="../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../FAQ.html"><img src="../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../afio.html"><img src="../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="stuck_ops.html"><img src="../../../../doc/src/images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h3 class="title">
+<a name="afio.FAQ.closure_latency"></a><a class="link" href="closure_latency.html" title="What is the latency of AFIO's closure execution engine aka how quickly can I push a single op with AFIO?">What is the latency of AFIO's
+      closure execution engine aka how quickly can I push a single op with AFIO?</a>
+</h3></div></div></div>
+<p>
+        For v1.21 of the engine on a quad core hyperthreading 3.5Ghz Intel Core i7
+        3770K, I found the following latency graph which is in CPU cycles:
+      </p>
+<p>
+        <span class="aligncenter"><span class="inlinemediaobject"><object type="image/svg+xml" data="../../../../libs/afio/doc/src/images/a/b/../../afio_latencies.svg"></object></span></span>
+      </p>
+<p>
+        The solid lines represent average dispatch to execution and execution finish
+        to completion notification latencies and are cumulative on the left scale,
+        whilst the dotted lines represent minimum latencies and are cumulative on
+        the right scale. As one can see, one can expect a minimum of around 6,000
+        CPU cycles between dispatch and the operation beginning, and a minimum of
+        around 4,000 cycles between the operation completing and its op reference
+        becoming signalled, thus making total minimum latency per op around 10,000
+        CPU cycles, or around 2.5 microseconds.
+      </p>
+<p>
+        Average latency is rather worse of course, but if you exceed CPU cores by
+        just enough to stop them clocking down you can expect a 300,000 CPU cycle
+        total latency with a 95% confidence interval of plus/minus 25,000 CPU cycles,
+        which is 75 microseconds plus/minus 6.25 microseconds. Obviously this makes
+        AFIO unsuited for low latency work such as high frequency trading, but once
+        you get below 0.1 milliseconds it becomes very hard to disentangle SSD access
+        times from the latency of the filing and storage systems between you and
+        the SSD anyway, so even if AFIO might appear to on average double the 0.08
+        millisecond access time a SSD might have, you really must bear in mind that
+        a thread sleep and wake costs about 215,000 CPU cycles, and the obvious thing
+        which is happening in the benchmark is that AFIO is on average sleeping and
+        waking 1.33 times per operation dispatched and completed. Your use case will
+        of course vary, and if you hit the spin locks right I've personally seen
+        9,000 CPU cycle sustained average latencies.
+      </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2013, 2014 Niall Douglas and Paul Kirth<p>
+        Distributed under the Boost Software License, Version 1.0. (See accompanying
+        file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="closure_performance.html"><img src="../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../FAQ.html"><img src="../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../afio.html"><img src="../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="stuck_ops.html"><img src="../../../../doc/src/images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

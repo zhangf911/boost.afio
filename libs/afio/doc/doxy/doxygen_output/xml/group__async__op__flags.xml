@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="group__async__op__flags" kind="group">
+    <compoundname>async_op_flags</compoundname>
+    <title>x</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__async__op__flags_1ga3d03d4b42e2ae303e282d0a1dec22976" prot="public" static="no">
+        <name>async_op_flags</name>
+        <enumvalue id="namespaceboost_1_1afio_1ga3d03d4b42e2ae303e282d0a1dec22976a78dc04e05e979dbe81227be8cdf9f74d" prot="public">
+          <name>none</name>
+          <initializer>0</initializer>
+          <briefdescription>
+<para>No flags set. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1ga3d03d4b42e2ae303e282d0a1dec22976aef60ffef4d2047749b204c64707b834b" prot="public">
+          <name>immediate</name>
+          <initializer>1</initializer>
+          <briefdescription>
+<para>Call chained completion immediately instead of scheduling for later. Make SURE your completion can not block! </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Bitwise async_op_flags flags. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="545" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="539" bodyend="548"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

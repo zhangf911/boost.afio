@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="dir_a137b9c34db36529599cc53bdf0caa9e" kind="dir">
+    <compoundname>/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/</compoundname>
+    <innerdir refid="dir_077d813e5729062c52a4a6edade769d2">/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/"/>
+  </compounddef>
+</doxygen>

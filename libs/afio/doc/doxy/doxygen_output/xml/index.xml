@@ -1,0 +1,1080 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.7.6.1">
+  <compound refid="structboost_1_1afio_1_1async__data__op__req" kind="struct"><name>boost::afio::async_data_op_req</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_1a0262c9da30b151857321dae52b324381" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_1a304921eb66d25b1640e85f98d3def240" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_1a5b08da89b3bc55fc93f9869a33b95f46" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_1a05b517168fa205fe996613cf4f75c499" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_1a9018b975d69aa29888f4a6696644483f" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_1a30d0f69e4aaaa052e1b958e7c7ef865a" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_1a4af66c5f8712fe1b2334d3a4fec54def" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_1a4a61108b70d38756cf62b0cd8b7b720c" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_1ac728e8b290ea2b43de0e2ec8083fef08" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_1a800508a41db402d30eaf4c0e204b9248" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; boost::asio::const_buffer &gt;</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4_1a9c897980e885db2653d35aa387d17198" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4_1a6003230ba26ba71acfb39fe2d71d5165" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4_1ac9df8c1f09e63364b1b9e5caba0149b9" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4_1abbd940406537d8fc64e854dd9ceed2c1" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4_1a37a619207e2672136ad0131ea4a6c5e9" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4_1a5bbb33a297d05b8e56c2d9f6a6bc4fff" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4_1a38d42e1e40ae2fc77126f017a271c93d" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4_1a9dc0b2333210e42f1ce6e685f60316d0" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4_1ab86bdcad5e35b87563f347765fdfe8e6" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4_1aad34aec88bb0a29c3bce289a4a12af0d" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4_1a4a0e0089da1c98b08b2cd669c0a26da7" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1mutable__buffer_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; boost::asio::mutable_buffer &gt;</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1mutable__buffer_01_4_1abc8bdf66b16be059152edb0bf1d926dc" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1mutable__buffer_01_4_1a71df08c0e9023576897b8ad38fb14079" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1mutable__buffer_01_4_1a174edf56e3f222705e6f0c010c45ef4a" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1mutable__buffer_01_4_1a61a148fd513d7e38ad4e6e86fc460db7" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1mutable__buffer_01_4_1af97696ac456aa07f6cae40bc8bd1fc07" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1mutable__buffer_01_4_1a6948c8ab664e35aa2e19101774018ab7" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1mutable__buffer_01_4_1a4c5ba5ac450bc86941ec298085045812" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1mutable__buffer_01_4_1aae5929a06f1e5e483849d77581fb7874" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1mutable__buffer_01_4_1a77e03d1792e34669a4becb11fe5756bf" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a321e863d9d92edde7e842e807ef50232" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1ad3f346082cd7b0fe36770a04327c011e" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a0260637ed3624ac6d7718e1a13d37295" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a9b0b7c675886996d7287f0ed4d800b15" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a862d86da25d602403f41130be2cce810" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a2c6997f35124f518a3950a5c7de028c1" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a02927eb0c6caf7a3e6ca80e207f7c997" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a6b923aeb2a2200bd3589f1d0bcb36bbe" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a56d96490189430b6b1fa134327cc5020" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a2ae7b8668d171892cfec367594772bfb" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1ac58f9a075ff52c447a3178c74dc46d92" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a0b42df7a3593ecfbc4982307a35b7294" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a38bc00bc81a8009921334ef5efaa8a5e" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a3d5820c983d028b7c3ab76716fc3d784" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a84f5ff0b4a29aadf4e73c2a436c05e80" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1aafd627487673ea9d53cce8385fda69ce" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1aa4eea0a5a20495b71ef108e5a0a38c6f" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a4b2b0d0cac50595f94a546a312d858e8" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1ab8cd954b27ea7b7754c4870ca0a37774" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a4195d4eb37d44ffe3683ef486ca2a963" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a4e860f433d2a702b5916e25849182f1f" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a6500d3414c73147a0cbd31a304385ec5" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a0504187fb2d0158c9b3b8314f465ec99" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a6312b7f1662d08212e0bca81e8c35de2" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a82fe0967bcf9b0622f42d1388ad8da08" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a8ee82cc15661260baad403dc672ec2ea" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a5b8d0d90b6f7782f1d03a6e17c01e809" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a013adbae0ededcfa0b4bfb628c21ffdc" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a950b1d9a5d13cd836269303ce66255ca" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a7f885d55b7262d6caee2f52a79b7e0d4" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1ae413e275b82ba5f23b08dac2b303e98f" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a687a5a4c45b4963b655f496908c2b7df" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a292c69a845da09a865543928944ec667" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; const T &gt;</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1aefaee94e09b38ec15d60e339ef2ad2da" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a1810b4222f98c9d6d71db19262c2896d" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1aea304b5a721b670335d849985bf6b901" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a43a63ce53be9529bc5df6d02c7f5d580" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a31ae361aae57374eade061f6d7cc1fd4" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a5e1b207fec62b246f707bfa0ebf322f0" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a23978cfdf9bcd5e322fe41b7c38c9990" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a243fe0d8a6c9fc679e9164c33627de32" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a95293a732a23fe4305ead4dd2a35dd25" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a51c8e7a752f052f74b609d1781ce14ba" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a04c0ed35b14d2c0ee75aedf8bdab2542" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1aebdaaad1c817a4182a505e2e009be987" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; const void &gt;</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a4953895962497a2b23a93d76a3127a9f" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a508218ec67134543c5dd2cdd1ac22f40" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a91d54e07ed50772d70a9960a2ede06f0" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a281777b5a121bebe831289036eefb68a" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a7388890a55f4a86b9cb8c2e8e02fec02" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a48f0f1a9d12e865cc6c04e9f9647ea1c" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1ab743fb5aee996ca0306680b8015b25ce" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a1bf54ffb5fd2d09eb783d2609f05d1cb" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a2a6c466b41025f72fb945036fc2d7851" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a7b94cd954372c59f6ddbeff8804acf96" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; std::array&lt; boost::asio::const_buffer, N &gt; &gt;</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4_1a2b12158dabcb05c7c206dfe7c8d235d8" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4_1aa76e82520da93c035bad15d1b5ee52e7" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4_1a2c969f8b966248ad7f3c1ffce9f6b62a" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4_1ab39000dcb743f81c9d6855bf82ae6d09" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4_1a6b852e0836067008bf888d2229a42da7" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4_1a10406e82ea8d7339dec5554b026d7f51" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4_1a8122f5daf51af3b444b68e332383ccc0" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4_1a90a8fcb0e9c62ce09b5f32119793e009" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4_1a9787454c68aa3be8074908d2292b5849" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4_1a32d5fb540b72763108aa0a50d625dc06" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4_1a3ee47c711380797069dfc4d52e8ff037" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1mutable__buffer_00_01_n_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; std::array&lt; boost::asio::mutable_buffer, N &gt; &gt;</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1mutable__buffer_00_01_n_01_4_01_4_1ab280802dc7635c6369e2d29594167032" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1mutable__buffer_00_01_n_01_4_01_4_1afd9f2888c68941ff8527a35d54e619eb" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1mutable__buffer_00_01_n_01_4_01_4_1a79bad6a5f72e001bde27eb14e0890668" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1mutable__buffer_00_01_n_01_4_01_4_1a893fa82bc5dbfc1aed1982ea402a13c0" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1mutable__buffer_00_01_n_01_4_01_4_1a3a29f3ff82c052fdecfd5306ba338d01" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1mutable__buffer_00_01_n_01_4_01_4_1a7797277bd83e8df0b0f6022e020cdee6" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1mutable__buffer_00_01_n_01_4_01_4_1ae55e8c724ef3cad486fffafa71469f89" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1mutable__buffer_00_01_n_01_4_01_4_1a35a3e30dcc50c1a902267315121a1f00" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1mutable__buffer_00_01_n_01_4_01_4_1a1c046014b987e37367b341116dd5f4a4" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; std::array&lt; T, N &gt; &gt;</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1af3904087164983f881ec0a42b180fae7" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a9dec4b25ef9ca37611ac7fde09c2a28a" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a01f3f441efc1fcef374f57a6835156cd" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1ad57471ca8372b95aa5f9a652e8dc9982" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1ab7c07eb0c700f8e37cdf618d0abb2458" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1af5170d54dba490d16a99563dbe7fb546" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a9a35b62efcc40be57e1a3e2c4ad3eb15" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1ab04bdd5f185b07688db0266f6b48245a" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a05866030d1064910286edbfd2807bbfa" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; std::basic_string&lt; C, T, A &gt; &gt;</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1aa57bec75ffaa60187beb806fd9f6cd7b" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1acaf15a89f73dbe179bed5d02fc1eaf1f" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a991f001fb9c1a19a9804c51f6896afab" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1abf3b4ab7ad6409ada96f910c11ffa793" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a548cf2e2303cd68df22f0f5d9372ad9c" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a4a14f6b9b7c4d350e27ee378ec25a111" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1ad3a95bc2e87e1303fde0065a3bf934e0" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a212f4073b233b902d52db7338a036d1d" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a443e5b3eb85546383469ca547eb81496" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; std::vector&lt; boost::asio::const_buffer, A &gt; &gt;</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4_1a20a522c72d3699fde344fd2b83d3177d" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4_1a9dda919c5dbd7267b9e1d85a5bb697f4" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4_1a6e743c52417833170e78163e1ec0f38b" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4_1abcd2aa4a78e1d34ee9129bf7a0a3dc89" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4_1a378a5ca2ca5b82474fa12e106589ec7d" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4_1a2a37eefdd321d4393aaa6b39ab5b70e3" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4_1a3211ad45f1c096dadf79d259abc5c597" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4_1ab8f3d632e4e519047cc0d147580862fe" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4_1a7ed8a5a62e21ed0fd40d003904310f7c" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4_1a1e2f64e4ea0b57df3cc1cace8dc4bace" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4_1aa052b7c992e5384018fe0df9a08b5adf" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1mutable__buffer_00_01_a_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; std::vector&lt; boost::asio::mutable_buffer, A &gt; &gt;</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a7d00786ec54a89bac32ce1b2253d3d56" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1mutable__buffer_00_01_a_01_4_01_4_1ab7778a008362d96b1ad505bec081d413" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a16715910bd7845e9e2ee311bd080f8dc" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1mutable__buffer_00_01_a_01_4_01_4_1abc875e0f5bc427e5751bab39ea7499ff" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a1a5790db835cdc6c15176693f8b387d7" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a109ee3b51bc2696489869994c23171a2" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a84d69d002493022e8aa616dab7e87ac6" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a7ad5bae2bef7699989d09bfd37fb07c4" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a6ddf7e13a7fa4f414d18eebeeba5431b" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; std::vector&lt; T, A &gt; &gt;</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a36831fbdb1dd6d2100c9e76b1cb6faa9" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a8eef9b4755ddb7cd34aeec05f523d1fc" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a6e0888105ef07616c3220cc4b28ab814" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a2b6ba3610d3de491df67f3b6e6d6ab44" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a260630f768bb9ab916c05220a71d6957" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1ab0c792f98483d76f961575c4b4281dba" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1aa800805b0140b3a6f4ffc50ffa095fb2" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a44cd8f24cb199cd29a876a07edf12f93" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1ae813be2aac919f1056dd8f31349cf078" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; void &gt;</name>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1abe3f009be721aa6f5a118a9d2336af49" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1a971e4a5a5b92357a16ae7a6f072144e0" kind="variable"><name>buffers</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1ace04d40645351cf31598aeda7a9f18b4" kind="variable"><name>where</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1a368d87c0cf266aa1e4c5882f85cd2d2b" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1ad100c8bfc368f3416ec55add5515b8fa" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1a71a5967c85f3fdc59a94fae400ebe4c3" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1ab559ab0949cbb9e934ca5cc26f8e8a1c" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1a50fed0656261a29a88391610f9f12bfc" kind="function"><name>async_data_op_req</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__enumerate__op__req" kind="struct"><name>boost::afio::async_enumerate_op_req</name>
+    <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1ae96062366baba220f33af9deedbf990f" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a15fdfa2ce921f73499f1d7c103b1acf2" kind="variable"><name>maxitems</name></member>
+    <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a298f40232240a52a4036c146890c2c1a" kind="variable"><name>restart</name></member>
+    <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a36131335bc990c9a662ef5fb7e051c18" kind="variable"><name>glob</name></member>
+    <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a546fae278cf10bf3c9d9bb2751b1800d" kind="variable"><name>metadata</name></member>
+    <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1ae66aaf796fad21b63b95c3d00d23e619" kind="function"><name>async_enumerate_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a1290dff8300971c6bad50ae8177ad9d9" kind="function"><name>async_enumerate_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a50e81868200b0af95810831ca414bcf7" kind="function"><name>async_enumerate_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1accdf04fee4da7697e046d358a0dadcaa" kind="function"><name>async_enumerate_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a437e9cc90c9a9ddeca6d15c601b073fd" kind="function"><name>validate</name></member>
+    <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a6a42d7fcc688f9189aec9068b99b227e" kind="function"><name>_validate</name></member>
+  </compound>
+  <compound refid="classboost_1_1afio_1_1async__file__io__dispatcher__base" kind="class"><name>boost::afio::async_file_io_dispatcher_base</name>
+    <member refid="group__async__file__io__dispatcher__base____filter_1ga10eca40ababf6e5fa3b3a88ce73f81b6" kind="typedef"><name>filter_t</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filter_1ga41028fea17b65154ba531358d074b6e4" kind="typedef"><name>filter_readwrite_t</name></member>
+    <member refid="group__async__file__io__dispatcher__base____completion_1ga384aa77fea0f91d58814c50feeee44dc" kind="typedef"><name>completion_returntype</name></member>
+    <member refid="group__async__file__io__dispatcher__base____completion_1ga54bf743efd9a69d7dd11d01ce25fe304" kind="typedef"><name>completion_t</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a196118fdfdc083334123c10fbebd60c3" kind="friend"><name>detail::async_io_handle_posix</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a4f789025521b0e1f43e78056a480daf6" kind="friend"><name>detail::async_io_handle_windows</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a56f496ba01c9b613e83758582f2b06c9" kind="friend"><name>detail::async_file_io_dispatcher_compat</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a7eb74be36e15618561c7df1fbdacea5c" kind="friend"><name>detail::async_file_io_dispatcher_windows</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a06e10cc6179894e1e8bab39ccba6c476" kind="friend"><name>detail::async_file_io_dispatcher_linux</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a4fb6d073a418fd80cc2b81450cc82687" kind="friend"><name>detail::async_file_io_dispatcher_qnx</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a7b7943811b9e7c7ab34df79e3015e15c" kind="variable"><name>p</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a19a8708e9e0a56d1f4a112ef223bdb58" kind="function"><name>int_add_io_handle</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a997cb149876c5afa6669dba9e5b6eacd" kind="function"><name>int_del_io_handle</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a8ded155f7a322783093a576f72f21fa1" kind="function"><name>int_op_from_scheduled_id</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a547e953737c7270c6616976383221f91" kind="function"><name>async_file_io_dispatcher_base</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a9fc400c45bc79eb50db8b74e5d310368" kind="function"><name>doadopt</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a0e93a8a2ee8ce47e38f2b62ce7b7767f" kind="function"><name>invoke_user_completion_fast</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1adb3120d27c9c3b469d30223f7ad63567" kind="function"><name>invoke_user_completion_slow</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1abb9709f262eac032e28894ad0816ee66" kind="function"><name>chain_async_ops</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1acdd8dac6f24e9669392a48d9076dbea7" kind="function"><name>chain_async_ops</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a40280aef4a028fe6e3407e582277ece4" kind="function"><name>chain_async_ops</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1aa77f30d0bbf428a4ac00bd5970b2656f" kind="function"><name>chain_async_ops</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1af17a821515f54bdac6b6f792c751d01f" kind="function"><name>chain_async_ops</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a06bed7cee8e7ec9ecfb1c6cfad57151c" kind="function"><name>chain_async_ops</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a95c2ee11e4c7dc653543eea219c41b3b" kind="function"><name>dobarrier</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a0e25bd9ab26e1a945d14c984a6192e29" kind="function"><name>invoke_async_op_completions</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a1f3f249fa5da4f26b5dc19d7fe8de69b" kind="function"><name>chain_async_op</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1afdaf5abc2bc92330dc7c85295dfbcaed" kind="function"><name>~async_file_io_dispatcher_base</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1ae49a5daedd876d48fc131bca5f0d2b93" kind="function"><name>threadsource</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1ad0eda011c34511f0d25de9902e16b2b7" kind="function"><name>fileflags</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a360e6404ee3f0949209836b8184ee007" kind="function"><name>wait_queue_depth</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1aabd3bce4b20a99a5c25668a7b229ae6f" kind="function"><name>fd_count</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1ac0a315fe8eb87c7827567ef8e916a413" kind="function"><name>op_from_scheduled_id</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filter_1gacc15e280c64ab2f734b097069ed86240" kind="function"><name>post_op_filter_clear</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filter_1ga9e25e1fbc055efe53bd63f6d700866f7" kind="function"><name>post_op_filter</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filter_1ga820758ad7b27f3fa3ca9fa4445db50ee" kind="function"><name>post_readwrite_filter</name></member>
+    <member refid="group__async__file__io__dispatcher__base____completion_1ga6cb87e3ca62468c8027a0cf052a9ff24" kind="function"><name>completion</name></member>
+    <member refid="group__async__file__io__dispatcher__base____completion_1gac745f6f5424e142086cf45cc583f5aac" kind="function"><name>completion</name></member>
+    <member refid="group__async__file__io__dispatcher__base____call_1gaa144378bedc4272b44c9b8f358a04fb7" kind="function"><name>call</name></member>
+    <member refid="group__async__file__io__dispatcher__base____call_1ga9ccdb35979566b5852e1817388f6a39b" kind="function"><name>call</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1ab10c6c273f3e7825fea188cd6c2788b8" kind="function"><name>call</name></member>
+    <member refid="group__async__file__io__dispatcher__base____call_1gaf3bde0b207a33ac44e61a09ca93be50f" kind="function"><name>call</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga284b1612b2c0a3ea813660bc9fd6a54b" kind="function"><name>adopt</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gaa3f199f010ded1399b4f903a194b9cd3" kind="function"><name>adopt</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gaf6386ba1f9bd0e829470837bef6c7d73" kind="function"><name>dir</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gacceb89d11308e3137186aaccec282a17" kind="function"><name>dir</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga41e799782c22f41b16d408a977460153" kind="function"><name>rmdir</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gadb64fc6cabd8e1f394b112cf2361a20a" kind="function"><name>rmdir</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga5da57c9cb811cea214a1e36f007ecffb" kind="function"><name>file</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga59910bc569f75eac27c406c47ccd0643" kind="function"><name>file</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga1e2c1e20ed7a8d04c3dc63490f8e2580" kind="function"><name>rmfile</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gaa222f0e9e966ddddf823166105589316" kind="function"><name>rmfile</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga831d3e585fab96f70b71b1b1a41bd858" kind="function"><name>symlink</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gac56fe0c4aa9d3ead576ff210b3bb3b92" kind="function"><name>symlink</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga5f83cde9b9428423ab6cfbefbe0865b9" kind="function"><name>rmsymlink</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga3d4a61ff8c31bade2d3a5f3aa7e1cb60" kind="function"><name>rmsymlink</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gab2bbf924a104039e4fb5b9a31f14e81e" kind="function"><name>sync</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga7cb40ff0cb3eee7096f0a126bc509db8" kind="function"><name>sync</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga56db87e1d05cf4c17c7587216b2413c9" kind="function"><name>close</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga269273113b9ec5eea764791852cbd53a" kind="function"><name>close</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga389a54f126d95872fa3981bbb0f4ca49" kind="function"><name>read</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga2f99a4c769b6d769e829cee1679763c1" kind="function"><name>read</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga2489d452720accc47d1bfeb5525cfd5b" kind="function"><name>write</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gaccfb68e7fb84c36f418215e4d792988f" kind="function"><name>write</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gae3f243608a9f97af2461ead5bb8189af" kind="function"><name>truncate</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gaa6d63c51183b6f637a723b00155e1cac" kind="function"><name>truncate</name></member>
+    <member refid="group__async__file__io__dispatcher__base____enumerate_1ga9463c9d43626c23e5ef4c7c840d36fcd" kind="function"><name>enumerate</name></member>
+    <member refid="group__async__file__io__dispatcher__base____enumerate_1ga0695e33450ba820ebcb378f8b33d9ac1" kind="function"><name>enumerate</name></member>
+    <member refid="group__async__file__io__dispatcher__base____barrier_1gacc278eff00d3740305863354cca4660b" kind="function"><name>barrier</name></member>
+    <member refid="group__async__file__io__dispatcher__base____misc_1ga006bef030dab5c7bc67fbdc5bc352cef" kind="function"><name>complete_async_op</name></member>
+    <member refid="group__async__file__io__dispatcher__base____misc_1ga39bb6e878d9ad0b4b926e31ced073177" kind="function"><name>complete_async_op</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a735e7a659db8e76f0bfb77123c38f23b" kind="function"><name>write</name></member>
+    <member refid="group__async__file__io__dispatcher__base____misc_1ga2985fb8a06fe014d74fbcf7f4302d82b" kind="function"><name>page_size</name></member>
+  </compound>
+  <compound refid="classboost_1_1afio_1_1async__io__handle" kind="class"><name>boost::afio::async_io_handle</name>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a1685977cc7dfdfbb243e56330e81c929" kind="friend"><name>async_file_io_dispatcher_base</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a2121b2bc574e3bd2b048ec448603c93c" kind="friend"><name>async_io_handle_posix</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a6312b7f088cb1c8a056b19453961f636" kind="friend"><name>async_io_handle_windows</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a56f496ba01c9b613e83758582f2b06c9" kind="friend"><name>detail::async_file_io_dispatcher_compat</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a7eb74be36e15618561c7df1fbdacea5c" kind="friend"><name>detail::async_file_io_dispatcher_windows</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a06e10cc6179894e1e8bab39ccba6c476" kind="friend"><name>detail::async_file_io_dispatcher_linux</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a4fb6d073a418fd80cc2b81450cc82687" kind="friend"><name>detail::async_file_io_dispatcher_qnx</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a11e18a84634ebad4334e3c19fcf5476f" kind="variable"><name>_parent</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a655efe9609734d40514ba83a6d765527" kind="variable"><name>dirh</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1afbe01b0166a2b9be14afd4010993a04f" kind="variable"><name>_opened</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a9be64b4919cd689668b3029eaedaf4c9" kind="variable"><name>_path</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1aaf4c7457fdf61d9c7f7a35591642d0b3" kind="variable"><name>_flags</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a5ea12c64dea5cf079531489407a2d51c" kind="variable"><name>bytesread</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a2bc28081ffaa731c6fa255e8373426b9" kind="variable"><name>byteswritten</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a5bc27735f42f278d76ad43dfdb819283" kind="variable"><name>byteswrittenatlastfsync</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1aa9a30fd4dab32f20d51f7123c018f986" kind="function"><name>async_io_handle</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a2a3a6226d2589fb4c6e8b09416a9bda2" kind="function"><name>close</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a068c61e84e189e9acaf576f5c359eb4f" kind="function"><name>~async_io_handle</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a5fbdc8e0c84387a9444771424983eb66" kind="function"><name>parent</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1ab37d09e2dd176c4e0942b6e02ef69dce" kind="function"><name>container</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a495c71bfeff1d69e059c7a9dc21b55d8" kind="function"><name>native_handle</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a108d2580bb940204ae8cb612825a275a" kind="function"><name>opened</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a3dbca0b12441b776a9811aaa90b48162" kind="function"><name>path</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1add58b21e6507ad48776526dda9af1429" kind="function"><name>flags</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1aec89fd29d46a2c9b4be1d42816b954ba" kind="function"><name>opened_as_file</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a70e80fe7932a86b2b4a939b610a38671" kind="function"><name>opened_as_dir</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1ab85c970910786aa06ad881da9c0df14c" kind="function"><name>opened_as_symlink</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a59f0da3cb7a5af53e1d87a7dd5d8bfd7" kind="function"><name>read_count</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1ae1605e52ac09a914e12458ab04bff870" kind="function"><name>write_count</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1ad8408b86b370511ca8bcd45fd38ae2af" kind="function"><name>write_count_since_fsync</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1ab944ade4e43f124919b9d9041c0b7db1" kind="function"><name>direntry</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a9a8176f75043ea499125efa3cba8e3c2" kind="function"><name>lstat</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1ae01ea37e78bdaef861874ea35842417e" kind="function"><name>target</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a54ebca35191a6f4d5789e9e31b5255ae" kind="function"><name>try_mapfile</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__io__op" kind="struct"><name>boost::afio::async_io_op</name>
+    <member refid="structboost_1_1afio_1_1async__io__op_1a778623f04c79226fa4f8e0f633cfdae2" kind="variable"><name>parent</name></member>
+    <member refid="structboost_1_1afio_1_1async__io__op_1a0ffc8dd6ac6251a2f53b99bfef3b448e" kind="variable"><name>id</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__path__op__req" kind="struct"><name>boost::afio::async_path_op_req</name>
+    <member refid="structboost_1_1afio_1_1async__path__op__req_1a21c85bac15eb4d6511b66106a74f9181" kind="variable"><name>path</name></member>
+    <member refid="structboost_1_1afio_1_1async__path__op__req_1a09779edf0246bd63879681118157591b" kind="variable"><name>flags</name></member>
+    <member refid="structboost_1_1afio_1_1async__path__op__req_1a55eebcd16d288a8aa31912f9ef9891e0" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__path__op__req_1a12d2f3adb19295de94f7091856192bc1" kind="function"><name>async_path_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__path__op__req_1a6c894242091eb9932c56750ccf350cc8" kind="function"><name>async_path_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__path__op__req_1a91f9dbe2f42538e17c901f0f261894aa" kind="function"><name>async_path_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__path__op__req_1adf9269b4b4cdea7e87cdb73d35859842" kind="function"><name>async_path_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__path__op__req_1a9c947941feb339cc70744e94a7a8d157" kind="function"><name>async_path_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__path__op__req_1ad7e391508687434945285c4cfd4eeaf2" kind="function"><name>async_path_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__path__op__req_1aa333f0e33a9ea6a336eb5090c8128a8c" kind="function"><name>async_path_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__path__op__req_1aef8847710ec4432a47c35b7c67e113f0" kind="function"><name>validate</name></member>
+    <member refid="structboost_1_1afio_1_1async__path__op__req_1a1d69ee8a45f8a5fa12010eedac0f6027" kind="function"><name>_validate</name></member>
+  </compound>
+  <compound refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4" kind="class"><name>boost::afio::detail::async_data_op_req_impl&lt; false &gt;</name>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a84eefad026fdc25c3b0ec05257100db0" kind="variable"><name>precondition</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a76ac0f155676706efd7c7447de9ce84a" kind="variable"><name>buffers</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a58aaf07ba0547ac61cc851ab5b7aed2f" kind="variable"><name>where</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a6254251003f2789fdaa0a68f69752955" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1abd9a9356e74c66dbf2e5a9668f3da464" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a816df9608ad9c427a1a2eea8784c5883" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a597b07864ae6c22b02dfd083a0e4e779" kind="function"><name>operator=</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aa76af6ca2102763ca2e6a7503e65f1f3" kind="function"><name>operator=</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1ae981a8e7b643b718a60c85a817e09593" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a31dafa97abc31b2e326e78bf1bf6b22a" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a0b462d3de0d08829ac47d0e876c2bd7f" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1ab3d284f1a5966d02e6f253d9944fb1ce" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a75339528b3a5cca0abcc07271ad177fa" kind="function"><name>_validate</name></member>
+  </compound>
+  <compound refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4" kind="class"><name>boost::afio::detail::async_data_op_req_impl&lt; true &gt;</name>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a5360608bf8265eb0eb0715ce8b6be479" kind="variable"><name>precondition</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a2f1aafd0b155c0725f9cbf34dba0863c" kind="variable"><name>buffers</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1afa3705cacc7b93d4513f20225c7c3d76" kind="variable"><name>where</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aadec13f2add68372932a8b26360d98dd" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aef0669fca58b816cbc8b6e36375f062b" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1ac1e3b8a1f6f23583b3b2114dc5eb0dd1" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a9780163187ac238e67b81f9ea04e2c97" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a5084c4c95d78503210a7d7ce8b44a86f" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a360e610764b1147cfedd9c16cdb3866d" kind="function"><name>operator=</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1ac09094aee48d893e561b69d14ecf1aa4" kind="function"><name>operator=</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1af8da7dede4533395a74fea6faaaeb391" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1adac1238e9ac428de6c450855666be2a9" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a2b140082f9d7a18c94f36e03a36d31f4" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a8b69a5faa5c9d461fa73d7662aebe7bf" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1afcff8466444e76e9639599308235d148" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1ac6a3883a30e06d9c45ec44a5990f4971" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1ac69071caf3a63762c12619a55b3e6188" kind="function"><name>_validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1async__file__io__dispatcher__rwconverter" kind="struct"><name>boost::afio::detail::async_file_io_dispatcher_rwconverter</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1async__file__io__dispatcher__rwconverter_1ae687791e77670a8467d9a279da469f2a" kind="typedef"><name>return_type</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1async__file__io__dispatcher__rwconverter_1a575cd32b4270a7547b39052744e8e0bb" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1enable__if__async__op" kind="struct"><name>boost::afio::detail::enable_if_async_op</name>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1enable__if__async__op_3_01is__all_00_01async__io__op_01_4" kind="struct"><name>boost::afio::detail::enable_if_async_op&lt; is_all, async_io_op &gt;</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1enable__if__async__op_3_01is__all_00_01async__io__op_01_4_1a45df94c969cefa9f3812dd7cec3ea466" kind="typedef"><name>type</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1enable__if__future" kind="struct"><name>boost::afio::detail::enable_if_future</name>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1enable__if__future_3_01is__all_00_01future_3_01_t_01_4_01_4" kind="struct"><name>boost::afio::detail::enable_if_future&lt; is_all, future&lt; T &gt; &gt;</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1enable__if__future_3_01is__all_00_01future_3_01_t_01_4_01_4_1aec2b8d2a0cac480aa8290d94f7c31252" kind="typedef"><name>type</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1enable__if__future_3_01is__all_00_01shared__future_3_01_t_01_4_01_4" kind="struct"><name>boost::afio::detail::enable_if_future&lt; is_all, shared_future&lt; T &gt; &gt;</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1enable__if__future_3_01is__all_00_01shared__future_3_01_t_01_4_01_4_1acf2bea3ca4e8ccdc53066a554fc9c2e5" kind="typedef"><name>type</name></member>
+  </compound>
+  <compound refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl" kind="class"><name>boost::afio::detail::enqueued_task_impl</name>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a8106e683974cda887bef5997d3e54244" kind="variable"><name>p</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a0e7a5f4b14204194ee75761780b89d99" kind="function"><name>validate</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a984de73341d2813eb2643cc34774d5f4" kind="function"><name>enqueued_task_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a62aaa276831fb78f4d7dd814a7e1c3c4" kind="function"><name>valid</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a341d57749b4cedc954099a9a3f985254" kind="function"><name>swap</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1ad744e2c93c8a34eef5823249b2f2abb9" kind="function"><name>reset</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1ae569f6b76499c7c175c18388bc3214bb" kind="function"><name>set_task</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a34fe12e54b29bb8196661ae198e3d67b" kind="function"><name>get_future</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1ace5ede3aaf31261b04ba56ed28ae567b" kind="function"><name>set_future_value</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a2ff721b0fd1350296ab69e5cb2c93fb1" kind="function"><name>set_future_value</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1af1a1381424fbd5e4a1808056df412633" kind="function"><name>set_future_exception</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a6bbfc3ebb15d28f1fc7d0b0d57316eed" kind="function"><name>disable_auto_set_future</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1enqueued__task__impl_1_1_private" kind="struct"><name>boost::afio::detail::enqueued_task_impl::Private</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1enqueued__task__impl_1_1_private_1a0d037b2f451ca29709d1070145b5fa08" kind="variable"><name>task</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1enqueued__task__impl_1_1_private_1ad6341624e772e99924dfc8cc8eca5982" kind="variable"><name>r</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1enqueued__task__impl_1_1_private_1a34571cdb8d032d69123ff68345246122" kind="variable"><name>f</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1enqueued__task__impl_1_1_private_1a69149979f0301d585cae9bf6559dca80" kind="variable"><name>autoset</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1enqueued__task__impl_1_1_private_1a96206d91423305cfcbb734bd408fa3ad" kind="variable"><name>done</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1enqueued__task__impl_1_1_private_1aadf2556a47251fdc8f4e17df208224e5" kind="function"><name>Private</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1get__future__type" kind="struct"><name>boost::afio::detail::get_future_type</name>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1select__when__futures__return__type" kind="struct"><name>boost::afio::detail::select_when_futures_return_type</name>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1select__when__futures__return__type_3_01false_00_01_t_01_4" kind="struct"><name>boost::afio::detail::select_when_futures_return_type&lt; false, T &gt;</name>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1select__when__ops__return__type" kind="struct"><name>boost::afio::detail::select_when_ops_return_type</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1select__when__ops__return__type_1ae6e6d60905c8fe655f776e72a3d13cb1" kind="typedef"><name>type</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1select__when__ops__return__type_3_01false_01_4" kind="struct"><name>boost::afio::detail::select_when_ops_return_type&lt; false &gt;</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1select__when__ops__return__type_3_01false_01_4_1addb99f0ff2ff706cbfa51ffab2b1e269" kind="typedef"><name>type</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1vs2013__variadic__overload__resolution__workaround" kind="struct"><name>boost::afio::detail::vs2013_variadic_overload_resolution_workaround</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1vs2013__variadic__overload__resolution__workaround_1aab89406bb18ab80458cabf9193413573" kind="typedef"><name>type</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1when__all__state" kind="struct"><name>boost::afio::detail::when_all_state</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1when__all__state_1aad7d312a61649648454a8f6e83f354aa" kind="variable"><name>out</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1when__all__state_1ab8d0da10009b890cf06b4b7cd47e8828" kind="variable"><name>in</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1when__any__state" kind="struct"><name>boost::afio::detail::when_any_state</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1when__any__state_1a0f89e8c4e7b09a15161658832cc877a7" kind="variable"><name>out</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1when__any__state_1aac700dd831423b009869ade5e69e3f12" kind="variable"><name>in</name></member>
+  </compound>
+  <compound refid="classboost_1_1afio_1_1directory__entry" kind="class"><name>boost::afio::directory_entry</name>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a56f496ba01c9b613e83758582f2b06c9" kind="friend"><name>detail::async_file_io_dispatcher_compat</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a7eb74be36e15618561c7df1fbdacea5c" kind="friend"><name>detail::async_file_io_dispatcher_windows</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a06e10cc6179894e1e8bab39ccba6c476" kind="friend"><name>detail::async_file_io_dispatcher_linux</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a4fb6d073a418fd80cc2b81450cc82687" kind="friend"><name>detail::async_file_io_dispatcher_qnx</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1aead29597af2f820e428b41043cb13325" kind="variable"><name>leafname</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a85eddc4d783f2d917192c34b25e8e00a" kind="variable"><name>stat</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a13789aab884f193c16480a4ed2c88ec6" kind="variable"><name>have_metadata</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1aa99ec8f3833788919a40325db6d7ca22" kind="function"><name>_int_fetch</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a7e5452e32095af4f18ccb1c053bdc3c3" kind="function"><name>directory_entry</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1aef1beb2b8b7955ebe5dbeeecef63e7a4" kind="function"><name>directory_entry</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1af695a9f05d480594eea41dc122d6a750" kind="function"><name>directory_entry</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a5b879de5d50d7acbbdb2acd62803770d" kind="function"><name>operator=</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a26153f1ef545955c8a78185f79940c90" kind="function"><name>directory_entry</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a8d5e8442f064b0308cc4334719fe3d9f" kind="function"><name>operator=</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1ad4d78f7936075e9d92571ceaad5495a2" kind="function"><name>operator==</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a495f2f6fb3ba8217847768d8e670144f" kind="function"><name>operator!=</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1adeb1659127f145042243d2b00a0c80c2" kind="function"><name>operator&lt;</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1ae0d452f7bf827cf7d841cc83313f26d7" kind="function"><name>operator&lt;=</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a3fba46df3e3027daf8514bc9efd99291" kind="function"><name>operator&gt;</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a1a16dc394a086d5df7ecb8d2e6cbc4fd" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a836019e753302d4312cafff5a5b3aeda" kind="function"><name>name</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1aa6998394593e4bf5614f9f4f955bb7da" kind="function"><name>metadata_ready</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1ac7fdc301cf47a4964a3c91fad7b21368" kind="function"><name>fetch_metadata</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a17bd6beaafd480dfd193c86462e56f54" kind="function"><name>fetch_lstat</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a2e798a994154158fecc6efda9920cdc6" kind="function"><name>st_dev</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1aa0482904c823c4fd85cc722345cc25e5" kind="function"><name>st_ino</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a299b2ac498dee3d7004dd1e883371432" kind="function"><name>st_type</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a342b9962815410f572d33cd035305e73" kind="function"><name>st_perms</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a557f5ed2a1cf93d2a5cb0423645e08a9" kind="function"><name>st_nlink</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a0a579e40d1d71b7a82fc1c27d6f9b212" kind="function"><name>st_uid</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a8fa7672fd378f70e16fe4c0117116d70" kind="function"><name>st_gid</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1af399861cb3eb13c4fe28d43eee22235e" kind="function"><name>st_rdev</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1afe536670b0d4e443e2efb0ea47ac4a19" kind="function"><name>st_atim</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1ae6300725a98717c5d538a9b289c7c9dc" kind="function"><name>st_mtim</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a60a3b56b7c71193e32a660dbee7ea94c" kind="function"><name>st_ctim</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a5e9f190635256daf09b2ed99bf81c838" kind="function"><name>st_size</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1aea93d6bd11c15a1edcf87a9b8b8626f7" kind="function"><name>st_allocated</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1ad1ef4d6b5963af073b3ea528b78080a0" kind="function"><name>st_blocks</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1ae1698c27bc6330f789df721f4202419f" kind="function"><name>st_blksize</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1aa22079e727e0314323e6511a60b4e53a" kind="function"><name>st_flags</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a77f716b223ef9123d18fa2f66369ffaa" kind="function"><name>st_gen</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1afc8cbcad44546653218dba9f20c443fd" kind="function"><name>st_birthtim</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a6f5ac31e50f4298140548b0214454aa4" kind="function"><name>metadata_supported</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1ad4b6107f53eeda85fc01a451ee7bcb38" kind="function"><name>metadata_fastpath</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1af3873881a5ad795462dd41125be01804" kind="function"><name>compatibility_maximum</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1directory__entry__hash" kind="struct"><name>boost::afio::directory_entry_hash</name>
+    <member refid="structboost_1_1afio_1_1directory__entry__hash_1a0c8a97366252c636d922448876bce4e8" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classboost_1_1afio_1_1enqueued__task_3_01_r_07_08_4" kind="class"><name>boost::afio::enqueued_task&lt; R()&gt;</name>
+    <member refid="classboost_1_1afio_1_1enqueued__task_3_01_r_07_08_4_1ae4ffed9500fec824b7b520ceba1ba2a2" kind="typedef"><name>Base</name></member>
+    <member refid="classboost_1_1afio_1_1enqueued__task_3_01_r_07_08_4_1a2175060cc84cc301fb06810ed161064a" kind="function"><name>enqueued_task</name></member>
+    <member refid="classboost_1_1afio_1_1enqueued__task_3_01_r_07_08_4_1a19a4295263c0d61b3e69b554df642d31" kind="function"><name>operator()</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a62aaa276831fb78f4d7dd814a7e1c3c4" kind="function"><name>valid</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a341d57749b4cedc954099a9a3f985254" kind="function"><name>swap</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1ad744e2c93c8a34eef5823249b2f2abb9" kind="function"><name>reset</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1ae569f6b76499c7c175c18388bc3214bb" kind="function"><name>set_task</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a34fe12e54b29bb8196661ae198e3d67b" kind="function"><name>get_future</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1ace5ede3aaf31261b04ba56ed28ae567b" kind="function"><name>set_future_value</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a2ff721b0fd1350296ab69e5cb2c93fb1" kind="function"><name>set_future_value</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1af1a1381424fbd5e4a1808056df412633" kind="function"><name>set_future_exception</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a6bbfc3ebb15d28f1fc7d0b0d57316eed" kind="function"><name>disable_auto_set_future</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a8106e683974cda887bef5997d3e54244" kind="variable"><name>p</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a0e7a5f4b14204194ee75761780b89d99" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="classboost_1_1afio_1_1enqueued__task_3_01void_07_08_4" kind="class"><name>boost::afio::enqueued_task&lt; void()&gt;</name>
+    <member refid="classboost_1_1afio_1_1enqueued__task_3_01void_07_08_4_1a433066dcc250b3aba58a93f72ebae82a" kind="typedef"><name>Base</name></member>
+    <member refid="classboost_1_1afio_1_1enqueued__task_3_01void_07_08_4_1af73c1a662ef9d3fdb4e2ce98635e3723" kind="function"><name>enqueued_task</name></member>
+    <member refid="classboost_1_1afio_1_1enqueued__task_3_01void_07_08_4_1a49be89ca9f00718fda61a3130bd3f684" kind="function"><name>operator()</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a62aaa276831fb78f4d7dd814a7e1c3c4" kind="function"><name>valid</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a341d57749b4cedc954099a9a3f985254" kind="function"><name>swap</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1ad744e2c93c8a34eef5823249b2f2abb9" kind="function"><name>reset</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1ae569f6b76499c7c175c18388bc3214bb" kind="function"><name>set_task</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a34fe12e54b29bb8196661ae198e3d67b" kind="function"><name>get_future</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1ace5ede3aaf31261b04ba56ed28ae567b" kind="function"><name>set_future_value</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a2ff721b0fd1350296ab69e5cb2c93fb1" kind="function"><name>set_future_value</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1af1a1381424fbd5e4a1808056df412633" kind="function"><name>set_future_exception</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a6bbfc3ebb15d28f1fc7d0b0d57316eed" kind="function"><name>disable_auto_set_future</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a8106e683974cda887bef5997d3e54244" kind="variable"><name>p</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a0e7a5f4b14204194ee75761780b89d99" kind="function"><name>validate</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1stat__t" kind="struct"><name>boost::afio::stat_t</name>
+    <member refid="structboost_1_1afio_1_1stat__t_1a622b2751e150496cf4e4d1f8b2bf1bb7" kind="variable"><name>st_dev</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1a4ebb8f90634cf37d7092607e7719fee6" kind="variable"><name>st_ino</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1ad354c4fac339fe43daf043a83dd93203" kind="variable"><name>st_type</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1a7ed3d272d0f2d67c60ba7515a728ba4f" kind="variable"><name>st_perms</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1a781bda0716cb898de0448ea0dd0ddf60" kind="variable"><name>st_nlink</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1a76fd06124910152cbc797b1383ead904" kind="variable"><name>st_uid</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1a4d8f11dc30db281ba32ca3ead5bbbad2" kind="variable"><name>st_gid</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1a7900aec1d4324e38262bc8fb80dbcc42" kind="variable"><name>st_rdev</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1a5f0750b171f73338cf6ddbd324092928" kind="variable"><name>st_atim</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1a9e5c878c6facdcc75262652eb0b3f8c2" kind="variable"><name>st_mtim</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1a285d5f85d1caa82466e556a2cb0873a1" kind="variable"><name>st_ctim</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1aee7529c3b338325e0019f962763597e9" kind="variable"><name>st_size</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1adfb66a9f1e84b80cd5df99d0a60412a6" kind="variable"><name>st_allocated</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1ae92dd570cdae23d25a8ec4f4d2bb2135" kind="variable"><name>st_blocks</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1a532236ecf6e50f237aa5b35f38f7e227" kind="variable"><name>st_blksize</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1a253eb4ef155a41e7e9467c495da84b26" kind="variable"><name>st_flags</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1acc43e767165df3ca381b22042a835ac8" kind="variable"><name>st_gen</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1a0b724b94e5448ffc9f9711bb72ecdd7e" kind="variable"><name>st_birthtim</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1afb18968f051d98b865059156862189e4" kind="function"><name>stat_t</name></member>
+    <member refid="structboost_1_1afio_1_1stat__t_1a2d68ccbef69bb7d3786eea023c00cd62" kind="function"><name>stat_t</name></member>
+  </compound>
+  <compound refid="classboost_1_1afio_1_1std__thread__pool" kind="class"><name>boost::afio::std_thread_pool</name>
+    <member refid="classboost_1_1afio_1_1std__thread__pool_1a4636d2eabf003b9aa517f234ac288a6c" kind="friend"><name>worker</name></member>
+    <member refid="classboost_1_1afio_1_1std__thread__pool_1a39e7eb98ddb0fbe3595676aa1e053946" kind="variable"><name>service</name></member>
+    <member refid="classboost_1_1afio_1_1std__thread__pool_1a1b24b5f1e2488a9589991ea9eb29d3fb" kind="variable"><name>working</name></member>
+    <member refid="classboost_1_1afio_1_1std__thread__pool_1a287fb09e68b2e532d1ef4203c7837904" kind="variable"><name>workers</name></member>
+    <member refid="classboost_1_1afio_1_1std__thread__pool_1a72d432ab800834bf9a56ff47926fcf98" kind="function"><name>std_thread_pool</name></member>
+    <member refid="classboost_1_1afio_1_1std__thread__pool_1ad62be906b50a92faabb3c67671ce6c84" kind="function"><name>add_workers</name></member>
+    <member refid="classboost_1_1afio_1_1std__thread__pool_1a703f44e4e256c011c36efeea68b068be" kind="function"><name>destroy</name></member>
+    <member refid="classboost_1_1afio_1_1std__thread__pool_1a3d17432aadedb1c243f28ef119675f2a" kind="function"><name>~std_thread_pool</name></member>
+    <member refid="classboost_1_1afio_1_1thread__source_1a36337df058d08a2706aaf658e2ec90ad" kind="function"><name>io_service</name></member>
+    <member refid="classboost_1_1afio_1_1thread__source_1af6a0b8aa8cf5e0f02caae57c5065360e" kind="function"><name>enqueue</name></member>
+    <member refid="classboost_1_1afio_1_1thread__source_1aaa3076b99fb48ad27f50c4446c987603" kind="function"><name>enqueue</name></member>
+  </compound>
+  <compound refid="classboost_1_1afio_1_1std__thread__pool_1_1worker" kind="class"><name>boost::afio::std_thread_pool::worker</name>
+    <member refid="classboost_1_1afio_1_1std__thread__pool_1_1worker_1a5cf3c8d94f0b409afc8cf21edf923eec" kind="variable"><name>pool</name></member>
+    <member refid="classboost_1_1afio_1_1std__thread__pool_1_1worker_1a6e6515ccc7d40cd38737416aff196c30" kind="function"><name>worker</name></member>
+    <member refid="classboost_1_1afio_1_1std__thread__pool_1_1worker_1a325099b11641cdf7ca51930c5d4a7f26" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classboost_1_1afio_1_1thread__source" kind="class"><name>boost::afio::thread_source</name>
+    <member refid="classboost_1_1afio_1_1thread__source_1a98badd2b3c10773fe800d7140fb10fa9" kind="variable"><name>service</name></member>
+    <member refid="classboost_1_1afio_1_1thread__source_1a52cc51f56a89f500f535776d99e9d737" kind="function"><name>thread_source</name></member>
+    <member refid="classboost_1_1afio_1_1thread__source_1ac35076fafc379b7112bd4842be6f9925" kind="function"><name>~thread_source</name></member>
+    <member refid="classboost_1_1afio_1_1thread__source_1a36337df058d08a2706aaf658e2ec90ad" kind="function"><name>io_service</name></member>
+    <member refid="classboost_1_1afio_1_1thread__source_1af6a0b8aa8cf5e0f02caae57c5065360e" kind="function"><name>enqueue</name></member>
+    <member refid="classboost_1_1afio_1_1thread__source_1aaa3076b99fb48ad27f50c4446c987603" kind="function"><name>enqueue</name></member>
+  </compound>
+  <compound refid="classenqueued__task" kind="class"><name>enqueued_task</name>
+  </compound>
+  <compound refid="classstd_1_1allocator" kind="class"><name>std::allocator</name>
+    <member refid="classstd_1_1allocator_1a55f88dab1194d6b8a34e46017c4dfd79" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classstd_1_1auto__ptr" kind="class"><name>std::auto_ptr</name>
+    <member refid="classstd_1_1auto__ptr_1a076c936287003dc557981f9ccec1d841" kind="variable"><name>ptr</name></member>
+    <member refid="classstd_1_1auto__ptr_1aa16b96ffd607af4bb6ba4738d77124f8" kind="function"><name>operator-&gt;</name></member>
+  </compound>
+  <compound refid="classstd_1_1bad__alloc" kind="class"><name>std::bad_alloc</name>
+  </compound>
+  <compound refid="classstd_1_1bad__cast" kind="class"><name>std::bad_cast</name>
+  </compound>
+  <compound refid="classstd_1_1bad__exception" kind="class"><name>std::bad_exception</name>
+  </compound>
+  <compound refid="classstd_1_1bad__typeid" kind="class"><name>std::bad_typeid</name>
+  </compound>
+  <compound refid="classstd_1_1basic__fstream" kind="class"><name>std::basic_fstream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__ifstream" kind="class"><name>std::basic_ifstream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__ios" kind="class"><name>std::basic_ios</name>
+  </compound>
+  <compound refid="classstd_1_1basic__iostream" kind="class"><name>std::basic_iostream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__istream" kind="class"><name>std::basic_istream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__istringstream" kind="class"><name>std::basic_istringstream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__ofstream" kind="class"><name>std::basic_ofstream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__ostream" kind="class"><name>std::basic_ostream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__ostringstream" kind="class"><name>std::basic_ostringstream</name>
+  </compound>
+  <compound refid="classstd_1_1basic__string" kind="class"><name>std::basic_string</name>
+  </compound>
+  <compound refid="classstd_1_1basic__string_1_1const__iterator" kind="class"><name>std::basic_string::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1basic__string_1_1const__reverse__iterator" kind="class"><name>std::basic_string::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1basic__string_1_1iterator" kind="class"><name>std::basic_string::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1basic__string_1_1reverse__iterator" kind="class"><name>std::basic_string::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1basic__stringstream" kind="class"><name>std::basic_stringstream</name>
+  </compound>
+  <compound refid="classstd_1_1bitset" kind="class"><name>std::bitset</name>
+  </compound>
+  <compound refid="classstd_1_1complex" kind="class"><name>std::complex</name>
+  </compound>
+  <compound refid="classstd_1_1deque" kind="class"><name>std::deque</name>
+    <member refid="classstd_1_1deque_1a090b92581de438d2e14bedc190f0b0f9" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classstd_1_1deque_1_1const__iterator" kind="class"><name>std::deque::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1deque_1_1const__reverse__iterator" kind="class"><name>std::deque::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1deque_1_1iterator" kind="class"><name>std::deque::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1deque_1_1reverse__iterator" kind="class"><name>std::deque::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1domain__error" kind="class"><name>std::domain_error</name>
+  </compound>
+  <compound refid="classstd_1_1exception" kind="class"><name>std::exception</name>
+  </compound>
+  <compound refid="classstd_1_1fstream" kind="class"><name>std::fstream</name>
+  </compound>
+  <compound refid="structstd_1_1hash_3_01boost_1_1afio_1_1directory__entry_01_4" kind="struct"><name>std::hash&lt; boost::afio::directory_entry &gt;</name>
+    <member refid="structstd_1_1hash_3_01boost_1_1afio_1_1directory__entry_01_4_1a03146199c8c77efbe1fe6e1b46285b71" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classstd_1_1ifstream" kind="class"><name>std::ifstream</name>
+  </compound>
+  <compound refid="classstd_1_1invalid__argument" kind="class"><name>std::invalid_argument</name>
+  </compound>
+  <compound refid="classstd_1_1ios" kind="class"><name>std::ios</name>
+  </compound>
+  <compound refid="classstd_1_1ios__base" kind="class"><name>std::ios_base</name>
+  </compound>
+  <compound refid="classstd_1_1ios__base_1_1failure" kind="class"><name>std::ios_base::failure</name>
+  </compound>
+  <compound refid="classstd_1_1istream" kind="class"><name>std::istream</name>
+  </compound>
+  <compound refid="classstd_1_1istringstream" kind="class"><name>std::istringstream</name>
+  </compound>
+  <compound refid="classstd_1_1length__error" kind="class"><name>std::length_error</name>
+  </compound>
+  <compound refid="classstd_1_1list" kind="class"><name>std::list</name>
+    <member refid="classstd_1_1list_1a682e5c7c91eb377d0cb4f019b2b81a5d" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classstd_1_1list_1_1const__iterator" kind="class"><name>std::list::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1list_1_1const__reverse__iterator" kind="class"><name>std::list::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1list_1_1iterator" kind="class"><name>std::list::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1list_1_1reverse__iterator" kind="class"><name>std::list::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1logic__error" kind="class"><name>std::logic_error</name>
+  </compound>
+  <compound refid="classstd_1_1map" kind="class"><name>std::map</name>
+    <member refid="classstd_1_1map_1a8dc2b3ed44acf51fb2bd3eb30b237269" kind="variable"><name>keys</name></member>
+    <member refid="classstd_1_1map_1ac69fe575e214b796b8d9457b0c22469a" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classstd_1_1map_1_1const__iterator" kind="class"><name>std::map::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1map_1_1const__reverse__iterator" kind="class"><name>std::map::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1map_1_1iterator" kind="class"><name>std::map::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1map_1_1reverse__iterator" kind="class"><name>std::map::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multimap" kind="class"><name>std::multimap</name>
+    <member refid="classstd_1_1multimap_1a4e7d19eda5925ebfcf1e3dcba085cce5" kind="variable"><name>keys</name></member>
+    <member refid="classstd_1_1multimap_1abb7a4781b562bae0a54baeb5726ac28d" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classstd_1_1multimap_1_1const__iterator" kind="class"><name>std::multimap::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multimap_1_1const__reverse__iterator" kind="class"><name>std::multimap::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multimap_1_1iterator" kind="class"><name>std::multimap::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multimap_1_1reverse__iterator" kind="class"><name>std::multimap::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multiset" kind="class"><name>std::multiset</name>
+    <member refid="classstd_1_1multiset_1a93eb79091066c87f6dfb9d07c6c7cbcd" kind="variable"><name>keys</name></member>
+  </compound>
+  <compound refid="classstd_1_1multiset_1_1const__iterator" kind="class"><name>std::multiset::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multiset_1_1const__reverse__iterator" kind="class"><name>std::multiset::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multiset_1_1iterator" kind="class"><name>std::multiset::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1multiset_1_1reverse__iterator" kind="class"><name>std::multiset::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1ofstream" kind="class"><name>std::ofstream</name>
+  </compound>
+  <compound refid="classstd_1_1ostream" kind="class"><name>std::ostream</name>
+  </compound>
+  <compound refid="classstd_1_1ostringstream" kind="class"><name>std::ostringstream</name>
+  </compound>
+  <compound refid="classstd_1_1out__of__range" kind="class"><name>std::out_of_range</name>
+  </compound>
+  <compound refid="classstd_1_1overflow__error" kind="class"><name>std::overflow_error</name>
+  </compound>
+  <compound refid="classstd_1_1priority__queue" kind="class"><name>std::priority_queue</name>
+    <member refid="classstd_1_1priority__queue_1a4df2ae826d2b2caf4a6755adbd34a836" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classstd_1_1queue" kind="class"><name>std::queue</name>
+    <member refid="classstd_1_1queue_1aebacc4dcb935c5e54144e881eb41e356" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classstd_1_1range__error" kind="class"><name>std::range_error</name>
+  </compound>
+  <compound refid="classstd_1_1runtime__error" kind="class"><name>std::runtime_error</name>
+  </compound>
+  <compound refid="classstd_1_1set" kind="class"><name>std::set</name>
+    <member refid="classstd_1_1set_1a7f92ca6d6e5216b9c4be631bd87f1df4" kind="variable"><name>keys</name></member>
+  </compound>
+  <compound refid="classstd_1_1set_1_1const__iterator" kind="class"><name>std::set::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1set_1_1const__reverse__iterator" kind="class"><name>std::set::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1set_1_1iterator" kind="class"><name>std::set::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1set_1_1reverse__iterator" kind="class"><name>std::set::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1smart__ptr" kind="class"><name>std::smart_ptr</name>
+    <member refid="classstd_1_1smart__ptr_1a28b08019309e26ad374ef88cd2641ea3" kind="variable"><name>ptr</name></member>
+    <member refid="classstd_1_1smart__ptr_1a34adc9f82172f037139e4b916c275e90" kind="function"><name>operator-&gt;</name></member>
+  </compound>
+  <compound refid="classstd_1_1stack" kind="class"><name>std::stack</name>
+    <member refid="classstd_1_1stack_1a020dde37186e898d2aacda2c136aef0f" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classstd_1_1string" kind="class"><name>std::string</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1const__iterator" kind="class"><name>std::string::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1const__reverse__iterator" kind="class"><name>std::string::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1iterator" kind="class"><name>std::string::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1string_1_1reverse__iterator" kind="class"><name>std::string::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1stringstream" kind="class"><name>std::stringstream</name>
+  </compound>
+  <compound refid="classstd_1_1underflow__error" kind="class"><name>std::underflow_error</name>
+  </compound>
+  <compound refid="classstd_1_1unique__ptr" kind="class"><name>std::unique_ptr</name>
+    <member refid="classstd_1_1unique__ptr_1adae741234450c126c1260d389e1720b9" kind="variable"><name>ptr</name></member>
+    <member refid="classstd_1_1unique__ptr_1a94e5fed358ff2ef440499ac836dd68f2" kind="function"><name>operator-&gt;</name></member>
+  </compound>
+  <compound refid="classstd_1_1valarray" kind="class"><name>std::valarray</name>
+    <member refid="classstd_1_1valarray_1adce3a23af4e9d36342f49f58300d8568" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classstd_1_1vector" kind="class"><name>std::vector</name>
+    <member refid="classstd_1_1vector_1a2396209900e8f592db1f0b2467f7d899" kind="variable"><name>elements</name></member>
+  </compound>
+  <compound refid="classstd_1_1vector_1_1const__iterator" kind="class"><name>std::vector::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1vector_1_1const__reverse__iterator" kind="class"><name>std::vector::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1vector_1_1iterator" kind="class"><name>std::vector::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1vector_1_1reverse__iterator" kind="class"><name>std::vector::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1weak__ptr" kind="class"><name>std::weak_ptr</name>
+    <member refid="classstd_1_1weak__ptr_1a2346c22e2352ad88a4973f2c8aab91a5" kind="variable"><name>ptr</name></member>
+    <member refid="classstd_1_1weak__ptr_1a3385d327d4804d675b2a052265651a7b" kind="function"><name>operator-&gt;</name></member>
+  </compound>
+  <compound refid="classstd_1_1wfstream" kind="class"><name>std::wfstream</name>
+  </compound>
+  <compound refid="classstd_1_1wifstream" kind="class"><name>std::wifstream</name>
+  </compound>
+  <compound refid="classstd_1_1wios" kind="class"><name>std::wios</name>
+  </compound>
+  <compound refid="classstd_1_1wistream" kind="class"><name>std::wistream</name>
+  </compound>
+  <compound refid="classstd_1_1wistringstream" kind="class"><name>std::wistringstream</name>
+  </compound>
+  <compound refid="classstd_1_1wofstream" kind="class"><name>std::wofstream</name>
+  </compound>
+  <compound refid="classstd_1_1wostream" kind="class"><name>std::wostream</name>
+  </compound>
+  <compound refid="classstd_1_1wostringstream" kind="class"><name>std::wostringstream</name>
+  </compound>
+  <compound refid="classstd_1_1wstring" kind="class"><name>std::wstring</name>
+  </compound>
+  <compound refid="classstd_1_1wstring_1_1const__iterator" kind="class"><name>std::wstring::const_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1wstring_1_1const__reverse__iterator" kind="class"><name>std::wstring::const_reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1wstring_1_1iterator" kind="class"><name>std::wstring::iterator</name>
+  </compound>
+  <compound refid="classstd_1_1wstring_1_1reverse__iterator" kind="class"><name>std::wstring::reverse_iterator</name>
+  </compound>
+  <compound refid="classstd_1_1wstringstream" kind="class"><name>std::wstringstream</name>
+  </compound>
+  <compound refid="namespaceboost" kind="namespace"><name>boost</name>
+  </compound>
+  <compound refid="namespaceboost_1_1afio" kind="namespace"><name>boost::afio</name>
+    <member refid="group__file__flags_1ga1615042683add1802cfc6dc86bd078ee" kind="enum"><name>file_flags</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbae0096787b72fc78233c9f8ee4aa49685" kind="enumvalue"><name>None</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea56afe458614fb4a10b626f321ea1a26f" kind="enumvalue"><name>Read</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea8ce87e24f8fc7badbb6706741f3b2720" kind="enumvalue"><name>Write</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea9b4de5661424e3caea20df95fdf1babf" kind="enumvalue"><name>ReadWrite</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeabb5d6d0e03d75b41c1d997aa76814f44" kind="enumvalue"><name>Append</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea4435f8faf3f874da4982029477760ccc" kind="enumvalue"><name>Truncate</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea3dfadea846f01e01560a979e2e5fb028" kind="enumvalue"><name>Create</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeafd5a0d55a39854c5da74bbded9ee167f" kind="enumvalue"><name>CreateOnlyIfNotExist</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea9ac18f659ad2d9695501f04ce2b49e2f" kind="enumvalue"><name>WillBeSequentiallyAccessed</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea12fb86815852d7f9144110fa38dbfb5f" kind="enumvalue"><name>WillBeRandomlyAccessed</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea8e7a42449e906c304998c81e7490fd16" kind="enumvalue"><name>FastDirectoryEnumeration</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeae2b4f36c7d426549b211d89ffcd02e12" kind="enumvalue"><name>UniqueDirectoryHandle</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea45296419ce890d99a255351f4ac9f1fa" kind="enumvalue"><name>OSDirect</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaba7941781a18ef1d3a4f5345b9d44a53" kind="enumvalue"><name>OSMMap</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea05738a480cd6f577ef828ca2637bdf29" kind="enumvalue"><name>AlwaysSync</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaad1d36e2219ffcd464bb8d37a0c42adc" kind="enumvalue"><name>SyncOnClose</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea6d91e48b65e695d61a43d7e867babebd" kind="enumvalue"><name>EnforceDependencyWriteOrder</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeac3128415027844faf71bc34a5f6de5b8" kind="enumvalue"><name>int_opening_link</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeae4d81f61126d0b6609dbebf8d21de2fa" kind="enumvalue"><name>int_opening_dir</name></member>
+    <member refid="group__async__op__flags_1ga3d03d4b42e2ae303e282d0a1dec22976" kind="enum"><name>async_op_flags</name></member>
+    <member refid="namespaceboost_1_1afio_1ga3d03d4b42e2ae303e282d0a1dec22976a78dc04e05e979dbe81227be8cdf9f74d" kind="enumvalue"><name>none</name></member>
+    <member refid="namespaceboost_1_1afio_1ga3d03d4b42e2ae303e282d0a1dec22976aef60ffef4d2047749b204c64707b834b" kind="enumvalue"><name>immediate</name></member>
+    <member refid="group__metadata__flags_1ga228a95ca96f053e74e69e6d1ab23eccb" kind="enum"><name>metadata_flags</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbae0096787b72fc78233c9f8ee4aa49685" kind="enumvalue"><name>None</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba8d92304adde6ffb02a470ef16dcea2b3" kind="enumvalue"><name>dev</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba787bc34270cc0c198e5b64b89ba6f41a" kind="enumvalue"><name>ino</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba2dbdb9bd28a1ba50c32ea6875df8ac00" kind="enumvalue"><name>type</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbab998f2583c3b13ecdc1b1102f14fbfca" kind="enumvalue"><name>perms</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba01868e8b094df43daa0931a241f290bc" kind="enumvalue"><name>nlink</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba1ef07d55d03ad8cfa9e60f94bf896131" kind="enumvalue"><name>uid</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba68b3f8b217d65c01c73753ee49ae7f65" kind="enumvalue"><name>gid</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba062c9dff3eff839d8b8fce5d8045631f" kind="enumvalue"><name>rdev</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbaf5feb7e3905036ecef11e0f6af1d5899" kind="enumvalue"><name>atim</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba641e32ba51f6dd15575dbd0eda7fd729" kind="enumvalue"><name>mtim</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba37af1d326dfcec6d55987da7c25063a7" kind="enumvalue"><name>ctim</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba049b10b414166800694c37ffa65bb0f9" kind="enumvalue"><name>size</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbab43390eb905bf3f83ab9b3ca1fd7a215" kind="enumvalue"><name>allocated</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba22a74fda8d22f93df2dee8ba803e647b" kind="enumvalue"><name>blocks</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbaf361dda8b452b7c98f2d65e6a36f0817" kind="enumvalue"><name>blksize</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbab84b42876b27e5bb4bb0ba02a4929648" kind="enumvalue"><name>flags</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbacc5f406fc5587724422f0550a490f3bc" kind="enumvalue"><name>gen</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbac7503d63db3bf08a2fe90be45abe8e60" kind="enumvalue"><name>birthtim</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbac5c1c39d14b2ef243eaa37a0eba36940" kind="enumvalue"><name>All</name></member>
+    <member refid="namespaceboost_1_1afio_1a90c6d3eb9c6ffd8c9b90e0d4578415e0" kind="typedef"><name>off_t</name></member>
+    <member refid="group__process__threadpool_1gabb4747cc11ef3ee1bbb969bc78c238bb" kind="function"><name>process_threadpool</name></member>
+    <member refid="group__when__all__futures_1gabb88d1b03f90e1fd689dcb629ab8ecd7" kind="function"><name>when_all</name></member>
+    <member refid="group__when__all__futures_1gab467b102949ffdc46639c0b197b204d2" kind="function"><name>when_any</name></member>
+    <member refid="group__async__file__io__dispatcher_1ga412e5ba3eaf5c1df0499dad2ddd79fb8" kind="function"><name>make_async_file_io_dispatcher</name></member>
+    <member refid="group__when__all__ops_1gadd8ae93c91c23b1011dfdf002db07e9e" kind="function"><name>when_all</name></member>
+    <member refid="group__when__all__ops_1ga85c6d5c463b1ecffdc2a6bda4f040bb0" kind="function"><name>when_any</name></member>
+    <member refid="group__when__all__ops_1ga5598f81e0788f6acd2258263009de875" kind="function"><name>when_all</name></member>
+    <member refid="group__when__all__ops_1gaeb4173eee90e57cc0646056bd14603de" kind="function"><name>when_any</name></member>
+    <member refid="group__when__all__ops_1ga6591b9bbaf576183995ba8612f1c86d5" kind="function"><name>when_all</name></member>
+    <member refid="group__when__all__ops_1ga4a98962e8807e8f5fa31bb14fa430374" kind="function"><name>when_any</name></member>
+    <member refid="group__when__all__ops_1ga175bb31dd07b8c716c85f5bfdc17c9df" kind="function"><name>when_all</name></member>
+    <member refid="group__when__all__ops_1ga3a4b5bc5ed128e7ef337fe164f897782" kind="function"><name>when_all</name></member>
+    <member refid="group__make__async__data__op__req_1ga9f62915b030e2f2ed5115b034e9721a1" kind="function"><name>make_async_data_op_req</name></member>
+    <member refid="group__make__async__data__op__req_1gaaefe9a4cc37c21ba775399a66749b10b" kind="function"><name>make_async_data_op_req</name></member>
+  </compound>
+  <compound refid="namespaceboost_1_1afio_1_1detail" kind="namespace"><name>boost::afio::detail</name>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959" kind="enum"><name>OpType</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a8abbec167b80886201858fb193d1b61f" kind="enumvalue"><name>Unknown</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959af86f5b4d0fac840f0498592cec1298ff" kind="enumvalue"><name>UserCompletion</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a8f5d55512abd5f37a7a421dbc35c64ba" kind="enumvalue"><name>dir</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a17d1d41f9c6272fb1581deca9bb12bde" kind="enumvalue"><name>rmdir</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a8d9619f2c17004e0f712f4eb5f708dc3" kind="enumvalue"><name>file</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959adab829e6174653f778496957a3788068" kind="enumvalue"><name>rmfile</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959ab40cb6ec31cc69af93613cce7aa9a195" kind="enumvalue"><name>symlink</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a3a3a765a2aab638e0c2193ae1665796d" kind="enumvalue"><name>rmsymlink</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a75ce1911dc461189797b6e575f121fd7" kind="enumvalue"><name>sync</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a19b14ab3c0bc54926594e26bdd5d1322" kind="enumvalue"><name>close</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959afa2898b29fa57be67e2dd53915e11568" kind="enumvalue"><name>read</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959abbaf67e2ed6490c6641d62c421a2db16" kind="enumvalue"><name>write</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a60bc570718bace3880655b6fc05aac7f" kind="enumvalue"><name>truncate</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a408cdf493863ef60c2e177c082d0cfc5" kind="enumvalue"><name>barrier</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959ae7e4a316d55edfb80535c8209ad6cf8a" kind="enumvalue"><name>enumerate</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959ae36fea8543f0aee96a1c1967011c69fa" kind="enumvalue"><name>adopt</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959aff0871a017a958de7ea24b4fb3673d36" kind="enumvalue"><name>Last</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1aad9426571fbc2fb9d9d54fd3f252ff21" kind="variable"><name>optypes</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a89b099619cb57e7b2de539674e6e11dd" kind="function"><name>when_all_futures_do</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1ac2a3c9505f667897d8d06f2787d40646" kind="function"><name>when_all_futures</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1ac67dcbccc5e35b94fa9d0931ed8749ef" kind="function"><name>when_any_futures_do</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a000557616b3604e55f7d13396ced5bdb" kind="function"><name>when_any_futures</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1aa676bdf762c5e8d6f8826e199cae924f" kind="function"><name>static_assert</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1ab2379f238e2ebbacf46d54cbd434da38" kind="function"><name>when_all_ops_do</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a1cf9aac5f43844e9b29f188d61a74656" kind="function"><name>when_all_ops</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1adcebbdde7870f429cd90b78e9beabadc" kind="function"><name>when_any_ops_do</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0a09827ed7a36972585fda14fec43a13" kind="function"><name>when_any_ops</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a24ece0c0005765247dfbb0cb49e757b3" kind="function"><name>doCall</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="groups_8hpp" kind="file"><name>groups.hpp</name>
+  </compound>
+  <compound refid="doxygen__mainpage_8hpp" kind="file"><name>doxygen_mainpage.hpp</name>
+  </compound>
+  <compound refid="afio_8hpp" kind="file"><name>afio.hpp</name>
+    <member refid="group__macros_1ga8abeb465d2ca6fa15b3c3754697e5577" kind="define"><name>BOOST_AFIO_VALIDATE_INPUTS</name></member>
+    <member refid="afio_8hpp_1a933046d7a31248aa271a978579ee8977" kind="define"><name>BOOST_AFIO_DECLARE_CLASS_ENUM_AS_BITFIELD</name></member>
+    <member refid="afio_8hpp_1ac794ed8c3e9fc1a99bd54d5b993d2b6c" kind="define"><name>BOOST_AFIO_DIRECTORY_ENTRY_ACCESS_METHOD</name></member>
+  </compound>
+  <compound refid="config_8hpp" kind="file"><name>config.hpp</name>
+    <member refid="config_8hpp_1af63c7b3e623e800e9eb3b0b077610d3b" kind="define"><name>BOOST_AFIO_DECL</name></member>
+    <member refid="config_8hpp_1a1ea38d94fe2f4015ec1a59732d863da2" kind="define"><name>BOOST_LIB_NAME</name></member>
+    <member refid="config_8hpp_1ad8f3e2fb1aa278110cc8d7952abab5b6" kind="define"><name>BOOST_AFIO_HEADERS_ONLY_FUNC_SPEC</name></member>
+    <member refid="config_8hpp_1a5a75b0e1ac1a86e60b2666ed2f64d36f" kind="define"><name>BOOST_AFIO_HEADERS_ONLY_MEMFUNC_SPEC</name></member>
+    <member refid="config_8hpp_1ab4f63024aa1238f1d6a067b3d7fb23c7" kind="define"><name>BOOST_AFIO_HEADERS_ONLY_VIRTUAL_SPEC</name></member>
+    <member refid="config_8hpp_1abd3f523d7f62a4f1ded49b40475c134d" kind="define"><name>BOOST_AFIO_HEADERS_ONLY_VIRTUAL_UNDEFINED_SPEC</name></member>
+  </compound>
+  <compound refid="group__macros" kind="group"><name>macros</name>
+    <member refid="group__macros_1ga8abeb465d2ca6fa15b3c3754697e5577" kind="define"><name>BOOST_AFIO_VALIDATE_INPUTS</name></member>
+  </compound>
+  <compound refid="group__make__async__data__op__req" kind="group"><name>make_async_data_op_req</name>
+    <member refid="group__make__async__data__op__req_1ga9f62915b030e2f2ed5115b034e9721a1" kind="function"><name>make_async_data_op_req</name></member>
+    <member refid="group__make__async__data__op__req_1gaaefe9a4cc37c21ba775399a66749b10b" kind="function"><name>make_async_data_op_req</name></member>
+  </compound>
+  <compound refid="group__async__data__op__req" kind="group"><name>async_data_op_req</name>
+  </compound>
+  <compound refid="group__when__all__ops" kind="group"><name>when_all_ops</name>
+    <member refid="group__when__all__ops_1gadd8ae93c91c23b1011dfdf002db07e9e" kind="function"><name>when_all</name></member>
+    <member refid="group__when__all__ops_1ga85c6d5c463b1ecffdc2a6bda4f040bb0" kind="function"><name>when_any</name></member>
+    <member refid="group__when__all__ops_1ga5598f81e0788f6acd2258263009de875" kind="function"><name>when_all</name></member>
+    <member refid="group__when__all__ops_1gaeb4173eee90e57cc0646056bd14603de" kind="function"><name>when_any</name></member>
+    <member refid="group__when__all__ops_1ga6591b9bbaf576183995ba8612f1c86d5" kind="function"><name>when_all</name></member>
+    <member refid="group__when__all__ops_1ga4a98962e8807e8f5fa31bb14fa430374" kind="function"><name>when_any</name></member>
+    <member refid="group__when__all__ops_1ga175bb31dd07b8c716c85f5bfdc17c9df" kind="function"><name>when_all</name></member>
+    <member refid="group__when__all__ops_1ga3a4b5bc5ed128e7ef337fe164f897782" kind="function"><name>when_all</name></member>
+  </compound>
+  <compound refid="group__async__file__io__dispatcher" kind="group"><name>async_file_io_dispatcher</name>
+    <member refid="group__async__file__io__dispatcher_1ga412e5ba3eaf5c1df0499dad2ddd79fb8" kind="function"><name>make_async_file_io_dispatcher</name></member>
+  </compound>
+  <compound refid="group__async__file__io__dispatcher__base____misc" kind="group"><name>async_file_io_dispatcher_base__misc</name>
+    <member refid="group__async__file__io__dispatcher__base____misc_1ga2985fb8a06fe014d74fbcf7f4302d82b" kind="function"><name>page_size</name></member>
+    <member refid="group__async__file__io__dispatcher__base____misc_1ga006bef030dab5c7bc67fbdc5bc352cef" kind="function"><name>complete_async_op</name></member>
+    <member refid="group__async__file__io__dispatcher__base____misc_1ga39bb6e878d9ad0b4b926e31ced073177" kind="function"><name>complete_async_op</name></member>
+  </compound>
+  <compound refid="group__async__file__io__dispatcher__base____enumerate" kind="group"><name>async_file_io_dispatcher_base__enumerate</name>
+    <member refid="group__async__file__io__dispatcher__base____enumerate_1ga9463c9d43626c23e5ef4c7c840d36fcd" kind="function"><name>enumerate</name></member>
+    <member refid="group__async__file__io__dispatcher__base____enumerate_1ga0695e33450ba820ebcb378f8b33d9ac1" kind="function"><name>enumerate</name></member>
+  </compound>
+  <compound refid="group__async__file__io__dispatcher__base____barrier" kind="group"><name>async_file_io_dispatcher_base__barrier</name>
+    <member refid="group__async__file__io__dispatcher__base____barrier_1gacc278eff00d3740305863354cca4660b" kind="function"><name>barrier</name></member>
+  </compound>
+  <compound refid="group__async__file__io__dispatcher__base____filedirops" kind="group"><name>async_file_io_dispatcher_base__filedirops</name>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga284b1612b2c0a3ea813660bc9fd6a54b" kind="function"><name>adopt</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gaa3f199f010ded1399b4f903a194b9cd3" kind="function"><name>adopt</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gaf6386ba1f9bd0e829470837bef6c7d73" kind="function"><name>dir</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gacceb89d11308e3137186aaccec282a17" kind="function"><name>dir</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga41e799782c22f41b16d408a977460153" kind="function"><name>rmdir</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gadb64fc6cabd8e1f394b112cf2361a20a" kind="function"><name>rmdir</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga5da57c9cb811cea214a1e36f007ecffb" kind="function"><name>file</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga59910bc569f75eac27c406c47ccd0643" kind="function"><name>file</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga1e2c1e20ed7a8d04c3dc63490f8e2580" kind="function"><name>rmfile</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gaa222f0e9e966ddddf823166105589316" kind="function"><name>rmfile</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga831d3e585fab96f70b71b1b1a41bd858" kind="function"><name>symlink</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gac56fe0c4aa9d3ead576ff210b3bb3b92" kind="function"><name>symlink</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga5f83cde9b9428423ab6cfbefbe0865b9" kind="function"><name>rmsymlink</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga3d4a61ff8c31bade2d3a5f3aa7e1cb60" kind="function"><name>rmsymlink</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gab2bbf924a104039e4fb5b9a31f14e81e" kind="function"><name>sync</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga7cb40ff0cb3eee7096f0a126bc509db8" kind="function"><name>sync</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga56db87e1d05cf4c17c7587216b2413c9" kind="function"><name>close</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga269273113b9ec5eea764791852cbd53a" kind="function"><name>close</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga389a54f126d95872fa3981bbb0f4ca49" kind="function"><name>read</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga2f99a4c769b6d769e829cee1679763c1" kind="function"><name>read</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1ga2489d452720accc47d1bfeb5525cfd5b" kind="function"><name>write</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gaccfb68e7fb84c36f418215e4d792988f" kind="function"><name>write</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gae3f243608a9f97af2461ead5bb8189af" kind="function"><name>truncate</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filedirops_1gaa6d63c51183b6f637a723b00155e1cac" kind="function"><name>truncate</name></member>
+  </compound>
+  <compound refid="group__async__file__io__dispatcher__base____call" kind="group"><name>async_file_io_dispatcher_base__call</name>
+    <member refid="group__async__file__io__dispatcher__base____call_1gaa144378bedc4272b44c9b8f358a04fb7" kind="function"><name>call</name></member>
+    <member refid="group__async__file__io__dispatcher__base____call_1ga9ccdb35979566b5852e1817388f6a39b" kind="function"><name>call</name></member>
+    <member refid="group__async__file__io__dispatcher__base____call_1gaf3bde0b207a33ac44e61a09ca93be50f" kind="function"><name>call</name></member>
+  </compound>
+  <compound refid="group__async__file__io__dispatcher__base____completion" kind="group"><name>async_file_io_dispatcher_base__completion</name>
+    <member refid="group__async__file__io__dispatcher__base____completion_1ga384aa77fea0f91d58814c50feeee44dc" kind="typedef"><name>completion_returntype</name></member>
+    <member refid="group__async__file__io__dispatcher__base____completion_1ga54bf743efd9a69d7dd11d01ce25fe304" kind="typedef"><name>completion_t</name></member>
+    <member refid="group__async__file__io__dispatcher__base____completion_1ga6cb87e3ca62468c8027a0cf052a9ff24" kind="function"><name>completion</name></member>
+    <member refid="group__async__file__io__dispatcher__base____completion_1gac745f6f5424e142086cf45cc583f5aac" kind="function"><name>completion</name></member>
+  </compound>
+  <compound refid="group__async__file__io__dispatcher__base____filter" kind="group"><name>async_file_io_dispatcher_base__filter</name>
+    <member refid="group__async__file__io__dispatcher__base____filter_1ga10eca40ababf6e5fa3b3a88ce73f81b6" kind="typedef"><name>filter_t</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filter_1ga41028fea17b65154ba531358d074b6e4" kind="typedef"><name>filter_readwrite_t</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filter_1gacc15e280c64ab2f734b097069ed86240" kind="function"><name>post_op_filter_clear</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filter_1ga9e25e1fbc055efe53bd63f6d700866f7" kind="function"><name>post_op_filter</name></member>
+    <member refid="group__async__file__io__dispatcher__base____filter_1ga820758ad7b27f3fa3ca9fa4445db50ee" kind="function"><name>post_readwrite_filter</name></member>
+  </compound>
+  <compound refid="group__async__op__flags" kind="group"><name>async_op_flags</name>
+    <member refid="group__async__op__flags_1ga3d03d4b42e2ae303e282d0a1dec22976" kind="enum"><name>async_op_flags</name></member>
+    <member refid="namespaceboost_1_1afio_1ga3d03d4b42e2ae303e282d0a1dec22976a78dc04e05e979dbe81227be8cdf9f74d" kind="enumvalue"><name>none</name></member>
+    <member refid="namespaceboost_1_1afio_1ga3d03d4b42e2ae303e282d0a1dec22976aef60ffef4d2047749b204c64707b834b" kind="enumvalue"><name>immediate</name></member>
+  </compound>
+  <compound refid="group__metadata__flags" kind="group"><name>metadata_flags</name>
+    <member refid="group__metadata__flags_1ga228a95ca96f053e74e69e6d1ab23eccb" kind="enum"><name>metadata_flags</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbae0096787b72fc78233c9f8ee4aa49685" kind="enumvalue"><name>None</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba8d92304adde6ffb02a470ef16dcea2b3" kind="enumvalue"><name>dev</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba787bc34270cc0c198e5b64b89ba6f41a" kind="enumvalue"><name>ino</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba2dbdb9bd28a1ba50c32ea6875df8ac00" kind="enumvalue"><name>type</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbab998f2583c3b13ecdc1b1102f14fbfca" kind="enumvalue"><name>perms</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba01868e8b094df43daa0931a241f290bc" kind="enumvalue"><name>nlink</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba1ef07d55d03ad8cfa9e60f94bf896131" kind="enumvalue"><name>uid</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba68b3f8b217d65c01c73753ee49ae7f65" kind="enumvalue"><name>gid</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba062c9dff3eff839d8b8fce5d8045631f" kind="enumvalue"><name>rdev</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbaf5feb7e3905036ecef11e0f6af1d5899" kind="enumvalue"><name>atim</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba641e32ba51f6dd15575dbd0eda7fd729" kind="enumvalue"><name>mtim</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba37af1d326dfcec6d55987da7c25063a7" kind="enumvalue"><name>ctim</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba049b10b414166800694c37ffa65bb0f9" kind="enumvalue"><name>size</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbab43390eb905bf3f83ab9b3ca1fd7a215" kind="enumvalue"><name>allocated</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba22a74fda8d22f93df2dee8ba803e647b" kind="enumvalue"><name>blocks</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbaf361dda8b452b7c98f2d65e6a36f0817" kind="enumvalue"><name>blksize</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbab84b42876b27e5bb4bb0ba02a4929648" kind="enumvalue"><name>flags</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbacc5f406fc5587724422f0550a490f3bc" kind="enumvalue"><name>gen</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbac7503d63db3bf08a2fe90be45abe8e60" kind="enumvalue"><name>birthtim</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbac5c1c39d14b2ef243eaa37a0eba36940" kind="enumvalue"><name>All</name></member>
+  </compound>
+  <compound refid="group__file__flags" kind="group"><name>file_flags</name>
+    <member refid="group__file__flags_1ga1615042683add1802cfc6dc86bd078ee" kind="enum"><name>file_flags</name></member>
+    <member refid="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbae0096787b72fc78233c9f8ee4aa49685" kind="enumvalue"><name>None</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea56afe458614fb4a10b626f321ea1a26f" kind="enumvalue"><name>Read</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea8ce87e24f8fc7badbb6706741f3b2720" kind="enumvalue"><name>Write</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea9b4de5661424e3caea20df95fdf1babf" kind="enumvalue"><name>ReadWrite</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeabb5d6d0e03d75b41c1d997aa76814f44" kind="enumvalue"><name>Append</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea4435f8faf3f874da4982029477760ccc" kind="enumvalue"><name>Truncate</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea3dfadea846f01e01560a979e2e5fb028" kind="enumvalue"><name>Create</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeafd5a0d55a39854c5da74bbded9ee167f" kind="enumvalue"><name>CreateOnlyIfNotExist</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea9ac18f659ad2d9695501f04ce2b49e2f" kind="enumvalue"><name>WillBeSequentiallyAccessed</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea12fb86815852d7f9144110fa38dbfb5f" kind="enumvalue"><name>WillBeRandomlyAccessed</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea8e7a42449e906c304998c81e7490fd16" kind="enumvalue"><name>FastDirectoryEnumeration</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeae2b4f36c7d426549b211d89ffcd02e12" kind="enumvalue"><name>UniqueDirectoryHandle</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea45296419ce890d99a255351f4ac9f1fa" kind="enumvalue"><name>OSDirect</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaba7941781a18ef1d3a4f5345b9d44a53" kind="enumvalue"><name>OSMMap</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea05738a480cd6f577ef828ca2637bdf29" kind="enumvalue"><name>AlwaysSync</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaad1d36e2219ffcd464bb8d37a0c42adc" kind="enumvalue"><name>SyncOnClose</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea6d91e48b65e695d61a43d7e867babebd" kind="enumvalue"><name>EnforceDependencyWriteOrder</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeac3128415027844faf71bc34a5f6de5b8" kind="enumvalue"><name>int_opening_link</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeae4d81f61126d0b6609dbebf8d21de2fa" kind="enumvalue"><name>int_opening_dir</name></member>
+  </compound>
+  <compound refid="group__when__all__futures" kind="group"><name>when_all_futures</name>
+    <member refid="group__when__all__futures_1gabb88d1b03f90e1fd689dcb629ab8ecd7" kind="function"><name>when_all</name></member>
+    <member refid="group__when__all__futures_1gab467b102949ffdc46639c0b197b204d2" kind="function"><name>when_any</name></member>
+  </compound>
+  <compound refid="group__process__threadpool" kind="group"><name>process_threadpool</name>
+    <member refid="group__process__threadpool_1gabb4747cc11ef3ee1bbb969bc78c238bb" kind="function"><name>process_threadpool</name></member>
+  </compound>
+  <compound refid="dir_077d813e5729062c52a4a6edade769d2" kind="dir"><name>/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/</name>
+  </compound>
+  <compound refid="dir_a137b9c34db36529599cc53bdf0caa9e" kind="dir"><name>/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/</name>
+  </compound>
+  <compound refid="dir_3f709418f9f46d758a79321a585f95a9" kind="dir"><name>doxygen_input/</name>
+  </compound>
+  <compound refid="dir_480aa3e5d5a3c4fd936e73727e3dca8b" kind="dir"><name>doxygen_input/groups/</name>
+  </compound>
+  <compound refid="dir_ed0fb615f35e73e0a80298c29c3eef43" kind="dir"><name>/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/</name>
+  </compound>
+  <compound refid="dir_94cd4d7fac8eb08fdaa740afb07327c5" kind="dir"><name>doxygen_input/pages/</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

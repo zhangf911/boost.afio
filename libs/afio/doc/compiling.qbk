@@ -1,0 +1,230 @@
+[/==============================================================================
+    Use, modification and distribution is subject to the Boost Software License,
+    Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at
+    http://www.boost.org/LICENSE_1_0.txt)
+===============================================================================/]
+
+
+
+[section Compilation]
+
+[def __msvc__ MSVC]
+[def __stlport__ [@http://sourceforge.net/projects/stlport STLport]]
+
+__boost_afio__ is by default a headers-only library, unless you define the macro
+`BOOST_AFIO_HEADERS_ONLY` to zero before including afio.hpp. Users only need to include the 
+library headers in their programs in order to be able to access definitions 
+and algorithms provided by the __boost_afio__ library. No linking against 
+any binaries is required. 
+
+__boost_afio__ is only dependant on headers-only __boost__ libraries apart
+from Boost.Filesystem. Boost.Filesystem in turn is dependant on Boost.System.
+On some platforms (e.g. ARM) you may also need Boost.Atomic.
+
+In order to be able to use __boost_afio__, the only thing users need to do 
+is to download and/or install Boost and specify location to include 
+directories, so `include` directives of this scheme will work:
+
+    #include <boost/...>
+
+[heading:trunk_status Supported Compilers And Current Trunk Build And Unit Test State]
+[#unit_test_dashboard]
+
+'''
+<informaltable frame="all" border="1" color="black">
+<tgroup cols="6" align="center" rowsep="1" colsep="1">
+<colspec colname='c1'/>
+<colspec colname='c2'/>
+<colspec colname='c3'/>
+<colspec colname='c4'/>
+<colspec colname='c5'/>
+<colspec colname='c6'/>
+<colspec colname='c7'/>
+<thead>
+<row><entry>Static analysis</entry><entry namest="c2" nameend="c7">Linux</entry></row>
+<row><entry>clang + oclint</entry>
+<entry>GCC 4.6 + libstdc++ 4.6</entry>
+<entry>GCC 4.7 + libstdc++ 4.7</entry>
+<entry>GCC 4.8 + libstdc++ 4.8</entry>
+<entry>clang 3.2 + libstdc++ 4.8</entry>
+<entry>clang 3.3 + libstdc++ 4.8</entry>
+<entry>clang 3.4 + libstdc++ 4.8</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Static%20Analysis%20Pre-Check/"><imageobject><imagedata fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Static%20Analysis%20Pre-Check"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=g++,label=linux-gcc-clang/"><imageobject><imagedata fileref="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=g++,label=linux-gcc-clang/badge/icon"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=g++-4.7,label=linux-gcc-clang/"><imageobject><imagedata fileref="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=g++-4.7,label=linux-gcc-clang/badge/icon"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=g++-4.8,label=linux-gcc-clang/"><imageobject><imagedata fileref="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=g++-4.8,label=linux-gcc-clang/badge/icon"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=clang++-3.2,label=linux-gcc-clang/"><imageobject><imagedata fileref="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=clang++-3.2,label=linux-gcc-clang/badge/icon"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=clang++-3.3,label=linux-gcc-clang/"><imageobject><imagedata fileref="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=clang++-3.3,label=linux-gcc-clang/badge/icon"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=clang++-3.4,label=linux-gcc-clang/"><imageobject><imagedata fileref="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=clang++-3.4,label=linux-gcc-clang/badge/icon"/></imageobject></ulink></entry>
+</row>
+<row>
+<entry>N/A</entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20GCC%204.6/"><imageobject><imagedata fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20GCC%204.6"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20GCC%204.7/"><imageobject><imagedata fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20GCC%204.7"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20GCC%204.8/"><imageobject><imagedata fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20GCC%204.8"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20clang%203.2/"><imageobject><imagedata fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20clang%203.2"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20clang%203.3/"><imageobject><imagedata fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20clang%203.3"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20clang%203.4/"><imageobject><imagedata fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20clang%203.4"/></imageobject></ulink></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<informaltable frame="all">
+<tgroup cols="7" align="center" rowsep="1" colsep="1" cellpadding="2">
+<colspec colname='c1'/>
+<colspec colname='c2'/>
+<colspec colname='c3'/>
+<colspec colname='c4'/>
+<colspec colname='c5'/>
+<colspec colname='c6'/>
+<colspec colname='c7'/>
+<thead>
+<row>
+<entry>Linux</entry>
+<entry>FreeBSD 10 on ZFS</entry>
+<entry namest="c3" nameend="c5">WinXP</entry>
+<entry namest="c6" nameend="c7">Win7</entry>
+</row>
+<row>
+<entry>clang 3.3 + libc++ 2013-12</entry>
+<entry>clang 3.3 + libc++</entry>
+<entry>VS2010</entry>
+<entry>Mingw</entry>
+<entry>Mingw-w64</entry>
+<entry>VS2012</entry>
+<entry>VS2013</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux%20clang%203.3%20%2B%20libc%2B%2B/"><imageobject><imagedata scalefit="1" fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Build%20Linux%20clang%203.3%20%2B%20libc%2B%2B"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Build%20FreeBSD%2010%20clang%203.3/"><imageobject><imagedata fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Build%20FreeBSD%2010%20clang%203.3"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Build%20WinXP%20VS2010/"><imageobject><imagedata scalefit="1" fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Build%20WinXP%20VS2010"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Build%20WinXP%20Mingw32/"><imageobject><imagedata scalefit="1" fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Build%20WinXP%20Mingw32"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Build%20WinXP%20Mingw-w64/"><imageobject><imagedata scalefit="1" fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Build%20WinXP%20Mingw-w64"/></imageobject></ulink></entry>
+<entry>Known Working</entry>
+<entry>Known Working</entry>
+</row>
+
+<row>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20clang%203.1/"><imageobject><imagedata scalefit="1" fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20clang%203.1"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20clang%203.3%20%2B%20libc%2B%2B/"><imageobject><imagedata scalefit="1" fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20clang%203.3%20%2B%20libc%2B%2B"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Test%20FreeBSD%2010%20clang%203.3/"><imageobject><imagedata scalefit="1" fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20FreeBSD%2010%20clang%203.3"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Test%20WinXP%20VS2010/"><imageobject><imagedata scalefit="1" fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20WinXP%20VS2010"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Test%20WinXP%20Mingw32/"><imageobject><imagedata scalefit="1" fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20WinXP%20Mingw32"/></imageobject></ulink></entry>
+<entry><ulink url="https://ci.nedprod.com/job/Boost.AFIO%20Test%20WinXP%20Mingw-w64/"><imageobject><imagedata scalefit="1" fileref="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20WinXP%20Mingw-w64"/></imageobject></ulink></entry>
+<entry>Known Working</entry>
+<entry>Known Working</entry>
+</row>
+
+</tbody>
+</tgroup>
+</informaltable>
+'''
+
+
+[heading Boost AFIO Installation]
+
+# Download the latest version of the Boost Libraries from boost.org. 
+  At the time of writing the current version is Boost 1.56. 
+  Boost AFIO is not compatible with versions of Boost earlier than 1.56 as this was
+  the first Boost version to become source code modularised.
+
+
+# Download Boost AFIO through GitHub at : [@https://github.com/BoostGSoC13/boost.afio https://github.com/BoostGSoC13/boost.afio]
+  We recommend using a git repository, as it will allow for future updates. If you are unfamiliar 
+  with git, check the github website for instructions on how to use git. This is a good place to 
+  start: [@https://help.github.com/articles/set-up-git]
+
+
+# POSIX: Assuming that your copy of Boost lives at /home/ned/boost and AFIO lives at
+  /home/ned/boost.afio, do:
+
+  ``
+    cd /home/ned/boost/libs
+    ln -s /home/ned/boost.afio afio
+    cd ..
+    ./b2 headers
+    ./b2 libs/afio/build
+  ``
+  
+  
+# WINDOWS: Assuming that your copy of Boost lives at `C:\Users\ned\boost` and AFIO lives at
+  `C:\Users\ned\boost.afio`, do:
+
+  ``
+    cd \Users\ned\boost\libs
+    mklink /j afio C:\Users\ned\boost.afio
+    cd ..
+    b2 headers
+    b2 libs/afio/build
+  ``
+
+
+#  If you'd also like to execute the unit test suite, do:
+  ``
+    b2 libs/afio/test
+  ``
+
+#  Similar if you'd like to build documentation, do:
+  ``
+    cd doc
+    ../b2 ../libs/afio/doc
+    ../b2 ../libs/afio/doc pdf
+  ``
+  
+  I may be missing something, but the pdf appears inside bin.v2, not in pdf for some reason.
+  Note that the PDF has some significant formatting problems.
+
+# Thanks to modular Boost, AFIO is now exactly the same as any other Boost library and can
+be used in exactly the same way as if AFIO were already part of Boost.
+
+
+[heading Running the Unit Tests]
+
+To run the unit tests with [*bjam], run [*b2] from the command line from inside the [*libs/afio/tests] directory. 
+This will run the entire suite of unit tests. Remember that this requires that you have Boost.Build
+properly installed on your system. Please consult boost.org for instructions on how to install 
+Boost.Build.  [@http://www.boost.org/doc/libs/1_54_0/doc/html/bbv2/installation.html]
+
+There are a few command line arguments being used for the unit tests at the moment. These won’t
+be available as the project nears completion, but they serve a useful purpose for the project at the 
+moment. 
+
+* [*--link-test]: will only compile and link the test files. This option can be combined with 
+                the [*--test=] option to only compile and link a specific subset of unit tests.
+                Note that [*--link-test] supersedes [*--test-all] and [*--test-each] options,
+                and cannot be combined with the other tests. 
+
+* [*--running-on-ci]: will compile, link and execute only those tests which don't use `fsync()`.
+
+* [*--lto]: perform link-time code assembly. On POSIX with clang, you NEED the gold linker installed for LTO
+                to work - otherwise it appears to work, but in fact is doing a normal link.
+
+* [*--test-all]:  will run a comprehensive unit tests that combines all the other unit tests into a single 
+                continuous test. This is useful to detect errors that will only show up at longer running 
+                times. Note that [*--test-each] is not compatible with this option. 
+
+* [*--test-each]: will run a series of individually compiled unit tests in succession. 
+                This option forgoes the lengthy monolithic test-suite in favor of a 
+                series of small tests. This option can be combined with the [*--test=]
+                option to only run a specific subset of unit tests. Note that [*--test-all]
+                is not compatible with this option. 
+
+* [*--test=]:    will use only the test files designated by the string following this flag. 
+
+For example: 
+
+    ``
+        b2 link=static toolset=gcc --test="first_test.cpp second_test.cpp" 
+    ``
+
+will only compile and run only the tests in `first_test.cpp` and `second_test.cpp`. All other unit tests will
+be ignored, and all other command-line options still apply.
+
+[endsect] [/ end of Compilation]

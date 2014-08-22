@@ -1,0 +1,300 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Compilation</title>
+<link rel="stylesheet" href="../../../libs/afio/doc/html/myboostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.2">
+<link rel="up" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.2">
+<link rel="prev" href="design/acid_write_ordering/write_ordering_data.html" title="Write ordering data and durability: why does it matter?">
+<link rel="next" href="quickstart.html" title="Quick Start">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table cellpadding="2" width="100%"><tr>
+<td valign="top"><img alt="Boost C++ Libraries" width="277" height="86" src="../../../boost.png"></td>
+<td align="center"><a href="../../../index.html">Home</a></td>
+<td align="center"><a href="../../../libs/libraries.htm">Libraries</a></td>
+<td align="center"><a href="http://www.boost.org/users/people.html">People</a></td>
+<td align="center"><a href="http://www.boost.org/users/faq.html">FAQ</a></td>
+<td align="center"><a href="../../../more/index.htm">More</a></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="design/acid_write_ordering/write_ordering_data.html"><img src="../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../afio.html"><img src="../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../afio.html"><img src="../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="quickstart.html"><img src="../../../doc/src/images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h2 class="title" style="clear: both">
+<a name="afio.compilation"></a><a class="link" href="compilation.html" title="Compilation">Compilation</a>
+</h2></div></div></div>
+<p>
+      Boost.AFIO is by default a headers-only library, unless you define the macro
+      <code class="computeroutput"><span class="identifier">BOOST_AFIO_HEADERS_ONLY</span></code> to
+      zero before including afio.hpp. Users only need to include the library headers
+      in their programs in order to be able to access definitions and algorithms
+      provided by the Boost.AFIO library. No linking against any binaries is required.
+    </p>
+<p>
+      Boost.AFIO is only dependant on headers-only Boost libraries apart from Boost.Filesystem.
+      Boost.Filesystem in turn is dependant on Boost.System. On some platforms (e.g.
+      ARM) you may also need Boost.Atomic.
+    </p>
+<p>
+      In order to be able to use Boost.AFIO, the only thing users need to do is to
+      download and/or install Boost and specify location to include directories,
+      so <code class="computeroutput"><span class="identifier">include</span></code> directives of this
+      scheme will work:
+    </p>
+<pre class="programlisting"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">boost</span><span class="special">/...&gt;</span>
+</pre>
+<h4>
+<a name="afio.compilation.h0"></a>
+      <span><a name="afio.compilation.trunk_status"></a></span><a class="link" href="compilation.html#afio.compilation.trunk_status">Supported
+      Compilers And Current Trunk Build And Unit Test State</a>
+    </h4>
+<p>
+      <a name="unit_test_dashboard"></a></p>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col align="center" class="c1">
+<col align="center" class="c2">
+<col align="center" class="c3">
+<col align="center" class="c4">
+<col align="center" class="c5">
+<col align="center" class="c6">
+</colgroup>
+<thead>
+<tr>
+<th align="center">Static analysis</th>
+<th colspan="6" align="center">Linux</th>
+</tr>
+<tr>
+<th align="center">clang + oclint</th>
+<th align="center">GCC 4.6 + libstdc++ 4.6</th>
+<th align="center">GCC 4.7 + libstdc++ 4.7</th>
+<th align="center">GCC 4.8 + libstdc++ 4.8</th>
+<th align="center">clang 3.2 + libstdc++ 4.8</th>
+<th align="center">clang 3.3 + libstdc++ 4.8</th>
+<th align="center">clang 3.4 + libstdc++ 4.8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Static%20Analysis%20Pre-Check/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Static%20Analysis%20Pre-Check"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=g++,label=linux-gcc-clang/" target="_top"><img src="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=g++,label=linux-gcc-clang/badge/icon"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=g++-4.7,label=linux-gcc-clang/" target="_top"><img src="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=g++-4.7,label=linux-gcc-clang/badge/icon"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=g++-4.8,label=linux-gcc-clang/" target="_top"><img src="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=g++-4.8,label=linux-gcc-clang/badge/icon"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=clang++-3.2,label=linux-gcc-clang/" target="_top"><img src="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=clang++-3.2,label=linux-gcc-clang/badge/icon"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=clang++-3.3,label=linux-gcc-clang/" target="_top"><img src="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=clang++-3.3,label=linux-gcc-clang/badge/icon"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=clang++-3.4,label=linux-gcc-clang/" target="_top"><img src="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux/CXX=clang++-3.4,label=linux-gcc-clang/badge/icon"></a></td>
+</tr>
+<tr>
+<td align="center">N/A</td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20GCC%204.6/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20GCC%204.6"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20GCC%204.7/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20GCC%204.7"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20GCC%204.8/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20GCC%204.8"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20clang%203.2/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20clang%203.2"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20clang%203.3/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20clang%203.3"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20clang%203.4/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20clang%203.4"></a></td>
+</tr>
+</tbody>
+</table></div>
+<p>
+
+</p>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col align="center" class="c1">
+<col align="center" class="c2">
+<col align="center" class="c3">
+<col align="center" class="c4">
+<col align="center" class="c5">
+<col align="center" class="c6">
+<col align="center" class="c7">
+</colgroup>
+<thead>
+<tr>
+<th align="center">Linux</th>
+<th align="center">FreeBSD 10 on ZFS</th>
+<th colspan="3" align="center">WinXP</th>
+<th colspan="2" align="center">Win7</th>
+</tr>
+<tr>
+<th align="center">clang 3.3 + libc++ 2013-12</th>
+<th align="center">clang 3.3 + libc++</th>
+<th align="center">VS2010</th>
+<th align="center">Mingw</th>
+<th align="center">Mingw-w64</th>
+<th align="center">VS2012</th>
+<th align="center">VS2013</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Build%20Linux%20clang%203.3%20%2B%20libc%2B%2B/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Build%20Linux%20clang%203.3%20%2B%20libc%2B%2B"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Build%20FreeBSD%2010%20clang%203.3/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Build%20FreeBSD%2010%20clang%203.3"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Build%20WinXP%20VS2010/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Build%20WinXP%20VS2010"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Build%20WinXP%20Mingw32/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Build%20WinXP%20Mingw32"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Build%20WinXP%20Mingw-w64/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Build%20WinXP%20Mingw-w64"></a></td>
+<td align="center">Known Working</td>
+<td align="center">Known Working</td>
+</tr>
+<tr>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20clang%203.1/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20clang%203.1"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Test%20Linux%20clang%203.3%20%2B%20libc%2B%2B/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20Linux%20clang%203.3%20%2B%20libc%2B%2B"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Test%20FreeBSD%2010%20clang%203.3/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20FreeBSD%2010%20clang%203.3"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Test%20WinXP%20VS2010/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20WinXP%20VS2010"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Test%20WinXP%20Mingw32/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20WinXP%20Mingw32"></a></td>
+<td align="center"><a href="https://ci.nedprod.com/job/Boost.AFIO%20Test%20WinXP%20Mingw-w64/" target="_top"><img src="https://ci.nedprod.com/buildStatus/icon?job=Boost.AFIO%20Test%20WinXP%20Mingw-w64"></a></td>
+<td align="center">Known Working</td>
+<td align="center">Known Working</td>
+</tr>
+</tbody>
+</table></div>
+<p>
+    </p>
+<h4>
+<a name="afio.compilation.h1"></a>
+      <span><a name="afio.compilation.boost_afio_installation"></a></span><a class="link" href="compilation.html#afio.compilation.boost_afio_installation">Boost
+      AFIO Installation</a>
+    </h4>
+<div class="orderedlist"><ol class="orderedlist" type="1">
+<li class="listitem">
+          Download the latest version of the Boost Libraries from boost.org. At the
+          time of writing the current version is Boost 1.56. Boost AFIO is not compatible
+          with versions of Boost earlier than 1.56 as this was the first Boost version
+          to become source code modularised.
+        </li>
+<li class="listitem">
+          Download Boost AFIO through GitHub at : <a href="https://github.com/BoostGSoC13/boost.afio" target="_top">https://github.com/BoostGSoC13/boost.afio</a>
+          We recommend using a git repository, as it will allow for future updates.
+          If you are unfamiliar with git, check the github website for instructions
+          on how to use git. This is a good place to start: <a href="https://help.github.com/articles/set-up-git" target="_top">https://help.github.com/articles/set-up-git</a>
+        </li>
+<li class="listitem">
+          POSIX: Assuming that your copy of Boost lives at /home/ned/boost and AFIO
+          lives at /home/ned/boost.afio, do:
+<pre class="programlisting"><span class="identifier">cd</span> <span class="special">/</span><span class="identifier">home</span><span class="special">/</span><span class="identifier">ned</span><span class="special">/</span><span class="identifier">boost</span><span class="special">/</span><span class="identifier">libs</span>
+<span class="identifier">ln</span> <span class="special">-</span><span class="identifier">s</span> <span class="special">/</span><span class="identifier">home</span><span class="special">/</span><span class="identifier">ned</span><span class="special">/</span><span class="identifier">boost</span><span class="special">.</span><span class="identifier">afio</span> <span class="identifier">afio</span>
+<span class="identifier">cd</span> <span class="special">..</span>
+<span class="special">./</span><span class="identifier">b2</span> <span class="identifier">headers</span>
+<span class="special">./</span><span class="identifier">b2</span> <span class="identifier">libs</span><span class="special">/</span><span class="identifier">afio</span><span class="special">/</span><span class="identifier">build</span>
+</pre>
+        </li>
+<li class="listitem">
+          WINDOWS: Assuming that your copy of Boost lives at <code class="computeroutput"><span class="identifier">C</span><span class="special">:\</span><span class="identifier">Users</span><span class="special">\</span><span class="identifier">ned</span><span class="special">\</span><span class="identifier">boost</span></code>
+          and AFIO lives at <code class="computeroutput"><span class="identifier">C</span><span class="special">:\</span><span class="identifier">Users</span><span class="special">\</span><span class="identifier">ned</span><span class="special">\</span><span class="identifier">boost</span><span class="special">.</span><span class="identifier">afio</span></code>, do:
+<pre class="programlisting"><span class="identifier">cd</span> <span class="special">\</span><span class="identifier">Users</span><span class="special">\</span><span class="identifier">ned</span><span class="special">\</span><span class="identifier">boost</span><span class="special">\</span><span class="identifier">libs</span>
+<span class="identifier">mklink</span> <span class="special">/</span><span class="identifier">j</span> <span class="identifier">afio</span> <span class="identifier">C</span><span class="special">:\</span><span class="identifier">Users</span><span class="special">\</span><span class="identifier">ned</span><span class="special">\</span><span class="identifier">boost</span><span class="special">.</span><span class="identifier">afio</span>
+<span class="identifier">cd</span> <span class="special">..</span>
+<span class="identifier">b2</span> <span class="identifier">headers</span>
+<span class="identifier">b2</span> <span class="identifier">libs</span><span class="special">/</span><span class="identifier">afio</span><span class="special">/</span><span class="identifier">build</span>
+</pre>
+        </li>
+<li class="listitem">
+          <p>
+            If you'd also like to execute the unit test suite, do:
+          </p>
+<pre class="programlisting"><span class="identifier">b2</span> <span class="identifier">libs</span><span class="special">/</span><span class="identifier">afio</span><span class="special">/</span><span class="identifier">test</span>
+</pre>
+        </li>
+<li class="listitem">
+          <p>
+            Similar if you'd like to build documentation, do:
+          </p>
+<pre class="programlisting"><span class="identifier">cd</span> <span class="identifier">doc</span>
+<span class="special">../</span><span class="identifier">b2</span> <span class="special">../</span><span class="identifier">libs</span><span class="special">/</span><span class="identifier">afio</span><span class="special">/</span><span class="identifier">doc</span>
+<span class="special">../</span><span class="identifier">b2</span> <span class="special">../</span><span class="identifier">libs</span><span class="special">/</span><span class="identifier">afio</span><span class="special">/</span><span class="identifier">doc</span> <span class="identifier">pdf</span>
+</pre>
+          <p>
+            I may be missing something, but the pdf appears inside bin.v2, not in
+            pdf for some reason. Note that the PDF has some significant formatting
+            problems.
+          </p>
+        </li>
+<li class="listitem">
+          Thanks to modular Boost, AFIO is now exactly the same as any other Boost
+          library and can be used in exactly the same way as if AFIO were already
+          part of Boost.
+        </li>
+</ol></div>
+<h4>
+<a name="afio.compilation.h2"></a>
+      <span><a name="afio.compilation.running_the_unit_tests"></a></span><a class="link" href="compilation.html#afio.compilation.running_the_unit_tests">Running
+      the Unit Tests</a>
+    </h4>
+<p>
+      To run the unit tests with <span class="bold"><strong>bjam</strong></span>, run <span class="bold"><strong>b2</strong></span> from the command line from inside the <span class="bold"><strong>libs/afio/tests</strong></span>
+      directory. This will run the entire suite of unit tests. Remember that this
+      requires that you have Boost.Build properly installed on your system. Please
+      consult boost.org for instructions on how to install Boost.Build. <a href="http://www.boost.org/doc/libs/1_54_0/doc/html/bbv2/installation.html" target="_top">http://www.boost.org/doc/libs/1_54_0/doc/html/bbv2/installation.html</a>
+    </p>
+<p>
+      There are a few command line arguments being used for the unit tests at the
+      moment. These won&#8217;t be available as the project nears completion, but they
+      serve a useful purpose for the project at the moment.
+    </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem">
+          <span class="bold"><strong>--link-test</strong></span>: will only compile and link
+          the test files. This option can be combined with the <span class="bold"><strong>--test=</strong></span>
+          option to only compile and link a specific subset of unit tests. Note that
+          <span class="bold"><strong>--link-test</strong></span> supersedes <span class="bold"><strong>--test-all</strong></span>
+          and <span class="bold"><strong>--test-each</strong></span> options, and cannot be
+          combined with the other tests.
+        </li>
+<li class="listitem">
+          <span class="bold"><strong>--running-on-ci</strong></span>: will compile, link and
+          execute only those tests which don't use <code class="computeroutput"><span class="identifier">fsync</span><span class="special">()</span></code>.
+        </li>
+<li class="listitem">
+          <span class="bold"><strong>--lto</strong></span>: perform link-time code assembly.
+          On POSIX with clang, you NEED the gold linker installed for LTO to work
+          - otherwise it appears to work, but in fact is doing a normal link.
+        </li>
+<li class="listitem">
+          <span class="bold"><strong>--test-all</strong></span>: will run a comprehensive unit
+          tests that combines all the other unit tests into a single continuous test.
+          This is useful to detect errors that will only show up at longer running
+          times. Note that <span class="bold"><strong>--test-each</strong></span> is not compatible
+          with this option.
+        </li>
+<li class="listitem">
+          <span class="bold"><strong>--test-each</strong></span>: will run a series of individually
+          compiled unit tests in succession. This option forgoes the lengthy monolithic
+          test-suite in favor of a series of small tests. This option can be combined
+          with the <span class="bold"><strong>--test=</strong></span> option to only run a
+          specific subset of unit tests. Note that <span class="bold"><strong>--test-all</strong></span>
+          is not compatible with this option.
+        </li>
+<li class="listitem">
+          <span class="bold"><strong>--test=</strong></span>: will use only the test files
+          designated by the string following this flag.
+        </li>
+</ul></div>
+<p>
+      For example:
+    </p>
+<pre class="programlisting">
+    b2 link=static toolset=gcc --test="first_test.cpp second_test.cpp"
+
+</pre>
+<p>
+      will only compile and run only the tests in <code class="computeroutput"><span class="identifier">first_test</span><span class="special">.</span><span class="identifier">cpp</span></code> and
+      <code class="computeroutput"><span class="identifier">second_test</span><span class="special">.</span><span class="identifier">cpp</span></code>. All other unit tests will be ignored,
+      and all other command-line options still apply.
+    </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2013, 2014 Niall Douglas and Paul Kirth<p>
+        Distributed under the Boost Software License, Version 1.0. (See accompanying
+        file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="design/acid_write_ordering/write_ordering_data.html"><img src="../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../afio.html"><img src="../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../afio.html"><img src="../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="quickstart.html"><img src="../../../doc/src/images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

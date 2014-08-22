@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structboost_1_1afio_1_1detail_1_1enable__if__async__op" kind="struct" prot="public">
+    <compoundname>boost::afio::detail::enable_if_async_op</compoundname>
+    <templateparamlist>
+      <param>
+        <type>bool</type>
+        <declname>is_all</declname>
+        <defname>is_all</defname>
+      </param>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1841" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1840" bodyend="1843"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

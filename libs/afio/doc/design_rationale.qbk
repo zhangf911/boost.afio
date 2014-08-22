@@ -1,0 +1,379 @@
+[/==============================================================================
+    Use, modification and distribution is subject to the Boost Software License,
+    Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at
+    http://www.boost.org/LICENSE_1_0.txt)
+===============================================================================/]
+
+[section:design Design Rationale]
+
+__boost_afio__ came about out of the need for a scalable, high performance, portable asynchronous
+file i/o implementation library for a forthcoming filing system based graph store ACID compliant transactional
+persistence layer called __triplegit__ __dash__ call it a ["SQLite3 but for graphstores][footnote The
+[@http://unqlite.org/ UnQLite embedded NoSQL database engine] is exactly one of those of course.
+Unfortunately I intend TripleGit for implementing portable Component Objects for
+C++ extending C++ Modules, which means I need a database engine suitable for incorporation into
+a dynamic linker, which unfortunately is not quite UnQLite.]. The fact that a portable
+asynchronous file i/o library for C++ was needed at all came as a bit of a surprise: one
+thinks of these things as done and dusted decades ago, but it turns out that the fully featured
+[@http://nikhilm.github.io/uvbook/filesystem.html libuv], a C library, is good enough for most
+people needing portable asynchronous file i/o. However as great as libuv is, it isn't very C++-ish, and
+hooking it in with __boost_asio__ (parts of which are expected to enter the ISO C++ language
+standard) isn't particularly clean. I therefore resolved to write a native Boost asynchronous
+file i/o implementation, and keep it as simple as possible.
+
+__boost_afio__ is actually, of course, really a different take on Google's __WG21_N3562__
+and Microsoft's __WG21_N3634__. Both Google and Microsoft, like many other big iron C++ users, have much need to
+asynchronously execute large numbers of closures (bound function objects) with various
+dependencies between the completion of one or more closures before allowing the starting of
+one or more other closures. What one effectively does is to create a ['dependency chain]
+of small items to be executed, and then fire as many compute resources as possible at
+those chains, with the engine executing as many of them simultaneously as is permitted by the requirements
+of the dependency chains. __boost_afio__ differs from N3562 by directly extending Boost.ASIO,
+so if you're already using Boost.ASIO to do your networking, well it's a real cinch to
+add in asynchronous closure execution e.g. ["if a packet of data arrives, do this set of
+operations according to this dependency chain]. __boost_afio__ differs from N3634 by going
+a lot further than N3634 does by having explicit support for both Boost.ASIO and
+targeted file i/o support infrastructure. __boost_afio__ therefore lies somewhere in
+between N3562 and N3634 in terms of complexity, but instead of specifying a new system
+of executors it uses Boost.ASIO central dispatch engine as the executor.
+
+For v1.0, AFIO used a simple dispatch engine which kept the extant ops in a hash table,
+and the entire dispatch engine was protected by a single giant and recursive mutex. Performance
+never exceeded about 150k ops/sec maximum on a four core Intel Ivy Bridge CPU.
+
+That performance was embarrassing, so for v1.1 the entire engine was rewritten using vast
+numbers of atomics to be completely lock free, and very nearly wait free if it weren't for the thin spin locks around the central
+ops hash table (which are replaced with memory transactions if Intel TSX extensions are
+available, with support for `__transaction_relaxed` compilers if `BOOST_HAVE_TRANSACTIONAL_MEMORY_COMPILER`
+is defined). Now performance
+can reach 1.5m ops/sec on a four core Intel Ivy Bridge CPU, or more than half of Boost.ASIO's
+maximum dispatch rate, which probably means AFIO is close to optimal now, at least without
+having to replace the use of STL multithreading facilities and the system memory allocator
+with more exotic varieties.
+
+For the v1.2 engine, another large refactor was done, this time to substantially simplify the
+engine by removing the use of `std::packaged_task<>` completely, replacing it with a
+new intrusive-capable `enqueued_task<>` which permits the engine to early out in many cases,
+plus allowing the consolidation of all synchronisation points to just two: one in dispatch,
+and one other in completion, which is now optimal. Performance of the non-TSX engine rose
+by about 20% over the v1.1 engine, plus AFIO is now fully clean on all race detecting tools.
+
+
+[section:overview A quick overview of the design]
+
+__boost_afio__ version 1 is amongst the smallest standalone libraries in the Boost C++ libraries.
+Its total active lines of code is around 1,000 lines, and implementing its documentatation and
+other associated necessities for Boost peer review took longer than writing and debugging
+the code itself. Yet despite its shortness of length, AFIO has some unusual design choices,
+and probably what some might initially think (before they've used it) is an unintuitive API.
+
+Some quick terminology:
+
+* __afio_op__ is a reference to a scheduled operation. I'll call this an ["op reference] or just
+plain ["op] from now on for convenience. There can be many op references, but only one unique op.
+You can distinguish between ops using their dispatcher parent pointer and the id field, which
+is always a unique non-zero `size_t` value[footnote Until, that is, a `size_t` wraps. The code
+handles this correctly by the way, always ensuring every newly allocated integer id is always
+non-zero and always not yet in the hash table of currently known operations.]. An op's id
+is guaranteed to be unique within its dispatcher until its last op reference is destructed, at
+which point that id becomes available for reuse.
+* __afio_when_all__ returns a future which will become
+ready when all the ops passed in as input have completed. One can therefore wait for
+a given set of ops to complete using `when_all(ops).wait()`.
+* __afio_barrier__ schedules a synchronisation
+of its input batch of ops by only completing any of its output batch (which is a duplicate of its input)
+when the very last one of its inputs completes. This is effectively an asynchronous
+`when_all()`.
+
+Here were the design imperatives underpinning the AFIO design:
+
+# Everything, absolutely everything happens asynchronously. If you want synchronous,
+wait for the asynchronous operation to complete (and make this easy to program, see above).
+
+# Everything, absolutely everything is batch. This is one of my big bugbears with filing
+system API design: they do everything in units of a single file operation at a time (with
+the notable exception of the `readv()` and `writev()` scatter/gather file i/o family of
+POSIX functions). Yet, and especially if it's within the same directory, a batch API
+can be [*very] significantly faster than a multitude of single APIs.
+ 
+ As much as AFIO is as constrained by the system-level filing system API as anyone else,
+ AFIO employs a thread source (which is probably a thread pool, but could be anything)
+ as a crude, universally portable method of dispatching multiple filing system
+ operations at the same time. For those platforms which support a less crude method of
+ delivering batches of filing system operations e.g. an actual batch API, that is
+ used instead. Additionally, micro-kernel platforms are always able to multiplex ['any] set
+ of asynchronous syscalls using a single thread, so for those platforms no thread pool
+ is needed at all.
+ 
+# Error reporting [*always] follows the ["earliest possible reporting] rule. As absolutely
+everything is asynchronous in AFIO, that also means that exception handling also occurs
+asynchronously. So how are exceptions delivered to something which might make use of them?
+The rules are as follows:
+ # If you try to use an op reference as an input and that reference is
+ errored at the point of use, the exception contained by that op is immediately rethrown.
+ # If you use an op reference that has not yet completed (and therefore its error state
+ is currently unknown) as an input to a `when_all()` function, and that input later errors
+ during the wait, if that `when_all()` function is not a `std::nothrow_t` variant the
+ exception will be rethrown at the point that one waits on the future returned by the
+ `when_all()`.
+ # If you schedule an operation with a precondition which errors, that exception is
+ [*NOT] propagated to its dependencies. This is because you usually don't want that to
+ happen e.g. if you run out of disc space during a write, you don't want all further
+ operations to fail. If your dependent operation really needs to know if its preceding
+ operation errored, just go ahead and check for it manually using the `h` member which
+ is a shared_ptr to a future __dash__ if that future contains an exception, your precondition
+ has errored[footnote There is a single exception to this: where an immediate completion
+ handler is being invoked from an operation which has errored. See [link afio.advanced_topics.custom_completion_handler
+ reference documentation] on this.].
+ # The only exception to the preceding rule is the `barrier()` call which [*DOES] propagate
+ errored state to its output. Something which catches a lot of people is that the first
+ rule also applies to `barrier()`, so if an input op is errored on entry to `barrier()`,
+ it rethrows there and then, but if that input op errored a microsecond after the
+ `barrier()` started, then it does not rethrow but instead propagates the errored state
+ into its output.
+
+# Keep things very, very simple for this first version of AFIO. That means no direct ACL nor
+permissions support, no direct ability to cancel scheduled operations, no direct ability
+to delay scheduling (e.g. on the basis of a timer) etc. What you get is the bare essentials,
+but it is very straightforward to wrap up functionality from __boost_filesystem__ or
+__boost_iostreams__ as an asynchronous closure operation using __afio_call__, and timers
+are provided already by __boost_asio__ which can be wrapped as preconditions for other
+operations.
+
+ It also means that we use the native standard C++ library multithreading facilities
+ (with the exception of futures and promises where we always currently use Boost's
+ implementations due to their much superior feature set). These are not as fast
+ as custom written support could be, but they do have the big advantage of enabling easy
+ interoperation with other C++ code. Besides, as libraries such as __boost_afio__ start to
+ tax standard C++ library multithreading implementations in novel ways, I am sure that
+ the performance penalty will decrease over time as STL vendors do their tuning.
+
+# Assume a certain amount of long-implemented C++11 features which have been around for at
+least three years in all major compilers, like the `auto` keyword, move construction (i.e.
+rvalue references) and lambdas (which are obviously useful for convenient closure writing).
+This is important, because while AFIO won't compile with C++03
+compilers and probably never will (which some will feel is a big problem), we can make use of returning fairly oblique and lengthy
+to type return types which won't bother the programmer because they'll be using `auto`
+for return types. Similarly, we pass around plenty of `std::vector<async_io_op>` by
+['value] as a convenient lightweight batch op container which would ordinarily be suicidal for
+performance under C++03, but under C++11 the compiler simply move constructs the contents
+by swapping as little as sixteen bytes [footnote Note that on older compilers with
+earlier versions of C++11 support, automatic use of move construction where a copy
+constructor is also available isn't implemented. We try to use `std::move()` where
+we can to help the compiler, but in truth there is no substitute for a modern C++11
+implementation.]. On top of that, passing around by value lets the compiler easily perform alias optimisations
+with no need for a `restrict` keyword, so in general AFIO passes things around by value
+wherever possible and lets the compiler figure out the optimal course of action.
+
+# Lastly, even though no filing system known to this author currently supports such a
+feature, __boost_afio__ implements ['write ordering constraints] at the whole file level
+as well as the traditionally supported individual write level. This part will need some
+explaining, so it gets a whole section to itself.
+
+[endsect] [/overview]
+
+[section:acid_write_ordering Write ordering constraints, and how these can
+be used to achieve some of the Durability in ACID without needing `fsync()`]
+
+[*ACID] stands for Atomic Consistent Isolated Durable, and it is a key requirement for
+database implementations which manage data you don't want to lose, which tends to be
+a common use case in databases. Whilst achieving all four is non-trivial, achieving Durability is
+simultaneously both the easiest and the hardest of the four. This is because the easy
+way of ensuring durability is to always wait for each write to reach non-volatile storage,
+yet such a naive solution is typically exceptionally slow. Achieving performant
+data durability is without doubt a wicked hard problem in computer science.
+
+Because a majority of users of __boost_afio__ are going to be people needing
+some form of data persistence guarantees, this section is a short essay on the current
+state of data persistence on various popular platforms. Any errors or omissions, both
+of which are probable, are entirely the fault of this author Niall Douglas. Note also that
+the forthcoming information was probably correct around the summer of 2013, and it highly
+likely to become less correct over time as filing system implementations evolve.
+
+[section:background Background]
+
+Filing system implementations traditionally offer three methods of ensuring that writes
+have reached non-volatile storage:
+
+# The family of `fsync()` or its equivalent functions, which flush any cached written
+data not yet stored onto non-volatile storage. These are usually synchronous operations,
+in that they do not return until they have finished. A big caveat with these functions
+is that some filing systems e.g. ext3 flush ['every] bit of pending write data for
+the filing system instead of just the pending writes for the file handle specified i.e. they
+are equivalent to a synchronous `sync()` as described below.
+
+# The family of `O_SYNC` or its equivalent per file handle flags, which simply
+disable any form of write back caching. These usually make all data write functions
+not return until written data has reached non-volatile storage. This flag, for all intents
+and purposes, effectively asks for ["old fashioned] filing system behaviour.
+
+# The whole filing system cached written data flush, often performed by a function
+like `sync()`. Unlike the previous two, this is usually an asynchronous operation
+and there is usually no portable way of knowing when it has completed. Nevertheless,
+it is important because on traditional Unix implementations data persistence is simply
+`sync()` on a regular period cronjob, and while modern Unix implementations usually
+no longer do this, the end implementation has not fundamentally changed much[footnote
+The main change is that individual writes get an individual lifetime before they must
+be written to storage rather flushing everything according to some external wall clock.].
+
+There is also the matter of the difference between data and ['meta]data: metadata
+is the stuff a filing system stores such that it knows about your data. For each
+of the first two of the above three families of functions, most systems provide
+three variants: flush metadata, flush data, and flush both metadata and data, so
+for clarity:
+
+[table:data_persistence_types Mechanisms for enforcing data persistence onto physical storage
+  [[][Flush file metadata][Flush file data][Flush both metadata and data]]
+  [[Once off][`fsync(parentdir_fd)`][`fdatasync(fd)`][`fsync(fd)`]]
+  [[Always][Varies[footnote Many filing systems (NTFS, HFS+, ext3/4 with `data=ordered`) keep back a metadata flush until when a file handle close causes data to finish reaching physical storage. This ensures that file entries don't appear in directories with zero sizes.]][`fcntl(fd, F_SETFL, O_DSYNC)`][`fcntl(fd, F_SETFL, O_SYNC)`]]
+]
+
+In addition to manually flushing data to physical storage, every filing system also
+implements some form of timer based flush whereby a piece of written data will always
+be sent to physical storage within some predefined period of time after the write.
+Most filing systems implement different timeouts for metadata and data, but typically
+on almost all production filing systems __dash__ unless they are in a power-saving laptop mode --
+any data write is guaranteed to be sent to non-volatile storage within one minute.
+Let me be clear here for later argument's sake: ['the filing system is allowed to
+reorder writes by up to one minute in time from the order in which they were issued].
+Or put another way, most filing systems have a one minute temporal constraint on
+write order.
+
+Most people think of `fsync()`, `O_SYNC` and `sync()` in terms of flushing caches.
+An alternative way of thinking about them is that they ['impose an order on
+writes] to non-volatile storage which acts above and beyond the timeout based write order. There
+is no doubt that they are a very crude and highly inefficient way of doing so because
+they are all or nothing, but they do open the option of ['emulating]
+native filing system support for write ordering constraints when nothing else better
+is available. So why is the ability to constrain write ordering important?
+
+[endsect] [/background]
+
+[section:write_ordering_data Write ordering data and durability: why does it matter?]
+
+Implementing performant Durability essentially reduces down to answering two questions: (i) how long does it take to restore
+a consistent state after an unexpected power loss, and (ii) how much of your most recent data are
+you willing to lose? AFIO has been designed and written as the asynchronous file i/o
+portability layer for the forthcoming direct
+filing system graphstore database __triplegit__ which, like as with ZFS, implements late Durability i.e.
+you are guaranteed that your writes from some wall clock distance from now can never
+be lost. As discussing how TripleGit will use AFIO is probably useful to many others,
+that is what the remainder of this section does.
+
+__triplegit__ will achieve the Consistent and Isolated parts of being a reliable database by placing
+abortable, garbage collectable concurrent writes of new data into separate files, and pushing
+the atomicity enforcement into a very small piece of ordering logic in order to reduce
+transaction contention by multiple writers as much as possible.
+The ordering logic will make use of an atomic append only intent log which records what
+the database intends to do (and generally you want that intent log on as low latency
+a device as possible) __dash__ and usefully every major filing system supports
+atomic appends to a file. If you wish to never lose most recent data, to implement a transaction
+one (i) writes one's data to the filing
+system, (ii) ensure it has reached non-volatile storage, (iii) appends the knowledge it
+definitely is on non-volatile storage to the intent log, and then (iv) ensure one's
+append also has reached non-volatile storage. This is presently the only way to ensure
+that valuable data definitely is never lost on any filing system that I know of. The obvious
+problem is that this method involves writing all your data with `O_SYNC` and using `fsync()`
+on the intent log. This might perform okay with a single writer, but with multiple
+writers performance is usually awful, especially on storage incapable of high
+queue depths and potentially many hundreds of milliseconds of latency (e.g. SD Cards).
+Despite the performance issues, there are many valid use cases for especially precious
+data, and TripleGit of course will offer such a facility, at both the per-graph and per-update
+levels.
+
+__triplegit__'s normal persistence strategy is a bit more clever: write all your data, but keep a hash like a SHA of its contents
+as you write it[footnote TripleGit actually uses a different, much faster 256 bit hash by
+default, but one can force use of SHA256 on a per-graph basis.]. When you write your intent log,
+atomically append all the SHAs of the items
+you just wrote and skip `O_DATA` and `fsync()` completely. If power gets removed
+before all the data is written to non-volatile storage, you can figure out that
+the database is dirty easily enough, and you simply parse from the end of the intent
+log backwards, checking each item's contents to ensure their SHAs match up, throwing
+away any transaction where any file is missing or any file's contents don't match.
+On a filing system such as ext4 where data is guaranteed to be sent to non-volatile
+storage after one minute[footnote This is the default, and it may be changed by a
+system e.g. I have seen thirty minutes set for laptops. Note that the Linux-specific
+call `syncfs()` lets one artifically schedule whole filing system flushes.], and of
+course so long as you don't mind losing up to one
+minute's worth of data, this solution can have much better performance than the
+previous solution with lots of simultaneous writers.
+
+The problem though is that while better, performance is still far less than optimal.
+Firstly, you have to calculate a whole load of hashes all the time, and that isn't trivial
+especially on lower end platforms like a mobile phone where 25-30 cycles per byte
+SHA256 performance might be typical. Secondly, dirty database reconstruction is
+rather like how ext2 had to call `fsck` on boot: a whole load of time and i/o
+must be expended to fix up damage in the store, and while it's running one generally
+must wait.
+
+What would be really, really useful is if the filing system exposed its internal
+write ordering constraint implementation to user mode code, so one could say ["schedule writing A, B,
+C and D in any order whenever you get round to it, but you ['must] write all
+of those before you write any of E, F and G]. Such an ability gives maximum
+scope to the filing system to reorder and coalesce writes as it sees fit,
+but still allows database implementations to ensure that a transaction's intent
+log entry can never appear without all the data it refers to. Such an ability
+would eliminate the need for expensive dirty database checking and reconstruction,
+or the need for any journalling infrastructure used to skip the manual integrity checking.
+
+Unfortunately I know of no filing system which makes publicly available such
+a facility. The closest that I know of is ZFS which internally uses a concept of transaction
+groups which are, for all intents and purposes, partial whole filing system snapshots issued once every
+five seconds. Data writes may be reordered into any order within
+a transaction group, but transaction group commits are strongly tied to the wall
+clock and are [*always] committed sequentially. Since the
+addition of the ZFS Write Throttle, the default settings are to accept new writes
+as fast as RAM can handle, buffering up to
+thirty wall clock seconds of writes before pacing the acceptance of new write data to match
+the speed of the non-volatile storage (which may be a ZFS Intent Log (ZIL) device if you're doing
+synchronous writes). This implies up to
+thirty seconds of buffered data could be lost, but note that ZFS still guarantees
+transaction group sequential write order. Therefore, what ZFS is in fact guaranteeing
+is this: ["we may reorder your write by up to five seconds away from the sequence
+in which you wrote it and other writes surrounding it. Other than that, we guarantee
+the order in which you write is the order in which that data reaches physical storage.]
+[footnote Source: [@http://www.c0t0d0s0.org/archives/5343-Insights-into-ZFS-today-The-nature-of-writing-things.html]]
+
+What this means is this: on ZFS, TripleGit can turn off all write synchronisation and
+replace it with a five second delay between writing new data and updating the intent log,
+and in so doing guaranteeing that the intent log's contents will [*always] refer to data
+definitely on storage (or rather, close enough that one need not perform a lot of repair
+work on first use after power loss). One can additionally skip SHA hashing because ZFS guarantees file and metadata will always match and as TripleGit always
+copy on writes data, either a copy's length matches the intent log's or it doesn't (i.e.
+the file's length as reported by the filing system really is how much true data it contains), plus the file
+modified timestamp always reflects the actual last modifed timestamp of the data.
+
+Note that ext3 and ext4 can also guarantee that file and metadata will always match using
+the (IOPS expensive) mount option `data=journal`, which can be detected from `/proc/mounts`.
+If combined with the proprietary Linux call `syncfs()`, one can reasonably emulate ZFS's
+behaviour, albeit rather inefficiently.
+
+Sadly, most use of __triplegit__ and __boost_afio__ will be without the luxury of ZFS, so here
+is a quick table of power loss data safety. Once again, I reiterate that errors and omissions are my fault alone.
+[*Any help which can be supplied in filling in the unknowns in this table would be hugely appreciated].
+
+[table:power_loss_safety Power loss safety matrix: What non-trivially reconstructible data can you lose if power is suddenly lost?
+  [[][[role aligncenter Metadata no longer matches data[footnote This doesn't mean that metadata is corrupted,
+  this means for example that a file is said to have 100Kb but is in fact partially garbage because metadata was updated before data was fully changed on storage.]]][[role aligncenter Newly created file content corrupted]][[role aligncenter File data content rewrite corrupted]][[role aligncenter Default max seconds of writes reordered without using `fsync()`]][[role aligncenter Default max seconds of writes lost]]]
+  [[[role alignright FAT32]][__itick__][__itick__][__itick__][[role aligncenter ?]][[role aligncenter ?]]]
+  [[[role alignright ext2]][__itick__][__itick__][__itick__][[role aligncenter 5]][[role aligncenter 5]]]
+  [
+    [[role alignright ext3/4 `data=writeback`]][__itick__][__itick__][__itick__]
+    [[role aligncenter 5[footnote This is the `commit` mount setting. Source: [@https://www.kernel.org/doc/Documentation/filesystems/ext4.txt]]]]
+    [[role aligncenter 30[footnote This is the `/proc/sys/vm/dirty_expire_centiseconds` value. Source: [@http://www.westnet.com/~gsmith/content/linux-pdflush.htm]]]]
+  ]
+  [[[role alignright ext3/4 `data=ordered` (default)]][__icross__][__icross__][__itick__][[role aligncenter 5]][[role aligncenter 30]]]
+  [[[role alignright UFS + soft updates[footnote Source: [@http://www.freebsd.org/cgi/man.cgi?query=syncer]]]][__icross__][__icross__][__itick__][[role aligncenter 30]][[role aligncenter 30]]]
+  [[[role alignright HFS+]][__icross__][__icross__][__itick__][[role aligncenter ?]][[role aligncenter ?]]]
+  [[[role alignright NTFS[footnote Source: [@http://technet.microsoft.com/en-us/library/bb742613.aspx]]]][__icross__][__icross__][__itick__][[role aligncenter Until idle or write limit]][[role aligncenter Until idle or write limit]]]
+  [[[role alignright ext3/4 `data=journal`]][__icross__][__icross__][__icross__][[role aligncenter 5]][[role aligncenter 5]]]
+  [[[role alignright BTRFS[footnote Source: [@https://wiki.archlinux.org/index.php/Btrfs]]]][__icross__][__icross__][__icross__][[role aligncenter 30]][[role aligncenter 30]]]
+  [[[role alignright ZFS]][__icross__][__icross__][__icross__][[role aligncenter 5]][[role aligncenter 30]]]
+]
+
+
+[endsect] [/write_ordering_data]
+
+[endsect] [/acid_write_ordering]
+
+[endsect] [/ end of section Design Rationale]

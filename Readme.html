@@ -1,8 +1,5 @@
-<html><head><title>Boost.AFIO documentation</title><body>
-<h1>Boost.AFIO documentation</h1>
-<p><a href="doc/html/afio.html">BoostBook format documentation</a></p>
-<p><a href="html/index.html">Doxygen format documentation</a></p>
-<p></p>
+<p align="center">
+<a href="https://ci.nedprod.com/view/All/job/Boost.AFIO%20Build%20Peer%20Review%20Documentation/Boost.AFIO_Documentation">Documentation can be found here</a>
 </p>
 <h3 align="center">
 Boost.AFIO Jenkins CI status:
@@ -98,5 +95,3 @@ Boost.AFIO Jenkins CI status:
 </table>
 
 </center>
-
-</body></html>

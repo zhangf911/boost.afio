@@ -4,6 +4,6 @@
     <compoundname>index</compoundname>
     <title>Boost.AFIO</title>
     <detaileddescription>
-<para>Welcome to the Boost.AFIO documentation. You may find the more formal documentation at <ulink url="https://ci.nedprod.com/view/All/job/Boost.AFIO%20Build%20Documentation/Boost.AFIO_Documentation/?">https://ci.nedprod.com/view/All/job/Boost.AFIO%20Build%20Documentation/Boost.AFIO_Documentation/?</ulink> of use. It also includes a full reference manual. </para>    </detaileddescription>
+<para>Welcome to the Boost.AFIO documentation. You may find the more formal documentation at <ulink url="http://boostgsoc13.github.io/boost.afio/">http://boostgsoc13.github.io/boost.afio/</ulink> of use. It also includes a full reference manual. </para>    </detaileddescription>
   </compounddef>
 </doxygen>

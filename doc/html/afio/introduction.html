@@ -4,9 +4,9 @@
 <title>Introduction</title>
 <link rel="stylesheet" href="../../../libs/afio/doc/html/myboostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
-<link rel="home" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.2">
-<link rel="up" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.2">
-<link rel="prev" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.2">
+<link rel="home" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
+<link rel="up" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
+<link rel="prev" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
 <link rel="next" href="design.html" title="Design Rationale">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -27,11 +27,27 @@
 <a name="afio.introduction"></a><a class="link" href="introduction.html" title="Introduction">Introduction</a>
 </h2></div></div></div>
 <p>
-      Boost.AFIO is a linear scalable, batch, chainable, asynchronous closure execution
-      engine with an almost wait free implementation<sup>[<a name="afio.introduction.f0" href="#ftn.afio.introduction.f0" class="footnote">1</a>]</sup> extending <a href="http://www.boost.org/libs/asio/" target="_top">Boost.ASIO</a>
-      and <a href="http://www.boost.org/libs/thread/" target="_top">Boost.Thread</a> specialised
-      as a portable asynchronous file i/o implementation library. Implementation
-      of this first version has been kept as simple as possible (~ 1000 active LOC)
+      Boost.AFIO is a C++ library which lets you schedule a dependency graph of synchronous
+      input/output operations to be executed asynchronously to the maximum capacity
+      of your hardware. Its execution engine is lock free and wait free<sup>[<a name="afio.introduction.f0" href="#ftn.afio.introduction.f0" class="footnote">1</a>]</sup> and scales linearly with CPU cores<sup>[<a name="afio.introduction.f1" href="#ftn.afio.introduction.f1" class="footnote">2</a>]</sup>. In addition to a pure portable POSIX file i/o backend, specialised
+      file i/o backends making use of host OS asynchronous file i/o facilities are
+      provided for:
+    </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem">
+          Windows NT IOCP (since v1.0)
+        </li>
+<li class="listitem">
+          Linux KAIO (planned for v1.3)
+        </li>
+<li class="listitem">
+          POSIX AIO, suitable for BSD only (planned for v1.4)
+        </li>
+</ul></div>
+<p>
+      Boost.AFIO extends <a href="http://www.boost.org/libs/asio/" target="_top">Boost.ASIO</a>
+      and provides an alternative way of programming with ASIO. Implementation of
+      this first version has been kept as simple as possible (~ 1000 active LOC)
       at the cost of some performance, though with a good modern compiler <a class="link" href="FAQ/closure_performance.html" title="What is the maximum throughput of AFIO's closure execution engine aka how many IOPS can I push with AFIO?">you
       can expect 50-70% of the throughput of using raw Boost.ASIO</a> at a latency
       of <a class="link" href="FAQ/closure_latency.html" title="What is the latency of AFIO's closure execution engine aka how quickly can I push a single op with AFIO?">about 10,000 CPU cycles to get
@@ -125,8 +141,10 @@
 <div class="footnotes">
 <br><hr width="100" align="left">
 <div class="footnote"><p><sup>[<a id="ftn.afio.introduction.f0" href="#afio.introduction.f0" class="para">1</a>] </sup>
-        It is wait free if your CPU supports memory transactions, apart from when
-        the memory allocator asks the kernel for more memory.
+        Its dependency Boost.ASIO may lock and wait.
+      </p></div>
+<div class="footnote"><p><sup>[<a id="ftn.afio.introduction.f1" href="#afio.introduction.f1" class="para">2</a>] </sup>
+        Tested up to a four core eight thread CPU.
       </p></div>
 </div>
 </div>

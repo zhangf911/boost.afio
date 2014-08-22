@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
-  <compounddef id="indexpage" kind="page">
-    <compoundname>index</compoundname>
-    <title>Boost.AFIO</title>
-    <detaileddescription>
-<para>Welcome to the Boost.AFIO documentation. You may find the more formal documentation at <ulink url="https://ci.nedprod.com/view/All/job/Boost.AFIO%20Build%20Documentation/Boost.AFIO_Documentation/?">https://ci.nedprod.com/view/All/job/Boost.AFIO%20Build%20Documentation/Boost.AFIO_Documentation/?</ulink> of use. It also includes a full reference manual. </para>    </detaileddescription>
-  </compounddef>
-</doxygen>

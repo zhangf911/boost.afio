@@ -4,7 +4,7 @@
 <title>A quick overview of the design</title>
 <link rel="stylesheet" href="../../../../libs/afio/doc/html/myboostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
-<link rel="home" href="../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
+<link rel="home" href="../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.2">
 <link rel="up" href="../design.html" title="Design Rationale">
 <link rel="prev" href="../design.html" title="Design Rationale">
 <link rel="next" href="acid_write_ordering.html" title="Write ordering constraints, and how these can be used to achieve some of the Durability in ACID without needing fsync()">
@@ -47,7 +47,7 @@
             be many op references, but only one unique op. You can distinguish between
             ops using their dispatcher parent pointer and the id field, which is
             always a unique non-zero <code class="computeroutput"><span class="identifier">size_t</span></code>
-            value<sup>[<a name="afio.design.overview.f0" href="#ftn.afio.design.overview.f0" class="footnote">4</a>]</sup>. An op's id is guaranteed to be unique within its dispatcher
+            value<sup>[<a name="afio.design.overview.f0" href="#ftn.afio.design.overview.f0" class="footnote">3</a>]</sup>. An op's id is guaranteed to be unique within its dispatcher
             until its last op reference is destructed, at which point that id becomes
             available for reuse.
           </li>
@@ -124,7 +124,7 @@
                   really needs to know if its preceding operation errored, just go
                   ahead and check for it manually using the <code class="computeroutput"><span class="identifier">h</span></code>
                   member which is a shared_ptr to a future &#8212; if that future
-                  contains an exception, your precondition has errored<sup>[<a name="afio.design.overview.f1" href="#ftn.afio.design.overview.f1" class="footnote">5</a>]</sup>.
+                  contains an exception, your precondition has errored<sup>[<a name="afio.design.overview.f1" href="#ftn.afio.design.overview.f1" class="footnote">4</a>]</sup>.
                 </li>
 <li class="listitem">
                   The only exception to the preceding rule is the <code class="computeroutput"><span class="identifier">barrier</span><span class="special">()</span></code> call which <span class="bold"><strong>DOES</strong></span>
@@ -173,7 +173,7 @@
             a convenient lightweight batch op container which would ordinarily be
             suicidal for performance under C++03, but under C++11 the compiler simply
             move constructs the contents by swapping as little as sixteen bytes
-            <sup>[<a name="afio.design.overview.f2" href="#ftn.afio.design.overview.f2" class="footnote">6</a>]</sup>. On top of that, passing around by value lets the compiler
+            <sup>[<a name="afio.design.overview.f2" href="#ftn.afio.design.overview.f2" class="footnote">5</a>]</sup>. On top of that, passing around by value lets the compiler
             easily perform alias optimisations with no need for a <code class="computeroutput"><span class="identifier">restrict</span></code>
             keyword, so in general AFIO passes things around by value wherever possible
             and lets the compiler figure out the optimal course of action.
@@ -188,19 +188,19 @@
 </ol></div>
 <div class="footnotes">
 <br><hr width="100" align="left">
-<div class="footnote"><p><sup>[<a id="ftn.afio.design.overview.f0" href="#afio.design.overview.f0" class="para">4</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.afio.design.overview.f0" href="#afio.design.overview.f0" class="para">3</a>] </sup>
               Until, that is, a <code class="computeroutput"><span class="identifier">size_t</span></code>
               wraps. The code handles this correctly by the way, always ensuring
               every newly allocated integer id is always non-zero and always not
               yet in the hash table of currently known operations.
             </p></div>
-<div class="footnote"><p><sup>[<a id="ftn.afio.design.overview.f1" href="#afio.design.overview.f1" class="para">5</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.afio.design.overview.f1" href="#afio.design.overview.f1" class="para">4</a>] </sup>
                     There is a single exception to this: where an immediate completion
                     handler is being invoked from an operation which has errored.
                     See <a class="link" href="../advanced_topics/custom_completion_handler.html" title="How to write your own custom AFIO completion handler">reference
                     documentation</a> on this.
                   </p></div>
-<div class="footnote"><p><sup>[<a id="ftn.afio.design.overview.f2" href="#afio.design.overview.f2" class="para">6</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.afio.design.overview.f2" href="#afio.design.overview.f2" class="para">5</a>] </sup>
               Note that on older compilers with earlier versions of C++11 support,
               automatic use of move construction where a copy constructor is also
               available isn't implemented. We try to use <code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">move</span><span class="special">()</span></code> where we can to help the compiler,

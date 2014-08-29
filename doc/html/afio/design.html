@@ -4,8 +4,8 @@
 <title>Design Rationale</title>
 <link rel="stylesheet" href="../../../libs/afio/doc/html/myboostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
-<link rel="home" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
-<link rel="up" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
+<link rel="home" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.2">
+<link rel="up" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.2">
 <link rel="prev" href="introduction.html" title="Introduction">
 <link rel="next" href="design/overview.html" title="A quick overview of the design">
 </head>
@@ -41,7 +41,7 @@
       Boost.AFIO came about out of the need for a scalable, high performance, portable
       asynchronous file i/o implementation library for a forthcoming filing system
       based graph store ACID compliant transactional persistence layer called TripleGit
-      &#8212; call it a <span class="quote">&#8220;<span class="quote">SQLite3 but for graphstores</span>&#8221;</span><sup>[<a name="afio.design.f0" href="#ftn.afio.design.f0" class="footnote">3</a>]</sup>. The fact that a portable asynchronous file i/o library for C++
+      &#8212; call it a <span class="quote">&#8220;<span class="quote">SQLite3 but for graphstores</span>&#8221;</span><sup>[<a name="afio.design.f0" href="#ftn.afio.design.f0" class="footnote">2</a>]</sup>. The fact that a portable asynchronous file i/o library for C++
       was needed at all came as a bit of a surprise: one thinks of these things as
       done and dusted decades ago, but it turns out that the fully featured <a href="http://nikhilm.github.io/uvbook/filesystem.html" target="_top">libuv</a>, a C library,
       is good enough for most people needing portable asynchronous file i/o. However
@@ -101,7 +101,7 @@
     </p>
 <div class="footnotes">
 <br><hr width="100" align="left">
-<div class="footnote"><p><sup>[<a id="ftn.afio.design.f0" href="#afio.design.f0" class="para">3</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.afio.design.f0" href="#afio.design.f0" class="para">2</a>] </sup>
         The <a href="http://unqlite.org/" target="_top">UnQLite embedded NoSQL database engine</a>
         is exactly one of those of course. Unfortunately I intend TripleGit for implementing
         portable Component Objects for C++ extending C++ Modules, which means I need

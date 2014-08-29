@@ -4,7 +4,7 @@
 <title>Why do I get a fatal application exit with FATAL EXCEPTION: Failed to read all buffers when I read a file?</title>
 <link rel="stylesheet" href="../../../../libs/afio/doc/html/myboostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
-<link rel="home" href="../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
+<link rel="home" href="../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.2">
 <link rel="up" href="../FAQ.html" title="Frequently Asked Questions">
 <link rel="prev" href="slow_compile.html" title="Using AFIO really slows down my compile times. Can't you do something about that?">
 <link rel="next" href="async_metadata.html" title="async_io_handle::direntry() and async_io_handle::lstat() are both synchronous functions which block. How then can I get metadata about files and directories asynchronously?">
@@ -33,7 +33,7 @@
         concurrent reading and writing of the same file, it is extremely difficult
         to coordinate changing file lengths with i/o in a way which doesn't introduce
         race conditions OR unacceptably low performance. AFIO therefore doesn't even
-        try<sup>[<a name="afio.FAQ.fatal_error_read.f0" href="#ftn.afio.FAQ.fatal_error_read.f0" class="footnote">18</a>]</sup> and simply requires you the programmer to ALWAYS do i/o, whether
+        try<sup>[<a name="afio.FAQ.fatal_error_read.f0" href="#ftn.afio.FAQ.fatal_error_read.f0" class="footnote">17</a>]</sup> and simply requires you the programmer to ALWAYS do i/o, whether
         reading or writing, within the extent of a file. In other words, if you're
         going to read 100 bytes from offset 100 in a file, that file better be at
         least 200 bytes long or it's going to fail with a fatal application exit.
@@ -96,7 +96,7 @@
 </pre>
 <div class="footnotes">
 <br><hr width="100" align="left">
-<div class="footnote"><p><sup>[<a id="ftn.afio.FAQ.fatal_error_read.f0" href="#afio.FAQ.fatal_error_read.f0" class="para">18</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.afio.FAQ.fatal_error_read.f0" href="#afio.FAQ.fatal_error_read.f0" class="para">17</a>] </sup>
           AFIO <span class="bold"><strong>will</strong></span> try to provide a synchronised,
           accurate file extent after fast portable file locking support has been
           added, but until then no.

@@ -4,7 +4,7 @@
 <title>How to write your own custom AFIO completion handler</title>
 <link rel="stylesheet" href="../../../../libs/afio/doc/html/myboostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
-<link rel="home" href="../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.2">
+<link rel="home" href="../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
 <link rel="up" href="../advanced_topics.html" title="Advanced Topics">
 <link rel="prev" href="../advanced_topics.html" title="Advanced Topics">
 <link rel="next" href="vs2010_notes.html" title="Notes on using AFIO with Microsoft Visual Studio 2010 and Mingw32">
@@ -34,7 +34,7 @@
         These are the second most lowest level, second most primitive completion
         handler AFIO has and while a non-trivial amount of programmer effort to utilise,
         they do offer a maximum amount of flexibility, functionality and of course,
-        performance<sup>[<a name="afio.advanced_topics.custom_completion_handler.f0" href="#ftn.afio.advanced_topics.custom_completion_handler.f0" class="footnote">14</a>]</sup>. If you are NOT extending AFIO with extra functionality, you
+        performance<sup>[<a name="afio.advanced_topics.custom_completion_handler.f0" href="#ftn.afio.advanced_topics.custom_completion_handler.f0" class="footnote">15</a>]</sup>. If you are NOT extending AFIO with extra functionality, you
         almost certainly want <a class="link" href="../reference/classes/async_file_io_dispatcher_base/call_2_batch_bound_functions.html" title="call (batch bound functions)"><code class="computeroutput"><span class="identifier">async_file_io_dispatcher_base</span><span class="special">::</span><span class="identifier">call</span><span class="special">()</span></code></a>
         instead.
       </p>
@@ -282,7 +282,7 @@
 </ul></div>
 <div class="footnotes">
 <br><hr width="100" align="left">
-<div class="footnote"><p><sup>[<a id="ftn.afio.advanced_topics.custom_completion_handler.f0" href="#afio.advanced_topics.custom_completion_handler.f0" class="para">14</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.afio.advanced_topics.custom_completion_handler.f0" href="#afio.advanced_topics.custom_completion_handler.f0" class="para">15</a>] </sup>
           If you're willing to go even <span class="emphasis"><em>more</em></span> low level, AFIO's
           <code class="computeroutput"><span class="identifier">async_file_io_dispatcher_base</span></code>
           class exposes as protected member functions the variadic templated function

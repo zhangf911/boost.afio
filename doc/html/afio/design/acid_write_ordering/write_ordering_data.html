@@ -4,7 +4,7 @@
 <title>Write ordering data and durability: why does it matter?</title>
 <link rel="stylesheet" href="../../../../../libs/afio/doc/html/myboostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
-<link rel="home" href="../../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.2">
+<link rel="home" href="../../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
 <link rel="up" href="../acid_write_ordering.html" title="Write ordering constraints, and how these can be used to achieve some of the Durability in ACID without needing fsync()">
 <link rel="prev" href="background.html" title="Background">
 <link rel="next" href="../../compilation.html" title="Compilation">
@@ -77,7 +77,7 @@
         </p>
 <p>
           TripleGit's normal persistence strategy is a bit more clever: write all
-          your data, but keep a hash like a SHA of its contents as you write it<sup>[<a name="afio.design.acid_write_ordering.write_ordering_data.f0" href="#ftn.afio.design.acid_write_ordering.write_ordering_data.f0" class="footnote">7</a>]</sup>. When you write your intent log, atomically append all the
+          your data, but keep a hash like a SHA of its contents as you write it<sup>[<a name="afio.design.acid_write_ordering.write_ordering_data.f0" href="#ftn.afio.design.acid_write_ordering.write_ordering_data.f0" class="footnote">8</a>]</sup>. When you write your intent log, atomically append all the
           SHAs of the items you just wrote and skip <code class="computeroutput"><span class="identifier">O_DATA</span></code>
           and <code class="computeroutput"><span class="identifier">fsync</span><span class="special">()</span></code>
           completely. If power gets removed before all the data is written to non-volatile
@@ -86,7 +86,7 @@
           item's contents to ensure their SHAs match up, throwing away any transaction
           where any file is missing or any file's contents don't match. On a filing
           system such as ext4 where data is guaranteed to be sent to non-volatile
-          storage after one minute<sup>[<a name="afio.design.acid_write_ordering.write_ordering_data.f1" href="#ftn.afio.design.acid_write_ordering.write_ordering_data.f1" class="footnote">8</a>]</sup>, and of course so long as you don't mind losing up to one minute's
+          storage after one minute<sup>[<a name="afio.design.acid_write_ordering.write_ordering_data.f1" href="#ftn.afio.design.acid_write_ordering.write_ordering_data.f1" class="footnote">9</a>]</sup>, and of course so long as you don't mind losing up to one minute's
           worth of data, this solution can have much better performance than the
           previous solution with lots of simultaneous writers.
         </p>
@@ -131,7 +131,7 @@
           is this: <span class="quote">&#8220;<span class="quote">we may reorder your write by up to five seconds away from
           the sequence in which you wrote it and other writes surrounding it. Other
           than that, we guarantee the order in which you write is the order in which
-          that data reaches physical storage.</span>&#8221;</span> <sup>[<a name="afio.design.acid_write_ordering.write_ordering_data.f2" href="#ftn.afio.design.acid_write_ordering.write_ordering_data.f2" class="footnote">9</a>]</sup>
+          that data reaches physical storage.</span>&#8221;</span> <sup>[<a name="afio.design.acid_write_ordering.write_ordering_data.f2" href="#ftn.afio.design.acid_write_ordering.write_ordering_data.f2" class="footnote">10</a>]</sup>
         </p>
 <p>
           What this means is this: on ZFS, TripleGit can turn off all write synchronisation
@@ -562,16 +562,16 @@
 </div>
 <br class="table-break"><div class="footnotes">
 <br><hr width="100" align="left">
-<div class="footnote"><p><sup>[<a id="ftn.afio.design.acid_write_ordering.write_ordering_data.f0" href="#afio.design.acid_write_ordering.write_ordering_data.f0" class="para">7</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.afio.design.acid_write_ordering.write_ordering_data.f0" href="#afio.design.acid_write_ordering.write_ordering_data.f0" class="para">8</a>] </sup>
             TripleGit actually uses a different, much faster 256 bit hash by default,
             but one can force use of SHA256 on a per-graph basis.
           </p></div>
-<div class="footnote"><p><sup>[<a id="ftn.afio.design.acid_write_ordering.write_ordering_data.f1" href="#afio.design.acid_write_ordering.write_ordering_data.f1" class="para">8</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.afio.design.acid_write_ordering.write_ordering_data.f1" href="#afio.design.acid_write_ordering.write_ordering_data.f1" class="para">9</a>] </sup>
             This is the default, and it may be changed by a system e.g. I have seen
             thirty minutes set for laptops. Note that the Linux-specific call <code class="computeroutput"><span class="identifier">syncfs</span><span class="special">()</span></code>
             lets one artifically schedule whole filing system flushes.
           </p></div>
-<div class="footnote"><p><sup>[<a id="ftn.afio.design.acid_write_ordering.write_ordering_data.f2" href="#afio.design.acid_write_ordering.write_ordering_data.f2" class="para">9</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.afio.design.acid_write_ordering.write_ordering_data.f2" href="#afio.design.acid_write_ordering.write_ordering_data.f2" class="para">10</a>] </sup>
             Source: <a href="http://www.c0t0d0s0.org/archives/5343-Insights-into-ZFS-today-The-nature-of-writing-things.html" target="_top">http://www.c0t0d0s0.org/archives/5343-Insights-into-ZFS-today-The-nature-of-writing-things.html</a>
           </p></div>
 </div>

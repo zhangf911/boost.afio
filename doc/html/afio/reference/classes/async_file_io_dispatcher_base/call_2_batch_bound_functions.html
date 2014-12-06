@@ -4,7 +4,7 @@
 <title>call (batch bound functions)</title>
 <link rel="stylesheet" href="../../../../../../libs/afio/doc/html/myboostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
-<link rel="home" href="../../../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
+<link rel="home" href="../../../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.30">
 <link rel="up" href="../async_file_io_dispatcher_base.html" title="async_file_io_dispatcher_base">
 <link rel="prev" href="completion_2_single_bound_function.html" title="completion (single bound function)">
 <link rel="next" href="call_1_batch_bound_functions_without_preconditions.html" title="call (batch bound functions without preconditions)">
@@ -28,7 +28,7 @@
           (batch bound functions)</a>
 </h5></div></div></div>
 <p>
-            <a class="indexterm" name="idp13775624"></a>
+            <a class="indexterm" name="idp13972752"></a>
 Schedule a batch of asynchronous invocations of the specified bound functions
             when their supplied preconditions complete.
           </p>
@@ -37,16 +37,17 @@ Schedule a batch of asynchronous invocations of the specified bound functions
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.call_2_batch_bound_functions.description"></a></span><a class="link" href="call_2_batch_bound_functions.html#afio.reference.classes.async_file_io_dispatcher_base.call_2_batch_bound_functions.description">Description</a>
           </h6>
 <p>
-            This is effectively a convenience wrapper for <code class="computeroutput"><span class="identifier">completion</span><span class="special">()</span></code>. It creates an enqueued_task matching
-            the <code class="computeroutput"><span class="identifier">completion</span><span class="special">\</span><span class="identifier">u005ft</span></code> handler specification and calls
-            the specified arbitrary callable, always returning completion on exit.
+            This is effectively a convenience wrapper for <code class="literal"><code class="computeroutput"><span class="identifier">completion</span><span class="special">()</span></code></code>.
+            It creates an enqueued_task matching the <code class="literal"><code class="computeroutput"><span class="identifier">completion_t</span></code></code>
+            handler specification and calls the specified arbitrary callable, always
+            returning completion on exit.
           </p>
 <h6>
 <a name="afio.reference.classes.async_file_io_dispatcher_base.call_2_batch_bound_functions.h1"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.call_2_batch_bound_functions.synopsis"></a></span><a class="link" href="call_2_batch_bound_functions.html#afio.reference.classes.async_file_io_dispatcher_base.call_2_batch_bound_functions.synopsis">Synopsis</a>
           </h6>
 <pre class="programlisting"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">class</span> <span class="identifier">R</span><span class="special">&gt;</span>
-<span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">shared_future</span><span class="special">&lt;</span> <span class="identifier">R</span> <span class="special">&gt;</span> <span class="special">&gt;,</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">async_io_op</span> <span class="special">&gt;</span> <span class="special">&gt;</span> <span class="identifier">async_file_io_dispatcher_base</span><span class="special">::</span><span class="identifier">call</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">async_io_op</span> <span class="special">&gt;</span> <span class="special">&amp;</span> <span class="identifier">ops</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">function</span><span class="special">&lt;</span> <span class="identifier">R</span><span class="special">()&gt;&gt;</span> <span class="special">&amp;</span> <span class="identifier">callables</span><span class="special">)</span></pre>
+<span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span><span class="identifier">shared_future</span><span class="special">&lt;</span><span class="identifier">R</span><span class="special">&gt;</span> <span class="special">&gt;,</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span><span class="identifier">async_io_op</span><span class="special">&gt;</span> <span class="special">&gt;</span> <span class="identifier">async_file_io_dispatcher_base</span><span class="special">::</span><span class="identifier">call</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">async_io_op</span> <span class="special">&gt;</span> <span class="special">&amp;</span> <span class="identifier">ops</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">function</span><span class="special">&lt;</span> <span class="identifier">R</span><span class="special">()&gt;&gt;</span> <span class="special">&amp;</span> <span class="identifier">callables</span><span class="special">)</span></pre>
 <h6>
 <a name="afio.reference.classes.async_file_io_dispatcher_base.call_2_batch_bound_functions.h2"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.call_2_batch_bound_functions.parameters"></a></span><a class="link" href="call_2_batch_bound_functions.html#afio.reference.classes.async_file_io_dispatcher_base.call_2_batch_bound_functions.parameters">Parameters</a>

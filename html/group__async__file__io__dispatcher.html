@@ -27,7 +27,6 @@
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
     </ul>
@@ -43,33 +42,32 @@
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">BOOST_AFIO_DECL <br class="typebreak"/>
-std::shared_ptr<br class="typebreak"/>
-&lt; async_file_io_dispatcher_base &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher.html#ga412e5ba3eaf5c1df0499dad2ddd79fb8">boost::afio::make_async_file_io_dispatcher</a> (std::shared_ptr&lt; thread_source &gt; threadpool=process_threadpool(), file_flags flagsforce=file_flags::None, file_flags flagsmask=file_flags::None)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instatiates the best available async_file_io_dispatcher implementation for this system.  <a href="#ga412e5ba3eaf5c1df0499dad2ddd79fb8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::shared_ptr<br class="typebreak"/>
+&lt; async_file_io_dispatcher_base &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher.html#ga60af4394d09808d966a31a80fe9142eb">make_async_file_io_dispatcher</a> (std::shared_ptr&lt; <a class="el" href="classthread__source.html">thread_source</a> &gt; threadpool=<a class="el" href="group__process__threadpool.html#ga3cd49e64119265af60e5162b76fd95ca">process_threadpool</a>(), <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0db">file_flags</a> flagsforce=<a class="el" href="afio_8hpp.html#ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252">file_flags::None</a>, <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0db">file_flags</a> flagsmask=<a class="el" href="afio_8hpp.html#ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252">file_flags::None</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instatiates the best available async_file_io_dispatcher implementation for this system.  <a href="#ga60af4394d09808d966a31a80fe9142eb"></a><br/></td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="ga412e5ba3eaf5c1df0499dad2ddd79fb8"></a><!-- doxytag: member="boost::afio::make_async_file_io_dispatcher" ref="ga412e5ba3eaf5c1df0499dad2ddd79fb8" args="(std::shared_ptr&lt; thread_source &gt; threadpool=process_threadpool(), file_flags flagsforce=file_flags::None, file_flags flagsmask=file_flags::None)" -->
+<a class="anchor" id="ga60af4394d09808d966a31a80fe9142eb"></a><!-- doxytag: member="afio.hpp::make_async_file_io_dispatcher" ref="ga60af4394d09808d966a31a80fe9142eb" args="(std::shared_ptr&lt; thread_source &gt; threadpool=process_threadpool(), file_flags flagsforce=file_flags::None, file_flags flagsmask=file_flags::None)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BOOST_AFIO_DECL std::shared_ptr&lt;async_file_io_dispatcher_base&gt; <a class="el" href="group__async__file__io__dispatcher.html#ga412e5ba3eaf5c1df0499dad2ddd79fb8">boost::afio::make_async_file_io_dispatcher</a> </td>
+          <td class="memname">std::shared_ptr&lt;async_file_io_dispatcher_base&gt; <a class="el" href="group__async__file__io__dispatcher.html#ga60af4394d09808d966a31a80fe9142eb">make_async_file_io_dispatcher</a> </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; thread_source &gt;&#160;</td>
-          <td class="paramname"><em>threadpool</em> = <code>process_threadpool()</code>, </td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classthread__source.html">thread_source</a> &gt;&#160;</td>
+          <td class="paramname"><em>threadpool</em> = <code><a class="el" href="group__process__threadpool.html#ga3cd49e64119265af60e5162b76fd95ca">process_threadpool</a>()</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">file_flags&#160;</td>
-          <td class="paramname"><em>flagsforce</em> = <code>file_flags::None</code>, </td>
+          <td class="paramtype"><a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0db">file_flags</a>&#160;</td>
+          <td class="paramname"><em>flagsforce</em> = <code><a class="el" href="afio_8hpp.html#ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252">file_flags::None</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">file_flags&#160;</td>
-          <td class="paramname"><em>flagsmask</em> = <code>file_flags::None</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0db">file_flags</a>&#160;</td>
+          <td class="paramname"><em>flagsmask</em> = <code><a class="el" href="afio_8hpp.html#ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252">file_flags::None</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>

@@ -4,7 +4,7 @@
 <title>post_readwrite_filter</title>
 <link rel="stylesheet" href="../../../../../../libs/afio/doc/html/myboostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
-<link rel="home" href="../../../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
+<link rel="home" href="../../../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.30">
 <link rel="up" href="../async_file_io_dispatcher_base.html" title="async_file_io_dispatcher_base">
 <link rel="prev" href="post_op_filter.html" title="post_op_filter">
 <link rel="next" href="completion_2_batch_bound_functions.html" title="completion (batch bound functions)">
@@ -27,7 +27,7 @@
 <a name="afio.reference.classes.async_file_io_dispatcher_base.post_readwrite_filter"></a><a class="link" href="post_readwrite_filter.html" title="post_readwrite_filter">post_readwrite_filter</a>
 </h5></div></div></div>
 <p>
-            <a class="indexterm" name="idp13476232"></a>
+            <a class="indexterm" name="idp13675528"></a>
 Install read/write op filters, useful for tight ASIO integration. Not
             threadsafe.
           </p>
@@ -36,12 +36,13 @@ Install read/write op filters, useful for tight ASIO integration. Not
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.post_readwrite_filter.description"></a></span><a class="link" href="post_readwrite_filter.html#afio.reference.classes.async_file_io_dispatcher_base.post_readwrite_filter.description">Description</a>
           </h6>
 <p>
-            <code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">function</span><span class="special">&lt;</span><span class="identifier">async</span><span class="special">\</span><span class="identifier">u005ffile</span><span class="special">\</span><span class="identifier">u005fio</span><span class="special">\</span><span class="identifier">u005fdispatcher</span><span class="special">\</span><span class="identifier">u005fbase</span><span class="special">::</span><span class="identifier">filter</span><span class="special">\</span><span class="identifier">u005fbuffers</span><span class="special">\</span><span class="identifier">u005ft</span><span class="special">&gt;</span></code>
-            will be called after every op of type <code class="computeroutput"><span class="identifier">detail</span><span class="special">::</span><span class="identifier">OpType</span></code>
-            completes (<code class="computeroutput"><span class="identifier">detail</span><span class="special">::</span><span class="identifier">OpType</span><span class="special">::</span><span class="identifier">Unknown</span></code> means call this filter for
-            all ops) with the op type, file handle, op input, file offset, buffers
-            offset, buffers amount, error state and bytes transferred. Any filter
-            other than read() and write() will be ignored, for those use post_op_filter().
+            <code class="literal"><code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">function</span><span class="special">&lt;</span><span class="identifier">async_file_io_dispatcher_base</span><span class="special">::</span><span class="identifier">filter_buffers_t</span><span class="special">&gt;</span></code></code>
+            will be called after every op of type <code class="literal"><code class="computeroutput"><span class="identifier">detail</span><span class="special">::</span><span class="identifier">OpType</span></code></code>
+            completes (<code class="literal"><code class="computeroutput"><span class="identifier">detail</span><span class="special">::</span><span class="identifier">OpType</span><span class="special">::</span><span class="identifier">Unknown</span></code></code>
+            means call this filter for all ops) with the op type, file handle, op
+            input, file offset, buffers offset, buffers amount, error state and bytes
+            transferred. Any filter other than read() and write() will be ignored,
+            for those use post_op_filter().
           </p>
 <p>
             Note that buffer filters are currently implemented as a linear scan,
@@ -107,7 +108,7 @@ Install read/write op filters, useful for tight ASIO integration. Not
 <td>
                     <p>
                       A batch of pairs of op type to be filtered and bound filter
-                      handler functions of type <code class="computeroutput"><span class="identifier">filter_buffers_t</span></code>
+                      handler functions of type <code class="literal"><code class="computeroutput"><span class="identifier">filter_buffers_t</span></code></code>
                     </p>
                   </td>
 </tr></tbody>

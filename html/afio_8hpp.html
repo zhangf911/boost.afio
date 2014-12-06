@@ -27,7 +27,6 @@
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
     </ul>
@@ -42,12 +41,9 @@
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Defines</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -60,162 +56,107 @@
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html">boost::afio::detail::enqueued_task_impl&lt; R &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1enqueued__task__impl_1_1_private.html">boost::afio::detail::enqueued_task_impl&lt; R &gt;::Private</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1enqueued__task_3_01_r_07_08_4.html">boost::afio::enqueued_task&lt; R()&gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1enqueued__task_3_01void_07_08_4.html">boost::afio::enqueued_task&lt; void()&gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1thread__source.html">boost::afio::thread_source</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for a source of thread workers.  <a href="classboost_1_1afio_1_1thread__source.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1std__thread__pool.html">boost::afio::std_thread_pool</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A very simple thread pool based on std::thread or boost::thread.  <a href="classboost_1_1afio_1_1std__thread__pool.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>boost::afio::std_thread_pool::worker</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1get__future__type.html">boost::afio::detail::get_future_type&lt; FutureType &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1select__when__futures__return__type.html">boost::afio::detail::select_when_futures_return_type&lt; is_all, T &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1select__when__futures__return__type_3_01false_00_01_t_01_4.html">boost::afio::detail::select_when_futures_return_type&lt; false, T &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1enable__if__future.html">boost::afio::detail::enable_if_future&lt; is_all, ValueType &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1enable__if__future_3_01is__all_00_01future_3_01_t_01_4_01_4.html">boost::afio::detail::enable_if_future&lt; is_all, future&lt; T &gt; &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1enable__if__future_3_01is__all_00_01shared__future_3_01_t_01_4_01_4.html">boost::afio::detail::enable_if_future&lt; is_all, shared_future&lt; T &gt; &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1stat__t.html">boost::afio::stat_t</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata about a directory entry.  <a href="structboost_1_1afio_1_1stat__t.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1directory__entry.html">boost::afio::directory_entry</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The abstract base class for an entry in a directory with lazily filled metadata.  <a href="classboost_1_1afio_1_1directory__entry.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1directory__entry__hash.html">boost::afio::directory_entry_hash</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A hasher for <a class="el" href="classboost_1_1afio_1_1directory__entry.html" title="The abstract base class for an entry in a directory with lazily filled metadata.">directory_entry</a>, hashing inode and birth time (if available on this platform).  <a href="structboost_1_1afio_1_1directory__entry__hash.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1async__io__handle.html">boost::afio::async_io_handle</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The abstract base class encapsulating a platform-specific file handle.  <a href="classboost_1_1afio_1_1async__io__handle.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__io__op.html">boost::afio::async_io_op</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference to an asynchronous operation.  <a href="structboost_1_1afio_1_1async__io__op.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1vs2013__variadic__overload__resolution__workaround.html">boost::afio::detail::vs2013_variadic_overload_resolution_workaround&lt; C, Args &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1async__file__io__dispatcher__base.html">boost::afio::async_file_io_dispatcher_base</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for dispatching file i/o asynchronously.  <a href="classboost_1_1afio_1_1async__file__io__dispatcher__base.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1when__all__state.html">boost::afio::detail::when_all_state</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1when__any__state.html">boost::afio::detail::when_any_state</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1select__when__ops__return__type.html">boost::afio::detail::select_when_ops_return_type&lt; is_all &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1select__when__ops__return__type_3_01false_01_4.html">boost::afio::detail::select_when_ops_return_type&lt; false &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1enable__if__async__op.html">boost::afio::detail::enable_if_async_op&lt; is_all, T &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1enable__if__async__op_3_01is__all_00_01async__io__op_01_4.html">boost::afio::detail::enable_if_async_op&lt; is_all, async_io_op &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__path__op__req.html">boost::afio::async_path_op_req</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of path and flags, with optional precondition.  <a href="structboost_1_1afio_1_1async__path__op__req.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4.html">boost::afio::detail::async_data_op_req_impl&lt; false &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html">boost::afio::detail::async_data_op_req_impl&lt; true &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req.html">boost::afio::async_data_op_req&lt; T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for reading into a single `T *`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4.html">boost::afio::async_data_op_req&lt; const T &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a single `const T *`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4.html">boost::afio::async_data_op_req&lt; void &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for reading into a `void *`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4.html">boost::afio::async_data_op_req&lt; const void &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a `const void *`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html">boost::afio::async_data_op_req&lt; std::vector&lt; T, A &gt; &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for reading into a `std::vector&lt;T, A&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html">boost::afio::async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a `const std::vector&lt;T, A&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html">boost::afio::async_data_op_req&lt; std::array&lt; T, N &gt; &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for reading into a `std::array&lt;T, N&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html">boost::afio::async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a `const std::array&lt;T, N&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1mutable__buffer_00_01_a_01_4_01_4.html">boost::afio::async_data_op_req&lt; std::vector&lt; boost::asio::mutable_buffer, A &gt; &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for reading into a `std::vector&lt;boost::asio::mutable_buffer, A&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1mutable__buffer_00_01_a_01_4_01_4.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4.html">boost::afio::async_data_op_req&lt; std::vector&lt; boost::asio::const_buffer, A &gt; &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a `std::vector&lt;boost::asio::const_buffer, A&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1mutable__buffer_00_01_n_01_4_01_4.html">boost::afio::async_data_op_req&lt; std::array&lt; boost::asio::mutable_buffer, N &gt; &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for reading into a `std::array&lt;boost::asio::mutable_buffer, N&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1mutable__buffer_00_01_n_01_4_01_4.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4.html">boost::afio::async_data_op_req&lt; std::array&lt; boost::asio::const_buffer, N &gt; &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a `std::array&lt;boost::asio::const_buffer, A&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html">boost::afio::async_data_op_req&lt; std::basic_string&lt; C, T, A &gt; &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for reading into a `std::basic_string&lt;C, T, A&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html">boost::afio::async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a `const std::basic_string&lt;C, T, A&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1mutable__buffer_01_4.html">boost::afio::async_data_op_req&lt; boost::asio::mutable_buffer &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for reading into a `boost::asio::mutable_buffer`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1mutable__buffer_01_4.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4.html">boost::afio::async_data_op_req&lt; boost::asio::const_buffer &gt;</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a `boost::asio::const_buffer`. Data <b>MUST</b> stay around until the operation completes.  <a href="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__enumerate__op__req.html">boost::afio::async_enumerate_op_req</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, number of items to enumerate, item pattern match and metadata to prefetch.  <a href="structboost_1_1afio_1_1async__enumerate__op__req.html#details">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1async__file__io__dispatcher__rwconverter.html">boost::afio::detail::async_file_io_dispatcher_rwconverter&lt; iswrite, T &gt;</a></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01boost_1_1afio_1_1directory__entry_01_4.html">std::hash&lt; boost::afio::directory_entry &gt;</a></td></tr>
-<tr><td colspan="2"><h2><a name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceboost.html">boost</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>The namespace used by the Boost Libraries. </p>
-<br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceboost_1_1afio.html">boost::afio</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>The namespace containing the Boost.ASIO asynchronous file i/o implementation. </p>
-<br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceboost_1_1afio_1_1detail.html">boost::afio::detail</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight"><p>The namespace containing Boost.ASIO internal details. </p>
-<br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classenqueued__task_3_01_r_07_08_4.html">enqueued_task&lt; R()&gt;</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classenqueued__task_3_01void_07_08_4.html">enqueued_task&lt; void()&gt;</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classthread__source.html">thread_source</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract base class for a source of thread workers.  <a href="classthread__source.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstd__thread__pool.html">std_thread_pool</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A very simple thread pool based on std::thread or boost::thread.  <a href="classstd__thread__pool.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>std_thread_pool::worker</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstat__t.html">stat_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata about a directory entry.  <a href="structstat__t.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdirectory__entry.html">directory_entry</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The abstract base class for an entry in a directory with lazily filled metadata.  <a href="classdirectory__entry.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdirectory__entry__hash.html">directory_entry_hash</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A hasher for <a class="el" href="classdirectory__entry.html" title="The abstract base class for an entry in a directory with lazily filled metadata.">directory_entry</a>, hashing inode and birth time (if available on this platform).  <a href="structdirectory__entry__hash.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classasync__io__handle.html">async_io_handle</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The abstract base class encapsulating a platform-specific file handle.  <a href="classasync__io__handle.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__io__op.html">async_io_op</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference to an asynchronous operation.  <a href="structasync__io__op.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__path__op__req.html">async_path_op_req</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of path and flags, with optional precondition.  <a href="structasync__path__op__req.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__data__op__req_3_01const_01_t_01_4.html">async_data_op_req&lt; const T &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a single `const T *`. Data <b>MUST</b> stay around until the operation completes.  <a href="structasync__data__op__req_3_01const_01_t_01_4.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__data__op__req_3_01void_01_4.html">async_data_op_req&lt; void &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for reading into a `void *`. Data <b>MUST</b> stay around until the operation completes.  <a href="structasync__data__op__req_3_01void_01_4.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__data__op__req_3_01const_01void_01_4.html">async_data_op_req&lt; const void &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a `const void *`. Data <b>MUST</b> stay around until the operation completes.  <a href="structasync__data__op__req_3_01const_01void_01_4.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html">async_data_op_req&lt; std::vector&lt; T, A &gt; &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for reading into a `std::vector&lt;T, A&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structasync__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html">async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a `const std::vector&lt;T, A&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html">async_data_op_req&lt; std::array&lt; T, N &gt; &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for reading into a `std::array&lt;T, N&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structasync__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html">async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a `const std::array&lt;T, N&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structasync__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4.html">async_data_op_req&lt; std::vector&lt; asio::mutable_buffer, A &gt; &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for reading into a `std::vector&lt;asio::mutable_buffer, A&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structasync__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4.html">async_data_op_req&lt; std::vector&lt; asio::const_buffer, A &gt; &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a `std::vector&lt;asio::const_buffer, A&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structasync__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4.html">async_data_op_req&lt; std::array&lt; asio::mutable_buffer, N &gt; &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for reading into a `std::array&lt;asio::mutable_buffer, N&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structasync__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4.html">async_data_op_req&lt; std::array&lt; asio::const_buffer, N &gt; &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a `std::array&lt;asio::const_buffer, A&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structasync__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html">async_data_op_req&lt; std::basic_string&lt; C, T, A &gt; &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for reading into a `std::basic_string&lt;C, T, A&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structasync__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html">async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a `const std::basic_string&lt;C, T, A&gt;`. Data <b>MUST</b> stay around until the operation completes.  <a href="structasync__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__data__op__req_3_01asio_1_1mutable__buffer_01_4.html">async_data_op_req&lt; asio::mutable_buffer &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for reading into a `asio::mutable_buffer`. Data <b>MUST</b> stay around until the operation completes.  <a href="structasync__data__op__req_3_01asio_1_1mutable__buffer_01_4.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__data__op__req_3_01asio_1_1const__buffer_01_4.html">async_data_op_req&lt; asio::const_buffer &gt;</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, data and where for writing from a `asio::const_buffer`. Data <b>MUST</b> stay around until the operation completes.  <a href="structasync__data__op__req_3_01asio_1_1const__buffer_01_4.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structasync__enumerate__op__req.html">async_enumerate_op_req</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, number of items to enumerate, item pattern match and metadata to prefetch.  <a href="structasync__enumerate__op__req.html#details">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__macros.html#ga8abeb465d2ca6fa15b3c3754697e5577">BOOST_AFIO_VALIDATE_INPUTS</a>&#160;&#160;&#160;1</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate inputs at the point of instantiation.  <a href="group__macros.html#ga8abeb465d2ca6fa15b3c3754697e5577"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="afio_8hpp.html#a7d6cb43e029a76765081fb3a2f47187d">BOOST_AFIO_HEADERS_ONLY</a>&#160;&#160;&#160;1</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if AFIO is compiled as headers only. Defaults to 1.  <a href="#a7d6cb43e029a76765081fb3a2f47187d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="afio_8hpp.html#a183b5c98a87ff28a56ea3bfdbe141ee9">BOOST_AFIO_USE_BOOST_THREAD</a>&#160;&#160;&#160;0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if AFIO is bound against Boost.Thread or the C++ 11 STL thread. Defaults to 0.  <a href="#a183b5c98a87ff28a56ea3bfdbe141ee9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="afio_8hpp.html#ab5974d84a78dbcf8b072fca370f1291d">BOOST_AFIO_USE_BOOST_FILESYSTEM</a>&#160;&#160;&#160;1</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if AFIO is bound against Boost.Filesystem or the C++ 1z Filesystem TS. Defaults to 1 unless on VS2015 which provides a full Filesystem TS implementation.  <a href="#ab5974d84a78dbcf8b072fca370f1291d"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="afio_8hpp.html#a5b90f4adb6bc09ca319c35c3448ee67a">ASIO_STANDALONE</a>&#160;&#160;&#160;0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if AFIO is bound against standalone ASIO or Boost.ASIO. Defaults to undefined, and therefore Boost.ASIO.  <a href="#a5b90f4adb6bc09ca319c35c3448ee67a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>BOOST_AFIO_DECLARE_CLASS_ENUM_AS_BITFIELD</b>(type)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac794ed8c3e9fc1a99bd54d5b993d2b6c"></a><!-- doxytag: member="afio.hpp::BOOST_AFIO_DIRECTORY_ENTRY_ACCESS_METHOD" ref="ac794ed8c3e9fc1a99bd54d5b993d2b6c" args="(field)" -->
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>BOOST_AFIO_DIRECTORY_ENTRY_ACCESS_METHOD</b>(field)&#160;&#160;&#160;fieldtype st_##field(std::shared_ptr&lt;async_io_handle&gt; dirh=std::shared_ptr&lt;async_io_handle&gt;()) { if(!(have_metadata&amp;metadata_flags::field)) { _int_fetch(metadata_flags::field, dirh); } return stat.st_##field; }</td></tr>
-<tr><td colspan="2"><h2><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90c6d3eb9c6ffd8c9b90e0d4578415e0"></a><!-- doxytag: member="afio.hpp::off_t" ref="a90c6d3eb9c6ffd8c9b90e0d4578415e0" args="" -->
-typedef unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>boost::afio::off_t</b></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BOOST_AFIO_DIRECTORY_ENTRY_ACCESS_METHOD</b>(field)&#160;&#160;&#160;fieldtype st_##field(std::shared_ptr&lt;<a class="el" href="classasync__io__handle.html">async_io_handle</a>&gt; dirh=std::shared_ptr&lt;<a class="el" href="classasync__io__handle.html">async_io_handle</a>&gt;()) { if(!(have_metadata&amp;metadata_flags::field)) { _int_fetch(metadata_flags::field, dirh); } return stat.st_##field; }</td></tr>
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078ee">boost::afio::file_flags</a> { <br/>
-&#160;&#160;<a class="el" href="group__metadata__flags.html#ga228a95ca96f053e74e69e6d1ab23eccbae0096787b72fc78233c9f8ee4aa49685">boost::afio::None</a> = 0, 
-<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eea56afe458614fb4a10b626f321ea1a26f">boost::afio::Read</a> = 1, 
-<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eea8ce87e24f8fc7badbb6706741f3b2720">boost::afio::Write</a> = 2, 
-<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eea9b4de5661424e3caea20df95fdf1babf">boost::afio::ReadWrite</a> = 3, 
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0db">file_flags</a> { <br/>
+&#160;&#160;<a class="el" href="group__metadata__flags.html#ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252">None</a> = 0, 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba809abe96853e69894bbf8e5730b31348">Read</a> = 1, 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa56670174817e3fed92bfd8182d7c0d1">Write</a> = 2, 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba3c4d2d19c91b345c33a83ca9f551f4e1">ReadWrite</a> = 3, 
 <br/>
-&#160;&#160;<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eeabb5d6d0e03d75b41c1d997aa76814f44">boost::afio::Append</a> = 4, 
-<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eea4435f8faf3f874da4982029477760ccc">boost::afio::Truncate</a> = 8, 
-<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eea3dfadea846f01e01560a979e2e5fb028">boost::afio::Create</a> = 16, 
-<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eeafd5a0d55a39854c5da74bbded9ee167f">boost::afio::CreateOnlyIfNotExist</a> = 32, 
+&#160;&#160;<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba71f30510b076569dd2830e348fb77a13">Append</a> = 4, 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba4877d9d67c11656d88fc82cfeb94a4f3">Truncate</a> = 8, 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba93479401ae71e13bd81626eb0b6c2d37">Create</a> = 16, 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbafd41a51c46068f24398d21e5e8d23d16">CreateOnlyIfNotExist</a> = 32, 
 <br/>
-&#160;&#160;<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eea9ac18f659ad2d9695501f04ce2b49e2f">boost::afio::WillBeSequentiallyAccessed</a> = 128, 
-<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eea12fb86815852d7f9144110fa38dbfb5f">boost::afio::WillBeRandomlyAccessed</a> = 256, 
-<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eea8e7a42449e906c304998c81e7490fd16">boost::afio::FastDirectoryEnumeration</a> = (1&lt;&lt;10), 
-<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eeae2b4f36c7d426549b211d89ffcd02e12">boost::afio::UniqueDirectoryHandle</a> = (1&lt;&lt;11), 
+&#160;&#160;<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa26ef493b962366c21fef788da134721">WillBeSequentiallyAccessed</a> = 128, 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba5ad1750347c8e7ce9513f1edb3dd3766">WillBeRandomlyAccessed</a> = 256, 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba6085ffcc368053b7563ee66109aba163">FastDirectoryEnumeration</a> = (1&lt;&lt;10), 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba837053fb9e27a38d2a153f5c85436644">UniqueDirectoryHandle</a> = (1&lt;&lt;11), 
 <br/>
-&#160;&#160;<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eea45296419ce890d99a255351f4ac9f1fa">boost::afio::OSDirect</a> = (1&lt;&lt;16), 
-<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eeaba7941781a18ef1d3a4f5345b9d44a53">boost::afio::OSMMap</a> = (1&lt;&lt;17), 
-<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eea05738a480cd6f577ef828ca2637bdf29">boost::afio::AlwaysSync</a> = (1&lt;&lt;24), 
-<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eeaad1d36e2219ffcd464bb8d37a0c42adc">boost::afio::SyncOnClose</a> = (1&lt;&lt;25), 
+&#160;&#160;<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba648331f85d7765a2b1fcc854dfde389b">OSDirect</a> = (1&lt;&lt;16), 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa0ba263c207e29e2d1d6823d4dc7790b">OSMMap</a> = (1&lt;&lt;17), 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa3cc9b55b4157e3b0c799f941f21c001">AlwaysSync</a> = (1&lt;&lt;24), 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba58ef332941f8d3160a208d81a8d60f3f">SyncOnClose</a> = (1&lt;&lt;25), 
 <br/>
-&#160;&#160;<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eea6d91e48b65e695d61a43d7e867babebd">boost::afio::EnforceDependencyWriteOrder</a> = (1&lt;&lt;26), 
-<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eeac3128415027844faf71bc34a5f6de5b8">boost::afio::int_opening_link</a> = (1&lt;&lt;29), 
-<a class="el" href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078eeae4d81f61126d0b6609dbebf8d21de2fa">boost::afio::int_opening_dir</a> = (1&lt;&lt;30)
-<br/>
- }</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise file and directory open flags.  <a href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078ee">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__op__flags.html#ga3d03d4b42e2ae303e282d0a1dec22976">boost::afio::async_op_flags</a> { <a class="el" href="group__async__op__flags.html#ga3d03d4b42e2ae303e282d0a1dec22976a78dc04e05e979dbe81227be8cdf9f74d">boost::afio::none</a> = 0, 
-<a class="el" href="group__async__op__flags.html#ga3d03d4b42e2ae303e282d0a1dec22976aef60ffef4d2047749b204c64707b834b">boost::afio::immediate</a> = 1
- }</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise async_op_flags flags.  <a href="group__async__op__flags.html#ga3d03d4b42e2ae303e282d0a1dec22976">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceboost_1_1afio_1_1detail.html#a0988089f34c099ad2ef946d6ff03c959">boost::afio::detail::OpType</a> { <br/>
-&#160;&#160;<b>Unknown</b>, 
-<b>UserCompletion</b>, 
-<b>dir</b>, 
-<b>rmdir</b>, 
-<br/>
-&#160;&#160;<b>file</b>, 
-<b>rmfile</b>, 
-<b>symlink</b>, 
-<b>rmsymlink</b>, 
-<br/>
-&#160;&#160;<b>sync</b>, 
-<b>close</b>, 
-<b>read</b>, 
-<b>write</b>, 
-<br/>
-&#160;&#160;<b>truncate</b>, 
-<b>barrier</b>, 
-<b>enumerate</b>, 
-<b>adopt</b>, 
-<br/>
-&#160;&#160;<b>Last</b>
+&#160;&#160;<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba8f3aad3eb5f15e3dd74b03a781d3add2">EnforceDependencyWriteOrder</a> = (1&lt;&lt;26), 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbacf70efc695fc6209e99b9161f6feead3">int_opening_link</a> = (1&lt;&lt;29), 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbaf8864b27bad71e73e66ab81cabd6f80d">int_opening_dir</a> = (1&lt;&lt;30)
 <br/>
  }</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of operation.  <a href="namespaceboost_1_1afio_1_1detail.html#a0988089f34c099ad2ef946d6ff03c959">More...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__metadata__flags.html#ga228a95ca96f053e74e69e6d1ab23eccb">boost::afio::metadata_flags</a> { <br/>
-&#160;&#160;<a class="el" href="group__metadata__flags.html#ga228a95ca96f053e74e69e6d1ab23eccbae0096787b72fc78233c9f8ee4aa49685">boost::afio::None</a> = 0, 
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise file and directory open flags.  <a href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0db">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__op__flags.html#gaa1e754d20cbcf3979c15a3acdc485194">async_op_flags</a> { <a class="el" href="group__async__op__flags.html#gaa1e754d20cbcf3979c15a3acdc485194ab7e4e0120a041dbe6528b050c04269e0">none</a> = 0, 
+<a class="el" href="group__async__op__flags.html#gaa1e754d20cbcf3979c15a3acdc485194a97994fd50a3715e96da85e7f8705a94b">immediate</a> = 1
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise async_op_flags flags.  <a href="group__async__op__flags.html#gaa1e754d20cbcf3979c15a3acdc485194">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__metadata__flags.html#ga9d8b6ad0ba3e48637529aace103e11fe">metadata_flags</a> { <br/>
+&#160;&#160;<a class="el" href="group__metadata__flags.html#ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252">None</a> = 0, 
 <b>dev</b> = 1&lt;&lt;0, 
 <b>ino</b> = 1&lt;&lt;1, 
 <b>type</b> = 1&lt;&lt;2, 
@@ -238,123 +179,144 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>flags</b> = 1&lt;&lt;15, 
 <b>gen</b> = 1&lt;&lt;16, 
 <b>birthtim</b> = 1&lt;&lt;17, 
-<a class="el" href="group__metadata__flags.html#ga228a95ca96f053e74e69e6d1ab23eccbac5c1c39d14b2ef243eaa37a0eba36940">boost::afio::All</a> = (size_t)-1
+<a class="el" href="group__metadata__flags.html#ga9d8b6ad0ba3e48637529aace103e11fea54991d225c58ce0af43461d4e9a82312">All</a> = (size_t)-1
 <br/>
  }</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitflags for availability of metadata from `struct stat_t`.  <a href="group__metadata__flags.html#ga228a95ca96f053e74e69e6d1ab23eccb">More...</a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitflags for availability of metadata from `struct stat_t`.  <a href="group__metadata__flags.html#ga9d8b6ad0ba3e48637529aace103e11fe">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">BOOST_AFIO_DECL <br class="typebreak"/>
-std::shared_ptr<br class="typebreak"/>
-&lt; std_thread_pool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process__threadpool.html#gabb4747cc11ef3ee1bbb969bc78c238bb">boost::afio::process_threadpool</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the process threadpool.  <a href="group__process__threadpool.html#gabb4747cc11ef3ee1bbb969bc78c238bb"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="a89b099619cb57e7b2de539674e6e11dd"></a><!-- doxytag: member="afio.hpp::when_all_futures_do" ref="a89b099619cb57e7b2de539674e6e11dd" args="(std::shared_ptr&lt; std::vector&lt; future_type &gt;&gt; futures)" -->
-template&lt;class returns_t , class future_type &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">returns_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>boost::afio::detail::when_all_futures_do</b> (std::shared_ptr&lt; std::vector&lt; future_type &gt;&gt; futures)</td></tr>
-<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="ac2a3c9505f667897d8d06f2787d40646"></a><!-- doxytag: member="afio.hpp::when_all_futures" ref="ac2a3c9505f667897d8d06f2787d40646" args="(InputIterator first, InputIterator last)" -->
-template&lt;class InputIterator &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">shared_future&lt; std::vector<br class="typebreak"/>
-&lt; typename get_future_type<br class="typebreak"/>
-&lt; typename <br class="typebreak"/>
-InputIterator::value_type &gt;<br class="typebreak"/>
-::type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>boost::afio::detail::when_all_futures</b> (InputIterator first, InputIterator last)</td></tr>
-<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="ac67dcbccc5e35b94fa9d0931ed8749ef"></a><!-- doxytag: member="afio.hpp::when_any_futures_do" ref="ac67dcbccc5e35b94fa9d0931ed8749ef" args="(std::shared_ptr&lt; std::vector&lt; future_type &gt;&gt; futures)" -->
-template&lt;class returns_t , class future_type &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">returns_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>boost::afio::detail::when_any_futures_do</b> (std::shared_ptr&lt; std::vector&lt; future_type &gt;&gt; futures)</td></tr>
-<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="a000557616b3604e55f7d13396ced5bdb"></a><!-- doxytag: member="afio.hpp::when_any_futures" ref="a000557616b3604e55f7d13396ced5bdb" args="(InputIterator first, InputIterator last)" -->
-template&lt;class InputIterator &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">shared_future&lt; std::pair<br class="typebreak"/>
-&lt; size_t, typename <br class="typebreak"/>
-get_future_type&lt; typename <br class="typebreak"/>
-InputIterator::value_type &gt;<br class="typebreak"/>
-::type &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>boost::afio::detail::when_any_futures</b> (InputIterator first, InputIterator last)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93458e2822fc3073cd7cd31e94760d93"></a><!-- doxytag: member="afio.hpp::BOOST_BINDLIB_NAMESPACE_BEGIN" ref="a93458e2822fc3073cd7cd31e94760d93" args="(BOOST_AFIO_V1) typedef unsigned long long off_t" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>BOOST_BINDLIB_NAMESPACE_BEGIN</b> (BOOST_AFIO_V1) typedef unsigned long long off_t</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classstd__thread__pool.html">std_thread_pool</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process__threadpool.html#ga3cd49e64119265af60e5162b76fd95ca">process_threadpool</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the process threadpool.  <a href="group__process__threadpool.html#ga3cd49e64119265af60e5162b76fd95ca"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::shared_ptr<br class="typebreak"/>
+&lt; async_file_io_dispatcher_base &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher.html#ga60af4394d09808d966a31a80fe9142eb">make_async_file_io_dispatcher</a> (std::shared_ptr&lt; <a class="el" href="classthread__source.html">thread_source</a> &gt; threadpool=<a class="el" href="group__process__threadpool.html#ga3cd49e64119265af60e5162b76fd95ca">process_threadpool</a>(), <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0db">file_flags</a> flagsforce=<a class="el" href="afio_8hpp.html#ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252">file_flags::None</a>, <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0db">file_flags</a> flagsmask=<a class="el" href="afio_8hpp.html#ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252">file_flags::None</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instatiates the best available async_file_io_dispatcher implementation for this system.  <a href="group__async__file__io__dispatcher.html#ga60af4394d09808d966a31a80fe9142eb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab26eb2e2bae885db696a11a8fae88eb1"></a><!-- doxytag: member="afio.hpp::when_all" ref="ab26eb2e2bae885db696a11a8fae88eb1" args="(std::nothrow_t _, Iterator first, Iterator last)" -->
+Iterator::value_type::type&#160;</td><td class="memItemRight" valign="bottom"><b>when_all</b> (std::nothrow_t _, Iterator first, Iterator last)</td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class Iterator &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">detail::enable_if_future&lt; true, <br class="typebreak"/>
-typename Iterator::value_type &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__when__all__futures.html#gabb88d1b03f90e1fd689dcb629ab8ecd7">boost::afio::when_all</a> (Iterator first, Iterator last)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a future vector of results from all the supplied futures.  <a href="group__when__all__futures.html#gabb88d1b03f90e1fd689dcb629ab8ecd7"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;class Iterator &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">detail::enable_if_future<br class="typebreak"/>
+<tr><td class="memTemplItemLeft" align="right" valign="top">detail::enable_if_async_op<br class="typebreak"/>
 &lt; false, typename <br class="typebreak"/>
-Iterator::value_type &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__when__all__futures.html#gab467b102949ffdc46639c0b197b204d2">boost::afio::when_any</a> (Iterator first, Iterator last)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a future tuple of results from all the supplied futures.  <a href="group__when__all__futures.html#gab467b102949ffdc46639c0b197b204d2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa676bdf762c5e8d6f8826e199cae924f"></a><!-- doxytag: member="afio.hpp::static_assert" ref="aa676bdf762c5e8d6f8826e199cae924f" args="(static_cast&lt; size_t &gt;(OpType::Last)==sizeof(optypes)/sizeof(*optypes),&quot;You forgot to fix up the strings matching OpType&quot;)" -->
-&#160;</td><td class="memItemRight" valign="bottom"><b>boost::afio::detail::static_assert</b> (static_cast&lt; size_t &gt;(OpType::Last)==sizeof(optypes)/sizeof(*optypes),&quot;You forgot to fix up the strings matching OpType&quot;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">BOOST_AFIO_DECL <br class="typebreak"/>
-std::shared_ptr<br class="typebreak"/>
-&lt; async_file_io_dispatcher_base &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher.html#ga412e5ba3eaf5c1df0499dad2ddd79fb8">boost::afio::make_async_file_io_dispatcher</a> (std::shared_ptr&lt; thread_source &gt; threadpool=process_threadpool(), file_flags flagsforce=file_flags::None, file_flags flagsmask=file_flags::None)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instatiates the best available async_file_io_dispatcher implementation for this system.  <a href="group__async__file__io__dispatcher.html#ga412e5ba3eaf5c1df0499dad2ddd79fb8"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="ab2379f238e2ebbacf46d54cbd434da38"></a><!-- doxytag: member="afio.hpp::when_all_ops_do" ref="ab2379f238e2ebbacf46d54cbd434da38" args="(std::shared_ptr&lt; when_all_state &gt; state)" -->
-template&lt;bool rethrow&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>boost::afio::detail::when_all_ops_do</b> (std::shared_ptr&lt; when_all_state &gt; state)</td></tr>
-<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="a1cf9aac5f43844e9b29f188d61a74656"></a><!-- doxytag: member="afio.hpp::when_all_ops" ref="a1cf9aac5f43844e9b29f188d61a74656" args="(Iterator first, Iterator last)" -->
-template&lt;bool rethrow, class Iterator &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">future&lt; std::vector<br class="typebreak"/>
+Iterator::value_type &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#ga5fd1f0c0c526e5911c5279a36f865635">when_any</a> (std::nothrow_t _, Iterator first, Iterator last)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when any the supplied ops complete. Does not propagate exception states.  <a href="group__when__all__ops.html#ga5fd1f0c0c526e5911c5279a36f865635"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">future&lt; std::vector<br class="typebreak"/>
 &lt; std::shared_ptr<br class="typebreak"/>
-&lt; async_io_handle &gt; &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>boost::afio::detail::when_all_ops</b> (Iterator first, Iterator last)</td></tr>
-<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="adcebbdde7870f429cd90b78e9beabadc"></a><!-- doxytag: member="afio.hpp::when_any_ops_do" ref="adcebbdde7870f429cd90b78e9beabadc" args="(std::shared_ptr&lt; when_any_state &gt; state)" -->
-template&lt;bool rethrow&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>boost::afio::detail::when_any_ops_do</b> (std::shared_ptr&lt; when_any_state &gt; state)</td></tr>
-<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="a0a09827ed7a36972585fda14fec43a13"></a><!-- doxytag: member="afio.hpp::when_any_ops" ref="a0a09827ed7a36972585fda14fec43a13" args="(Iterator first, Iterator last)" -->
-template&lt;bool rethrow, class Iterator &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">future&lt; std::shared_ptr<br class="typebreak"/>
-&lt; async_io_handle &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>boost::afio::detail::when_any_ops</b> (Iterator first, Iterator last)</td></tr>
+&lt; <a class="el" href="classasync__io__handle.html">async_io_handle</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#ga461b0e5f0a135982cac72648a1689e83">when_all</a> (std::nothrow_t _, std::vector&lt; <a class="el" href="structasync__io__op.html">async_io_op</a> &gt; ops)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when all the supplied ops complete. Does not propagate exception states.  <a href="group__when__all__ops.html#ga461b0e5f0a135982cac72648a1689e83"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">future&lt; std::shared_ptr<br class="typebreak"/>
+&lt; <a class="el" href="classasync__io__handle.html">async_io_handle</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#gae51d3626cd8b9d2c5fe1d3b55c451fbd">when_any</a> (std::nothrow_t _, std::vector&lt; <a class="el" href="structasync__io__op.html">async_io_op</a> &gt; ops)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when any the supplied ops complete. Does not propagate exception states.  <a href="group__when__all__ops.html#gae51d3626cd8b9d2c5fe1d3b55c451fbd"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class Iterator &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">detail::enable_if_async_op<br class="typebreak"/>
 &lt; true, typename <br class="typebreak"/>
-Iterator::value_type &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#gadd8ae93c91c23b1011dfdf002db07e9e">boost::afio::when_all</a> (std::nothrow_t _, Iterator first, Iterator last)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when all the supplied ops complete. Does not propagate exception states.  <a href="group__when__all__ops.html#gadd8ae93c91c23b1011dfdf002db07e9e"></a><br/></td></tr>
+Iterator::value_type &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#gaaa1c16812271841ff671cfe7f231cb0b">when_all</a> (Iterator first, Iterator last)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when all the supplied ops complete. Propagates exception states.  <a href="group__when__all__ops.html#gaaa1c16812271841ff671cfe7f231cb0b"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class Iterator &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">detail::enable_if_async_op<br class="typebreak"/>
 &lt; false, typename <br class="typebreak"/>
-Iterator::value_type &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#ga85c6d5c463b1ecffdc2a6bda4f040bb0">boost::afio::when_any</a> (std::nothrow_t _, Iterator first, Iterator last)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when any the supplied ops complete. Does not propagate exception states.  <a href="group__when__all__ops.html#ga85c6d5c463b1ecffdc2a6bda4f040bb0"></a><br/></td></tr>
+Iterator::value_type &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#ga5da03663689177b4c470ce149c87361d">when_any</a> (Iterator first, Iterator last)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when any the supplied ops complete. Propagates exception states.  <a href="group__when__all__ops.html#ga5da03663689177b4c470ce149c87361d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">future&lt; std::vector<br class="typebreak"/>
 &lt; std::shared_ptr<br class="typebreak"/>
-&lt; async_io_handle &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#ga5598f81e0788f6acd2258263009de875">boost::afio::when_all</a> (std::nothrow_t _, std::vector&lt; async_io_op &gt; ops)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when all the supplied ops complete. Does not propagate exception states.  <a href="group__when__all__ops.html#ga5598f81e0788f6acd2258263009de875"></a><br/></td></tr>
+&lt; <a class="el" href="classasync__io__handle.html">async_io_handle</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#ga536ffef275e197aa15d35a3a4dd3a9bf">when_all</a> (std::vector&lt; <a class="el" href="structasync__io__op.html">async_io_op</a> &gt; ops)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when all the supplied ops complete. Propagates exception states.  <a href="group__when__all__ops.html#ga536ffef275e197aa15d35a3a4dd3a9bf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">future&lt; std::shared_ptr<br class="typebreak"/>
-&lt; async_io_handle &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#gaeb4173eee90e57cc0646056bd14603de">boost::afio::when_any</a> (std::nothrow_t _, std::vector&lt; async_io_op &gt; ops)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when any the supplied ops complete. Does not propagate exception states.  <a href="group__when__all__ops.html#gaeb4173eee90e57cc0646056bd14603de"></a><br/></td></tr>
+&lt; <a class="el" href="classasync__io__handle.html">async_io_handle</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#ga73eaeec972558c72429fbd5042307036">when_any</a> (std::vector&lt; <a class="el" href="structasync__io__op.html">async_io_op</a> &gt; ops)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when any the supplied ops complete. Propagates exception states.  <a href="group__when__all__ops.html#ga73eaeec972558c72429fbd5042307036"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">future&lt; std::vector<br class="typebreak"/>
 &lt; std::shared_ptr<br class="typebreak"/>
-&lt; async_io_handle &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#ga6591b9bbaf576183995ba8612f1c86d5">boost::afio::when_all</a> (std::vector&lt; async_io_op &gt; ops)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when all the supplied ops complete. Propagates exception states.  <a href="group__when__all__ops.html#ga6591b9bbaf576183995ba8612f1c86d5"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">future&lt; std::shared_ptr<br class="typebreak"/>
-&lt; async_io_handle &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#ga4a98962e8807e8f5fa31bb14fa430374">boost::afio::when_any</a> (std::vector&lt; async_io_op &gt; ops)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when any the supplied ops complete. Propagates exception states.  <a href="group__when__all__ops.html#ga4a98962e8807e8f5fa31bb14fa430374"></a><br/></td></tr>
+&lt; <a class="el" href="classasync__io__handle.html">async_io_handle</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#gaff9f004d3897d9bf83261e45a050c252">when_all</a> (std::nothrow_t _, <a class="el" href="structasync__io__op.html">async_io_op</a> op)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when the supplied op completes. Does not propagate exception states.  <a href="group__when__all__ops.html#gaff9f004d3897d9bf83261e45a050c252"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">future&lt; std::vector<br class="typebreak"/>
 &lt; std::shared_ptr<br class="typebreak"/>
-&lt; async_io_handle &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#ga175bb31dd07b8c716c85f5bfdc17c9df">boost::afio::when_all</a> (std::nothrow_t _, async_io_op op)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when the supplied op completes. Does not propagate exception states.  <a href="group__when__all__ops.html#ga175bb31dd07b8c716c85f5bfdc17c9df"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">future&lt; std::vector<br class="typebreak"/>
-&lt; std::shared_ptr<br class="typebreak"/>
-&lt; async_io_handle &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#ga3a4b5bc5ed128e7ef337fe164f897782">boost::afio::when_all</a> (async_io_op op)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when the supplied op completes. Propagates exception states.  <a href="group__when__all__ops.html#ga3a4b5bc5ed128e7ef337fe164f897782"></a><br/></td></tr>
+&lt; <a class="el" href="classasync__io__handle.html">async_io_handle</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__when__all__ops.html#ga7e235ffd635c6b38fa0c416c872ae044">when_all</a> (<a class="el" href="structasync__io__op.html">async_io_op</a> op)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a result when the supplied op completes. Propagates exception states.  <a href="group__when__all__ops.html#ga7e235ffd635c6b38fa0c416c872ae044"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">async_data_op_req&lt; typename <br class="typebreak"/>
 std::remove_pointer&lt; typename <br class="typebreak"/>
-std::decay&lt; T &gt;::type &gt;::type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__make__async__data__op__req.html#ga9f62915b030e2f2ed5115b034e9721a1">boost::afio::make_async_data_op_req</a> (async_io_op _precondition, T &amp;&amp;v, off_t _where)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience instantiator of a <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a single `T *`...">async_data_op_req</a>, letting the compiler deduce the template specialisation to use.  <a href="group__make__async__data__op__req.html#ga9f62915b030e2f2ed5115b034e9721a1"></a><br/></td></tr>
+std::decay&lt; T &gt;::type &gt;::type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__make__async__data__op__req.html#gadc690546179d67a27772655c9455c47e">make_async_data_op_req</a> (<a class="el" href="structasync__io__op.html">async_io_op</a> _precondition, T &amp;&amp;v, off_t _where)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience instantiator of a async_data_op_req, letting the compiler deduce the template specialisation to use.  <a href="group__make__async__data__op__req.html#gadc690546179d67a27772655c9455c47e"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">async_data_op_req&lt; typename <br class="typebreak"/>
 std::remove_pointer&lt; typename <br class="typebreak"/>
-std::decay&lt; T &gt;::type &gt;::type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__make__async__data__op__req.html#gaaefe9a4cc37c21ba775399a66749b10b">boost::afio::make_async_data_op_req</a> (async_io_op _precondition, T &amp;&amp;v, size_t _length, off_t _where)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience instantiator of a <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a single `T *`...">async_data_op_req</a>, letting the compiler deduce the template specialisation to use.  <a href="group__make__async__data__op__req.html#gaaefe9a4cc37c21ba775399a66749b10b"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2"><a class="anchor" id="a24ece0c0005765247dfbb0cb49e757b3"></a><!-- doxytag: member="afio.hpp::doCall" ref="a24ece0c0005765247dfbb0cb49e757b3" args="(size_t, async_io_op _, std::shared_ptr&lt; tasktype &gt; c)" -->
-template&lt;class tasktype &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; bool, <br class="typebreak"/>
-std::shared_ptr<br class="typebreak"/>
-&lt; async_io_handle &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>boost::afio::detail::doCall</b> (size_t, async_io_op _, std::shared_ptr&lt; tasktype &gt; c)</td></tr>
-<tr><td colspan="2"><h2><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>boost::afio::detail::optypes</b> []</td></tr>
+std::decay&lt; T &gt;::type &gt;::type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__make__async__data__op__req.html#ga7a472d3abdf6c990c3475b8c120863dc">make_async_data_op_req</a> (<a class="el" href="structasync__io__op.html">async_io_op</a> _precondition, T &amp;&amp;v, size_t _length, off_t _where)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience instantiator of a async_data_op_req, letting the compiler deduce the template specialisation to use.  <a href="group__make__async__data__op__req.html#ga7a472d3abdf6c990c3475b8c120863dc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abeda7e99c9aaa7388ee878546daf72f2"></a><!-- doxytag: member="afio.hpp::BOOST_BINDLIB_NAMESPACE_END" ref="abeda7e99c9aaa7388ee878546daf72f2" args="(BOOST_AFIO_V1) 1 std" -->
+&#160;</td><td class="memItemRight" valign="bottom"><b>BOOST_BINDLIB_NAMESPACE_END</b> (BOOST_AFIO_V1) 1 std</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Provides a batch asynchronous file i/o implementation based on Boost.ASIO. </p>
 
 <p>Definition in file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 </div><hr/><h2>Define Documentation</h2>
+<a class="anchor" id="a7d6cb43e029a76765081fb3a2f47187d"></a><!-- doxytag: member="afio.hpp::BOOST_AFIO_HEADERS_ONLY" ref="a7d6cb43e029a76765081fb3a2f47187d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="afio_8hpp.html#a7d6cb43e029a76765081fb3a2f47187d">BOOST_AFIO_HEADERS_ONLY</a>&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Determines if AFIO is compiled as headers only. Defaults to 1. </p>
+
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00081">81</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a183b5c98a87ff28a56ea3bfdbe141ee9"></a><!-- doxytag: member="afio.hpp::BOOST_AFIO_USE_BOOST_THREAD" ref="a183b5c98a87ff28a56ea3bfdbe141ee9" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="afio_8hpp.html#a183b5c98a87ff28a56ea3bfdbe141ee9">BOOST_AFIO_USE_BOOST_THREAD</a>&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Determines if AFIO is bound against Boost.Thread or the C++ 11 STL thread. Defaults to 0. </p>
+
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00082">82</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5974d84a78dbcf8b072fca370f1291d"></a><!-- doxytag: member="afio.hpp::BOOST_AFIO_USE_BOOST_FILESYSTEM" ref="ab5974d84a78dbcf8b072fca370f1291d" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="afio_8hpp.html#ab5974d84a78dbcf8b072fca370f1291d">BOOST_AFIO_USE_BOOST_FILESYSTEM</a>&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Determines if AFIO is bound against Boost.Filesystem or the C++ 1z Filesystem TS. Defaults to 1 unless on VS2015 which provides a full Filesystem TS implementation. </p>
+
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00083">83</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b90f4adb6bc09ca319c35c3448ee67a"></a><!-- doxytag: member="afio.hpp::ASIO_STANDALONE" ref="a5b90f4adb6bc09ca319c35c3448ee67a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define <a class="el" href="afio_8hpp.html#a5b90f4adb6bc09ca319c35c3448ee67a">ASIO_STANDALONE</a>&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Determines if AFIO is bound against standalone ASIO or Boost.ASIO. Defaults to undefined, and therefore Boost.ASIO. </p>
+
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00084">84</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a933046d7a31248aa271a978579ee8977"></a><!-- doxytag: member="afio.hpp::BOOST_AFIO_DECLARE_CLASS_ENUM_AS_BITFIELD" ref="a933046d7a31248aa271a978579ee8977" args="(type)" -->
 <div class="memitem">
 <div class="memproto">
@@ -386,7 +348,7 @@ inline BOOST_CONSTEXPR <span class="keywordtype">bool</span> operator!(type a) \
     return 0==<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(a); \
 }
 </pre></div>
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00450">450</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00344">344</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>

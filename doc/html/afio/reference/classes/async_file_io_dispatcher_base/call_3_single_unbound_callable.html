@@ -4,7 +4,7 @@
 <title>call (single unbound callable)</title>
 <link rel="stylesheet" href="../../../../../../libs/afio/doc/html/myboostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
-<link rel="home" href="../../../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
+<link rel="home" href="../../../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.30">
 <link rel="up" href="../async_file_io_dispatcher_base.html" title="async_file_io_dispatcher_base">
 <link rel="prev" href="call_1_batch_bound_functions_without_preconditions.html" title="call (batch bound functions without preconditions)">
 <link rel="next" href="adopt_1_batch.html" title="adopt (batch)">
@@ -28,30 +28,33 @@
           (single unbound callable)</a>
 </h5></div></div></div>
 <p>
-            <a class="indexterm" name="idp13952056"></a>
+            <a class="indexterm" name="idp14148640"></a>
 Schedule an asynchronous invocation of the specified unbound callable
             when its supplied precondition completes. Note that this function essentially
-            calls <code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">bind</span><span class="special">()</span></code>
+            calls <code class="literal"><code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">bind</span><span class="special">()</span></code></code>
             on the callable and the args and passes it to the other call() overload
-            taking a <code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">function</span><span class="special">&lt;&gt;</span></code>.
-            You should therefore use <code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">ref</span><span class="special">()</span></code> etc. as appropriate.
+            taking a <code class="literal"><code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">function</span><span class="special">&lt;&gt;</span></code></code>. You should therefore
+            use <code class="literal"><code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">ref</span><span class="special">()</span></code></code>
+            etc. as appropriate.
           </p>
 <h6>
 <a name="afio.reference.classes.async_file_io_dispatcher_base.call_3_single_unbound_callable.h0"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.call_3_single_unbound_callable.description"></a></span><a class="link" href="call_3_single_unbound_callable.html#afio.reference.classes.async_file_io_dispatcher_base.call_3_single_unbound_callable.description">Description</a>
           </h6>
 <p>
-            This is effectively a convenience wrapper for <code class="computeroutput"><span class="identifier">completion</span><span class="special">()</span></code>. It creates an enqueued_task matching
-            the <code class="computeroutput"><span class="identifier">completion</span><span class="special">\</span><span class="identifier">u005ft</span></code> handler specification and calls
-            the specified arbitrary callable, always returning completion on exit.
-            If you are seeing performance issues, using <code class="computeroutput"><span class="identifier">completion</span><span class="special">()</span></code> directly will have much less overhead.
+            This is effectively a convenience wrapper for <code class="literal"><code class="computeroutput"><span class="identifier">completion</span><span class="special">()</span></code></code>.
+            It creates an enqueued_task matching the <code class="literal"><code class="computeroutput"><span class="identifier">completion_t</span></code></code>
+            handler specification and calls the specified arbitrary callable, always
+            returning completion on exit. If you are seeing performance issues, using
+            <code class="literal"><code class="computeroutput"><span class="identifier">completion</span><span class="special">()</span></code></code>
+            directly will have much less overhead.
           </p>
 <h6>
 <a name="afio.reference.classes.async_file_io_dispatcher_base.call_3_single_unbound_callable.h1"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.call_3_single_unbound_callable.synopsis"></a></span><a class="link" href="call_3_single_unbound_callable.html#afio.reference.classes.async_file_io_dispatcher_base.call_3_single_unbound_callable.synopsis">Synopsis</a>
           </h6>
 <pre class="programlisting"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">class</span> <span class="identifier">C</span><span class="special">,</span> <span class="keyword">class</span><span class="special">...</span> <span class="identifier">Args</span><span class="special">&gt;</span>
-<span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="identifier">shared_future</span><span class="special">&lt;</span> <span class="keyword">typename</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">result_of</span><span class="special">&lt;</span> <span class="identifier">C</span><span class="special">(</span><span class="identifier">Args</span><span class="special">...)&gt;::</span><span class="identifier">type</span> <span class="special">&gt;,</span> <span class="identifier">async_io_op</span> <span class="special">&gt;</span> <span class="identifier">async_file_io_dispatcher_base</span><span class="special">::</span><span class="identifier">call</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">async_io_op</span> <span class="special">&amp;</span> <span class="identifier">req</span><span class="special">,</span> <span class="identifier">C</span> <span class="identifier">callback</span><span class="special">,</span> <span class="identifier">Args</span><span class="special">...</span> <span class="identifier">args</span><span class="special">)</span></pre>
+<span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="identifier">shared_future</span><span class="special">&lt;</span><span class="keyword">typename</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">result_of</span><span class="special">&lt;</span><span class="identifier">C</span><span class="special">(</span><span class="identifier">Args</span><span class="special">...)&gt;::</span><span class="identifier">type</span><span class="special">&gt;,</span> <span class="identifier">async_io_op</span><span class="special">&gt;</span> <span class="identifier">async_file_io_dispatcher_base</span><span class="special">::</span><span class="identifier">call</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">async_io_op</span> <span class="special">&amp;</span> <span class="identifier">req</span><span class="special">,</span> <span class="identifier">C</span> <span class="identifier">callback</span><span class="special">,</span> <span class="identifier">Args</span><span class="special">...</span> <span class="identifier">args</span><span class="special">)</span></pre>
 <h6>
 <a name="afio.reference.classes.async_file_io_dispatcher_base.call_3_single_unbound_callable.h2"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.call_3_single_unbound_callable.parameters"></a></span><a class="link" href="call_3_single_unbound_callable.html#afio.reference.classes.async_file_io_dispatcher_base.call_3_single_unbound_callable.parameters">Parameters</a>

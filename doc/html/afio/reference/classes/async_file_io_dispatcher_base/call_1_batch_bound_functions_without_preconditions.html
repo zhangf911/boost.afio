@@ -4,7 +4,7 @@
 <title>call (batch bound functions without preconditions)</title>
 <link rel="stylesheet" href="../../../../../../libs/afio/doc/html/myboostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
-<link rel="home" href="../../../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
+<link rel="home" href="../../../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.30">
 <link rel="up" href="../async_file_io_dispatcher_base.html" title="async_file_io_dispatcher_base">
 <link rel="prev" href="call_2_batch_bound_functions.html" title="call (batch bound functions)">
 <link rel="next" href="call_3_single_unbound_callable.html" title="call (single unbound callable)">
@@ -28,7 +28,7 @@
           (batch bound functions without preconditions)</a>
 </h5></div></div></div>
 <p>
-            <a class="indexterm" name="idp13865704"></a>
+            <a class="indexterm" name="idp14062344"></a>
 Schedule a batch of asynchronous invocations of the specified bound functions
             when their supplied preconditions complete.
           </p>
@@ -37,10 +37,12 @@ Schedule a batch of asynchronous invocations of the specified bound functions
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.call_1_batch_bound_functions_without_preconditions.description"></a></span><a class="link" href="call_1_batch_bound_functions_without_preconditions.html#afio.reference.classes.async_file_io_dispatcher_base.call_1_batch_bound_functions_without_preconditions.description">Description</a>
           </h6>
 <p>
-            This is effectively a convenience wrapper for <code class="computeroutput"><span class="identifier">completion</span><span class="special">()</span></code>. It creates an enqueued_task matching
-            the <code class="computeroutput"><span class="identifier">completion</span><span class="special">\</span><span class="identifier">u005ft</span></code> handler specification and calls
-            the specified arbitrary callable, always returning completion on exit.
-            If you are seeing performance issues, using <code class="computeroutput"><span class="identifier">completion</span><span class="special">()</span></code> directly will have much less overhead.
+            This is effectively a convenience wrapper for <code class="literal"><code class="computeroutput"><span class="identifier">completion</span><span class="special">()</span></code></code>.
+            It creates an enqueued_task matching the <code class="literal"><code class="computeroutput"><span class="identifier">completion_t</span></code></code>
+            handler specification and calls the specified arbitrary callable, always
+            returning completion on exit. If you are seeing performance issues, using
+            <code class="literal"><code class="computeroutput"><span class="identifier">completion</span><span class="special">()</span></code></code>
+            directly will have much less overhead.
           </p>
 <h6>
 <a name="afio.reference.classes.async_file_io_dispatcher_base.call_1_batch_bound_functions_without_preconditions.h1"></a>

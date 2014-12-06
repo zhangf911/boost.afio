@@ -27,161 +27,16 @@
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
     </ul>
   </div>
 </div>
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">x</div>  </div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
-<tr><td colspan="2"><h2><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;class Iterator &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">detail::enable_if_future&lt; true, <br class="typebreak"/>
-typename Iterator::value_type &gt;<br class="typebreak"/>
-::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__when__all__futures.html#gabb88d1b03f90e1fd689dcb629ab8ecd7">boost::afio::when_all</a> (Iterator first, Iterator last)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes a future vector of results from all the supplied futures.  <a href="#gabb88d1b03f90e1fd689dcb629ab8ecd7"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;class Iterator &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">detail::enable_if_future<br class="typebreak"/>
-&lt; false, typename <br class="typebreak"/>
-Iterator::value_type &gt;::type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__when__all__futures.html#gab467b102949ffdc46639c0b197b204d2">boost::afio::when_any</a> (Iterator first, Iterator last)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a future tuple of results from all the supplied futures.  <a href="#gab467b102949ffdc46639c0b197b204d2"></a><br/></td></tr>
-</table>
-<hr/><h2>Function Documentation</h2>
-<a class="anchor" id="gabb88d1b03f90e1fd689dcb629ab8ecd7"></a><!-- doxytag: member="boost::afio::when_all" ref="gabb88d1b03f90e1fd689dcb629ab8ecd7" args="(Iterator first, Iterator last)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Iterator &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">detail::enable_if_async_op&lt; true, typename Iterator::value_type &gt;::type <a class="el" href="group__when__all__futures.html#gabb88d1b03f90e1fd689dcb629ab8ecd7">boost::afio::when_all</a> </td>
-          <td>(</td>
-          <td class="paramtype">Iterator&#160;</td>
-          <td class="paramname"><em>first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Iterator&#160;</td>
-          <td class="paramname"><em>last</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Makes a future vector of results from all the supplied futures. </p>
-<p>Returns a result when all the supplied ops complete. Propagates exception states.</p>
-<p>This is an implementation of WG21 N3634's <a class="el" href="group__when__all__futures.html#gabb88d1b03f90e1fd689dcb629ab8ecd7" title="Makes a future vector of results from all the supplied futures.">when_all()</a> which uses <a class="el" href="group__process__threadpool.html#gabb4747cc11ef3ee1bbb969bc78c238bb" title="Returns the process threadpool.">process_threadpool()</a> to allow you to create a future which only becomes available when all the supplied futures become available.</p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>A future vector of the results of the input futures </dd></dl>
-<dl class=""><dt><b>Template Parameters:</b></dt><dd>
-  <table class="">
-    <tr><td class="paramname">class Iterator</td><td>A type modelling an iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">first</td><td>An iterator pointing to the first item to wait upon </td></tr>
-    <tr><td class="paramname">last</td><td>An iterator pointing to after the last future to wait upon</td></tr>
-  </table>
-  </dd>
-</dl>
-  <dl class="return"><dt><b>Returns:</b></dt><dd>A future vector of shared_ptr's to <a class="el" href="classboost_1_1afio_1_1async__io__handle.html" title="The abstract base class encapsulating a platform-specific file handle.">async_io_handle</a>. </dd></dl>
-<dl class=""><dt><b>Template Parameters:</b></dt><dd>
-  <table class="">
-    <tr><td class="paramname">class Iterator</td><td>An iterator type. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">first</td><td>An iterator pointing to the first <a class="el" href="structboost_1_1afio_1_1async__io__op.html" title="A reference to an asynchronous operation.">async_io_op</a> to wait upon. </td></tr>
-    <tr><td class="paramname">last</td><td>An iterator pointing after the last <a class="el" href="structboost_1_1afio_1_1async__io__op.html" title="A reference to an asynchronous operation.">async_io_op</a> to wait upon.</td></tr>
-  </table>
-  </dd>
-</dl>
-   
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00409">409</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="gab467b102949ffdc46639c0b197b204d2"></a><!-- doxytag: member="boost::afio::when_any" ref="gab467b102949ffdc46639c0b197b204d2" args="(Iterator first, Iterator last)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Iterator &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">detail::enable_if_async_op&lt; false, typename Iterator::value_type &gt;::type <a class="el" href="group__when__all__futures.html#gab467b102949ffdc46639c0b197b204d2">boost::afio::when_any</a> </td>
-          <td>(</td>
-          <td class="paramtype">Iterator&#160;</td>
-          <td class="paramname"><em>first</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Iterator&#160;</td>
-          <td class="paramname"><em>last</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Returns a future tuple of results from all the supplied futures. </p>
-<p>Returns a result when any the supplied ops complete. Propagates exception states.</p>
-<p>Makes a future result from the first of the supplied futures to become available</p>
-<p>This is an implementation of WG21 N3634's <a class="el" href="group__when__all__futures.html#gab467b102949ffdc46639c0b197b204d2" title="Returns a future tuple of results from all the supplied futures.">when_any()</a> which uses <a class="el" href="group__process__threadpool.html#gabb4747cc11ef3ee1bbb969bc78c238bb" title="Returns the process threadpool.">process_threadpool()</a> to allow you to create a future which only becomes available when the first of the supplied futures become available.</p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>A future pair of the first future to become available and its result </dd></dl>
-<dl class=""><dt><b>Template Parameters:</b></dt><dd>
-  <table class="">
-    <tr><td class="paramname">class Iterator</td><td>A type modelling an iterator </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">first</td><td>An iterator pointing to the first future to wait upon </td></tr>
-    <tr><td class="paramname">last</td><td>An iterator pointing to after the last future to wait upon</td></tr>
-  </table>
-  </dd>
-</dl>
-  <dl class="return"><dt><b>Returns:</b></dt><dd>A future vector of shared_ptr's to <a class="el" href="classboost_1_1afio_1_1async__io__handle.html" title="The abstract base class encapsulating a platform-specific file handle.">async_io_handle</a>. </dd></dl>
-<dl class=""><dt><b>Template Parameters:</b></dt><dd>
-  <table class="">
-    <tr><td class="paramname">class Iterator</td><td>An iterator type. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">first</td><td>An iterator pointing to the first <a class="el" href="structboost_1_1afio_1_1async__io__op.html" title="A reference to an asynchronous operation.">async_io_op</a> to wait upon. </td></tr>
-    <tr><td class="paramname">last</td><td>An iterator pointing after the last <a class="el" href="structboost_1_1afio_1_1async__io__op.html" title="A reference to an asynchronous operation.">async_io_op</a> to wait upon.</td></tr>
-  </table>
-  </dd>
-</dl>
-   
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00430">430</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
-
-</div>
-</div>
 </div><!-- contents -->
 <hr size="1">
 <table width="100%">

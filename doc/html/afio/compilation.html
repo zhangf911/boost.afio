@@ -4,8 +4,8 @@
 <title>Compilation</title>
 <link rel="stylesheet" href="../../../libs/afio/doc/html/myboostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
-<link rel="home" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
-<link rel="up" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
+<link rel="home" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.30">
+<link rel="up" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.30">
 <link rel="prev" href="design/acid_write_ordering/write_ordering_data.html" title="Write ordering data and durability: why does it matter?">
 <link rel="next" href="quickstart.html" title="Quick Start">
 </head>
@@ -34,17 +34,60 @@
       provided by the Boost.AFIO library. No linking against any binaries is required.
     </p>
 <p>
-      Boost.AFIO is only dependant on headers-only Boost libraries apart from Boost.Filesystem.
-      Boost.Filesystem in turn is dependant on Boost.System. On some platforms (e.g.
-      ARM) you may also need Boost.Atomic.
+      As of v1.3 of the engine, Boost.AFIO is now capable of being used standalone
+      with no dependencies. You choose the dependencies by setting the following
+      macros or leaving them default:
+    </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem">
+          <code class="computeroutput"><span class="identifier">BOOST_AFIO_USE_BOOST_THREAD</span></code>
+          (defaults to 0): Use Boost instead of the C++ 11 STL for atomic, chrono,
+          future, mutex and thread. This is useful where your C++ 11 STL is deficient.
+        </li>
+<li class="listitem">
+          <code class="computeroutput"><span class="identifier">BOOST_AFIO_USE_BOOST_FILESYSTEM</span></code>
+          (defaults to 0 except on VS2015 and later): Use <a href="http://www.boost.org/libs/filesystem/" target="_top">Boost.Filesystem</a>
+          instead of the C++ 1y Filesystem TS provided by your STL. As currently
+          only VS2015 provides Filesystem, it only defaults to 1 for that platform.
+        </li>
+<li class="listitem">
+          <code class="computeroutput"><span class="identifier">ASIO_STANDALONE</span></code> (defaults
+          to undefined): Use standalone ASIO instead of <a href="http://www.boost.org/libs/asio/" target="_top">Boost.ASIO</a>.
+          You will need to provide a copy of standalone ASIO on your include path.
+        </li>
+</ul></div>
+<p>
+      If you wish to run unit tests, you may also adjust:
+    </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
+          <code class="computeroutput"><span class="identifier">BOOST_AFIO_USE_BOOST_UNIT_TEST</span></code>
+          (defaults to 0): Use <a href="http://www.boost.org/libs/iostreams/" target="_top">Boost.Test</a>
+          instead of Boost.BindLib's emulation based on <a href="https://github.com/philsquared/Catch" target="_top">https://github.com/philsquared/Catch</a>.
+        </li></ul></div>
+<p>
+      Thanks to Boost.BindLib, if your compiler has inline namespace support, you
+      can multiply use the above four build config macros in <span class="bold"><strong>any</strong></span>
+      combination you like, <span class="emphasis"><em>including</em></span> within the same translation
+      unit i.e. a Boost.Thread based AFIO coexists happily with a C++ 11 STL AFIO
+      in the same compiland, and any combination thereof. Simply undefine the old
+      values of the macros, and define new values including afio.hpp afterwards.
     </p>
 <p>
-      In order to be able to use Boost.AFIO, the only thing users need to do is to
-      download and/or install Boost and specify location to include directories,
-      so <code class="computeroutput"><span class="identifier">include</span></code> directives of this
-      scheme will work:
+      If you do make use of <a href="http://www.boost.org/libs/filesystem/" target="_top">Boost.Filesystem</a>
+      in your AFIO build, note that Boost.Filesystem is dependant on Boost.System
+      which will also need to be linked in. On some platforms (e.g. ARM) you may
+      also need Boost.Atomic.
     </p>
-<pre class="programlisting"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">boost</span><span class="special">/...&gt;</span>
+<p>
+      After defining your build macros of choice, making AFIO available to your code
+      is as simple as:
+    </p>
+<pre class="programlisting"><span class="preprocessor">#include</span> <span class="string">"boost.afio/include/boost/afio.hpp"</span>
+</pre>
+<p>
+      if being used standalone or if being used as part of Boost:
+    </p>
+<pre class="programlisting"><span class="preprocessor">#include</span> <span class="string">"boost/afio.hpp"</span>
 </pre>
 <h4>
 <a name="afio.compilation.h0"></a>
@@ -359,15 +402,20 @@
     </p>
 <h4>
 <a name="afio.compilation.h1"></a>
-      <span><a name="afio.compilation.boost_afio_installation"></a></span><a class="link" href="compilation.html#afio.compilation.boost_afio_installation">Boost
-      AFIO Installation</a>
+      <span><a name="afio.compilation.boost_afio_installation_into_boo"></a></span><a class="link" href="compilation.html#afio.compilation.boost_afio_installation_into_boo">Boost
+      AFIO Installation into Boost</a>
     </h4>
+<p>
+      As of v1.3 of the engine, you can simply git clone Boost.AFIO and get to work.
+      If however you wish to use AFIO as part of the Boost libraries, AFIO is also
+      a Boost module:
+    </p>
 <div class="orderedlist"><ol class="orderedlist" type="1">
 <li class="listitem">
           Download the latest version of the Boost Libraries from boost.org. At the
-          time of writing the current version is Boost 1.56. Boost AFIO is not compatible
-          with versions of Boost earlier than 1.56 as this was the first Boost version
-          to become source code modularised.
+          time of writing the current version is Boost 1.57. Installing AFIO as a
+          Boost module is not compatible with versions of Boost earlier than 1.56
+          as this was the first Boost version to become source code modularised.
         </li>
 <li class="listitem">
           Download Boost AFIO through GitHub at : <a href="https://github.com/BoostGSoC13/boost.afio" target="_top">https://github.com/BoostGSoC13/boost.afio</a>
@@ -399,7 +447,7 @@
           <p>
             If you'd also like to execute the unit test suite, do:
           </p>
-<pre class="programlisting"><span class="identifier">b2</span> <span class="identifier">libs</span><span class="special">/</span><span class="identifier">afio</span><span class="special">/</span><span class="identifier">test</span>
+<pre class="programlisting"><span class="special">./</span><span class="identifier">b2</span> <span class="identifier">libs</span><span class="special">/</span><span class="identifier">afio</span><span class="special">/</span><span class="identifier">test</span>
 </pre>
         </li>
 <li class="listitem">
@@ -428,15 +476,33 @@
       the Unit Tests</a>
     </h4>
 <p>
-      To run the unit tests with <span class="bold"><strong>bjam</strong></span>, run <span class="bold"><strong>b2</strong></span> from the command line from inside the <span class="bold"><strong>libs/afio/tests</strong></span>
-      directory. This will run the entire suite of unit tests. Remember that this
-      requires that you have Boost.Build properly installed on your system. Please
-      consult boost.org for instructions on how to install Boost.Build. <a href="http://www.boost.org/doc/libs/1_54_0/doc/html/bbv2/installation.html" target="_top">http://www.boost.org/doc/libs/1_54_0/doc/html/bbv2/installation.html</a>
+      To run the unit tests as a standalone build, some like these will probably
+      work for GCC and MSVC respectively:
     </p>
+<pre class="programlisting"><span class="special">#!/</span><span class="identifier">bin</span><span class="special">/</span><span class="identifier">sh</span>
+<span class="keyword">if</span> <span class="special">[</span> <span class="special">!</span> <span class="special">-</span><span class="identifier">d</span> <span class="identifier">asio</span> <span class="special">];</span> <span class="identifier">then</span>
+  <span class="identifier">git</span> <span class="identifier">clone</span> <span class="identifier">https</span><span class="special">://</span><span class="identifier">github</span><span class="special">.</span><span class="identifier">com</span><span class="special">/</span><span class="identifier">chriskohlhoff</span><span class="special">/</span><span class="identifier">asio</span><span class="special">.</span><span class="identifier">git</span>
+<span class="identifier">fi</span>
+<span class="identifier">rm</span> <span class="special">-</span><span class="identifier">rf</span> <span class="identifier">test_all</span>
+<span class="identifier">g</span><span class="special">++</span> <span class="special">-</span><span class="identifier">o</span> <span class="identifier">test_all</span> <span class="special">-</span><span class="identifier">g</span> <span class="special">-</span><span class="identifier">O3</span> <span class="special">-</span><span class="identifier">std</span><span class="special">=</span><span class="identifier">c</span><span class="special">++</span><span class="number">11</span> <span class="identifier">test</span><span class="special">/</span><span class="identifier">test_all</span><span class="special">.</span><span class="identifier">cpp</span> <span class="identifier">detail</span><span class="special">/</span><span class="identifier">SpookyV2</span><span class="special">.</span><span class="identifier">cpp</span> <span class="special">-</span><span class="identifier">Iinclude</span> <span class="special">-</span><span class="identifier">Itest</span> <span class="special">-</span><span class="identifier">DAFIO_STANDALONE</span><span class="special">=</span><span class="number">1</span> <span class="special">-</span><span class="identifier">DSPINLOCK_STANDALONE</span><span class="special">=</span><span class="number">1</span> <span class="special">-</span><span class="identifier">Iasio</span><span class="special">/</span><span class="identifier">asio</span><span class="special">/</span><span class="identifier">include</span> <span class="special">-</span><span class="identifier">DASIO_STANDALONE</span><span class="special">=</span><span class="number">1</span> <span class="special">-</span><span class="identifier">DBOOST_AFIO_RUNNING_IN_CI</span><span class="special">=</span><span class="number">1</span> <span class="special">-</span><span class="identifier">lboost_filesystem</span> <span class="special">-</span><span class="identifier">lboost_system</span> <span class="special">-</span><span class="identifier">lpthread</span>
+</pre>
 <p>
-      There are a few command line arguments being used for the unit tests at the
-      moment. These won&#8217;t be available as the project nears completion, but they
-      serve a useful purpose for the project at the moment.
+      Note the dependency on <a href="http://www.boost.org/libs/filesystem/" target="_top">Boost.Filesystem</a>
+      as libstdc++ 4.9 (the last I tested) has insufficient Filesystem support. For
+      VS2015:
+    </p>
+<pre class="programlisting"><span class="keyword">if</span> <span class="keyword">not</span> <span class="identifier">exist</span> <span class="identifier">asio</span> <span class="identifier">git</span> <span class="identifier">clone</span> <span class="identifier">https</span><span class="special">://</span><span class="identifier">github</span><span class="special">.</span><span class="identifier">com</span><span class="special">/</span><span class="identifier">chriskohlhoff</span><span class="special">/</span><span class="identifier">asio</span><span class="special">.</span><span class="identifier">git</span>
+<span class="identifier">cl</span> <span class="special">/</span><span class="identifier">Zi</span> <span class="special">/</span><span class="identifier">EHs</span> <span class="special">/</span><span class="identifier">O2</span> <span class="special">/</span><span class="identifier">MD</span> <span class="special">/</span><span class="identifier">GF</span> <span class="special">/</span><span class="identifier">GR</span> <span class="special">/</span><span class="identifier">Gy</span> <span class="special">/</span><span class="identifier">bigobj</span> <span class="identifier">test</span><span class="special">\</span><span class="identifier">test_all</span><span class="special">.</span><span class="identifier">cpp</span> <span class="identifier">detail</span><span class="special">\</span><span class="identifier">SpookyV2</span><span class="special">.</span><span class="identifier">cpp</span> <span class="special">/</span><span class="identifier">DUNICODE</span><span class="special">=</span><span class="number">1</span> <span class="special">/</span><span class="identifier">DWIN32</span><span class="special">=</span><span class="number">1</span> <span class="special">/</span><span class="identifier">D_UNICODE</span><span class="special">=</span><span class="number">1</span> <span class="special">/</span><span class="identifier">D_WIN32</span><span class="special">=</span><span class="number">1</span> <span class="special">/</span><span class="identifier">Iinclude</span> <span class="special">/</span><span class="identifier">Itest</span> <span class="special">/</span><span class="identifier">DAFIO_STANDALONE</span><span class="special">=</span><span class="number">1</span> <span class="special">/</span><span class="identifier">DSPINLOCK_STANDALONE</span><span class="special">=</span><span class="number">1</span> <span class="special">/</span><span class="identifier">Iasio</span><span class="special">/</span><span class="identifier">asio</span><span class="special">/</span><span class="identifier">include</span> <span class="special">/</span><span class="identifier">DASIO_STANDALONE</span><span class="special">=</span><span class="number">1</span> <span class="special">/</span><span class="identifier">DBOOST_AFIO_RUNNING_IN_CI</span><span class="special">=</span><span class="number">1</span>
+</pre>
+<p>
+      To run the unit tests under Boost with <span class="bold"><strong>bjam</strong></span>,
+      run from the boost top directory:
+    </p>
+<pre class="programlisting"><span class="special">./</span><span class="identifier">b2</span> <span class="identifier">libs</span><span class="special">/</span><span class="identifier">afio</span><span class="special">/</span><span class="identifier">test</span>
+</pre>
+<p>
+      This will run the entire suite of unit tests. Some useful command line arguments
+      for Boost.Build:
     </p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">

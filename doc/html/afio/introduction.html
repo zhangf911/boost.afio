@@ -4,9 +4,9 @@
 <title>Introduction</title>
 <link rel="stylesheet" href="../../../libs/afio/doc/html/myboostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
-<link rel="home" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
-<link rel="up" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
-<link rel="prev" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.22">
+<link rel="home" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.30">
+<link rel="up" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.30">
+<link rel="prev" href="../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.30">
 <link rel="next" href="design.html" title="Design Rationale">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -27,9 +27,37 @@
 <a name="afio.introduction"></a><a class="link" href="introduction.html" title="Introduction">Introduction</a>
 </h2></div></div></div>
 <p>
-      Boost.AFIO is a C++ library which lets you schedule a dependency graph of synchronous
-      input/output operations to be executed asynchronously to the maximum capacity
-      of your hardware. Its execution engine is lock free and wait free<sup>[<a name="afio.introduction.f0" href="#ftn.afio.introduction.f0" class="footnote">1</a>]</sup> and scales linearly with CPU cores<sup>[<a name="afio.introduction.f1" href="#ftn.afio.introduction.f1" class="footnote">2</a>]</sup>. In addition to a pure portable POSIX file i/o backend, specialised
+      Boost.AFIO is a C++ library which lets you schedule an ordered dependency graph
+      of file input/output operations to be executed asynchronously to the maximum
+      capacity of your hardware. Its execution engine is lock free and wait free<sup>[<a name="afio.introduction.f0" href="#ftn.afio.introduction.f0" class="footnote">1</a>]</sup> and scales linearly with CPU cores<sup>[<a name="afio.introduction.f1" href="#ftn.afio.introduction.f1" class="footnote">2</a>]</sup>. If you want to do portable asynchronous file i/o in C++, this
+      is the correct library to be looking at.
+    </p>
+<p>
+      Boost.AFIO is a Boost.BindLib based Boost library, and therefore is capable
+      of any combination of the following build configurations:
+    </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem">
+          Uses either Boost OR the C++ 11 STL for atomic, thread, future, chrono
+          etc.
+        </li>
+<li class="listitem">
+          Uses either Boost OR the C++ 1y STL for Fileystem. At the time of writing,
+          only VS2015 provides Filesystem in its STL.
+        </li>
+<li class="listitem">
+          Uses either Boost OR standalone ASIO for the i/o engine.
+        </li>
+</ul></div>
+<p>
+      You may note that as a result AFIO can be used as a completely standalone header-only
+      library totally independent from any dependencies on Boost which can be dropped
+      into any existing build system as a simple single header include. This, incidentally,
+      also extends to its unit test suite which can use either <a href="http://www.boost.org/libs/iostreams/" target="_top">Boost.Test</a>
+      OR <a href="https://github.com/philsquared/Catch" target="_top">https://github.com/philsquared/Catch</a>.
+    </p>
+<p>
+      Boost.AFIO provides a pure portable POSIX file i/o backend and specialised
       file i/o backends making use of host OS asynchronous file i/o facilities are
       provided for:
     </p>
@@ -38,10 +66,10 @@
           Windows NT IOCP (since v1.0)
         </li>
 <li class="listitem">
-          Linux KAIO (planned for v1.3)
+          Linux KAIO (planned for v1.x)
         </li>
 <li class="listitem">
-          POSIX AIO, suitable for BSD only (planned for v1.4)
+          POSIX AIO, suitable for BSD only (planned for v1.x)
         </li>
 </ul></div>
 <p>
@@ -62,7 +90,8 @@
     </p>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
-          Microsoft Visual Studio 2010, released in 2010.
+          Microsoft Visual Studio 2010, released in 2010. As of v1.3 of the engine,
+          Microsoft Visual Studio 2013 is now minimally required.
         </li>
 <li class="listitem">
           GNU Compiler Collection v4.6, released in 2011, but may work with as early
@@ -95,7 +124,7 @@
       that programming using that compiler and Boost.AFIO isn't a waste of your time.
       In particular, you should <span class="bold"><strong>avoid VS2010 and Mingw32 (not
       Mingw-w64 which is fine) if at all possible</strong></span>, but if you can't,
-      <a class="link" href="advanced_topics/vs2010_notes.html" title="Notes on using AFIO with Microsoft Visual Studio 2010 and Mingw32">we have written a guide especially
+      <a class="link" href="../">we have written a guide especially
       for VS2010 and Mingw32</a>. Try to use as new a compiler as possible with
       AFIO as the quality of code generated significantly improves with each major
       release. As an example, AFIO compiled with a rvalue reference v3 capable compiler

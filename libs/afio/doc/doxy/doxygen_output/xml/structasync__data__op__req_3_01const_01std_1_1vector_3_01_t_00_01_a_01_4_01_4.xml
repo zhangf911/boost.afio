@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" kind="struct" prot="public">
+    <compoundname>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</compoundname>
+    <includes refid="afio_8hpp" local="no">afio.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+      <param>
+        <type>class A</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1aebdd3b41b4a23ba0f1cb7165ebaddd75" prot="public" static="no" mutable="no">
+        <type><ref refid="structasync__io__op" kindref="compound">async_io_op</ref></type>
+        <definition>async_io_op async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;::precondition</definition>
+        <argsstring></argsstring>
+        <name>precondition</name>
+        <briefdescription>
+<para>A precondition containing an open file handle for this operation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2185" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a8006799ba08f6491079299e404c2d12b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; asio::const_buffer &gt;</type>
+        <definition>std::vector&lt;asio::const_buffer&gt; async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;::buffers</definition>
+        <argsstring></argsstring>
+        <name>buffers</name>
+        <briefdescription>
+<para>A sequence of const Boost.ASIO buffers to write from. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2187" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1acd50d8734e5bb4fc197da26c50071db7" prot="public" static="no" mutable="no">
+        <type>off_t</type>
+        <definition>off_t async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;::where</definition>
+        <argsstring></argsstring>
+        <name>where</name>
+        <briefdescription>
+<para>The offset at which to write. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2189" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2189" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a61c9e301eaf590af2fcb83c4593f29a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;::async_data_op_req</definition>
+        <argsstring>()</argsstring>
+        <name>async_data_op_req</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2192" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2192" bodyend="2192"/>
+      </memberdef>
+      <memberdef kind="function" id="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1abd8995c446dfa1d7f6b7346d4f708ac4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;::async_data_op_req</definition>
+        <argsstring>(const async_data_op_req &amp;o)</argsstring>
+        <name>async_data_op_req</name>
+        <param>
+          <type>const <ref refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a61c9e301eaf590af2fcb83c4593f29a1" kindref="member">async_data_op_req</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2194" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2194" bodyend="2194"/>
+      </memberdef>
+      <memberdef kind="function" id="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a09f8468de149cefe3f4b9b7f2cfa1701" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;::async_data_op_req</definition>
+        <argsstring>(async_data_op_req &amp;&amp;o) BOOST_NOEXCEPT_OR_NOTHROW</argsstring>
+        <name>async_data_op_req</name>
+        <param>
+          <type><ref refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a61c9e301eaf590af2fcb83c4593f29a1" kindref="member">async_data_op_req</ref> &amp;&amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2196" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2196" bodyend="2196"/>
+      </memberdef>
+      <memberdef kind="function" id="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a913d0574ae7097d0b5482ec0eafe7249" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;::async_data_op_req</definition>
+        <argsstring>(const async_data_op_req&lt; std::vector&lt; T, A &gt;&gt; &amp;o)</argsstring>
+        <name>async_data_op_req</name>
+        <param>
+          <type>const <ref refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a61c9e301eaf590af2fcb83c4593f29a1" kindref="member">async_data_op_req</ref>&lt; std::vector&lt; T, A &gt;&gt; &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2198" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2198" bodyend="2198"/>
+      </memberdef>
+      <memberdef kind="function" id="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1aed5a52bdf30d6ca171f3135a41126feb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;::async_data_op_req</definition>
+        <argsstring>(async_data_op_req&lt; std::vector&lt; T, A &gt;&gt; &amp;&amp;o) BOOST_NOEXCEPT_OR_NOTHROW</argsstring>
+        <name>async_data_op_req</name>
+        <param>
+          <type><ref refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a61c9e301eaf590af2fcb83c4593f29a1" kindref="member">async_data_op_req</ref>&lt; std::vector&lt; T, A &gt;&gt; &amp;&amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Move constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2200" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2200" bodyend="2200"/>
+      </memberdef>
+      <memberdef kind="function" id="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1ad5ad8e147f55a22be13f9e00b99c5017" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a61c9e301eaf590af2fcb83c4593f29a1" kindref="member">async_data_op_req</ref> &amp;</type>
+        <definition>async_data_op_req&amp; async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;::operator=</definition>
+        <argsstring>(const async_data_op_req &amp;o)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a61c9e301eaf590af2fcb83c4593f29a1" kindref="member">async_data_op_req</ref> &amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Copy assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2202" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2202" bodyend="2202"/>
+      </memberdef>
+      <memberdef kind="function" id="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a661702a38a8a78c15689790595cc21a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a61c9e301eaf590af2fcb83c4593f29a1" kindref="member">async_data_op_req</ref> &amp;</type>
+        <definition>async_data_op_req&amp; async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;::operator=</definition>
+        <argsstring>(async_data_op_req &amp;&amp;o) BOOST_NOEXCEPT_OR_NOTHROW</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a61c9e301eaf590af2fcb83c4593f29a1" kindref="member">async_data_op_req</ref> &amp;&amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+<para>Move assignment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2204" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2204" bodyend="2204"/>
+      </memberdef>
+      <memberdef kind="function" id="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1afa54d4431109c5b09ce1f59277d06332" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;::async_data_op_req</definition>
+        <argsstring>(async_io_op _precondition, const std::vector&lt; T, A &gt; &amp;v, off_t _where)</argsstring>
+        <name>async_data_op_req</name>
+        <param>
+          <type><ref refid="structasync__io__op" kindref="compound">async_io_op</ref></type>
+          <declname>_precondition</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; T, A &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>off_t</type>
+          <declname>_where</declname>
+        </param>
+        <briefdescription>
+<para>Constructs an instance. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_precondition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional precondition for this operation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to memory or reference to object into which to read or write </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_where</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset at which to transfer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2206" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2206" bodyend="2206"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A convenience bundle of precondition, data and where for writing from a `const std::vector&lt;T, A&gt;`. Data <bold>MUST</bold> stay around until the operation completes. </para>    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>class T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any type </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>class A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any STL allocator </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="19">
+        <label>std::vector&lt; asio::const_buffer &gt;</label>
+      </node>
+      <node id="17">
+        <label>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</label>
+        <link refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>precondition</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>buffers</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>async_io_op</label>
+        <link refid="structasync__io__op"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2182" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2181" bodyend="2207"/>
+    <listofallmembers>
+      <member refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a61c9e301eaf590af2fcb83c4593f29a1" prot="public" virt="non-virtual"><scope>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</scope><name>async_data_op_req</name></member>
+      <member refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1abd8995c446dfa1d7f6b7346d4f708ac4" prot="public" virt="non-virtual"><scope>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</scope><name>async_data_op_req</name></member>
+      <member refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a09f8468de149cefe3f4b9b7f2cfa1701" prot="public" virt="non-virtual"><scope>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</scope><name>async_data_op_req</name></member>
+      <member refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a913d0574ae7097d0b5482ec0eafe7249" prot="public" virt="non-virtual"><scope>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</scope><name>async_data_op_req</name></member>
+      <member refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1aed5a52bdf30d6ca171f3135a41126feb" prot="public" virt="non-virtual"><scope>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</scope><name>async_data_op_req</name></member>
+      <member refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1afa54d4431109c5b09ce1f59277d06332" prot="public" virt="non-virtual"><scope>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</scope><name>async_data_op_req</name></member>
+      <member refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a8006799ba08f6491079299e404c2d12b" prot="public" virt="non-virtual"><scope>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</scope><name>buffers</name></member>
+      <member refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1ad5ad8e147f55a22be13f9e00b99c5017" prot="public" virt="non-virtual"><scope>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</scope><name>operator=</name></member>
+      <member refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a661702a38a8a78c15689790595cc21a6" prot="public" virt="non-virtual"><scope>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</scope><name>operator=</name></member>
+      <member refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1aebdd3b41b4a23ba0f1cb7165ebaddd75" prot="public" virt="non-virtual"><scope>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</scope><name>precondition</name></member>
+      <member refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1acd50d8734e5bb4fc197da26c50071db7" prot="public" virt="non-virtual"><scope>async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</scope><name>where</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

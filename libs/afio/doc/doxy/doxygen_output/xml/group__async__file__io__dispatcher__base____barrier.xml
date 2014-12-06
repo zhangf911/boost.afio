@@ -3,35 +3,6 @@
   <compounddef id="group__async__file__io__dispatcher__base____barrier" kind="group">
     <compoundname>async_file_io_dispatcher_base__barrier</compoundname>
     <title>x</title>
-      <sectiondef kind="func">
-      <memberdef kind="function" id="group__async__file__io__dispatcher__base____barrier_1gacc278eff00d3740305863354cca4660b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::vector&lt; async_io_op &gt;</type>
-        <definition>std::vector&lt;async_io_op&gt; boost::afio::async_file_io_dispatcher_base::barrier</definition>
-        <argsstring>(const std::vector&lt; async_io_op &gt; &amp;ops)</argsstring>
-        <name>barrier</name>
-        <param>
-          <type>const std::vector&lt; async_io_op &gt; &amp;</type>
-          <declname>ops</declname>
-        </param>
-        <briefdescription>
-<para>Schedule an asynchronous synchronisation of preceding operations. </para>        </briefdescription>
-        <detaileddescription>
-<para>If you perform many asynchronous operations of unequal duration but wish to schedule one of more operations to occur only after <bold>all</bold> of those operations have completed, this is the correct function to use. The returned batch of ops exactly match the input batch of ops (including their exception states), but they will only complete when the last of the input batch of ops completes.</para><para><simplesect kind="note"><para>If an input op is in an exceptioned state at the point of entry into this function, this function will propagate the exception there and then. <emphasis>Only</emphasis> error states which occur <emphasis>after</emphasis> this function has been scheduled are propagated into the output set of ops.</para></simplesect>
-<simplesect kind="return"><para>A batch of op handles. </para></simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>ops</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A batch of op handles.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N) to complete.</qbk>   <qbk>[heading Exception Model]See detailed description above.</qbk>   <qbk>[heading Example][barrier_example]</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1659"/>
-      </memberdef>
-      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

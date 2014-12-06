@@ -1,0 +1,526 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classasync__io__handle" kind="class" prot="public">
+    <compoundname>async_io_handle</compoundname>
+    <includes refid="afio_8hpp" local="no">afio.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classasync__io__handle_1a1685977cc7dfdfbb243e56330e81c929" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class async_file_io_dispatcher_base</definition>
+        <argsstring></argsstring>
+        <name>async_file_io_dispatcher_base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="722" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="722" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classasync__io__handle_1a2121b2bc574e3bd2b048ec448603c93c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend struct</type>
+        <definition>friend struct async_io_handle_posix</definition>
+        <argsstring></argsstring>
+        <name>async_io_handle_posix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="723" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="723" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classasync__io__handle_1a6312b7f088cb1c8a056b19453961f636" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend struct</type>
+        <definition>friend struct async_io_handle_windows</definition>
+        <argsstring></argsstring>
+        <name>async_io_handle_windows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="724" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="724" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classasync__io__handle_1a56f496ba01c9b613e83758582f2b06c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class detail::async_file_io_dispatcher_compat</definition>
+        <argsstring></argsstring>
+        <name>detail::async_file_io_dispatcher_compat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="725" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="725" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classasync__io__handle_1a7eb74be36e15618561c7df1fbdacea5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class detail::async_file_io_dispatcher_windows</definition>
+        <argsstring></argsstring>
+        <name>detail::async_file_io_dispatcher_windows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="726" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="726" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classasync__io__handle_1a06e10cc6179894e1e8bab39ccba6c476" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class detail::async_file_io_dispatcher_linux</definition>
+        <argsstring></argsstring>
+        <name>detail::async_file_io_dispatcher_linux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="727" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="727" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classasync__io__handle_1a4fb6d073a418fd80cc2b81450cc82687" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class detail::async_file_io_dispatcher_qnx</definition>
+        <argsstring></argsstring>
+        <name>detail::async_file_io_dispatcher_qnx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="728" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="728" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classasync__io__handle_1a8beccff14570db2ba451caaa690746ca" prot="private" static="no" mutable="no">
+        <type>async_file_io_dispatcher_base *</type>
+        <definition>async_file_io_dispatcher_base* async_io_handle::_parent</definition>
+        <argsstring></argsstring>
+        <name>_parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="730" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="730" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classasync__io__handle_1acee65543d1f6b39fcf8a56a355d7d828" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;async_io_handle&gt; async_io_handle::dirh</definition>
+        <argsstring></argsstring>
+        <name>dirh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="731" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="731" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classasync__io__handle_1a1ebcc132f00b19bb8dc9526ac9e6e0a8" prot="private" static="no" mutable="no">
+        <type>chrono::system_clock::time_point</type>
+        <definition>chrono::system_clock::time_point async_io_handle::_opened</definition>
+        <argsstring></argsstring>
+        <name>_opened</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="732" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="732" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classasync__io__handle_1ae9e3ebcbd210d65e92c5cfdb147eb6e9" prot="private" static="no" mutable="no">
+        <type>filesystem::path</type>
+        <definition>filesystem::path async_io_handle::_path</definition>
+        <argsstring></argsstring>
+        <name>_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="733" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classasync__io__handle_1a88f01bd546298ba97b3f59947ce65c25" prot="private" static="no" mutable="no">
+        <type><ref refid="group__file__flags_1gaba2d48ea5b39d1ab48c6b892a2e2d0db" kindref="member">file_flags</ref></type>
+        <definition>file_flags async_io_handle::_flags</definition>
+        <argsstring></argsstring>
+        <name>_flags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="734" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="734" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classasync__io__handle_1a8887b1a09e489bd8c2785e9c8f94af8a" prot="protected" static="no" mutable="no">
+        <type>atomic&lt; off_t &gt;</type>
+        <definition>atomic&lt;off_t&gt; async_io_handle::bytesread</definition>
+        <argsstring></argsstring>
+        <name>bytesread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="736" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classasync__io__handle_1a6bbabaf891841ebdc44a49754b2a666d" prot="protected" static="no" mutable="no">
+        <type>atomic&lt; off_t &gt;</type>
+        <definition>atomic&lt;off_t&gt; async_io_handle::byteswritten</definition>
+        <argsstring></argsstring>
+        <name>byteswritten</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="736" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classasync__io__handle_1ae9b35e4d86a0a7654d20b3b915ba6cba" prot="protected" static="no" mutable="no">
+        <type>atomic&lt; off_t &gt;</type>
+        <definition>atomic&lt;off_t&gt; async_io_handle::byteswrittenatlastfsync</definition>
+        <argsstring></argsstring>
+        <name>byteswrittenatlastfsync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="736" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="736" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classasync__io__handle_1ad4b6bf8d069bca2860122d94d7396e51" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>async_io_handle::async_io_handle</definition>
+        <argsstring>(async_file_io_dispatcher_base *parent, std::shared_ptr&lt; async_io_handle &gt; _dirh, const filesystem::path &amp;path, file_flags flags)</argsstring>
+        <name>async_io_handle</name>
+        <param>
+          <type>async_file_io_dispatcher_base *</type>
+          <declname>parent</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>_dirh</declname>
+        </param>
+        <param>
+          <type>const filesystem::path &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="group__file__flags_1gaba2d48ea5b39d1ab48c6b892a2e2d0db" kindref="member">file_flags</ref></type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="737" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="737" bodyend="737"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1ae8a43a4f821e10f6ab812289ac4bcedf" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void async_io_handle::close</definition>
+        <argsstring>()=0</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="738"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classasync__io__handle_1a87c3bcf768e811331e4bc22b8ec32356" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual async_io_handle::~async_io_handle</definition>
+        <argsstring>()</argsstring>
+        <name>~async_io_handle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="740" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="740" bodyend="740"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1aac13ab5def49a2405995ff6d11032076" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>async_file_io_dispatcher_base *</type>
+        <definition>async_file_io_dispatcher_base* async_io_handle::parent</definition>
+        <argsstring>() const </argsstring>
+        <name>parent</name>
+        <briefdescription>
+<para>Returns the parent of this io handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="742" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="742" bodyend="742"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1ae8574073fc1b0a67bcd46ddf9e9ae873" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;async_io_handle&gt; async_io_handle::container</definition>
+        <argsstring>() const </argsstring>
+        <name>container</name>
+        <briefdescription>
+<para>Returns a handle to the directory containing this handle. Only works if `file_flags<ref refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba6085ffcc368053b7563ee66109aba163" kindref="member">FastDirectoryEnumeration</ref>` was specified when this handle was opened. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="744" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="744" bodyend="744"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1a0c90af22c366a800b6de76c534e135fd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="pure-virtual">
+        <type>void *</type>
+        <definition>virtual void* async_io_handle::native_handle</definition>
+        <argsstring>() const =0</argsstring>
+        <name>native_handle</name>
+        <briefdescription>
+<para>Returns the native handle of this io handle. On POSIX, you can cast this to a fd using `(int)(size_t) <ref refid="classasync__io__handle_1a0c90af22c366a800b6de76c534e135fd" kindref="member">native_handle()</ref>`. On Windows it&apos;s a simple `(HANDLE) <ref refid="classasync__io__handle_1a0c90af22c366a800b6de76c534e135fd" kindref="member">native_handle()</ref>`. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="746"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1a89dd90d83b0c5902c561e4463abd97d5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const chrono::system_clock::time_point &amp;</type>
+        <definition>const chrono::system_clock::time_point&amp; async_io_handle::opened</definition>
+        <argsstring>() const </argsstring>
+        <name>opened</name>
+        <briefdescription>
+<para>Returns when this handle was opened. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="748" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="748" bodyend="748"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1ac797c31edac57f4a972d8bb3c0305cab" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const filesystem::path &amp;</type>
+        <definition>const filesystem::path&amp; async_io_handle::path</definition>
+        <argsstring>() const </argsstring>
+        <name>path</name>
+        <briefdescription>
+<para>Returns the path of this io handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="750" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="750" bodyend="750"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1aea1a9240f90cfa6ac551df5dcc546898" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__file__flags_1gaba2d48ea5b39d1ab48c6b892a2e2d0db" kindref="member">file_flags</ref></type>
+        <definition>file_flags async_io_handle::flags</definition>
+        <argsstring>() const </argsstring>
+        <name>flags</name>
+        <briefdescription>
+<para>Returns the final flags used when this handle was opened. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="752" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="752" bodyend="752"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1a0f7d6ffefd528ee85aa217bc8d80baca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool async_io_handle::opened_as_file</definition>
+        <argsstring>() const </argsstring>
+        <name>opened_as_file</name>
+        <briefdescription>
+<para>True if this handle was opened as a file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="754" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="754" bodyend="754"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1a0a5d04f3f3ff7eefabed1d6af4fe8c52" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool async_io_handle::opened_as_dir</definition>
+        <argsstring>() const </argsstring>
+        <name>opened_as_dir</name>
+        <briefdescription>
+<para>True if this handle was opened as a directory. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="756" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="756" bodyend="756"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1a259cca5d1e6a40b77bf33e433bcae863" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool async_io_handle::opened_as_symlink</definition>
+        <argsstring>() const </argsstring>
+        <name>opened_as_symlink</name>
+        <briefdescription>
+<para>True if this handle was opened as a symlink. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="758" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="758" bodyend="758"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1ac632d5739145e2139b4af93220c324f4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>off_t</type>
+        <definition>off_t async_io_handle::read_count</definition>
+        <argsstring>() const </argsstring>
+        <name>read_count</name>
+        <briefdescription>
+<para>Returns how many bytes have been read since this handle was opened. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="760" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="760" bodyend="760"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1a0320961d4e319ecd5a297b2e21da2cfb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>off_t</type>
+        <definition>off_t async_io_handle::write_count</definition>
+        <argsstring>() const </argsstring>
+        <name>write_count</name>
+        <briefdescription>
+<para>Returns how many bytes have been written since this handle was opened. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="762" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="762" bodyend="762"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1a096a1f09f761f5f04634b02586b4251e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>off_t</type>
+        <definition>off_t async_io_handle::write_count_since_fsync</definition>
+        <argsstring>() const </argsstring>
+        <name>write_count_since_fsync</name>
+        <briefdescription>
+<para>Returns how many bytes have been written since this handle was last fsynced. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="764" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="764" bodyend="764"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1a653973972ff91cf132b60c03b9777b4b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="pure-virtual">
+        <type><ref refid="classdirectory__entry" kindref="compound">directory_entry</ref></type>
+        <definition>virtual directory_entry async_io_handle::direntry</definition>
+        <argsstring>(metadata_flags wanted=directory_entry::metadata_fastpath()) const =0</argsstring>
+        <name>direntry</name>
+        <param>
+          <type><ref refid="group__metadata__flags_1ga9d8b6ad0ba3e48637529aace103e11fe" kindref="member">metadata_flags</ref></type>
+          <declname>wanted</declname>
+          <defval><ref refid="classdirectory__entry_1a2c5b9aa9a9fade1f36c8f2cab151a2f3" kindref="member">directory_entry::metadata_fastpath</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Returns a mostly filled <ref refid="classdirectory__entry" kindref="compound">directory_entry</ref> for the file or directory referenced by this handle. Use `metadata_flags<ref refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea54991d225c58ce0af43461d4e9a82312" kindref="member">All</ref>` if you want it as complete as your platform allows, even at the cost of severe performance loss. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="766"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1a87d756f9f38ee299dc404398576237f4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structstat__t" kindref="compound">stat_t</ref></type>
+        <definition>stat_t async_io_handle::lstat</definition>
+        <argsstring>(metadata_flags wanted=directory_entry::metadata_fastpath()) const </argsstring>
+        <name>lstat</name>
+        <param>
+          <type><ref refid="group__metadata__flags_1ga9d8b6ad0ba3e48637529aace103e11fe" kindref="member">metadata_flags</ref></type>
+          <declname>wanted</declname>
+          <defval><ref refid="classdirectory__entry_1a2c5b9aa9a9fade1f36c8f2cab151a2f3" kindref="member">directory_entry::metadata_fastpath</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Returns a mostly filled <ref refid="structstat__t" kindref="compound">stat_t</ref> structure for the file or directory referenced by this handle. Use `metadata_flags<ref refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea54991d225c58ce0af43461d4e9a82312" kindref="member">All</ref>` if you want it as complete as your platform allows, even at the cost of severe performance loss. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="769" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="768" bodyend="772"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1a410b2e7e1035619a2a1878b293b7b47c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="pure-virtual">
+        <type>filesystem::path</type>
+        <definition>virtual filesystem::path async_io_handle::target</definition>
+        <argsstring>() const =0</argsstring>
+        <name>target</name>
+        <briefdescription>
+<para>Returns the target path of this handle if it is a symbolic link. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="774"/>
+      </memberdef>
+      <memberdef kind="function" id="classasync__io__handle_1a1d8b804a18fb33bd89bcaa538d6a512b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>void *</type>
+        <definition>virtual void* async_io_handle::try_mapfile</definition>
+        <argsstring>()=0</argsstring>
+        <name>try_mapfile</name>
+        <briefdescription>
+<para>Tries to map the file into memory. Currently only works if handle is read-only. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="776"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The abstract base class encapsulating a platform-specific file handle. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="721" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="720" bodyend="777"/>
+    <listofallmembers>
+      <member refid="classasync__io__handle_1a88f01bd546298ba97b3f59947ce65c25" prot="private" virt="non-virtual"><scope>async_io_handle</scope><name>_flags</name></member>
+      <member refid="classasync__io__handle_1a1ebcc132f00b19bb8dc9526ac9e6e0a8" prot="private" virt="non-virtual"><scope>async_io_handle</scope><name>_opened</name></member>
+      <member refid="classasync__io__handle_1a8beccff14570db2ba451caaa690746ca" prot="private" virt="non-virtual"><scope>async_io_handle</scope><name>_parent</name></member>
+      <member refid="classasync__io__handle_1ae9e3ebcbd210d65e92c5cfdb147eb6e9" prot="private" virt="non-virtual"><scope>async_io_handle</scope><name>_path</name></member>
+      <member refid="classasync__io__handle_1a1685977cc7dfdfbb243e56330e81c929" prot="private" virt="non-virtual"><scope>async_io_handle</scope><name>async_file_io_dispatcher_base</name></member>
+      <member refid="classasync__io__handle_1ad4b6bf8d069bca2860122d94d7396e51" prot="protected" virt="non-virtual"><scope>async_io_handle</scope><name>async_io_handle</name></member>
+      <member refid="classasync__io__handle_1a2121b2bc574e3bd2b048ec448603c93c" prot="private" virt="non-virtual"><scope>async_io_handle</scope><name>async_io_handle_posix</name></member>
+      <member refid="classasync__io__handle_1a6312b7f088cb1c8a056b19453961f636" prot="private" virt="non-virtual"><scope>async_io_handle</scope><name>async_io_handle_windows</name></member>
+      <member refid="classasync__io__handle_1a8887b1a09e489bd8c2785e9c8f94af8a" prot="protected" virt="non-virtual"><scope>async_io_handle</scope><name>bytesread</name></member>
+      <member refid="classasync__io__handle_1a6bbabaf891841ebdc44a49754b2a666d" prot="protected" virt="non-virtual"><scope>async_io_handle</scope><name>byteswritten</name></member>
+      <member refid="classasync__io__handle_1ae9b35e4d86a0a7654d20b3b915ba6cba" prot="protected" virt="non-virtual"><scope>async_io_handle</scope><name>byteswrittenatlastfsync</name></member>
+      <member refid="classasync__io__handle_1ae8a43a4f821e10f6ab812289ac4bcedf" prot="protected" virt="pure-virtual"><scope>async_io_handle</scope><name>close</name></member>
+      <member refid="classasync__io__handle_1ae8574073fc1b0a67bcd46ddf9e9ae873" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>container</name></member>
+      <member refid="classasync__io__handle_1a56f496ba01c9b613e83758582f2b06c9" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>detail::async_file_io_dispatcher_compat</name></member>
+      <member refid="classasync__io__handle_1a06e10cc6179894e1e8bab39ccba6c476" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>detail::async_file_io_dispatcher_linux</name></member>
+      <member refid="classasync__io__handle_1a4fb6d073a418fd80cc2b81450cc82687" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>detail::async_file_io_dispatcher_qnx</name></member>
+      <member refid="classasync__io__handle_1a7eb74be36e15618561c7df1fbdacea5c" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>detail::async_file_io_dispatcher_windows</name></member>
+      <member refid="classasync__io__handle_1a653973972ff91cf132b60c03b9777b4b" prot="public" virt="pure-virtual"><scope>async_io_handle</scope><name>direntry</name></member>
+      <member refid="classasync__io__handle_1acee65543d1f6b39fcf8a56a355d7d828" prot="private" virt="non-virtual"><scope>async_io_handle</scope><name>dirh</name></member>
+      <member refid="classasync__io__handle_1aea1a9240f90cfa6ac551df5dcc546898" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>flags</name></member>
+      <member refid="classasync__io__handle_1a87d756f9f38ee299dc404398576237f4" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>lstat</name></member>
+      <member refid="classasync__io__handle_1a0c90af22c366a800b6de76c534e135fd" prot="public" virt="pure-virtual"><scope>async_io_handle</scope><name>native_handle</name></member>
+      <member refid="classasync__io__handle_1a89dd90d83b0c5902c561e4463abd97d5" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>opened</name></member>
+      <member refid="classasync__io__handle_1a0a5d04f3f3ff7eefabed1d6af4fe8c52" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>opened_as_dir</name></member>
+      <member refid="classasync__io__handle_1a0f7d6ffefd528ee85aa217bc8d80baca" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>opened_as_file</name></member>
+      <member refid="classasync__io__handle_1a259cca5d1e6a40b77bf33e433bcae863" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>opened_as_symlink</name></member>
+      <member refid="classasync__io__handle_1aac13ab5def49a2405995ff6d11032076" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>parent</name></member>
+      <member refid="classasync__io__handle_1ac797c31edac57f4a972d8bb3c0305cab" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>path</name></member>
+      <member refid="classasync__io__handle_1ac632d5739145e2139b4af93220c324f4" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>read_count</name></member>
+      <member refid="classasync__io__handle_1a410b2e7e1035619a2a1878b293b7b47c" prot="public" virt="pure-virtual"><scope>async_io_handle</scope><name>target</name></member>
+      <member refid="classasync__io__handle_1a1d8b804a18fb33bd89bcaa538d6a512b" prot="public" virt="pure-virtual"><scope>async_io_handle</scope><name>try_mapfile</name></member>
+      <member refid="classasync__io__handle_1a0320961d4e319ecd5a297b2e21da2cfb" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>write_count</name></member>
+      <member refid="classasync__io__handle_1a096a1f09f761f5f04634b02586b4251e" prot="public" virt="non-virtual"><scope>async_io_handle</scope><name>write_count_since_fsync</name></member>
+      <member refid="classasync__io__handle_1a87c3bcf768e811331e4bc22b8ec32356" prot="public" virt="virtual"><scope>async_io_handle</scope><name>~async_io_handle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

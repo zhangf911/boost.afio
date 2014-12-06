@@ -3,7 +3,6 @@
   <compounddef id="dir_077d813e5729062c52a4a6edade769d2" kind="dir">
     <compoundname>/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/</compoundname>
     <innerfile refid="afio_8hpp">afio.hpp</innerfile>
-    <innerfile refid="config_8hpp">config.hpp</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

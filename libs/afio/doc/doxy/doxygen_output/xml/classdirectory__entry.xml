@@ -1,0 +1,997 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classdirectory__entry" kind="class" prot="public">
+    <compoundname>directory_entry</compoundname>
+    <includes refid="afio_8hpp" local="no">afio.hpp</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classdirectory__entry_1a56f496ba01c9b613e83758582f2b06c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class detail::async_file_io_dispatcher_compat</definition>
+        <argsstring></argsstring>
+        <name>detail::async_file_io_dispatcher_compat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="586" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classdirectory__entry_1a7eb74be36e15618561c7df1fbdacea5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class detail::async_file_io_dispatcher_windows</definition>
+        <argsstring></argsstring>
+        <name>detail::async_file_io_dispatcher_windows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="587" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="587" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classdirectory__entry_1a06e10cc6179894e1e8bab39ccba6c476" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class detail::async_file_io_dispatcher_linux</definition>
+        <argsstring></argsstring>
+        <name>detail::async_file_io_dispatcher_linux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="588" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classdirectory__entry_1a4fb6d073a418fd80cc2b81450cc82687" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class detail::async_file_io_dispatcher_qnx</definition>
+        <argsstring></argsstring>
+        <name>detail::async_file_io_dispatcher_qnx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="589" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="589" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classdirectory__entry_1ab3cb3200f60f428173c6c593dc8d1757" prot="private" static="no" mutable="no">
+        <type>filesystem::path</type>
+        <definition>filesystem::path directory_entry::leafname</definition>
+        <argsstring></argsstring>
+        <name>leafname</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="591" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="591" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdirectory__entry_1a5df4e36c3af6c82d821a782979b9c290" prot="private" static="no" mutable="no">
+        <type><ref refid="structstat__t" kindref="compound">stat_t</ref></type>
+        <definition>stat_t directory_entry::stat</definition>
+        <argsstring></argsstring>
+        <name>stat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="592" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdirectory__entry_1aecfc146edbfb57a4b2399c044305fac7" prot="private" static="no" mutable="no">
+        <type><ref refid="group__metadata__flags_1ga9d8b6ad0ba3e48637529aace103e11fe" kindref="member">metadata_flags</ref></type>
+        <definition>metadata_flags directory_entry::have_metadata</definition>
+        <argsstring></argsstring>
+        <name>have_metadata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="593" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="593" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdirectory__entry_1a16100bb5f44ee6371cd010b99f6ed3ce" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void directory_entry::_int_fetch</definition>
+        <argsstring>(metadata_flags wanted, std::shared_ptr&lt; async_io_handle &gt; dirh)</argsstring>
+        <name>_int_fetch</name>
+        <param>
+          <type><ref refid="group__metadata__flags_1ga9d8b6ad0ba3e48637529aace103e11fe" kindref="member">metadata_flags</ref></type>
+          <declname>wanted</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="594"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdirectory__entry_1ac8325aeead5009b12ea664e073729958" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>directory_entry::directory_entry</definition>
+        <argsstring>()</argsstring>
+        <name>directory_entry</name>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="597" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="597" bodyend="597"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a9f9450830547a63eb719ca01b37c4325" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>directory_entry::directory_entry</definition>
+        <argsstring>(filesystem::path _leafname, stat_t __stat, metadata_flags _have_metadata)</argsstring>
+        <name>directory_entry</name>
+        <param>
+          <type>filesystem::path</type>
+          <declname>_leafname</declname>
+        </param>
+        <param>
+          <type><ref refid="structstat__t" kindref="compound">stat_t</ref></type>
+          <declname>__stat</declname>
+        </param>
+        <param>
+          <type><ref refid="group__metadata__flags_1ga9d8b6ad0ba3e48637529aace103e11fe" kindref="member">metadata_flags</ref></type>
+          <declname>_have_metadata</declname>
+        </param>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="599" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="599" bodyend="599"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a141b726eca554e91ec68b91d94320651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>directory_entry::directory_entry</definition>
+        <argsstring>(const directory_entry &amp;)</argsstring>
+        <name>directory_entry</name>
+        <param>
+          <type>const <ref refid="classdirectory__entry" kindref="compound">directory_entry</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="600"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1af5fc5c1e1b06cc8a72abef8ef52eec0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classdirectory__entry" kindref="compound">directory_entry</ref> &amp;</type>
+        <definition>directory_entry&amp; directory_entry::operator=</definition>
+        <argsstring>(const directory_entry &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classdirectory__entry" kindref="compound">directory_entry</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="601"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1abfd22e8c4837c9512ab44d80f8652dbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>directory_entry::directory_entry</definition>
+        <argsstring>(directory_entry &amp;&amp;o)</argsstring>
+        <name>directory_entry</name>
+        <param>
+          <type><ref refid="classdirectory__entry" kindref="compound">directory_entry</ref> &amp;&amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="602" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="602" bodyend="602"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1add73e27a193651f48af01bd57356828c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classdirectory__entry" kindref="compound">directory_entry</ref> &amp;</type>
+        <definition>directory_entry&amp; directory_entry::operator=</definition>
+        <argsstring>(directory_entry &amp;&amp;o)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="classdirectory__entry" kindref="compound">directory_entry</ref> &amp;&amp;</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="604" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="603" bodyend="609"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1aad31e3d7ab859eccfcea75345309c871" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool directory_entry::operator==</definition>
+        <argsstring>(const directory_entry &amp;rhs) const BOOST_NOEXCEPT_OR_NOTHROW</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="classdirectory__entry" kindref="compound">directory_entry</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="611" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="611" bodyend="611"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a331ce011347d49c805259f3497a7e1d8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool directory_entry::operator!=</definition>
+        <argsstring>(const directory_entry &amp;rhs) const BOOST_NOEXCEPT_OR_NOTHROW</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="classdirectory__entry" kindref="compound">directory_entry</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="612" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="612" bodyend="612"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a2ae4c4466021a722f6638f476b7877ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool directory_entry::operator&lt;</definition>
+        <argsstring>(const directory_entry &amp;rhs) const BOOST_NOEXCEPT_OR_NOTHROW</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classdirectory__entry" kindref="compound">directory_entry</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="613" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="613" bodyend="613"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a810e4ae68666806c1f13c6b2c921efcb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool directory_entry::operator&lt;=</definition>
+        <argsstring>(const directory_entry &amp;rhs) const BOOST_NOEXCEPT_OR_NOTHROW</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>const <ref refid="classdirectory__entry" kindref="compound">directory_entry</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="614" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="614" bodyend="614"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1aae64fd6b940ed07398c33c775bd7f575" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool directory_entry::operator&gt;</definition>
+        <argsstring>(const directory_entry &amp;rhs) const BOOST_NOEXCEPT_OR_NOTHROW</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="classdirectory__entry" kindref="compound">directory_entry</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="615" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="615" bodyend="615"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1af7ab6f6e5c0bee6f1e5cda2b892e3afe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool directory_entry::operator&gt;=</definition>
+        <argsstring>(const directory_entry &amp;rhs) const BOOST_NOEXCEPT_OR_NOTHROW</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>const <ref refid="classdirectory__entry" kindref="compound">directory_entry</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="616" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="616" bodyend="616"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a99c7aa29c44148401588fb680ab44334" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>filesystem::path</type>
+        <definition>filesystem::path directory_entry::name</definition>
+        <argsstring>() const BOOST_NOEXCEPT_OR_NOTHROW</argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The name of the directory entry </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="618" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="618" bodyend="618"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a67bdc31854318138ba9c34d8469f6b1c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__metadata__flags_1ga9d8b6ad0ba3e48637529aace103e11fe" kindref="member">metadata_flags</ref></type>
+        <definition>metadata_flags directory_entry::metadata_ready</definition>
+        <argsstring>() const BOOST_NOEXCEPT_OR_NOTHROW</argsstring>
+        <name>metadata_ready</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A bitfield of what metadata is ready right now </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="620" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="620" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a3ad8cabe9b14690a2f0eb7776d556458" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__metadata__flags_1ga9d8b6ad0ba3e48637529aace103e11fe" kindref="member">metadata_flags</ref></type>
+        <definition>metadata_flags directory_entry::fetch_metadata</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh, metadata_flags wanted)</argsstring>
+        <name>fetch_metadata</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+        </param>
+        <param>
+          <type><ref refid="group__metadata__flags_1ga9d8b6ad0ba3e48637529aace103e11fe" kindref="member">metadata_flags</ref></type>
+          <declname>wanted</declname>
+        </param>
+        <briefdescription>
+<para>Fetches the specified metadata, returning that newly available. This is a blocking call if wanted metadata is not yet ready. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The metadata now available in this directory entry. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An open handle to the entry&apos;s containing directory. You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wanted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A bitfield of the metadata to fetch. This does not replace existing metadata. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="627" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="626" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a82c821341533ccd6e7a6841f0df62362" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structstat__t" kindref="compound">stat_t</ref></type>
+        <definition>stat_t directory_entry::fetch_lstat</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh, metadata_flags wanted=directory_entry::metadata_fastpath())</argsstring>
+        <name>fetch_lstat</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+        </param>
+        <param>
+          <type><ref refid="group__metadata__flags_1ga9d8b6ad0ba3e48637529aace103e11fe" kindref="member">metadata_flags</ref></type>
+          <declname>wanted</declname>
+          <defval><ref refid="classdirectory__entry_1a2c5b9aa9a9fade1f36c8f2cab151a2f3" kindref="member">directory_entry::metadata_fastpath</ref>()</defval>
+        </param>
+        <briefdescription>
+<para>Returns a copy of the internal `stat_t` structure. This is a blocking call if wanted metadata is not yet ready. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A copy of the internal `stat_t` structure. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An open handle to the entry&apos;s containing directory. You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wanted</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A bitfield of the metadata to fetch. This does not replace existing metadata. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="640" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="639" bodyend="643"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1ab9fe9a795efa2479cde43919af0d4289" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_dev</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_dev</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_dev. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="654" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="654" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1aa668bf3b3f0e2825244214ab6fdb7b70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_ino</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_ino</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_ino. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="657" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="657" bodyend="657"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a04f94fc6f5b03fba8afd4b82866211a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_type</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_type</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="659" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="659" bodyend="659"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a4e302e731c846a58c2f767a83c68f14e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_perms</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_perms</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_perms. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="662" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="662" bodyend="662"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a014d472a4bff85d7a182756e3c0f9824" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_nlink</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_nlink</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_nlink. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="665" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="665" bodyend="665"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1aef4bb48fb46e6c78dc1ad2aeda4681a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_uid</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_uid</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_uid. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="668" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="668" bodyend="668"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a30cf008e632ad3c0590d5d5433b11d52" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_gid</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_gid</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_gid. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="670" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="670" bodyend="670"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a1eb27dc286a7614ab5b06c08b4dba60e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_rdev</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_rdev</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_rdev. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="672" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="672" bodyend="672"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1abdd2752820b4f89ca615a6ab93ce3a06" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_atim</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_atim</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_atim. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="675" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="675" bodyend="675"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a15c133f6acd511e518fcf213711b24e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_mtim</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_mtim</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_mtim. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="677" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="677" bodyend="677"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a92de110c65ccc52b2f009c1d17e2c428" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_ctim</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_ctim</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_ctim. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="679" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="679" bodyend="679"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1ac7928966ebc20bc4e2b73321c8d3cf2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_size</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_size</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_size. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="681" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="681" bodyend="681"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1aaa7dfff87e368bb138676c2f8e194314" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_allocated</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_allocated</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_allocated. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="683" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="683" bodyend="683"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a931b760be9308d5a20161713f63e2529" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_blocks</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_blocks</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_blocks. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="685" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="685" bodyend="685"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a43ff38c6d1d1da845db602411ec3b3fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_blksize</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_blksize</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_blksize. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="687" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="687" bodyend="687"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a5a1961a9215593f7f11ace287afa4001" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_flags</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_flags</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_flags. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="689" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="689" bodyend="689"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a5bea44318235f6e0937d9e68dcc66aea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_gen</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_gen</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_gen. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="691" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="691" bodyend="691"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a98a8615a9123218b9aeaa195b7179486" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>fieldtype</type>
+        <definition>fieldtype directory_entry::st_birthtim</definition>
+        <argsstring>(std::shared_ptr&lt; async_io_handle &gt; dirh=std::shared_ptr&lt; async_io_handle &gt;())</argsstring>
+        <name>st_birthtim</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;</type>
+          <declname>dirh</declname>
+          <defval>std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Returns st_birthtim. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional open handle to the entry&apos;s containing directory if fetching missing metadata is desired (an exception is thrown otherwise). You can get this from an op ref using dirop.h-&gt;get(). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="693" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="693" bodyend="693"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classdirectory__entry_1ac111d690ae103454c2c48c873b37ba77" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__metadata__flags_1ga9d8b6ad0ba3e48637529aace103e11fe" kindref="member">metadata_flags</ref></type>
+        <definition>static metadata_flags directory_entry::metadata_supported</definition>
+        <argsstring>() BOOST_NOEXCEPT_OR_NOTHROW</argsstring>
+        <name>metadata_supported</name>
+        <briefdescription>
+<para>A bitfield of what metadata is available on this platform. This doesn&apos;t mean all is available for every filing system. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="696"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a2c5b9aa9a9fade1f36c8f2cab151a2f3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="group__metadata__flags_1ga9d8b6ad0ba3e48637529aace103e11fe" kindref="member">metadata_flags</ref></type>
+        <definition>static metadata_flags directory_entry::metadata_fastpath</definition>
+        <argsstring>() BOOST_NOEXCEPT_OR_NOTHROW</argsstring>
+        <name>metadata_fastpath</name>
+        <briefdescription>
+<para>A bitfield of what metadata is fast on this platform. This doesn&apos;t mean all is available for every filing system. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="698"/>
+      </memberdef>
+      <memberdef kind="function" id="classdirectory__entry_1a280a7fc89e46f8bde5ead3e3ecb10163" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>static size_t directory_entry::compatibility_maximum</definition>
+        <argsstring>() BOOST_NOEXCEPT_OR_NOTHROW</argsstring>
+        <name>compatibility_maximum</name>
+        <briefdescription>
+<para>The maximum number of entries which is &quot;usual&quot; to fetch at once i.e. what your libc does. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="700"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The abstract base class for an entry in a directory with lazily filled metadata. </para>    </briefdescription>
+    <detaileddescription>
+<para>Note that `directory_entry_hash` will hash one of these for you, and a `std::hash&lt;directory_entry&gt;` specialisation is defined for you so you ought to be able to use <ref refid="classdirectory__entry" kindref="compound">directory_entry</ref> directly in an `unordered_map&lt;&gt;`. </para>    </detaileddescription>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="585" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="584" bodyend="701"/>
+    <listofallmembers>
+      <member refid="classdirectory__entry_1a16100bb5f44ee6371cd010b99f6ed3ce" prot="private" virt="non-virtual"><scope>directory_entry</scope><name>_int_fetch</name></member>
+      <member refid="classdirectory__entry_1a280a7fc89e46f8bde5ead3e3ecb10163" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>compatibility_maximum</name></member>
+      <member refid="classdirectory__entry_1a56f496ba01c9b613e83758582f2b06c9" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>detail::async_file_io_dispatcher_compat</name></member>
+      <member refid="classdirectory__entry_1a06e10cc6179894e1e8bab39ccba6c476" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>detail::async_file_io_dispatcher_linux</name></member>
+      <member refid="classdirectory__entry_1a4fb6d073a418fd80cc2b81450cc82687" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>detail::async_file_io_dispatcher_qnx</name></member>
+      <member refid="classdirectory__entry_1a7eb74be36e15618561c7df1fbdacea5c" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>detail::async_file_io_dispatcher_windows</name></member>
+      <member refid="classdirectory__entry_1ac8325aeead5009b12ea664e073729958" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>directory_entry</name></member>
+      <member refid="classdirectory__entry_1a9f9450830547a63eb719ca01b37c4325" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>directory_entry</name></member>
+      <member refid="classdirectory__entry_1a141b726eca554e91ec68b91d94320651" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>directory_entry</name></member>
+      <member refid="classdirectory__entry_1abfd22e8c4837c9512ab44d80f8652dbb" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>directory_entry</name></member>
+      <member refid="classdirectory__entry_1a82c821341533ccd6e7a6841f0df62362" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>fetch_lstat</name></member>
+      <member refid="classdirectory__entry_1a3ad8cabe9b14690a2f0eb7776d556458" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>fetch_metadata</name></member>
+      <member refid="classdirectory__entry_1aecfc146edbfb57a4b2399c044305fac7" prot="private" virt="non-virtual"><scope>directory_entry</scope><name>have_metadata</name></member>
+      <member refid="classdirectory__entry_1ab3cb3200f60f428173c6c593dc8d1757" prot="private" virt="non-virtual"><scope>directory_entry</scope><name>leafname</name></member>
+      <member refid="classdirectory__entry_1a2c5b9aa9a9fade1f36c8f2cab151a2f3" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>metadata_fastpath</name></member>
+      <member refid="classdirectory__entry_1a67bdc31854318138ba9c34d8469f6b1c" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>metadata_ready</name></member>
+      <member refid="classdirectory__entry_1ac111d690ae103454c2c48c873b37ba77" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>metadata_supported</name></member>
+      <member refid="classdirectory__entry_1a99c7aa29c44148401588fb680ab44334" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>name</name></member>
+      <member refid="classdirectory__entry_1a331ce011347d49c805259f3497a7e1d8" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>operator!=</name></member>
+      <member refid="classdirectory__entry_1a2ae4c4466021a722f6638f476b7877ba" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>operator&lt;</name></member>
+      <member refid="classdirectory__entry_1a810e4ae68666806c1f13c6b2c921efcb" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>operator&lt;=</name></member>
+      <member refid="classdirectory__entry_1af5fc5c1e1b06cc8a72abef8ef52eec0c" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>operator=</name></member>
+      <member refid="classdirectory__entry_1add73e27a193651f48af01bd57356828c" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>operator=</name></member>
+      <member refid="classdirectory__entry_1aad31e3d7ab859eccfcea75345309c871" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>operator==</name></member>
+      <member refid="classdirectory__entry_1aae64fd6b940ed07398c33c775bd7f575" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>operator&gt;</name></member>
+      <member refid="classdirectory__entry_1af7ab6f6e5c0bee6f1e5cda2b892e3afe" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>operator&gt;=</name></member>
+      <member refid="classdirectory__entry_1aaa7dfff87e368bb138676c2f8e194314" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_allocated</name></member>
+      <member refid="classdirectory__entry_1abdd2752820b4f89ca615a6ab93ce3a06" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_atim</name></member>
+      <member refid="classdirectory__entry_1a98a8615a9123218b9aeaa195b7179486" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_birthtim</name></member>
+      <member refid="classdirectory__entry_1a43ff38c6d1d1da845db602411ec3b3fb" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_blksize</name></member>
+      <member refid="classdirectory__entry_1a931b760be9308d5a20161713f63e2529" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_blocks</name></member>
+      <member refid="classdirectory__entry_1a92de110c65ccc52b2f009c1d17e2c428" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_ctim</name></member>
+      <member refid="classdirectory__entry_1ab9fe9a795efa2479cde43919af0d4289" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_dev</name></member>
+      <member refid="classdirectory__entry_1a5a1961a9215593f7f11ace287afa4001" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_flags</name></member>
+      <member refid="classdirectory__entry_1a5bea44318235f6e0937d9e68dcc66aea" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_gen</name></member>
+      <member refid="classdirectory__entry_1a30cf008e632ad3c0590d5d5433b11d52" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_gid</name></member>
+      <member refid="classdirectory__entry_1aa668bf3b3f0e2825244214ab6fdb7b70" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_ino</name></member>
+      <member refid="classdirectory__entry_1a15c133f6acd511e518fcf213711b24e8" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_mtim</name></member>
+      <member refid="classdirectory__entry_1a014d472a4bff85d7a182756e3c0f9824" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_nlink</name></member>
+      <member refid="classdirectory__entry_1a4e302e731c846a58c2f767a83c68f14e" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_perms</name></member>
+      <member refid="classdirectory__entry_1a1eb27dc286a7614ab5b06c08b4dba60e" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_rdev</name></member>
+      <member refid="classdirectory__entry_1ac7928966ebc20bc4e2b73321c8d3cf2b" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_size</name></member>
+      <member refid="classdirectory__entry_1a04f94fc6f5b03fba8afd4b82866211a3" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_type</name></member>
+      <member refid="classdirectory__entry_1aef4bb48fb46e6c78dc1ad2aeda4681a9" prot="public" virt="non-virtual"><scope>directory_entry</scope><name>st_uid</name></member>
+      <member refid="classdirectory__entry_1a5df4e36c3af6c82d821a782979b9c290" prot="private" virt="non-virtual"><scope>directory_entry</scope><name>stat</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classstd__thread__pool" kind="class" prot="public">
+    <compoundname>std_thread_pool</compoundname>
+    <basecompoundref refid="classthread__source" prot="public" virt="non-virtual">thread_source</basecompoundref>
+    <includes refid="afio_8hpp" local="no">afio.hpp</includes>
+    <innerclass refid="classstd__thread__pool_1_1worker" prot="private">std_thread_pool::worker</innerclass>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classstd__thread__pool_1a4636d2eabf003b9aa517f234ac288a6c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class worker</definition>
+        <argsstring></argsstring>
+        <name>worker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="290" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classstd__thread__pool_1a75f5876f05cfa6b2d867943c2dd5d41e" prot="private" static="no" mutable="no">
+        <type>asio::io_service</type>
+        <definition>asio::io_service std_thread_pool::service</definition>
+        <argsstring></argsstring>
+        <name>service</name>
+        <reimplements refid="classthread__source_1a34c871eff1c06937609a60c600370e57">service</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="292" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstd__thread__pool_1a26b5051facc61738a20d248f9900081e" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; asio::io_service::work &gt;</type>
+        <definition>std::unique_ptr&lt;asio::io_service::work&gt; std_thread_pool::working</definition>
+        <argsstring></argsstring>
+        <name>working</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="293" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstd__thread__pool_1a8fff148e4083da80dcff383885f10a2b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::unique_ptr&lt; thread &gt; &gt;</type>
+        <definition>std::vector&lt; std::unique_ptr&lt;thread&gt; &gt; std_thread_pool::workers</definition>
+        <argsstring></argsstring>
+        <name>workers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="294" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstd__thread__pool_1ae6b19bc3e4bc336d2d64e85ac03b1608" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>std_thread_pool::std_thread_pool</definition>
+        <argsstring>(size_t no)</argsstring>
+        <name>std_thread_pool</name>
+        <param>
+          <type>size_t</type>
+          <declname>no</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a thread pool of <emphasis>no</emphasis> workers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of worker threads to create </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="300" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="299" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd__thread__pool_1a41e63ac0720d88c4995457bbfc652bf4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void std_thread_pool::add_workers</definition>
+        <argsstring>(size_t no)</argsstring>
+        <name>add_workers</name>
+        <param>
+          <type>size_t</type>
+          <declname>no</declname>
+        </param>
+        <briefdescription>
+<para>Adds more workers to the thread pool. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>no</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of worker threads to add </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="305" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="304" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd__thread__pool_1aa191fb9c0df971e2136bf977f220fb0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void std_thread_pool::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <briefdescription>
+<para>Destroys the thread pool, waiting for worker threads to exit beforehand. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="312" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="311" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd__thread__pool_1abfce1e10a54fa423d3cfe2476c06f5e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>std_thread_pool::~std_thread_pool</definition>
+        <argsstring>()</argsstring>
+        <name>~std_thread_pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="327" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="326" bodyend="329"/>
+      </memberdef>
+      <memberdef kind="function" id="classthread__source_1a12ea3803826545dad75911f45f911fb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>asio::io_service &amp;</type>
+        <definition>asio::io_service&amp; thread_source::io_service</definition>
+        <argsstring>()</argsstring>
+        <name>io_service</name>
+        <briefdescription>
+<para>Returns the underlying io_service. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="249" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="249" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classthread__source_1a6a51649d8eef305a22225e1985b5c69a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class R</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void thread_source::enqueue</definition>
+        <argsstring>(enqueued_task&lt; R &gt; task)</argsstring>
+        <name>enqueue</name>
+        <param>
+          <type><ref refid="classenqueued__task" kindref="compound">enqueued_task</ref>&lt; R &gt;</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Sends a task to the thread pool for execution. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>class R</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The return type of the enqueued task </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="252" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="251" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classthread__source_1aaaa9cabaf1ebc6be74301b207518b1e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>shared_future&lt; typename std::result_of&lt; F()&gt;::type &gt;</type>
+        <definition>shared_future&lt;typename std::result_of&lt;F()&gt;::type&gt; thread_source::enqueue</definition>
+        <argsstring>(F f)</argsstring>
+        <name>enqueue</name>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Sends some callable entity to the thread pool for execution. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An enqueued task for the enqueued callable </para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>class F</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any callable type with signature R(void) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any instance of a callable type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="257" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="256" bodyend="263"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A very simple thread pool based on std::thread or boost::thread. </para>    </briefdescription>
+    <detaileddescription>
+<para>This instantiates a `asio::io_service` and a latchable `asio::io_service::work` to keep any threads working until the instance is destructed. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="749">
+        <label>thread_source</label>
+        <link refid="classthread__source"/>
+      </node>
+      <node id="748">
+        <label>std_thread_pool</label>
+        <link refid="classstd__thread__pool"/>
+        <childnode refid="749" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="751">
+        <label>thread_source</label>
+        <link refid="classthread__source"/>
+      </node>
+      <node id="750">
+        <label>std_thread_pool</label>
+        <link refid="classstd__thread__pool"/>
+        <childnode refid="751" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="271" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="271" bodyend="330"/>
+    <listofallmembers>
+      <member refid="classstd__thread__pool_1a41e63ac0720d88c4995457bbfc652bf4" prot="public" virt="non-virtual"><scope>std_thread_pool</scope><name>add_workers</name></member>
+      <member refid="classstd__thread__pool_1aa191fb9c0df971e2136bf977f220fb0b" prot="public" virt="non-virtual"><scope>std_thread_pool</scope><name>destroy</name></member>
+      <member refid="classthread__source_1a6a51649d8eef305a22225e1985b5c69a" prot="public" virt="non-virtual"><scope>std_thread_pool</scope><name>enqueue</name></member>
+      <member refid="classthread__source_1aaaa9cabaf1ebc6be74301b207518b1e1" prot="public" virt="non-virtual"><scope>std_thread_pool</scope><name>enqueue</name></member>
+      <member refid="classthread__source_1a12ea3803826545dad75911f45f911fb0" prot="public" virt="non-virtual"><scope>std_thread_pool</scope><name>io_service</name></member>
+      <member refid="classthread__source_1a8ef26001b92497ed82b00e3b1ed2b995" prot="protected" virt="non-virtual"><scope>std_thread_pool</scope><name>operator=</name></member>
+      <member refid="classstd__thread__pool_1a75f5876f05cfa6b2d867943c2dd5d41e" prot="private" virt="non-virtual"><scope>std_thread_pool</scope><name>service</name></member>
+      <member refid="classstd__thread__pool_1ae6b19bc3e4bc336d2d64e85ac03b1608" prot="public" virt="non-virtual"><scope>std_thread_pool</scope><name>std_thread_pool</name></member>
+      <member refid="classthread__source_1a5eebb7820a5039c3db6e71d287906a12" prot="protected" virt="non-virtual"><scope>std_thread_pool</scope><name>thread_source</name></member>
+      <member refid="classstd__thread__pool_1a4636d2eabf003b9aa517f234ac288a6c" prot="private" virt="non-virtual"><scope>std_thread_pool</scope><name>worker</name></member>
+      <member refid="classstd__thread__pool_1a8fff148e4083da80dcff383885f10a2b" prot="private" virt="non-virtual"><scope>std_thread_pool</scope><name>workers</name></member>
+      <member refid="classstd__thread__pool_1a26b5051facc61738a20d248f9900081e" prot="private" virt="non-virtual"><scope>std_thread_pool</scope><name>working</name></member>
+      <member refid="classstd__thread__pool_1abfce1e10a54fa423d3cfe2476c06f5e9" prot="public" virt="non-virtual"><scope>std_thread_pool</scope><name>~std_thread_pool</name></member>
+      <member refid="classthread__source_1a35256706ec73f728c3e84afd43840991" prot="protected" virt="virtual"><scope>std_thread_pool</scope><name>~thread_source</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

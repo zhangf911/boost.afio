@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classstd__thread__pool_1_1worker" kind="class" prot="private">
+    <compoundname>std_thread_pool::worker</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classstd__thread__pool_1_1worker_1ac9f0c4827359f8e79a6cf8101f9b6502" prot="private" static="no" mutable="no">
+        <type><ref refid="classstd__thread__pool" kindref="compound">std_thread_pool</ref> *</type>
+        <definition>std_thread_pool* std_thread_pool::worker::pool</definition>
+        <argsstring></argsstring>
+        <name>pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="274" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstd__thread__pool_1_1worker_1a484d357a5f3a93c97a733b9eb7755fb9" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>std_thread_pool::worker::worker</definition>
+        <argsstring>(std_thread_pool *p)</argsstring>
+        <name>worker</name>
+        <param>
+          <type><ref refid="classstd__thread__pool" kindref="compound">std_thread_pool</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="276" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="276" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classstd__thread__pool_1_1worker_1a18a1fe8560185c36451ab71ab600bc04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void std_thread_pool::worker::operator()</definition>
+        <argsstring>()</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="278" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="277" bodyend="288"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="273" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="272" bodyend="289"/>
+    <listofallmembers>
+      <member refid="classstd__thread__pool_1_1worker_1a18a1fe8560185c36451ab71ab600bc04" prot="public" virt="non-virtual"><scope>std_thread_pool::worker</scope><name>operator()</name></member>
+      <member refid="classstd__thread__pool_1_1worker_1ac9f0c4827359f8e79a6cf8101f9b6502" prot="private" virt="non-virtual"><scope>std_thread_pool::worker</scope><name>pool</name></member>
+      <member refid="classstd__thread__pool_1_1worker_1a484d357a5f3a93c97a733b9eb7755fb9" prot="public" virt="non-virtual"><scope>std_thread_pool::worker</scope><name>worker</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

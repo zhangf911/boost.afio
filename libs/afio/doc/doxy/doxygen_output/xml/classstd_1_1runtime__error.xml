@@ -11,37 +11,37 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="705">
+      <node id="570">
         <label>std::runtime_error</label>
-        <childnode refid="706" relation="public-inheritance">
+        <childnode refid="571" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="706">
+      <node id="571">
         <label>std::exception</label>
       </node>
-      <node id="707">
+      <node id="572">
         <label>std::overflow_error</label>
-        <childnode refid="705" relation="public-inheritance">
+        <childnode refid="570" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="709">
+      <node id="574">
         <label>std::underflow_error</label>
-        <childnode refid="705" relation="public-inheritance">
+        <childnode refid="570" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="708">
+      <node id="573">
         <label>std::range_error</label>
-        <childnode refid="705" relation="public-inheritance">
+        <childnode refid="570" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="710">
+      <node id="575">
         <label>std::runtime_error</label>
-        <childnode refid="711" relation="public-inheritance">
+        <childnode refid="576" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="711">
+      <node id="576">
         <label>std::exception</label>
       </node>
     </collaborationgraph>

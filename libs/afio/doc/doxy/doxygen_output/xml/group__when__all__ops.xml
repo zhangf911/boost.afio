@@ -4,75 +4,14 @@
     <compoundname>when_all_ops</compoundname>
     <title>x</title>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__when__all__ops_1gadd8ae93c91c23b1011dfdf002db07e9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>class Iterator</type>
-          </param>
-        </templateparamlist>
-        <type>detail::enable_if_async_op&lt; true, typename Iterator::value_type &gt;::type</type>
-        <definition>detail::enable_if_async_op&lt;true, typename Iterator::value_type&gt;::type boost::afio::when_all</definition>
-        <argsstring>(std::nothrow_t _, Iterator first, Iterator last)</argsstring>
-        <name>when_all</name>
-        <param>
-          <type>std::nothrow_t</type>
-          <declname>_</declname>
-        </param>
-        <param>
-          <type>Iterator</type>
-          <declname>first</declname>
-        </param>
-        <param>
-          <type>Iterator</type>
-          <declname>last</declname>
-        </param>
-        <briefdescription>
-<para>Returns a result when all the supplied ops complete. Does not propagate exception states. </para>        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
-<parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>class Iterator</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator type. </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>_</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An instance of std::nothrow_t. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>first</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing to the first <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>last</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing after the last <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> iterator batch of ops not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1863" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1862" bodyend="1867"/>
-      </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1ga85c6d5c463b1ecffdc2a6bda4f040bb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="group__when__all__ops_1ga5fd1f0c0c526e5911c5279a36f865635" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>class Iterator</type>
           </param>
         </templateparamlist>
         <type>detail::enable_if_async_op&lt; false, typename Iterator::value_type &gt;::type</type>
-        <definition>detail::enable_if_async_op&lt;false, typename Iterator::value_type&gt;::type boost::afio::when_any</definition>
+        <definition>detail::enable_if_async_op&lt;false, typename Iterator::value_type&gt;::type when_any</definition>
         <argsstring>(std::nothrow_t _, Iterator first, Iterator last)</argsstring>
         <name>when_any</name>
         <param>
@@ -90,7 +29,7 @@
         <briefdescription>
 <para>Returns a result when any the supplied ops complete. Does not propagate exception states. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
+<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
 <parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>class Iterator</parametername>
@@ -111,24 +50,24 @@
 <parametername>first</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>An iterator pointing to the first <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon. </para></parameterdescription>
+<para>An iterator pointing to the first <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>last</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>An iterator pointing after the last <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
+<para>An iterator pointing after the last <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
  <qbk.distinguish> iterator batch of ops not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1881" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1880" bodyend="1885"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1718" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1717" bodyend="1722"/>
       </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1ga5598f81e0788f6acd2258263009de875" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>future&lt; std::vector&lt; std::shared_ptr&lt; async_io_handle &gt; &gt; &gt;</type>
-        <definition>future&lt;std::vector&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; &gt; boost::afio::when_all</definition>
+      <memberdef kind="function" id="group__when__all__ops_1ga461b0e5f0a135982cac72648a1689e83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>future&lt; std::vector&lt; std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt; &gt;</type>
+        <definition>future&lt;std::vector&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; &gt; when_all</definition>
         <argsstring>(std::nothrow_t _, std::vector&lt; async_io_op &gt; ops)</argsstring>
         <name>when_all</name>
         <param>
@@ -136,13 +75,13 @@
           <declname>_</declname>
         </param>
         <param>
-          <type>std::vector&lt; async_io_op &gt;</type>
+          <type>std::vector&lt; <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> &gt;</type>
           <declname>ops</declname>
         </param>
         <briefdescription>
 <para>Returns a result when all the supplied ops complete. Does not propagate exception states. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
+<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>_</parametername>
@@ -161,11 +100,11 @@
  <qbk.distinguish> vector batch of ops not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1897" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1896" bodyend="1901"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1734" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1733" bodyend="1738"/>
       </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1gaeb4173eee90e57cc0646056bd14603de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>future&lt; std::shared_ptr&lt; async_io_handle &gt; &gt;</type>
-        <definition>future&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; boost::afio::when_any</definition>
+      <memberdef kind="function" id="group__when__all__ops_1gae51d3626cd8b9d2c5fe1d3b55c451fbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>future&lt; std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt;</type>
+        <definition>future&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; when_any</definition>
         <argsstring>(std::nothrow_t _, std::vector&lt; async_io_op &gt; ops)</argsstring>
         <name>when_any</name>
         <param>
@@ -173,13 +112,13 @@
           <declname>_</declname>
         </param>
         <param>
-          <type>std::vector&lt; async_io_op &gt;</type>
+          <type>std::vector&lt; <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> &gt;</type>
           <declname>ops</declname>
         </param>
         <briefdescription>
 <para>Returns a result when any the supplied ops complete. Does not propagate exception states. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
+<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>_</parametername>
@@ -198,21 +137,121 @@
  <qbk.distinguish> vector batch of ops not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1913" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1912" bodyend="1917"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1750" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1749" bodyend="1754"/>
       </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1ga6591b9bbaf576183995ba8612f1c86d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>future&lt; std::vector&lt; std::shared_ptr&lt; async_io_handle &gt; &gt; &gt;</type>
-        <definition>future&lt;std::vector&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; &gt; boost::afio::when_all</definition>
+      <memberdef kind="function" id="group__when__all__ops_1gaaa1c16812271841ff671cfe7f231cb0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Iterator</type>
+          </param>
+        </templateparamlist>
+        <type>detail::enable_if_async_op&lt; true, typename Iterator::value_type &gt;::type</type>
+        <definition>detail::enable_if_async_op&lt;true, typename Iterator::value_type&gt;::type when_all</definition>
+        <argsstring>(Iterator first, Iterator last)</argsstring>
+        <name>when_all</name>
+        <param>
+          <type>Iterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Returns a result when all the supplied ops complete. Propagates exception states. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>class Iterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing to the first <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing after the last <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk.distinguish> iterator batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1767" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1766" bodyend="1771"/>
+      </memberdef>
+      <memberdef kind="function" id="group__when__all__ops_1ga5da03663689177b4c470ce149c87361d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Iterator</type>
+          </param>
+        </templateparamlist>
+        <type>detail::enable_if_async_op&lt; false, typename Iterator::value_type &gt;::type</type>
+        <definition>detail::enable_if_async_op&lt;false, typename Iterator::value_type&gt;::type when_any</definition>
+        <argsstring>(Iterator first, Iterator last)</argsstring>
+        <name>when_any</name>
+        <param>
+          <type>Iterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Returns a result when any the supplied ops complete. Propagates exception states. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>class Iterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing to the first <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing after the last <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk.distinguish> iterator batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1784" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1783" bodyend="1788"/>
+      </memberdef>
+      <memberdef kind="function" id="group__when__all__ops_1ga536ffef275e197aa15d35a3a4dd3a9bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>future&lt; std::vector&lt; std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt; &gt;</type>
+        <definition>future&lt;std::vector&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; &gt; when_all</definition>
         <argsstring>(std::vector&lt; async_io_op &gt; ops)</argsstring>
         <name>when_all</name>
         <param>
-          <type>std::vector&lt; async_io_op &gt;</type>
+          <type>std::vector&lt; <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> &gt;</type>
           <declname>ops</declname>
         </param>
         <briefdescription>
 <para>Returns a result when all the supplied ops complete. Propagates exception states. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
+<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>ops</parametername>
@@ -224,21 +263,21 @@
  <qbk.distinguish> vector batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1962" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1961" bodyend="1966"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1799" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1798" bodyend="1803"/>
       </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1ga4a98962e8807e8f5fa31bb14fa430374" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>future&lt; std::shared_ptr&lt; async_io_handle &gt; &gt;</type>
-        <definition>future&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; boost::afio::when_any</definition>
+      <memberdef kind="function" id="group__when__all__ops_1ga73eaeec972558c72429fbd5042307036" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>future&lt; std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt;</type>
+        <definition>future&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; when_any</definition>
         <argsstring>(std::vector&lt; async_io_op &gt; ops)</argsstring>
         <name>when_any</name>
         <param>
-          <type>std::vector&lt; async_io_op &gt;</type>
+          <type>std::vector&lt; <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> &gt;</type>
           <declname>ops</declname>
         </param>
         <briefdescription>
 <para>Returns a result when any the supplied ops complete. Propagates exception states. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
+<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>ops</parametername>
@@ -250,11 +289,11 @@
  <qbk.distinguish> vector batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1977" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1976" bodyend="1981"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1814" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1813" bodyend="1818"/>
       </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1ga175bb31dd07b8c716c85f5bfdc17c9df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>future&lt; std::vector&lt; std::shared_ptr&lt; async_io_handle &gt; &gt; &gt;</type>
-        <definition>future&lt;std::vector&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; &gt; boost::afio::when_all</definition>
+      <memberdef kind="function" id="group__when__all__ops_1gaff9f004d3897d9bf83261e45a050c252" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>future&lt; std::vector&lt; std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt; &gt;</type>
+        <definition>future&lt;std::vector&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; &gt; when_all</definition>
         <argsstring>(std::nothrow_t _, async_io_op op)</argsstring>
         <name>when_all</name>
         <param>
@@ -262,13 +301,13 @@
           <declname>_</declname>
         </param>
         <param>
-          <type>async_io_op</type>
+          <type><ref refid="structasync__io__op" kindref="compound">async_io_op</ref></type>
           <declname>op</declname>
         </param>
         <briefdescription>
 <para>Returns a result when the supplied op completes. Does not propagate exception states. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
+<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>_</parametername>
@@ -281,39 +320,39 @@
 <parametername>op</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>An <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
+<para>An <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
  <qbk.distinguish> convenience single op not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(1).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1993" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1992" bodyend="1996"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1830" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1829" bodyend="1833"/>
       </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1ga3a4b5bc5ed128e7ef337fe164f897782" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>future&lt; std::vector&lt; std::shared_ptr&lt; async_io_handle &gt; &gt; &gt;</type>
-        <definition>future&lt;std::vector&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; &gt; boost::afio::when_all</definition>
+      <memberdef kind="function" id="group__when__all__ops_1ga7e235ffd635c6b38fa0c416c872ae044" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>future&lt; std::vector&lt; std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt; &gt;</type>
+        <definition>future&lt;std::vector&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; &gt; when_all</definition>
         <argsstring>(async_io_op op)</argsstring>
         <name>when_all</name>
         <param>
-          <type>async_io_op</type>
+          <type><ref refid="structasync__io__op" kindref="compound">async_io_op</ref></type>
           <declname>op</declname>
         </param>
         <briefdescription>
 <para>Returns a result when the supplied op completes. Propagates exception states. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
+<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>op</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>An <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
+<para>An <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
  <qbk.distinguish> convenience single op exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(1).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2007" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2006" bodyend="2010"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1844" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1843" bodyend="1847"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -66,7 +66,6 @@
     <innerclass refid="classstd_1_1range__error" prot="public">std::range_error</innerclass>
     <innerclass refid="classstd_1_1overflow__error" prot="public">std::overflow_error</innerclass>
     <innerclass refid="classstd_1_1underflow__error" prot="public">std::underflow_error</innerclass>
-    <innerclass refid="structstd_1_1hash_3_01boost_1_1afio_1_1directory__entry_01_4" prot="public">std::hash&lt; boost::afio::directory_entry &gt;</innerclass>
     <briefdescription>
 <para>STL namespace. </para>    </briefdescription>
     <detaileddescription>

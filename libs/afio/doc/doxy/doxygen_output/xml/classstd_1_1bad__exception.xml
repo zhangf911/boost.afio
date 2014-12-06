@@ -8,22 +8,22 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="228">
+      <node id="95">
         <label>std::exception</label>
       </node>
-      <node id="227">
+      <node id="94">
         <label>std::bad_exception</label>
-        <childnode refid="228" relation="public-inheritance">
+        <childnode refid="95" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="230">
+      <node id="97">
         <label>std::exception</label>
       </node>
-      <node id="229">
+      <node id="96">
         <label>std::bad_exception</label>
-        <childnode refid="230" relation="public-inheritance">
+        <childnode refid="97" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

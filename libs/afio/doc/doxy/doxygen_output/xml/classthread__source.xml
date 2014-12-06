@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classthread__source" kind="class" prot="public">
+    <compoundname>thread_source</compoundname>
+    <derivedcompoundref refid="classstd__thread__pool" prot="public" virt="non-virtual">std_thread_pool</derivedcompoundref>
+    <includes refid="afio_8hpp" local="no">afio.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classthread__source_1a34c871eff1c06937609a60c600370e57" prot="protected" static="no" mutable="no">
+        <type>asio::io_service &amp;</type>
+        <definition>asio::io_service&amp; thread_source::service</definition>
+        <argsstring></argsstring>
+        <name>service</name>
+        <reimplementedby refid="classstd__thread__pool_1a75f5876f05cfa6b2d867943c2dd5d41e">service</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="243" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classthread__source_1a5eebb7820a5039c3db6e71d287906a12" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>thread_source::thread_source</definition>
+        <argsstring>(asio::io_service &amp;_service)</argsstring>
+        <name>thread_source</name>
+        <param>
+          <type>asio::io_service &amp;</type>
+          <declname>_service</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="244" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="244" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classthread__source_1a35256706ec73f728c3e84afd43840991" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual thread_source::~thread_source</definition>
+        <argsstring>()</argsstring>
+        <name>~thread_source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="245" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="245" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classthread__source_1a8ef26001b92497ed82b00e3b1ed2b995" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classthread__source" kindref="compound">thread_source</ref> &amp;</type>
+        <definition>thread_source&amp; thread_source::operator=</definition>
+        <argsstring>(const thread_source &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classthread__source" kindref="compound">thread_source</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="246"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classthread__source_1a12ea3803826545dad75911f45f911fb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>asio::io_service &amp;</type>
+        <definition>asio::io_service&amp; thread_source::io_service</definition>
+        <argsstring>()</argsstring>
+        <name>io_service</name>
+        <briefdescription>
+<para>Returns the underlying io_service. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="249" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="249" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="classthread__source_1a6a51649d8eef305a22225e1985b5c69a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class R</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void thread_source::enqueue</definition>
+        <argsstring>(enqueued_task&lt; R &gt; task)</argsstring>
+        <name>enqueue</name>
+        <param>
+          <type><ref refid="classenqueued__task" kindref="compound">enqueued_task</ref>&lt; R &gt;</type>
+          <declname>task</declname>
+        </param>
+        <briefdescription>
+<para>Sends a task to the thread pool for execution. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>class R</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The return type of the enqueued task </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="252" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="251" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classthread__source_1aaaa9cabaf1ebc6be74301b207518b1e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class F</type>
+          </param>
+        </templateparamlist>
+        <type>shared_future&lt; typename std::result_of&lt; F()&gt;::type &gt;</type>
+        <definition>shared_future&lt;typename std::result_of&lt;F()&gt;::type&gt; thread_source::enqueue</definition>
+        <argsstring>(F f)</argsstring>
+        <name>enqueue</name>
+        <param>
+          <type>F</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Sends some callable entity to the thread pool for execution. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An enqueued task for the enqueued callable </para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>class F</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any callable type with signature R(void) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any instance of a callable type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="257" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="256" bodyend="263"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract base class for a source of thread workers. </para>    </briefdescription>
+    <detaileddescription>
+<para>Note that in Boost 1.54, and possibly later versions, `asio::io_service` on Windows appears to dislike being destructed during static data deinit, hence why this inherits from `std::enable_shared_from_this&lt;&gt;` in order that it may be reference count deleted before static data deinit occurs. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="754">
+        <label>thread_source</label>
+        <link refid="classthread__source"/>
+      </node>
+      <node id="755">
+        <label>std_thread_pool</label>
+        <link refid="classstd__thread__pool"/>
+        <childnode refid="754" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="241" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="240" bodyend="264"/>
+    <listofallmembers>
+      <member refid="classthread__source_1a6a51649d8eef305a22225e1985b5c69a" prot="public" virt="non-virtual"><scope>thread_source</scope><name>enqueue</name></member>
+      <member refid="classthread__source_1aaaa9cabaf1ebc6be74301b207518b1e1" prot="public" virt="non-virtual"><scope>thread_source</scope><name>enqueue</name></member>
+      <member refid="classthread__source_1a12ea3803826545dad75911f45f911fb0" prot="public" virt="non-virtual"><scope>thread_source</scope><name>io_service</name></member>
+      <member refid="classthread__source_1a8ef26001b92497ed82b00e3b1ed2b995" prot="protected" virt="non-virtual"><scope>thread_source</scope><name>operator=</name></member>
+      <member refid="classthread__source_1a34c871eff1c06937609a60c600370e57" prot="protected" virt="non-virtual"><scope>thread_source</scope><name>service</name></member>
+      <member refid="classthread__source_1a5eebb7820a5039c3db6e71d287906a12" prot="protected" virt="non-virtual"><scope>thread_source</scope><name>thread_source</name></member>
+      <member refid="classthread__source_1a35256706ec73f728c3e84afd43840991" prot="protected" virt="virtual"><scope>thread_source</scope><name>~thread_source</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

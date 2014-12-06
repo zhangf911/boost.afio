@@ -3,9 +3,9 @@
   <compounddef id="classenqueued__task" kind="class" prot="public">
     <compoundname>enqueued_task</compoundname>
     <briefdescription>
-<para>Effectively our own custom std::packaged_task&lt;&gt;, with copy semantics and letting us early set value to significantly improve performance. </para>    </briefdescription>
+<para>The namespace containing Boost.ASIO internal details. </para>    </briefdescription>
     <detaileddescription>
-<para>Unlike `std::packaged_task&lt;&gt;`, this custom variant is copyable though each copy always refers to the same internal state. Early future value setting is possible, with any subsequent value setting including that by the function being executed being ignored. Note that this behaviour opens the potential to lose exception state - if you set the future value early and then an exception is later thrown, the exception is swallowed.</para><para><parameterlist kind="templateparam"><parameteritem>
+<para>Effectively our own custom std::packaged_task&lt;&gt;, with copy semantics and letting us early set value to significantly improve performance</para><para>Unlike `std::packaged_task&lt;&gt;`, this custom variant is copyable though each copy always refers to the same internal state. Early future value setting is possible, with any subsequent value setting including that by the function being executed being ignored. Note that this behaviour opens the potential to lose exception state - if you set the future value early and then an exception is later thrown, the exception is swallowed.</para><para><parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>class R</parametername>
 </parameternamelist>
@@ -14,7 +14,7 @@
 </parameteritem>
 </parameterlist>
 </para>    </detaileddescription>
-    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="127" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="126" bodyend="-1"/>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="154" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="153" bodyend="-1"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

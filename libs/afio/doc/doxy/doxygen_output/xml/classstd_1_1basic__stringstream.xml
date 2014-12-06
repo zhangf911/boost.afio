@@ -17,76 +17,76 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="434">
+      <node id="301">
         <label>std::basic_istream&lt; Char &gt;</label>
-        <childnode refid="435" relation="public-inheritance">
+        <childnode refid="302" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="438">
+      <node id="305">
         <label>std::stringstream&lt; char &gt;</label>
-        <childnode refid="432" relation="public-inheritance">
+        <childnode refid="299" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="433">
+      <node id="300">
         <label>std::basic_iostream&lt; Char &gt;</label>
-        <childnode refid="434" relation="public-inheritance">
+        <childnode refid="301" relation="public-inheritance">
         </childnode>
-        <childnode refid="437" relation="public-inheritance">
+        <childnode refid="304" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="439">
+      <node id="306">
         <label>std::wstringstream&lt; wchar_t &gt;</label>
-        <childnode refid="432" relation="public-inheritance">
+        <childnode refid="299" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="437">
+      <node id="304">
         <label>std::basic_ostream&lt; Char &gt;</label>
-        <childnode refid="435" relation="public-inheritance">
+        <childnode refid="302" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="435">
+      <node id="302">
         <label>std::basic_ios&lt; Char &gt;</label>
-        <childnode refid="436" relation="public-inheritance">
+        <childnode refid="303" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="436">
+      <node id="303">
         <label>std::ios_base</label>
       </node>
-      <node id="432">
+      <node id="299">
         <label>std::basic_stringstream&lt; Char &gt;</label>
-        <childnode refid="433" relation="public-inheritance">
+        <childnode refid="300" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="442">
+      <node id="309">
         <label>std::basic_istream&lt; Char &gt;</label>
-        <childnode refid="443" relation="public-inheritance">
+        <childnode refid="310" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="441">
+      <node id="308">
         <label>std::basic_iostream&lt; Char &gt;</label>
-        <childnode refid="442" relation="public-inheritance">
+        <childnode refid="309" relation="public-inheritance">
         </childnode>
-        <childnode refid="445" relation="public-inheritance">
+        <childnode refid="312" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="445">
+      <node id="312">
         <label>std::basic_ostream&lt; Char &gt;</label>
-        <childnode refid="443" relation="public-inheritance">
+        <childnode refid="310" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="443">
+      <node id="310">
         <label>std::basic_ios&lt; Char &gt;</label>
-        <childnode refid="444" relation="public-inheritance">
+        <childnode refid="311" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="444">
+      <node id="311">
         <label>std::ios_base</label>
       </node>
-      <node id="440">
+      <node id="307">
         <label>std::basic_stringstream&lt; Char &gt;</label>
-        <childnode refid="441" relation="public-inheritance">
+        <childnode refid="308" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

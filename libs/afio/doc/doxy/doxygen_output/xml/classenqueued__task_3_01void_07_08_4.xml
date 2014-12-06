@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="classenqueued__task_3_01void_07_08_4" kind="class" prot="public">
+    <compoundname>enqueued_task&lt; void()&gt;</compoundname>
+    <templateparamlist>
+    </templateparamlist>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classenqueued__task_3_01void_07_08_4_1a2a01abfbc0ac9c8d4a837718acac202e" prot="private" static="no">
+        <type>detail::enqueued_task_impl&lt; void &gt;</type>
+        <definition>typedef detail::enqueued_task_impl&lt;void&gt; enqueued_task&lt; void()&gt;::Base</definition>
+        <argsstring></argsstring>
+        <name>Base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="201" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classenqueued__task_3_01void_07_08_4_1afc7f622b214974cf02a3f592e6abd138" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>enqueued_task&lt; void()&gt;::enqueued_task</definition>
+        <argsstring>(std::function&lt; void()&gt; _task=std::function&lt; void()&gt;())</argsstring>
+        <name>enqueued_task</name>
+        <param>
+          <type>std::function&lt; void()&gt;</type>
+          <declname>_task</declname>
+          <defval>std::function&lt; void()&gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Default constructor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="204" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="204" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classenqueued__task_3_01void_07_08_4_1a9943506555ea046e28f4d631af337ea8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void enqueued_task&lt; void()&gt;::operator()</definition>
+        <argsstring>()</argsstring>
+        <name>operator()</name>
+        <briefdescription>
+<para>Invokes the callable, setting the future to the value it returns. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="207" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="206" bodyend="231"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="200" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="199" bodyend="232"/>
+    <listofallmembers>
+      <member refid="classenqueued__task_3_01void_07_08_4_1a2a01abfbc0ac9c8d4a837718acac202e" prot="private" virt="non-virtual"><scope>enqueued_task&lt; void()&gt;</scope><name>Base</name></member>
+      <member refid="classenqueued__task_3_01void_07_08_4_1afc7f622b214974cf02a3f592e6abd138" prot="public" virt="non-virtual"><scope>enqueued_task&lt; void()&gt;</scope><name>enqueued_task</name></member>
+      <member refid="classenqueued__task_3_01void_07_08_4_1a9943506555ea046e28f4d631af337ea8" prot="public" virt="non-virtual"><scope>enqueued_task&lt; void()&gt;</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

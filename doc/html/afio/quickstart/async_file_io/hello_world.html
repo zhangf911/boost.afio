@@ -68,7 +68,7 @@
 
     <span class="comment">// Close the file and delete it</span>
     <span class="identifier">openfile</span><span class="special">.</span><span class="identifier">close</span><span class="special">();</span>  <a class="co" name="afio.quickstart.async_file_io.hello_world.c8" href="hello_world.html#afio.quickstart.async_file_io.hello_world.c9"><img src="../../../../../doc/src/images/callouts/5.png" alt="5" border="0"></a>
-    <span class="identifier">std</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">remove</span><span class="special">(</span><span class="string">"example_file.txt"</span><span class="special">);</span>  <a class="co" name="afio.quickstart.async_file_io.hello_world.c10" href="hello_world.html#afio.quickstart.async_file_io.hello_world.c11"><img src="../../../../../doc/src/images/callouts/6.png" alt="6" border="0"></a>
+    <span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">remove</span><span class="special">(</span><span class="string">"example_file.txt"</span><span class="special">);</span>  <a class="co" name="afio.quickstart.async_file_io.hello_world.c10" href="hello_world.html#afio.quickstart.async_file_io.hello_world.c11"><img src="../../../../../doc/src/images/callouts/6.png" alt="6" border="0"></a>
 
     <span class="comment">// Convert the read array into a string</span>
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">string</span> <span class="identifier">contents</span><span class="special">(</span><span class="identifier">buffer</span><span class="special">.</span><span class="identifier">begin</span><span class="special">(),</span> <span class="identifier">buffer</span><span class="special">.</span><span class="identifier">end</span><span class="special">());</span>
@@ -326,7 +326,8 @@
 </div>
 <table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
 <td align="left"></td>
-<td align="right"><div class="copyright-footer">Copyright &#169; 2013, 2014 Niall Douglas and Paul Kirth<p>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2013-2015 Niall Douglas
+      and Paul Kirth<p>
         Distributed under the Boost Software License, Version 1.0. (See accompanying
         file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
       </p>

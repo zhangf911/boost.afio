@@ -34,7 +34,7 @@
         These are the second most lowest level, second most primitive completion
         handler AFIO has and while a non-trivial amount of programmer effort to utilise,
         they do offer a maximum amount of flexibility, functionality and of course,
-        performance<sup>[<a name="afio.advanced_topics.custom_completion_handler.f0" href="#ftn.afio.advanced_topics.custom_completion_handler.f0" class="footnote">15</a>]</sup>. If you are NOT extending AFIO with extra functionality, you
+        performance<sup>[<a name="afio.advanced_topics.custom_completion_handler.f0" href="#ftn.afio.advanced_topics.custom_completion_handler.f0" class="footnote">13</a>]</sup>. If you are NOT extending AFIO with extra functionality, you
         almost certainly want <a class="link" href="../reference/classes/async_file_io_dispatcher_base/call_2_batch_bound_functions.html" title="call (batch bound functions)"><code class="computeroutput"><span class="identifier">async_file_io_dispatcher_base</span><span class="special">::</span><span class="identifier">call</span><span class="special">()</span></code></a>
         instead.
       </p>
@@ -193,8 +193,7 @@
         <span class="special">{</span>
             <span class="comment">// In non-deferred completions AFIO traps exceptions for you. Here, you must</span>
             <span class="comment">// do it by hand and tell AFIO about what exception state to return.</span>
-            <span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">exception_ptr</span> <span class="identifier">e</span><span class="special">(</span><span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">make_exception_ptr</span><span class="special">(</span>
-                <span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">current_exception</span><span class="special">()));</span>
+            <span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">exception_ptr</span> <span class="identifier">e</span><span class="special">(</span><span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">current_exception</span><span class="special">());</span>
             <span class="identifier">dispatcher</span><span class="special">-&gt;</span><span class="identifier">complete_async_op</span><span class="special">(</span><span class="identifier">id</span><span class="special">,</span> <span class="identifier">e</span><span class="special">);</span>
         <span class="special">}</span>
         <span class="keyword">return</span> <span class="number">0</span><span class="special">;</span>
@@ -282,7 +281,7 @@
 </ul></div>
 <div class="footnotes">
 <br><hr width="100" align="left">
-<div class="footnote"><p><sup>[<a id="ftn.afio.advanced_topics.custom_completion_handler.f0" href="#afio.advanced_topics.custom_completion_handler.f0" class="para">15</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.afio.advanced_topics.custom_completion_handler.f0" href="#afio.advanced_topics.custom_completion_handler.f0" class="para">13</a>] </sup>
           If you're willing to go even <span class="emphasis"><em>more</em></span> low level, AFIO's
           <code class="computeroutput"><span class="identifier">async_file_io_dispatcher_base</span></code>
           class exposes as protected member functions the variadic templated function
@@ -295,7 +294,8 @@
 </div>
 <table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
 <td align="left"></td>
-<td align="right"><div class="copyright-footer">Copyright &#169; 2013, 2014 Niall Douglas and Paul Kirth<p>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2013-2015 Niall Douglas
+      and Paul Kirth<p>
         Distributed under the Boost Software License, Version 1.0. (See accompanying
         file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
       </p>

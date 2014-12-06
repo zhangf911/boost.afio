@@ -71,8 +71,11 @@
 <pre class="programlisting"><span class="keyword">int</span> <span class="identifier">main</span><span class="special">(</span><span class="keyword">int</span> <span class="identifier">argc</span><span class="special">,</span> <span class="keyword">const</span> <span class="keyword">char</span> <span class="special">*</span><span class="identifier">argv</span><span class="special">[])</span>
 <span class="special">{</span>
     <span class="keyword">using</span> <span class="keyword">namespace</span> <span class="identifier">std</span><span class="special">;</span>
-    <span class="keyword">using</span> <span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">ifstream</span><span class="special">;</span>
-    <span class="keyword">typedef</span> <span class="identifier">chrono</span><span class="special">::</span><span class="identifier">duration</span><span class="special">&lt;</span><span class="keyword">double</span><span class="special">,</span> <span class="identifier">ratio</span><span class="special">&lt;</span><span class="number">1</span><span class="special">&gt;&gt;</span> <span class="identifier">secs_type</span><span class="special">;</span>
+    <span class="keyword">namespace</span> <span class="identifier">filesystem</span> <span class="special">=</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">;</span>
+<span class="preprocessor">#if</span> <span class="identifier">BOOST_AFIO_USE_BOOST_FILESYSTEM</span>
+    <span class="keyword">using</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">ifstream</span><span class="special">;</span>
+<span class="preprocessor">#endif</span>
+    <span class="keyword">typedef</span> <span class="identifier">chrono</span><span class="special">::</span><span class="identifier">duration</span><span class="special">&lt;</span><span class="keyword">double</span><span class="special">,</span> <span class="identifier">ratio</span><span class="special">&lt;</span><span class="number">1</span><span class="special">,</span> <span class="number">1</span><span class="special">&gt;&gt;</span> <span class="identifier">secs_type</span><span class="special">;</span>
     <span class="keyword">if</span><span class="special">(</span><span class="identifier">argc</span><span class="special">&lt;</span><span class="number">2</span><span class="special">)</span>
     <span class="special">{</span>
         <span class="identifier">cerr</span> <span class="special">&lt;&lt;</span> <span class="string">"ERROR: Specify a regular expression to search all files in the current directory."</span> <span class="special">&lt;&lt;</span> <span class="identifier">endl</span><span class="special">;</span>
@@ -90,7 +93,12 @@
         <span class="identifier">vector</span><span class="special">&lt;</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span><span class="special">&gt;</span> <span class="identifier">filepaths</span><span class="special">;</span>
         <span class="keyword">for</span><span class="special">(</span><span class="keyword">auto</span> <span class="identifier">it</span><span class="special">=</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">recursive_directory_iterator</span><span class="special">(</span><span class="string">"."</span><span class="special">);</span> <span class="identifier">it</span><span class="special">!=</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">recursive_directory_iterator</span><span class="special">();</span> <span class="special">++</span><span class="identifier">it</span><span class="special">)</span>
         <span class="special">{</span>
-            <span class="keyword">if</span><span class="special">(</span><span class="identifier">it</span><span class="special">-&gt;</span><span class="identifier">status</span><span class="special">().</span><span class="identifier">type</span><span class="special">()!=</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">regular_file</span><span class="special">)</span>
+            <span class="keyword">if</span><span class="special">(</span><span class="identifier">it</span><span class="special">-&gt;</span><span class="identifier">status</span><span class="special">().</span><span class="identifier">type</span><span class="special">()!=</span>
+<span class="preprocessor">#ifdef</span> <span class="identifier">BOOST_AFIO_USE_LEGACY_FILESYSTEM_SEMANTICS</span>
+              <span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">file_type</span><span class="special">::</span><span class="identifier">regular_file</span><span class="special">)</span>
+<span class="preprocessor">#else</span>
+              <span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">file_type</span><span class="special">::</span><span class="identifier">regular</span><span class="special">)</span>
+<span class="preprocessor">#endif</span>
                 <span class="keyword">continue</span><span class="special">;</span>
             <span class="identifier">filepaths</span><span class="special">.</span><span class="identifier">push_back</span><span class="special">(</span><span class="identifier">it</span><span class="special">-&gt;</span><span class="identifier">path</span><span class="special">());</span>
         <span class="special">}</span>
@@ -163,7 +171,7 @@
     <span class="identifier">recursive_mutex</span> <span class="identifier">opslock</span><span class="special">;</span>
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">deque</span><span class="special">&lt;</span><span class="identifier">async_io_op</span><span class="special">&gt;</span> <span class="identifier">ops</span><span class="special">;</span> <span class="comment">// For exception gathering</span>
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">atomic</span><span class="special">&lt;</span><span class="identifier">size_t</span><span class="special">&gt;</span> <span class="identifier">bytesread</span><span class="special">,</span> <span class="identifier">filesread</span><span class="special">,</span> <span class="identifier">filesmatched</span><span class="special">,</span> <span class="identifier">scheduled</span><span class="special">,</span> <span class="identifier">completed</span><span class="special">;</span>
-    <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span><span class="special">,</span> <span class="identifier">size_t</span><span class="special">&gt;&gt;</span> <span class="identifier">filepaths</span><span class="special">;</span>
+    <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span><span class="special">,</span> <span class="identifier">size_t</span><span class="special">&gt;&gt;</span> <span class="identifier">filepaths</span><span class="special">;</span>
 
     <span class="comment">// Signals finish once all scheduled ops have completed</span>
     <span class="keyword">void</span> <span class="identifier">docompleted</span><span class="special">(</span><span class="identifier">size_t</span> <span class="identifier">inc</span><span class="special">)</span>
@@ -287,7 +295,12 @@
                 <span class="identifier">std</span><span class="special">::</span><span class="identifier">placeholders</span><span class="special">::</span><span class="identifier">_1</span><span class="special">,</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">placeholders</span><span class="special">::</span><span class="identifier">_2</span><span class="special">));</span>
             <span class="keyword">for</span><span class="special">(</span><span class="keyword">auto</span> <span class="special">&amp;</span><span class="identifier">entry</span> <span class="special">:</span> <span class="identifier">entries</span><span class="special">)</span>
             <span class="special">{</span>
-                <span class="keyword">if</span><span class="special">(</span><span class="identifier">entry</span><span class="special">.</span><span class="identifier">st_type</span><span class="special">()==</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">file_type</span><span class="special">::</span><span class="identifier">directory_file</span><span class="special">)</span>
+                <span class="keyword">if</span><span class="special">(</span><span class="identifier">entry</span><span class="special">.</span><span class="identifier">st_type</span><span class="special">()==</span>
+<span class="preprocessor">#ifdef</span> <span class="identifier">BOOST_AFIO_USE_LEGACY_FILESYSTEM_SEMANTICS</span>
+                  <span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">file_type</span><span class="special">::</span><span class="identifier">directory_file</span><span class="special">)</span>
+<span class="preprocessor">#else</span>
+                  <span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">file_type</span><span class="special">::</span><span class="identifier">directory</span><span class="special">)</span>
+<span class="preprocessor">#endif</span>
                 <span class="special">{</span>
                     <span class="keyword">auto</span> <span class="identifier">dir_open</span><span class="special">=</span><span class="identifier">dispatcher</span><span class="special">-&gt;</span><span class="identifier">dir</span><span class="special">(</span><span class="identifier">async_path_op_req</span><span class="special">(</span><span class="identifier">lastdir</span><span class="special">,</span> <span class="identifier">h</span><span class="special">-&gt;</span><span class="identifier">path</span><span class="special">()/</span><span class="identifier">entry</span><span class="special">.</span><span class="identifier">name</span><span class="special">()));</span>
                     <span class="keyword">auto</span> <span class="identifier">dir_opened</span><span class="special">=</span><span class="identifier">dispatcher</span><span class="special">-&gt;</span><span class="identifier">completion</span><span class="special">(</span><span class="identifier">dir_open</span><span class="special">,</span> <span class="identifier">dir_openedf</span><span class="special">);</span>
@@ -330,7 +343,12 @@
         <span class="special">{</span>
             <span class="keyword">for</span><span class="special">(</span><span class="keyword">auto</span> <span class="special">&amp;</span><span class="identifier">entry</span> <span class="special">:</span> <span class="identifier">entries</span><span class="special">)</span>
             <span class="special">{</span>
-                <span class="keyword">if</span><span class="special">(</span><span class="identifier">entry</span><span class="special">.</span><span class="identifier">st_type</span><span class="special">()==</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">file_type</span><span class="special">::</span><span class="identifier">regular_file</span><span class="special">)</span>
+                <span class="keyword">if</span><span class="special">(</span><span class="identifier">entry</span><span class="special">.</span><span class="identifier">st_type</span><span class="special">()==</span>
+<span class="preprocessor">#ifdef</span> <span class="identifier">BOOST_AFIO_USE_LEGACY_FILESYSTEM_SEMANTICS</span>
+                  <span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">file_type</span><span class="special">::</span><span class="identifier">regular_file</span><span class="special">)</span>
+<span class="preprocessor">#else</span>
+                  <span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">file_type</span><span class="special">::</span><span class="identifier">regular</span><span class="special">)</span>
+<span class="preprocessor">#endif</span>
                 <span class="special">{</span>
                     <span class="identifier">size_t</span> <span class="identifier">length</span><span class="special">=(</span><span class="identifier">size_t</span><span class="special">)</span><span class="identifier">entry</span><span class="special">.</span><span class="identifier">st_size</span><span class="special">();</span>
                     <span class="keyword">if</span><span class="special">(</span><span class="identifier">length</span><span class="special">)</span>
@@ -429,7 +447,7 @@
 <span class="special">{</span>
     <span class="keyword">using</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">placeholders</span><span class="special">::</span><span class="identifier">_1</span><span class="special">;</span> <span class="keyword">using</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">placeholders</span><span class="special">::</span><span class="identifier">_2</span><span class="special">;</span>
     <span class="keyword">using</span> <span class="keyword">namespace</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">;</span>
-    <span class="keyword">typedef</span> <span class="identifier">chrono</span><span class="special">::</span><span class="identifier">duration</span><span class="special">&lt;</span><span class="keyword">double</span><span class="special">,</span> <span class="identifier">ratio</span><span class="special">&lt;</span><span class="number">1</span><span class="special">&gt;&gt;</span> <span class="identifier">secs_type</span><span class="special">;</span>
+    <span class="keyword">typedef</span> <span class="identifier">chrono</span><span class="special">::</span><span class="identifier">duration</span><span class="special">&lt;</span><span class="keyword">double</span><span class="special">,</span> <span class="identifier">ratio</span><span class="special">&lt;</span><span class="number">1</span><span class="special">,</span> <span class="number">1</span><span class="special">&gt;&gt;</span> <span class="identifier">secs_type</span><span class="special">;</span>
     <span class="keyword">if</span><span class="special">(</span><span class="identifier">argc</span><span class="special">&lt;</span><span class="number">2</span><span class="special">)</span>
     <span class="special">{</span>
         <span class="identifier">std</span><span class="special">::</span><span class="identifier">cerr</span> <span class="special">&lt;&lt;</span> <span class="string">"ERROR: Specify a regular expression to search all files in the current directory."</span> <span class="special">&lt;&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">endl</span><span class="special">;</span>
@@ -463,12 +481,12 @@
           as equally bind the state into each callback's parameters instead via some
           sort of pointer to a struct. But the difference in complexity is noticeable
           &#8212; you're probably now asking, why choose this hideous complexity
-          over the much clearer OpenMP and iostreams implementation<sup>[<a name="afio.quickstart.async_file_io.so_what.f0" href="#ftn.afio.quickstart.async_file_io.so_what.f0" class="footnote">12</a>]</sup>?
+          over the much clearer OpenMP and iostreams implementation<sup>[<a name="afio.quickstart.async_file_io.so_what.f0" href="#ftn.afio.quickstart.async_file_io.so_what.f0" class="footnote">10</a>]</sup>?
         </p>
 <p>
           Well, that's simple: do you want maximum file i/o performance? Here is
           a search for <span class="quote">&#8220;<span class="quote">Niall</span>&#8221;</span> in a Boost working directory which contained
-          about 7Gb of data across ~35k files<sup>[<a name="afio.quickstart.async_file_io.so_what.f1" href="#ftn.afio.quickstart.async_file_io.so_what.f1" class="footnote">13</a>]</sup>:
+          about 7Gb of data across ~35k files<sup>[<a name="afio.quickstart.async_file_io.so_what.f1" href="#ftn.afio.quickstart.async_file_io.so_what.f1" class="footnote">11</a>]</sup>:
         </p>
 <div class="table">
 <a name="afio.quickstart.async_file_io.so_what.find_in_files_performance"></a><p class="title"><b>Table&#160;1.4.&#160;Find in files performance for traditional vs AFIO implementations</b></p>
@@ -690,12 +708,12 @@
         </p>
 <div class="footnotes">
 <br><hr width="100" align="left">
-<div class="footnote"><p><sup>[<a id="ftn.afio.quickstart.async_file_io.so_what.f0" href="#afio.quickstart.async_file_io.so_what.f0" class="para">12</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.afio.quickstart.async_file_io.so_what.f0" href="#afio.quickstart.async_file_io.so_what.f0" class="para">10</a>] </sup>
             Indeed many ask the same when programming WinRT apps &#8212; Microsoft's
             insistance on never allowing any call to block can make simple designs
             explode with complexities of nested callbacks.
           </p></div>
-<div class="footnote"><p><sup>[<a id="ftn.afio.quickstart.async_file_io.so_what.f1" href="#afio.quickstart.async_file_io.so_what.f1" class="para">13</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.afio.quickstart.async_file_io.so_what.f1" href="#afio.quickstart.async_file_io.so_what.f1" class="para">11</a>] </sup>
             Test machine was a 3.5Ghz Intel i7-3770K Microsoft Windows 8 x64 machine
             with Seagate ST3320620AS 7200rpm hard drive. Note that AFIO has a native
             WinIOCP backend which leverages host asynchronous file i/o support.
@@ -704,7 +722,8 @@
 </div>
 <table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
 <td align="left"></td>
-<td align="right"><div class="copyright-footer">Copyright &#169; 2013, 2014 Niall Douglas and Paul Kirth<p>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2013-2015 Niall Douglas
+      and Paul Kirth<p>
         Distributed under the Boost Software License, Version 1.0. (See accompanying
         file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
       </p>

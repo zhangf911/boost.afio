@@ -31,18 +31,7 @@
       <span><a name="afio.release_notes.anticipated_forthcoming_features"></a></span><a class="link" href="release_notes.html#afio.release_notes.anticipated_forthcoming_features">Anticipated
       forthcoming features in future versions</a>
     </h4>
-<div class="itemizedlist"><ul class="itemizedlist" type="disc">
-<li class="listitem">
-          It is hereby noted that the v1.2 engine will be the last to support Microsoft
-          Visual Studio 2010. v1.3 engines will <span class="bold"><strong>require</strong></span>
-          Microsoft Visual Studio 2012 or better.
-        </li>
-<li class="listitem">
-          The v1.3 engine will gain a new concurrent unordered_map implementation
-          giving still further significant performance gains. This will remove all
-          locking completely from AFIO code.
-        </li>
-<li class="listitem">
+<div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
           The v1.4 engine will have an async fast batch hash engine which provides
           transparent hashing of all async reads and writes.
           <div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem">
@@ -52,8 +41,7 @@
                       Automatic ASIO callback prototype spec support.
                     </li></ul></div>
               </li></ul></div>
-        </li>
-</ul></div>
+        </li></ul></div>
 <h6>
 <a name="afio.release_notes.h1"></a>
       <span><a name="afio.release_notes.in_some_later_version"></a></span><a class="link" href="release_notes.html#afio.release_notes.in_some_later_version">In
@@ -83,8 +71,65 @@
 </ul></div>
 <h4>
 <a name="afio.release_notes.h2"></a>
-      <span><a name="afio.release_notes.boost_1_56_afio_v1_22_trunk"></a></span><a class="link" href="release_notes.html#afio.release_notes.boost_1_56_afio_v1_22_trunk">Boost
-      1.56 AFIO v1.22 trunk</a>
+      <span><a name="afio.release_notes.boost_1_57_afio_v1_3x_unstable_b"></a></span><a class="link" href="release_notes.html#afio.release_notes.boost_1_57_afio_v1_3x_unstable_b">Boost
+      1.57 AFIO v1.3x unstable branch</a>
+    </h4>
+<p>
+      AFIO is now a Boost.BindLib based library. This has resulted in an enormous
+      change set which is only barely summarised here:
+    </p>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem">
+          AFIO is now capable of:
+          <div class="itemizedlist"><ul class="itemizedlist" type="circle">
+<li class="listitem">
+                Being used standalone, or as a Boost module, or if you have inline
+                namespace support in your compiler then both simultaneously in the
+                same translation unit or in the same binary, including any combination
+                of the following library dependency configurations (config macro
+                and its default is shown):
+              </li>
+<li class="listitem">
+                Using Boost.Atomic, Boost.Chrono and Boost.Thread OR the C++ 11 STL
+                (BOOST_AFIO_USE_BOOST_THREAD=0).
+              </li>
+<li class="listitem">
+                Using Boost.Filesystem OR the C++ 1z Filesystem TS (BOOST_AFIO_USE_BOOST_FILESYSTEM=1,
+                except on VS2015 which provides Filesystem).
+              </li>
+<li class="listitem">
+                Using Boost.ASIO OR standalone ASIO (ASIO_STANDALONE=0)
+              </li>
+</ul></div>
+          <p>
+            That makes eight different potential configurations, and all eight can
+            coexist in the same translation unit, though you will find compilation
+            time becomes enormous.
+          </p>
+        </li>
+<li class="listitem">
+          AFIO's unit test suite no longer requires Boost.Test, and can now alternatively
+          use CATCH C++ (BOOST_AFIO_USE_BOOST_UNIT_TEST=0).
+        </li>
+<li class="listitem">
+          Dropped support for these compiler versions due to insufficient C++ 11
+          support:
+          <div class="itemizedlist"><ul class="itemizedlist" type="circle">
+<li class="listitem">
+                Anything before GCC 4.7, as these lack template alias support.
+              </li>
+<li class="listitem">
+                Anything before VS2013, as these lack template alias support. I took
+                the opportunity to clean out the VS2010 special code paths and all
+                the variadic template emulation.
+              </li>
+</ul></div>
+        </li>
+</ul></div>
+<h4>
+<a name="afio.release_notes.h3"></a>
+      <span><a name="afio.release_notes.boost_1_57_afio_v1_22_stable_bra"></a></span><a class="link" href="release_notes.html#afio.release_notes.boost_1_57_afio_v1_22_stable_bra">Boost
+      1.57 AFIO v1.22 stable branch</a>
     </h4>
 <p>
       Fixed buffer underflow when decoding Win32 error codes to strings. Thanks to
@@ -97,7 +142,7 @@
       Updated the stale CI test dashboard copy in the DocBook edition.
     </p>
 <h4>
-<a name="afio.release_notes.h3"></a>
+<a name="afio.release_notes.h4"></a>
       <span><a name="afio.release_notes.boost_1_56_afio_v1_21_10th_aug_2"></a></span><a class="link" href="release_notes.html#afio.release_notes.boost_1_56_afio_v1_21_10th_aug_2">Boost
       1.56 AFIO v1.21 10th Aug 2014</a>
     </h4>
@@ -121,7 +166,7 @@
       with all preceding Boosts.
     </p>
 <h4>
-<a name="afio.release_notes.h4"></a>
+<a name="afio.release_notes.h5"></a>
       <span><a name="afio.release_notes.boost_1_55_afio_v1_21_23rd_mar_2"></a></span><a class="link" href="release_notes.html#afio.release_notes.boost_1_55_afio_v1_21_23rd_mar_2">Boost
       1.55 AFIO v1.21 23rd Mar 2014</a>
     </h4>
@@ -171,7 +216,7 @@
       clang 3.2 or better.
     </p>
 <h4>
-<a name="afio.release_notes.h5"></a>
+<a name="afio.release_notes.h6"></a>
       <span><a name="afio.release_notes.boost_1_55_afio_v1_20_5th_feb_20"></a></span><a class="link" href="release_notes.html#afio.release_notes.boost_1_55_afio_v1_20_5th_feb_20">Boost
       1.55 AFIO v1.20 5th Feb 2014</a>
     </h4>
@@ -226,7 +271,7 @@
         </li>
 </ul></div>
 <h4>
-<a name="afio.release_notes.h6"></a>
+<a name="afio.release_notes.h7"></a>
       <span><a name="afio.release_notes.boost_1_55_afio_v1_11"></a></span><a class="link" href="release_notes.html#afio.release_notes.boost_1_55_afio_v1_11">Boost
       1.55 AFIO v1.11</a>
     </h4>
@@ -268,7 +313,7 @@
       in stat_t on Windows. Thanks to Bjorn Reese for suggesting this.
     </p>
 <h4>
-<a name="afio.release_notes.h7"></a>
+<a name="afio.release_notes.h8"></a>
       <span><a name="afio.release_notes.boost_1_55_afio_v1_1_1st_nov_201"></a></span><a class="link" href="release_notes.html#afio.release_notes.boost_1_55_afio_v1_1_1st_nov_201">Boost
       1.55 AFIO v1.1 1st Nov 2013</a>
     </h4>
@@ -296,7 +341,7 @@
       Made AFIO usable as headers only.
     </p>
 <h4>
-<a name="afio.release_notes.h8"></a>
+<a name="afio.release_notes.h9"></a>
       <span><a name="afio.release_notes.boost_1_55_afio_v1_0_27th_sep_20"></a></span><a class="link" href="release_notes.html#afio.release_notes.boost_1_55_afio_v1_0_27th_sep_20">Boost
       1.55 AFIO v1.0 27th Sep 2013</a>
     </h4>
@@ -306,7 +351,8 @@
 </div>
 <table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
 <td align="left"></td>
-<td align="right"><div class="copyright-footer">Copyright &#169; 2013, 2014 Niall Douglas and Paul Kirth<p>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2013-2015 Niall Douglas
+      and Paul Kirth<p>
         Distributed under the Boost Software License, Version 1.0. (See accompanying
         file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
       </p>

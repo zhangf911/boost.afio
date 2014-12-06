@@ -28,17 +28,17 @@
       of AFIO's closure execution engine aka how many IOPS can I push with AFIO?</a>
 </h3></div></div></div>
 <p>
-        For v1.21 of the engine, maximum ops <span class="bold"><strong>dispatch</strong></span>
+        For v1.3 of the engine, maximum ops <span class="bold"><strong>dispatch</strong></span>
         throughput is approximately as follows, where the values for <code class="computeroutput"><span class="identifier">call</span><span class="special">()</span></code>
         might be for use as a closure engine whereas the values for <code class="computeroutput"><span class="identifier">completion</span><span class="special">()</span></code>
-        might be for max filing system IOPS<sup>[<a name="afio.FAQ.closure_performance.f0" href="#ftn.afio.FAQ.closure_performance.f0" class="footnote">16</a>]</sup>:
+        might be for max filing system IOPS<sup>[<a name="afio.FAQ.closure_performance.f0" href="#ftn.afio.FAQ.closure_performance.f0" class="footnote">14</a>]</sup>:
       </p>
 <div class="table">
 <a name="afio.FAQ.closure_performance.throughput"></a><p class="title"><b>Table&#160;1.8.&#160;Maximum null closure dispatch rate on a 3.5Ghz Intel Core i7 3770K
-        for AFIO v1.21<sup>[<a name="afio.FAQ.closure_performance.f1" href="#ftn.afio.FAQ.closure_performance.f1" class="footnote">a</a>]</sup></b></p>
+        for AFIO v1.3<sup>[<a name="afio.FAQ.closure_performance.f1" href="#ftn.afio.FAQ.closure_performance.f1" class="footnote">a</a>]</sup></b></p>
 <div class="table-contents"><table class="table" summary="Maximum null closure dispatch rate on a 3.5Ghz Intel Core i7 3770K
-        for AFIO v1.21
-          Not using Intel TSX. Benchmarks compiled using address-model=64 link=static --lto release -j 4.
+        for AFIO v1.3
+          Benchmarks compiled using address-model=64 link=static --lto release -j 4.
         ">
 <colgroup>
 <col>
@@ -141,6 +141,38 @@
 <td>
                 <p>
                   <span class="alignright">27%</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">100%</span>
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <span class="emphasis"><em>Relative to AFIO v1.21</em></span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">+24%</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">+2%</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">+5%</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">-11%</span>
                 </p>
               </td>
 <td>
@@ -262,6 +294,38 @@
 <tr>
 <td>
                 <p>
+                  <span class="emphasis"><em>Relative to AFIO v1.21</em></span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">+18%</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">+29%</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">+3%</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">+24%</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">100%</span>
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
                   <span class="emphasis"><em>Relative to AFIO v1.1</em></span>
                 </p>
               </td>
@@ -305,102 +369,6 @@
 <td>
               </td>
 </tr>
-<tr>
-<td>
-                <p>
-                  Microsoft Windows 8 x64 with Visual Studio 2010
-                </p>
-              </td>
-<td>
-                <p>
-                  <span class="alignright">930424</span>
-                </p>
-              </td>
-<td>
-                <p>
-                  <span class="alignright">709952</span>
-                </p>
-              </td>
-<td>
-                <p>
-                  <span class="alignright">1495740</span>
-                </p>
-              </td>
-<td>
-                <p>
-                  <span class="alignright">697333</span>
-                </p>
-              </td>
-<td>
-                <p>
-                  <span class="alignright">2393570</span>
-                </p>
-              </td>
-</tr>
-<tr>
-<td>
-                <p>
-                  <span class="emphasis"><em>Relative to ASIO</em></span>
-                </p>
-              </td>
-<td>
-                <p>
-                  <span class="alignright">39%</span>
-                </p>
-              </td>
-<td>
-                <p>
-                  <span class="alignright">30%</span>
-                </p>
-              </td>
-<td>
-                <p>
-                  <span class="alignright">62%</span>
-                </p>
-              </td>
-<td>
-                <p>
-                  <span class="alignright">29%</span>
-                </p>
-              </td>
-<td>
-                <p>
-                  <span class="alignright">100%</span>
-                </p>
-              </td>
-</tr>
-<tr>
-<td>
-                <p>
-                  <span class="emphasis"><em>Relative to AFIO v1.1</em></span>
-                </p>
-              </td>
-<td>
-                <p>
-                  <span class="alignright">+43%</span>
-                </p>
-              </td>
-<td>
-                <p>
-                  <span class="alignright">+51%</span>
-                </p>
-              </td>
-<td>
-                <p>
-                  <span class="alignright">+46%</span>
-                </p>
-              </td>
-<td>
-                <p>
-                  <span class="alignright">+14%</span>
-                </p>
-              </td>
-<td>
-                <p>
-                  <span class="alignright">100%</span>
-                </p>
-              </td>
-</tr>
 </tbody>
 <tbody class="footnotes"><tr><td colspan="6"><div class="footnote"><p><sup>[<a id="ftn.afio.FAQ.closure_performance.f2" href="#afio.FAQ.closure_performance.f2" class="para">b</a>] </sup>
                     Unfortunately the glibc mutex used by ASIO does not scale well
@@ -411,27 +379,15 @@
 </table></div>
 </div>
 <br class="table-break"><p>
-        Note how Visual Studio with its incomplete C++ 11 support does not fare well
-        against a fully C++ 11 compliant compiler. In fact, with the v1.21 engine
-        old VS2010 riddled with compatibility shims does surprisingly well, the new
-        much simpler implementation really favours VS2010 to the extent it's actually
-        faster than VS2013 for chained ops.
-      </p>
-<p>
         We hope that ~600k min IOPS surely ought to be enough to max out any SATA
         III SSD &#8212; it should even max out any mid range PCIe based SSD too,
         and if paired with a CPU with more cores, AFIO's almost wait free design
         ought to scale out fairly well too such that it may be able to max out even
-        top end PCIe SSDs, some of which can push 10m IOPS now. If that isn't fast
-        enough for you, try AFIO on an Intel CPU with memory transaction support
-        (a runtime check will automatically replace locks with TSX memory transactions),
-        or try support for <code class="computeroutput"><span class="identifier">__transaction_relaxed</span></code>
-        compilers if <code class="computeroutput"><span class="identifier">BOOST_HAVE_TRANSACTIONAL_MEMORY_COMPILER</span></code>
-        is defined.
+        top end PCIe SSDs, some of which can push 10m IOPS now.
       </p>
 <div class="footnotes">
 <br><hr width="100" align="left">
-<div class="footnote"><p><sup>[<a id="ftn.afio.FAQ.closure_performance.f0" href="#afio.FAQ.closure_performance.f0" class="para">16</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.afio.FAQ.closure_performance.f0" href="#afio.FAQ.closure_performance.f0" class="para">14</a>] </sup>
           The phrase <span class="quote">&#8220;<span class="quote">might be</span>&#8221;</span> is important: a null closure benchmark
           will always have dispatch rate problems i.e. the closures being executed
           take less time to execute than the time to dispatch them, so these figures
@@ -441,7 +397,8 @@
 </div>
 <table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
 <td align="left"></td>
-<td align="right"><div class="copyright-footer">Copyright &#169; 2013, 2014 Niall Douglas and Paul Kirth<p>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2013-2015 Niall Douglas
+      and Paul Kirth<p>
         Distributed under the Boost Software License, Version 1.0. (See accompanying
         file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
       </p>

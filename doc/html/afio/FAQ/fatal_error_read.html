@@ -33,7 +33,7 @@
         concurrent reading and writing of the same file, it is extremely difficult
         to coordinate changing file lengths with i/o in a way which doesn't introduce
         race conditions OR unacceptably low performance. AFIO therefore doesn't even
-        try<sup>[<a name="afio.FAQ.fatal_error_read.f0" href="#ftn.afio.FAQ.fatal_error_read.f0" class="footnote">18</a>]</sup> and simply requires you the programmer to ALWAYS do i/o, whether
+        try<sup>[<a name="afio.FAQ.fatal_error_read.f0" href="#ftn.afio.FAQ.fatal_error_read.f0" class="footnote">16</a>]</sup> and simply requires you the programmer to ALWAYS do i/o, whether
         reading or writing, within the extent of a file. In other words, if you're
         going to read 100 bytes from offset 100 in a file, that file better be at
         least 200 bytes long or it's going to fail with a fatal application exit.
@@ -96,7 +96,7 @@
 </pre>
 <div class="footnotes">
 <br><hr width="100" align="left">
-<div class="footnote"><p><sup>[<a id="ftn.afio.FAQ.fatal_error_read.f0" href="#afio.FAQ.fatal_error_read.f0" class="para">18</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.afio.FAQ.fatal_error_read.f0" href="#afio.FAQ.fatal_error_read.f0" class="para">16</a>] </sup>
           AFIO <span class="bold"><strong>will</strong></span> try to provide a synchronised,
           accurate file extent after fast portable file locking support has been
           added, but until then no.
@@ -105,7 +105,8 @@
 </div>
 <table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
 <td align="left"></td>
-<td align="right"><div class="copyright-footer">Copyright &#169; 2013, 2014 Niall Douglas and Paul Kirth<p>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2013-2015 Niall Douglas
+      and Paul Kirth<p>
         Distributed under the Boost Software License, Version 1.0. (See accompanying
         file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
       </p>

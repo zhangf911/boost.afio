@@ -59,7 +59,7 @@
               <code class="computeroutput"><span class="identifier">sync</span><span class="special">()</span></code>
               on a regular period cronjob, and while modern Unix implementations
               usually no longer do this, the end implementation has not fundamentally
-              changed much<sup>[<a name="afio.design.acid_write_ordering.background.f0" href="#ftn.afio.design.acid_write_ordering.background.f0" class="footnote">7</a>]</sup>.
+              changed much<sup>[<a name="afio.design.acid_write_ordering.background.f0" href="#ftn.afio.design.acid_write_ordering.background.f0" class="footnote">5</a>]</sup>.
             </li>
 </ol></div>
 <p>
@@ -182,7 +182,7 @@
         </p>
 <div class="footnotes">
 <br><hr width="100" align="left">
-<div class="footnote"><p><sup>[<a id="ftn.afio.design.acid_write_ordering.background.f0" href="#afio.design.acid_write_ordering.background.f0" class="para">7</a>] </sup>
+<div class="footnote"><p><sup>[<a id="ftn.afio.design.acid_write_ordering.background.f0" href="#afio.design.acid_write_ordering.background.f0" class="para">5</a>] </sup>
                 The main change is that individual writes get an individual lifetime
                 before they must be written to storage rather flushing everything
                 according to some external wall clock.
@@ -191,7 +191,8 @@
 </div>
 <table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
 <td align="left"></td>
-<td align="right"><div class="copyright-footer">Copyright &#169; 2013, 2014 Niall Douglas and Paul Kirth<p>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2013-2015 Niall Douglas
+      and Paul Kirth<p>
         Distributed under the Boost Software License, Version 1.0. (See accompanying
         file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
       </p>

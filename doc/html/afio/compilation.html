@@ -41,8 +41,10 @@
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
           <code class="computeroutput"><span class="identifier">BOOST_AFIO_USE_BOOST_THREAD</span></code>
-          (defaults to 0): Use Boost instead of the C++ 11 STL for atomic, chrono,
-          future, mutex and thread. This is useful where your C++ 11 STL is deficient.
+          (defaults to 0 except on Mingw32 only, Mingw-w64 has a working std thread
+          library): Use Boost instead of the C++ 11 STL for atomic, chrono, future,
+          mutex and thread. This is useful where your C++ 11 STL is deficient or
+          where Boost's facilities are more useful.
         </li>
 <li class="listitem">
           <code class="computeroutput"><span class="identifier">BOOST_AFIO_USE_BOOST_FILESYSTEM</span></code>

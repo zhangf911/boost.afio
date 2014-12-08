@@ -294,32 +294,32 @@
 <tr>
 <td>
                 <p>
-                  Ubuntu 12.04 LTS Linux x64 with GCC 4.8
+                  Ubuntu 14.04 LTS Linux x64 with GCC 4.9.2
                 </p>
               </td>
 <td>
                 <p>
-                  <span class="alignright">1291250</span>
+                  <span class="alignright">1002490</span>
                 </p>
               </td>
 <td>
                 <p>
-                  <span class="alignright">1022970</span>
+                  <span class="alignright">1036150</span>
                 </p>
               </td>
 <td>
                 <p>
-                  <span class="alignright">1479540</span>
+                  <span class="alignright">1467650</span>
                 </p>
               </td>
 <td>
                 <p>
-                  <span class="alignright">1200450</span>
+                  <span class="alignright">1199460</span>
                 </p>
               </td>
 <td>
                 <p>
-                  <span class="alignright">1611040<sup>[<a name="afio.FAQ.closure_performance.f2" href="#ftn.afio.FAQ.closure_performance.f2" class="footnote">b</a>]</sup></span>
+                  <span class="alignright">1686100<sup>[<a name="afio.FAQ.closure_performance.f2" href="#ftn.afio.FAQ.closure_performance.f2" class="footnote">b</a>]</sup></span>
                 </p>
               </td>
 </tr>
@@ -433,13 +433,85 @@
 <td>
               </td>
 </tr>
+<tr>
+<td>
+                <p>
+                  Ubuntu 12.04 LTS Linux x64 with GCC 4.8
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">1291250</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">1022970</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">1479540</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">1200450</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">1611040<sup>[<a name="afio.FAQ.closure_performance.f3" href="#ftn.afio.FAQ.closure_performance.f3" class="footnote">c</a>]</sup></span>
+                </p>
+              </td>
+</tr>
+<tr>
+<td>
+                <p>
+                  <span class="emphasis"><em>Relative to AFIO v1.1</em></span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">+18%</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">+29%</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">+3%</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">+24%</span>
+                </p>
+              </td>
+<td>
+                <p>
+                  <span class="alignright">100%</span>
+                </p>
+              </td>
+</tr>
 </tbody>
-<tbody class="footnotes"><tr><td colspan="6"><div class="footnote"><p><sup>[<a id="ftn.afio.FAQ.closure_performance.f2" href="#afio.FAQ.closure_performance.f2" class="para">b</a>] </sup>
+<tbody class="footnotes"><tr><td colspan="6">
+<div class="footnote"><p><sup>[<a id="ftn.afio.FAQ.closure_performance.f2" href="#afio.FAQ.closure_performance.f2" class="para">b</a>] </sup>
                     Unfortunately the glibc mutex used by ASIO does not scale well
                     on modern CPUs due to having too small a spin count, so this
                     value is for four threads instead of eight (it was the best I
                     could get through trial and error).
-                  </p></div></td></tr></tbody>
+                  </p></div>
+<div class="footnote"><p><sup>[<a id="ftn.afio.FAQ.closure_performance.f3" href="#afio.FAQ.closure_performance.f3" class="para">c</a>] </sup>
+                    Unfortunately the glibc mutex used by ASIO does not scale well
+                    on modern CPUs due to having too small a spin count, so this
+                    value is for four threads instead of eight (it was the best I
+                    could get through trial and error).
+                  </p></div>
+</td></tr></tbody>
 </table></div>
 </div>
 <br class="table-break"><p>

@@ -164,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="373" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="369" bodyend="398"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="373" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="369" bodyend="398"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

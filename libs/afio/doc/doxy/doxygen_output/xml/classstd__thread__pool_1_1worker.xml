@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="274" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="274" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="274" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="274" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="276" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="276" bodyend="276"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="276" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="276" bodyend="276"/>
       </memberdef>
       <memberdef kind="function" id="classstd__thread__pool_1_1worker_1a18a1fe8560185c36451ab71ab600bc04" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -46,14 +46,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="278" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="277" bodyend="288"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="278" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="277" bodyend="288"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="273" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="272" bodyend="289"/>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="273" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="272" bodyend="289"/>
     <listofallmembers>
       <member refid="classstd__thread__pool_1_1worker_1a18a1fe8560185c36451ab71ab600bc04" prot="public" virt="non-virtual"><scope>std_thread_pool::worker</scope><name>operator()</name></member>
       <member refid="classstd__thread__pool_1_1worker_1ac9f0c4827359f8e79a6cf8101f9b6502" prot="private" virt="non-virtual"><scope>std_thread_pool::worker</scope><name>pool</name></member>

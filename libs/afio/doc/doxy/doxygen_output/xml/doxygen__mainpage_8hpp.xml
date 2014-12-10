@@ -6,6 +6,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/doc/doxy/doxygen_input/pages/doxygen_mainpage.hpp"/>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/doc/doxy/doxygen_input/pages/doxygen_mainpage.hpp"/>
   </compounddef>
 </doxygen>

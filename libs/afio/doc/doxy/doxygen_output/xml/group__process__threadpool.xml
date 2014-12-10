@@ -15,7 +15,7 @@
 <para>On first use, this instantiates a default <ref refid="classstd__thread__pool" kindref="compound">std_thread_pool</ref> running `BOOST_AFIO_MAX_NON_ASYNC_QUEUE_DEPTH` threads which will remain until its shared count reaches zero. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="336"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="336"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

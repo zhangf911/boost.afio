@@ -19,14 +19,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="709" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="708" bodyend="715"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="709" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="708" bodyend="715"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>A hasher for <ref refid="classdirectory__entry" kindref="compound">directory_entry</ref>, hashing inode and birth time (if available on this platform). </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="706" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="705" bodyend="716"/>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="706" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="705" bodyend="716"/>
     <listofallmembers>
       <member refid="structdirectory__entry__hash_1a8e687e1a486c142454533def483fd846" prot="public" virt="non-virtual"><scope>directory_entry_hash</scope><name>operator()</name></member>
     </listofallmembers>

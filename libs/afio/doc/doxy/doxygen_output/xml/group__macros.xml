@@ -13,7 +13,7 @@
 <para>Turns on the checking of inputs for validity and throwing of exception conditions at the point of instantiation rather than waiting until those inputs are sent for dispatch. This, being very useful for debugging, defaults to 1 except when `NDEBUG` is defined i.e. final release builds. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="54" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="54" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="54" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="54" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

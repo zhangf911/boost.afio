@@ -65,6 +65,8 @@ Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>std_thread_pool::worker</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstat__t.html">stat_t</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata about a directory entry.  <a href="structstat__t.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstatfs__t.html">statfs_t</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata about a filing system. Unsupported entries are -1.  <a href="structstatfs__t.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdirectory__entry.html">directory_entry</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The abstract base class for an entry in a directory with lazily filled metadata.  <a href="classdirectory__entry.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdirectory__entry__hash.html">directory_entry_hash</a></td></tr>
@@ -125,7 +127,7 @@ Defines</h2></td></tr>
 <tr><td colspan="2"><h2><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0db">file_flags</a> { <br/>
-&#160;&#160;<a class="el" href="group__metadata__flags.html#ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252">None</a> = 0, 
+&#160;&#160;<a class="el" href="afio_8hpp.html#aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252">None</a> = 0, 
 <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba809abe96853e69894bbf8e5730b31348">Read</a> = 1, 
 <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa56670174817e3fed92bfd8182d7c0d1">Write</a> = 2, 
 <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba3c4d2d19c91b345c33a83ca9f551f4e1">ReadWrite</a> = 3, 
@@ -135,19 +137,22 @@ Enumerations</h2></td></tr>
 <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba93479401ae71e13bd81626eb0b6c2d37">Create</a> = 16, 
 <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbafd41a51c46068f24398d21e5e8d23d16">CreateOnlyIfNotExist</a> = 32, 
 <br/>
-&#160;&#160;<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa26ef493b962366c21fef788da134721">WillBeSequentiallyAccessed</a> = 128, 
+&#160;&#160;<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbaaafe04801c8d2d887be1a626b924c0be">CreateCompressed</a> = 64, 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa26ef493b962366c21fef788da134721">WillBeSequentiallyAccessed</a> = 128, 
 <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba5ad1750347c8e7ce9513f1edb3dd3766">WillBeRandomlyAccessed</a> = 256, 
-<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba6085ffcc368053b7563ee66109aba163">FastDirectoryEnumeration</a> = (1&lt;&lt;10), 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba676b9cbbb9391959f0dcd1427a125d2e">NoSparse</a> = 512, 
+<br/>
+&#160;&#160;<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba6085ffcc368053b7563ee66109aba163">FastDirectoryEnumeration</a> = (1&lt;&lt;10), 
 <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba837053fb9e27a38d2a153f5c85436644">UniqueDirectoryHandle</a> = (1&lt;&lt;11), 
-<br/>
-&#160;&#160;<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba648331f85d7765a2b1fcc854dfde389b">OSDirect</a> = (1&lt;&lt;16), 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba648331f85d7765a2b1fcc854dfde389b">OSDirect</a> = (1&lt;&lt;16), 
 <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa0ba263c207e29e2d1d6823d4dc7790b">OSMMap</a> = (1&lt;&lt;17), 
-<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa3cc9b55b4157e3b0c799f941f21c001">AlwaysSync</a> = (1&lt;&lt;24), 
-<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba58ef332941f8d3160a208d81a8d60f3f">SyncOnClose</a> = (1&lt;&lt;25), 
 <br/>
-&#160;&#160;<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba8f3aad3eb5f15e3dd74b03a781d3add2">EnforceDependencyWriteOrder</a> = (1&lt;&lt;26), 
+&#160;&#160;<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa3cc9b55b4157e3b0c799f941f21c001">AlwaysSync</a> = (1&lt;&lt;24), 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba58ef332941f8d3160a208d81a8d60f3f">SyncOnClose</a> = (1&lt;&lt;25), 
+<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dba8f3aad3eb5f15e3dd74b03a781d3add2">EnforceDependencyWriteOrder</a> = (1&lt;&lt;26), 
 <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbacf70efc695fc6209e99b9161f6feead3">int_opening_link</a> = (1&lt;&lt;29), 
-<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbaf8864b27bad71e73e66ab81cabd6f80d">int_opening_dir</a> = (1&lt;&lt;30)
+<br/>
+&#160;&#160;<a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0dbaf8864b27bad71e73e66ab81cabd6f80d">int_opening_dir</a> = (1&lt;&lt;30)
 <br/>
  }</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise file and directory open flags.  <a href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0db">More...</a><br/></td></tr>
@@ -156,7 +161,7 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise async_op_flags flags.  <a href="group__async__op__flags.html#gaa1e754d20cbcf3979c15a3acdc485194">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__metadata__flags.html#ga9d8b6ad0ba3e48637529aace103e11fe">metadata_flags</a> { <br/>
-&#160;&#160;<a class="el" href="group__metadata__flags.html#ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252">None</a> = 0, 
+&#160;&#160;<a class="el" href="afio_8hpp.html#aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252">None</a> = 0, 
 <b>dev</b> = 1&lt;&lt;0, 
 <b>ino</b> = 1&lt;&lt;1, 
 <b>type</b> = 1&lt;&lt;2, 
@@ -179,10 +184,36 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>flags</b> = 1&lt;&lt;15, 
 <b>gen</b> = 1&lt;&lt;16, 
 <b>birthtim</b> = 1&lt;&lt;17, 
-<a class="el" href="group__metadata__flags.html#ga9d8b6ad0ba3e48637529aace103e11fea54991d225c58ce0af43461d4e9a82312">All</a> = (size_t)-1
+<b>sparse</b> = 1&lt;&lt;24, 
+<br/>
+&#160;&#160;<b>compressed</b> = 1&lt;&lt;25, 
+<a class="el" href="afio_8hpp.html#aae6b08a811dd41617f875ab167b21d4ea911a49b7967ef10985d331841303b75f">All</a> = (size_t)-1
 <br/>
  }</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitflags for availability of metadata from `struct stat_t`.  <a href="group__metadata__flags.html#ga9d8b6ad0ba3e48637529aace103e11fe">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="afio_8hpp.html#aae6b08a811dd41617f875ab167b21d4e">fs_metadata_flags</a> { <br/>
+&#160;&#160;<a class="el" href="afio_8hpp.html#aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252">None</a> = 0, 
+<b>flags</b> = 1&lt;&lt;15, 
+<b>bsize</b> = 1&lt;&lt;2, 
+<b>iosize</b> = 1&lt;&lt;3, 
+<br/>
+&#160;&#160;<b>blocks</b> = 1&lt;&lt;13, 
+<b>bfree</b> = 1&lt;&lt;5, 
+<b>bavail</b> = 1&lt;&lt;6, 
+<b>files</b> = 1&lt;&lt;7, 
+<br/>
+&#160;&#160;<b>ffree</b> = 1&lt;&lt;8, 
+<b>namemax</b> = 1&lt;&lt;9, 
+<b>owner</b> = 1&lt;&lt;10, 
+<b>fsid</b> = 1&lt;&lt;11, 
+<br/>
+&#160;&#160;<b>fstypename</b> = 1&lt;&lt;12, 
+<b>mntfromname</b> = 1&lt;&lt;13, 
+<b>mntonname</b> = 1&lt;&lt;14, 
+<a class="el" href="afio_8hpp.html#aae6b08a811dd41617f875ab167b21d4ea911a49b7967ef10985d331841303b75f">All</a> = (size_t)-1
+<br/>
+ }</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitflags for availability of metadata from `struct statfs_t`.  <a href="afio_8hpp.html#aae6b08a811dd41617f875ab167b21d4e">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93458e2822fc3073cd7cd31e94760d93"></a><!-- doxytag: member="afio.hpp::BOOST_BINDLIB_NAMESPACE_BEGIN" ref="a93458e2822fc3073cd7cd31e94760d93" args="(BOOST_AFIO_V1) typedef unsigned long long off_t" -->
@@ -190,7 +221,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classstd__thread__pool.html">std_thread_pool</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process__threadpool.html#ga3cd49e64119265af60e5162b76fd95ca">process_threadpool</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the process threadpool.  <a href="group__process__threadpool.html#ga3cd49e64119265af60e5162b76fd95ca"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">std::shared_ptr<br class="typebreak"/>
-&lt; async_file_io_dispatcher_base &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher.html#ga60af4394d09808d966a31a80fe9142eb">make_async_file_io_dispatcher</a> (std::shared_ptr&lt; <a class="el" href="classthread__source.html">thread_source</a> &gt; threadpool=<a class="el" href="group__process__threadpool.html#ga3cd49e64119265af60e5162b76fd95ca">process_threadpool</a>(), <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0db">file_flags</a> flagsforce=<a class="el" href="afio_8hpp.html#ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252">file_flags::None</a>, <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0db">file_flags</a> flagsmask=<a class="el" href="afio_8hpp.html#ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252">file_flags::None</a>)</td></tr>
+&lt; async_file_io_dispatcher_base &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher.html#ga60af4394d09808d966a31a80fe9142eb">make_async_file_io_dispatcher</a> (std::shared_ptr&lt; <a class="el" href="classthread__source.html">thread_source</a> &gt; threadpool=<a class="el" href="group__process__threadpool.html#ga3cd49e64119265af60e5162b76fd95ca">process_threadpool</a>(), <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0db">file_flags</a> flagsforce=<a class="el" href="afio_8hpp.html#aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252">file_flags::None</a>, <a class="el" href="group__file__flags.html#gaba2d48ea5b39d1ab48c6b892a2e2d0db">file_flags</a> flagsmask=<a class="el" href="afio_8hpp.html#aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252">file_flags::None</a>)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instatiates the best available async_file_io_dispatcher implementation for this system.  <a href="group__async__file__io__dispatcher.html#ga60af4394d09808d966a31a80fe9142eb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab26eb2e2bae885db696a11a8fae88eb1"></a><!-- doxytag: member="afio.hpp::when_all" ref="ab26eb2e2bae885db696a11a8fae88eb1" args="(std::nothrow_t _, Iterator first, Iterator last)" -->
 Iterator::value_type::type&#160;</td><td class="memItemRight" valign="bottom"><b>when_all</b> (std::nothrow_t _, Iterator first, Iterator last)</td></tr>
@@ -349,6 +380,34 @@ inline BOOST_CONSTEXPR <span class="keywordtype">bool</span> operator!(type a) \
 }
 </pre></div>
 <p>Definition at line <a class="el" href="afio_8hpp_source.html#l00344">344</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Enumeration Type Documentation</h2>
+<a class="anchor" id="aae6b08a811dd41617f875ab167b21d4e"></a><!-- doxytag: member="afio.hpp::fs_metadata_flags" ref="aae6b08a811dd41617f875ab167b21d4e" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="afio_8hpp.html#aae6b08a811dd41617f875ab167b21d4e">fs_metadata_flags</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Bitflags for availability of metadata from `struct statfs_t`. </p>
+<dl><dt><b>Enumerator: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252"></a><!-- doxytag: member="None" ref="aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252" args="" -->None</em>&nbsp;</td><td>
+<p>No flags set. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="aae6b08a811dd41617f875ab167b21d4ea911a49b7967ef10985d331841303b75f"></a><!-- doxytag: member="All" ref="aae6b08a811dd41617f875ab167b21d4ea911a49b7967ef10985d331841303b75f" args="" -->All</em>&nbsp;</td><td>
+<p>Return the maximum possible metadata. </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00601">601</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>

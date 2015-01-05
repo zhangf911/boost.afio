@@ -80,12 +80,14 @@ Public Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstat__t.html#a796bc31527577465b0dd3c9fbc771961">st_flags</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstat__t.html#a2524d9bce9db23cd67fb16df52e4abc0">st_gen</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstat__t.html#a1ebba916806061ad29be6b39f0268f9b">st_birthtim</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstat__t.html#aa6370e9b502218538f954aa984160fc4">st_sparse</a>: 1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstat__t.html#a8f3b78e7beaceb2b1f54d9ad61f3d365">st_compressed</a>: 1</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Metadata about a directory entry. </p>
-<p>This structure looks somewhat like a `struct stat`, and indeed it was derived from BSD's `struct stat`. However there are a number of changes to better interoperate with modern practice, specifically: (i) inode value containers are forced to 64 bits. (ii) Timestamps use C++11's `std::chrono::system_clock::time_point` or Boost equivalent. The resolution of these may or may not equal what a `struct timespec` can do depending on your STL. (iii) The type of a file, which is available on Windows and on POSIX without needing an additional syscall, is provided by `st_type` which is one of the values from `filesystem::file_type`. (iv) As type is now separate from permissions, there is no longer a `st_mode`, instead being a `st_perms` which is solely the permissions bits. If you want to test permission bits in `st_perms` but don't want to include platform specific headers, note that `filesystem::perms` contains definitions of the POSIX permissions flags. </p>
+<p>This structure looks somewhat like a `struct stat`, and indeed it was derived from BSD's `struct stat`. However there are a number of changes to better interoperate with modern practice, specifically: (i) inode value containers are forced to 64 bits. (ii) Timestamps use C++11's `std::chrono::system_clock::time_point` or Boost equivalent. The resolution of these may or may not equal what a `struct timespec` can do depending on your STL. (iii) The type of a file, which is available on Windows and on POSIX without needing an additional syscall, is provided by `st_type` which is one of the values from `filesystem::file_type`. (iv) As type is now separate from permissions, there is no longer a `st_mode`, instead being a `st_perms` which is solely the permissions bits. If you want to test permission bits in `st_perms` but don't want to include platform specific headers, note that `filesystem::perms` contains definitions of the POSIX permissions flags. (v) The st_sparse and st_compressed flags indicate if your file is sparse and/or compressed, or if the directory will compress newly created files by default. Note that on POSIX, a file is sparse if and only if st_allocated &lt; st_size which can include compressed files if that filing system is mounted with compression enabled (e.g. ZFS with ZLE compression which elides runs of zeros). </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00525">525</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00539">539</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2765906190447535fa13532c8844a15e"></a><!-- doxytag: member="stat_t::stat_t" ref="a2765906190447535fa13532c8844a15e" args="()" -->
 <div class="memitem">
@@ -103,7 +105,7 @@ Public Attributes</h2></td></tr>
 
 <p>Constructs a UNINITIALIZED instance i.e. full of random garbage. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00557">557</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00574">574</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -124,7 +126,7 @@ Public Attributes</h2></td></tr>
 
 <p>Constructs a zeroed instance. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00559">559</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00576">576</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -141,7 +143,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>inode of device containing file (POSIX only) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00528">528</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00542">542</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -157,7 +159,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>inode of file (Windows, POSIX) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00530">530</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00544">544</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -173,7 +175,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>type of file (Windows, POSIX) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00531">531</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00545">545</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -189,7 +191,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>uint16_t bitfield perms of file (POSIX only) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00536">536</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00550">550</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -205,7 +207,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>number of hard links (Windows, POSIX) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00539">539</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00553">553</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -221,7 +223,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>user ID of the file (POSIX only) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00541">541</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00555">555</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -237,7 +239,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>group ID of the file (POSIX only) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00542">542</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00556">556</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -253,7 +255,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>id of file if special (POSIX only) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00543">543</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00557">557</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -269,7 +271,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>time of last access (Windows, POSIX) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00545">545</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00559">559</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -285,7 +287,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>time of last data modification (Windows, POSIX) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00546">546</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00560">560</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -301,7 +303,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>time of last status change (Windows, POSIX) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00547">547</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00561">561</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -317,7 +319,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>file size, in bytes (Windows, POSIX) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00548">548</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00562">562</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -333,7 +335,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>bytes allocated for file (Windows, POSIX) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00549">549</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00563">563</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -349,7 +351,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>number of blocks allocated (Windows, POSIX) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00550">550</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00564">564</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -365,7 +367,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>block size used by this device (Windows, POSIX) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00551">551</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00565">565</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -381,7 +383,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>user defined flags for file (FreeBSD, OS X, zero otherwise) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00552">552</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00566">566</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -397,7 +399,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>file generation number (FreeBSD, OS X, zero otherwise) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00553">553</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00567">567</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -413,7 +415,39 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <p>time of file creation (Windows, FreeBSD, OS X, zero otherwise) </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00554">554</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00568">568</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6370e9b502218538f954aa984160fc4"></a><!-- doxytag: member="stat_t::st_sparse" ref="aa6370e9b502218538f954aa984160fc4" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="structstat__t.html#aa6370e9b502218538f954aa984160fc4">stat_t::st_sparse</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>if this file is sparse, or this directory capable of sparse files (Windows, POSIX) </p>
+
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00570">570</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f3b78e7beaceb2b1f54d9ad61f3d365"></a><!-- doxytag: member="stat_t::st_compressed" ref="a8f3b78e7beaceb2b1f54d9ad61f3d365" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="structstat__t.html#a8f3b78e7beaceb2b1f54d9ad61f3d365">stat_t::st_compressed</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>if this file is compressed, or this directory capable of compressed files (Windows) </p>
+
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00571">571</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>

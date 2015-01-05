@@ -49,6 +49,12 @@
     </h6>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
+          Extended attributes support
+        </li>
+<li class="listitem">
+          ACL support
+        </li>
+<li class="listitem">
           Multiple dispatcher support
           <div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem">
                 Integration of direct proposed Boost.Fiber library support as a secondary
@@ -122,6 +128,17 @@
                 Anything before VS2013, as these lack template alias support. I took
                 the opportunity to clean out the VS2010 special code paths and all
                 the variadic template emulation.
+              </li>
+</ul></div>
+        </li>
+<li class="listitem">
+          ** FIXME BEFORE RELEASE ***
+          <div class="itemizedlist"><ul class="itemizedlist" type="circle">
+<li class="listitem">
+                Add file symbolic link creation for Windows
+              </li>
+<li class="listitem">
+                File handle closing should become asynchronous
               </li>
 </ul></div>
         </li>

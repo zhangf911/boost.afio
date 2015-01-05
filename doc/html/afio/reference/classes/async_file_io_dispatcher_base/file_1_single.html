@@ -28,16 +28,25 @@
           (single)</a>
 </h5></div></div></div>
 <p>
-            <a class="indexterm" name="idp14814304"></a>
+            <a class="indexterm" name="idp15229408"></a>
 Schedule an asynchronous file creation and open after an optional precondition.
           </p>
 <h6>
 <a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.h0"></a>
+            <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.description"></a></span><a class="link" href="file_1_single.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_single.description">Description</a>
+          </h6>
+<p>
+            Be aware that any files created are by default sparse if supported on
+            the local filing system. Use file_flags::NoSparse to prevent this on
+            those filing systems which permit it.
+          </p>
+<h6>
+<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.h1"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.synopsis"></a></span><a class="link" href="file_1_single.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_single.synopsis">Synopsis</a>
           </h6>
 <pre class="programlisting"><span class="identifier">async_io_op</span> <span class="identifier">async_file_io_dispatcher_base</span><span class="special">::</span><span class="identifier">file</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">async_path_op_req</span> <span class="special">&amp;</span> <span class="identifier">req</span><span class="special">)</span></pre>
 <h6>
-<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.h1"></a>
+<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.h2"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.parameters"></a></span><a class="link" href="file_1_single.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_single.parameters">Parameters</a>
           </h6>
 <div class="informaltable"><table class="table">
@@ -91,21 +100,21 @@ Schedule an asynchronous file creation and open after an optional precondition.
 </tr></tbody>
 </table></div>
 <h6>
-<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.h2"></a>
+<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.h3"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.returns"></a></span><a class="link" href="file_1_single.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_single.returns">Returns</a>
           </h6>
 <p>
             An op handle.
           </p>
 <h6>
-<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.h3"></a>
+<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.h4"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.header"></a></span><a class="link" href="file_1_single.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_single.header">Header</a>
           </h6>
 <p>
             <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">boost</span><span class="special">/</span><span class="identifier">afio</span><span class="special">/</span><span class="identifier">afio</span><span class="special">.</span><span class="identifier">hpp</span><span class="special">&gt;</span></code>
           </p>
 <h6>
-<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.h4"></a>
+<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.h5"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.complexity"></a></span><a class="link" href="file_1_single.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_single.complexity">Complexity</a>
           </h6>
 <p>
@@ -113,7 +122,7 @@ Schedule an asynchronous file creation and open after an optional precondition.
             is constant time.
           </p>
 <h6>
-<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.h5"></a>
+<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.h6"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.exception_model"></a></span><a class="link" href="file_1_single.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_single.exception_model">Exception
             Model</a>
           </h6>
@@ -126,7 +135,7 @@ Schedule an asynchronous file creation and open after an optional precondition.
             unless a failure to allocate memory occurs.
           </p>
 <h6>
-<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.h6"></a>
+<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.h7"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_single.example"></a></span><a class="link" href="file_1_single.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_single.example">Example</a>
           </h6>
 <pre class="programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">shared_ptr</span><span class="special">&lt;</span><span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">async_file_io_dispatcher_base</span><span class="special">&gt;</span> <span class="identifier">dispatcher</span><span class="special">=</span>

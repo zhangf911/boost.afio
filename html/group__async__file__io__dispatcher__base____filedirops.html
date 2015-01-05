@@ -27,16 +27,790 @@
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
     </ul>
   </div>
 </div>
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">x</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; async_io_op &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga284b1612b2c0a3ea813660bc9fd6a54b">boost::afio::async_file_io_dispatcher_base::adopt</a> (const std::vector&lt; std::shared_ptr&lt; async_io_handle &gt;&gt; &amp;hs)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of third party handle adoptions.  <a href="#ga284b1612b2c0a3ea813660bc9fd6a54b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">async_io_op&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gaa3f199f010ded1399b4f903a194b9cd3">boost::afio::async_file_io_dispatcher_base::adopt</a> (std::shared_ptr&lt; async_io_handle &gt; h)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an adoption of a third party handle.  <a href="#gaa3f199f010ded1399b4f903a194b9cd3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; async_io_op &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gaf6386ba1f9bd0e829470837bef6c7d73">boost::afio::async_file_io_dispatcher_base::dir</a> (const std::vector&lt; async_path_op_req &gt; &amp;reqs)=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of asynchronous directory creations and opens after optional preconditions.  <a href="#gaf6386ba1f9bd0e829470837bef6c7d73"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">async_io_op&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gacceb89d11308e3137186aaccec282a17">boost::afio::async_file_io_dispatcher_base::dir</a> (const async_path_op_req &amp;req)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an asynchronous directory creation and open after an optional precondition.  <a href="#gacceb89d11308e3137186aaccec282a17"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; async_io_op &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga41e799782c22f41b16d408a977460153">boost::afio::async_file_io_dispatcher_base::rmdir</a> (const std::vector&lt; async_path_op_req &gt; &amp;reqs)=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of asynchronous directory deletions after optional preconditions.  <a href="#ga41e799782c22f41b16d408a977460153"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">async_io_op&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gadb64fc6cabd8e1f394b112cf2361a20a">boost::afio::async_file_io_dispatcher_base::rmdir</a> (const async_path_op_req &amp;req)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an asynchronous directory deletion after an optional precondition.  <a href="#gadb64fc6cabd8e1f394b112cf2361a20a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; async_io_op &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga5da57c9cb811cea214a1e36f007ecffb">boost::afio::async_file_io_dispatcher_base::file</a> (const std::vector&lt; async_path_op_req &gt; &amp;reqs)=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of asynchronous file creations and opens after optional preconditions.  <a href="#ga5da57c9cb811cea214a1e36f007ecffb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">async_io_op&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga59910bc569f75eac27c406c47ccd0643">boost::afio::async_file_io_dispatcher_base::file</a> (const async_path_op_req &amp;req)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an asynchronous file creation and open after an optional precondition.  <a href="#ga59910bc569f75eac27c406c47ccd0643"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; async_io_op &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga1e2c1e20ed7a8d04c3dc63490f8e2580">boost::afio::async_file_io_dispatcher_base::rmfile</a> (const std::vector&lt; async_path_op_req &gt; &amp;reqs)=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of asynchronous file deletions after optional preconditions.  <a href="#ga1e2c1e20ed7a8d04c3dc63490f8e2580"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">async_io_op&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gaa222f0e9e966ddddf823166105589316">boost::afio::async_file_io_dispatcher_base::rmfile</a> (const async_path_op_req &amp;req)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an asynchronous file deletion after an optional precondition.  <a href="#gaa222f0e9e966ddddf823166105589316"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; async_io_op &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga831d3e585fab96f70b71b1b1a41bd858">boost::afio::async_file_io_dispatcher_base::symlink</a> (const std::vector&lt; async_path_op_req &gt; &amp;reqs)=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of asynchronous symlink creations and opens after a precondition.  <a href="#ga831d3e585fab96f70b71b1b1a41bd858"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">async_io_op&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gac56fe0c4aa9d3ead576ff210b3bb3b92">boost::afio::async_file_io_dispatcher_base::symlink</a> (const async_path_op_req &amp;req)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an asynchronous symlink creation and open after a precondition.  <a href="#gac56fe0c4aa9d3ead576ff210b3bb3b92"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; async_io_op &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga5f83cde9b9428423ab6cfbefbe0865b9">boost::afio::async_file_io_dispatcher_base::rmsymlink</a> (const std::vector&lt; async_path_op_req &gt; &amp;reqs)=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of asynchronous symlink deletions after optional preconditions.  <a href="#ga5f83cde9b9428423ab6cfbefbe0865b9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">async_io_op&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga3d4a61ff8c31bade2d3a5f3aa7e1cb60">boost::afio::async_file_io_dispatcher_base::rmsymlink</a> (const async_path_op_req &amp;req)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an asynchronous symlink deletion after an optional precondition.  <a href="#ga3d4a61ff8c31bade2d3a5f3aa7e1cb60"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; async_io_op &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gab2bbf924a104039e4fb5b9a31f14e81e">boost::afio::async_file_io_dispatcher_base::sync</a> (const std::vector&lt; async_io_op &gt; &amp;ops)=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of asynchronous content synchronisations with physical storage after preceding operations.  <a href="#gab2bbf924a104039e4fb5b9a31f14e81e"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">async_io_op&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga7cb40ff0cb3eee7096f0a126bc509db8">boost::afio::async_file_io_dispatcher_base::sync</a> (const async_io_op &amp;req)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an asynchronous content synchronisation with physical storage after a preceding operation.  <a href="#ga7cb40ff0cb3eee7096f0a126bc509db8"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; async_io_op &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga56db87e1d05cf4c17c7587216b2413c9">boost::afio::async_file_io_dispatcher_base::close</a> (const std::vector&lt; async_io_op &gt; &amp;ops)=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of asynchronous file or directory handle closes after preceding operations.  <a href="#ga56db87e1d05cf4c17c7587216b2413c9"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">async_io_op&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga269273113b9ec5eea764791852cbd53a">boost::afio::async_file_io_dispatcher_base::close</a> (const async_io_op &amp;req)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an asynchronous file or directory handle close after a preceding operation.  <a href="#ga269273113b9ec5eea764791852cbd53a"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">virtual std::vector&lt; async_io_op &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga389a54f126d95872fa3981bbb0f4ca49">boost::afio::async_file_io_dispatcher_base::read</a> (const std::vector&lt; async_data_op_req&lt; T &gt;&gt; &amp;ops)=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of asynchronous data reads after preceding operations, where offset and total data read must not exceed the present file size.  <a href="#ga389a54f126d95872fa3981bbb0f4ca49"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">async_io_op&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga2f99a4c769b6d769e829cee1679763c1">boost::afio::async_file_io_dispatcher_base::read</a> (const async_data_op_req&lt; T &gt; &amp;req)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an asynchronous data read after a preceding operation, where offset and total data read must not exceed the present file size.  <a href="#ga2f99a4c769b6d769e829cee1679763c1"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">virtual std::vector&lt; async_io_op &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga2489d452720accc47d1bfeb5525cfd5b">boost::afio::async_file_io_dispatcher_base::write</a> (const std::vector&lt; async_data_op_req&lt; const T &gt;&gt; &amp;ops)=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of asynchronous data writes after preceding operations, where offset and total data written must not exceed the present file size.  <a href="#ga2489d452720accc47d1bfeb5525cfd5b"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">async_io_op&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gaccfb68e7fb84c36f418215e4d792988f">boost::afio::async_file_io_dispatcher_base::write</a> (const async_data_op_req&lt; const T &gt; &amp;req)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an asynchronous data write after a preceding operation, where offset and total data written must not exceed the present file size.  <a href="#gaccfb68e7fb84c36f418215e4d792988f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; async_io_op &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gae3f243608a9f97af2461ead5bb8189af">boost::afio::async_file_io_dispatcher_base::truncate</a> (const std::vector&lt; async_io_op &gt; &amp;ops, const std::vector&lt; off_t &gt; &amp;sizes)=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of asynchronous file length truncations after preceding operations.  <a href="#gae3f243608a9f97af2461ead5bb8189af"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">async_io_op&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gaa6d63c51183b6f637a723b00155e1cac">boost::afio::async_file_io_dispatcher_base::truncate</a> (const async_io_op &amp;op, off_t newsize)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an asynchronous file length truncation after a preceding operation.  <a href="#gaa6d63c51183b6f637a723b00155e1cac"></a><br/></td></tr>
+</table>
+<hr/><h2>Function Documentation</h2>
+<a class="anchor" id="ga284b1612b2c0a3ea813660bc9fd6a54b"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::adopt" ref="ga284b1612b2c0a3ea813660bc9fd6a54b" args="(const std::vector&lt; std::shared_ptr&lt; async_io_handle &gt;&gt; &amp;hs)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;async_io_op&gt; <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga284b1612b2c0a3ea813660bc9fd6a54b">boost::afio::async_file_io_dispatcher_base::adopt</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::shared_ptr&lt; <a class="el" href="classboost_1_1afio_1_1async__io__handle.html">async_io_handle</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>hs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of third party handle adoptions. </p>
+<p>This function enables you to adopt third party custom <a class="el" href="classboost_1_1afio_1_1async__io__handle.html" title="The abstract base class encapsulating a platform-specific file handle.">async_io_handle</a> derivatives as ops into the scheduler. Think of it as if you were calling <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga5da57c9cb811cea214a1e36f007ecffb" title="Schedule a batch of asynchronous file creations and opens after optional preconditions.">file()</a>, except the op returns the supplied handle and otherwise does nothing.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A batch of op handles. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hs</td><td>A batch of handles to adopt.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+</div>
+</div>
+<a class="anchor" id="gaa3f199f010ded1399b4f903a194b9cd3"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::adopt" ref="gaa3f199f010ded1399b4f903a194b9cd3" args="(std::shared_ptr&lt; async_io_handle &gt; h)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async_io_op <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga284b1612b2c0a3ea813660bc9fd6a54b">boost::afio::async_file_io_dispatcher_base::adopt</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classboost_1_1afio_1_1async__io__handle.html">async_io_handle</a> &gt;&#160;</td>
+          <td class="paramname"><em>h</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule an adoption of a third party handle. </p>
+<p>This function enables you to adopt third party custom <a class="el" href="classboost_1_1afio_1_1async__io__handle.html" title="The abstract base class encapsulating a platform-specific file handle.">async_io_handle</a> derivatives as ops into the scheduler. Think of it as if you were calling <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga5da57c9cb811cea214a1e36f007ecffb" title="Schedule a batch of asynchronous file creations and opens after optional preconditions.">file()</a>, except the op returns the supplied handle and otherwise does nothing.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An op handle. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">h</td><td>A handle to adopt.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02857">2857</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf6386ba1f9bd0e829470837bef6c7d73"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::dir" ref="gaf6386ba1f9bd0e829470837bef6c7d73" args="(const std::vector&lt; async_path_op_req &gt; &amp;reqs)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;async_io_op&gt; <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gaf6386ba1f9bd0e829470837bef6c7d73">boost::afio::async_file_io_dispatcher_base::dir</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__path__op__req.html">async_path_op_req</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>reqs</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of asynchronous directory creations and opens after optional preconditions. </p>
+<p>Note that if there is already a handle open to the directory requested, that will be returned instead of a new handle unless file_flags::UniqueDirectoryHandle is specified.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A batch of op handles. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reqs</td><td>A batch of `async_path_op_req` structures.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+</div>
+</div>
+<a class="anchor" id="gacceb89d11308e3137186aaccec282a17"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::dir" ref="gacceb89d11308e3137186aaccec282a17" args="(const async_path_op_req &amp;req)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async_io_op <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gaf6386ba1f9bd0e829470837bef6c7d73">boost::afio::async_file_io_dispatcher_base::dir</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structboost_1_1afio_1_1async__path__op__req.html">async_path_op_req</a> &amp;&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule an asynchronous directory creation and open after an optional precondition. </p>
+<p>Note that if there is already a handle open to the directory requested, that will be returned instead of a new handle unless file_flags::UniqueDirectoryHandle is specified.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An op handle. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>An `async_path_op_req` structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02864">2864</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga41e799782c22f41b16d408a977460153"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::rmdir" ref="ga41e799782c22f41b16d408a977460153" args="(const std::vector&lt; async_path_op_req &gt; &amp;reqs)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;async_io_op&gt; <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga41e799782c22f41b16d408a977460153">boost::afio::async_file_io_dispatcher_base::rmdir</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__path__op__req.html">async_path_op_req</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>reqs</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of asynchronous directory deletions after optional preconditions. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A batch of op handles. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reqs</td><td>A batch of `async_path_op_req` structures.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+</div>
+</div>
+<a class="anchor" id="gadb64fc6cabd8e1f394b112cf2361a20a"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::rmdir" ref="gadb64fc6cabd8e1f394b112cf2361a20a" args="(const async_path_op_req &amp;req)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async_io_op <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga41e799782c22f41b16d408a977460153">boost::afio::async_file_io_dispatcher_base::rmdir</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structboost_1_1afio_1_1async__path__op__req.html">async_path_op_req</a> &amp;&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule an asynchronous directory deletion after an optional precondition. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An op handle. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>An `async_path_op_req` structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02871">2871</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5da57c9cb811cea214a1e36f007ecffb"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::file" ref="ga5da57c9cb811cea214a1e36f007ecffb" args="(const std::vector&lt; async_path_op_req &gt; &amp;reqs)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;async_io_op&gt; <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga5da57c9cb811cea214a1e36f007ecffb">boost::afio::async_file_io_dispatcher_base::file</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__path__op__req.html">async_path_op_req</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>reqs</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of asynchronous file creations and opens after optional preconditions. </p>
+<p>Be aware that any files created are by default sparse if supported on the local filing system. Use file_flags::NoSparse to prevent this on those filing systems which permit it.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A batch of op handles. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reqs</td><td>A batch of `async_path_op_req` structures.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+</div>
+</div>
+<a class="anchor" id="ga59910bc569f75eac27c406c47ccd0643"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::file" ref="ga59910bc569f75eac27c406c47ccd0643" args="(const async_path_op_req &amp;req)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async_io_op <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga5da57c9cb811cea214a1e36f007ecffb">boost::afio::async_file_io_dispatcher_base::file</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structboost_1_1afio_1_1async__path__op__req.html">async_path_op_req</a> &amp;&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule an asynchronous file creation and open after an optional precondition. </p>
+<p>Be aware that any files created are by default sparse if supported on the local filing system. Use file_flags::NoSparse to prevent this on those filing systems which permit it.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An op handle. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>An `async_path_op_req` structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02878">2878</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga1e2c1e20ed7a8d04c3dc63490f8e2580"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::rmfile" ref="ga1e2c1e20ed7a8d04c3dc63490f8e2580" args="(const std::vector&lt; async_path_op_req &gt; &amp;reqs)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;async_io_op&gt; <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga1e2c1e20ed7a8d04c3dc63490f8e2580">boost::afio::async_file_io_dispatcher_base::rmfile</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__path__op__req.html">async_path_op_req</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>reqs</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of asynchronous file deletions after optional preconditions. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A batch of op handles. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reqs</td><td>A batch of `async_path_op_req` structures.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+</div>
+</div>
+<a class="anchor" id="gaa222f0e9e966ddddf823166105589316"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::rmfile" ref="gaa222f0e9e966ddddf823166105589316" args="(const async_path_op_req &amp;req)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async_io_op <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga1e2c1e20ed7a8d04c3dc63490f8e2580">boost::afio::async_file_io_dispatcher_base::rmfile</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structboost_1_1afio_1_1async__path__op__req.html">async_path_op_req</a> &amp;&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule an asynchronous file deletion after an optional precondition. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An op handle. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>An `async_path_op_req` structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02885">2885</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga831d3e585fab96f70b71b1b1a41bd858"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::symlink" ref="ga831d3e585fab96f70b71b1b1a41bd858" args="(const std::vector&lt; async_path_op_req &gt; &amp;reqs)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;async_io_op&gt; <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga831d3e585fab96f70b71b1b1a41bd858">boost::afio::async_file_io_dispatcher_base::symlink</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__path__op__req.html">async_path_op_req</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>reqs</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of asynchronous symlink creations and opens after a precondition. </p>
+<p>Note that if creating, the target for the symlink is the precondition. On Windows directories are symlinked using a reparse point instead of a symlink due to the default lack of the <code>SeCreateSymbolicLinkPrivilege</code> for non-Administrative users.</p>
+<p>Note that currently on Windows non-directory symbolic links are not supported. If there is demand for this we may add support.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A batch of op handles. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reqs</td><td>A batch of `async_path_op_req` structures.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+</div>
+</div>
+<a class="anchor" id="gac56fe0c4aa9d3ead576ff210b3bb3b92"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::symlink" ref="gac56fe0c4aa9d3ead576ff210b3bb3b92" args="(const async_path_op_req &amp;req)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async_io_op <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga831d3e585fab96f70b71b1b1a41bd858">boost::afio::async_file_io_dispatcher_base::symlink</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structboost_1_1afio_1_1async__path__op__req.html">async_path_op_req</a> &amp;&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule an asynchronous symlink creation and open after a precondition. </p>
+<p>Note that if creating, the target for the symlink is the precondition. On Windows directories are symlinked using a reparse point instead of a symlink due to the default lack of the <code>SeCreateSymbolicLinkPrivilege</code> for non-Administrative users.</p>
+<p>Note that currently on Windows non-directory symbolic links are not supported. If there is demand for this we may add support.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An op handle. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>An `async_path_op_req` structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02892">2892</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga5f83cde9b9428423ab6cfbefbe0865b9"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::rmsymlink" ref="ga5f83cde9b9428423ab6cfbefbe0865b9" args="(const std::vector&lt; async_path_op_req &gt; &amp;reqs)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;async_io_op&gt; <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga5f83cde9b9428423ab6cfbefbe0865b9">boost::afio::async_file_io_dispatcher_base::rmsymlink</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__path__op__req.html">async_path_op_req</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>reqs</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of asynchronous symlink deletions after optional preconditions. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A batch of op handles. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reqs</td><td>A batch of `async_path_op_req` structures.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+</div>
+</div>
+<a class="anchor" id="ga3d4a61ff8c31bade2d3a5f3aa7e1cb60"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::rmsymlink" ref="ga3d4a61ff8c31bade2d3a5f3aa7e1cb60" args="(const async_path_op_req &amp;req)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async_io_op <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga5f83cde9b9428423ab6cfbefbe0865b9">boost::afio::async_file_io_dispatcher_base::rmsymlink</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structboost_1_1afio_1_1async__path__op__req.html">async_path_op_req</a> &amp;&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule an asynchronous symlink deletion after an optional precondition. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An op handle. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>An `async_path_op_req` structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02899">2899</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gab2bbf924a104039e4fb5b9a31f14e81e"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::sync" ref="gab2bbf924a104039e4fb5b9a31f14e81e" args="(const std::vector&lt; async_io_op &gt; &amp;ops)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;async_io_op&gt; <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gab2bbf924a104039e4fb5b9a31f14e81e">boost::afio::async_file_io_dispatcher_base::sync</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ops</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of asynchronous content synchronisations with physical storage after preceding operations. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A batch of op handles. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ops</td><td>A batch of op handles.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+</div>
+</div>
+<a class="anchor" id="ga7cb40ff0cb3eee7096f0a126bc509db8"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::sync" ref="ga7cb40ff0cb3eee7096f0a126bc509db8" args="(const async_io_op &amp;req)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async_io_op <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gab2bbf924a104039e4fb5b9a31f14e81e">boost::afio::async_file_io_dispatcher_base::sync</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> &amp;&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule an asynchronous content synchronisation with physical storage after a preceding operation. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An op handle. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>An op handle.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02906">2906</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga56db87e1d05cf4c17c7587216b2413c9"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::close" ref="ga56db87e1d05cf4c17c7587216b2413c9" args="(const std::vector&lt; async_io_op &gt; &amp;ops)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;async_io_op&gt; <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga56db87e1d05cf4c17c7587216b2413c9">boost::afio::async_file_io_dispatcher_base::close</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ops</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of asynchronous file or directory handle closes after preceding operations. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A batch of op handles. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ops</td><td>A batch of op handles.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+</div>
+</div>
+<a class="anchor" id="ga269273113b9ec5eea764791852cbd53a"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::close" ref="ga269273113b9ec5eea764791852cbd53a" args="(const async_io_op &amp;req)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async_io_op <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga56db87e1d05cf4c17c7587216b2413c9">boost::afio::async_file_io_dispatcher_base::close</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> &amp;&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule an asynchronous file or directory handle close after a preceding operation. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An op handle. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>An op handle.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02923">2923</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga389a54f126d95872fa3981bbb0f4ca49"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::read" ref="ga389a54f126d95872fa3981bbb0f4ca49" args="(const std::vector&lt; async_data_op_req&lt; T &gt;&gt; &amp;ops)=0" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; async_io_op &gt; <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga389a54f126d95872fa3981bbb0f4ca49">boost::afio::async_file_io_dispatcher_base::read</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html">async_data_op_req</a>&lt; T &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>ops</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of asynchronous data reads after preceding operations, where offset and total data read must not exceed the present file size. </p>
+<p>Note that on Windows this call issues a separate async file operation for each buffer supplied, thus making scatter/gather i/o no more efficient than making separate calls. The big exception to this is when doing unbuffered page aligned i/o for which Windows provides special scatter/gather i/o functions. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A batch of op handles. </dd></dl>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">class T</td><td>Any type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ops</td><td>A batch of async_data_op_req&lt;T&gt; structures.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02946">2946</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga2f99a4c769b6d769e829cee1679763c1"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::read" ref="ga2f99a4c769b6d769e829cee1679763c1" args="(const async_data_op_req&lt; T &gt; &amp;req)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">async_io_op <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga389a54f126d95872fa3981bbb0f4ca49">boost::afio::async_file_io_dispatcher_base::read</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html">async_data_op_req</a>&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule an asynchronous data read after a preceding operation, where offset and total data read must not exceed the present file size. </p>
+<p>Note that on Windows this call issues a separate async file operation for each buffer supplied, thus making scatter/gather i/o no more efficient than making separate calls. The big exception to this is when doing unbuffered page aligned i/o for which Windows provides special scatter/gather i/o functions. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An op handle. </dd></dl>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">class T</td><td>Any type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>An async_data_op_req&lt;T&gt; structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+</div>
+</div>
+<a class="anchor" id="ga2489d452720accc47d1bfeb5525cfd5b"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::write" ref="ga2489d452720accc47d1bfeb5525cfd5b" args="(const std::vector&lt; async_data_op_req&lt; const T &gt;&gt; &amp;ops)=0" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;async_io_op&gt; <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga2489d452720accc47d1bfeb5525cfd5b">boost::afio::async_file_io_dispatcher_base::write</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html">async_data_op_req</a>&lt; const T &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>ops</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of asynchronous data writes after preceding operations, where offset and total data written must not exceed the present file size. </p>
+<p>Note that on Windows this call issues a separate async file operation for each buffer supplied, thus making scatter/gather i/o no more efficient than making separate calls. The big exception to this is when doing unbuffered page aligned i/o for which Windows provides special scatter/gather i/o functions. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A batch of op handles. </dd></dl>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">class T</td><td>Any type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ops</td><td>A batch of <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4.html" title="A convenience bundle of precondition, data and where for writing from a single `const T *`...">async_data_op_req&lt;const T&gt;</a> structures.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+</div>
+</div>
+<a class="anchor" id="gaccfb68e7fb84c36f418215e4d792988f"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::write" ref="gaccfb68e7fb84c36f418215e4d792988f" args="(const async_data_op_req&lt; const T &gt; &amp;req)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">async_io_op <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga2489d452720accc47d1bfeb5525cfd5b">boost::afio::async_file_io_dispatcher_base::write</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html">async_data_op_req</a>&lt; const T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule an asynchronous data write after a preceding operation, where offset and total data written must not exceed the present file size. </p>
+<p>Note that on Windows this call issues a separate async file operation for each buffer supplied, thus making scatter/gather i/o no more efficient than making separate calls. The big exception to this is when doing unbuffered page aligned i/o for which Windows provides special scatter/gather i/o functions. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An op handle. </dd></dl>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">class T</td><td>Any type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>An <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4.html" title="A convenience bundle of precondition, data and where for writing from a single `const T *`...">async_data_op_req&lt;const T&gt;</a> structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+</div>
+</div>
+<a class="anchor" id="gae3f243608a9f97af2461ead5bb8189af"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::truncate" ref="gae3f243608a9f97af2461ead5bb8189af" args="(const std::vector&lt; async_io_op &gt; &amp;ops, const std::vector&lt; off_t &gt; &amp;sizes)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt;async_io_op&gt; <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gae3f243608a9f97af2461ead5bb8189af">boost::afio::async_file_io_dispatcher_base::truncate</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ops</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; off_t &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sizes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of asynchronous file length truncations after preceding operations. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A batch of op handles. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ops</td><td>A batch of op handles. </td></tr>
+    <tr><td class="paramname">sizes</td><td>A batch of new lengths.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+</div>
+</div>
+<a class="anchor" id="gaa6d63c51183b6f637a723b00155e1cac"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::truncate" ref="gaa6d63c51183b6f637a723b00155e1cac" args="(const async_io_op &amp;op, off_t newsize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async_io_op <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gae3f243608a9f97af2461ead5bb8189af">boost::afio::async_file_io_dispatcher_base::truncate</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> &amp;&#160;</td>
+          <td class="paramname"><em>op</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">off_t&#160;</td>
+          <td class="paramname"><em>newsize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule an asynchronous file length truncation after a preceding operation. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An op handle. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">op</td><td>An op handle. </td></tr>
+    <tr><td class="paramname">newsize</td><td>The new size for the file.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02954">2954</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <hr size="1">
 <table width="100%">

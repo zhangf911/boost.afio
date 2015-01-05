@@ -7,7 +7,7 @@
 <link rel="home" href="../../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.30">
 <link rel="up" href="../structs.html" title="Structures">
 <link rel="prev" href="directory_entry_hash.html" title="directory_entry_hash">
-<link rel="next" href="../classes.html" title="Classes">
+<link rel="next" href="statfs_t.html" title="statfs_t">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table cellpadding="2" width="100%"><tr>
@@ -20,14 +20,14 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="directory_entry_hash.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../structs.html"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../afio.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../classes.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="directory_entry_hash.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../structs.html"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../afio.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="statfs_t.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 <div class="section">
 <div class="titlepage"><div><div><h4 class="title">
 <a name="afio.reference.structs.stat_t"></a><a class="link" href="stat_t.html" title="stat_t">stat_t</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp12926936"></a>
+          <a class="indexterm" name="idp13195096"></a>
 Metadata about a directory entry.
         </p>
 <h6>
@@ -35,23 +35,28 @@ Metadata about a directory entry.
           <span><a name="afio.reference.structs.stat_t.description"></a></span><a class="link" href="stat_t.html#afio.reference.structs.stat_t.description">Description</a>
         </h6>
 <p>
-          This structure looks somewhat like a <code class="computeroutput"><span class="keyword">struct</span>
-          <span class="identifier">stat</span></code>, and indeed it was derived
-          from BSD's <code class="computeroutput"><span class="keyword">struct</span> <span class="identifier">stat</span></code>.
-          However there are a number of changes to better interoperate with modern
-          practice, specifically: (i) inode value containers are forced to 64 bits.
-          (ii) Timestamps use C++11's <code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">chrono</span><span class="special">::</span><span class="identifier">system</span><span class="special">\</span><span class="identifier">u005fclock</span><span class="special">::</span><span class="identifier">time</span><span class="special">\</span><span class="identifier">u005fpoint</span></code>
-          or Boost equivalent. The resolution of these may or may not equal what
-          a <code class="computeroutput"><span class="keyword">struct</span> <span class="identifier">timespec</span></code>
+          This structure looks somewhat like a <code class="literal"><code class="computeroutput"><span class="keyword">struct</span>
+          <span class="identifier">stat</span></code></code>, and indeed it
+          was derived from BSD's <code class="literal"><code class="computeroutput"><span class="keyword">struct</span>
+          <span class="identifier">stat</span></code></code>. However there
+          are a number of changes to better interoperate with modern practice, specifically:
+          (i) inode value containers are forced to 64 bits. (ii) Timestamps use C++11's
+          <code class="literal"><code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">chrono</span><span class="special">::</span><span class="identifier">system_clock</span><span class="special">::</span><span class="identifier">time_point</span></code></code> or Boost equivalent.
+          The resolution of these may or may not equal what a <code class="literal"><code class="computeroutput"><span class="keyword">struct</span> <span class="identifier">timespec</span></code></code>
           can do depending on your STL. (iii) The type of a file, which is available
           on Windows and on POSIX without needing an additional syscall, is provided
-          by <code class="computeroutput"><span class="identifier">st</span><span class="special">\</span><span class="identifier">u005ftype</span></code> which is one of the values
-          from <code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">file</span><span class="special">\</span><span class="identifier">u005ftype</span></code>. (iv) As type is now separate
-          from permissions, there is no longer a <code class="computeroutput"><span class="identifier">st</span><span class="special">\</span><span class="identifier">u005fmode</span></code>,
-          instead being a <code class="computeroutput"><span class="identifier">st</span><span class="special">\</span><span class="identifier">u005fperms</span></code> which is solely the permissions
-          bits. If you want to test permission bits in <code class="computeroutput"><span class="identifier">st</span><span class="special">\</span><span class="identifier">u005fperms</span></code>
-          but don't want to include platform specific headers, note that <code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">perms</span></code> contains definitions of the POSIX
-          permissions flags.
+          by <code class="literal"><code class="computeroutput"><span class="identifier">st_type</span></code></code>
+          which is one of the values from <code class="literal"><code class="computeroutput"><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">file_type</span></code></code>.
+          (iv) As type is now separate from permissions, there is no longer a <code class="literal"><code class="computeroutput"><span class="identifier">st_mode</span></code></code>, instead being a <code class="literal"><code class="computeroutput"><span class="identifier">st_perms</span></code></code> which is solely the
+          permissions bits. If you want to test permission bits in <code class="literal"><code class="computeroutput"><span class="identifier">st_perms</span></code></code> but don't want to
+          include platform specific headers, note that <code class="literal"><code class="computeroutput"><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">perms</span></code></code>
+          contains definitions of the POSIX permissions flags. (v) The st_sparse
+          and st_compressed flags indicate if your file is sparse and/or compressed,
+          or if the directory will compress newly created files by default. Note
+          that on POSIX, a file is sparse if and only if st_allocated &lt; st_size
+          which can include compressed files if that filing system is mounted with
+          compression enabled (e.g. ZFS with ZLE compression which elides runs of
+          zeros).
         </p>
 <h6>
 <a name="afio.reference.structs.stat_t.h1"></a>
@@ -61,8 +66,8 @@ Metadata about a directory entry.
 <span class="special">{</span>
   <span class="identifier">uint64_t</span> <span class="identifier">st_dev</span><span class="special">;</span>                               <span class="comment">// inode of device containing file (POSIX only) </span>
   <span class="identifier">uint64_t</span> <span class="identifier">st_ino</span><span class="special">;</span>                               <span class="comment">// inode of file (Windows, POSIX) </span>
-  <span class="identifier">std</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">file_type</span> <span class="identifier">st_type</span><span class="special">;</span>            <span class="comment">// type of file (Windows, POSIX) </span>
-  <span class="identifier">std</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">perms</span> <span class="identifier">st_perms</span><span class="special">;</span>               <span class="comment">// uint16_t bitfield perms of file (POSIX only) </span>
+  <span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">file_type</span> <span class="identifier">st_type</span><span class="special">;</span>                 <span class="comment">// type of file (Windows, POSIX) </span>
+  <span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">perms</span> <span class="identifier">st_perms</span><span class="special">;</span>                    <span class="comment">// uint16_t bitfield perms of file (POSIX only) </span>
   <span class="identifier">int16_t</span> <span class="identifier">st_nlink</span><span class="special">;</span>                              <span class="comment">// number of hard links (Windows, POSIX) </span>
   <span class="identifier">int16_t</span> <span class="identifier">st_uid</span><span class="special">;</span>                                <span class="comment">// user ID of the file (POSIX only) </span>
   <span class="identifier">int16_t</span> <span class="identifier">st_gid</span><span class="special">;</span>                                <span class="comment">// group ID of the file (POSIX only) </span>
@@ -77,6 +82,8 @@ Metadata about a directory entry.
   <span class="identifier">uint32_t</span> <span class="identifier">st_flags</span><span class="special">;</span>                             <span class="comment">// user defined flags for file (FreeBSD, OS X, zero otherwise) </span>
   <span class="identifier">uint32_t</span> <span class="identifier">st_gen</span><span class="special">;</span>                               <span class="comment">// file generation number (FreeBSD, OS X, zero otherwise) </span>
   <span class="identifier">chrono</span><span class="special">::</span><span class="identifier">system_clock</span><span class="special">::</span><span class="identifier">time_point</span> <span class="identifier">st_birthtim</span><span class="special">;</span>  <span class="comment">// time of file creation (Windows, FreeBSD, OS X, zero otherwise) </span>
+  <span class="keyword">unsigned</span> <span class="identifier">st_sparse</span><span class="special">;</span>                            <span class="comment">// if this file is sparse, or this directory capable of sparse files (Windows, POSIX) </span>
+  <span class="keyword">unsigned</span> <span class="identifier">st_compressed</span><span class="special">;</span>                        <span class="comment">// if this file is compressed, or this directory capable of compressed files (Windows) </span>
 <span class="special">};</span>
 </pre>
 <h6>
@@ -155,7 +162,7 @@ Metadata about a directory entry.
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="directory_entry_hash.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../structs.html"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../afio.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../classes.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="directory_entry_hash.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../structs.html"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../afio.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="statfs_t.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 </body>
 </html>

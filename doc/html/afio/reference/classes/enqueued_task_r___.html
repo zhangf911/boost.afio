@@ -28,10 +28,25 @@
         R()&gt;</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp17687280"></a>
+          <a class="indexterm" name="idp18682184"></a>
+Effectively our own custom std::packaged_task&lt;&gt;, with copy semantics
+          and letting us early set value to significantly improve performance.
         </p>
 <h6>
 <a name="afio.reference.classes.enqueued_task_r___.h0"></a>
+          <span><a name="afio.reference.classes.enqueued_task_r___.description"></a></span><a class="link" href="enqueued_task_r___.html#afio.reference.classes.enqueued_task_r___.description">Description</a>
+        </h6>
+<p>
+          Unlike <code class="literal"><code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">packaged_task</span><span class="special">&lt;&gt;</span></code></code>,
+          this custom variant is copyable though each copy always refers to the same
+          internal state. Early future value setting is possible, with any subsequent
+          value setting including that by the function being executed being ignored.
+          Note that this behaviour opens the potential to lose exception state -
+          if you set the future value early and then an exception is later thrown,
+          the exception is swallowed.
+        </p>
+<h6>
+<a name="afio.reference.classes.enqueued_task_r___.h1"></a>
           <span><a name="afio.reference.classes.enqueued_task_r___.synopsis"></a></span><a class="link" href="enqueued_task_r___.html#afio.reference.classes.enqueued_task_r___.synopsis">Synopsis</a>
         </h6>
 <pre class="programlisting"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">class</span> <span class="identifier">R</span><span class="special">&gt;</span>
@@ -42,7 +57,7 @@
 <span class="special">};</span>
 </pre>
 <h6>
-<a name="afio.reference.classes.enqueued_task_r___.h1"></a>
+<a name="afio.reference.classes.enqueued_task_r___.h2"></a>
           <span><a name="afio.reference.classes.enqueued_task_r___.template_parameter_s"></a></span><a class="link" href="enqueued_task_r___.html#afio.reference.classes.enqueued_task_r___.template_parameter_s">Template
           parameter(s)</a>
         </h6>
@@ -70,11 +85,14 @@
                   </p>
                 </td>
 <td>
+                  <p>
+                    The return type of the callable which must be without parameters.
+                  </p>
                 </td>
 </tr></tbody>
 </table></div>
 <h6>
-<a name="afio.reference.classes.enqueued_task_r___.h2"></a>
+<a name="afio.reference.classes.enqueued_task_r___.h3"></a>
           <span><a name="afio.reference.classes.enqueued_task_r___.member_function_s"></a></span><a class="link" href="enqueued_task_r___.html#afio.reference.classes.enqueued_task_r___.member_function_s">Member
           Function(s)</a>
         </h6>
@@ -264,7 +282,7 @@
 </tbody>
 </table></div>
 <h6>
-<a name="afio.reference.classes.enqueued_task_r___.h3"></a>
+<a name="afio.reference.classes.enqueued_task_r___.h4"></a>
           <span><a name="afio.reference.classes.enqueued_task_r___.header"></a></span><a class="link" href="enqueued_task_r___.html#afio.reference.classes.enqueued_task_r___.header">Header</a>
         </h6>
 <p>

@@ -7,7 +7,7 @@
 <link rel="home" href="../../../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.30">
 <link rel="up" href="../async_file_io_dispatcher_base.html" title="async_file_io_dispatcher_base">
 <link rel="prev" href="enumerate_1_batch.html" title="enumerate (batch)">
-<link rel="next" href="page_size.html" title="page_size">
+<link rel="next" href="zero_2_batch.html" title="zero (batch)">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table cellpadding="2" width="100%"><tr>
@@ -20,7 +20,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="enumerate_1_batch.html"><img src="../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../async_file_io_dispatcher_base.html"><img src="../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../../afio.html"><img src="../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="page_size.html"><img src="../../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="enumerate_1_batch.html"><img src="../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../async_file_io_dispatcher_base.html"><img src="../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../../afio.html"><img src="../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="zero_2_batch.html"><img src="../../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 <div class="section">
 <div class="titlepage"><div><div><h5 class="title">
@@ -28,7 +28,7 @@
           (single)</a>
 </h5></div></div></div>
 <p>
-            <a class="indexterm" name="idp17189984"></a>
+            <a class="indexterm" name="idp17582768"></a>
 Schedule an asynchronous directory enumeration after a preceding operation.
           </p>
 <h6>
@@ -55,7 +55,7 @@ Schedule an asynchronous directory enumeration after a preceding operation.
 <a name="afio.reference.classes.async_file_io_dispatcher_base.enumerate_1_single.h1"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.enumerate_1_single.synopsis"></a></span><a class="link" href="enumerate_1_single.html#afio.reference.classes.async_file_io_dispatcher_base.enumerate_1_single.synopsis">Synopsis</a>
           </h6>
-<pre class="programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="identifier">future</span><span class="special">&lt;</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span><span class="identifier">directory_entry</span><span class="special">&gt;,</span> <span class="keyword">bool</span><span class="special">&gt;</span> <span class="special">&gt;,</span> <span class="identifier">async_io_op</span><span class="special">&gt;</span> <span class="identifier">async_file_io_dispatcher_base</span><span class="special">::</span><span class="identifier">enumerate</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">async_enumerate_op_req</span> <span class="special">&amp;</span> <span class="identifier">req</span><span class="special">)</span></pre>
+<pre class="programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="identifier">future</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">directory_entry</span> <span class="special">&gt;,</span> <span class="keyword">bool</span> <span class="special">&gt;</span> <span class="special">&gt;,</span> <span class="identifier">async_io_op</span> <span class="special">&gt;</span> <span class="identifier">async_file_io_dispatcher_base</span><span class="special">::</span><span class="identifier">enumerate</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">async_enumerate_op_req</span> <span class="special">&amp;</span> <span class="identifier">req</span><span class="special">)</span></pre>
 <h6>
 <a name="afio.reference.classes.async_file_io_dispatcher_base.enumerate_1_single.h2"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.enumerate_1_single.parameters"></a></span><a class="link" href="enumerate_1_single.html#afio.reference.classes.async_file_io_dispatcher_base.enumerate_1_single.parameters">Parameters</a>
@@ -200,7 +200,7 @@ Schedule an asynchronous directory enumeration after a preceding operation.
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="enumerate_1_batch.html"><img src="../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../async_file_io_dispatcher_base.html"><img src="../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../../afio.html"><img src="../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="page_size.html"><img src="../../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="enumerate_1_batch.html"><img src="../../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../async_file_io_dispatcher_base.html"><img src="../../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../../afio.html"><img src="../../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="zero_2_batch.html"><img src="../../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 </body>
 </html>

@@ -6,7 +6,7 @@
       <sectiondef kind="enum">
       <memberdef kind="enum" id="group__metadata__flags_1ga9d8b6ad0ba3e48637529aace103e11fe" prot="public" static="no">
         <name>metadata_flags</name>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252" prot="public">
+        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252" prot="public">
           <name>None</name>
           <initializer>0</initializer>
           <briefdescription>
@@ -118,7 +118,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feab4d0a20fde91a6d0c25cb9de314a72bf" prot="public">
+        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea812d6b7f43a582bec81c201334c7f011" prot="public">
           <name>blocks</name>
           <initializer>1&lt;&lt;13</initializer>
           <briefdescription>
@@ -134,7 +134,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea01b6f2edfad04e14ee46a670eb9c8fd2" prot="public">
+        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eab6b306ef981f5e21bb41ea2c2dbe8cd9" prot="public">
           <name>flags</name>
           <initializer>1&lt;&lt;15</initializer>
           <briefdescription>
@@ -158,7 +158,23 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea54991d225c58ce0af43461d4e9a82312" prot="public">
+        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feab78868b7a281dbe62227072695184f91" prot="public">
+          <name>sparse</name>
+          <initializer>1&lt;&lt;24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea4a30f69758d35bc5429f005c2f452db5" prot="public">
+          <name>compressed</name>
+          <initializer>1&lt;&lt;25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea911a49b7967ef10985d331841303b75f" prot="public">
           <name>All</name>
           <initializer>(size_t)-1</initializer>
           <briefdescription>
@@ -172,7 +188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="487" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="483" bodyend="508"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="495" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="491" bodyend="518"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -27,6 +27,7 @@
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
     </ul>
@@ -44,6 +45,7 @@
       <li><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li class="current"><a href="functions_vars.html"><span>Variables</span></a></li>
+      <li><a href="functions_type.html"><span>Typedefs</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -70,259 +72,268 @@
 
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
 <li>acls
-: <a class="el" href="structstatfs__t.html#af19624974016a756b62bbe502e84d2ac">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#a6c5f44fa8758b70731f852168a834f48">boost::afio::statfs_t</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
 <li>buffers
-: <a class="el" href="structasync__data__op__req_3_01const_01_t_01_4.html#aced07c86b9743bcfdebe3b90c3d62591">async_data_op_req&lt; const T &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01asio_1_1const__buffer_01_4.html#a8b3f627ff6d124d636256791ddd4ce20">async_data_op_req&lt; asio::const_buffer &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01asio_1_1mutable__buffer_01_4.html#a00e9df53735d13ba23cbffde07c2208d">async_data_op_req&lt; asio::mutable_buffer &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#ac62b80afd1757f4f84024528612c7e12">async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#acdcaa44cd54feec5300ba413ec450ed9">async_data_op_req&lt; std::basic_string&lt; C, T, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4.html#ac68c0ff61680ef02dedb28984f6857b7">async_data_op_req&lt; std::array&lt; asio::const_buffer, N &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4.html#a45d984e7a77aee860a7640ea22aa7c6d">async_data_op_req&lt; std::array&lt; asio::mutable_buffer, N &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4.html#a32b9252bfb7b26c535b549a778d3551f">async_data_op_req&lt; std::vector&lt; asio::const_buffer, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4.html#a5c26fcd74b282d754cbfffaed20ace3f">async_data_op_req&lt; std::vector&lt; asio::mutable_buffer, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#ae99a2152f6c647d77512167b05c18b3d">async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#a5fd23ea876988bbca4a89b7e84b9f4aa">async_data_op_req&lt; std::array&lt; T, N &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#a8006799ba08f6491079299e404c2d12b">async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#aec83c0f40f5da938e613bc1430f11f6e">async_data_op_req&lt; std::vector&lt; T, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01const_01void_01_4.html#a7e8f76f7b5ac4f366496b60a7fa7363b">async_data_op_req&lt; const void &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01void_01_4.html#a0eb7958a607f9f5441637e73ef95c5e9">async_data_op_req&lt; void &gt;</a>
+: <a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4.html#af4b4d0c54ec2581bed6c0841e5ada0a1">boost::afio::detail::async_data_op_req_impl&lt; false &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4.html#ab6b7f50675c5f84611f63e104d9f99ce">boost::afio::async_data_op_req&lt; asio::const_buffer &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4.html#aad12126ed5ece030a175b02153b34173">boost::afio::async_data_op_req&lt; asio::mutable_buffer &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#af65c9a5ca44e5e71ba40c46fbd6db7b3">boost::afio::async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#a328f95dd2fcb7a270e538bb1dfb7e8ec">boost::afio::async_data_op_req&lt; std::basic_string&lt; C, T, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4.html#a758d0b148dea45949be27bcc58e837c1">boost::afio::async_data_op_req&lt; std::array&lt; asio::const_buffer, N &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4.html#aab641eb0cded51625e995931349ec6b3">boost::afio::async_data_op_req&lt; std::array&lt; asio::mutable_buffer, N &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4.html#a84448671467428c7d494221e3c384201">boost::afio::async_data_op_req&lt; std::vector&lt; asio::const_buffer, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4.html#aa83d154f8b7b3ae179056ee58865939e">boost::afio::async_data_op_req&lt; std::vector&lt; asio::mutable_buffer, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#a4b9b7c4addaa0a1544180807835cf769">boost::afio::async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#a96192aa4f1818d3ae9d6b8849106ed2a">boost::afio::async_data_op_req&lt; std::array&lt; T, N &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#a300f0fd7d5262287a6843aac30355c05">boost::afio::async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#a144958f51fc39d30af3c709648dd6558">boost::afio::async_data_op_req&lt; std::vector&lt; T, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4.html#a649ee46622844f74b006eb77562622b0">boost::afio::async_data_op_req&lt; const void &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4.html#a456a6fe0320f6184bb9a580ec3492399">boost::afio::async_data_op_req&lt; void &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4.html#a6062a7970b0919abe2318751538d130e">boost::afio::async_data_op_req&lt; const T &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html#a10c1dd4dbd476d505abfc7567af5bba3">boost::afio::async_data_op_req&lt; T &gt;</a>
+, <a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#a24bc5634c21ef6201e4d6a5449ebec5a">boost::afio::detail::async_data_op_req_impl&lt; true &gt;</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>compression
-: <a class="el" href="structstatfs__t.html#a2e348f3384a0d984a92a6a7ffe6448c2">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#a82124c5a27571086f460268c228273dc">boost::afio::statfs_t</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_e"></a>- e -</h3><ul>
 <li>extents
-: <a class="el" href="structstatfs__t.html#a9ef58579672c4315e31dcaf299f35844">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#ac9603c97cf4260235ebd637efb0fe8d8">boost::afio::statfs_t</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
 <li>f_bavail
-: <a class="el" href="structstatfs__t.html#a14101c07041f716fbb26b7142577500d">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#ab8f0673ba9e5da4d80fad0d6257b0a30">boost::afio::statfs_t</a>
 </li>
 <li>f_bfree
-: <a class="el" href="structstatfs__t.html#a5b03fea5813c767fdc5d1c60a8d18aa1">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#a199df7890250b25463d7c910d5758608">boost::afio::statfs_t</a>
 </li>
 <li>f_blocks
-: <a class="el" href="structstatfs__t.html#a4ef590760748dc56a40e4e962b63880a">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#af1b9c19237057e5a999f66a7dd3dcd99">boost::afio::statfs_t</a>
 </li>
 <li>f_bsize
-: <a class="el" href="structstatfs__t.html#aee9fadff9b0713740f14a1927a8704d6">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#a56c9834357f55ecfa5d37dae1da1a53d">boost::afio::statfs_t</a>
 </li>
 <li>f_ffree
-: <a class="el" href="structstatfs__t.html#a8746a8f4ec947f1e3c293a7ac7d90d17">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#aff739d2525a8548139c573be0797cfbf">boost::afio::statfs_t</a>
 </li>
 <li>f_files
-: <a class="el" href="structstatfs__t.html#ac9806012f3fd15beacb95713795dda22">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#a790b26a431dfab5de21d83ef7e05ef20">boost::afio::statfs_t</a>
 </li>
 <li>f_flags
-: <a class="el" href="structstatfs__t.html#a445dc28909542698bec7405325be85fe">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#adb57dac2b75ef1a885ff77ceca75b313">boost::afio::statfs_t</a>
 </li>
 <li>f_fsid
-: <a class="el" href="structstatfs__t.html#aff72e9225ad8dbbf0b9f5de539ca8686">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#a75a0e4493b9a6f9f826825591ac1dbbb">boost::afio::statfs_t</a>
 </li>
 <li>f_fstypename
-: <a class="el" href="structstatfs__t.html#ad59f897f47efd1c8a705d1a607023e16">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#a76a52480c50190cbf347ca21e0ba283a">boost::afio::statfs_t</a>
 </li>
 <li>f_iosize
-: <a class="el" href="structstatfs__t.html#a3abc51f00039339f335c2796945ed6ae">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#a0d313cc9be574b042e08c2e1aa3dbe01">boost::afio::statfs_t</a>
 </li>
 <li>f_mntfromname
-: <a class="el" href="structstatfs__t.html#aa76d5399752e1ad357775666c5537096">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#aad749b64137ac49245ef96fe4d605f43">boost::afio::statfs_t</a>
 </li>
 <li>f_mntonname
-: <a class="el" href="structstatfs__t.html#a2f2cf2c80b716736a827d2fda20a48c1">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#aeecd85aeec5d11a06fb1d24daa7ccfb7">boost::afio::statfs_t</a>
 </li>
 <li>f_namemax
-: <a class="el" href="structstatfs__t.html#a3ffdfb9de5ecba363ffbfcc4a90a7721">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#acf71d9a66134862656b49dea62f85107">boost::afio::statfs_t</a>
 </li>
 <li>f_owner
-: <a class="el" href="structstatfs__t.html#a73b0d6df39f7a3ac05788353f51b0609">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#aa7c12f61b5248096464b58210c483055">boost::afio::statfs_t</a>
 </li>
 <li>filecompression
-: <a class="el" href="structstatfs__t.html#a0cc8f58d47fd8249096e9fc48409f62b">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#aa930c6f19577d987732e5dcae0cb6c58">boost::afio::statfs_t</a>
 </li>
 <li>flags
-: <a class="el" href="structasync__path__op__req.html#a3051dba59ddb18a5f8a8e023f65b8801">async_path_op_req</a>
+: <a class="el" href="structboost_1_1afio_1_1async__path__op__req.html#a09779edf0246bd63879681118157591b">boost::afio::async_path_op_req</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
 <li>glob
-: <a class="el" href="structasync__enumerate__op__req.html#afe7743a44c86fbf2be24527f314ebcad">async_enumerate_op_req</a>
+: <a class="el" href="structboost_1_1afio_1_1async__enumerate__op__req.html#a0899f55980e182d25e13b46c85653f9d">boost::afio::async_enumerate_op_req</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>id
-: <a class="el" href="structasync__io__op.html#a5b4f46c6c6c5425e57362ff6b4eb73df">async_io_op</a>
+: <a class="el" href="structboost_1_1afio_1_1async__io__op.html#a0ffc8dd6ac6251a2f53b99bfef3b448e">boost::afio::async_io_op</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>maxitems
-: <a class="el" href="structasync__enumerate__op__req.html#a3f3c1f47214de54e22394910e410ad61">async_enumerate_op_req</a>
+: <a class="el" href="structboost_1_1afio_1_1async__enumerate__op__req.html#a15fdfa2ce921f73499f1d7c103b1acf2">boost::afio::async_enumerate_op_req</a>
 </li>
 <li>metadata
-: <a class="el" href="structasync__enumerate__op__req.html#a58c3b318b33c65d99964e4ba944162d8">async_enumerate_op_req</a>
+: <a class="el" href="structboost_1_1afio_1_1async__enumerate__op__req.html#a546fae278cf10bf3c9d9bb2751b1800d">boost::afio::async_enumerate_op_req</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
 <li>noexec
-: <a class="el" href="structstatfs__t.html#a1b0b6e924279930095c3299783ca0a75">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#afef574b6d3c653607339480af7f8f1d0">boost::afio::statfs_t</a>
 </li>
 <li>nosuid
-: <a class="el" href="structstatfs__t.html#a3e9effdf59e46feb2a0eb84be716c259">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#aa1550f4bae8818480e1ca87c0dce8b16">boost::afio::statfs_t</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
 <li>parent
-: <a class="el" href="structasync__io__op.html#a961080cd4967d47310f2f584599b0a19">async_io_op</a>
+: <a class="el" href="structboost_1_1afio_1_1async__io__op.html#a778623f04c79226fa4f8e0f633cfdae2">boost::afio::async_io_op</a>
 </li>
 <li>path
-: <a class="el" href="structasync__path__op__req.html#ac95903f23add8d81993d0aa857ebf4e0">async_path_op_req</a>
+: <a class="el" href="structboost_1_1afio_1_1async__path__op__req.html#af61a2cbd2c0686cd9f1d965d3b1d6cbe">boost::afio::async_path_op_req</a>
 </li>
 <li>precondition
-: <a class="el" href="structasync__data__op__req_3_01asio_1_1const__buffer_01_4.html#ac62a9510152febe5b52cdf8ded4c50e4">async_data_op_req&lt; asio::const_buffer &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01asio_1_1mutable__buffer_01_4.html#adb72dc04c894f589cfa11e06033986b7">async_data_op_req&lt; asio::mutable_buffer &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#a2cfcd5b994620baf0a5757a629dce484">async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#a525ee986c7b2201e3d23c653ffa9b8f6">async_data_op_req&lt; std::basic_string&lt; C, T, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4.html#a8c0e3c75ae0782316d2cc8513576e145">async_data_op_req&lt; std::array&lt; asio::const_buffer, N &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4.html#a25f18c4d46dd8fb6fbcf2d2a9c9b2eeb">async_data_op_req&lt; std::array&lt; asio::mutable_buffer, N &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4.html#a96aaef69a540855aa4af09d71777d26f">async_data_op_req&lt; std::vector&lt; asio::const_buffer, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4.html#a6e37945550d9a46c0be6d92d1c16b654">async_data_op_req&lt; std::vector&lt; asio::mutable_buffer, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#a99f191975dc73ffb53dcc7d26fe992b5">async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#acb5ee9d7632ca61dfab1160835d19972">async_data_op_req&lt; std::array&lt; T, N &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#aebdd3b41b4a23ba0f1cb7165ebaddd75">async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#a9db2f0540837497d4a74a9f9aa99249f">async_data_op_req&lt; std::vector&lt; T, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01const_01void_01_4.html#aa53c260ce3a7681299932619543b13c7">async_data_op_req&lt; const void &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01void_01_4.html#a9a3d4c33ace8a137f5575123d557b97e">async_data_op_req&lt; void &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01const_01_t_01_4.html#a8b4d9a3a897eaa4f987268131105d0c1">async_data_op_req&lt; const T &gt;</a>
-, <a class="el" href="structasync__path__op__req.html#a3851b041fa3c59aa67c375457ac37f2e">async_path_op_req</a>
-, <a class="el" href="structasync__enumerate__op__req.html#a7e93fbb402a04aa4e349a2c5d05ff143">async_enumerate_op_req</a>
+: <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4.html#ade8e06f28b16e81944e0c75989ee55cf">boost::afio::async_data_op_req&lt; asio::const_buffer &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4.html#ad3b89b77e73bab30ed0d4891ba738a1a">boost::afio::async_data_op_req&lt; asio::mutable_buffer &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#a0b42df7a3593ecfbc4982307a35b7294">boost::afio::async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#aa57bec75ffaa60187beb806fd9f6cd7b">boost::afio::async_data_op_req&lt; std::basic_string&lt; C, T, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4.html#a1d86acc62838d686576976fb308b2369">boost::afio::async_data_op_req&lt; std::array&lt; asio::const_buffer, N &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4.html#a965be234d5de058477a21b6e18983bdd">boost::afio::async_data_op_req&lt; std::array&lt; asio::mutable_buffer, N &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4.html#ac993575c2bf84ce9821dd2d75ce582bb">boost::afio::async_data_op_req&lt; std::vector&lt; asio::const_buffer, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4.html#acf49b38c25aa121dab759bd3eed92047">boost::afio::async_data_op_req&lt; std::vector&lt; asio::mutable_buffer, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#a321e863d9d92edde7e842e807ef50232">boost::afio::async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#af3904087164983f881ec0a42b180fae7">boost::afio::async_data_op_req&lt; std::array&lt; T, N &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#a0504187fb2d0158c9b3b8314f465ec99">boost::afio::async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#a36831fbdb1dd6d2100c9e76b1cb6faa9">boost::afio::async_data_op_req&lt; std::vector&lt; T, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4.html#a4953895962497a2b23a93d76a3127a9f">boost::afio::async_data_op_req&lt; const void &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4.html#abe3f009be721aa6f5a118a9d2336af49">boost::afio::async_data_op_req&lt; void &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4.html#aefaee94e09b38ec15d60e339ef2ad2da">boost::afio::async_data_op_req&lt; const T &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html#a0262c9da30b151857321dae52b324381">boost::afio::async_data_op_req&lt; T &gt;</a>
+, <a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#a5360608bf8265eb0eb0715ce8b6be479">boost::afio::detail::async_data_op_req_impl&lt; true &gt;</a>
+, <a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4.html#a84eefad026fdc25c3b0ec05257100db0">boost::afio::detail::async_data_op_req_impl&lt; false &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__path__op__req.html#a55eebcd16d288a8aa31912f9ef9891e0">boost::afio::async_path_op_req</a>
+, <a class="el" href="structboost_1_1afio_1_1async__enumerate__op__req.html#ae96062366baba220f33af9deedbf990f">boost::afio::async_enumerate_op_req</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_r"></a>- r -</h3><ul>
 <li>rdonly
-: <a class="el" href="structstatfs__t.html#a2a31bb0f0da0782cf247b6fd7d3cafca">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#aeb255520f59657035d68027c40319793">boost::afio::statfs_t</a>
 </li>
 <li>restart
-: <a class="el" href="structasync__enumerate__op__req.html#afa340706a6f1ec9fa79583f5d2d89017">async_enumerate_op_req</a>
+: <a class="el" href="structboost_1_1afio_1_1async__enumerate__op__req.html#a298f40232240a52a4036c146890c2c1a">boost::afio::async_enumerate_op_req</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
 <li>st_allocated
-: <a class="el" href="structstat__t.html#a0348936b7cadfe816e0105bcc256dd29">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#adfb66a9f1e84b80cd5df99d0a60412a6">boost::afio::stat_t</a>
 </li>
 <li>st_atim
-: <a class="el" href="structstat__t.html#aa78500f915a48ddf7a30eef9b5129d02">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#a5f0750b171f73338cf6ddbd324092928">boost::afio::stat_t</a>
 </li>
 <li>st_birthtim
-: <a class="el" href="structstat__t.html#a1ebba916806061ad29be6b39f0268f9b">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#a0b724b94e5448ffc9f9711bb72ecdd7e">boost::afio::stat_t</a>
 </li>
 <li>st_blksize
-: <a class="el" href="structstat__t.html#aa530698a20aa20fedfe0c205d0bcc674">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#a532236ecf6e50f237aa5b35f38f7e227">boost::afio::stat_t</a>
 </li>
 <li>st_blocks
-: <a class="el" href="structstat__t.html#a1239310ac61bbdc1eda835321876a718">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#ae92dd570cdae23d25a8ec4f4d2bb2135">boost::afio::stat_t</a>
 </li>
 <li>st_compressed
-: <a class="el" href="structstat__t.html#a8f3b78e7beaceb2b1f54d9ad61f3d365">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#a3fa7789953cec53d937ab6b298525881">boost::afio::stat_t</a>
 </li>
 <li>st_ctim
-: <a class="el" href="structstat__t.html#a680581c4f03e2caccdbdfe21b8fc0929">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#a285d5f85d1caa82466e556a2cb0873a1">boost::afio::stat_t</a>
 </li>
 <li>st_dev
-: <a class="el" href="structstat__t.html#a7487cc455af320b602f8d334a15a1c3a">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#a622b2751e150496cf4e4d1f8b2bf1bb7">boost::afio::stat_t</a>
 </li>
 <li>st_flags
-: <a class="el" href="structstat__t.html#a796bc31527577465b0dd3c9fbc771961">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#a253eb4ef155a41e7e9467c495da84b26">boost::afio::stat_t</a>
 </li>
 <li>st_gen
-: <a class="el" href="structstat__t.html#a2524d9bce9db23cd67fb16df52e4abc0">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#acc43e767165df3ca381b22042a835ac8">boost::afio::stat_t</a>
 </li>
 <li>st_gid
-: <a class="el" href="structstat__t.html#ac928ac17d09faca0745d78e2eaceb13d">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#a4d8f11dc30db281ba32ca3ead5bbbad2">boost::afio::stat_t</a>
 </li>
 <li>st_ino
-: <a class="el" href="structstat__t.html#af53eaec5ef5bf1b290f2dbb94af599c8">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#a4ebb8f90634cf37d7092607e7719fee6">boost::afio::stat_t</a>
 </li>
 <li>st_mtim
-: <a class="el" href="structstat__t.html#afe057e9458ea89ec8934f89c81300c8d">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#a9e5c878c6facdcc75262652eb0b3f8c2">boost::afio::stat_t</a>
 </li>
 <li>st_nlink
-: <a class="el" href="structstat__t.html#a19fed1af49a87be2ad39e3e1ddf4cde2">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#a781bda0716cb898de0448ea0dd0ddf60">boost::afio::stat_t</a>
 </li>
 <li>st_perms
-: <a class="el" href="structstat__t.html#abf305545fb9145073630d52c8a6003bc">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#acfc96db7b0d0caa933d383f7a5dc4a2c">boost::afio::stat_t</a>
 </li>
 <li>st_rdev
-: <a class="el" href="structstat__t.html#a900c604b7b01f3b7a3dc3753c23ca41c">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#a7900aec1d4324e38262bc8fb80dbcc42">boost::afio::stat_t</a>
 </li>
 <li>st_size
-: <a class="el" href="structstat__t.html#a7ebcf73d7edf079832744627f070665d">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#aee7529c3b338325e0019f962763597e9">boost::afio::stat_t</a>
 </li>
 <li>st_sparse
-: <a class="el" href="structstat__t.html#aa6370e9b502218538f954aa984160fc4">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#ae45a0013a119416bd9dbebb64ee0d1c2">boost::afio::stat_t</a>
 </li>
 <li>st_type
-: <a class="el" href="structstat__t.html#a55e15f3a42407c84aacc348017ca8ab6">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#accc55948ef879efa6a25ee08eede30c0">boost::afio::stat_t</a>
 </li>
 <li>st_uid
-: <a class="el" href="structstat__t.html#a0dafe518808f57a98f45361d42c9fe1f">stat_t</a>
+: <a class="el" href="structboost_1_1afio_1_1stat__t.html#a76fd06124910152cbc797b1383ead904">boost::afio::stat_t</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_w"></a>- w -</h3><ul>
 <li>where
-: <a class="el" href="structasync__data__op__req_3_01const_01_t_01_4.html#ab952b695d73face205cf6fe447645939">async_data_op_req&lt; const T &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01asio_1_1const__buffer_01_4.html#a717d51ec0e38a5f74a0cc73f2369df15">async_data_op_req&lt; asio::const_buffer &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01asio_1_1mutable__buffer_01_4.html#a352c10c1eb0578e6c34b18782986c9f1">async_data_op_req&lt; asio::mutable_buffer &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#acddd1a08ec4238e3e81f799debc0eeee">async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#acfd0a6074f911d2cf3f5e152fef64e9a">async_data_op_req&lt; std::basic_string&lt; C, T, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4.html#ab3a337449e3e644fd3ef0b716dae8555">async_data_op_req&lt; std::array&lt; asio::const_buffer, N &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4.html#a9869697e2505b05e18a9faf58edd9549">async_data_op_req&lt; std::array&lt; asio::mutable_buffer, N &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4.html#ab1c9770402783c7fbccd4387ebc73010">async_data_op_req&lt; std::vector&lt; asio::const_buffer, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4.html#ac9924a15aa7c81b7ad25de53531dd851">async_data_op_req&lt; std::vector&lt; asio::mutable_buffer, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#af77cca1ba0410f9350d08534f30081d8">async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#a79b356b3e800ca045aba540d82891257">async_data_op_req&lt; std::array&lt; T, N &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#acd50d8734e5bb4fc197da26c50071db7">async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#afb9fabc95d35f67e787b57786ffcf02c">async_data_op_req&lt; std::vector&lt; T, A &gt; &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01const_01void_01_4.html#a81f74f0a9944e8b61ebe00e37119d1ad">async_data_op_req&lt; const void &gt;</a>
-, <a class="el" href="structasync__data__op__req_3_01void_01_4.html#aff95c1adec2bdf76a0b035871840c9a5">async_data_op_req&lt; void &gt;</a>
+: <a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4.html#a58aaf07ba0547ac61cc851ab5b7aed2f">boost::afio::detail::async_data_op_req_impl&lt; false &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4.html#adfed3b3e2ddbb09ff894dccfcdc75307">boost::afio::async_data_op_req&lt; asio::const_buffer &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4.html#af1d36b8303d6d4339784c21d33047180">boost::afio::async_data_op_req&lt; asio::mutable_buffer &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#a3d5820c983d028b7c3ab76716fc3d784">boost::afio::async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#a991f001fb9c1a19a9804c51f6896afab">boost::afio::async_data_op_req&lt; std::basic_string&lt; C, T, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4.html#abc01193d74fb6eca9b16f83330b96bf1">boost::afio::async_data_op_req&lt; std::array&lt; asio::const_buffer, N &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4.html#acbb84e3e57ae22484d345f464ab0bd6d">boost::afio::async_data_op_req&lt; std::array&lt; asio::mutable_buffer, N &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4.html#a759497aaa667d83a47eca6b3018f6ca8">boost::afio::async_data_op_req&lt; std::vector&lt; asio::const_buffer, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4.html#a32f11615c7052163c56ba2a1b68feea6">boost::afio::async_data_op_req&lt; std::vector&lt; asio::mutable_buffer, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#a0260637ed3624ac6d7718e1a13d37295">boost::afio::async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#a01f3f441efc1fcef374f57a6835156cd">boost::afio::async_data_op_req&lt; std::array&lt; T, N &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#a82fe0967bcf9b0622f42d1388ad8da08">boost::afio::async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#a6e0888105ef07616c3220cc4b28ab814">boost::afio::async_data_op_req&lt; std::vector&lt; T, A &gt; &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4.html#a91d54e07ed50772d70a9960a2ede06f0">boost::afio::async_data_op_req&lt; const void &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4.html#ace04d40645351cf31598aeda7a9f18b4">boost::afio::async_data_op_req&lt; void &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4.html#aea304b5a721b670335d849985bf6b901">boost::afio::async_data_op_req&lt; const T &gt;</a>
+, <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html#a5b08da89b3bc55fc93f9869a33b95f46">boost::afio::async_data_op_req&lt; T &gt;</a>
+, <a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#afa3705cacc7b93d4513f20225c7c3d76">boost::afio::detail::async_data_op_req_impl&lt; true &gt;</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_x"></a>- x -</h3><ul>
 <li>xattr
-: <a class="el" href="structstatfs__t.html#a92a803183380020fae0ae9bacccd0e48">statfs_t</a>
+: <a class="el" href="structboost_1_1afio_1_1statfs__t.html#a299ca1747a32bc3a7a48abf5fc00621c">boost::afio::statfs_t</a>
 </li>
 </ul>
 </div><!-- contents -->

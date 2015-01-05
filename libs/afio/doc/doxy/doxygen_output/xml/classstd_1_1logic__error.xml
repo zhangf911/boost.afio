@@ -12,42 +12,42 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="475">
+      <node id="479">
         <label>std::logic_error</label>
-        <childnode refid="476" relation="public-inheritance">
+        <childnode refid="480" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="478">
+      <node id="482">
         <label>std::invalid_argument</label>
-        <childnode refid="475" relation="public-inheritance">
+        <childnode refid="479" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="484">
+        <label>std::out_of_range</label>
+        <childnode refid="479" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="481">
+        <label>std::domain_error</label>
+        <childnode refid="479" relation="public-inheritance">
         </childnode>
       </node>
       <node id="480">
-        <label>std::out_of_range</label>
-        <childnode refid="475" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="477">
-        <label>std::domain_error</label>
-        <childnode refid="475" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="476">
         <label>std::exception</label>
       </node>
-      <node id="479">
+      <node id="483">
         <label>std::length_error</label>
-        <childnode refid="475" relation="public-inheritance">
+        <childnode refid="479" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="481">
+      <node id="485">
         <label>std::logic_error</label>
-        <childnode refid="482" relation="public-inheritance">
+        <childnode refid="486" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="482">
+      <node id="486">
         <label>std::exception</label>
       </node>
     </collaborationgraph>

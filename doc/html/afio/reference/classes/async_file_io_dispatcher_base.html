@@ -94,6 +94,18 @@
           (batch)</a></span></dt>
 <dt><span class="section"><a href="async_file_io_dispatcher_base/enumerate_1_single.html">enumerate
           (single)</a></span></dt>
+<dt><span class="section"><a href="async_file_io_dispatcher_base/zero_2_batch.html">zero
+          (batch)</a></span></dt>
+<dt><span class="section"><a href="async_file_io_dispatcher_base/zero_2_single.html">zero
+          (single)</a></span></dt>
+<dt><span class="section"><a href="async_file_io_dispatcher_base/extents_1_batch.html">extents
+          (batch)</a></span></dt>
+<dt><span class="section"><a href="async_file_io_dispatcher_base/extents_1_single.html">extents
+          (single)</a></span></dt>
+<dt><span class="section"><a href="async_file_io_dispatcher_base/statfs_2_batch.html">statfs
+          (batch)</a></span></dt>
+<dt><span class="section"><a href="async_file_io_dispatcher_base/statfs_2_single.html">statfs
+          (single)</a></span></dt>
 <dt><span class="section"><a href="async_file_io_dispatcher_base/page_size.html">page_size</a></span></dt>
 <dt><span class="section"><a href="async_file_io_dispatcher_base/complete_async_op_3_normal.html">complete_async_op
           (normal)</a></span></dt>
@@ -101,7 +113,7 @@
           (errored)</a></span></dt>
 </dl></div>
 <p>
-          <a class="indexterm" name="idp12995672"></a>
+          <a class="indexterm" name="idp13311928"></a>
 Abstract base class for dispatching file i/o asynchronously.
         </p>
 <h6>
@@ -110,7 +122,7 @@ Abstract base class for dispatching file i/o asynchronously.
         </h6>
 <p>
           This is a reference counted instance with platform-specific implementation
-          optionally hidden in object code. Construct an instance using the <code class="computeroutput"><span class="identifier">boostafio</span><span class="special">::</span><span class="identifier">make</span><span class="special">\</span><span class="identifier">u005fasync</span><span class="special">\</span><span class="identifier">u005ffile</span><span class="special">\</span><span class="identifier">u005fio</span><span class="special">\</span><span class="identifier">u005fdispatcher</span><span class="special">()</span></code>
+          optionally hidden in object code. Construct an instance using the <code class="literal"><code class="computeroutput"><span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">make_async_file_io_dispatcher</span><span class="special">()</span></code></code>
           function.
         </p>
 <h6>
@@ -118,6 +130,7 @@ Abstract base class for dispatching file i/o asynchronously.
           <span><a name="afio.reference.classes.async_file_io_dispatcher_base.synopsis"></a></span><a class="link" href="async_file_io_dispatcher_base.html#afio.reference.classes.async_file_io_dispatcher_base.synopsis">Synopsis</a>
         </h6>
 <pre class="programlisting"><span class="keyword">class</span> <span class="identifier">async_file_io_dispatcher_base</span>
+      <span class="special">:</span> <span class="keyword">public</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">enable_shared_from_this</span><span class="special">&lt;</span> <span class="identifier">async_file_io_dispatcher_base</span> <span class="special">&gt;</span>
 <span class="special">{</span>
   <span class="comment">// ...</span>
 <span class="special">};</span>
@@ -300,7 +313,7 @@ Abstract base class for dispatching file i/o asynchronously.
                     <span class="bold"><strong>std::vector&lt; std::pair&lt; detail::OpType,
                     std::function&lt; async_file_io_dispatcher_base::filter_t &gt;&gt;&gt;</strong></span>:
                     <span class="emphasis"><em>filters</em></span>: A batch of pairs of op type to
-                    be filtered and bound filter handler functions of type <code class="computeroutput"><span class="identifier">filter_t</span></code>
+                    be filtered and bound filter handler functions of type <code class="literal"><code class="computeroutput"><span class="identifier">filter_t</span></code></code>
                   </p>
                 </td>
 </tr>
@@ -320,7 +333,7 @@ Abstract base class for dispatching file i/o asynchronously.
                     std::function&lt; async_file_io_dispatcher_base::filter_readwrite_t
                     &gt;&gt;&gt;</strong></span>: <span class="emphasis"><em>filters</em></span>: A batch
                     of pairs of op type to be filtered and bound filter handler functions
-                    of type <code class="computeroutput"><span class="identifier">filter_buffers_t</span></code>
+                    of type <code class="literal"><code class="computeroutput"><span class="identifier">filter_buffers_t</span></code></code>
                   </p>
                 </td>
 </tr>
@@ -345,7 +358,7 @@ Abstract base class for dispatching file i/o asynchronously.
                     std::function&lt; async_file_io_dispatcher_base::completion_t
                     &gt;&gt;&gt; &amp;</strong></span>: <span class="emphasis"><em>callbacks</em></span>:
                     A batch of pairs of op flags and bound completion handler functions
-                    of type <code class="computeroutput"><span class="identifier">completion_t</span></code>
+                    of type <code class="literal"><code class="computeroutput"><span class="identifier">completion_t</span></code></code>
                   </p>
                 </td>
 <td>
@@ -373,7 +386,7 @@ Abstract base class for dispatching file i/o asynchronously.
                     <span class="bold"><strong>const std::pair&lt; async_op_flags, std::function&lt;
                     async_file_io_dispatcher_base::completion_t &gt;&gt; &amp;</strong></span>:
                     <span class="emphasis"><em>callback</em></span>: A pair of op flag and bound completion
-                    handler function of type <code class="computeroutput"><span class="identifier">completion_t</span></code>
+                    handler function of type <code class="literal"><code class="computeroutput"><span class="identifier">completion_t</span></code></code>
                   </p>
                 </td>
 <td>
@@ -476,9 +489,10 @@ Abstract base class for dispatching file i/o asynchronously.
                   <p>
                     Schedule an asynchronous invocation of the specified unbound
                     callable when its supplied precondition completes. Note that
-                    this function essentially calls <code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">bind</span><span class="special">()</span></code> on the callable and the args
-                    and passes it to the other call() overload taking a <code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">function</span><span class="special">&lt;&gt;</span></code>.
-                    You should therefore use <code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">ref</span><span class="special">()</span></code> etc. as appropriate.
+                    this function essentially calls <code class="literal"><code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">bind</span><span class="special">()</span></code></code> on the callable and
+                    the args and passes it to the other call() overload taking a
+                    <code class="literal"><code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">function</span><span class="special">&lt;&gt;</span></code></code>. You should
+                    therefore use <code class="literal"><code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">ref</span><span class="special">()</span></code></code> etc. as appropriate.
                   </p>
                 </td>
 <td>
@@ -560,7 +574,7 @@ Abstract base class for dispatching file i/o asynchronously.
                   <p>
                     <span class="bold"><strong>const std::vector&lt; async_path_op_req
                     &gt; &amp;</strong></span>: <span class="emphasis"><em>reqs</em></span>: A batch of
-                    <code class="computeroutput"><span class="identifier">async_path_op_req</span></code>
+                    <code class="literal"><code class="computeroutput"><span class="identifier">async_path_op_req</span></code></code>
                     structures.
                   </p>
                 </td>
@@ -583,7 +597,7 @@ Abstract base class for dispatching file i/o asynchronously.
 <td>
                   <p>
                     <span class="bold"><strong>const async_path_op_req &amp;</strong></span>:
-                    <span class="emphasis"><em>req</em></span>: An <code class="computeroutput"><span class="identifier">async_path_op_req</span></code>
+                    <span class="emphasis"><em>req</em></span>: An <code class="literal"><code class="computeroutput"><span class="identifier">async_path_op_req</span></code></code>
                     structure.
                   </p>
                 </td>
@@ -607,7 +621,7 @@ Abstract base class for dispatching file i/o asynchronously.
                   <p>
                     <span class="bold"><strong>const std::vector&lt; async_path_op_req
                     &gt; &amp;</strong></span>: <span class="emphasis"><em>reqs</em></span>: A batch of
-                    <code class="computeroutput"><span class="identifier">async_path_op_req</span></code>
+                    <code class="literal"><code class="computeroutput"><span class="identifier">async_path_op_req</span></code></code>
                     structures.
                   </p>
                 </td>
@@ -630,7 +644,7 @@ Abstract base class for dispatching file i/o asynchronously.
 <td>
                   <p>
                     <span class="bold"><strong>const async_path_op_req &amp;</strong></span>:
-                    <span class="emphasis"><em>req</em></span>: An <code class="computeroutput"><span class="identifier">async_path_op_req</span></code>
+                    <span class="emphasis"><em>req</em></span>: An <code class="literal"><code class="computeroutput"><span class="identifier">async_path_op_req</span></code></code>
                     structure.
                   </p>
                 </td>
@@ -654,7 +668,7 @@ Abstract base class for dispatching file i/o asynchronously.
                   <p>
                     <span class="bold"><strong>const std::vector&lt; async_path_op_req
                     &gt; &amp;</strong></span>: <span class="emphasis"><em>reqs</em></span>: A batch of
-                    <code class="computeroutput"><span class="identifier">async_path_op_req</span></code>
+                    <code class="literal"><code class="computeroutput"><span class="identifier">async_path_op_req</span></code></code>
                     structures.
                   </p>
                 </td>
@@ -677,7 +691,7 @@ Abstract base class for dispatching file i/o asynchronously.
 <td>
                   <p>
                     <span class="bold"><strong>const async_path_op_req &amp;</strong></span>:
-                    <span class="emphasis"><em>req</em></span>: An <code class="computeroutput"><span class="identifier">async_path_op_req</span></code>
+                    <span class="emphasis"><em>req</em></span>: An <code class="literal"><code class="computeroutput"><span class="identifier">async_path_op_req</span></code></code>
                     structure.
                   </p>
                 </td>
@@ -701,7 +715,7 @@ Abstract base class for dispatching file i/o asynchronously.
                   <p>
                     <span class="bold"><strong>const std::vector&lt; async_path_op_req
                     &gt; &amp;</strong></span>: <span class="emphasis"><em>reqs</em></span>: A batch of
-                    <code class="computeroutput"><span class="identifier">async_path_op_req</span></code>
+                    <code class="literal"><code class="computeroutput"><span class="identifier">async_path_op_req</span></code></code>
                     structures.
                   </p>
                 </td>
@@ -723,7 +737,7 @@ Abstract base class for dispatching file i/o asynchronously.
 <td>
                   <p>
                     <span class="bold"><strong>const async_path_op_req &amp;</strong></span>:
-                    <span class="emphasis"><em>req</em></span>: An <code class="computeroutput"><span class="identifier">async_path_op_req</span></code>
+                    <span class="emphasis"><em>req</em></span>: An <code class="literal"><code class="computeroutput"><span class="identifier">async_path_op_req</span></code></code>
                     structure.
                   </p>
                 </td>
@@ -747,7 +761,7 @@ Abstract base class for dispatching file i/o asynchronously.
                   <p>
                     <span class="bold"><strong>const std::vector&lt; async_path_op_req
                     &gt; &amp;</strong></span>: <span class="emphasis"><em>reqs</em></span>: A batch of
-                    <code class="computeroutput"><span class="identifier">async_path_op_req</span></code>
+                    <code class="literal"><code class="computeroutput"><span class="identifier">async_path_op_req</span></code></code>
                     structures.
                   </p>
                 </td>
@@ -769,7 +783,7 @@ Abstract base class for dispatching file i/o asynchronously.
 <td>
                   <p>
                     <span class="bold"><strong>const async_path_op_req &amp;</strong></span>:
-                    <span class="emphasis"><em>req</em></span>: An <code class="computeroutput"><span class="identifier">async_path_op_req</span></code>
+                    <span class="emphasis"><em>req</em></span>: An <code class="literal"><code class="computeroutput"><span class="identifier">async_path_op_req</span></code></code>
                     structure.
                   </p>
                 </td>
@@ -793,7 +807,7 @@ Abstract base class for dispatching file i/o asynchronously.
                   <p>
                     <span class="bold"><strong>const std::vector&lt; async_path_op_req
                     &gt; &amp;</strong></span>: <span class="emphasis"><em>reqs</em></span>: A batch of
-                    <code class="computeroutput"><span class="identifier">async_path_op_req</span></code>
+                    <code class="literal"><code class="computeroutput"><span class="identifier">async_path_op_req</span></code></code>
                     structures.
                   </p>
                 </td>
@@ -815,7 +829,7 @@ Abstract base class for dispatching file i/o asynchronously.
 <td>
                   <p>
                     <span class="bold"><strong>const async_path_op_req &amp;</strong></span>:
-                    <span class="emphasis"><em>req</em></span>: An <code class="computeroutput"><span class="identifier">async_path_op_req</span></code>
+                    <span class="emphasis"><em>req</em></span>: An <code class="literal"><code class="computeroutput"><span class="identifier">async_path_op_req</span></code></code>
                     structure.
                   </p>
                 </td>
@@ -861,6 +875,61 @@ Abstract base class for dispatching file i/o asynchronously.
                   <p>
                     <span class="bold"><strong>const async_io_op &amp;</strong></span>: <span class="emphasis"><em>req</em></span>:
                     An op handle.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    An op handle.
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">async_io_op</span> <span class="special">&gt;</span> <span class="identifier">zero</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">async_io_op</span> <span class="special">&gt;</span> <span class="special">&amp;</span> <span class="identifier">ops</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="identifier">off_t</span><span class="special">,</span> <span class="identifier">off_t</span> <span class="special">&gt;&gt;&gt;</span> <span class="special">&amp;</span> <span class="identifier">ranges</span><span class="special">)</span></pre>
+                </td>
+<td>
+                  <p>
+                    Schedule a batch of asynchronous zeroing and deallocations of
+                    physical storage ("hole punching") after preceding
+                    operations.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    <span class="bold"><strong>const std::vector&lt; async_io_op &gt;
+                    &amp;</strong></span>: <span class="emphasis"><em>ops</em></span>: A batch of op handles.
+                  </p>
+                  <p>
+                    <span class="bold"><strong>const std::vector&lt; std::vector&lt; std::pair&lt;
+                    off_t, off_t &gt;&gt;&gt; &amp;</strong></span>: <span class="emphasis"><em>ranges</em></span>:
+                    A batch of vectors of extents to zero and deallocate.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    A batch of op handles.
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_io_op</span> <span class="identifier">zero</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">async_io_op</span> <span class="special">&amp;</span> <span class="identifier">req</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="identifier">off_t</span><span class="special">,</span> <span class="identifier">off_t</span> <span class="special">&gt;&gt;</span> <span class="special">&amp;</span> <span class="identifier">ranges</span><span class="special">)</span></pre>
+                </td>
+<td>
+                  <p>
+                    Schedule an asynchronous zero and deallocation of physical storage
+                    ("hole punching") after a preceding operation.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    <span class="bold"><strong>const async_io_op &amp;</strong></span>: <span class="emphasis"><em>req</em></span>:
+                    An op handle.
+                  </p>
+                  <p>
+                    <span class="bold"><strong>const std::vector&lt; std::pair&lt; off_t,
+                    off_t &gt;&gt; &amp;</strong></span>: <span class="emphasis"><em>ranges</em></span>:
+                    A vector of extents to zero and deallocate.
                   </p>
                 </td>
 <td>
@@ -1071,7 +1140,7 @@ Abstract base class for dispatching file i/o asynchronously.
 <td>
                   <p>
                     Schedule a batch of asynchronous directory enumerations after
-                    a preceding operations.
+                    preceding operations.
                   </p>
                 </td>
 <td>
@@ -1108,6 +1177,103 @@ Abstract base class for dispatching file i/o asynchronously.
                   <p>
                     A future vector of directory entries with a boolean returning
                     false if done.
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">future</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="identifier">off_t</span><span class="special">,</span> <span class="identifier">off_t</span> <span class="special">&gt;</span> <span class="special">&gt;</span> <span class="special">&gt;</span> <span class="special">&gt;,</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">async_io_op</span> <span class="special">&gt;</span> <span class="special">&gt;</span> <span class="identifier">extents</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">async_io_op</span> <span class="special">&gt;</span> <span class="special">&amp;</span> <span class="identifier">ops</span><span class="special">)</span></pre>
+                </td>
+<td>
+                  <p>
+                    Schedule a batch of asynchronous extent enumerations after preceding
+                    operations.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    <span class="bold"><strong>const std::vector&lt; async_io_op &gt;
+                    &amp;</strong></span>: <span class="emphasis"><em>ops</em></span>: A batch of op handles.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    A batch of future vectors of extents.
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="identifier">future</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="identifier">off_t</span><span class="special">,</span> <span class="identifier">off_t</span> <span class="special">&gt;</span> <span class="special">&gt;</span> <span class="special">&gt;,</span> <span class="identifier">async_io_op</span> <span class="special">&gt;</span> <span class="identifier">extents</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">async_io_op</span> <span class="special">&amp;</span> <span class="identifier">op</span><span class="special">)</span></pre>
+                </td>
+<td>
+                  <p>
+                    Schedule an asynchronous extent enumeration after a preceding
+                    operation.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    <span class="bold"><strong>const async_io_op &amp;</strong></span>: <span class="emphasis"><em>op</em></span>:
+                    An op handle.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    A future vector of extents.
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">future</span><span class="special">&lt;</span> <span class="identifier">statfs_t</span> <span class="special">&gt;</span> <span class="special">&gt;,</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">async_io_op</span> <span class="special">&gt;</span> <span class="special">&gt;</span> <span class="identifier">statfs</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">async_io_op</span> <span class="special">&gt;</span> <span class="special">&amp;</span> <span class="identifier">ops</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">fs_metadata_flags</span> <span class="special">&gt;</span> <span class="special">&amp;</span> <span class="identifier">reqs</span><span class="special">)</span></pre>
+                </td>
+<td>
+                  <p>
+                    Schedule a batch of asynchronous volume enumerations after preceding
+                    operations.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    <span class="bold"><strong>const std::vector&lt; async_io_op &gt;
+                    &amp;</strong></span>: <span class="emphasis"><em>ops</em></span>: A batch of op handles.
+                  </p>
+                  <p>
+                    <span class="bold"><strong>const std::vector&lt; fs_metadata_flags
+                    &gt; &amp;</strong></span>: <span class="emphasis"><em>reqs</em></span>: A batch of
+                    metadata requests.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    A batch of future volume metadatas.
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span> <span class="identifier">future</span><span class="special">&lt;</span> <span class="identifier">statfs_t</span> <span class="special">&gt;,</span> <span class="identifier">async_io_op</span> <span class="special">&gt;</span> <span class="identifier">statfs</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">async_io_op</span> <span class="special">&amp;</span> <span class="identifier">op</span><span class="special">,</span> <span class="keyword">const</span> <span class="identifier">fs_metadata_flags</span> <span class="special">&amp;</span> <span class="identifier">req</span><span class="special">)</span></pre>
+                </td>
+<td>
+                  <p>
+                    Schedule an asynchronous volume enumeration after a preceding
+                    operation.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    <span class="bold"><strong>const async_io_op &amp;</strong></span>: <span class="emphasis"><em>op</em></span>:
+                    An op handle.
+                  </p>
+                  <p>
+                    <span class="bold"><strong>const fs_metadata_flags &amp;</strong></span>:
+                    <span class="emphasis"><em>req</em></span>: A metadata request.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    A future volume metadatas.
                   </p>
                 </td>
 </tr>
@@ -1189,6 +1355,20 @@ Abstract base class for dispatching file i/o asynchronously.
                   </p>
                   <p>
                     <span class="bold"><strong>exception_ptr</strong></span>: <span class="emphasis"><em>e</em></span>:
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="keyword">template</span><span class="special">&lt;</span><span class="keyword">class</span> <span class="identifier">T</span><span class="special">&gt;</span>
+<span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">async_io_op</span> <span class="special">&gt;</span> <span class="identifier">read</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">async_data_op_req</span><span class="special">&lt;</span> <span class="identifier">T</span> <span class="special">&gt;&gt;</span> <span class="special">&amp;</span> <span class="identifier">ops</span><span class="special">)</span></pre>
+                </td>
+<td>
+                </td>
+<td>
+                  <p>
+                    <span class="bold"><strong>const std::vector&lt; async_data_op_req&lt;
+                    T &gt;&gt; &amp;</strong></span>: <span class="emphasis"><em>ops</em></span>:
                   </p>
                 </td>
 </tr>

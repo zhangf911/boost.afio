@@ -328,8 +328,35 @@
     <member refid="structstat__t_1a796bc31527577465b0dd3c9fbc771961" kind="variable"><name>st_flags</name></member>
     <member refid="structstat__t_1a2524d9bce9db23cd67fb16df52e4abc0" kind="variable"><name>st_gen</name></member>
     <member refid="structstat__t_1a1ebba916806061ad29be6b39f0268f9b" kind="variable"><name>st_birthtim</name></member>
+    <member refid="structstat__t_1aa6370e9b502218538f954aa984160fc4" kind="variable"><name>st_sparse</name></member>
+    <member refid="structstat__t_1a8f3b78e7beaceb2b1f54d9ad61f3d365" kind="variable"><name>st_compressed</name></member>
     <member refid="structstat__t_1a2765906190447535fa13532c8844a15e" kind="function"><name>stat_t</name></member>
     <member refid="structstat__t_1a8775018b5d9221d1da0e6e2c72e45da3" kind="function"><name>stat_t</name></member>
+  </compound>
+  <compound refid="structstatfs__t" kind="struct"><name>statfs_t</name>
+    <member refid="structstatfs__t_1a2a31bb0f0da0782cf247b6fd7d3cafca" kind="variable"><name>rdonly</name></member>
+    <member refid="structstatfs__t_1a1b0b6e924279930095c3299783ca0a75" kind="variable"><name>noexec</name></member>
+    <member refid="structstatfs__t_1a3e9effdf59e46feb2a0eb84be716c259" kind="variable"><name>nosuid</name></member>
+    <member refid="structstatfs__t_1af19624974016a756b62bbe502e84d2ac" kind="variable"><name>acls</name></member>
+    <member refid="structstatfs__t_1a92a803183380020fae0ae9bacccd0e48" kind="variable"><name>xattr</name></member>
+    <member refid="structstatfs__t_1a2e348f3384a0d984a92a6a7ffe6448c2" kind="variable"><name>compression</name></member>
+    <member refid="structstatfs__t_1a9ef58579672c4315e31dcaf299f35844" kind="variable"><name>extents</name></member>
+    <member refid="structstatfs__t_1a0cc8f58d47fd8249096e9fc48409f62b" kind="variable"><name>filecompression</name></member>
+    <member refid="structstatfs__t_1a445dc28909542698bec7405325be85fe" kind="variable"><name>f_flags</name></member>
+    <member refid="structstatfs__t_1aee9fadff9b0713740f14a1927a8704d6" kind="variable"><name>f_bsize</name></member>
+    <member refid="structstatfs__t_1a3abc51f00039339f335c2796945ed6ae" kind="variable"><name>f_iosize</name></member>
+    <member refid="structstatfs__t_1a4ef590760748dc56a40e4e962b63880a" kind="variable"><name>f_blocks</name></member>
+    <member refid="structstatfs__t_1a5b03fea5813c767fdc5d1c60a8d18aa1" kind="variable"><name>f_bfree</name></member>
+    <member refid="structstatfs__t_1a14101c07041f716fbb26b7142577500d" kind="variable"><name>f_bavail</name></member>
+    <member refid="structstatfs__t_1ac9806012f3fd15beacb95713795dda22" kind="variable"><name>f_files</name></member>
+    <member refid="structstatfs__t_1a8746a8f4ec947f1e3c293a7ac7d90d17" kind="variable"><name>f_ffree</name></member>
+    <member refid="structstatfs__t_1a3ffdfb9de5ecba363ffbfcc4a90a7721" kind="variable"><name>f_namemax</name></member>
+    <member refid="structstatfs__t_1a73b0d6df39f7a3ac05788353f51b0609" kind="variable"><name>f_owner</name></member>
+    <member refid="structstatfs__t_1aff72e9225ad8dbbf0b9f5de539ca8686" kind="variable"><name>f_fsid</name></member>
+    <member refid="structstatfs__t_1ad59f897f47efd1c8a705d1a607023e16" kind="variable"><name>f_fstypename</name></member>
+    <member refid="structstatfs__t_1aa76d5399752e1ad357775666c5537096" kind="variable"><name>f_mntfromname</name></member>
+    <member refid="structstatfs__t_1a2f2cf2c80b716736a827d2fda20a48c1" kind="variable"><name>f_mntonname</name></member>
+    <member refid="structstatfs__t_1ab43053592b807cbd3939e89b6288819f" kind="function"><name>statfs_t</name></member>
   </compound>
   <compound refid="classstd_1_1allocator" kind="class"><name>std::allocator</name>
     <member refid="classstd_1_1allocator_1a55f88dab1194d6b8a34e46017c4dfd79" kind="variable"><name>elements</name></member>
@@ -605,7 +632,7 @@
     <member refid="afio_8hpp_1a933046d7a31248aa271a978579ee8977" kind="define"><name>BOOST_AFIO_DECLARE_CLASS_ENUM_AS_BITFIELD</name></member>
     <member refid="afio_8hpp_1ac794ed8c3e9fc1a99bd54d5b993d2b6c" kind="define"><name>BOOST_AFIO_DIRECTORY_ENTRY_ACCESS_METHOD</name></member>
     <member refid="group__file__flags_1gaba2d48ea5b39d1ab48c6b892a2e2d0db" kind="enum"><name>file_flags</name></member>
-    <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252" kind="enumvalue"><name>None</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252" kind="enumvalue"><name>None</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba809abe96853e69894bbf8e5730b31348" kind="enumvalue"><name>Read</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa56670174817e3fed92bfd8182d7c0d1" kind="enumvalue"><name>Write</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba3c4d2d19c91b345c33a83ca9f551f4e1" kind="enumvalue"><name>ReadWrite</name></member>
@@ -613,8 +640,10 @@
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba4877d9d67c11656d88fc82cfeb94a4f3" kind="enumvalue"><name>Truncate</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba93479401ae71e13bd81626eb0b6c2d37" kind="enumvalue"><name>Create</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbafd41a51c46068f24398d21e5e8d23d16" kind="enumvalue"><name>CreateOnlyIfNotExist</name></member>
+    <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaaafe04801c8d2d887be1a626b924c0be" kind="enumvalue"><name>CreateCompressed</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa26ef493b962366c21fef788da134721" kind="enumvalue"><name>WillBeSequentiallyAccessed</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba5ad1750347c8e7ce9513f1edb3dd3766" kind="enumvalue"><name>WillBeRandomlyAccessed</name></member>
+    <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba676b9cbbb9391959f0dcd1427a125d2e" kind="enumvalue"><name>NoSparse</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba6085ffcc368053b7563ee66109aba163" kind="enumvalue"><name>FastDirectoryEnumeration</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba837053fb9e27a38d2a153f5c85436644" kind="enumvalue"><name>UniqueDirectoryHandle</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba648331f85d7765a2b1fcc854dfde389b" kind="enumvalue"><name>OSDirect</name></member>
@@ -628,7 +657,7 @@
     <member refid="afio_8hpp_1gaa1e754d20cbcf3979c15a3acdc485194ab7e4e0120a041dbe6528b050c04269e0" kind="enumvalue"><name>none</name></member>
     <member refid="afio_8hpp_1gaa1e754d20cbcf3979c15a3acdc485194a97994fd50a3715e96da85e7f8705a94b" kind="enumvalue"><name>immediate</name></member>
     <member refid="group__metadata__flags_1ga9d8b6ad0ba3e48637529aace103e11fe" kind="enum"><name>metadata_flags</name></member>
-    <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252" kind="enumvalue"><name>None</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252" kind="enumvalue"><name>None</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feac10cab3311c9fe30fbabf9137cd40d57" kind="enumvalue"><name>dev</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea139c04cc03df7bc6ef42b4c980633295" kind="enumvalue"><name>ino</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feaf3725cafa78eb43cc647b405bb6ecfab" kind="enumvalue"><name>type</name></member>
@@ -642,12 +671,31 @@
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea0c5d1eae5a8751222b1c95be01f43a73" kind="enumvalue"><name>ctim</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea052a2b4924452fb4a73f2cb52b6e9d41" kind="enumvalue"><name>size</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea90f6648c93fb10ca5d9f8971c14b18c0" kind="enumvalue"><name>allocated</name></member>
-    <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feab4d0a20fde91a6d0c25cb9de314a72bf" kind="enumvalue"><name>blocks</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea812d6b7f43a582bec81c201334c7f011" kind="enumvalue"><name>blocks</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea4793639d238a276c0276cd58e1bac350" kind="enumvalue"><name>blksize</name></member>
-    <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea01b6f2edfad04e14ee46a670eb9c8fd2" kind="enumvalue"><name>flags</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eab6b306ef981f5e21bb41ea2c2dbe8cd9" kind="enumvalue"><name>flags</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea180e16a81b2dab584c8f016811f7f75c" kind="enumvalue"><name>gen</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feab6dc240d3e90ef4d66ca95c64266315b" kind="enumvalue"><name>birthtim</name></member>
-    <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea54991d225c58ce0af43461d4e9a82312" kind="enumvalue"><name>All</name></member>
+    <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feab78868b7a281dbe62227072695184f91" kind="enumvalue"><name>sparse</name></member>
+    <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea4a30f69758d35bc5429f005c2f452db5" kind="enumvalue"><name>compressed</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea911a49b7967ef10985d331841303b75f" kind="enumvalue"><name>All</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4e" kind="enum"><name>fs_metadata_flags</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252" kind="enumvalue"><name>None</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eab6b306ef981f5e21bb41ea2c2dbe8cd9" kind="enumvalue"><name>flags</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eaecb1a04c6ee28b2f7bdcb7436e9bd75c" kind="enumvalue"><name>bsize</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eae0684b1388ebf8b6c42a66f632907e60" kind="enumvalue"><name>iosize</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea812d6b7f43a582bec81c201334c7f011" kind="enumvalue"><name>blocks</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eac49e205a998c5802667c993f78e313d2" kind="enumvalue"><name>bfree</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eacffd498642494d320131a4746947250a" kind="enumvalue"><name>bavail</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea015113bcd5fe3e10ee4219b19960c2a2" kind="enumvalue"><name>files</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea340e408e12e613c15e09fca65af93044" kind="enumvalue"><name>ffree</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eab384c4e0c43d78c7f520cc98bc0ddb56" kind="enumvalue"><name>namemax</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea20bcaac9f61ffe118327663a86b21e6c" kind="enumvalue"><name>owner</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea6566ff8600a9375ece649416983bbce5" kind="enumvalue"><name>fsid</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea3f7603d406342960f1d36bcc09ae449a" kind="enumvalue"><name>fstypename</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea207db61e764b545e7b9d6157d5d2cd11" kind="enumvalue"><name>mntfromname</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea7b0a7a589b054c261e4ab7d1d421c73b" kind="enumvalue"><name>mntonname</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea911a49b7967ef10985d331841303b75f" kind="enumvalue"><name>All</name></member>
     <member refid="afio_8hpp_1a93458e2822fc3073cd7cd31e94760d93" kind="function"><name>BOOST_BINDLIB_NAMESPACE_BEGIN</name></member>
     <member refid="group__process__threadpool_1ga3cd49e64119265af60e5162b76fd95ca" kind="function"><name>process_threadpool</name></member>
     <member refid="group__async__file__io__dispatcher_1ga60af4394d09808d966a31a80fe9142eb" kind="function"><name>make_async_file_io_dispatcher</name></member>
@@ -709,7 +757,7 @@
   </compound>
   <compound refid="group__metadata__flags" kind="group"><name>metadata_flags</name>
     <member refid="group__metadata__flags_1ga9d8b6ad0ba3e48637529aace103e11fe" kind="enum"><name>metadata_flags</name></member>
-    <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252" kind="enumvalue"><name>None</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252" kind="enumvalue"><name>None</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feac10cab3311c9fe30fbabf9137cd40d57" kind="enumvalue"><name>dev</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea139c04cc03df7bc6ef42b4c980633295" kind="enumvalue"><name>ino</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feaf3725cafa78eb43cc647b405bb6ecfab" kind="enumvalue"><name>type</name></member>
@@ -723,16 +771,18 @@
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea0c5d1eae5a8751222b1c95be01f43a73" kind="enumvalue"><name>ctim</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea052a2b4924452fb4a73f2cb52b6e9d41" kind="enumvalue"><name>size</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea90f6648c93fb10ca5d9f8971c14b18c0" kind="enumvalue"><name>allocated</name></member>
-    <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feab4d0a20fde91a6d0c25cb9de314a72bf" kind="enumvalue"><name>blocks</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea812d6b7f43a582bec81c201334c7f011" kind="enumvalue"><name>blocks</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea4793639d238a276c0276cd58e1bac350" kind="enumvalue"><name>blksize</name></member>
-    <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea01b6f2edfad04e14ee46a670eb9c8fd2" kind="enumvalue"><name>flags</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eab6b306ef981f5e21bb41ea2c2dbe8cd9" kind="enumvalue"><name>flags</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea180e16a81b2dab584c8f016811f7f75c" kind="enumvalue"><name>gen</name></member>
     <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feab6dc240d3e90ef4d66ca95c64266315b" kind="enumvalue"><name>birthtim</name></member>
-    <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea54991d225c58ce0af43461d4e9a82312" kind="enumvalue"><name>All</name></member>
+    <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feab78868b7a281dbe62227072695184f91" kind="enumvalue"><name>sparse</name></member>
+    <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea4a30f69758d35bc5429f005c2f452db5" kind="enumvalue"><name>compressed</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea911a49b7967ef10985d331841303b75f" kind="enumvalue"><name>All</name></member>
   </compound>
   <compound refid="group__file__flags" kind="group"><name>file_flags</name>
     <member refid="group__file__flags_1gaba2d48ea5b39d1ab48c6b892a2e2d0db" kind="enum"><name>file_flags</name></member>
-    <member refid="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252" kind="enumvalue"><name>None</name></member>
+    <member refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252" kind="enumvalue"><name>None</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba809abe96853e69894bbf8e5730b31348" kind="enumvalue"><name>Read</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa56670174817e3fed92bfd8182d7c0d1" kind="enumvalue"><name>Write</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba3c4d2d19c91b345c33a83ca9f551f4e1" kind="enumvalue"><name>ReadWrite</name></member>
@@ -740,8 +790,10 @@
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba4877d9d67c11656d88fc82cfeb94a4f3" kind="enumvalue"><name>Truncate</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba93479401ae71e13bd81626eb0b6c2d37" kind="enumvalue"><name>Create</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbafd41a51c46068f24398d21e5e8d23d16" kind="enumvalue"><name>CreateOnlyIfNotExist</name></member>
+    <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaaafe04801c8d2d887be1a626b924c0be" kind="enumvalue"><name>CreateCompressed</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa26ef493b962366c21fef788da134721" kind="enumvalue"><name>WillBeSequentiallyAccessed</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba5ad1750347c8e7ce9513f1edb3dd3766" kind="enumvalue"><name>WillBeRandomlyAccessed</name></member>
+    <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba676b9cbbb9391959f0dcd1427a125d2e" kind="enumvalue"><name>NoSparse</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba6085ffcc368053b7563ee66109aba163" kind="enumvalue"><name>FastDirectoryEnumeration</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba837053fb9e27a38d2a153f5c85436644" kind="enumvalue"><name>UniqueDirectoryHandle</name></member>
     <member refid="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba648331f85d7765a2b1fcc854dfde389b" kind="enumvalue"><name>OSDirect</name></member>

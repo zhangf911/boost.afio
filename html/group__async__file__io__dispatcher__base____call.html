@@ -27,16 +27,180 @@
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
     </ul>
   </div>
 </div>
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">x</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;class R &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; std::vector<br class="typebreak"/>
+&lt; shared_future&lt; R &gt;<br class="typebreak"/>
+ &gt;, std::vector&lt; async_io_op &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____call.html#gaa144378bedc4272b44c9b8f358a04fb7">boost::afio::async_file_io_dispatcher_base::call</a> (const std::vector&lt; async_io_op &gt; &amp;ops, const std::vector&lt; std::function&lt; R()&gt;&gt; &amp;callables)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of asynchronous invocations of the specified bound functions when their supplied preconditions complete.  <a href="#gaa144378bedc4272b44c9b8f358a04fb7"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;class R &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; std::vector<br class="typebreak"/>
+&lt; shared_future&lt; R &gt;<br class="typebreak"/>
+ &gt;, std::vector&lt; async_io_op &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____call.html#ga9ccdb35979566b5852e1817388f6a39b">boost::afio::async_file_io_dispatcher_base::call</a> (const std::vector&lt; std::function&lt; R()&gt;&gt; &amp;callables)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of asynchronous invocations of the specified bound functions when their supplied preconditions complete.  <a href="#ga9ccdb35979566b5852e1817388f6a39b"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;class C , class... Args&gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; shared_future<br class="typebreak"/>
+&lt; typename std::result_of&lt; C(Args...)&gt;<br class="typebreak"/>
+::type &gt;, async_io_op &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____call.html#gaf3bde0b207a33ac44e61a09ca93be50f">boost::afio::async_file_io_dispatcher_base::call</a> (const async_io_op &amp;req, C callback, Args...args)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an asynchronous invocation of the specified unbound callable when its supplied precondition completes. Note that this function essentially calls `std::bind()` on the callable and the args and passes it to the other <a class="el" href="group__async__file__io__dispatcher__base____call.html#gaa144378bedc4272b44c9b8f358a04fb7" title="Schedule a batch of asynchronous invocations of the specified bound functions when their supplied pre...">call()</a> overload taking a `std::function&lt;&gt;`. You should therefore use `std::ref()` etc. as appropriate.  <a href="#gaf3bde0b207a33ac44e61a09ca93be50f"></a><br/></td></tr>
+</table>
+<hr/><h2>Function Documentation</h2>
+<a class="anchor" id="gaa144378bedc4272b44c9b8f358a04fb7"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::call" ref="gaa144378bedc4272b44c9b8f358a04fb7" args="(const std::vector&lt; async_io_op &gt; &amp;ops, const std::vector&lt; std::function&lt; R()&gt;&gt; &amp;callables)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class R &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; std::vector&lt; shared_future&lt; R &gt; &gt;, std::vector&lt; async_io_op &gt; &gt; <a class="el" href="group__async__file__io__dispatcher__base____call.html#gaa144378bedc4272b44c9b8f358a04fb7">boost::afio::async_file_io_dispatcher_base::call</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ops</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::function&lt; R()&gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>callables</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of asynchronous invocations of the specified bound functions when their supplied preconditions complete. </p>
+<p>This is effectively a convenience wrapper for `completion()`. It creates an <a class="el" href="classenqueued__task.html" title="Effectively our own custom std::packaged_task&lt;&gt;, with copy semantics and letting us early set value t...">enqueued_task</a> matching the `completion_t` handler specification and calls the specified arbitrary callable, always returning completion on exit.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A pair with a batch of futures returning the result of each of the callables and a batch of op handles. </dd></dl>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">class R</td><td>A compiler deduced return type of the bound functions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ops</td><td>A batch of precondition op handles. If default constructed, a precondition is null. </td></tr>
+    <tr><td class="paramname">callables</td><td>A batch of bound functions to call, returning R.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02820">2820</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga9ccdb35979566b5852e1817388f6a39b"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::call" ref="ga9ccdb35979566b5852e1817388f6a39b" args="(const std::vector&lt; std::function&lt; R()&gt;&gt; &amp;callables)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class R &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt;std::vector&lt;shared_future&lt;R&gt; &gt;, std::vector&lt;async_io_op&gt; &gt; <a class="el" href="group__async__file__io__dispatcher__base____call.html#gaa144378bedc4272b44c9b8f358a04fb7">boost::afio::async_file_io_dispatcher_base::call</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::function&lt; R()&gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>callables</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of asynchronous invocations of the specified bound functions when their supplied preconditions complete. </p>
+<p>This is effectively a convenience wrapper for `completion()`. It creates an <a class="el" href="classenqueued__task.html" title="Effectively our own custom std::packaged_task&lt;&gt;, with copy semantics and letting us early set value t...">enqueued_task</a> matching the `completion_t` handler specification and calls the specified arbitrary callable, always returning completion on exit. If you are seeing performance issues, using `completion()` directly will have much less overhead.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A pair with a batch of futures returning the result of each of the callables and a batch of op handles. </dd></dl>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">class R</td><td>A compiler deduced return type of the bound functions. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callables</td><td>A batch of bound functions to call, returning R.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l01161">1161</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="gaf3bde0b207a33ac44e61a09ca93be50f"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::call" ref="gaf3bde0b207a33ac44e61a09ca93be50f" args="(const async_io_op &amp;req, C callback, Args...args)" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class C , class... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; shared_future&lt; typename std::result_of&lt; C(Args...)&gt;::type &gt;, async_io_op &gt; <a class="el" href="group__async__file__io__dispatcher__base____call.html#gaa144378bedc4272b44c9b8f358a04fb7">boost::afio::async_file_io_dispatcher_base::call</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> &amp;&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">C&#160;</td>
+          <td class="paramname"><em>callback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Args...&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule an asynchronous invocation of the specified unbound callable when its supplied precondition completes. Note that this function essentially calls `std::bind()` on the callable and the args and passes it to the other <a class="el" href="group__async__file__io__dispatcher__base____call.html#gaa144378bedc4272b44c9b8f358a04fb7" title="Schedule a batch of asynchronous invocations of the specified bound functions when their supplied pre...">call()</a> overload taking a `std::function&lt;&gt;`. You should therefore use `std::ref()` etc. as appropriate. </p>
+<p>This is effectively a convenience wrapper for `completion()`. It creates an <a class="el" href="classenqueued__task.html" title="Effectively our own custom std::packaged_task&lt;&gt;, with copy semantics and letting us early set value t...">enqueued_task</a> matching the `completion_t` handler specification and calls the specified arbitrary callable, always returning completion on exit. If you are seeing performance issues, using `completion()` directly will have much less overhead.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A pair with a future returning the result of the callable and an op handle. </dd></dl>
+<dl class=""><dt><b>Template Parameters:</b></dt><dd>
+  <table class="">
+    <tr><td class="paramname">class C</td><td>Any callable type. </td></tr>
+    <tr><td class="paramname">Args</td><td>Any sequence of argument types. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>A precondition op handle. If default constructed, the precondition is null. </td></tr>
+    <tr><td class="paramname">callback</td><td>An unbound callable to call. </td></tr>
+    <tr><td class="paramname">args</td><td>An arbitrary sequence of arguments to bind to the callable.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02850">2850</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <hr size="1">
 <table width="100%">

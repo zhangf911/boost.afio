@@ -28,17 +28,26 @@
           (batch)</a>
 </h5></div></div></div>
 <p>
-            <a class="indexterm" name="idp14718688"></a>
+            <a class="indexterm" name="idp15131584"></a>
 Schedule a batch of asynchronous file creations and opens after optional
             preconditions.
           </p>
 <h6>
 <a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.h0"></a>
+            <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.description"></a></span><a class="link" href="file_1_batch.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.description">Description</a>
+          </h6>
+<p>
+            Be aware that any files created are by default sparse if supported on
+            the local filing system. Use file_flags::NoSparse to prevent this on
+            those filing systems which permit it.
+          </p>
+<h6>
+<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.h1"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.synopsis"></a></span><a class="link" href="file_1_batch.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.synopsis">Synopsis</a>
           </h6>
 <pre class="programlisting"><span class="keyword">virtual</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span><span class="identifier">async_io_op</span><span class="special">&gt;</span> <span class="identifier">async_file_io_dispatcher_base</span><span class="special">::</span><span class="identifier">file</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">async_path_op_req</span> <span class="special">&gt;</span> <span class="special">&amp;</span> <span class="identifier">reqs</span><span class="special">)</span></pre>
 <h6>
-<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.h1"></a>
+<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.h2"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.parameters"></a></span><a class="link" href="file_1_batch.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.parameters">Parameters</a>
           </h6>
 <div class="informaltable"><table class="table">
@@ -92,21 +101,21 @@ Schedule a batch of asynchronous file creations and opens after optional
 </tr></tbody>
 </table></div>
 <h6>
-<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.h2"></a>
+<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.h3"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.returns"></a></span><a class="link" href="file_1_batch.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.returns">Returns</a>
           </h6>
 <p>
             A batch of op handles.
           </p>
 <h6>
-<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.h3"></a>
+<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.h4"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.header"></a></span><a class="link" href="file_1_batch.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.header">Header</a>
           </h6>
 <p>
             <code class="computeroutput"><span class="preprocessor">#include</span> <span class="special">&lt;</span><span class="identifier">boost</span><span class="special">/</span><span class="identifier">afio</span><span class="special">/</span><span class="identifier">afio</span><span class="special">.</span><span class="identifier">hpp</span><span class="special">&gt;</span></code>
           </p>
 <h6>
-<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.h4"></a>
+<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.h5"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.complexity"></a></span><a class="link" href="file_1_batch.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.complexity">Complexity</a>
           </h6>
 <p>
@@ -114,7 +123,7 @@ Schedule a batch of asynchronous file creations and opens after optional
             file creation is constant time.
           </p>
 <h6>
-<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.h5"></a>
+<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.h6"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.exception_model"></a></span><a class="link" href="file_1_batch.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.exception_model">Exception
             Model</a>
           </h6>
@@ -127,7 +136,7 @@ Schedule a batch of asynchronous file creations and opens after optional
             unless a failure to allocate memory occurs.
           </p>
 <h6>
-<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.h6"></a>
+<a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.h7"></a>
             <span><a name="afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.example"></a></span><a class="link" href="file_1_batch.html#afio.reference.classes.async_file_io_dispatcher_base.file_1_batch.example">Example</a>
           </h6>
 <pre class="programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">shared_ptr</span><span class="special">&lt;</span><span class="identifier">boost</span><span class="special">::</span><span class="identifier">afio</span><span class="special">::</span><span class="identifier">async_file_io_dispatcher_base</span><span class="special">&gt;</span> <span class="identifier">dispatcher</span><span class="special">=</span>

@@ -157,14 +157,14 @@
     <detaileddescription>
 <para>Note that in Boost 1.54, and possibly later versions, `asio::io_service` on Windows appears to dislike being destructed during static data deinit, hence why this inherits from `std::enable_shared_from_this&lt;&gt;` in order that it may be reference count deleted before static data deinit occurs. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="754">
+      <node id="758">
         <label>thread_source</label>
         <link refid="classthread__source"/>
       </node>
-      <node id="755">
+      <node id="759">
         <label>std_thread_pool</label>
         <link refid="classstd__thread__pool"/>
-        <childnode refid="754" relation="public-inheritance">
+        <childnode refid="758" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

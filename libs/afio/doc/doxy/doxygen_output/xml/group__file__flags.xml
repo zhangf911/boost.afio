@@ -6,7 +6,7 @@
       <sectiondef kind="enum">
       <memberdef kind="enum" id="group__file__flags_1gaba2d48ea5b39d1ab48c6b892a2e2d0db" prot="public" static="no">
         <name>file_flags</name>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feac7485dcc8d256a6f197ed7802687f252" prot="public">
+        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252" prot="public">
           <name>None</name>
           <initializer>0</initializer>
           <briefdescription>
@@ -58,7 +58,7 @@
           <name>Create</name>
           <initializer>16</initializer>
           <briefdescription>
-<para>Open and create if doesn&apos;t exist. </para>          </briefdescription>
+<para>Open and create if doesn&apos;t exist. Always creates sparse files if possible. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -67,6 +67,14 @@
           <initializer>32</initializer>
           <briefdescription>
 <para>Create and open only if doesn&apos;t exist. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaaafe04801c8d2d887be1a626b924c0be" prot="public">
+          <name>CreateCompressed</name>
+          <initializer>64</initializer>
+          <briefdescription>
+<para>Create a compressed file, needs to be combined with one of the other create flags. Only succeeds if supported by the underlying filing system. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -83,6 +91,14 @@
           <initializer>256</initializer>
           <briefdescription>
 <para>Will be randomly accessed, so don&apos;t bother with read-ahead. If you&apos;re using this, <emphasis>strongly</emphasis> consider turning on OSDirect too. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba676b9cbbb9391959f0dcd1427a125d2e" prot="public">
+          <name>NoSparse</name>
+          <initializer>512</initializer>
+          <briefdescription>
+<para>Don&apos;t create sparse files. May be ignored by some filing systems (e.g. ext4). </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -164,7 +180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="373" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="369" bodyend="398"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="373" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="369" bodyend="400"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

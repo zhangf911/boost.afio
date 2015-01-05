@@ -27,6 +27,7 @@
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
     </ul>
@@ -42,16 +43,16 @@
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classstd__thread__pool.html">std_thread_pool</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process__threadpool.html#ga3cd49e64119265af60e5162b76fd95ca">process_threadpool</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the process threadpool.  <a href="#ga3cd49e64119265af60e5162b76fd95ca"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; std_thread_pool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process__threadpool.html#ga508fdd37661e739fc26a5dec80db56a5">boost::afio::process_threadpool</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the process threadpool.  <a href="#ga508fdd37661e739fc26a5dec80db56a5"></a><br/></td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="ga3cd49e64119265af60e5162b76fd95ca"></a><!-- doxytag: member="afio.hpp::process_threadpool" ref="ga3cd49e64119265af60e5162b76fd95ca" args="()" -->
+<a class="anchor" id="ga508fdd37661e739fc26a5dec80db56a5"></a><!-- doxytag: member="boost::afio::process_threadpool" ref="ga508fdd37661e739fc26a5dec80db56a5" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="classstd__thread__pool.html">std_thread_pool</a>&gt; <a class="el" href="group__process__threadpool.html#ga3cd49e64119265af60e5162b76fd95ca">process_threadpool</a> </td>
+          <td class="memname">std::shared_ptr&lt;std_thread_pool&gt; boost::afio::process_threadpool </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -61,7 +62,7 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Returns the process threadpool. </p>
-<p>On first use, this instantiates a default <a class="el" href="classstd__thread__pool.html" title="A very simple thread pool based on std::thread or boost::thread.">std_thread_pool</a> running `BOOST_AFIO_MAX_NON_ASYNC_QUEUE_DEPTH` threads which will remain until its shared count reaches zero. </p>
+<p>On first use, this instantiates a default <a class="el" href="classboost_1_1afio_1_1std__thread__pool.html" title="A very simple thread pool based on std::thread or boost::thread.">std_thread_pool</a> running `BOOST_AFIO_MAX_NON_ASYNC_QUEUE_DEPTH` threads which will remain until its shared count reaches zero. </p>
 
 </div>
 </div>

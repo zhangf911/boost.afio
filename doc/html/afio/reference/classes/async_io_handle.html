@@ -27,7 +27,7 @@
 <a name="afio.reference.classes.async_io_handle"></a><a class="link" href="async_io_handle.html" title="async_io_handle">async_io_handle</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp17355784"></a>
+          <a class="indexterm" name="idp18347432"></a>
 The abstract base class encapsulating a platform-specific file handle.
         </p>
 <h6>
@@ -35,6 +35,7 @@ The abstract base class encapsulating a platform-specific file handle.
           <span><a name="afio.reference.classes.async_io_handle.synopsis"></a></span><a class="link" href="async_io_handle.html#afio.reference.classes.async_io_handle.synopsis">Synopsis</a>
         </h6>
 <pre class="programlisting"><span class="keyword">class</span> <span class="identifier">async_io_handle</span>
+      <span class="special">:</span> <span class="keyword">public</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">enable_shared_from_this</span><span class="special">&lt;</span> <span class="identifier">async_io_handle</span> <span class="special">&gt;</span>
 <span class="special">{</span>
   <span class="comment">// ...</span>
 <span class="special">};</span>
@@ -129,7 +130,7 @@ The abstract base class encapsulating a platform-specific file handle.
 <td>
                   <p>
                     Returns a handle to the directory containing this handle. Only
-                    works if <code class="computeroutput"><span class="identifier">file_flagsFastDirectoryEnumeration</span></code>
+                    works if <code class="literal"><code class="computeroutput"><span class="identifier">file_flags</span><span class="special">::</span><span class="identifier">FastDirectoryEnumeration</span></code></code>
                     was specified when this handle was opened.
                   </p>
                 </td>
@@ -143,10 +144,10 @@ The abstract base class encapsulating a platform-specific file handle.
 <td>
                   <p>
                     Returns the native handle of this io handle. On POSIX, you can
-                    cast this to a fd using <code class="computeroutput"><span class="special">(</span><span class="keyword">int</span><span class="special">)(</span><span class="identifier">size_t</span><span class="special">)</span>
-                    <span class="identifier">native_handle</span><span class="special">()</span></code>.
-                    On Windows it's a simple <code class="computeroutput"><span class="special">(</span><span class="identifier">HANDLE</span><span class="special">)</span>
-                    <span class="identifier">native_handle</span><span class="special">()</span></code>.
+                    cast this to a fd using <code class="literal"><code class="computeroutput"><span class="special">(</span><span class="keyword">int</span><span class="special">)(</span><span class="identifier">size_t</span><span class="special">)</span>
+                    </code><code class="computeroutput"><span class="identifier">native_handle</span><span class="special">()</span></code></code>. On Windows it's
+                    a simple <code class="literal"><code class="computeroutput"><span class="special">(</span><span class="identifier">HANDLE</span><span class="special">)</span>
+                    </code><code class="computeroutput"><span class="identifier">native_handle</span><span class="special">()</span></code></code>.
                   </p>
                 </td>
 <td>
@@ -166,7 +167,7 @@ The abstract base class encapsulating a platform-specific file handle.
 </tr>
 <tr>
 <td>
-<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="keyword">const</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span> <span class="special">&amp;</span> <span class="identifier">path</span><span class="special">()</span></pre>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="keyword">const</span> <span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span> <span class="special">&amp;</span> <span class="identifier">path</span><span class="special">()</span></pre>
                 </td>
 <td>
                   <p>
@@ -269,7 +270,7 @@ The abstract base class encapsulating a platform-specific file handle.
 <td>
                   <p>
                     Returns a mostly filled directory_entry for the file or directory
-                    referenced by this handle. Use <code class="computeroutput"><span class="identifier">metadata_flagsAll</span></code>
+                    referenced by this handle. Use <code class="literal"><code class="computeroutput"><span class="identifier">metadata_flags</span><span class="special">::</span><span class="identifier">All</span></code></code>
                     if you want it as complete as your platform allows, even at the
                     cost of severe performance loss.
                   </p>
@@ -287,7 +288,7 @@ The abstract base class encapsulating a platform-specific file handle.
 <td>
                   <p>
                     Returns a mostly filled stat_t structure for the file or directory
-                    referenced by this handle. Use <code class="computeroutput"><span class="identifier">metadata_flagsAll</span></code>
+                    referenced by this handle. Use <code class="literal"><code class="computeroutput"><span class="identifier">metadata_flags</span><span class="special">::</span><span class="identifier">All</span></code></code>
                     if you want it as complete as your platform allows, even at the
                     cost of severe performance loss.
                   </p>
@@ -300,7 +301,7 @@ The abstract base class encapsulating a platform-specific file handle.
 </tr>
 <tr>
 <td>
-<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span> <span class="identifier">target</span><span class="special">()</span></pre>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span> <span class="identifier">target</span><span class="special">()</span></pre>
                 </td>
 <td>
                   <p>

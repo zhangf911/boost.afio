@@ -27,16 +27,148 @@
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
     </ul>
   </div>
 </div>
 <div class="header">
+  <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">x</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef std::pair&lt; bool, <br class="typebreak"/>
+std::shared_ptr<br class="typebreak"/>
+&lt; async_io_handle &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____completion.html#ga384aa77fea0f91d58814c50feeee44dc">boost::afio::async_file_io_dispatcher_base::completion_returntype</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The type returned by a completion handler.  <a href="#ga384aa77fea0f91d58814c50feeee44dc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">typedef completion_returntype&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____completion.html#ga54bf743efd9a69d7dd11d01ce25fe304">boost::afio::async_file_io_dispatcher_base::completion_t</a> (size_t, async_io_op)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of a completion handler.  <a href="#ga54bf743efd9a69d7dd11d01ce25fe304"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::vector&lt; async_io_op &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____completion.html#ga6cb87e3ca62468c8027a0cf052a9ff24">boost::afio::async_file_io_dispatcher_base::completion</a> (const std::vector&lt; async_io_op &gt; &amp;ops, const std::vector&lt; std::pair&lt; async_op_flags, std::function&lt; async_file_io_dispatcher_base::completion_t &gt;&gt;&gt; &amp;callbacks)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of asynchronous invocations of the specified functions when their supplied operations complete.  <a href="#ga6cb87e3ca62468c8027a0cf052a9ff24"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">async_io_op&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____completion.html#gac745f6f5424e142086cf45cc583f5aac">boost::afio::async_file_io_dispatcher_base::completion</a> (const async_io_op &amp;req, const std::pair&lt; async_op_flags, std::function&lt; async_file_io_dispatcher_base::completion_t &gt;&gt; &amp;callback)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule the asynchronous invocation of the specified single function when the supplied single operation completes.  <a href="#gac745f6f5424e142086cf45cc583f5aac"></a><br/></td></tr>
+</table>
+<hr/><h2>Typedef Documentation</h2>
+<a class="anchor" id="ga384aa77fea0f91d58814c50feeee44dc"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::completion_returntype" ref="ga384aa77fea0f91d58814c50feeee44dc" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::pair&lt;bool, std::shared_ptr&lt;async_io_handle&gt; &gt; <a class="el" href="group__async__file__io__dispatcher__base____completion.html#ga384aa77fea0f91d58814c50feeee44dc">boost::afio::async_file_io_dispatcher_base::completion_returntype</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The type returned by a completion handler. </p>
+
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l01096">1096</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga54bf743efd9a69d7dd11d01ce25fe304"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::completion_t" ref="ga54bf743efd9a69d7dd11d01ce25fe304" args="(size_t, async_io_op)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef completion_returntype <a class="el" href="group__async__file__io__dispatcher__base____completion.html#ga54bf743efd9a69d7dd11d01ce25fe304">boost::afio::async_file_io_dispatcher_base::completion_t</a>(size_t, async_io_op)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The type of a completion handler. </p>
+
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l01098">1098</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Function Documentation</h2>
+<a class="anchor" id="ga6cb87e3ca62468c8027a0cf052a9ff24"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::completion" ref="ga6cb87e3ca62468c8027a0cf052a9ff24" args="(const std::vector&lt; async_io_op &gt; &amp;ops, const std::vector&lt; std::pair&lt; async_op_flags, std::function&lt; async_file_io_dispatcher_base::completion_t &gt;&gt;&gt; &amp;callbacks)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;async_io_op&gt; <a class="el" href="group__async__file__io__dispatcher__base____completion.html#ga6cb87e3ca62468c8027a0cf052a9ff24">boost::afio::async_file_io_dispatcher_base::completion</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ops</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::pair&lt; <a class="el" href="group__async__op__flags.html#ga3d03d4b42e2ae303e282d0a1dec22976">async_op_flags</a>, std::function&lt; <a class="el" href="group__async__file__io__dispatcher__base____completion.html#ga54bf743efd9a69d7dd11d01ce25fe304">async_file_io_dispatcher_base::completion_t</a> &gt;&gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>callbacks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of asynchronous invocations of the specified functions when their supplied operations complete. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A batch of op handles </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ops</td><td>A batch of precondition op handles. </td></tr>
+    <tr><td class="paramname">callbacks</td><td>A batch of pairs of op flags and bound completion handler functions of type `completion_t`</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+</div>
+</div>
+<a class="anchor" id="gac745f6f5424e142086cf45cc583f5aac"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::completion" ref="gac745f6f5424e142086cf45cc583f5aac" args="(const async_io_op &amp;req, const std::pair&lt; async_op_flags, std::function&lt; async_file_io_dispatcher_base::completion_t &gt;&gt; &amp;callback)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async_io_op <a class="el" href="group__async__file__io__dispatcher__base____completion.html#ga6cb87e3ca62468c8027a0cf052a9ff24">boost::afio::async_file_io_dispatcher_base::completion</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> &amp;&#160;</td>
+          <td class="paramname"><em>req</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::pair&lt; <a class="el" href="group__async__op__flags.html#ga3d03d4b42e2ae303e282d0a1dec22976">async_op_flags</a>, std::function&lt; <a class="el" href="group__async__file__io__dispatcher__base____completion.html#ga54bf743efd9a69d7dd11d01ce25fe304">async_file_io_dispatcher_base::completion_t</a> &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule the asynchronous invocation of the specified single function when the supplied single operation completes. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An op handle </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>A precondition op handle </td></tr>
+    <tr><td class="paramname">callback</td><td>A pair of op flag and bound completion handler function of type `completion_t`</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02804">2804</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <hr size="1">
 <table width="100%">

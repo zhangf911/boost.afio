@@ -28,10 +28,10 @@
           const void &gt;</a>
 </h5></div></div></div>
 <p>
-            <a class="indexterm" name="idp12060424"></a>
+            <a class="indexterm" name="idp12268832"></a>
 A convenience bundle of precondition, data and where for writing from
-            a <code class="computeroutput"><span class="keyword">const</span> <span class="keyword">void</span>
-            <span class="special">*</span></code>. Data <span class="bold"><strong>MUST</strong></span>
+            a <code class="literal"><code class="computeroutput"><span class="keyword">const</span> <span class="keyword">void</span>
+            <span class="special">*</span></code></code>. Data <span class="bold"><strong>MUST</strong></span>
             stay around until the operation completes.
           </p>
 <h6>
@@ -41,9 +41,9 @@ A convenience bundle of precondition, data and where for writing from
 <pre class="programlisting"><span class="keyword">struct</span> <span class="identifier">async_data_op_req</span><span class="special">&lt;</span> <span class="keyword">const</span> <span class="keyword">void</span> <span class="special">&gt;</span>
       <span class="special">:</span> <span class="keyword">public</span> <span class="identifier">detail</span><span class="special">::</span><span class="identifier">async_data_op_req_impl</span><span class="special">&lt;</span> <span class="keyword">true</span> <span class="special">&gt;</span>
 <span class="special">{</span>
-  <span class="identifier">async_io_op</span> <span class="identifier">precondition</span><span class="special">;</span>                          <span class="comment">// A precondition containing an open file handle for this operation. </span>
-  <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">asio</span><span class="special">::</span><span class="identifier">const_buffer</span> <span class="special">&gt;</span> <span class="identifier">buffers</span><span class="special">;</span>  <span class="comment">// A sequence of const Boost.ASIO buffers to write from. </span>
-  <span class="identifier">off_t</span> <span class="identifier">where</span><span class="special">;</span>                                       <span class="comment">// The offset at which to write. </span>
+  <span class="identifier">async_io_op</span> <span class="identifier">precondition</span><span class="special">;</span>                   <span class="comment">// A precondition containing an open file handle for this operation. </span>
+  <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">asio</span><span class="special">::</span><span class="identifier">const_buffer</span> <span class="special">&gt;</span> <span class="identifier">buffers</span><span class="special">;</span>  <span class="comment">// A sequence of const Boost.ASIO buffers to write from. </span>
+  <span class="identifier">off_t</span> <span class="identifier">where</span><span class="special">;</span>                                <span class="comment">// The offset at which to write. </span>
 <span class="special">};</span>
 </pre>
 <h6>
@@ -204,7 +204,7 @@ A convenience bundle of precondition, data and where for writing from
 </tr>
 <tr>
 <td>
-<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_data_op_req</span><span class="special">(</span><span class="identifier">async_io_op</span> <span class="identifier">_precondition</span><span class="special">,</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">boost</span><span class="special">::</span><span class="identifier">asio</span><span class="special">::</span><span class="identifier">const_buffer</span> <span class="special">&gt;</span> <span class="identifier">_buffers</span><span class="special">,</span> <span class="identifier">off_t</span> <span class="identifier">_where</span><span class="special">)</span></pre>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_data_op_req</span><span class="special">(</span><span class="identifier">async_io_op</span> <span class="identifier">_precondition</span><span class="special">,</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span> <span class="identifier">asio</span><span class="special">::</span><span class="identifier">const_buffer</span> <span class="special">&gt;</span> <span class="identifier">_buffers</span><span class="special">,</span> <span class="identifier">off_t</span> <span class="identifier">_where</span><span class="special">)</span></pre>
                   </td>
 <td>
                     <p>
@@ -217,9 +217,9 @@ A convenience bundle of precondition, data and where for writing from
                       An optional precondition for this operation
                     </p>
                     <p>
-                      <span class="bold"><strong>std::vector&lt; boost::asio::const_buffer
-                      &gt;</strong></span>: <span class="emphasis"><em>_buffers</em></span>: A sequence
-                      of mutable/const Boost.ASIO buffers to read into/write from
+                      <span class="bold"><strong>std::vector&lt; asio::const_buffer &gt;</strong></span>:
+                      <span class="emphasis"><em>_buffers</em></span>: A sequence of mutable/const
+                      Boost.ASIO buffers to read into/write from
                     </p>
                     <p>
                       <span class="bold"><strong>off_t</strong></span>: <span class="emphasis"><em>_where</em></span>:

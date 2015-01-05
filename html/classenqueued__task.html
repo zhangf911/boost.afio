@@ -27,6 +27,7 @@
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
     </ul>
@@ -46,11 +47,10 @@
 </div><!--header-->
 <div class="contents">
 <!-- doxytag: class="enqueued_task" -->
-<p>The namespace containing Boost.ASIO internal details.  
+<p>Effectively our own custom std::packaged_task&lt;&gt;, with copy semantics and letting us early set value to significantly improve performance.  
  <a href="classenqueued__task.html#details">More...</a></p>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>The namespace containing Boost.ASIO internal details. </p>
-<p>Effectively our own custom std::packaged_task&lt;&gt;, with copy semantics and letting us early set value to significantly improve performance</p>
+<div class="textblock"><p>Effectively our own custom std::packaged_task&lt;&gt;, with copy semantics and letting us early set value to significantly improve performance. </p>
 <p>Unlike `std::packaged_task&lt;&gt;`, this custom variant is copyable though each copy always refers to the same internal state. Early future value setting is possible, with any subsequent value setting including that by the function being executed being ignored. Note that this behaviour opens the potential to lose exception state - if you set the future value early and then an exception is later thrown, the exception is swallowed.</p>
 <dl class=""><dt><b>Template Parameters:</b></dt><dd>
   <table class="">
@@ -59,7 +59,7 @@
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00153">153</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00163">163</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 </div></div><!-- contents -->
 <hr size="1">
 <table width="100%">

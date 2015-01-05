@@ -27,16 +27,92 @@
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
     </ul>
   </div>
 </div>
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">x</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual std::pair&lt; std::vector<br class="typebreak"/>
+&lt; future&lt; std::pair<br class="typebreak"/>
+&lt; std::vector&lt; directory_entry &gt;<br class="typebreak"/>
+, bool &gt; &gt; &gt;, std::vector<br class="typebreak"/>
+&lt; async_io_op &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____enumerate.html#ga9463c9d43626c23e5ef4c7c840d36fcd">boost::afio::async_file_io_dispatcher_base::enumerate</a> (const std::vector&lt; async_enumerate_op_req &gt; &amp;reqs)=0</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule a batch of asynchronous directory enumerations after preceding operations.  <a href="#ga9463c9d43626c23e5ef4c7c840d36fcd"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">std::pair&lt; future&lt; std::pair<br class="typebreak"/>
+&lt; std::vector&lt; directory_entry &gt;<br class="typebreak"/>
+, bool &gt; &gt;, async_io_op &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____enumerate.html#ga0695e33450ba820ebcb378f8b33d9ac1">boost::afio::async_file_io_dispatcher_base::enumerate</a> (const async_enumerate_op_req &amp;req)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedule an asynchronous directory enumeration after a preceding operation.  <a href="#ga0695e33450ba820ebcb378f8b33d9ac1"></a><br/></td></tr>
+</table>
+<hr/><h2>Function Documentation</h2>
+<a class="anchor" id="ga9463c9d43626c23e5ef4c7c840d36fcd"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::enumerate" ref="ga9463c9d43626c23e5ef4c7c840d36fcd" args="(const std::vector&lt; async_enumerate_op_req &gt; &amp;reqs)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::pair&lt;std::vector&lt;future&lt;std::pair&lt;std::vector&lt;directory_entry&gt;, bool&gt; &gt; &gt;, std::vector&lt;async_io_op&gt; &gt; <a class="el" href="group__async__file__io__dispatcher__base____enumerate.html#ga9463c9d43626c23e5ef4c7c840d36fcd">boost::afio::async_file_io_dispatcher_base::enumerate</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__enumerate__op__req.html">async_enumerate_op_req</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>reqs</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule a batch of asynchronous directory enumerations after preceding operations. </p>
+<p>By default <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gaf6386ba1f9bd0e829470837bef6c7d73" title="Schedule a batch of asynchronous directory creations and opens after optional preconditions.">dir()</a> returns shared handles i.e. dir("foo") and dir("foo") will return the exact same handle, and therefore enumerating not all of the entries at once is a race condition. The solution is to either set maxitems to a value large enough to guarantee a directory will be enumerated in a single shot, or to open a separate directory handle using the file_flags::UniqueDirectoryHandle flag.</p>
+<p>Note that setting maxitems=1 will often cause a buffer space exhaustion, causing a second syscall with an enlarged buffer. This is because AFIO cannot know if the allocated buffer can hold all of the filename being retrieved, so it may have to retry. Put another way, setting maxitems=1 will give you the worst performance possible, whereas maxitems=2 will probably only return one item most of the time.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A batch of future vectors of directory entries with boolean returning false if done. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">reqs</td><td>A batch of enumeration requests.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+</div>
+</div>
+<a class="anchor" id="ga0695e33450ba820ebcb378f8b33d9ac1"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::enumerate" ref="ga0695e33450ba820ebcb378f8b33d9ac1" args="(const async_enumerate_op_req &amp;req)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; future&lt; std::pair&lt; std::vector&lt; directory_entry &gt;, bool &gt; &gt;, async_io_op &gt; <a class="el" href="group__async__file__io__dispatcher__base____enumerate.html#ga9463c9d43626c23e5ef4c7c840d36fcd">boost::afio::async_file_io_dispatcher_base::enumerate</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structboost_1_1afio_1_1async__enumerate__op__req.html">async_enumerate_op_req</a> &amp;&#160;</td>
+          <td class="paramname"><em>req</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Schedule an asynchronous directory enumeration after a preceding operation. </p>
+<p>By default <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#gaf6386ba1f9bd0e829470837bef6c7d73" title="Schedule a batch of asynchronous directory creations and opens after optional preconditions.">dir()</a> returns shared handles i.e. dir("foo") and dir("foo") will return the exact same handle, and therefore enumerating not all of the entries at once is a race condition. The solution is to either set maxitems to a value large enough to guarantee a directory will be enumerated in a single shot, or to open a separate directory handle using the file_flags::UniqueDirectoryHandle flag.</p>
+<p>Note that setting maxitems=1 will often cause a buffer space exhaustion, causing a second syscall with an enlarged buffer. This is because AFIO cannot know if the allocated buffer can hold all of the filename being retrieved, so it may have to retry. Put another way, setting maxitems=1 will give you the worst performance possible, whereas maxitems=2 will probably only return one item most of the time.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>A future vector of directory entries with a boolean returning false if done. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">req</td><td>An enumeration request.</td></tr>
+  </table>
+  </dd>
+</dl>
+    
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02964">2964</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 <hr size="1">
 <table width="100%">

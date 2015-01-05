@@ -27,7 +27,7 @@
 <a name="afio.reference.classes.directory_entry"></a><a class="link" href="directory_entry.html" title="directory_entry">directory_entry</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp17433232"></a>
+          <a class="indexterm" name="idp18429568"></a>
 The abstract base class for an entry in a directory with lazily filled
           metadata.
         </p>
@@ -36,10 +36,10 @@ The abstract base class for an entry in a directory with lazily filled
           <span><a name="afio.reference.classes.directory_entry.description"></a></span><a class="link" href="directory_entry.html#afio.reference.classes.directory_entry.description">Description</a>
         </h6>
 <p>
-          Note that <code class="computeroutput"><span class="identifier">directory</span><span class="special">\</span><span class="identifier">u005fentry</span><span class="special">\</span><span class="identifier">u005fhash</span></code> will hash one of these for
-          you, and a <code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">hash</span><span class="special">&lt;</span><span class="identifier">directory</span><span class="special">\</span><span class="identifier">u005fentry</span><span class="special">&gt;</span></code>
-          specialisation is defined for you so you ought to be able to use directory_entry
-          directly in an <code class="computeroutput"><span class="identifier">unordered</span><span class="special">\</span><span class="identifier">u005fmap</span><span class="special">&lt;&gt;</span></code>.
+          Note that <code class="literal"><code class="computeroutput"><span class="identifier">directory_entry_hash</span></code></code>
+          will hash one of these for you, and a <code class="literal"><code class="computeroutput"><span class="identifier">std</span><span class="special">::</span><span class="identifier">hash</span><span class="special">&lt;</span></code><code class="computeroutput"><span class="identifier">directory_entry</span></code><code class="computeroutput"><span class="special">&gt;</span></code></code> specialisation is defined
+          for you so you ought to be able to use directory_entry directly in an
+          <code class="literal"><code class="computeroutput"><span class="identifier">unordered_map</span><span class="special">&lt;&gt;</span></code></code>.
         </p>
 <h6>
 <a name="afio.reference.classes.directory_entry.h1"></a>
@@ -92,7 +92,7 @@ The abstract base class for an entry in a directory with lazily filled
 </tr>
 <tr>
 <td>
-<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">directory_entry</span><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span> <span class="identifier">_leafname</span><span class="special">,</span> <span class="identifier">stat_t</span> <span class="identifier">__stat</span><span class="special">,</span> <span class="identifier">metadata_flags</span> <span class="identifier">_have_metadata</span><span class="special">)</span></pre>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">directory_entry</span><span class="special">(</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span> <span class="identifier">_leafname</span><span class="special">,</span> <span class="identifier">stat_t</span> <span class="identifier">__stat</span><span class="special">,</span> <span class="identifier">metadata_flags</span> <span class="identifier">_have_metadata</span><span class="special">)</span></pre>
                 </td>
 <td>
                   <p>
@@ -101,7 +101,7 @@ The abstract base class for an entry in a directory with lazily filled
                 </td>
 <td>
                   <p>
-                    <span class="bold"><strong>std::filesystem::path</strong></span>: <span class="emphasis"><em>_leafname</em></span>:
+                    <span class="bold"><strong>filesystem::path</strong></span>: <span class="emphasis"><em>_leafname</em></span>:
                   </p>
                   <p>
                     <span class="bold"><strong>stat_t</strong></span>: <span class="emphasis"><em>__stat</em></span>:
@@ -279,7 +279,7 @@ The abstract base class for an entry in a directory with lazily filled
 </tr>
 <tr>
 <td>
-<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span> <span class="identifier">name</span><span class="special">()</span></pre>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span> <span class="identifier">name</span><span class="special">()</span></pre>
                 </td>
 <td>
                 </td>
@@ -339,7 +339,7 @@ The abstract base class for an entry in a directory with lazily filled
                 </td>
 <td>
                   <p>
-                    Returns a copy of the internal <code class="computeroutput"><span class="identifier">stat_t</span></code>
+                    Returns a copy of the internal <code class="literal"><code class="computeroutput"><span class="identifier">stat_t</span></code></code>
                     structure. This is a blocking call if wanted metadata is not
                     yet ready.
                   </p>
@@ -358,7 +358,7 @@ The abstract base class for an entry in a directory with lazily filled
                 </td>
 <td>
                   <p>
-                    A copy of the internal <code class="computeroutput"><span class="identifier">stat_t</span></code>
+                    A copy of the internal <code class="literal"><code class="computeroutput"><span class="identifier">stat_t</span></code></code>
                     structure.
                   </p>
                 </td>

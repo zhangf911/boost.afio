@@ -44,12 +44,12 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="645">
+      <node id="649">
         <label>T</label>
       </node>
-      <node id="644">
+      <node id="648">
         <label>std::weak_ptr&lt; T &gt;</label>
-        <childnode refid="645" relation="usage">
+        <childnode refid="649" relation="usage">
           <edgelabel>ptr</edgelabel>
         </childnode>
       </node>

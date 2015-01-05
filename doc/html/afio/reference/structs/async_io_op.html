@@ -27,7 +27,7 @@
 <a name="afio.reference.structs.async_io_op"></a><a class="link" href="async_io_op.html" title="async_io_op">async_io_op</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp12814872"></a>
+          <a class="indexterm" name="idp13009896"></a>
 A reference to an asynchronous operation.
         </p>
 <h6>
@@ -43,12 +43,280 @@ A reference to an asynchronous operation.
         </h6>
 <pre class="programlisting"><span class="keyword">struct</span> <span class="identifier">async_io_op</span>
 <span class="special">{</span>
-  <span class="identifier">async_file_io_dispatcher_base</span> <span class="special">*</span> <span class="identifier">parent</span><span class="special">;</span>  <span class="comment">// The parent dispatcher. </span>
-  <span class="identifier">size_t</span> <span class="identifier">id</span><span class="special">;</span>                               <span class="comment">// A unique id for this operation. </span>
+  <span class="identifier">async_file_io_dispatcher_base</span> <span class="special">*</span> <span class="identifier">parent</span><span class="special">;</span>                 <span class="comment">// The parent dispatcher. </span>
+  <span class="identifier">size_t</span> <span class="identifier">id</span><span class="special">;</span>                                              <span class="comment">// A unique id for this operation. </span>
+  <span class="identifier">shared_future</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">shared_ptr</span><span class="special">&lt;</span> <span class="identifier">async_io_handle</span> <span class="special">&gt;</span> <span class="special">&gt;</span> <span class="identifier">h</span><span class="special">;</span>  <span class="comment">// A future handle to the item being operated upon. </span>
 <span class="special">};</span>
 </pre>
 <h6>
 <a name="afio.reference.structs.async_io_op.h2"></a>
+          <span><a name="afio.reference.structs.async_io_op.constructor_s"></a></span><a class="link" href="async_io_op.html#afio.reference.structs.async_io_op.constructor_s">Constructor(s)</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Function
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Parameters
+                  </p>
+                </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_io_op</span><span class="special">()</span></pre>
+                </td>
+<td>
+                  <p>
+                    Default constructor.
+                  </p>
+                </td>
+<td>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_io_op</span><span class="special">(</span><span class="keyword">const</span> <span class="identifier">async_io_op</span> <span class="special">&amp;</span> <span class="identifier">o</span><span class="special">)</span></pre>
+                </td>
+<td>
+                  <p>
+                    Copy constructor.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    <span class="bold"><strong>const async_io_op &amp;</strong></span>: <span class="emphasis"><em>o</em></span>:
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_io_op</span><span class="special">(</span><span class="identifier">async_io_op</span> <span class="special">&amp;&amp;</span> <span class="identifier">o</span><span class="special">)</span></pre>
+                </td>
+<td>
+                  <p>
+                    Move constructor.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    <span class="bold"><strong>async_io_op &amp;&amp;</strong></span>: <span class="emphasis"><em>o</em></span>:
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_io_op</span><span class="special">(</span><span class="identifier">async_file_io_dispatcher_base</span> <span class="special">*</span> <span class="identifier">_parent</span><span class="special">,</span> <span class="identifier">size_t</span> <span class="identifier">_id</span><span class="special">,</span> <span class="identifier">shared_future</span><span class="special">&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">shared_ptr</span><span class="special">&lt;</span> <span class="identifier">async_io_handle</span> <span class="special">&gt;&gt;</span> <span class="identifier">_handle</span><span class="special">,</span> <span class="keyword">bool</span> <span class="identifier">check_handle</span> <span class="special">=</span> <span class="keyword">true</span><span class="special">,</span> <span class="keyword">bool</span> <span class="identifier">validate</span> <span class="special">=</span> <span class="keyword">true</span><span class="special">)</span></pre>
+                </td>
+<td>
+                </td>
+<td>
+                  <p>
+                    <span class="bold"><strong>async_file_io_dispatcher_base *</strong></span>:
+                    <span class="emphasis"><em>_parent</em></span>: The dispatcher this op belongs
+                    to.
+                  </p>
+                  <p>
+                    <span class="bold"><strong>size_t</strong></span>: <span class="emphasis"><em>_id</em></span>:
+                    The unique non-zero id of this op.
+                  </p>
+                  <p>
+                    <span class="bold"><strong>shared_future&lt; std::shared_ptr&lt; async_io_handle
+                    &gt;&gt;</strong></span>: <span class="emphasis"><em>_handle</em></span>: A shared_ptr
+                    to shared state between all instances of this reference.
+                  </p>
+                  <p>
+                    <span class="bold"><strong>bool</strong></span>: <span class="emphasis"><em>check_handle</em></span>:
+                    Whether to have validation additionally check if a handle is
+                    not null
+                  </p>
+                  <p>
+                    <span class="bold"><strong>bool</strong></span>: <span class="emphasis"><em>validate</em></span>:
+                    Whether to check the inputs and shared state for valid (and not
+                    errored) values
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_io_op</span><span class="special">(</span><span class="identifier">async_file_io_dispatcher_base</span> <span class="special">*</span> <span class="identifier">_parent</span><span class="special">,</span> <span class="identifier">size_t</span> <span class="identifier">_id</span><span class="special">)</span></pre>
+                </td>
+<td>
+                </td>
+<td>
+                  <p>
+                    <span class="bold"><strong>async_file_io_dispatcher_base *</strong></span>:
+                    <span class="emphasis"><em>_parent</em></span>: The dispatcher this op belongs
+                    to.
+                  </p>
+                  <p>
+                    <span class="bold"><strong>size_t</strong></span>: <span class="emphasis"><em>_id</em></span>:
+                    The unique non-zero id of this op.
+                  </p>
+                </td>
+</tr>
+</tbody>
+</table></div>
+<h6>
+<a name="afio.reference.structs.async_io_op.h3"></a>
+          <span><a name="afio.reference.structs.async_io_op.member_function_s"></a></span><a class="link" href="async_io_op.html#afio.reference.structs.async_io_op.member_function_s">Member Function(s)</a>
+        </h6>
+<div class="informaltable"><table class="table">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Function
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Description
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Parameters
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Returns
+                  </p>
+                </th>
+</tr></thead>
+<tbody>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_io_op</span> <span class="special">&amp;</span> <span class="keyword">operator</span><span class="special">=(</span><span class="keyword">const</span> <span class="identifier">async_io_op</span> <span class="special">&amp;</span> <span class="identifier">o</span><span class="special">)</span></pre>
+                </td>
+<td>
+                  <p>
+                    Copy assignment.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    <span class="bold"><strong>const async_io_op &amp;</strong></span>: <span class="emphasis"><em>o</em></span>:
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_io_op</span> <span class="special">&amp;</span> <span class="keyword">operator</span><span class="special">=(</span><span class="identifier">async_io_op</span> <span class="special">&amp;&amp;</span> <span class="identifier">o</span><span class="special">)</span></pre>
+                </td>
+<td>
+                  <p>
+                    Move assignment.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    <span class="bold"><strong>async_io_op &amp;&amp;</strong></span>: <span class="emphasis"><em>o</em></span>:
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">std</span><span class="special">::</span><span class="identifier">shared_ptr</span><span class="special">&lt;</span> <span class="identifier">async_io_handle</span> <span class="special">&gt;</span> <span class="identifier">get</span><span class="special">(</span><span class="keyword">bool</span> <span class="identifier">return_null_if_errored</span> <span class="special">=</span> <span class="keyword">false</span><span class="special">)</span></pre>
+                </td>
+<td>
+                  <p>
+                    Retrieves the handle or exception from the shared state. Same
+                    as h.get().
+                  </p>
+                </td>
+<td>
+                  <p>
+                    <span class="bold"><strong>bool</strong></span>: <span class="emphasis"><em>return_null_if_errored</em></span>:
+                  </p>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="keyword">const</span> <span class="identifier">async_io_handle</span> <span class="special">&amp;</span> <span class="keyword">operator</span><span class="special">*()</span></pre>
+                </td>
+<td>
+                  <p>
+                    Dereferences the handle from the shared state. Same as *h.get().
+                  </p>
+                </td>
+<td>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_io_handle</span> <span class="special">&amp;</span> <span class="keyword">operator</span><span class="special">*()</span></pre>
+                </td>
+<td>
+                  <p>
+                    Dereferences the handle from the shared state. Same as *h.get().
+                  </p>
+                </td>
+<td>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="keyword">const</span> <span class="identifier">async_io_handle</span> <span class="special">*</span> <span class="keyword">operator</span><span class="special">-&gt;()</span></pre>
+                </td>
+<td>
+                  <p>
+                    Dereferences the handle from the shared state. Same as h.get()-&gt;get().
+                  </p>
+                </td>
+<td>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_io_handle</span> <span class="special">*</span> <span class="keyword">operator</span><span class="special">-&gt;()</span></pre>
+                </td>
+<td>
+                  <p>
+                    Dereferences the handle from the shared state. Same as h.get()-&gt;get().
+                  </p>
+                </td>
+<td>
+                </td>
+</tr>
+<tr>
+<td>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="keyword">bool</span> <span class="identifier">validate</span><span class="special">(</span><span class="keyword">bool</span> <span class="identifier">check_handle</span> <span class="special">=</span> <span class="keyword">true</span><span class="special">)</span></pre>
+                </td>
+<td>
+                  <p>
+                    Validates contents.
+                  </p>
+                </td>
+<td>
+                  <p>
+                    <span class="bold"><strong>bool</strong></span>: <span class="emphasis"><em>check_handle</em></span>:
+                  </p>
+                </td>
+</tr>
+</tbody>
+</table></div>
+<h6>
+<a name="afio.reference.structs.async_io_op.h4"></a>
           <span><a name="afio.reference.structs.async_io_op.header"></a></span><a class="link" href="async_io_op.html#afio.reference.structs.async_io_op.header">Header</a>
         </h6>
 <p>

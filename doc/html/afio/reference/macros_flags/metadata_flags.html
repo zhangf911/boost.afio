@@ -6,7 +6,7 @@
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
 <link rel="home" href="../../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.30">
 <link rel="up" href="../macros_flags.html" title="Macros and Flags">
-<link rel="prev" href="file_flags.html" title="file_flags">
+<link rel="prev" href="fs_metadata_flags.html" title="fs_metadata_flags">
 <link rel="next" href="../structs.html" title="Structures">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -20,34 +20,36 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="file_flags.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../macros_flags.html"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../afio.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../structs.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="fs_metadata_flags.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../macros_flags.html"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../afio.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../structs.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 <div class="section">
 <div class="titlepage"><div><div><h4 class="title">
 <a name="afio.reference.macros_flags.metadata_flags"></a><a class="link" href="metadata_flags.html" title="metadata_flags">metadata_flags</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp11421712"></a>
-<a class="indexterm" name="idp11422128"></a>
-<a class="indexterm" name="idp11422536"></a>
-<a class="indexterm" name="idp11422952"></a>
-<a class="indexterm" name="idp11423344"></a>
-<a class="indexterm" name="idp11423752"></a>
-<a class="indexterm" name="idp11424160"></a>
-<a class="indexterm" name="idp11424568"></a>
-<a class="indexterm" name="idp11424984"></a>
-<a class="indexterm" name="idp11425376"></a>
-<a class="indexterm" name="idp11425784"></a>
-<a class="indexterm" name="idp11426192"></a>
-<a class="indexterm" name="idp11426600"></a>
-<a class="indexterm" name="idp11427008"></a>
-<a class="indexterm" name="idp11427416"></a>
-<a class="indexterm" name="idp11427824"></a>
-<a class="indexterm" name="idp11428232"></a>
-<a class="indexterm" name="idp11428640"></a>
-<a class="indexterm" name="idp11429048"></a>
-<a class="indexterm" name="idp11429464"></a>
-<a class="indexterm" name="idp11429872"></a>
+          <a class="indexterm" name="idp11629952"></a>
+<a class="indexterm" name="idp11630368"></a>
+<a class="indexterm" name="idp11630776"></a>
+<a class="indexterm" name="idp11631168"></a>
+<a class="indexterm" name="idp11631584"></a>
+<a class="indexterm" name="idp11631992"></a>
+<a class="indexterm" name="idp11632400"></a>
+<a class="indexterm" name="idp11632808"></a>
+<a class="indexterm" name="idp11633224"></a>
+<a class="indexterm" name="idp11633640"></a>
+<a class="indexterm" name="idp11634048"></a>
+<a class="indexterm" name="idp11634456"></a>
+<a class="indexterm" name="idp11634864"></a>
+<a class="indexterm" name="idp11635272"></a>
+<a class="indexterm" name="idp11635680"></a>
+<a class="indexterm" name="idp11636088"></a>
+<a class="indexterm" name="idp11636496"></a>
+<a class="indexterm" name="idp11636904"></a>
+<a class="indexterm" name="idp11637312"></a>
+<a class="indexterm" name="idp11637728"></a>
+<a class="indexterm" name="idp11638136"></a>
+<a class="indexterm" name="idp11638544"></a>
+<a class="indexterm" name="idp11638952"></a>
 Bitflags for availability of metadata from <code class="literal"><code class="computeroutput"><span class="keyword">struct</span>
           </code><code class="computeroutput"><span class="identifier">stat_t</span></code></code>
         </p>
@@ -55,7 +57,7 @@ Bitflags for availability of metadata from <code class="literal"><code class="co
 <a name="afio.reference.macros_flags.metadata_flags.h0"></a>
           <span><a name="afio.reference.macros_flags.metadata_flags.synopsis"></a></span><a class="link" href="metadata_flags.html#afio.reference.macros_flags.metadata_flags.synopsis">Synopsis</a>
         </h6>
-<pre class="programlisting"><span class="keyword">enum</span> <span class="identifier">metadata_flags</span> <span class="special">{</span><span class="identifier">None</span> <span class="special">=</span> <span class="number">0</span><span class="special">,</span> <span class="identifier">dev</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">0</span><span class="special">,</span> <span class="identifier">ino</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">1</span><span class="special">,</span> <span class="identifier">type</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">2</span><span class="special">,</span> <span class="identifier">perms</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">3</span><span class="special">,</span> <span class="identifier">nlink</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">4</span><span class="special">,</span> <span class="identifier">uid</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">5</span><span class="special">,</span> <span class="identifier">gid</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">6</span><span class="special">,</span> <span class="identifier">rdev</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">7</span><span class="special">,</span> <span class="identifier">atim</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">8</span><span class="special">,</span> <span class="identifier">mtim</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">9</span><span class="special">,</span> <span class="identifier">ctim</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">10</span><span class="special">,</span> <span class="identifier">size</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">11</span><span class="special">,</span> <span class="identifier">allocated</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">12</span><span class="special">,</span> <span class="identifier">blocks</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">13</span><span class="special">,</span> <span class="identifier">blksize</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">14</span><span class="special">,</span> <span class="identifier">flags</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">15</span><span class="special">,</span> <span class="identifier">gen</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">16</span><span class="special">,</span> <span class="identifier">birthtim</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">17</span><span class="special">,</span> <span class="identifier">All</span> <span class="special">=</span> <span class="special">(</span><span class="identifier">size_t</span><span class="special">)-</span><span class="number">1</span><span class="special">};</span></pre>
+<pre class="programlisting"><span class="keyword">enum</span> <span class="identifier">metadata_flags</span> <span class="special">{</span><span class="identifier">None</span> <span class="special">=</span> <span class="number">0</span><span class="special">,</span> <span class="identifier">dev</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">0</span><span class="special">,</span> <span class="identifier">ino</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">1</span><span class="special">,</span> <span class="identifier">type</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">2</span><span class="special">,</span> <span class="identifier">perms</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">3</span><span class="special">,</span> <span class="identifier">nlink</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">4</span><span class="special">,</span> <span class="identifier">uid</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">5</span><span class="special">,</span> <span class="identifier">gid</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">6</span><span class="special">,</span> <span class="identifier">rdev</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">7</span><span class="special">,</span> <span class="identifier">atim</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">8</span><span class="special">,</span> <span class="identifier">mtim</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">9</span><span class="special">,</span> <span class="identifier">ctim</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">10</span><span class="special">,</span> <span class="identifier">size</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">11</span><span class="special">,</span> <span class="identifier">allocated</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">12</span><span class="special">,</span> <span class="identifier">blocks</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">13</span><span class="special">,</span> <span class="identifier">blksize</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">14</span><span class="special">,</span> <span class="identifier">flags</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">15</span><span class="special">,</span> <span class="identifier">gen</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">16</span><span class="special">,</span> <span class="identifier">birthtim</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">17</span><span class="special">,</span> <span class="identifier">sparse</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">24</span><span class="special">,</span> <span class="identifier">compressed</span> <span class="special">=</span> <span class="number">1</span><span class="special">&lt;&lt;</span><span class="number">25</span><span class="special">,</span> <span class="identifier">All</span> <span class="special">=</span> <span class="special">(</span><span class="identifier">size_t</span><span class="special">)-</span><span class="number">1</span><span class="special">};</span></pre>
 <h6>
 <a name="afio.reference.macros_flags.metadata_flags.h1"></a>
           <span><a name="afio.reference.macros_flags.metadata_flags.values"></a></span><a class="link" href="metadata_flags.html#afio.reference.macros_flags.metadata_flags.values">Values</a>
@@ -255,6 +257,24 @@ Bitflags for availability of metadata from <code class="literal"><code class="co
 <tr>
 <td>
                   <p>
+                    sparse
+                  </p>
+                </td>
+<td>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
+                    compressed
+                  </p>
+                </td>
+<td>
+                </td>
+</tr>
+<tr>
+<td>
+                  <p>
                     All
                   </p>
                 </td>
@@ -285,7 +305,7 @@ Bitflags for availability of metadata from <code class="literal"><code class="co
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="file_flags.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../macros_flags.html"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../afio.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../structs.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="fs_metadata_flags.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../macros_flags.html"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../afio.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="../structs.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 </body>
 </html>

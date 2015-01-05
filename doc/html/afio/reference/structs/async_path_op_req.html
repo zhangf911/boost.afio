@@ -27,7 +27,7 @@
 <a name="afio.reference.structs.async_path_op_req"></a><a class="link" href="async_path_op_req.html" title="async_path_op_req">async_path_op_req</a>
 </h4></div></div></div>
 <p>
-          <a class="indexterm" name="idp12829336"></a>
+          <a class="indexterm" name="idp13099056"></a>
 A convenience bundle of path and flags, with optional precondition.
         </p>
 <h6>
@@ -36,9 +36,9 @@ A convenience bundle of path and flags, with optional precondition.
         </h6>
 <pre class="programlisting"><span class="keyword">struct</span> <span class="identifier">async_path_op_req</span>
 <span class="special">{</span>
-  <span class="identifier">std</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span> <span class="identifier">path</span><span class="special">;</span>  <span class="comment">// The filing system path to be used for this operation. </span>
-  <span class="identifier">file_flags</span> <span class="identifier">flags</span><span class="special">;</span>            <span class="comment">// The flags to be used for this operation (note they can be overriden by flags passed during dispatcher construction). </span>
-  <span class="identifier">async_io_op</span> <span class="identifier">precondition</span><span class="special">;</span>    <span class="comment">// An optional precondition for this operation </span>
+  <span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span> <span class="identifier">path</span><span class="special">;</span>     <span class="comment">// The filing system path to be used for this operation. </span>
+  <span class="identifier">file_flags</span> <span class="identifier">flags</span><span class="special">;</span>          <span class="comment">// The flags to be used for this operation (note they can be overriden by flags passed during dispatcher construction). </span>
+  <span class="identifier">async_io_op</span> <span class="identifier">precondition</span><span class="special">;</span>  <span class="comment">// An optional precondition for this operation </span>
 <span class="special">};</span>
 </pre>
 <h6>
@@ -83,7 +83,7 @@ A convenience bundle of path and flags, with optional precondition.
 </tr>
 <tr>
 <td>
-<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_path_op_req</span><span class="special">(</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span> <span class="identifier">_path</span><span class="special">,</span> <span class="identifier">file_flags</span> <span class="identifier">_flags</span> <span class="special">=</span> <span class="identifier">file_flags</span><span class="special">::</span><span class="identifier">None</span><span class="special">)</span></pre>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_path_op_req</span><span class="special">(</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span> <span class="identifier">_path</span><span class="special">,</span> <span class="identifier">file_flags</span> <span class="identifier">_flags</span> <span class="special">=</span> <span class="identifier">file_flags</span><span class="special">::</span><span class="identifier">None</span><span class="special">)</span></pre>
                 </td>
 <td>
                   <p>
@@ -92,7 +92,7 @@ A convenience bundle of path and flags, with optional precondition.
                 </td>
 <td>
                   <p>
-                    <span class="bold"><strong>std::filesystem::path</strong></span>: <span class="emphasis"><em>_path</em></span>:
+                    <span class="bold"><strong>filesystem::path</strong></span>: <span class="emphasis"><em>_path</em></span>:
                     The filing system path to be used. Must be absolute.
                   </p>
                   <p>
@@ -103,7 +103,7 @@ A convenience bundle of path and flags, with optional precondition.
 </tr>
 <tr>
 <td>
-<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_path_op_req</span><span class="special">(</span><span class="identifier">async_io_op</span> <span class="identifier">_precondition</span><span class="special">,</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span> <span class="identifier">_path</span><span class="special">,</span> <span class="identifier">file_flags</span> <span class="identifier">_flags</span> <span class="special">=</span> <span class="identifier">file_flags</span><span class="special">::</span><span class="identifier">None</span><span class="special">)</span></pre>
+<pre xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" class="table-programlisting"><span class="identifier">async_path_op_req</span><span class="special">(</span><span class="identifier">async_io_op</span> <span class="identifier">_precondition</span><span class="special">,</span> <span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">path</span> <span class="identifier">_path</span><span class="special">,</span> <span class="identifier">file_flags</span> <span class="identifier">_flags</span> <span class="special">=</span> <span class="identifier">file_flags</span><span class="special">::</span><span class="identifier">None</span><span class="special">)</span></pre>
                 </td>
 <td>
                   <p>
@@ -116,7 +116,7 @@ A convenience bundle of path and flags, with optional precondition.
                     The precondition for this operation.
                   </p>
                   <p>
-                    <span class="bold"><strong>std::filesystem::path</strong></span>: <span class="emphasis"><em>_path</em></span>:
+                    <span class="bold"><strong>filesystem::path</strong></span>: <span class="emphasis"><em>_path</em></span>:
                     The filing system path to be used. Must be absolute.
                   </p>
                   <p>

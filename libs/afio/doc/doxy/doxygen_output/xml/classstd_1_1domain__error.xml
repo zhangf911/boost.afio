@@ -8,32 +8,32 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="329">
+      <node id="333">
         <label>std::logic_error</label>
-        <childnode refid="330" relation="public-inheritance">
+        <childnode refid="334" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="328">
+      <node id="332">
         <label>std::domain_error</label>
-        <childnode refid="329" relation="public-inheritance">
+        <childnode refid="333" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="330">
+      <node id="334">
         <label>std::exception</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="332">
+      <node id="336">
         <label>std::logic_error</label>
-        <childnode refid="333" relation="public-inheritance">
+        <childnode refid="337" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="331">
+      <node id="335">
         <label>std::domain_error</label>
-        <childnode refid="332" relation="public-inheritance">
+        <childnode refid="336" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="333">
+      <node id="337">
         <label>std::exception</label>
       </node>
     </collaborationgraph>

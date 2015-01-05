@@ -11,253 +11,253 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="400">
-        <label>basic_istringstream&lt; wchar_t &gt;</label>
-        <childnode refid="394" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="405">
-        <label>basic_fstream&lt; char &gt;</label>
-        <childnode refid="404" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="422">
-        <label>basic_ofstream&lt; wchar_t &gt;</label>
-        <childnode refid="420" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="408">
-        <label>basic_stringstream&lt; wchar_t &gt;</label>
-        <childnode refid="404" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="431">
-        <label>std::ostream&lt; char &gt;</label>
-        <childnode refid="420" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="429">
-        <label>std::ostringstream&lt; char &gt;</label>
-        <childnode refid="428" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="401">
-        <label>std::basic_ifstream&lt; Char &gt;</label>
-        <childnode refid="394" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="432">
-        <label>std::wostream&lt; wchar_t &gt;</label>
-        <childnode refid="420" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="394">
-        <label>std::basic_istream&lt; Char &gt;</label>
-        <childnode refid="389" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="434">
-        <label>std::wios&lt; wchar_t &gt;</label>
-        <childnode refid="389" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="413">
-        <label>std::stringstream&lt; char &gt;</label>
-        <childnode refid="412" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="404">
-        <label>std::basic_iostream&lt; Char &gt;</label>
-        <childnode refid="394" relation="public-inheritance">
-        </childnode>
-        <childnode refid="420" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="414">
-        <label>std::wstringstream&lt; wchar_t &gt;</label>
-        <childnode refid="412" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="392">
-        <label>basic_ostream&lt; char &gt;</label>
-        <childnode refid="389" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="417">
-        <label>std::wistringstream&lt; wchar_t &gt;</label>
-        <childnode refid="415" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="399">
-        <label>basic_istringstream&lt; char &gt;</label>
-        <childnode refid="394" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="402">
-        <label>std::ifstream&lt; char &gt;</label>
-        <childnode refid="401" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="425">
-        <label>std::basic_ofstream&lt; Char &gt;</label>
-        <childnode refid="420" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="403">
-        <label>std::wifstream&lt; wchar_t &gt;</label>
-        <childnode refid="401" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="391">
-        <label>basic_istream&lt; wchar_t &gt;</label>
-        <childnode refid="389" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="428">
-        <label>std::basic_ostringstream&lt; Char &gt;</label>
-        <childnode refid="420" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="421">
-        <label>basic_ofstream&lt; char &gt;</label>
-        <childnode refid="420" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="410">
-        <label>std::fstream&lt; char &gt;</label>
-        <childnode refid="409" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="407">
-        <label>basic_stringstream&lt; char &gt;</label>
-        <childnode refid="404" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="387">
-        <label>std::basic_ios&lt; char &gt;</label>
-        <childnode refid="386" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="388">
-        <label>std::basic_ios&lt; wchar_t &gt;</label>
-        <childnode refid="386" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="426">
-        <label>std::ofstream&lt; char &gt;</label>
-        <childnode refid="425" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="433">
-        <label>std::ios&lt; char &gt;</label>
-        <childnode refid="389" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="398">
-        <label>basic_iostream&lt; wchar_t &gt;</label>
-        <childnode refid="394" relation="public-inheritance">
-        </childnode>
-        <childnode refid="420" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="418">
-        <label>std::istream&lt; char &gt;</label>
-        <childnode refid="394" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="395">
-        <label>basic_ifstream&lt; char &gt;</label>
-        <childnode refid="394" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="416">
-        <label>std::istringstream&lt; char &gt;</label>
-        <childnode refid="415" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="424">
-        <label>basic_ostringstream&lt; wchar_t &gt;</label>
-        <childnode refid="420" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="420">
-        <label>std::basic_ostream&lt; Char &gt;</label>
-        <childnode refid="389" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="389">
-        <label>std::basic_ios&lt; Char &gt;</label>
-        <childnode refid="386" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="419">
-        <label>std::wistream&lt; wchar_t &gt;</label>
-        <childnode refid="394" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="396">
-        <label>basic_ifstream&lt; wchar_t &gt;</label>
-        <childnode refid="394" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="386">
-        <label>std::ios_base</label>
-      </node>
-      <node id="393">
-        <label>basic_ostream&lt; wchar_t &gt;</label>
-        <childnode refid="389" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="390">
-        <label>basic_istream&lt; char &gt;</label>
-        <childnode refid="389" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="397">
-        <label>basic_iostream&lt; char &gt;</label>
-        <childnode refid="394" relation="public-inheritance">
-        </childnode>
-        <childnode refid="420" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="423">
-        <label>basic_ostringstream&lt; char &gt;</label>
-        <childnode refid="420" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="412">
-        <label>std::basic_stringstream&lt; Char &gt;</label>
-        <childnode refid="404" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="430">
-        <label>std::wostringstream&lt; wchar_t &gt;</label>
-        <childnode refid="428" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="406">
-        <label>basic_fstream&lt; wchar_t &gt;</label>
-        <childnode refid="404" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="411">
-        <label>std::wfstream&lt; wchar_t &gt;</label>
-        <childnode refid="409" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="415">
-        <label>std::basic_istringstream&lt; Char &gt;</label>
-        <childnode refid="394" relation="public-inheritance">
+        <label>basic_istringstream&lt; wchar_t &gt;</label>
+        <childnode refid="398" relation="public-inheritance">
         </childnode>
       </node>
       <node id="409">
-        <label>std::basic_fstream&lt; Char &gt;</label>
-        <childnode refid="404" relation="public-inheritance">
+        <label>basic_fstream&lt; char &gt;</label>
+        <childnode refid="408" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="426">
+        <label>basic_ofstream&lt; wchar_t &gt;</label>
+        <childnode refid="424" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="412">
+        <label>basic_stringstream&lt; wchar_t &gt;</label>
+        <childnode refid="408" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="435">
+        <label>std::ostream&lt; char &gt;</label>
+        <childnode refid="424" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="433">
+        <label>std::ostringstream&lt; char &gt;</label>
+        <childnode refid="432" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="405">
+        <label>std::basic_ifstream&lt; Char &gt;</label>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="436">
+        <label>std::wostream&lt; wchar_t &gt;</label>
+        <childnode refid="424" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="398">
+        <label>std::basic_istream&lt; Char &gt;</label>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="438">
+        <label>std::wios&lt; wchar_t &gt;</label>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="417">
+        <label>std::stringstream&lt; char &gt;</label>
+        <childnode refid="416" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="408">
+        <label>std::basic_iostream&lt; Char &gt;</label>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+        <childnode refid="424" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="418">
+        <label>std::wstringstream&lt; wchar_t &gt;</label>
+        <childnode refid="416" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="396">
+        <label>basic_ostream&lt; char &gt;</label>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="421">
+        <label>std::wistringstream&lt; wchar_t &gt;</label>
+        <childnode refid="419" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="403">
+        <label>basic_istringstream&lt; char &gt;</label>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="406">
+        <label>std::ifstream&lt; char &gt;</label>
+        <childnode refid="405" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="429">
+        <label>std::basic_ofstream&lt; Char &gt;</label>
+        <childnode refid="424" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="407">
+        <label>std::wifstream&lt; wchar_t &gt;</label>
+        <childnode refid="405" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="395">
+        <label>basic_istream&lt; wchar_t &gt;</label>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="432">
+        <label>std::basic_ostringstream&lt; Char &gt;</label>
+        <childnode refid="424" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="425">
+        <label>basic_ofstream&lt; char &gt;</label>
+        <childnode refid="424" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="414">
+        <label>std::fstream&lt; char &gt;</label>
+        <childnode refid="413" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="411">
+        <label>basic_stringstream&lt; char &gt;</label>
+        <childnode refid="408" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="391">
+        <label>std::basic_ios&lt; char &gt;</label>
+        <childnode refid="390" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="392">
+        <label>std::basic_ios&lt; wchar_t &gt;</label>
+        <childnode refid="390" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="430">
+        <label>std::ofstream&lt; char &gt;</label>
+        <childnode refid="429" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="437">
+        <label>std::ios&lt; char &gt;</label>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="402">
+        <label>basic_iostream&lt; wchar_t &gt;</label>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+        <childnode refid="424" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="422">
+        <label>std::istream&lt; char &gt;</label>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="399">
+        <label>basic_ifstream&lt; char &gt;</label>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>std::istringstream&lt; char &gt;</label>
+        <childnode refid="419" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="428">
+        <label>basic_ostringstream&lt; wchar_t &gt;</label>
+        <childnode refid="424" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>std::basic_ostream&lt; Char &gt;</label>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="393">
+        <label>std::basic_ios&lt; Char &gt;</label>
+        <childnode refid="390" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="423">
+        <label>std::wistream&lt; wchar_t &gt;</label>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="400">
+        <label>basic_ifstream&lt; wchar_t &gt;</label>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="390">
+        <label>std::ios_base</label>
+      </node>
+      <node id="397">
+        <label>basic_ostream&lt; wchar_t &gt;</label>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="394">
+        <label>basic_istream&lt; char &gt;</label>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="401">
+        <label>basic_iostream&lt; char &gt;</label>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+        <childnode refid="424" relation="public-inheritance">
         </childnode>
       </node>
       <node id="427">
+        <label>basic_ostringstream&lt; char &gt;</label>
+        <childnode refid="424" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>std::basic_stringstream&lt; Char &gt;</label>
+        <childnode refid="408" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="434">
+        <label>std::wostringstream&lt; wchar_t &gt;</label>
+        <childnode refid="432" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="410">
+        <label>basic_fstream&lt; wchar_t &gt;</label>
+        <childnode refid="408" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="415">
+        <label>std::wfstream&lt; wchar_t &gt;</label>
+        <childnode refid="413" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="419">
+        <label>std::basic_istringstream&lt; Char &gt;</label>
+        <childnode refid="398" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="413">
+        <label>std::basic_fstream&lt; Char &gt;</label>
+        <childnode refid="408" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="431">
         <label>std::wofstream&lt; wchar_t &gt;</label>
-        <childnode refid="425" relation="public-inheritance">
+        <childnode refid="429" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

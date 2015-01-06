@@ -73,6 +73,7 @@ Classes</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata about a directory entry.  <a href="structboost_1_1afio_1_1stat__t.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1statfs__t.html">boost::afio::statfs_t</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Metadata about a filing system. Unsupported entries are -1.  <a href="structboost_1_1afio_1_1statfs__t.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1statfs__t_1_1f__flags__t.html">boost::afio::statfs_t::f_flags_t</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1directory__entry.html">boost::afio::directory_entry</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The abstract base class for an entry in a directory with lazily filled metadata.  <a href="classboost_1_1afio_1_1directory__entry.html#details">More...</a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1directory__entry__hash.html">boost::afio::directory_entry_hash</a></td></tr>
@@ -137,7 +138,7 @@ Namespaces</h2></td></tr>
 <br/></td></tr>
 <tr><td colspan="2"><h2><a name="define-members"></a>
 Defines</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="afio_8hpp.html#a7d6cb43e029a76765081fb3a2f47187d">BOOST_AFIO_HEADERS_ONLY</a>&#160;&#160;&#160;1</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="afio_8hpp.html#a7d6cb43e029a76765081fb3a2f47187d">BOOST_AFIO_HEADERS_ONLY</a>&#160;&#160;&#160;0</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if AFIO is compiled as headers only. Defaults to 1.  <a href="#a7d6cb43e029a76765081fb3a2f47187d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="afio_8hpp.html#a183b5c98a87ff28a56ea3bfdbe141ee9">BOOST_AFIO_USE_BOOST_THREAD</a>&#160;&#160;&#160;0</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if AFIO is bound against Boost.Thread or the C++ 11 STL thread. Defaults to 0.  <a href="#a183b5c98a87ff28a56ea3bfdbe141ee9"></a><br/></td></tr>
@@ -151,6 +152,10 @@ Defines</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>BOOST_AFIO_V1_NAMESPACE_BEGIN</b>&#160;&#160;&#160;namespace boost { namespace afio {</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2052639d8e84836a73d90c595e5dd1a6"></a><!-- doxytag: member="afio.hpp::BOOST_AFIO_V1_NAMESPACE_END" ref="a2052639d8e84836a73d90c595e5dd1a6" args="" -->
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>BOOST_AFIO_V1_NAMESPACE_END</b>&#160;&#160;&#160;} }</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a75b0e1ac1a86e60b2666ed2f64d36f"></a><!-- doxytag: member="afio.hpp::BOOST_AFIO_HEADERS_ONLY_MEMFUNC_SPEC" ref="a5a75b0e1ac1a86e60b2666ed2f64d36f" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BOOST_AFIO_HEADERS_ONLY_MEMFUNC_SPEC</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4f63024aa1238f1d6a067b3d7fb23c7"></a><!-- doxytag: member="afio.hpp::BOOST_AFIO_HEADERS_ONLY_VIRTUAL_SPEC" ref="ab4f63024aa1238f1d6a067b3d7fb23c7" args="" -->
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>BOOST_AFIO_HEADERS_ONLY_VIRTUAL_SPEC</b>&#160;&#160;&#160;virtual</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__macros.html#ga8abeb465d2ca6fa15b3c3754697e5577">BOOST_AFIO_VALIDATE_INPUTS</a>&#160;&#160;&#160;1</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate inputs at the point of instantiation.  <a href="group__macros.html#ga8abeb465d2ca6fa15b3c3754697e5577"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><b>BOOST_AFIO_DECLARE_CLASS_ENUM_AS_BITFIELD</b>(type)</td></tr>
@@ -280,13 +285,16 @@ Enumerations</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitflags for availability of metadata from `struct statfs_t`.  <a href="group__fs__metadata__flags.html#gadc548bc518f40378c9c9c97f4a994438">More...</a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; std_thread_pool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process__threadpool.html#ga508fdd37661e739fc26a5dec80db56a5">boost::afio::process_threadpool</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the process threadpool.  <a href="group__process__threadpool.html#ga508fdd37661e739fc26a5dec80db56a5"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">BOOST_AFIO_DECL <br class="typebreak"/>
+std::shared_ptr<br class="typebreak"/>
+&lt; std_thread_pool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__process__threadpool.html#gabb4747cc11ef3ee1bbb969bc78c238bb">boost::afio::process_threadpool</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the process threadpool.  <a href="group__process__threadpool.html#gabb4747cc11ef3ee1bbb969bc78c238bb"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa676bdf762c5e8d6f8826e199cae924f"></a><!-- doxytag: member="afio.hpp::static_assert" ref="aa676bdf762c5e8d6f8826e199cae924f" args="(static_cast&lt; size_t &gt;(OpType::Last)==sizeof(optypes)/sizeof(*optypes),&quot;You forgot to fix up the strings matching OpType&quot;)" -->
 &#160;</td><td class="memItemRight" valign="bottom"><b>boost::afio::detail::static_assert</b> (static_cast&lt; size_t &gt;(OpType::Last)==sizeof(optypes)/sizeof(*optypes),&quot;You forgot to fix up the strings matching OpType&quot;)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">std::shared_ptr<br class="typebreak"/>
-&lt; async_file_io_dispatcher_base &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher.html#ga422c01cd3653e6bb316a985ab3a1c6d1">boost::afio::make_async_file_io_dispatcher</a> (std::shared_ptr&lt; thread_source &gt; threadpool=process_threadpool(), file_flags flagsforce=file_flags::None, file_flags flagsmask=file_flags::None)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instatiates the best available async_file_io_dispatcher implementation for this system.  <a href="group__async__file__io__dispatcher.html#ga422c01cd3653e6bb316a985ab3a1c6d1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">BOOST_AFIO_DECL <br class="typebreak"/>
+std::shared_ptr<br class="typebreak"/>
+&lt; async_file_io_dispatcher_base &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher.html#ga412e5ba3eaf5c1df0499dad2ddd79fb8">boost::afio::make_async_file_io_dispatcher</a> (std::shared_ptr&lt; thread_source &gt; threadpool=process_threadpool(), file_flags flagsforce=file_flags::None, file_flags flagsmask=file_flags::None)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Instatiates the best available async_file_io_dispatcher implementation for this system.  <a href="group__async__file__io__dispatcher.html#ga412e5ba3eaf5c1df0499dad2ddd79fb8"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2"><a class="anchor" id="ab2379f238e2ebbacf46d54cbd434da38"></a><!-- doxytag: member="afio.hpp::when_all_ops_do" ref="ab2379f238e2ebbacf46d54cbd434da38" args="(std::shared_ptr&lt; when_all_state &gt; state)" -->
 template&lt;bool rethrow&gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>boost::afio::detail::when_all_ops_do</b> (std::shared_ptr&lt; when_all_state &gt; state)</td></tr>
@@ -375,7 +383,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="afio_8hpp.html#a7d6cb43e029a76765081fb3a2f47187d">BOOST_AFIO_HEADERS_ONLY</a>&#160;&#160;&#160;1</td>
+          <td class="memname">#define <a class="el" href="afio_8hpp.html#a7d6cb43e029a76765081fb3a2f47187d">BOOST_AFIO_HEADERS_ONLY</a>&#160;&#160;&#160;0</td>
         </tr>
       </table>
 </div>
@@ -461,7 +469,7 @@ inline BOOST_CONSTEXPR <span class="keywordtype">bool</span> operator!(type a) \
     return 0==<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(a); \
 }
 </pre></div>
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00354">354</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00359">359</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>

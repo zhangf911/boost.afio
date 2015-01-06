@@ -7,10 +7,10 @@
     <includes local="no">BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, atomic)</includes>
     <includes local="no">BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, chrono)</includes>
     <includes local="no">BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, condition_variable)</includes>
-    <includes local="no">BOOST_BINDLIB_INCLUDE_STL1z(bindlib, 1, filesystem)</includes>
+    <includes local="no">BOOST_BINDLIB_INCLUDE_STL1z(bindlib, boost, filesystem)</includes>
     <includes local="no">BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, future)</includes>
     <includes local="no">BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, mutex)</includes>
-    <includes local="no">BOOST_BINDLIB_INCLUDE_STL1z(bindlib, 1, networking)</includes>
+    <includes local="no">BOOST_BINDLIB_INCLUDE_STL1z(bindlib, boost, networking)</includes>
     <includes local="no">BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, ratio)</includes>
     <includes local="no">BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, thread)</includes>
     <includes local="yes">spinlock/include/boost/spinlock/concurrent_unordered_map.hpp</includes>
@@ -29,6 +29,9 @@
     <incdepgraph>
       <node id="6">
         <label>bindlib/include/import.h</label>
+      </node>
+      <node id="13">
+        <label>BOOST_BINDLIB_INCLUDE_STL1z(bindlib, boost, networking)</label>
       </node>
       <node id="28">
         <label>functional</label>
@@ -57,9 +60,6 @@
       <node id="17">
         <label>detail/Undoer.hpp</label>
       </node>
-      <node id="13">
-        <label>BOOST_BINDLIB_INCLUDE_STL1z(bindlib, 1, networking)</label>
-      </node>
       <node id="22">
         <label>detail/Utility.hpp</label>
       </node>
@@ -69,6 +69,9 @@
       <node id="19">
         <label>detail/ErrorHandling.hpp</label>
       </node>
+      <node id="10">
+        <label>BOOST_BINDLIB_INCLUDE_STL1z(bindlib, boost, filesystem)</label>
+      </node>
       <node id="11">
         <label>BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, future)</label>
       </node>
@@ -77,9 +80,6 @@
       </node>
       <node id="18">
         <label>utility</label>
-      </node>
-      <node id="10">
-        <label>BOOST_BINDLIB_INCLUDE_STL1z(bindlib, 1, filesystem)</label>
       </node>
       <node id="14">
         <label>BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, ratio)</label>
@@ -152,46 +152,54 @@
         </childnode>
       </node>
     </incdepgraph>
-    <innerclass refid="classenqueued__task_3_01_r_07_08_4" prot="public">enqueued_task&lt; R()&gt;</innerclass>
-    <innerclass refid="classenqueued__task_3_01void_07_08_4" prot="public">enqueued_task&lt; void()&gt;</innerclass>
-    <innerclass refid="classthread__source" prot="public">thread_source</innerclass>
-    <innerclass refid="classstd__thread__pool" prot="public">std_thread_pool</innerclass>
-    <innerclass refid="classstd__thread__pool_1_1worker" prot="private">std_thread_pool::worker</innerclass>
-    <innerclass refid="structstat__t" prot="public">stat_t</innerclass>
-    <innerclass refid="structstatfs__t" prot="public">statfs_t</innerclass>
-    <innerclass refid="classdirectory__entry" prot="public">directory_entry</innerclass>
-    <innerclass refid="structdirectory__entry__hash" prot="public">directory_entry_hash</innerclass>
-    <innerclass refid="classasync__io__handle" prot="public">async_io_handle</innerclass>
-    <innerclass refid="structasync__io__op" prot="public">async_io_op</innerclass>
-    <innerclass refid="structasync__path__op__req" prot="public">async_path_op_req</innerclass>
-    <innerclass refid="structasync__data__op__req_3_01const_01_t_01_4" prot="public">async_data_op_req&lt; const T &gt;</innerclass>
-    <innerclass refid="structasync__data__op__req_3_01void_01_4" prot="public">async_data_op_req&lt; void &gt;</innerclass>
-    <innerclass refid="structasync__data__op__req_3_01const_01void_01_4" prot="public">async_data_op_req&lt; const void &gt;</innerclass>
-    <innerclass refid="structasync__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" prot="public">async_data_op_req&lt; std::vector&lt; T, A &gt; &gt;</innerclass>
-    <innerclass refid="structasync__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" prot="public">async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</innerclass>
-    <innerclass refid="structasync__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4" prot="public">async_data_op_req&lt; std::array&lt; T, N &gt; &gt;</innerclass>
-    <innerclass refid="structasync__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4" prot="public">async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</innerclass>
-    <innerclass refid="structasync__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4" prot="public">async_data_op_req&lt; std::vector&lt; asio::mutable_buffer, A &gt; &gt;</innerclass>
-    <innerclass refid="structasync__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4" prot="public">async_data_op_req&lt; std::vector&lt; asio::const_buffer, A &gt; &gt;</innerclass>
-    <innerclass refid="structasync__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4" prot="public">async_data_op_req&lt; std::array&lt; asio::mutable_buffer, N &gt; &gt;</innerclass>
-    <innerclass refid="structasync__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4" prot="public">async_data_op_req&lt; std::array&lt; asio::const_buffer, N &gt; &gt;</innerclass>
-    <innerclass refid="structasync__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4" prot="public">async_data_op_req&lt; std::basic_string&lt; C, T, A &gt; &gt;</innerclass>
-    <innerclass refid="structasync__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4" prot="public">async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</innerclass>
-    <innerclass refid="structasync__data__op__req_3_01asio_1_1mutable__buffer_01_4" prot="public">async_data_op_req&lt; asio::mutable_buffer &gt;</innerclass>
-    <innerclass refid="structasync__data__op__req_3_01asio_1_1const__buffer_01_4" prot="public">async_data_op_req&lt; asio::const_buffer &gt;</innerclass>
-    <innerclass refid="structasync__enumerate__op__req" prot="public">async_enumerate_op_req</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl" prot="public">boost::afio::detail::enqueued_task_impl</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1enqueued__task__impl_1_1_private" prot="protected">boost::afio::detail::enqueued_task_impl::Private</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1enqueued__task_3_01_r_07_08_4" prot="public">boost::afio::enqueued_task&lt; R()&gt;</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1enqueued__task_3_01void_07_08_4" prot="public">boost::afio::enqueued_task&lt; void()&gt;</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1thread__source" prot="public">boost::afio::thread_source</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1std__thread__pool" prot="public">boost::afio::std_thread_pool</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1std__thread__pool_1_1worker" prot="private">boost::afio::std_thread_pool::worker</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1stat__t" prot="public">boost::afio::stat_t</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1statfs__t" prot="public">boost::afio::statfs_t</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1directory__entry" prot="public">boost::afio::directory_entry</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1directory__entry__hash" prot="public">boost::afio::directory_entry_hash</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1async__io__handle" prot="public">boost::afio::async_io_handle</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__io__op" prot="public">boost::afio::async_io_op</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1vs2013__variadic__overload__resolution__workaround" prot="public">boost::afio::detail::vs2013_variadic_overload_resolution_workaround</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1async__file__io__dispatcher__base" prot="public">boost::afio::async_file_io_dispatcher_base</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1when__all__state" prot="public">boost::afio::detail::when_all_state</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1when__any__state" prot="public">boost::afio::detail::when_any_state</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1select__when__ops__return__type" prot="public">boost::afio::detail::select_when_ops_return_type</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1select__when__ops__return__type_3_01false_01_4" prot="public">boost::afio::detail::select_when_ops_return_type&lt; false &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1enable__if__async__op" prot="public">boost::afio::detail::enable_if_async_op</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1enable__if__async__op_3_01is__all_00_01async__io__op_01_4" prot="public">boost::afio::detail::enable_if_async_op&lt; is_all, async_io_op &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__path__op__req" prot="public">boost::afio::async_path_op_req</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4" prot="public">boost::afio::detail::async_data_op_req_impl&lt; false &gt;</innerclass>
+    <innerclass refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4" prot="public">boost::afio::detail::async_data_op_req_impl&lt; true &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req" prot="public">boost::afio::async_data_op_req</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4" prot="public">boost::afio::async_data_op_req&lt; const T &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4" prot="public">boost::afio::async_data_op_req&lt; void &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4" prot="public">boost::afio::async_data_op_req&lt; const void &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::vector&lt; T, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::array&lt; T, N &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::vector&lt; asio::mutable_buffer, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::vector&lt; asio::const_buffer, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::array&lt; asio::mutable_buffer, N &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::array&lt; asio::const_buffer, N &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::basic_string&lt; C, T, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4" prot="public">boost::afio::async_data_op_req&lt; asio::mutable_buffer &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4" prot="public">boost::afio::async_data_op_req&lt; asio::const_buffer &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__enumerate__op__req" prot="public">boost::afio::async_enumerate_op_req</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1detail_1_1async__file__io__dispatcher__rwconverter" prot="public">boost::afio::detail::async_file_io_dispatcher_rwconverter</innerclass>
+    <innerclass refid="structstd_1_1hash_3_01boost_1_1afio_1_1directory__entry_01_4" prot="public">std::hash&lt; boost::afio::directory_entry &gt;</innerclass>
+    <innernamespace refid="namespaceboost">boost</innernamespace>
+    <innernamespace refid="namespaceboost_1_1afio">boost::afio</innernamespace>
+    <innernamespace refid="namespaceboost_1_1afio_1_1detail">boost::afio::detail</innernamespace>
+    <innernamespace refid="namespacestd">std</innernamespace>
       <sectiondef kind="define">
-      <memberdef kind="define" id="group__macros_1ga8abeb465d2ca6fa15b3c3754697e5577" prot="public" static="no">
-        <name>BOOST_AFIO_VALIDATE_INPUTS</name>
-        <initializer>1</initializer>
-        <briefdescription>
-<para>Validate inputs at the point of instantiation. </para>        </briefdescription>
-        <detaileddescription>
-<para>Turns on the checking of inputs for validity and throwing of exception conditions at the point of instantiation rather than waiting until those inputs are sent for dispatch. This, being very useful for debugging, defaults to 1 except when `NDEBUG` is defined i.e. final release builds. </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="54" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="54" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="define" id="afio_8hpp_1a7d6cb43e029a76765081fb3a2f47187d" prot="public" static="no">
         <name>BOOST_AFIO_HEADERS_ONLY</name>
         <initializer>1</initializer>
@@ -201,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="81" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="81" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="33"/>
       </memberdef>
       <memberdef kind="define" id="afio_8hpp_1a183b5c98a87ff28a56ea3bfdbe141ee9" prot="public" static="no">
         <name>BOOST_AFIO_USE_BOOST_THREAD</name>
@@ -212,7 +220,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="82" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="82" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="34"/>
       </memberdef>
       <memberdef kind="define" id="afio_8hpp_1ab5974d84a78dbcf8b072fca370f1291d" prot="public" static="no">
         <name>BOOST_AFIO_USE_BOOST_FILESYSTEM</name>
@@ -223,7 +231,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="83" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="83" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="35"/>
       </memberdef>
       <memberdef kind="define" id="afio_8hpp_1a5b90f4adb6bc09ca319c35c3448ee67a" prot="public" static="no">
         <name>ASIO_STANDALONE</name>
@@ -234,7 +242,51 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="84" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="84" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="36"/>
+      </memberdef>
+      <memberdef kind="define" id="afio_8hpp_1a401610ff222fc25b2f5194a628d0ca52" prot="public" static="no">
+        <name>BOOST_AFIO_V1_NAMESPACE</name>
+        <initializer>boost::afio</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="45" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="afio_8hpp_1a58c3ce35d210f818df9f4e3cf4c6575f" prot="public" static="no">
+        <name>BOOST_AFIO_V1_NAMESPACE_BEGIN</name>
+        <initializer>namespace boost { namespace afio {</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="46" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="afio_8hpp_1a2052639d8e84836a73d90c595e5dd1a6" prot="public" static="no">
+        <name>BOOST_AFIO_V1_NAMESPACE_END</name>
+        <initializer>} }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="47" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__macros_1ga8abeb465d2ca6fa15b3c3754697e5577" prot="public" static="no">
+        <name>BOOST_AFIO_VALIDATE_INPUTS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+<para>Validate inputs at the point of instantiation. </para>        </briefdescription>
+        <detaileddescription>
+<para>Turns on the checking of inputs for validity and throwing of exception conditions at the point of instantiation rather than waiting until those inputs are sent for dispatch. This, being very useful for debugging, defaults to 1 except when `NDEBUG` is defined i.e. final release builds. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="70" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="afio_8hpp_1a933046d7a31248aa271a978579ee8977" prot="public" static="no">
         <name>BOOST_AFIO_DECLARE_CLASS_ENUM_AS_BITFIELD</name>
@@ -261,1148 +313,19 @@ inline BOOST_CONSTEXPR bool operator!(type a) \
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="360" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="344" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="370" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="354" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="afio_8hpp_1ac794ed8c3e9fc1a99bd54d5b993d2b6c" prot="public" static="no">
         <name>BOOST_AFIO_DIRECTORY_ENTRY_ACCESS_METHOD</name>
         <param><defname>field</defname></param>
-        <initializer>fieldtype st_##field(std::shared_ptr&lt;<ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>&gt; dirh=std::shared_ptr&lt;<ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>&gt;()) { if(!(have_metadata&amp;metadata_flags::field)) { _int_fetch(metadata_flags::field, dirh); } return stat.st_##field; }</initializer>
+        <initializer>fieldtype st_##field(std::shared_ptr&lt;async_io_handle&gt; dirh=std::shared_ptr&lt;async_io_handle&gt;()) { if(!(have_metadata&amp;metadata_flags::field)) { _int_fetch(metadata_flags::field, dirh); } return stat.st_##field; }</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="734" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="733" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="enum">
-      <memberdef kind="enum" id="group__file__flags_1gaba2d48ea5b39d1ab48c6b892a2e2d0db" prot="public" static="no">
-        <name>file_flags</name>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252" prot="public">
-          <name>None</name>
-          <initializer>0</initializer>
-          <briefdescription>
-<para>No flags set. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba809abe96853e69894bbf8e5730b31348" prot="public">
-          <name>Read</name>
-          <initializer>1</initializer>
-          <briefdescription>
-<para>Read access. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa56670174817e3fed92bfd8182d7c0d1" prot="public">
-          <name>Write</name>
-          <initializer>2</initializer>
-          <briefdescription>
-<para>Write access. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba3c4d2d19c91b345c33a83ca9f551f4e1" prot="public">
-          <name>ReadWrite</name>
-          <initializer>3</initializer>
-          <briefdescription>
-<para>Read and write access. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba71f30510b076569dd2830e348fb77a13" prot="public">
-          <name>Append</name>
-          <initializer>4</initializer>
-          <briefdescription>
-<para>Append only. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba4877d9d67c11656d88fc82cfeb94a4f3" prot="public">
-          <name>Truncate</name>
-          <initializer>8</initializer>
-          <briefdescription>
-<para>Truncate existing file to zero. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba93479401ae71e13bd81626eb0b6c2d37" prot="public">
-          <name>Create</name>
-          <initializer>16</initializer>
-          <briefdescription>
-<para>Open and create if doesn&apos;t exist. Always creates sparse files if possible. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbafd41a51c46068f24398d21e5e8d23d16" prot="public">
-          <name>CreateOnlyIfNotExist</name>
-          <initializer>32</initializer>
-          <briefdescription>
-<para>Create and open only if doesn&apos;t exist. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaaafe04801c8d2d887be1a626b924c0be" prot="public">
-          <name>CreateCompressed</name>
-          <initializer>64</initializer>
-          <briefdescription>
-<para>Create a compressed file, needs to be combined with one of the other create flags. Only succeeds if supported by the underlying filing system. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa26ef493b962366c21fef788da134721" prot="public">
-          <name>WillBeSequentiallyAccessed</name>
-          <initializer>128</initializer>
-          <briefdescription>
-<para>Will be exclusively either read or written sequentially. If you&apos;re exclusively writing sequentially, <emphasis>strongly</emphasis> consider turning on OSDirect too. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba5ad1750347c8e7ce9513f1edb3dd3766" prot="public">
-          <name>WillBeRandomlyAccessed</name>
-          <initializer>256</initializer>
-          <briefdescription>
-<para>Will be randomly accessed, so don&apos;t bother with read-ahead. If you&apos;re using this, <emphasis>strongly</emphasis> consider turning on OSDirect too. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba676b9cbbb9391959f0dcd1427a125d2e" prot="public">
-          <name>NoSparse</name>
-          <initializer>512</initializer>
-          <briefdescription>
-<para>Don&apos;t create sparse files. May be ignored by some filing systems (e.g. ext4). </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba6085ffcc368053b7563ee66109aba163" prot="public">
-          <name>FastDirectoryEnumeration</name>
-          <initializer>(1&lt;&lt;10)</initializer>
-          <briefdescription>
-<para>Hold a file handle open to the containing directory of each open file for fast directory enumeration. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba837053fb9e27a38d2a153f5c85436644" prot="public">
-          <name>UniqueDirectoryHandle</name>
-          <initializer>(1&lt;&lt;11)</initializer>
-          <briefdescription>
-<para>Return a unique directory handle rather than a shared directory handle. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba648331f85d7765a2b1fcc854dfde389b" prot="public">
-          <name>OSDirect</name>
-          <initializer>(1&lt;&lt;16)</initializer>
-          <briefdescription>
-<para>Bypass the OS file buffers (only really useful for writing large files, or a lot of random reads and writes. Note you must 4Kb align everything if this is on) </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa0ba263c207e29e2d1d6823d4dc7790b" prot="public">
-          <name>OSMMap</name>
-          <initializer>(1&lt;&lt;17)</initializer>
-          <briefdescription>
-<para>Memory map files (for reads only). </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa3cc9b55b4157e3b0c799f941f21c001" prot="public">
-          <name>AlwaysSync</name>
-          <initializer>(1&lt;&lt;24)</initializer>
-          <briefdescription>
-<para>Ask the OS to not complete until the data is on the physical storage. Best used only with OSDirect, otherwise use SyncOnClose. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba58ef332941f8d3160a208d81a8d60f3f" prot="public">
-          <name>SyncOnClose</name>
-          <initializer>(1&lt;&lt;25)</initializer>
-          <briefdescription>
-<para>Automatically initiate an asynchronous flush just before file close, and fuse both operations so both must complete for close to complete. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba8f3aad3eb5f15e3dd74b03a781d3add2" prot="public">
-          <name>EnforceDependencyWriteOrder</name>
-          <initializer>(1&lt;&lt;26)</initializer>
-          <briefdescription>
-<para>Ensure that data writes to files reach physical storage in the same order as the op dependencies close files. Does NOT enforce ordering of individual data writes, ONLY all file writes accumulated before a file close. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbacf70efc695fc6209e99b9161f6feead3" prot="public">
-          <name>int_opening_link</name>
-          <initializer>(1&lt;&lt;29)</initializer>
-          <briefdescription>
-<para>Internal use only. Don&apos;t use. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaf8864b27bad71e73e66ab81cabd6f80d" prot="public">
-          <name>int_opening_dir</name>
-          <initializer>(1&lt;&lt;30)</initializer>
-          <briefdescription>
-<para>Internal use only. Don&apos;t use. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <briefdescription>
-<para>Bitwise file and directory open flags. </para>        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="373" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="369" bodyend="400"/>
-      </memberdef>
-      <memberdef kind="enum" id="group__async__op__flags_1gaa1e754d20cbcf3979c15a3acdc485194" prot="public" static="no">
-        <name>async_op_flags</name>
-        <enumvalue id="afio_8hpp_1gaa1e754d20cbcf3979c15a3acdc485194ab7e4e0120a041dbe6528b050c04269e0" prot="public">
-          <name>none</name>
-          <initializer>0</initializer>
-          <briefdescription>
-<para>No flags set. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1gaa1e754d20cbcf3979c15a3acdc485194a97994fd50a3715e96da85e7f8705a94b" prot="public">
-          <name>immediate</name>
-          <initializer>1</initializer>
-          <briefdescription>
-<para>Call chained completion immediately instead of scheduling for later. Make SURE your completion can not block! </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <briefdescription>
-<para>Bitwise async_op_flags flags. </para>        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="412" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="408" bodyend="415"/>
-      </memberdef>
-      <memberdef kind="enum" id="group__metadata__flags_1ga9d8b6ad0ba3e48637529aace103e11fe" prot="public" static="no">
-        <name>metadata_flags</name>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252" prot="public">
-          <name>None</name>
-          <initializer>0</initializer>
-          <briefdescription>
-<para>No flags set. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feac10cab3311c9fe30fbabf9137cd40d57" prot="public">
-          <name>dev</name>
-          <initializer>1&lt;&lt;0</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea139c04cc03df7bc6ef42b4c980633295" prot="public">
-          <name>ino</name>
-          <initializer>1&lt;&lt;1</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feaf3725cafa78eb43cc647b405bb6ecfab" prot="public">
-          <name>type</name>
-          <initializer>1&lt;&lt;2</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feaf8349ad4d55b29c0a8d67ce5133d812b" prot="public">
-          <name>perms</name>
-          <initializer>1&lt;&lt;3</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feae5931904ed7e577fa5eed81cd958b101" prot="public">
-          <name>nlink</name>
-          <initializer>1&lt;&lt;4</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feabac01aab6469c6bfe5c14c47db6c70ae" prot="public">
-          <name>uid</name>
-          <initializer>1&lt;&lt;5</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea59a4582b18102d52e3dbcdb7d375ad3e" prot="public">
-          <name>gid</name>
-          <initializer>1&lt;&lt;6</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea54564f6bbf6d481e362a29f555655c8e" prot="public">
-          <name>rdev</name>
-          <initializer>1&lt;&lt;7</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea6cadf31d6dee332908f69324b6586c6e" prot="public">
-          <name>atim</name>
-          <initializer>1&lt;&lt;8</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feaf20ac92bc8ba07fc15574ba1c7e9f1d2" prot="public">
-          <name>mtim</name>
-          <initializer>1&lt;&lt;9</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea0c5d1eae5a8751222b1c95be01f43a73" prot="public">
-          <name>ctim</name>
-          <initializer>1&lt;&lt;10</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea052a2b4924452fb4a73f2cb52b6e9d41" prot="public">
-          <name>size</name>
-          <initializer>1&lt;&lt;11</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea90f6648c93fb10ca5d9f8971c14b18c0" prot="public">
-          <name>allocated</name>
-          <initializer>1&lt;&lt;12</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea812d6b7f43a582bec81c201334c7f011" prot="public">
-          <name>blocks</name>
-          <initializer>1&lt;&lt;13</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea4793639d238a276c0276cd58e1bac350" prot="public">
-          <name>blksize</name>
-          <initializer>1&lt;&lt;14</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eab6b306ef981f5e21bb41ea2c2dbe8cd9" prot="public">
-          <name>flags</name>
-          <initializer>1&lt;&lt;15</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea180e16a81b2dab584c8f016811f7f75c" prot="public">
-          <name>gen</name>
-          <initializer>1&lt;&lt;16</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feab6dc240d3e90ef4d66ca95c64266315b" prot="public">
-          <name>birthtim</name>
-          <initializer>1&lt;&lt;17</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11feab78868b7a281dbe62227072695184f91" prot="public">
-          <name>sparse</name>
-          <initializer>1&lt;&lt;24</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1ga9d8b6ad0ba3e48637529aace103e11fea4a30f69758d35bc5429f005c2f452db5" prot="public">
-          <name>compressed</name>
-          <initializer>1&lt;&lt;25</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea911a49b7967ef10985d331841303b75f" prot="public">
-          <name>All</name>
-          <initializer>(size_t)-1</initializer>
-          <briefdescription>
-<para>Return the maximum possible metadata. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <briefdescription>
-<para>Bitflags for availability of metadata from `struct stat_t`. </para>        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="495" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="491" bodyend="518"/>
-      </memberdef>
-      <memberdef kind="enum" id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4e" prot="public" static="no">
-        <name>fs_metadata_flags</name>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252" prot="public">
-          <name>None</name>
-          <initializer>0</initializer>
-          <briefdescription>
-<para>No flags set. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eab6b306ef981f5e21bb41ea2c2dbe8cd9" prot="public">
-          <name>flags</name>
-          <initializer>1&lt;&lt;15</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eaecb1a04c6ee28b2f7bdcb7436e9bd75c" prot="public">
-          <name>bsize</name>
-          <initializer>1&lt;&lt;2</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eae0684b1388ebf8b6c42a66f632907e60" prot="public">
-          <name>iosize</name>
-          <initializer>1&lt;&lt;3</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea812d6b7f43a582bec81c201334c7f011" prot="public">
-          <name>blocks</name>
-          <initializer>1&lt;&lt;13</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eac49e205a998c5802667c993f78e313d2" prot="public">
-          <name>bfree</name>
-          <initializer>1&lt;&lt;5</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eacffd498642494d320131a4746947250a" prot="public">
-          <name>bavail</name>
-          <initializer>1&lt;&lt;6</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea015113bcd5fe3e10ee4219b19960c2a2" prot="public">
-          <name>files</name>
-          <initializer>1&lt;&lt;7</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea340e408e12e613c15e09fca65af93044" prot="public">
-          <name>ffree</name>
-          <initializer>1&lt;&lt;8</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eab384c4e0c43d78c7f520cc98bc0ddb56" prot="public">
-          <name>namemax</name>
-          <initializer>1&lt;&lt;9</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea20bcaac9f61ffe118327663a86b21e6c" prot="public">
-          <name>owner</name>
-          <initializer>1&lt;&lt;10</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea6566ff8600a9375ece649416983bbce5" prot="public">
-          <name>fsid</name>
-          <initializer>1&lt;&lt;11</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea3f7603d406342960f1d36bcc09ae449a" prot="public">
-          <name>fstypename</name>
-          <initializer>1&lt;&lt;12</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea207db61e764b545e7b9d6157d5d2cd11" prot="public">
-          <name>mntfromname</name>
-          <initializer>1&lt;&lt;13</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea7b0a7a589b054c261e4ab7d1d421c73b" prot="public">
-          <name>mntonname</name>
-          <initializer>1&lt;&lt;14</initializer>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4ea911a49b7967ef10985d331841303b75f" prot="public">
-          <name>All</name>
-          <initializer>(size_t)-1</initializer>
-          <briefdescription>
-<para>Return the maximum possible metadata. </para>          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <briefdescription>
-<para>Bitflags for availability of metadata from `struct statfs_t`. </para>        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="605" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="601" bodyend="622"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="func">
-      <memberdef kind="function" id="afio_8hpp_1a93458e2822fc3073cd7cd31e94760d93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>BOOST_BINDLIB_NAMESPACE_BEGIN</definition>
-        <argsstring>(BOOST_AFIO_V1) typedef unsigned long long off_t</argsstring>
-        <name>BOOST_BINDLIB_NAMESPACE_BEGIN</name>
-        <param>
-          <type>BOOST_AFIO_V1</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="90"/>
-      </memberdef>
-      <memberdef kind="function" id="group__process__threadpool_1ga3cd49e64119265af60e5162b76fd95ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::shared_ptr&lt; <ref refid="classstd__thread__pool" kindref="compound">std_thread_pool</ref> &gt;</type>
-        <definition>std::shared_ptr&lt;std_thread_pool&gt; process_threadpool</definition>
-        <argsstring>()</argsstring>
-        <name>process_threadpool</name>
-        <briefdescription>
-<para>Returns the process threadpool. </para>        </briefdescription>
-        <detaileddescription>
-<para>On first use, this instantiates a default <ref refid="classstd__thread__pool" kindref="compound">std_thread_pool</ref> running `BOOST_AFIO_MAX_NON_ASYNC_QUEUE_DEPTH` threads which will remain until its shared count reaches zero. </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="336"/>
-      </memberdef>
-      <memberdef kind="function" id="group__async__file__io__dispatcher_1ga60af4394d09808d966a31a80fe9142eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>std::shared_ptr&lt; async_file_io_dispatcher_base &gt;</type>
-        <definition>std::shared_ptr&lt;async_file_io_dispatcher_base&gt; make_async_file_io_dispatcher</definition>
-        <argsstring>(std::shared_ptr&lt; thread_source &gt; threadpool=process_threadpool(), file_flags flagsforce=file_flags::None, file_flags flagsmask=file_flags::None)</argsstring>
-        <name>make_async_file_io_dispatcher</name>
-        <param>
-          <type>std::shared_ptr&lt; <ref refid="classthread__source" kindref="compound">thread_source</ref> &gt;</type>
-          <declname>threadpool</declname>
-          <defval><ref refid="group__process__threadpool_1ga3cd49e64119265af60e5162b76fd95ca" kindref="member">process_threadpool</ref>()</defval>
-        </param>
-        <param>
-          <type><ref refid="group__file__flags_1gaba2d48ea5b39d1ab48c6b892a2e2d0db" kindref="member">file_flags</ref></type>
-          <declname>flagsforce</declname>
-          <defval><ref refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252" kindref="member">file_flags::None</ref></defval>
-        </param>
-        <param>
-          <type><ref refid="group__file__flags_1gaba2d48ea5b39d1ab48c6b892a2e2d0db" kindref="member">file_flags</ref></type>
-          <declname>flagsmask</declname>
-          <defval><ref refid="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252" kindref="member">file_flags::None</ref></defval>
-        </param>
-        <briefdescription>
-<para>Instatiates the best available async_file_io_dispatcher implementation for this system. </para>        </briefdescription>
-        <detaileddescription>
-<para>Note that the number of threads in the threadpool supplied is the maximum non-async op queue depth (e.g. file opens, closes etc.). For fast SSDs, there isn&apos;t much gain after eight-sixteen threads, so the process threadpool is set to eight by default. For slow hard drives, or worse, SANs, a queue depth of 64 or higher might deliver significant benefits.</para><para><simplesect kind="return"><para>A shared_ptr to the best available async_file_io_dispatcher implementation for this system. </para></simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>threadpool</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The threadpool instance to use for asynchronous dispatch. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>flagsforce</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The flags to bitwise OR with any opened file flags. Used to force on certain flags. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>flagsmask</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The flags to bitwise AND with any opened file flags. Used to force off certain flags.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk>
-[heading Example]
-[call_example]
-</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1745"/>
-      </memberdef>
-      <memberdef kind="function" id="afio_8hpp_1ab26eb2e2bae885db696a11a8fae88eb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>Iterator::value_type::type</type>
-        <definition>Iterator::value_type ::type when_all</definition>
-        <argsstring>(std::nothrow_t _, Iterator first, Iterator last)</argsstring>
-        <name>when_all</name>
-        <param>
-          <type>std::nothrow_t</type>
-          <declname>_</declname>
-        </param>
-        <param>
-          <type>Iterator</type>
-          <declname>first</declname>
-        </param>
-        <param>
-          <type>Iterator</type>
-          <declname>last</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1895" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1894" bodyend="1899"/>
-      </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1ga5fd1f0c0c526e5911c5279a36f865635" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>class Iterator</type>
-          </param>
-        </templateparamlist>
-        <type>detail::enable_if_async_op&lt; false, typename Iterator::value_type &gt;::type</type>
-        <definition>detail::enable_if_async_op&lt;false, typename Iterator::value_type&gt;::type when_any</definition>
-        <argsstring>(std::nothrow_t _, Iterator first, Iterator last)</argsstring>
-        <name>when_any</name>
-        <param>
-          <type>std::nothrow_t</type>
-          <declname>_</declname>
-        </param>
-        <param>
-          <type>Iterator</type>
-          <declname>first</declname>
-        </param>
-        <param>
-          <type>Iterator</type>
-          <declname>last</declname>
-        </param>
-        <briefdescription>
-<para>Returns a result when any the supplied ops complete. Does not propagate exception states. </para>        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
-<parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>class Iterator</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator type. </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>_</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An instance of std::nothrow_t. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>first</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing to the first <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>last</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing after the last <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> iterator batch of ops not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1913" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1912" bodyend="1917"/>
-      </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1ga461b0e5f0a135982cac72648a1689e83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>future&lt; std::vector&lt; std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt; &gt;</type>
-        <definition>future&lt;std::vector&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; &gt; when_all</definition>
-        <argsstring>(std::nothrow_t _, std::vector&lt; async_io_op &gt; ops)</argsstring>
-        <name>when_all</name>
-        <param>
-          <type>std::nothrow_t</type>
-          <declname>_</declname>
-        </param>
-        <param>
-          <type>std::vector&lt; <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> &gt;</type>
-          <declname>ops</declname>
-        </param>
-        <briefdescription>
-<para>Returns a result when all the supplied ops complete. Does not propagate exception states. </para>        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>_</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An instance of std::nothrow_t. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>ops</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A vector of the async_io_ops to wait upon.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> vector batch of ops not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1929" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1928" bodyend="1933"/>
-      </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1gae51d3626cd8b9d2c5fe1d3b55c451fbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>future&lt; std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt;</type>
-        <definition>future&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; when_any</definition>
-        <argsstring>(std::nothrow_t _, std::vector&lt; async_io_op &gt; ops)</argsstring>
-        <name>when_any</name>
-        <param>
-          <type>std::nothrow_t</type>
-          <declname>_</declname>
-        </param>
-        <param>
-          <type>std::vector&lt; <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> &gt;</type>
-          <declname>ops</declname>
-        </param>
-        <briefdescription>
-<para>Returns a result when any the supplied ops complete. Does not propagate exception states. </para>        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>_</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An instance of std::nothrow_t. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>ops</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A vector of the async_io_ops to wait upon.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> vector batch of ops not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1945" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1944" bodyend="1949"/>
-      </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1gaaa1c16812271841ff671cfe7f231cb0b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>class Iterator</type>
-          </param>
-        </templateparamlist>
-        <type>detail::enable_if_async_op&lt; true, typename Iterator::value_type &gt;::type</type>
-        <definition>detail::enable_if_async_op&lt;true, typename Iterator::value_type&gt;::type when_all</definition>
-        <argsstring>(Iterator first, Iterator last)</argsstring>
-        <name>when_all</name>
-        <param>
-          <type>Iterator</type>
-          <declname>first</declname>
-        </param>
-        <param>
-          <type>Iterator</type>
-          <declname>last</declname>
-        </param>
-        <briefdescription>
-<para>Returns a result when all the supplied ops complete. Propagates exception states. </para>        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
-<parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>class Iterator</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator type. </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>first</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing to the first <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>last</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing after the last <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> iterator batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1962" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1961" bodyend="1966"/>
-      </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1ga5da03663689177b4c470ce149c87361d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>class Iterator</type>
-          </param>
-        </templateparamlist>
-        <type>detail::enable_if_async_op&lt; false, typename Iterator::value_type &gt;::type</type>
-        <definition>detail::enable_if_async_op&lt;false, typename Iterator::value_type&gt;::type when_any</definition>
-        <argsstring>(Iterator first, Iterator last)</argsstring>
-        <name>when_any</name>
-        <param>
-          <type>Iterator</type>
-          <declname>first</declname>
-        </param>
-        <param>
-          <type>Iterator</type>
-          <declname>last</declname>
-        </param>
-        <briefdescription>
-<para>Returns a result when any the supplied ops complete. Propagates exception states. </para>        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
-<parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>class Iterator</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator type. </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>first</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing to the first <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>last</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing after the last <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> iterator batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1979" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1978" bodyend="1983"/>
-      </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1ga536ffef275e197aa15d35a3a4dd3a9bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>future&lt; std::vector&lt; std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt; &gt;</type>
-        <definition>future&lt;std::vector&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; &gt; when_all</definition>
-        <argsstring>(std::vector&lt; async_io_op &gt; ops)</argsstring>
-        <name>when_all</name>
-        <param>
-          <type>std::vector&lt; <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> &gt;</type>
-          <declname>ops</declname>
-        </param>
-        <briefdescription>
-<para>Returns a result when all the supplied ops complete. Propagates exception states. </para>        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>ops</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A vector of the async_io_ops to wait upon.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> vector batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1994" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1993" bodyend="1998"/>
-      </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1ga73eaeec972558c72429fbd5042307036" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>future&lt; std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt;</type>
-        <definition>future&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; when_any</definition>
-        <argsstring>(std::vector&lt; async_io_op &gt; ops)</argsstring>
-        <name>when_any</name>
-        <param>
-          <type>std::vector&lt; <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> &gt;</type>
-          <declname>ops</declname>
-        </param>
-        <briefdescription>
-<para>Returns a result when any the supplied ops complete. Propagates exception states. </para>        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>ops</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A vector of the async_io_ops to wait upon.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> vector batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2009" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2008" bodyend="2013"/>
-      </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1gaff9f004d3897d9bf83261e45a050c252" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>future&lt; std::vector&lt; std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt; &gt;</type>
-        <definition>future&lt;std::vector&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; &gt; when_all</definition>
-        <argsstring>(std::nothrow_t _, async_io_op op)</argsstring>
-        <name>when_all</name>
-        <param>
-          <type>std::nothrow_t</type>
-          <declname>_</declname>
-        </param>
-        <param>
-          <type><ref refid="structasync__io__op" kindref="compound">async_io_op</ref></type>
-          <declname>op</declname>
-        </param>
-        <briefdescription>
-<para>Returns a result when the supplied op completes. Does not propagate exception states. </para>        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>_</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An instance of std::nothrow_t. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>op</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> convenience single op not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(1).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2025" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2024" bodyend="2028"/>
-      </memberdef>
-      <memberdef kind="function" id="group__when__all__ops_1ga7e235ffd635c6b38fa0c416c872ae044" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>future&lt; std::vector&lt; std::shared_ptr&lt; <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt; &gt;</type>
-        <definition>future&lt;std::vector&lt;std::shared_ptr&lt;async_io_handle&gt; &gt; &gt; when_all</definition>
-        <argsstring>(async_io_op op)</argsstring>
-        <name>when_all</name>
-        <param>
-          <type><ref refid="structasync__io__op" kindref="compound">async_io_op</ref></type>
-          <declname>op</declname>
-        </param>
-        <briefdescription>
-<para>Returns a result when the supplied op completes. Propagates exception states. </para>        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classasync__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>op</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An <ref refid="structasync__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> convenience single op exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(1).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2039" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2038" bodyend="2042"/>
-      </memberdef>
-      <memberdef kind="function" id="group__make__async__data__op__req_1gadc690546179d67a27772655c9455c47e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>class T</type>
-          </param>
-        </templateparamlist>
-        <type>async_data_op_req&lt; typename std::remove_pointer&lt; typename std::decay&lt; T &gt;::type &gt;::type &gt;</type>
-        <definition>async_data_op_req&lt;typename std::remove_pointer&lt;typename std::decay&lt;T&gt;::type&gt;::type&gt; make_async_data_op_req</definition>
-        <argsstring>(async_io_op _precondition, T &amp;&amp;v, off_t _where)</argsstring>
-        <name>make_async_data_op_req</name>
-        <param>
-          <type><ref refid="structasync__io__op" kindref="compound">async_io_op</ref></type>
-          <declname>_precondition</declname>
-        </param>
-        <param>
-          <type>T &amp;&amp;</type>
-          <declname>v</declname>
-        </param>
-        <param>
-          <type>off_t</type>
-          <declname>_where</declname>
-        </param>
-        <briefdescription>
-<para>Convenience instantiator of a async_data_op_req, letting the compiler deduce the template specialisation to use. </para>        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>An async_data_op_req matching the supplied parameter type. Constructs an instance. </para></simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>_precondition</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An optional precondition for this operation </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>v</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A pointer to memory or reference to object into which to read or write </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>_where</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The offset at which to transfer</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> length deducing</qbk.distinguish>   <qbk>
-[heading Example]
-[readwrite_example]
-</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2676" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2675" bodyend="2679"/>
-      </memberdef>
-      <memberdef kind="function" id="group__make__async__data__op__req_1ga7a472d3abdf6c990c3475b8c120863dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>class T</type>
-          </param>
-        </templateparamlist>
-        <type>async_data_op_req&lt; typename std::remove_pointer&lt; typename std::decay&lt; T &gt;::type &gt;::type &gt;</type>
-        <definition>async_data_op_req&lt;typename std::remove_pointer&lt;typename std::decay&lt;T&gt;::type&gt;::type&gt; make_async_data_op_req</definition>
-        <argsstring>(async_io_op _precondition, T &amp;&amp;v, size_t _length, off_t _where)</argsstring>
-        <name>make_async_data_op_req</name>
-        <param>
-          <type><ref refid="structasync__io__op" kindref="compound">async_io_op</ref></type>
-          <declname>_precondition</declname>
-        </param>
-        <param>
-          <type>T &amp;&amp;</type>
-          <declname>v</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>_length</declname>
-        </param>
-        <param>
-          <type>off_t</type>
-          <declname>_where</declname>
-        </param>
-        <briefdescription>
-<para>Convenience instantiator of a async_data_op_req, letting the compiler deduce the template specialisation to use. </para>        </briefdescription>
-        <detaileddescription>
-<para><simplesect kind="return"><para>An async_data_op_req matching the supplied parameter type. Constructs an instance. </para></simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>_precondition</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An optional precondition for this operation </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>v</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A pointer to memory or reference to object into which to read or write </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>_where</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The offset at which to transfer </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>_length</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The number of bytes to transfer</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> length specifying</qbk.distinguish>   <qbk>
-[heading Example]
-[readwrite_example]
-</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2693" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2692" bodyend="2696"/>
-      </memberdef>
-      <memberdef kind="function" id="afio_8hpp_1abeda7e99c9aaa7388ee878546daf72f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>BOOST_BINDLIB_NAMESPACE_END</definition>
-        <argsstring>(BOOST_AFIO_V1) 1 std</argsstring>
-        <name>BOOST_BINDLIB_NAMESPACE_END</name>
-        <param>
-          <type>BOOST_AFIO_V1</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2985" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2979" bodyend="2995"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="744" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="743" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

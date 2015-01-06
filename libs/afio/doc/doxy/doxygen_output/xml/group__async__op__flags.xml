@@ -4,9 +4,9 @@
     <compoundname>async_op_flags</compoundname>
     <title>x</title>
       <sectiondef kind="enum">
-      <memberdef kind="enum" id="group__async__op__flags_1gaa1e754d20cbcf3979c15a3acdc485194" prot="public" static="no">
+      <memberdef kind="enum" id="group__async__op__flags_1ga3d03d4b42e2ae303e282d0a1dec22976" prot="public" static="no">
         <name>async_op_flags</name>
-        <enumvalue id="afio_8hpp_1gaa1e754d20cbcf3979c15a3acdc485194ab7e4e0120a041dbe6528b050c04269e0" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga3d03d4b42e2ae303e282d0a1dec22976a78dc04e05e979dbe81227be8cdf9f74d" prot="public">
           <name>none</name>
           <initializer>0</initializer>
           <briefdescription>
@@ -14,7 +14,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaa1e754d20cbcf3979c15a3acdc485194a97994fd50a3715e96da85e7f8705a94b" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga3d03d4b42e2ae303e282d0a1dec22976aef60ffef4d2047749b204c64707b834b" prot="public">
           <name>immediate</name>
           <initializer>1</initializer>
           <briefdescription>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="412" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="408" bodyend="415"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="422" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="418" bodyend="425"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

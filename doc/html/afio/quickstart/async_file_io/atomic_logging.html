@@ -1,0 +1,95 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>A multiprocess safe log file</title>
+<link rel="stylesheet" href="../../../../../libs/afio/doc/html/myboostbook.css" type="text/css">
+<meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
+<link rel="home" href="../../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.30">
+<link rel="up" href="../async_file_io.html" title="Asynchronous file i/o">
+<link rel="prev" href="file_concat.html" title="A less toy example: Concatenating files">
+<link rel="next" href="so_what.html" title="What benefit does asynchronous file i/o bring me? A demonstration of AFIO's power">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table cellpadding="2" width="100%"><tr>
+<td valign="top"><img alt="Boost C++ Libraries" width="277" height="86" src="../../../../../boost.png"></td>
+<td align="center"><a href="../../../../../index.html">Home</a></td>
+<td align="center"><a href="../../../../../libs/libraries.htm">Libraries</a></td>
+<td align="center"><a href="http://www.boost.org/users/people.html">People</a></td>
+<td align="center"><a href="http://www.boost.org/users/faq.html">FAQ</a></td>
+<td align="center"><a href="../../../../../more/index.htm">More</a></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="file_concat.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../async_file_io.html"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../afio.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="so_what.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
+</div>
+<div class="section">
+<div class="titlepage"><div><div><h4 class="title">
+<a name="afio.quickstart.async_file_io.atomic_logging"></a><a class="link" href="atomic_logging.html" title="A multiprocess safe log file">A multiprocess
+        safe log file</a>
+</h4></div></div></div>
+<p>
+          TripleGit, the forthcoming reliable graph database store, uses a neat trick
+          to avoid having to use file locking during transaction commits, thus allowing
+          multiple processes to concurrently read and write the graph store without
+          file locking. Each collection of hashes which form the tree which makes
+          up some given version of the graph is itself a hashed object in the content
+          addressable store, and to transact a new version of that graph one takes
+          the following steps:
+        </p>
+<p>
+          1. Atomically append a new 512 bit (64 byte) record to the log file for
+          the graph. This record contains the 256 bit hash (32 bytes) of the tree
+          object representing the new version, two bytes of the record index where
+          we think this entry will append modulo 16 bits (2 bytes), the local version
+          number we think this ought to be (2 bytes), the current date and time (8
+          bytes), reserved fields (4 bytes) and a SipHash of the 48 bytes preceding
+          the final 12 bytes of the record plus the 64 bytes of the last known good
+          record, and finally four bytes of Hamming (127, 120) coding for the preceding
+          60 bytes (480 bits) which enable one bitrot per 15 bytes to be healed.
+        </p>
+<p>
+          2. If more than one thread or process appends simultaneously, due to the
+          atomicity only one will come first. We can tell if we "won" by
+          reading backwards from the end until we find our entry which if it has
+          the correct record index we know it is now the canonical new version. If
+          it does not have the correct index, we will have to recalculate a new transaction
+          from the latest known good entry or return an error to the end user as
+          per their request.
+        </p>
+<p>
+          3. It may now occur to you that surely the log file will grow forever!
+          Luckily, modern filing systems are <span class="emphasis"><em>extent based</em></span> which
+          means you can <span class="quote">&#8220;<span class="quote">punch holes</span>&#8221;</span> into file storage, and AFIO has
+          a function for that called <a class="link" href="../../reference/classes/async_file_io_dispatcher_base/zero_2_batch.html" title="zero (batch)"><code class="computeroutput"><span class="identifier">async_file_io_dispatcher_base</span><span class="special">::</span><span class="identifier">zero</span><span class="special">()</span></code></a>
+          which ostensibly zeros a region of a file, but will also deallocate it
+          if the filing system supports it. In our example below, we simply chop
+          off the front of the log file such that no more than 4Kb of data is actually
+          stored on disc, even if the log file appears to be many gigabytes or even
+          terabytes in size!
+        </p>
+<p>
+          (It isn't shown in the example code below, but the 8 byte hash is used
+          to roll back the log to a known good state in the event of sudden power
+          loss which can be detected by spotting if the file begins with zeros as
+          for proper shutdown the dud entries in the log are removed, and the entries
+          compacted. One examines the index at the end of the file and walks backwards
+          for about 128Kb, healing any bit flips and checking the hashs. If any do
+          not match up, the entire index is parsed from the beginning up until the
+          first entry with an incorrect hash, at which point the index is truncated)
+        </p>
+</div>
+<table xmlns:rev="http://www.cs.rpi.edu/~gregod/boost/tools/doc/revision" width="100%"><tr>
+<td align="left"></td>
+<td align="right"><div class="copyright-footer">Copyright &#169; 2013-2015 Niall Douglas
+      and Paul Kirth<p>
+        Distributed under the Boost Software License, Version 1.0. (See accompanying
+        file LICENSE_1_0.txt or copy at <a href="http://www.boost.org/LICENSE_1_0.txt" target="_top">http://www.boost.org/LICENSE_1_0.txt</a>)
+      </p>
+</div></td>
+</tr></table>
+<hr>
+<div class="spirit-nav">
+<a accesskey="p" href="file_concat.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../async_file_io.html"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../afio.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="so_what.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
+</div>
+</body>
+</html>

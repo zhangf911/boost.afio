@@ -3,12 +3,6 @@
   <compounddef id="namespaceboost_1_1afio_1_1detail" kind="namespace">
     <compoundname>boost::afio::detail</compoundname>
     <innerclass refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl" prot="public">boost::afio::detail::enqueued_task_impl</innerclass>
-    <innerclass refid="structboost_1_1afio_1_1detail_1_1get__future__type" prot="public">boost::afio::detail::get_future_type</innerclass>
-    <innerclass refid="structboost_1_1afio_1_1detail_1_1select__when__futures__return__type" prot="public">boost::afio::detail::select_when_futures_return_type</innerclass>
-    <innerclass refid="structboost_1_1afio_1_1detail_1_1select__when__futures__return__type_3_01false_00_01_t_01_4" prot="public">boost::afio::detail::select_when_futures_return_type&lt; false, T &gt;</innerclass>
-    <innerclass refid="structboost_1_1afio_1_1detail_1_1enable__if__future" prot="public">boost::afio::detail::enable_if_future</innerclass>
-    <innerclass refid="structboost_1_1afio_1_1detail_1_1enable__if__future_3_01is__all_00_01future_3_01_t_01_4_01_4" prot="public">boost::afio::detail::enable_if_future&lt; is_all, future&lt; T &gt; &gt;</innerclass>
-    <innerclass refid="structboost_1_1afio_1_1detail_1_1enable__if__future_3_01is__all_00_01shared__future_3_01_t_01_4_01_4" prot="public">boost::afio::detail::enable_if_future&lt; is_all, shared_future&lt; T &gt; &gt;</innerclass>
     <innerclass refid="structboost_1_1afio_1_1detail_1_1vs2013__variadic__overload__resolution__workaround" prot="public">boost::afio::detail::vs2013_variadic_overload_resolution_workaround</innerclass>
     <innerclass refid="structboost_1_1afio_1_1detail_1_1when__all__state" prot="public">boost::afio::detail::when_all_state</innerclass>
     <innerclass refid="structboost_1_1afio_1_1detail_1_1when__any__state" prot="public">boost::afio::detail::when_any_state</innerclass>
@@ -134,6 +128,27 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a30ff563832406f28c408e0cfbcc91a78" prot="public">
+          <name>zero</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a2d5beaf69a400e9891e657825a73aa74" prot="public">
+          <name>extents</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a849e6c51cfc3780b0b42bbfb4fc105cc" prot="public">
+          <name>statfs</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <enumvalue id="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959aff0871a017a958de7ea24b4fb3673d36" prot="public">
           <name>Last</name>
           <briefdescription>
@@ -147,7 +162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="575" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="569" bodyend="594"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="447" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="443" bodyend="469"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -172,7 +187,10 @@
         &quot;truncate&quot;,
         &quot;barrier&quot;,
         &quot;enumerate&quot;,
-        &quot;adopt&quot;
+        &quot;adopt&quot;,
+        &quot;zero&quot;,
+        &quot;extents&quot;,
+        &quot;statfs&quot;
     }</initializer>
         <briefdescription>
         </briefdescription>
@@ -180,112 +198,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="615" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="598" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="490" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="470" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="namespaceboost_1_1afio_1_1detail_1a89b099619cb57e7b2de539674e6e11dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>class returns_t</type>
-          </param>
-          <param>
-            <type>class future_type</type>
-          </param>
-        </templateparamlist>
-        <type>returns_t</type>
-        <definition>returns_t boost::afio::detail::when_all_futures_do</definition>
-        <argsstring>(std::shared_ptr&lt; std::vector&lt; future_type &gt;&gt; futures)</argsstring>
-        <name>when_all_futures_do</name>
-        <param>
-          <type>std::shared_ptr&lt; std::vector&lt; future_type &gt;&gt;</type>
-          <declname>futures</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="330" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="329" bodyend="336"/>
-      </memberdef>
-      <memberdef kind="function" id="namespaceboost_1_1afio_1_1detail_1ac2a3c9505f667897d8d06f2787d40646" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>class InputIterator</type>
-          </param>
-        </templateparamlist>
-        <type>shared_future&lt; std::vector&lt; typename <ref refid="structboost_1_1afio_1_1detail_1_1get__future__type" kindref="compound">get_future_type</ref>&lt; typename InputIterator::value_type &gt;::type &gt; &gt;</type>
-        <definition>shared_future&lt;std::vector&lt;typename get_future_type&lt;typename InputIterator::value_type&gt;::type&gt; &gt; boost::afio::detail::when_all_futures</definition>
-        <argsstring>(InputIterator first, InputIterator last)</argsstring>
-        <name>when_all_futures</name>
-        <param>
-          <type>InputIterator</type>
-          <declname>first</declname>
-        </param>
-        <param>
-          <type>InputIterator</type>
-          <declname>last</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="338" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="337" bodyend="352"/>
-      </memberdef>
-      <memberdef kind="function" id="namespaceboost_1_1afio_1_1detail_1ac67dcbccc5e35b94fa9d0931ed8749ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>class returns_t</type>
-          </param>
-          <param>
-            <type>class future_type</type>
-          </param>
-        </templateparamlist>
-        <type>returns_t</type>
-        <definition>returns_t boost::afio::detail::when_any_futures_do</definition>
-        <argsstring>(std::shared_ptr&lt; std::vector&lt; future_type &gt;&gt; futures)</argsstring>
-        <name>when_any_futures_do</name>
-        <param>
-          <type>std::shared_ptr&lt; std::vector&lt; future_type &gt;&gt;</type>
-          <declname>futures</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="354" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="353" bodyend="357"/>
-      </memberdef>
-      <memberdef kind="function" id="namespaceboost_1_1afio_1_1detail_1a000557616b3604e55f7d13396ced5bdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>class InputIterator</type>
-          </param>
-        </templateparamlist>
-        <type>shared_future&lt; std::pair&lt; size_t, typename <ref refid="structboost_1_1afio_1_1detail_1_1get__future__type" kindref="compound">get_future_type</ref>&lt; typename InputIterator::value_type &gt;::type &gt; &gt;</type>
-        <definition>shared_future&lt;std::pair&lt;size_t, typename get_future_type&lt;typename InputIterator::value_type&gt;::type&gt; &gt; boost::afio::detail::when_any_futures</definition>
-        <argsstring>(InputIterator first, InputIterator last)</argsstring>
-        <name>when_any_futures</name>
-        <param>
-          <type>InputIterator</type>
-          <declname>first</declname>
-        </param>
-        <param>
-          <type>InputIterator</type>
-          <declname>last</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="359" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="358" bodyend="373"/>
-      </memberdef>
       <memberdef kind="function" id="namespaceboost_1_1afio_1_1detail_1aa676bdf762c5e8d6f8826e199cae924f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>boost::afio::detail::static_assert</definition>
@@ -305,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="616"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="491"/>
       </memberdef>
       <memberdef kind="function" id="namespaceboost_1_1afio_1_1detail_1ab2379f238e2ebbacf46d54cbd434da38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -329,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1770" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1769" bodyend="1790"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1769" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1768" bodyend="1792"/>
       </memberdef>
       <memberdef kind="function" id="namespaceboost_1_1afio_1_1detail_1a1cf9aac5f43844e9b29f188d61a74656" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -360,9 +276,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1792" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1791" bodyend="1800"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1794" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1793" bodyend="1802"/>
       </memberdef>
-      <memberdef kind="function" id="namespaceboost_1_1afio_1_1detail_1adcebbdde7870f429cd90b78e9beabadc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="namespaceboost_1_1afio_1_1detail_1a65c7191bc488fd3f4e4f1ed701588bca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>bool</type>
@@ -370,13 +286,25 @@
             <defname>rethrow</defname>
           </param>
         </templateparamlist>
-        <type>void</type>
-        <definition>void boost::afio::detail::when_any_ops_do</definition>
-        <argsstring>(std::shared_ptr&lt; when_any_state &gt; state)</argsstring>
+        <type>std::pair&lt; bool, std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt;</type>
+        <definition>std::pair&lt;bool, std::shared_ptr&lt;async_io_handle&gt; &gt; boost::afio::detail::when_any_ops_do</definition>
+        <argsstring>(std::shared_ptr&lt; when_any_state &gt; state, size_t idx, size_t id, async_io_op h)</argsstring>
         <name>when_any_ops_do</name>
         <param>
           <type>std::shared_ptr&lt; <ref refid="structboost_1_1afio_1_1detail_1_1when__any__state" kindref="compound">when_any_state</ref> &gt;</type>
           <declname>state</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>idx</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
+          <declname>h</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -384,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1807" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1806" bodyend="1821"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1841" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1840" bodyend="1859"/>
       </memberdef>
       <memberdef kind="function" id="namespaceboost_1_1afio_1_1detail_1a0a09827ed7a36972585fda14fec43a13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -415,7 +343,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1823" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1822" bodyend="1831"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1861" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1860" bodyend="1876"/>
       </memberdef>
       <memberdef kind="function" id="namespaceboost_1_1afio_1_1detail_1a24ece0c0005765247dfbb0cb49e757b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -444,13 +372,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2769" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2768" bodyend="2772"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2815" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2814" bodyend="2818"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>The namespace containing Boost.ASIO internal details. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="67"/>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="104"/>
   </compounddef>
 </doxygen>

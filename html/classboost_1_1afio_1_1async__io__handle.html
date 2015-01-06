@@ -91,9 +91,9 @@ chrono::system_clock::time_point &amp;&#160;</td><td class="memItemRight" valign
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns how many bytes have been written since this handle was opened.  <a href="#ae1605e52ac09a914e12458ab04bff870"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">off_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1async__io__handle.html#ad8408b86b370511ca8bcd45fd38ae2af">write_count_since_fsync</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns how many bytes have been written since this handle was last fsynced.  <a href="#ad8408b86b370511ca8bcd45fd38ae2af"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classboost_1_1afio_1_1directory__entry.html">directory_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1async__io__handle.html#ab944ade4e43f124919b9d9041c0b7db1">direntry</a> (<a class="el" href="group__metadata__flags.html#ga228a95ca96f053e74e69e6d1ab23eccb">metadata_flags</a> wanted=<a class="el" href="classboost_1_1afio_1_1directory__entry.html#ad4b6107f53eeda85fc01a451ee7bcb38">directory_entry::metadata_fastpath</a>()) const =0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classboost_1_1afio_1_1directory__entry.html">directory_entry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1async__io__handle.html#ab944ade4e43f124919b9d9041c0b7db1">direntry</a> (<a class="el" href="group__metadata__flags.html#ga228a95ca96f053e74e69e6d1ab23eccb">metadata_flags</a> wanted=<a class="el" href="classboost_1_1afio_1_1directory__entry.html#a3ffc87e0e2d28facff8e2c5dd82c9e60">directory_entry::metadata_fastpath</a>()) const =0</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a mostly filled <a class="el" href="classboost_1_1afio_1_1directory__entry.html" title="The abstract base class for an entry in a directory with lazily filled metadata.">directory_entry</a> for the file or directory referenced by this handle. Use `metadata_flags::All` if you want it as complete as your platform allows, even at the cost of severe performance loss.  <a href="#ab944ade4e43f124919b9d9041c0b7db1"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1afio_1_1stat__t.html">stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1async__io__handle.html#a9a8176f75043ea499125efa3cba8e3c2">lstat</a> (<a class="el" href="group__metadata__flags.html#ga228a95ca96f053e74e69e6d1ab23eccb">metadata_flags</a> wanted=<a class="el" href="classboost_1_1afio_1_1directory__entry.html#ad4b6107f53eeda85fc01a451ee7bcb38">directory_entry::metadata_fastpath</a>()) const </td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="structboost_1_1afio_1_1stat__t.html">stat_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1async__io__handle.html#a9a8176f75043ea499125efa3cba8e3c2">lstat</a> (<a class="el" href="group__metadata__flags.html#ga228a95ca96f053e74e69e6d1ab23eccb">metadata_flags</a> wanted=<a class="el" href="classboost_1_1afio_1_1directory__entry.html#a3ffc87e0e2d28facff8e2c5dd82c9e60">directory_entry::metadata_fastpath</a>()) const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a mostly filled <a class="el" href="structboost_1_1afio_1_1stat__t.html" title="Metadata about a directory entry.">stat_t</a> structure for the file or directory referenced by this handle. Use `metadata_flags::All` if you want it as complete as your platform allows, even at the cost of severe performance loss.  <a href="#a9a8176f75043ea499125efa3cba8e3c2"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">virtual filesystem::path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1async__io__handle.html#ad606edaf4ac390728128b20803cd14f6">target</a> () const =0</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the target path of this handle if it is a symbolic link.  <a href="#ad606edaf4ac390728128b20803cd14f6"></a><br/></td></tr>
@@ -133,7 +133,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>The abstract base class encapsulating a platform-specific file handle. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00814">814</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00823">823</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 </div><hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a5fbdc8e0c84387a9444771424983eb66"></a><!-- doxytag: member="boost::afio::async_io_handle::parent" ref="a5fbdc8e0c84387a9444771424983eb66" args="() const " -->
 <div class="memitem">
@@ -151,7 +151,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns the parent of this io handle. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00836">836</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00845">845</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -171,7 +171,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns a handle to the directory containing this handle. Only works if `file_flags::FastDirectoryEnumeration` was specified when this handle was opened. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00838">838</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00847">847</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -209,7 +209,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns when this handle was opened. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00842">842</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00851">851</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -229,7 +229,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns the path of this io handle. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00844">844</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00853">853</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -249,7 +249,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns the final flags used when this handle was opened. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00846">846</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00855">855</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -269,7 +269,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>True if this handle was opened as a file. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00848">848</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00857">857</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -289,7 +289,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>True if this handle was opened as a directory. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00850">850</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00859">859</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -309,7 +309,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>True if this handle was opened as a symlink. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00852">852</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00861">861</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -329,7 +329,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns how many bytes have been read since this handle was opened. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00854">854</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00863">863</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -349,7 +349,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns how many bytes have been written since this handle was opened. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00856">856</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00865">865</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -369,7 +369,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns how many bytes have been written since this handle was last fsynced. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00858">858</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00867">867</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -381,7 +381,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
           <td class="memname">virtual <a class="el" href="classboost_1_1afio_1_1directory__entry.html">directory_entry</a> <a class="el" href="classboost_1_1afio_1_1async__io__handle.html#ab944ade4e43f124919b9d9041c0b7db1">boost::afio::async_io_handle::direntry</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__metadata__flags.html#ga228a95ca96f053e74e69e6d1ab23eccb">metadata_flags</a>&#160;</td>
-          <td class="paramname"><em>wanted</em> = <code><a class="el" href="classboost_1_1afio_1_1directory__entry.html#ad4b6107f53eeda85fc01a451ee7bcb38">directory_entry::metadata_fastpath</a>()</code></td><td>)</td>
+          <td class="paramname"><em>wanted</em> = <code><a class="el" href="classboost_1_1afio_1_1directory__entry.html#a3ffc87e0e2d28facff8e2c5dd82c9e60">directory_entry::metadata_fastpath</a>()</code></td><td>)</td>
           <td> const<code> [pure virtual]</code></td>
         </tr>
       </table>
@@ -400,7 +400,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
           <td class="memname"><a class="el" href="structboost_1_1afio_1_1stat__t.html">stat_t</a> <a class="el" href="classboost_1_1afio_1_1async__io__handle.html#a9a8176f75043ea499125efa3cba8e3c2">boost::afio::async_io_handle::lstat</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__metadata__flags.html#ga228a95ca96f053e74e69e6d1ab23eccb">metadata_flags</a>&#160;</td>
-          <td class="paramname"><em>wanted</em> = <code><a class="el" href="classboost_1_1afio_1_1directory__entry.html#ad4b6107f53eeda85fc01a451ee7bcb38">directory_entry::metadata_fastpath</a>()</code></td><td>)</td>
+          <td class="paramname"><em>wanted</em> = <code><a class="el" href="classboost_1_1afio_1_1directory__entry.html#a3ffc87e0e2d28facff8e2c5dd82c9e60">directory_entry::metadata_fastpath</a>()</code></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -409,7 +409,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns a mostly filled <a class="el" href="structboost_1_1afio_1_1stat__t.html" title="Metadata about a directory entry.">stat_t</a> structure for the file or directory referenced by this handle. Use `metadata_flags::All` if you want it as complete as your platform allows, even at the cost of severe performance loss. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00862">862</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00871">871</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>

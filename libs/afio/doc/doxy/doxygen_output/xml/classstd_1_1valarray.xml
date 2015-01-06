@@ -29,12 +29,12 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="635">
+      <node id="758">
         <label>T</label>
       </node>
-      <node id="634">
+      <node id="757">
         <label>std::valarray&lt; T &gt;</label>
-        <childnode refid="635" relation="usage">
+        <childnode refid="758" relation="usage">
           <edgelabel>elements</edgelabel>
         </childnode>
       </node>

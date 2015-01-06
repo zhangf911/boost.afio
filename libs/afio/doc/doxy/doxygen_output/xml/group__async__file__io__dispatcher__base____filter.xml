@@ -3,6 +3,99 @@
   <compounddef id="group__async__file__io__dispatcher__base____filter" kind="group">
     <compoundname>async_file_io_dispatcher_base__filter</compoundname>
     <title>x</title>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__async__file__io__dispatcher__base____filter_1ga10eca40ababf6e5fa3b3a88ce73f81b6" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void boost::afio::async_file_io_dispatcher_base::filter_t(detail::OpType, async_io_op &amp;)</definition>
+        <argsstring>(detail::OpType, async_io_op &amp;)</argsstring>
+        <name>filter_t</name>
+        <briefdescription>
+<para>The type of an op filter callback handler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1051" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1051" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__async__file__io__dispatcher__base____filter_1ga303b84424610f3834b70b0778ae1f0b3" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void boost::afio::async_file_io_dispatcher_base::filter_readwrite_t(detail::OpType, async_io_handle *, const detail::async_data_op_req_impl&lt; true &gt; &amp;, off_t, size_t, size_t, const asio::error_code &amp;, size_t)</definition>
+        <argsstring>(detail::OpType, async_io_handle *, const detail::async_data_op_req_impl&lt; true &gt; &amp;, off_t, size_t, size_t, const asio::error_code &amp;, size_t)</argsstring>
+        <name>filter_readwrite_t</name>
+        <briefdescription>
+<para>The type of a readwrite filter callback handler. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1053" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1053" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__async__file__io__dispatcher__base____filter_1gacc15e280c64ab2f734b097069ed86240" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void boost::afio::async_file_io_dispatcher_base::post_op_filter_clear</definition>
+        <argsstring>()</argsstring>
+        <name>post_op_filter_clear</name>
+        <briefdescription>
+<para>Clears the post op and readwrite filters. Not threadsafe. </para>        </briefdescription>
+        <detaileddescription>
+<para> <qbk>[heading Complexity]O(1).</qbk>   <qbk>[heading Example][filter_example]</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1060"/>
+      </memberdef>
+      <memberdef kind="function" id="group__async__file__io__dispatcher__base____filter_1ga9e25e1fbc055efe53bd63f6d700866f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void boost::afio::async_file_io_dispatcher_base::post_op_filter</definition>
+        <argsstring>(std::vector&lt; std::pair&lt; detail::OpType, std::function&lt; async_file_io_dispatcher_base::filter_t &gt;&gt;&gt; filters)</argsstring>
+        <name>post_op_filter</name>
+        <param>
+          <type>std::vector&lt; std::pair&lt; detail::OpType, std::function&lt; async_file_io_dispatcher_base::filter_t &gt;&gt;&gt;</type>
+          <declname>filters</declname>
+        </param>
+        <briefdescription>
+<para>Install op filters for non-buffer taking ops. Not threadsafe. </para>        </briefdescription>
+        <detaileddescription>
+<para>`std::function&lt;async_file_io_dispatcher_base::filter_t&gt;` will be called after every op of type `detail::OpType` completes (`detail::OpType::Unknown` means call this filter for all ops) with the op type and op output.</para><para>Note that filters are currently implemented as a linear scan, so a full iteration of all filters is done for every op completed. The filter is called straight after an op&apos;s future is set and before any completions are issued. Any exceptions thrown by the filter are thrown away.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A batch of pairs of op type to be filtered and bound filter handler functions of type `filter_t`</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk>[heading Complexity]O(N) where N is the total number of filters currently configured.</qbk>   <qbk>[heading Example][filter_example]</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1075"/>
+      </memberdef>
+      <memberdef kind="function" id="group__async__file__io__dispatcher__base____filter_1ga820758ad7b27f3fa3ca9fa4445db50ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void boost::afio::async_file_io_dispatcher_base::post_readwrite_filter</definition>
+        <argsstring>(std::vector&lt; std::pair&lt; detail::OpType, std::function&lt; async_file_io_dispatcher_base::filter_readwrite_t &gt;&gt;&gt; filters)</argsstring>
+        <name>post_readwrite_filter</name>
+        <param>
+          <type>std::vector&lt; std::pair&lt; detail::OpType, std::function&lt; async_file_io_dispatcher_base::filter_readwrite_t &gt;&gt;&gt;</type>
+          <declname>filters</declname>
+        </param>
+        <briefdescription>
+<para>Install read/write op filters, useful for tight ASIO integration. Not threadsafe. </para>        </briefdescription>
+        <detaileddescription>
+<para>`std::function&lt;async_file_io_dispatcher_base::filter_buffers_t&gt;` will be called after every op of type `detail::OpType` completes (`detail::OpType::Unknown` means call this filter for all ops) with the op type, file handle, op input, file offset, buffers offset, buffers amount, error state and bytes transferred. Any filter other than <ref refid="group__async__file__io__dispatcher__base____filedirops_1ga389a54f126d95872fa3981bbb0f4ca49" kindref="member">read()</ref> and <ref refid="group__async__file__io__dispatcher__base____filedirops_1ga2489d452720accc47d1bfeb5525cfd5b" kindref="member">write()</ref> will be ignored, for those use <ref refid="group__async__file__io__dispatcher__base____filter_1ga9e25e1fbc055efe53bd63f6d700866f7" kindref="member">post_op_filter()</ref>.</para><para>Note that buffer filters are currently implemented as a linear scan, so a full iteration of all buffer filters is done for every read/write op completed. The filter is called straight after a read or write operation has completed, and BEFORE any checks that it transferred the data it was supposed to. Any exceptions thrown by the filter are reported as if the read/write operation threw them, and filter processing stops at the filter which threw.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A batch of pairs of op type to be filtered and bound filter handler functions of type `filter_buffers_t`</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk>[heading Complexity]O(N) where N is the total number of filters currently configured.</qbk>   <qbk>[heading Example][filter_example]</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1093"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

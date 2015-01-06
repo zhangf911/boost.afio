@@ -214,8 +214,8 @@ template&lt;class T &gt; </td></tr>
 <tr><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>write</b> (const std::vector&lt; <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html">async_data_op_req</a>&lt; T &gt;&gt; &amp;ops)</td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____misc.html#ga2985fb8a06fe014d74fbcf7f4302d82b">page_size</a> () BOOST_NOEXCEPT_OR_NOTHROW</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the page size of this architecture which is useful for calculating direct i/o multiples.  <a href="group__async__file__io__dispatcher__base____misc.html#ga2985fb8a06fe014d74fbcf7f4302d82b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__async__file__io__dispatcher__base____misc.html#ga0dbf229a0b5733133f74aabf22d47609">page_size</a> () noexcept</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the page size of this architecture which is useful for calculating direct i/o multiples.  <a href="group__async__file__io__dispatcher__base____misc.html#ga0dbf229a0b5733133f74aabf22d47609"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a547e953737c7270c6616976383221f91"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::async_file_io_dispatcher_base" ref="a547e953737c7270c6616976383221f91" args="(std::shared_ptr&lt; thread_source &gt; threadpool, file_flags flagsforce, file_flags flagsmask)" -->
@@ -287,9 +287,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Abstract base class for dispatching file i/o asynchronously. </p>
-<p>This is a reference counted instance with platform-specific implementation optionally hidden in object code. Construct an instance using the `boost<a class="el" href="group__async__file__io__dispatcher.html#ga422c01cd3653e6bb316a985ab3a1c6d1" title="Instatiates the best available async_file_io_dispatcher implementation for this system.">afio::make_async_file_io_dispatcher()</a>` function.</p>
+<p>This is a reference counted instance with platform-specific implementation optionally hidden in object code. Construct an instance using the `boost<a class="el" href="group__async__file__io__dispatcher.html#ga412e5ba3eaf5c1df0499dad2ddd79fb8" title="Instatiates the best available async_file_io_dispatcher implementation for this system.">afio::make_async_file_io_dispatcher()</a>` function.</p>
  
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l01010">1010</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l01019">1019</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="afdaf5abc2bc92330dc7c85295dfbcaed"></a><!-- doxytag: member="boost::afio::async_file_io_dispatcher_base::~async_file_io_dispatcher_base" ref="afdaf5abc2bc92330dc7c85295dfbcaed" args="()" -->
 <div class="memitem">
@@ -453,7 +453,7 @@ template&lt;class R &gt; </div>
   </dd>
 </dl>
     
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02836">2836</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02845">2845</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>

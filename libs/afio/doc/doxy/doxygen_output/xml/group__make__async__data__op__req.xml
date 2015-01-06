@@ -4,18 +4,18 @@
     <compoundname>make_async_data_op_req</compoundname>
     <title>x</title>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__make__async__data__op__req_1gadc690546179d67a27772655c9455c47e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="group__make__async__data__op__req_1ga9f62915b030e2f2ed5115b034e9721a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>class T</type>
           </param>
         </templateparamlist>
         <type>async_data_op_req&lt; typename std::remove_pointer&lt; typename std::decay&lt; T &gt;::type &gt;::type &gt;</type>
-        <definition>async_data_op_req&lt;typename std::remove_pointer&lt;typename std::decay&lt;T&gt;::type&gt;::type&gt; make_async_data_op_req</definition>
+        <definition>async_data_op_req&lt;typename std::remove_pointer&lt;typename std::decay&lt;T&gt;::type&gt;::type&gt; boost::afio::make_async_data_op_req</definition>
         <argsstring>(async_io_op _precondition, T &amp;&amp;v, off_t _where)</argsstring>
         <name>make_async_data_op_req</name>
         <param>
-          <type><ref refid="structasync__io__op" kindref="compound">async_io_op</ref></type>
+          <type>async_io_op</type>
           <declname>_precondition</declname>
         </param>
         <param>
@@ -27,9 +27,9 @@
           <declname>_where</declname>
         </param>
         <briefdescription>
-<para>Convenience instantiator of a async_data_op_req, letting the compiler deduce the template specialisation to use. </para>        </briefdescription>
+<para>Convenience instantiator of a <ref refid="structboost_1_1afio_1_1async__data__op__req" kindref="compound">async_data_op_req</ref>, letting the compiler deduce the template specialisation to use. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>An async_data_op_req matching the supplied parameter type. Constructs an instance. </para></simplesect>
+<para><simplesect kind="return"><para>An <ref refid="structboost_1_1afio_1_1async__data__op__req" kindref="compound">async_data_op_req</ref> matching the supplied parameter type. Constructs an instance. </para></simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>_precondition</parametername>
@@ -58,20 +58,20 @@
 </qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2676" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2675" bodyend="2679"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2690" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2689" bodyend="2693"/>
       </memberdef>
-      <memberdef kind="function" id="group__make__async__data__op__req_1ga7a472d3abdf6c990c3475b8c120863dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="group__make__async__data__op__req_1gaaefe9a4cc37c21ba775399a66749b10b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>class T</type>
           </param>
         </templateparamlist>
         <type>async_data_op_req&lt; typename std::remove_pointer&lt; typename std::decay&lt; T &gt;::type &gt;::type &gt;</type>
-        <definition>async_data_op_req&lt;typename std::remove_pointer&lt;typename std::decay&lt;T&gt;::type&gt;::type&gt; make_async_data_op_req</definition>
+        <definition>async_data_op_req&lt;typename std::remove_pointer&lt;typename std::decay&lt;T&gt;::type&gt;::type&gt; boost::afio::make_async_data_op_req</definition>
         <argsstring>(async_io_op _precondition, T &amp;&amp;v, size_t _length, off_t _where)</argsstring>
         <name>make_async_data_op_req</name>
         <param>
-          <type><ref refid="structasync__io__op" kindref="compound">async_io_op</ref></type>
+          <type>async_io_op</type>
           <declname>_precondition</declname>
         </param>
         <param>
@@ -87,9 +87,9 @@
           <declname>_where</declname>
         </param>
         <briefdescription>
-<para>Convenience instantiator of a async_data_op_req, letting the compiler deduce the template specialisation to use. </para>        </briefdescription>
+<para>Convenience instantiator of a <ref refid="structboost_1_1afio_1_1async__data__op__req" kindref="compound">async_data_op_req</ref>, letting the compiler deduce the template specialisation to use. </para>        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>An async_data_op_req matching the supplied parameter type. Constructs an instance. </para></simplesect>
+<para><simplesect kind="return"><para>An <ref refid="structboost_1_1afio_1_1async__data__op__req" kindref="compound">async_data_op_req</ref> matching the supplied parameter type. Constructs an instance. </para></simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>_precondition</parametername>
@@ -125,7 +125,7 @@
 </qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2693" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2692" bodyend="2696"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2707" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2706" bodyend="2710"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

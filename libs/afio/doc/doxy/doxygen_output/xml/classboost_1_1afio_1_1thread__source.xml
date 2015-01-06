@@ -5,29 +5,29 @@
     <derivedcompoundref refid="classboost_1_1afio_1_1std__thread__pool" prot="public" virt="non-virtual">boost::afio::std_thread_pool</derivedcompoundref>
     <includes refid="afio_8hpp" local="no">afio.hpp</includes>
       <sectiondef kind="protected-attrib">
-      <memberdef kind="variable" id="classboost_1_1afio_1_1thread__source_1a98badd2b3c10773fe800d7140fb10fa9" prot="protected" static="no" mutable="no">
-        <type>boost::asio::io_service &amp;</type>
-        <definition>boost::asio::io_service&amp; boost::afio::thread_source::service</definition>
+      <memberdef kind="variable" id="classboost_1_1afio_1_1thread__source_1a5fdcd41e6740f6475b9dee8b372c4347" prot="protected" static="no" mutable="no">
+        <type>asio::io_service &amp;</type>
+        <definition>asio::io_service&amp; boost::afio::thread_source::service</definition>
         <argsstring></argsstring>
         <name>service</name>
-        <reimplementedby refid="classboost_1_1afio_1_1std__thread__pool_1a39e7eb98ddb0fbe3595676aa1e053946">service</reimplementedby>
+        <reimplementedby refid="classboost_1_1afio_1_1std__thread__pool_1a7141bef92433fa254addc3bdbdad75db">service</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="216" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="216" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="253" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="253" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
-      <memberdef kind="function" id="classboost_1_1afio_1_1thread__source_1a52cc51f56a89f500f535776d99e9d737" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classboost_1_1afio_1_1thread__source_1af8d987d7614898676e04d889336079ac" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>boost::afio::thread_source::thread_source</definition>
-        <argsstring>(boost::asio::io_service &amp;_service)</argsstring>
+        <argsstring>(asio::io_service &amp;_service)</argsstring>
         <name>thread_source</name>
         <param>
-          <type>boost::asio::io_service &amp;</type>
+          <type>asio::io_service &amp;</type>
           <declname>_service</declname>
         </param>
         <briefdescription>
@@ -36,7 +36,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="217" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="217" bodyend="217"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="254" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="254" bodyend="254"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1thread__source_1ac35076fafc379b7112bd4842be6f9925" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
@@ -49,13 +49,29 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="218" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="218" bodyend="218"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="255" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="255" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classboost_1_1afio_1_1thread__source_1a7b1592f5c309f5315d7f5d1c550c6389" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classboost_1_1afio_1_1thread__source" kindref="compound">thread_source</ref> &amp;</type>
+        <definition>thread_source&amp; boost::afio::thread_source::operator=</definition>
+        <argsstring>(const thread_source &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classboost_1_1afio_1_1thread__source" kindref="compound">thread_source</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="256"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classboost_1_1afio_1_1thread__source_1a36337df058d08a2706aaf658e2ec90ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>boost::asio::io_service &amp;</type>
-        <definition>boost::asio::io_service&amp; boost::afio::thread_source::io_service</definition>
+      <memberdef kind="function" id="classboost_1_1afio_1_1thread__source_1ab1ad9150c265b69e72f92f0d70caf0b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>asio::io_service &amp;</type>
+        <definition>asio::io_service&amp; boost::afio::thread_source::io_service</definition>
         <argsstring>()</argsstring>
         <name>io_service</name>
         <briefdescription>
@@ -64,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="221" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="221" bodyend="221"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="259" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="259" bodyend="259"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1thread__source_1af6a0b8aa8cf5e0f02caae57c5065360e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -94,7 +110,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="224" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="223" bodyend="226"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="262" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="261" bodyend="264"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1thread__source_1aaa3076b99fb48ad27f50c4446c987603" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -133,32 +149,33 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="229" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="228" bodyend="235"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="267" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="266" bodyend="273"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Abstract base class for a source of thread workers. </para>    </briefdescription>
     <detaileddescription>
-<para>Note that in Boost 1.54, and possibly later versions, `boost::asio::io_service` on Windows appears to dislike being destructed during static data deinit, hence why this inherits from `std::enable_shared_from_this&lt;&gt;` in order that it may be reference count deleted before static data deinit occurs. </para>    </detaileddescription>
+<para>Note that in Boost 1.54, and possibly later versions, `asio::io_service` on Windows appears to dislike being destructed during static data deinit, hence why this inherits from `std::enable_shared_from_this&lt;&gt;` in order that it may be reference count deleted before static data deinit occurs. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="208">
+      <node id="200">
         <label>boost::afio::thread_source</label>
         <link refid="classboost_1_1afio_1_1thread__source"/>
       </node>
-      <node id="209">
+      <node id="201">
         <label>boost::afio::std_thread_pool</label>
         <link refid="classboost_1_1afio_1_1std__thread__pool"/>
-        <childnode refid="208" relation="public-inheritance">
+        <childnode refid="200" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="214" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="213" bodyend="236"/>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="251" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="250" bodyend="274"/>
     <listofallmembers>
       <member refid="classboost_1_1afio_1_1thread__source_1af6a0b8aa8cf5e0f02caae57c5065360e" prot="public" virt="non-virtual"><scope>boost::afio::thread_source</scope><name>enqueue</name></member>
       <member refid="classboost_1_1afio_1_1thread__source_1aaa3076b99fb48ad27f50c4446c987603" prot="public" virt="non-virtual"><scope>boost::afio::thread_source</scope><name>enqueue</name></member>
-      <member refid="classboost_1_1afio_1_1thread__source_1a36337df058d08a2706aaf658e2ec90ad" prot="public" virt="non-virtual"><scope>boost::afio::thread_source</scope><name>io_service</name></member>
-      <member refid="classboost_1_1afio_1_1thread__source_1a98badd2b3c10773fe800d7140fb10fa9" prot="protected" virt="non-virtual"><scope>boost::afio::thread_source</scope><name>service</name></member>
-      <member refid="classboost_1_1afio_1_1thread__source_1a52cc51f56a89f500f535776d99e9d737" prot="protected" virt="non-virtual"><scope>boost::afio::thread_source</scope><name>thread_source</name></member>
+      <member refid="classboost_1_1afio_1_1thread__source_1ab1ad9150c265b69e72f92f0d70caf0b9" prot="public" virt="non-virtual"><scope>boost::afio::thread_source</scope><name>io_service</name></member>
+      <member refid="classboost_1_1afio_1_1thread__source_1a7b1592f5c309f5315d7f5d1c550c6389" prot="protected" virt="non-virtual"><scope>boost::afio::thread_source</scope><name>operator=</name></member>
+      <member refid="classboost_1_1afio_1_1thread__source_1a5fdcd41e6740f6475b9dee8b372c4347" prot="protected" virt="non-virtual"><scope>boost::afio::thread_source</scope><name>service</name></member>
+      <member refid="classboost_1_1afio_1_1thread__source_1af8d987d7614898676e04d889336079ac" prot="protected" virt="non-virtual"><scope>boost::afio::thread_source</scope><name>thread_source</name></member>
       <member refid="classboost_1_1afio_1_1thread__source_1ac35076fafc379b7112bd4842be6f9925" prot="protected" virt="virtual"><scope>boost::afio::thread_source</scope><name>~thread_source</name></member>
     </listofallmembers>
   </compounddef>

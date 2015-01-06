@@ -1,13 +1,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
-<title>A less toy example</title>
+<title>A less toy example: Concatenating files</title>
 <link rel="stylesheet" href="../../../../../libs/afio/doc/html/myboostbook.css" type="text/css">
 <meta name="generator" content="DocBook XSL Stylesheets V1.76.1">
 <link rel="home" href="../../../afio.html" title="Chapter&#160;1.&#160;Boost.AFIO 1.30">
 <link rel="up" href="../async_file_io.html" title="Asynchronous file i/o">
 <link rel="prev" href="hello_world.html" title="Hello World, asynchronously!">
-<link rel="next" href="so_what.html" title="What benefit does asynchronous file i/o bring me? A demonstration of AFIO's power">
+<link rel="next" href="atomic_logging.html" title="A multiprocess safe log file">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
 <table cellpadding="2" width="100%"><tr>
@@ -20,12 +20,12 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="hello_world.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../async_file_io.html"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../afio.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="so_what.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="hello_world.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../async_file_io.html"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../afio.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="atomic_logging.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 <div class="section">
 <div class="titlepage"><div><div><h4 class="title">
-<a name="afio.quickstart.async_file_io.file_concat"></a><a class="link" href="file_concat.html" title="A less toy example">A less toy
-        example</a>
+<a name="afio.quickstart.async_file_io.file_concat"></a><a class="link" href="file_concat.html" title="A less toy example: Concatenating files">A less toy
+        example: Concatenating files</a>
 </h4></div></div></div>
 <p>
           The Hello World example didn't really demonstrate why using AFIO is any
@@ -181,9 +181,12 @@
           physical devices, in which case you'd see maximum performance). Some might
           also argue that firing a consumer producer thread per source file would
           be just as easy, albeit that output file position management across threads
-          might be slightly tricky. Let us now look at an example where the AFIO
-          implementation blows away a naive multithreaded example: finding which
-          files in a directory tree contain a regular expression.
+          might be slightly tricky.
+        </p>
+<p>
+          Let us now look at two examples where the AFIO implementation blows away
+          a naive multithreaded example: a multiprocess safe log file and finding
+          which files in a directory tree contain a regular expression.
         </p>
 <div class="footnotes">
 <br><hr width="100" align="left">
@@ -206,7 +209,7 @@
 </tr></table>
 <hr>
 <div class="spirit-nav">
-<a accesskey="p" href="hello_world.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../async_file_io.html"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../afio.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="so_what.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
+<a accesskey="p" href="hello_world.html"><img src="../../../../../doc/src/images/prev.png" alt="Prev"></a><a accesskey="u" href="../async_file_io.html"><img src="../../../../../doc/src/images/up.png" alt="Up"></a><a accesskey="h" href="../../../afio.html"><img src="../../../../../doc/src/images/home.png" alt="Home"></a><a accesskey="n" href="atomic_logging.html"><img src="../../../../../doc/src/images/next.png" alt="Next"></a>
 </div>
 </body>
 </html>

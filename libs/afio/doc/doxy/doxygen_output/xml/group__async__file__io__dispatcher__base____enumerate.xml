@@ -3,6 +3,60 @@
   <compounddef id="group__async__file__io__dispatcher__base____enumerate" kind="group">
     <compoundname>async_file_io_dispatcher_base__enumerate</compoundname>
     <title>x</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__async__file__io__dispatcher__base____enumerate_1ga9463c9d43626c23e5ef4c7c840d36fcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
+        <type>std::pair&lt; std::vector&lt; future&lt; std::pair&lt; std::vector&lt; directory_entry &gt;, bool &gt; &gt; &gt;, std::vector&lt; async_io_op &gt; &gt;</type>
+        <definition>virtual std::pair&lt;std::vector&lt;future&lt;std::pair&lt;std::vector&lt;directory_entry&gt;, bool&gt; &gt; &gt;, std::vector&lt;async_io_op&gt; &gt; boost::afio::async_file_io_dispatcher_base::enumerate</definition>
+        <argsstring>(const std::vector&lt; async_enumerate_op_req &gt; &amp;reqs)=0</argsstring>
+        <name>enumerate</name>
+        <param>
+          <type>const std::vector&lt; async_enumerate_op_req &gt; &amp;</type>
+          <declname>reqs</declname>
+        </param>
+        <briefdescription>
+<para>Schedule a batch of asynchronous directory enumerations after preceding operations. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default <ref refid="group__async__file__io__dispatcher__base____filedirops_1gaf6386ba1f9bd0e829470837bef6c7d73" kindref="member">dir()</ref> returns shared handles i.e. dir(&quot;foo&quot;) and dir(&quot;foo&quot;) will return the exact same handle, and therefore enumerating not all of the entries at once is a race condition. The solution is to either set maxitems to a value large enough to guarantee a directory will be enumerated in a single shot, or to open a separate directory handle using the file_flags::UniqueDirectoryHandle flag.</para><para>Note that setting maxitems=1 will often cause a buffer space exhaustion, causing a second syscall with an enlarged buffer. This is because AFIO cannot know if the allocated buffer can hold all of the filename being retrieved, so it may have to retry. Put another way, setting maxitems=1 will give you the worst performance possible, whereas maxitems=2 will probably only return one item most of the time.</para><para><simplesect kind="return"><para>A batch of future vectors of directory entries with boolean returning false if done. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reqs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A batch of enumeration requests.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool*M) to complete where M is the average number of entries in each directory.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][enumerate_example]</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1605"/>
+      </memberdef>
+      <memberdef kind="function" id="group__async__file__io__dispatcher__base____enumerate_1ga0695e33450ba820ebcb378f8b33d9ac1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::pair&lt; future&lt; std::pair&lt; std::vector&lt; directory_entry &gt;, bool &gt; &gt;, async_io_op &gt;</type>
+        <definition>std::pair&lt; future&lt; std::pair&lt; std::vector&lt; directory_entry &gt;, bool &gt; &gt;, async_io_op &gt; boost::afio::async_file_io_dispatcher_base::enumerate</definition>
+        <argsstring>(const async_enumerate_op_req &amp;req)</argsstring>
+        <name>enumerate</name>
+        <param>
+          <type>const async_enumerate_op_req &amp;</type>
+          <declname>req</declname>
+        </param>
+        <briefdescription>
+<para>Schedule an asynchronous directory enumeration after a preceding operation. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default <ref refid="group__async__file__io__dispatcher__base____filedirops_1gaf6386ba1f9bd0e829470837bef6c7d73" kindref="member">dir()</ref> returns shared handles i.e. dir(&quot;foo&quot;) and dir(&quot;foo&quot;) will return the exact same handle, and therefore enumerating not all of the entries at once is a race condition. The solution is to either set maxitems to a value large enough to guarantee a directory will be enumerated in a single shot, or to open a separate directory handle using the file_flags::UniqueDirectoryHandle flag.</para><para>Note that setting maxitems=1 will often cause a buffer space exhaustion, causing a second syscall with an enlarged buffer. This is because AFIO cannot know if the allocated buffer can hold all of the filename being retrieved, so it may have to retry. Put another way, setting maxitems=1 will give you the worst performance possible, whereas maxitems=2 will probably only return one item most of the time.</para><para><simplesect kind="return"><para>A future vector of directory entries with a boolean returning false if done. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>req</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An enumeration request.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(M) to complete where M is the average number of entries in each directory.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][enumerate_example]</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1626" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2964" bodyend="2971"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

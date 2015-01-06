@@ -77,8 +77,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a368d87c0cf266aa1e4c5882f85cd2d2b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4.html#ad100c8bfc368f3416ec55add5515b8fa">async_data_op_req</a> (const <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html">async_data_op_req</a> &amp;o)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#ad100c8bfc368f3416ec55add5515b8fa"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4.html#a71a5967c85f3fdc59a94fae400ebe4c3">async_data_op_req</a> (<a class="el" href="structboost_1_1afio_1_1async__data__op__req.html">async_data_op_req</a> &amp;&amp;o) BOOST_NOEXCEPT_OR_NOTHROW</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="#a71a5967c85f3fdc59a94fae400ebe4c3"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4.html#a219ef55aee2cdd03d8da8469ea3972c9">async_data_op_req</a> (<a class="el" href="structboost_1_1afio_1_1async__data__op__req.html">async_data_op_req</a> &amp;&amp;o) noexcept</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor.  <a href="#a219ef55aee2cdd03d8da8469ea3972c9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4.html#ab559ab0949cbb9e934ca5cc26f8e8a1c">async_data_op_req</a> (<a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> _precondition, void *v, size_t _length, off_t _where)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an instance.  <a href="#ab559ab0949cbb9e934ca5cc26f8e8a1c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4.html#a6787e05f2a9c950235668e56bc02b7a6">async_data_op_req</a> (<a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> _precondition, std::vector&lt; asio::mutable_buffer &gt; _buffers, off_t _where)</td></tr>
@@ -100,7 +100,7 @@ struct boost::afio::async_data_op_req&lt; void &gt;</h3>
 
 <p>A convenience bundle of precondition, data and where for reading into a `void *`. Data <b>MUST</b> stay around until the operation completes. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02318">2318</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02327">2327</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a368d87c0cf266aa1e4c5882f85cd2d2b"></a><!-- doxytag: member="boost::afio::async_data_op_req&lt; void &gt;::async_data_op_req" ref="a368d87c0cf266aa1e4c5882f85cd2d2b" args="()" -->
 <div class="memitem">
@@ -118,7 +118,7 @@ struct boost::afio::async_data_op_req&lt; void &gt;</h3>
 
 <p>Default constructor. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02329">2329</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02338">2338</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -139,11 +139,11 @@ struct boost::afio::async_data_op_req&lt; void &gt;</h3>
 
 <p>Copy constructor. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02331">2331</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02340">2340</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a71a5967c85f3fdc59a94fae400ebe4c3"></a><!-- doxytag: member="boost::afio::async_data_op_req&lt; void &gt;::async_data_op_req" ref="a71a5967c85f3fdc59a94fae400ebe4c3" args="(async_data_op_req &amp;&amp;o) BOOST_NOEXCEPT_OR_NOTHROW" -->
+<a class="anchor" id="a219ef55aee2cdd03d8da8469ea3972c9"></a><!-- doxytag: member="boost::afio::async_data_op_req&lt; void &gt;::async_data_op_req" ref="a219ef55aee2cdd03d8da8469ea3972c9" args="(async_data_op_req &amp;&amp;o) noexcept" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -160,7 +160,7 @@ struct boost::afio::async_data_op_req&lt; void &gt;</h3>
 
 <p>Move constructor. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02333">2333</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02342">2342</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -212,7 +212,7 @@ struct boost::afio::async_data_op_req&lt; void &gt;</h3>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02335">2335</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02344">2344</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -257,7 +257,7 @@ struct boost::afio::async_data_op_req&lt; void &gt;</h3>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02337">2337</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02346">2346</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -279,7 +279,7 @@ struct boost::afio::async_data_op_req&lt; void &gt;</h3>
 <p>Validates contents for correctness. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>True if contents are correct </dd></dl>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02155">2155</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02164">2164</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -299,7 +299,7 @@ struct boost::afio::async_data_op_req&lt; void &gt;</h3>
 
 <p>Reimplemented from <a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4.html#a84eefad026fdc25c3b0ec05257100db0">boost::afio::detail::async_data_op_req_impl&lt; false &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02322">2322</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02331">2331</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -318,7 +318,7 @@ struct boost::afio::async_data_op_req&lt; void &gt;</h3>
 
 <p>Reimplemented from <a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4.html#af4b4d0c54ec2581bed6c0841e5ada0a1">boost::afio::detail::async_data_op_req_impl&lt; false &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02324">2324</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02333">2333</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -337,7 +337,7 @@ struct boost::afio::async_data_op_req&lt; void &gt;</h3>
 
 <p>Reimplemented from <a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4.html#a58aaf07ba0547ac61cc851ab5b7aed2f">boost::afio::detail::async_data_op_req_impl&lt; false &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02326">2326</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02335">2335</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>

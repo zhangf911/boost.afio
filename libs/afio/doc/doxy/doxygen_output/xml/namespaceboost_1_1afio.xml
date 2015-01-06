@@ -7,6 +7,7 @@
     <innerclass refid="classboost_1_1afio_1_1thread__source" prot="public">boost::afio::thread_source</innerclass>
     <innerclass refid="classboost_1_1afio_1_1std__thread__pool" prot="public">boost::afio::std_thread_pool</innerclass>
     <innerclass refid="structboost_1_1afio_1_1stat__t" prot="public">boost::afio::stat_t</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1statfs__t" prot="public">boost::afio::statfs_t</innerclass>
     <innerclass refid="classboost_1_1afio_1_1directory__entry" prot="public">boost::afio::directory_entry</innerclass>
     <innerclass refid="structboost_1_1afio_1_1directory__entry__hash" prot="public">boost::afio::directory_entry_hash</innerclass>
     <innerclass refid="classboost_1_1afio_1_1async__io__handle" prot="public">boost::afio::async_io_handle</innerclass>
@@ -21,20 +22,20 @@
     <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</innerclass>
     <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::array&lt; T, N &gt; &gt;</innerclass>
     <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</innerclass>
-    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1mutable__buffer_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::vector&lt; boost::asio::mutable_buffer, A &gt; &gt;</innerclass>
-    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01boost_1_1asio_1_1const__buffer_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::vector&lt; boost::asio::const_buffer, A &gt; &gt;</innerclass>
-    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1mutable__buffer_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::array&lt; boost::asio::mutable_buffer, N &gt; &gt;</innerclass>
-    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01boost_1_1asio_1_1const__buffer_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::array&lt; boost::asio::const_buffer, N &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::vector&lt; asio::mutable_buffer, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::vector&lt; asio::const_buffer, A &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::array&lt; asio::mutable_buffer, N &gt; &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::array&lt; asio::const_buffer, N &gt; &gt;</innerclass>
     <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; std::basic_string&lt; C, T, A &gt; &gt;</innerclass>
     <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4" prot="public">boost::afio::async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</innerclass>
-    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1mutable__buffer_01_4" prot="public">boost::afio::async_data_op_req&lt; boost::asio::mutable_buffer &gt;</innerclass>
-    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01boost_1_1asio_1_1const__buffer_01_4" prot="public">boost::afio::async_data_op_req&lt; boost::asio::const_buffer &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4" prot="public">boost::afio::async_data_op_req&lt; asio::mutable_buffer &gt;</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4" prot="public">boost::afio::async_data_op_req&lt; asio::const_buffer &gt;</innerclass>
     <innerclass refid="structboost_1_1afio_1_1async__enumerate__op__req" prot="public">boost::afio::async_enumerate_op_req</innerclass>
     <innernamespace refid="namespaceboost_1_1afio_1_1detail">boost::afio::detail</innernamespace>
       <sectiondef kind="enum">
       <memberdef kind="enum" id="group__file__flags_1ga1615042683add1802cfc6dc86bd078ee" prot="public" static="no">
         <name>file_flags</name>
-        <enumvalue id="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbae0096787b72fc78233c9f8ee4aa49685" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438ae0096787b72fc78233c9f8ee4aa49685" prot="public">
           <name>None</name>
           <initializer>0</initializer>
           <briefdescription>
@@ -86,7 +87,7 @@
           <name>Create</name>
           <initializer>16</initializer>
           <briefdescription>
-<para>Open and create if doesn&apos;t exist. </para>          </briefdescription>
+<para>Open and create if doesn&apos;t exist. Always creates sparse files if possible. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -95,6 +96,14 @@
           <initializer>32</initializer>
           <briefdescription>
 <para>Create and open only if doesn&apos;t exist. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea7c850c8a5e1da53d306d2d31eb14d61b" prot="public">
+          <name>CreateCompressed</name>
+          <initializer>64</initializer>
+          <briefdescription>
+<para>Create a compressed file, needs to be combined with one of the other create flags. Only succeeds if supported by the underlying filing system. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -111,6 +120,14 @@
           <initializer>256</initializer>
           <briefdescription>
 <para>Will be randomly accessed, so don&apos;t bother with read-ahead. If you&apos;re using this, <emphasis>strongly</emphasis> consider turning on OSDirect too. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaeafb311263d328603431d2bf231c6a0e" prot="public">
+          <name>NoSparse</name>
+          <initializer>512</initializer>
+          <briefdescription>
+<para>Don&apos;t create sparse files. May be ignored by some filing systems (e.g. ext4). </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -192,7 +209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="503" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="497" bodyend="528"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="383" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="379" bodyend="410"/>
       </memberdef>
       <memberdef kind="enum" id="group__async__op__flags_1ga3d03d4b42e2ae303e282d0a1dec22976" prot="public" static="no">
         <name>async_op_flags</name>
@@ -218,11 +235,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="545" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="539" bodyend="548"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="422" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="418" bodyend="425"/>
       </memberdef>
       <memberdef kind="enum" id="group__metadata__flags_1ga228a95ca96f053e74e69e6d1ab23eccb" prot="public" static="no">
         <name>metadata_flags</name>
-        <enumvalue id="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbae0096787b72fc78233c9f8ee4aa49685" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438ae0096787b72fc78233c9f8ee4aa49685" prot="public">
           <name>None</name>
           <initializer>0</initializer>
           <briefdescription>
@@ -334,7 +351,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba22a74fda8d22f93df2dee8ba803e647b" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a0bcb40db3022fed4a921c42c6789896e" prot="public">
           <name>blocks</name>
           <initializer>1&lt;&lt;13</initializer>
           <briefdescription>
@@ -350,7 +367,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbab84b42876b27e5bb4bb0ba02a4929648" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a236458a316ee2aab7eaed4d2abf214f4" prot="public">
           <name>flags</name>
           <initializer>1&lt;&lt;15</initializer>
           <briefdescription>
@@ -374,7 +391,23 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbac5c1c39d14b2ef243eaa37a0eba36940" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccba1d83449c2d0f22b258f6bdd857b51637" prot="public">
+          <name>sparse</name>
+          <initializer>1&lt;&lt;24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1ga228a95ca96f053e74e69e6d1ab23eccbafd28f8181a3776b9aacb8a97d40d37ef" prot="public">
+          <name>compressed</name>
+          <initializer>1&lt;&lt;25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a0b6c15d8f7aeebc47c400a5dd9b1c44c" prot="public">
           <name>All</name>
           <initializer>(size_t)-1</initializer>
           <briefdescription>
@@ -388,7 +421,145 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="632" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="626" bodyend="653"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="505" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="501" bodyend="528"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__fs__metadata__flags_1gadc548bc518f40378c9c9c97f4a994438" prot="public" static="no">
+        <name>fs_metadata_flags</name>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438ae0096787b72fc78233c9f8ee4aa49685" prot="public">
+          <name>None</name>
+          <initializer>0</initializer>
+          <briefdescription>
+<para>No flags set. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a236458a316ee2aab7eaed4d2abf214f4" prot="public">
+          <name>flags</name>
+          <initializer>1&lt;&lt;15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a69fd1cdce33c03fcc6efeee4c4244981" prot="public">
+          <name>bsize</name>
+          <initializer>1&lt;&lt;2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438ae259fc2997dc9def8ba30206f0532e51" prot="public">
+          <name>iosize</name>
+          <initializer>1&lt;&lt;3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a0bcb40db3022fed4a921c42c6789896e" prot="public">
+          <name>blocks</name>
+          <initializer>1&lt;&lt;13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a1e47e7816d95c9c7f84281a32f63413a" prot="public">
+          <name>bfree</name>
+          <initializer>1&lt;&lt;5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a5680a19261a5acf9fb785cd02cf6dde6" prot="public">
+          <name>bavail</name>
+          <initializer>1&lt;&lt;6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a55b4fd78b7fa94289726a04b21e27aba" prot="public">
+          <name>files</name>
+          <initializer>1&lt;&lt;7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a2bbf102702b3d3c535e84cc16de0a6ab" prot="public">
+          <name>ffree</name>
+          <initializer>1&lt;&lt;8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a4828645ba1d8c351473c3dcbe7bc41b4" prot="public">
+          <name>namemax</name>
+          <initializer>1&lt;&lt;9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a9bda723e0ca224a0d2c3ff243b5cd88f" prot="public">
+          <name>owner</name>
+          <initializer>1&lt;&lt;10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a8b6ef0e907e57c3a3f3d4e44545a1028" prot="public">
+          <name>fsid</name>
+          <initializer>1&lt;&lt;11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438aed0c2fb8653a2d4a690e20d29fb6cd2e" prot="public">
+          <name>fstypename</name>
+          <initializer>1&lt;&lt;12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438ad80c0b17f7bf0dfa982edc6aa6fa211b" prot="public">
+          <name>mntfromname</name>
+          <initializer>1&lt;&lt;13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a08ce3747edf979603fcfe8c7b151723a" prot="public">
+          <name>mntonname</name>
+          <initializer>1&lt;&lt;14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a0b6c15d8f7aeebc47c400a5dd9b1c44c" prot="public">
+          <name>All</name>
+          <initializer>(size_t)-1</initializer>
+          <briefdescription>
+<para>Return the maximum possible metadata. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Bitflags for availability of metadata from `struct statfs_t`. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="615" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="611" bodyend="632"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -403,13 +574,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="63" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="63" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="100" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="100" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__process__threadpool_1gabb4747cc11ef3ee1bbb969bc78c238bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>BOOST_AFIO_DECL std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1std__thread__pool" kindref="compound">std_thread_pool</ref> &gt;</type>
-        <definition>BOOST_AFIO_DECL std::shared_ptr&lt;std_thread_pool&gt; boost::afio::process_threadpool</definition>
+      <memberdef kind="function" id="group__process__threadpool_1ga508fdd37661e739fc26a5dec80db56a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1std__thread__pool" kindref="compound">std_thread_pool</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;std_thread_pool&gt; boost::afio::process_threadpool</definition>
         <argsstring>()</argsstring>
         <name>process_threadpool</name>
         <briefdescription>
@@ -418,165 +589,17 @@
 <para>On first use, this instantiates a default <ref refid="classboost_1_1afio_1_1std__thread__pool" kindref="compound">std_thread_pool</ref> running `BOOST_AFIO_MAX_NON_ASYNC_QUEUE_DEPTH` threads which will remain until its shared count reaches zero. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="321"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="346"/>
       </memberdef>
-      <memberdef kind="function" id="group__when__all__futures_1gabb88d1b03f90e1fd689dcb629ab8ecd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>class Iterator</type>
-          </param>
-        </templateparamlist>
-        <type><ref refid="structboost_1_1afio_1_1detail_1_1enable__if__future" kindref="compound">detail::enable_if_future</ref>&lt; true, typename Iterator::value_type &gt;::type</type>
-        <definition>detail::enable_if_async_op&lt; true, typename Iterator::value_type &gt;::type boost::afio::when_all</definition>
-        <argsstring>(Iterator first, Iterator last)</argsstring>
-        <name>when_all</name>
-        <param>
-          <type>Iterator</type>
-          <declname>first</declname>
-        </param>
-        <param>
-          <type>Iterator</type>
-          <declname>last</declname>
-        </param>
-        <briefdescription>
-<para>Makes a future vector of results from all the supplied futures. </para>        </briefdescription>
-        <detaileddescription>
-<para>Returns a result when all the supplied ops complete. Propagates exception states.</para><para>This is an implementation of WG21 N3634&apos;s <ref refid="group__when__all__futures_1gabb88d1b03f90e1fd689dcb629ab8ecd7" kindref="member">when_all()</ref> which uses <ref refid="group__process__threadpool_1gabb4747cc11ef3ee1bbb969bc78c238bb" kindref="member">process_threadpool()</ref> to allow you to create a future which only becomes available when all the supplied futures become available.</para><para><simplesect kind="return"><para>A future vector of the results of the input futures </para></simplesect>
-<parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>class Iterator</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A type modelling an iterator </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>first</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing to the first item to wait upon </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>last</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing to after the last future to wait upon</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> from ___WG21_N3634__ for range of futures</qbk.distinguish>   <qbk>[heading Complexity]O(N)</qbk>   <qbk>[heading Exception Model]The same as a future</qbk> </para><para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
-<parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>class Iterator</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator type. </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>first</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing to the first <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>last</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing after the last <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> iterator batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="410" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="409" bodyend="412"/>
-      </memberdef>
-      <memberdef kind="function" id="group__when__all__futures_1gab467b102949ffdc46639c0b197b204d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>class Iterator</type>
-          </param>
-        </templateparamlist>
-        <type><ref refid="structboost_1_1afio_1_1detail_1_1enable__if__future" kindref="compound">detail::enable_if_future</ref>&lt; false, typename Iterator::value_type &gt;::type</type>
-        <definition>detail::enable_if_async_op&lt; false, typename Iterator::value_type &gt;::type boost::afio::when_any</definition>
-        <argsstring>(Iterator first, Iterator last)</argsstring>
-        <name>when_any</name>
-        <param>
-          <type>Iterator</type>
-          <declname>first</declname>
-        </param>
-        <param>
-          <type>Iterator</type>
-          <declname>last</declname>
-        </param>
-        <briefdescription>
-<para>Returns a future tuple of results from all the supplied futures. </para>        </briefdescription>
-        <detaileddescription>
-<para>Returns a result when any the supplied ops complete. Propagates exception states.</para><para>Makes a future result from the first of the supplied futures to become available</para><para>This is an implementation of WG21 N3634&apos;s <ref refid="group__when__all__futures_1gab467b102949ffdc46639c0b197b204d2" kindref="member">when_any()</ref> which uses <ref refid="group__process__threadpool_1gabb4747cc11ef3ee1bbb969bc78c238bb" kindref="member">process_threadpool()</ref> to allow you to create a future which only becomes available when the first of the supplied futures become available.</para><para><simplesect kind="return"><para>A future pair of the first future to become available and its result </para></simplesect>
-<parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>class Iterator</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>A type modelling an iterator </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>first</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing to the first future to wait upon </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>last</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing to after the last future to wait upon</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> from ___WG21_N3634__ for range of futures</qbk.distinguish>   <qbk>[heading Complexity]The same as boost::wait_for_any()</qbk>   <qbk>[heading Exception Model]The same as a future</qbk> </para><para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
-<parameterlist kind="templateparam"><parameteritem>
-<parameternamelist>
-<parametername>class Iterator</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator type. </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>first</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing to the first <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>last</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>An iterator pointing after the last <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
-</parameteritem>
-</parameterlist>
- <qbk.distinguish> iterator batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="431" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="430" bodyend="433"/>
-      </memberdef>
-      <memberdef kind="function" id="group__async__file__io__dispatcher_1ga412e5ba3eaf5c1df0499dad2ddd79fb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>BOOST_AFIO_DECL std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1async__file__io__dispatcher__base" kindref="compound">async_file_io_dispatcher_base</ref> &gt;</type>
-        <definition>BOOST_AFIO_DECL std::shared_ptr&lt;async_file_io_dispatcher_base&gt; boost::afio::make_async_file_io_dispatcher</definition>
+      <memberdef kind="function" id="group__async__file__io__dispatcher_1ga422c01cd3653e6bb316a985ab3a1c6d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1async__file__io__dispatcher__base" kindref="compound">async_file_io_dispatcher_base</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;async_file_io_dispatcher_base&gt; boost::afio::make_async_file_io_dispatcher</definition>
         <argsstring>(std::shared_ptr&lt; thread_source &gt; threadpool=process_threadpool(), file_flags flagsforce=file_flags::None, file_flags flagsmask=file_flags::None)</argsstring>
         <name>make_async_file_io_dispatcher</name>
         <param>
           <type>std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1thread__source" kindref="compound">thread_source</ref> &gt;</type>
           <declname>threadpool</declname>
-          <defval><ref refid="group__process__threadpool_1gabb4747cc11ef3ee1bbb969bc78c238bb" kindref="member">process_threadpool</ref>()</defval>
+          <defval>process_threadpool()</defval>
         </param>
         <param>
           <type><ref refid="group__file__flags_1ga1615042683add1802cfc6dc86bd078ee" kindref="member">file_flags</ref></type>
@@ -620,7 +643,7 @@
 </qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1760"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1759"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1gadd8ae93c91c23b1011dfdf002db07e9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -681,7 +704,7 @@
  <qbk.distinguish> iterator batch of ops not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1863" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1862" bodyend="1867"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1909" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1908" bodyend="1913"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1ga85c6d5c463b1ecffdc2a6bda4f040bb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -742,7 +765,7 @@
  <qbk.distinguish> iterator batch of ops not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1881" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1880" bodyend="1885"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1927" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1926" bodyend="1931"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1ga5598f81e0788f6acd2258263009de875" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>future&lt; std::vector&lt; std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt; &gt;</type>
@@ -779,7 +802,7 @@
  <qbk.distinguish> vector batch of ops not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1897" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1896" bodyend="1901"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1943" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1942" bodyend="1947"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1gaeb4173eee90e57cc0646056bd14603de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>future&lt; std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt;</type>
@@ -816,7 +839,107 @@
  <qbk.distinguish> vector batch of ops not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1913" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1912" bodyend="1917"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1959" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1958" bodyend="1963"/>
+      </memberdef>
+      <memberdef kind="function" id="group__when__all__ops_1gaaf00f394b0af6575df503d4527788c5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Iterator</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structboost_1_1afio_1_1detail_1_1enable__if__async__op" kindref="compound">detail::enable_if_async_op</ref>&lt; true, typename Iterator::value_type &gt;::type</type>
+        <definition>detail::enable_if_async_op&lt;true, typename Iterator::value_type&gt;::type boost::afio::when_all</definition>
+        <argsstring>(Iterator first, Iterator last)</argsstring>
+        <name>when_all</name>
+        <param>
+          <type>Iterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Returns a result when all the supplied ops complete. Propagates exception states. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>class Iterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing to the first <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing after the last <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk.distinguish> iterator batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1976" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1975" bodyend="1980"/>
+      </memberdef>
+      <memberdef kind="function" id="group__when__all__ops_1ga1a452f7d0c7a0517e824cddb0816e872" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Iterator</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="structboost_1_1afio_1_1detail_1_1enable__if__async__op" kindref="compound">detail::enable_if_async_op</ref>&lt; false, typename Iterator::value_type &gt;::type</type>
+        <definition>detail::enable_if_async_op&lt;false, typename Iterator::value_type&gt;::type boost::afio::when_any</definition>
+        <argsstring>(Iterator first, Iterator last)</argsstring>
+        <name>when_any</name>
+        <param>
+          <type>Iterator</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>Iterator</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+<para>Returns a result when any the supplied ops complete. Propagates exception states. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A future vector of shared_ptr&apos;s to <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref>. </para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>class Iterator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>first</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing to the first <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>last</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An iterator pointing after the last <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> to wait upon.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk.distinguish> iterator batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1993" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1992" bodyend="1997"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1ga6591b9bbaf576183995ba8612f1c86d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>future&lt; std::vector&lt; std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt; &gt;</type>
@@ -842,7 +965,7 @@
  <qbk.distinguish> vector batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1962" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1961" bodyend="1966"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2008" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2007" bodyend="2012"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1ga4a98962e8807e8f5fa31bb14fa430374" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>future&lt; std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt;</type>
@@ -868,7 +991,7 @@
  <qbk.distinguish> vector batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1977" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1976" bodyend="1981"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2023" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2022" bodyend="2027"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1ga175bb31dd07b8c716c85f5bfdc17c9df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>future&lt; std::vector&lt; std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt; &gt;</type>
@@ -905,7 +1028,7 @@
  <qbk.distinguish> convenience single op not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(1).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="1993" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="1992" bodyend="1996"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2039" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2038" bodyend="2042"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1ga3a4b5bc5ed128e7ef337fe164f897782" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>future&lt; std::vector&lt; std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt; &gt;</type>
@@ -931,7 +1054,7 @@
  <qbk.distinguish> convenience single op exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(1).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2007" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2006" bodyend="2010"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2053" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2052" bodyend="2056"/>
       </memberdef>
       <memberdef kind="function" id="group__make__async__data__op__req_1ga9f62915b030e2f2ed5115b034e9721a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -987,7 +1110,7 @@
 </qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2644" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2643" bodyend="2647"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2690" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2689" bodyend="2693"/>
       </memberdef>
       <memberdef kind="function" id="group__make__async__data__op__req_1gaaefe9a4cc37c21ba775399a66749b10b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -1054,13 +1177,13 @@
 </qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="2661" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" bodystart="2660" bodyend="2664"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2707" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2706" bodyend="2710"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>The namespace containing the Boost.ASIO asynchronous file i/o implementation. </para>    </briefdescription>
+    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/include/boost/afio/afio.hpp" line="60"/>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="97"/>
   </compounddef>
 </doxygen>

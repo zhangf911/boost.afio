@@ -78,10 +78,10 @@ Classes</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html#a984de73341d2813eb2643cc34774d5f4">enqueued_task_impl</a> (std::function&lt; R()&gt; _task=std::function&lt; R()&gt;())</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="#a984de73341d2813eb2643cc34774d5f4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html#a62aaa276831fb78f4d7dd814a7e1c3c4">valid</a> () const BOOST_NOEXCEPT_OR_NOTHROW</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if valid.  <a href="#a62aaa276831fb78f4d7dd814a7e1c3c4"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html#a341d57749b4cedc954099a9a3f985254">swap</a> (<a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html">enqueued_task_impl</a> &amp;o) BOOST_NOEXCEPT_OR_NOTHROW</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps contents with another instance.  <a href="#a341d57749b4cedc954099a9a3f985254"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html#a6b46a0d413d1f615f82c92e5c8267387">valid</a> () const noexcept</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if valid.  <a href="#a6b46a0d413d1f615f82c92e5c8267387"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html#afd3e4e74249bbc0aaf667d8516847702">swap</a> (<a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html">enqueued_task_impl</a> &amp;o) noexcept</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Swaps contents with another instance.  <a href="#afd3e4e74249bbc0aaf667d8516847702"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html#ad744e2c93c8a34eef5823249b2f2abb9">reset</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the contents.  <a href="#ad744e2c93c8a34eef5823249b2f2abb9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html#ae569f6b76499c7c175c18388bc3214bb">set_task</a> (std::function&lt; R()&gt; _task)</td></tr>
@@ -111,7 +111,7 @@ std::shared_ptr&lt; <a class="el" href="structboost_1_1afio_1_1detail_1_1enqueue
 class boost::afio::detail::enqueued_task_impl&lt; R &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00105">105</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00110">110</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a984de73341d2813eb2643cc34774d5f4"></a><!-- doxytag: member="boost::afio::detail::enqueued_task_impl::enqueued_task_impl" ref="a984de73341d2813eb2643cc34774d5f4" args="(std::function&lt; R()&gt; _task=std::function&lt; R()&gt;())" -->
 <div class="memitem">
@@ -132,19 +132,19 @@ template&lt;class R&gt; </div>
 
 <p>Default constructor. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00121">121</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00126">126</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a62aaa276831fb78f4d7dd814a7e1c3c4"></a><!-- doxytag: member="boost::afio::detail::enqueued_task_impl::valid" ref="a62aaa276831fb78f4d7dd814a7e1c3c4" args="() const BOOST_NOEXCEPT_OR_NOTHROW" -->
+<a class="anchor" id="a6b46a0d413d1f615f82c92e5c8267387"></a><!-- doxytag: member="boost::afio::detail::enqueued_task_impl::valid" ref="a6b46a0d413d1f615f82c92e5c8267387" args="() const noexcept" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class R&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html">boost::afio::detail::enqueued_task_impl</a>&lt; R &gt;::<a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html#a62aaa276831fb78f4d7dd814a7e1c3c4">valid</a> </td>
+          <td class="memname">bool <a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html">boost::afio::detail::enqueued_task_impl</a>&lt; R &gt;::<a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html#a6b46a0d413d1f615f82c92e5c8267387">valid</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -155,18 +155,18 @@ template&lt;class R&gt; </div>
 
 <p>Returns true if valid. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00123">123</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00128">128</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a341d57749b4cedc954099a9a3f985254"></a><!-- doxytag: member="boost::afio::detail::enqueued_task_impl::swap" ref="a341d57749b4cedc954099a9a3f985254" args="(enqueued_task_impl &amp;o) BOOST_NOEXCEPT_OR_NOTHROW" -->
+<a class="anchor" id="afd3e4e74249bbc0aaf667d8516847702"></a><!-- doxytag: member="boost::afio::detail::enqueued_task_impl::swap" ref="afd3e4e74249bbc0aaf667d8516847702" args="(enqueued_task_impl &amp;o) noexcept" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class R&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html">boost::afio::detail::enqueued_task_impl</a>&lt; R &gt;::<a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html#a341d57749b4cedc954099a9a3f985254">swap</a> </td>
+          <td class="memname">void <a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html">boost::afio::detail::enqueued_task_impl</a>&lt; R &gt;::<a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html#afd3e4e74249bbc0aaf667d8516847702">swap</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classboost_1_1afio_1_1detail_1_1enqueued__task__impl.html">enqueued_task_impl</a>&lt; R &gt; &amp;&#160;</td>
           <td class="paramname"><em>o</em></td><td>)</td>
@@ -178,7 +178,7 @@ template&lt;class R&gt; </div>
 
 <p>Swaps contents with another instance. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00125">125</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00130">130</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -200,7 +200,7 @@ template&lt;class R&gt; </div>
 
 <p>Resets the contents. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00127">127</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00132">132</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -223,7 +223,7 @@ template&lt;class R&gt; </div>
 
 <p>Sets the task. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00129">129</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00134">134</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -245,7 +245,7 @@ template&lt;class R&gt; </div>
 
 <p>Returns the shared future corresponding to the future return value of the task. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00131">131</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00136">136</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -270,7 +270,7 @@ template&lt;class T &gt; </div>
 
 <p>Sets the shared future corresponding to the future return value of the task. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00133">133</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00138">138</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -293,7 +293,7 @@ template&lt;class R&gt; </div>
 
 <p>Sets the shared future corresponding to the future return value of the task. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00150">150</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00155">155</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -316,7 +316,7 @@ template&lt;class R&gt; </div>
 
 <p>Disables the task setting the shared future return value. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00159">159</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00164">164</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>

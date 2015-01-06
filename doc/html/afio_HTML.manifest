@@ -10,6 +10,7 @@ afio/quickstart.html
 afio/quickstart/async_file_io.html
 afio/quickstart/async_file_io/hello_world.html
 afio/quickstart/async_file_io/file_concat.html
+afio/quickstart/async_file_io/atomic_logging.html
 afio/quickstart/async_file_io/so_what.html
 afio/quickstart/closure_engine.html
 afio/quickstart/closure_engine/the_basics.html
@@ -48,6 +49,7 @@ afio/reference/structs/async_path_op_req.html
 afio/reference/structs/directory_entry_hash.html
 afio/reference/structs/stat_t.html
 afio/reference/structs/statfs_t.html
+afio/reference/structs/statfs_t/statfs_t_f_flags_t.html
 afio/reference/classes.html
 afio/reference/classes/async_file_io_dispatcher_base.html
 afio/reference/classes/async_file_io_dispatcher_base/post_op_filter_clear.html
@@ -130,3 +132,4 @@ afio/FAQ/slow_compile.html
 afio/FAQ/fatal_error_read.html
 afio/FAQ/async_metadata.html
 afio/acknowledgments.html
+afio/index.html

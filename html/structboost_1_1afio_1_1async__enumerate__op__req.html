@@ -89,9 +89,9 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>A convenience bundle of precondition, number of items to enumerate, item pattern match and metadata to prefetch. </p>
 <p>You should note that shell globs must use a restricted form for portability:</p>
 <p>Microsoft Windows NT oddly does not specify what wildcards are permitted, but I think the documentation for the kernel function FsRtlIsNameInExpression() is probably sound: * means zero or more characters, ? means any one character. Do not use &lt;, &gt; or " as these have special MS-DOS compatibility inducing consequences. Do not use ^ as this is the Windows wildcard escape character.</p>
-<p>POSIX further extends NT's wildcards with [seq] which is a subset of characters and [!seq] which is not any subset of characters. Here a \ is the wildcard escape character. </p>
+<p>POSIX further extends NT's wildcards with \[seq\] which is a subset of characters and \[!seq\] which is not any subset of characters. Here a \ is the wildcard escape character. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02726">2726</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02735">2735</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac922fb13ada0d190b81f341378f50484"></a><!-- doxytag: member="boost::afio::async_enumerate_op_req::async_enumerate_op_req" ref="ac922fb13ada0d190b81f341378f50484" args="(async_io_op _precondition, size_t _maxitems=2, bool _restart=true, filesystem::path _glob=filesystem::path(), metadata_flags _metadata=metadata_flags::None)" -->
 <div class="memitem">
@@ -148,7 +148,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02743">2743</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02752">2752</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -207,7 +207,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02752">2752</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02761">2761</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -266,7 +266,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02761">2761</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02770">2770</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -287,7 +287,7 @@ Public Attributes</h2></td></tr>
 
 <p>Validates contents. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02763">2763</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02772">2772</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -305,7 +305,7 @@ Public Attributes</h2></td></tr>
 
 <p>A precondition for this operation. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02728">2728</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02737">2737</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -322,7 +322,7 @@ Public Attributes</h2></td></tr>
 
 <p>The maximum number of items to return in this request. Note that setting to one will often invoke two syscalls. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02729">2729</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02738">2738</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -339,7 +339,7 @@ Public Attributes</h2></td></tr>
 
 <p>Restarts the enumeration for this open directory handle. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02730">2730</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02739">2739</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ Public Attributes</h2></td></tr>
 
 <p>An optional shell glob by which to filter the items returned. Done kernel side on Windows, user side on POSIX. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02731">2731</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02740">2740</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -373,7 +373,7 @@ Public Attributes</h2></td></tr>
 
 <p>The metadata to prefetch for each item enumerated. AFIO may fetch more metadata than requested if it is cost free. . </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02732">2732</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02741">2741</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>

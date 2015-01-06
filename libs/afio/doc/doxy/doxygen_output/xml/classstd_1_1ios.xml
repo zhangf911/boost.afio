@@ -8,32 +8,32 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="384">
+      <node id="507">
         <label>std::ios</label>
-        <childnode refid="385" relation="public-inheritance">
+        <childnode refid="508" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="385">
+      <node id="508">
         <label>std::basic_ios&lt; char &gt;</label>
-        <childnode refid="386" relation="public-inheritance">
+        <childnode refid="509" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="386">
+      <node id="509">
         <label>std::ios_base</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="387">
+      <node id="510">
         <label>std::ios</label>
-        <childnode refid="388" relation="public-inheritance">
+        <childnode refid="511" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="388">
+      <node id="511">
         <label>std::basic_ios&lt; char &gt;</label>
-        <childnode refid="389" relation="public-inheritance">
+        <childnode refid="512" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="389">
+      <node id="512">
         <label>std::ios_base</label>
       </node>
     </collaborationgraph>

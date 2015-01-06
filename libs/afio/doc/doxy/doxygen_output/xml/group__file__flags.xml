@@ -4,9 +4,9 @@
     <compoundname>file_flags</compoundname>
     <title>x</title>
       <sectiondef kind="enum">
-      <memberdef kind="enum" id="group__file__flags_1gaba2d48ea5b39d1ab48c6b892a2e2d0db" prot="public" static="no">
+      <memberdef kind="enum" id="group__file__flags_1ga1615042683add1802cfc6dc86bd078ee" prot="public" static="no">
         <name>file_flags</name>
-        <enumvalue id="afio_8hpp_1aae6b08a811dd41617f875ab167b21d4eac7485dcc8d256a6f197ed7802687f252" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438ae0096787b72fc78233c9f8ee4aa49685" prot="public">
           <name>None</name>
           <initializer>0</initializer>
           <briefdescription>
@@ -14,7 +14,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba809abe96853e69894bbf8e5730b31348" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea56afe458614fb4a10b626f321ea1a26f" prot="public">
           <name>Read</name>
           <initializer>1</initializer>
           <briefdescription>
@@ -22,7 +22,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa56670174817e3fed92bfd8182d7c0d1" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea8ce87e24f8fc7badbb6706741f3b2720" prot="public">
           <name>Write</name>
           <initializer>2</initializer>
           <briefdescription>
@@ -30,7 +30,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba3c4d2d19c91b345c33a83ca9f551f4e1" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea9b4de5661424e3caea20df95fdf1babf" prot="public">
           <name>ReadWrite</name>
           <initializer>3</initializer>
           <briefdescription>
@@ -38,7 +38,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba71f30510b076569dd2830e348fb77a13" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeabb5d6d0e03d75b41c1d997aa76814f44" prot="public">
           <name>Append</name>
           <initializer>4</initializer>
           <briefdescription>
@@ -46,7 +46,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba4877d9d67c11656d88fc82cfeb94a4f3" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea4435f8faf3f874da4982029477760ccc" prot="public">
           <name>Truncate</name>
           <initializer>8</initializer>
           <briefdescription>
@@ -54,7 +54,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba93479401ae71e13bd81626eb0b6c2d37" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea3dfadea846f01e01560a979e2e5fb028" prot="public">
           <name>Create</name>
           <initializer>16</initializer>
           <briefdescription>
@@ -62,7 +62,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbafd41a51c46068f24398d21e5e8d23d16" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeafd5a0d55a39854c5da74bbded9ee167f" prot="public">
           <name>CreateOnlyIfNotExist</name>
           <initializer>32</initializer>
           <briefdescription>
@@ -70,7 +70,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaaafe04801c8d2d887be1a626b924c0be" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea7c850c8a5e1da53d306d2d31eb14d61b" prot="public">
           <name>CreateCompressed</name>
           <initializer>64</initializer>
           <briefdescription>
@@ -78,7 +78,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa26ef493b962366c21fef788da134721" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea9ac18f659ad2d9695501f04ce2b49e2f" prot="public">
           <name>WillBeSequentiallyAccessed</name>
           <initializer>128</initializer>
           <briefdescription>
@@ -86,7 +86,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba5ad1750347c8e7ce9513f1edb3dd3766" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea12fb86815852d7f9144110fa38dbfb5f" prot="public">
           <name>WillBeRandomlyAccessed</name>
           <initializer>256</initializer>
           <briefdescription>
@@ -94,7 +94,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba676b9cbbb9391959f0dcd1427a125d2e" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaeafb311263d328603431d2bf231c6a0e" prot="public">
           <name>NoSparse</name>
           <initializer>512</initializer>
           <briefdescription>
@@ -102,7 +102,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba6085ffcc368053b7563ee66109aba163" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea8e7a42449e906c304998c81e7490fd16" prot="public">
           <name>FastDirectoryEnumeration</name>
           <initializer>(1&lt;&lt;10)</initializer>
           <briefdescription>
@@ -110,7 +110,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba837053fb9e27a38d2a153f5c85436644" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeae2b4f36c7d426549b211d89ffcd02e12" prot="public">
           <name>UniqueDirectoryHandle</name>
           <initializer>(1&lt;&lt;11)</initializer>
           <briefdescription>
@@ -118,7 +118,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba648331f85d7765a2b1fcc854dfde389b" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea45296419ce890d99a255351f4ac9f1fa" prot="public">
           <name>OSDirect</name>
           <initializer>(1&lt;&lt;16)</initializer>
           <briefdescription>
@@ -126,7 +126,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa0ba263c207e29e2d1d6823d4dc7790b" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaba7941781a18ef1d3a4f5345b9d44a53" prot="public">
           <name>OSMMap</name>
           <initializer>(1&lt;&lt;17)</initializer>
           <briefdescription>
@@ -134,7 +134,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaa3cc9b55b4157e3b0c799f941f21c001" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea05738a480cd6f577ef828ca2637bdf29" prot="public">
           <name>AlwaysSync</name>
           <initializer>(1&lt;&lt;24)</initializer>
           <briefdescription>
@@ -142,7 +142,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba58ef332941f8d3160a208d81a8d60f3f" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaad1d36e2219ffcd464bb8d37a0c42adc" prot="public">
           <name>SyncOnClose</name>
           <initializer>(1&lt;&lt;25)</initializer>
           <briefdescription>
@@ -150,7 +150,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dba8f3aad3eb5f15e3dd74b03a781d3add2" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea6d91e48b65e695d61a43d7e867babebd" prot="public">
           <name>EnforceDependencyWriteOrder</name>
           <initializer>(1&lt;&lt;26)</initializer>
           <briefdescription>
@@ -158,7 +158,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbacf70efc695fc6209e99b9161f6feead3" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeac3128415027844faf71bc34a5f6de5b8" prot="public">
           <name>int_opening_link</name>
           <initializer>(1&lt;&lt;29)</initializer>
           <briefdescription>
@@ -166,7 +166,7 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="afio_8hpp_1gaba2d48ea5b39d1ab48c6b892a2e2d0dbaf8864b27bad71e73e66ab81cabd6f80d" prot="public">
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeae4d81f61126d0b6609dbebf8d21de2fa" prot="public">
           <name>int_opening_dir</name>
           <initializer>(1&lt;&lt;30)</initializer>
           <briefdescription>
@@ -180,7 +180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="373" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="369" bodyend="400"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="383" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="379" bodyend="410"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

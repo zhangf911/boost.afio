@@ -563,8 +563,11 @@
 <br class="table-break"><div class="footnotes">
 <br><hr width="100" align="left">
 <div class="footnote"><p><sup>[<a id="ftn.afio.design.acid_write_ordering.write_ordering_data.f0" href="#afio.design.acid_write_ordering.write_ordering_data.f0" class="para">6</a>] </sup>
-            TripleGit actually uses a different, much faster 256 bit hash by default,
-            but one can force use of SHA256 on a per-graph basis.
+            TripleGit actually uses a different, much faster 256 bit 3 cycles/byte
+            cryptographic hash called <a href="https://blake2.net/" target="_top">Blake2</a>
+            by default, but one can force use of SHA256/512 on a per-graph basis,
+            or indeed if your CPU has SHA hardware offload instructions these may
+            be used by default.
           </p></div>
 <div class="footnote"><p><sup>[<a id="ftn.afio.design.acid_write_ordering.write_ordering_data.f1" href="#afio.design.acid_write_ordering.write_ordering_data.f1" class="para">7</a>] </sup>
             This is the default, and it may be changed by a system e.g. I have seen

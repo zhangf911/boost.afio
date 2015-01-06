@@ -8,32 +8,32 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="674">
+      <node id="797">
         <label>std::wios</label>
-        <childnode refid="675" relation="public-inheritance">
+        <childnode refid="798" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="675">
+      <node id="798">
         <label>std::basic_ios&lt; wchar_t &gt;</label>
-        <childnode refid="676" relation="public-inheritance">
+        <childnode refid="799" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="676">
+      <node id="799">
         <label>std::ios_base</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="677">
+      <node id="800">
         <label>std::wios</label>
-        <childnode refid="678" relation="public-inheritance">
+        <childnode refid="801" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="678">
+      <node id="801">
         <label>std::basic_ios&lt; wchar_t &gt;</label>
-        <childnode refid="679" relation="public-inheritance">
+        <childnode refid="802" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="679">
+      <node id="802">
         <label>std::ios_base</label>
       </node>
     </collaborationgraph>

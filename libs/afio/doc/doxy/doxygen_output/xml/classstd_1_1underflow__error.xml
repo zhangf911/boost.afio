@@ -8,21 +8,6 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="748">
-        <label>std::runtime_error</label>
-        <childnode refid="749" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="749">
-        <label>std::exception</label>
-      </node>
-      <node id="747">
-        <label>std::underflow_error</label>
-        <childnode refid="748" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="751">
         <label>std::runtime_error</label>
         <childnode refid="752" relation="public-inheritance">
@@ -34,6 +19,21 @@
       <node id="750">
         <label>std::underflow_error</label>
         <childnode refid="751" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="754">
+        <label>std::runtime_error</label>
+        <childnode refid="755" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="755">
+        <label>std::exception</label>
+      </node>
+      <node id="753">
+        <label>std::underflow_error</label>
+        <childnode refid="754" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

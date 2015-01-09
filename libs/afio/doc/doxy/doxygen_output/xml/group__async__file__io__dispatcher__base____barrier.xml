@@ -4,7 +4,7 @@
     <compoundname>async_file_io_dispatcher_base__barrier</compoundname>
     <title>x</title>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__async__file__io__dispatcher__base____barrier_1gacc278eff00d3740305863354cca4660b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="group__async__file__io__dispatcher__base____barrier_1gacc278eff00d3740305863354cca4660b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; async_io_op &gt;</type>
         <definition>std::vector&lt;async_io_op&gt; boost::afio::async_file_io_dispatcher_base::barrier</definition>
         <argsstring>(const std::vector&lt; async_io_op &gt; &amp;ops)</argsstring>
@@ -29,7 +29,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N) to complete.</qbk>   <qbk>[heading Exception Model]See detailed description above.</qbk>   <qbk>[heading Example][barrier_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1699"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1708"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

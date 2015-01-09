@@ -44,12 +44,12 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="210">
+      <node id="213">
         <label>T</label>
       </node>
-      <node id="209">
+      <node id="212">
         <label>std::auto_ptr&lt; T &gt;</label>
-        <childnode refid="210" relation="usage">
+        <childnode refid="213" relation="usage">
           <edgelabel>ptr</edgelabel>
         </childnode>
       </node>

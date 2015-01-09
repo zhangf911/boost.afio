@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1096" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1096" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1105" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1105" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__async__file__io__dispatcher__base____completion_1ga54bf743efd9a69d7dd11d01ce25fe304" prot="public" static="no">
         <type>completion_returntype</type>
@@ -28,11 +28,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1098" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1098" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1107" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1107" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__async__file__io__dispatcher__base____completion_1ga6cb87e3ca62468c8027a0cf052a9ff24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="group__async__file__io__dispatcher__base____completion_1ga6cb87e3ca62468c8027a0cf052a9ff24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; async_io_op &gt;</type>
         <definition>std::vector&lt;async_io_op&gt; boost::afio::async_file_io_dispatcher_base::completion</definition>
         <argsstring>(const std::vector&lt; async_io_op &gt; &amp;ops, const std::vector&lt; std::pair&lt; async_op_flags, std::function&lt; async_file_io_dispatcher_base::completion_t &gt;&gt;&gt; &amp;callbacks)</argsstring>
@@ -67,7 +67,7 @@
  <qbk.distinguish> batch bound functions</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][completion_example1]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1116"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1125"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____completion_1gac745f6f5424e142086cf45cc583f5aac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async_io_op</type>
@@ -104,7 +104,7 @@
  <qbk.distinguish> single bound function</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][completion_example1]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1128" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2804" bodyend="2812"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1137" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2813" bodyend="2821"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

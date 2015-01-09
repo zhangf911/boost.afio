@@ -6,9 +6,9 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_1a5b08da89b3bc55fc93f9869a33b95f46" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_1a05b517168fa205fe996613cf4f75c499" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_1a9018b975d69aa29888f4a6696644483f" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_1a30d0f69e4aaaa052e1b958e7c7ef865a" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_1a03366d64916ffe640e0dd4c1589fab50" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_1a4af66c5f8712fe1b2334d3a4fec54def" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_1a4a61108b70d38756cf62b0cd8b7b720c" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_1ac3cc7ebe33551b6f6298bac8f645d6ac" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_1ac728e8b290ea2b43de0e2ec8083fef08" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_1a800508a41db402d30eaf4c0e204b9248" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
@@ -19,11 +19,11 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1adfed3b3e2ddbb09ff894dccfcdc75307" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a577358eee6db4ccca036b34c554bf302" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a81d72743a2672d16646bbdcc0050033c" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a0c31b65725f2b7de774e74b851199f69" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a32319b8d65f26da26bf2528632ce7662" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a9878272e7f43ee6c2f2ed5b19b4ed0e6" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1aaa3c6e2839a357d09fc5f9f59f548aca" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a0306e3624e5f56f707a07c42294a1fc6" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a40af87d47ed5d3b12a215e634368c32b" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a1cf91b67c1c630cb1c37cb78ab06aa0a" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1ab54b90a145c77435fe0ea6484b5d785e" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a26b4dce2c32ebcf2a9b79f76800c1cc6" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
   </compound>
@@ -33,9 +33,9 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1af1d36b8303d6d4339784c21d33047180" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1a9dd1b230715301c297a167c33f45b587" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1a2c210c1e6be3e41c5f997e371d0e66ed" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1a683cde78a22f1c9ff10744fd4b67fd10" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1a66cdd43d67afb31900653df5538f2333" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1ad0f18857a3db1064946929ae0b7830eb" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1aea42118258b7efb818aea9cae585d2d1" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1ad65c303fd7900f780fdf5d7717d2fc74" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1adcd2fbfe9d44af60efa79c2f3aad6285" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
   </compound>
@@ -45,11 +45,11 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a0260637ed3624ac6d7718e1a13d37295" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a9b0b7c675886996d7287f0ed4d800b15" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a862d86da25d602403f41130be2cce810" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a2c6997f35124f518a3950a5c7de028c1" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a5eb983690a4cdd9583ca194c8489f1f2" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a02927eb0c6caf7a3e6ca80e207f7c997" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a6b923aeb2a2200bd3589f1d0bcb36bbe" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1abd64008fd87dd1cf6d7538acf2635d8b" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a56d96490189430b6b1fa134327cc5020" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a2ae7b8668d171892cfec367594772bfb" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a02e32e7474b2de554c2ca61d3fd55273" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1ac58f9a075ff52c447a3178c74dc46d92" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
   </compound>
@@ -59,11 +59,11 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a3d5820c983d028b7c3ab76716fc3d784" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a84f5ff0b4a29aadf4e73c2a436c05e80" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1aafd627487673ea9d53cce8385fda69ce" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1aa4eea0a5a20495b71ef108e5a0a38c6f" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1aa5d380e8ec439c3a1d7e9b2d44d26b57" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a4b2b0d0cac50595f94a546a312d858e8" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1ab8cd954b27ea7b7754c4870ca0a37774" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1acb9ca8677ebad63dd2c289ddc2c34565" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a4195d4eb37d44ffe3683ef486ca2a963" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a4e860f433d2a702b5916e25849182f1f" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1aa036243df783ec2afe233dd821aa5e7f" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a6500d3414c73147a0cbd31a304385ec5" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
   </compound>
@@ -73,11 +73,11 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a82fe0967bcf9b0622f42d1388ad8da08" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a8ee82cc15661260baad403dc672ec2ea" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a5b8d0d90b6f7782f1d03a6e17c01e809" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a013adbae0ededcfa0b4bfb628c21ffdc" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1acd40396862ac305eb40c0cfc98341eb2" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a950b1d9a5d13cd836269303ce66255ca" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a7f885d55b7262d6caee2f52a79b7e0d4" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1aa9d839c5146f86596ff39f71dd9f9385" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1ae413e275b82ba5f23b08dac2b303e98f" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a687a5a4c45b4963b655f496908c2b7df" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a3609a3958fd2c672b10871716b3d9779" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a292c69a845da09a865543928944ec667" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
   </compound>
@@ -87,11 +87,11 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1aea304b5a721b670335d849985bf6b901" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a43a63ce53be9529bc5df6d02c7f5d580" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a31ae361aae57374eade061f6d7cc1fd4" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a5e1b207fec62b246f707bfa0ebf322f0" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a1ade0807140a5ec170d14566a61dfce6" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a23978cfdf9bcd5e322fe41b7c38c9990" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a243fe0d8a6c9fc679e9164c33627de32" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1ae14ba2e2acecd9cbef285fb96637fce6" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a95293a732a23fe4305ead4dd2a35dd25" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a51c8e7a752f052f74b609d1781ce14ba" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a487aece13cee353165124fbda22c8381" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a04c0ed35b14d2c0ee75aedf8bdab2542" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1aebdaaad1c817a4182a505e2e009be987" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
@@ -102,9 +102,9 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a91d54e07ed50772d70a9960a2ede06f0" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a281777b5a121bebe831289036eefb68a" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a7388890a55f4a86b9cb8c2e8e02fec02" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a48f0f1a9d12e865cc6c04e9f9647ea1c" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a60d5e6d33757dcf03c1ef231ccf9d077" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1ab743fb5aee996ca0306680b8015b25ce" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a1bf54ffb5fd2d09eb783d2609f05d1cb" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a4b2d2a7183f08ff3f7b2fd92f538acc3" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a2a6c466b41025f72fb945036fc2d7851" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1ab231569cc7522ef657e7c9410ccbcdd6" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
@@ -115,11 +115,11 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1abc01193d74fb6eca9b16f83330b96bf1" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1a05df3bfc244974f27d2f2744870545ad" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1a1e0717936564cb0fe1c60dfc0e109acf" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1a5f02c531b4d69a9f4d902c5b49725308" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1a44ed9e2a1d30cc367decd203e47e055c" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1a480e98a8669d2ce290cc0bc464bb6d3a" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1ab91af6518805ba6e220da0ad24191706" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1aba2c2a8ed4933cb7410f063c5fdbc54b" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1a1ec3d6e338b1931412246d17be688478" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1a0fce3cbb6efdc07f399dc5c592717853" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1aea3d3fa62bd0b90d51fddac60c430ad7" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1aa752a1f9526a5c3194ce5a143a941ab7" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
   </compound>
@@ -129,9 +129,9 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1acbb84e3e57ae22484d345f464ab0bd6d" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1a12654ce7695580b4eef7e8083f277e61" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1ad254e58b057f1bab7adba22bf01d440b" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1aa319cc9cfdbb0f2ca0e46a6b6e6e2ed9" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1a0f92fd89df1d33c176064200a73a45a8" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1aa8603117a37a4c18f40fabd37141b15d" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1a62120b47ea6d8397789f5ba3142436fd" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1a87254c0f7ab9bd7f343cff25b97e2be8" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1afb1acae887cdc9543090070d1dcf5329" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
   </compound>
@@ -141,9 +141,9 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a01f3f441efc1fcef374f57a6835156cd" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1ad57471ca8372b95aa5f9a652e8dc9982" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1ab7c07eb0c700f8e37cdf618d0abb2458" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1af5170d54dba490d16a99563dbe7fb546" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1ad33e00654ef082620aad1bef53b2850b" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a9a35b62efcc40be57e1a3e2c4ad3eb15" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1ab04bdd5f185b07688db0266f6b48245a" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a97de0fa673d127f54c06412f14c07df1" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a05866030d1064910286edbfd2807bbfa" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
   </compound>
@@ -153,9 +153,9 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a991f001fb9c1a19a9804c51f6896afab" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1abf3b4ab7ad6409ada96f910c11ffa793" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a548cf2e2303cd68df22f0f5d9372ad9c" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a4a14f6b9b7c4d350e27ee378ec25a111" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a8432b9d6c57660f4c9c29958b61566d7" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1ad3a95bc2e87e1303fde0065a3bf934e0" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a212f4073b233b902d52db7338a036d1d" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1aa6ded9695af9e66e507366777a66eb54" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a443e5b3eb85546383469ca547eb81496" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
   </compound>
@@ -165,11 +165,11 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a759497aaa667d83a47eca6b3018f6ca8" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a49ac2452bc357dde4c013f7ff0cee38b" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a1fb4ce04a7220af8ed0c9ea8796bb81d" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a10e26dbd025b7ccfc50bec2d7be93dd2" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a2ff460003841015bcaedd652fd7be3f6" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1aea303a94cbd5cc73b8b64a13b0fc0c57" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1ac946c1542efb93b48a0cfc5e2e4058ed" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a953c4b8184c61bc74e6d8d2d14eb98ee" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a47635d6659ef471306ef87d0b525cc49" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1ad44757070cc8eaf89fa05ba24a12a8f0" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1ac821aa67b7d49ad72e257c165e2b305a" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a118b4000e6c37a724728d46d313120d8" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
   </compound>
@@ -179,9 +179,9 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a32f11615c7052163c56ba2a1b68feea6" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a6e42a86723057c91ac08ba5ca5c7126c" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a1c1bf455dbc1b5c6084bbe0f05def6db" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a3d8b472060412d2466d566eb45611d04" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a1027cc3ed3cd31dd1eb341161dcb2dc4" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a5f55e22e6d87f91b1ab1ab3241d406e4" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a9f28eb263c9693ac923c03643eff8a0e" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1ab1f05b190468fbc13e436bfa4626d56e" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1aa69f4792d56f36cd84586a6b9c990681" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
   </compound>
@@ -191,9 +191,9 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a6e0888105ef07616c3220cc4b28ab814" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a2b6ba3610d3de491df67f3b6e6d6ab44" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a260630f768bb9ab916c05220a71d6957" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1ab0c792f98483d76f961575c4b4281dba" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a45875004e0123fde8a16b3809a1f76fe" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1aa800805b0140b3a6f4ffc50ffa095fb2" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a44cd8f24cb199cd29a876a07edf12f93" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a0d4e39d86c5975a05a20e732a98b395c" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1ae813be2aac919f1056dd8f31349cf078" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
   </compound>
@@ -203,7 +203,7 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1ace04d40645351cf31598aeda7a9f18b4" kind="variable"><name>where</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1a368d87c0cf266aa1e4c5882f85cd2d2b" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1ad100c8bfc368f3416ec55add5515b8fa" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1a71a5967c85f3fdc59a94fae400ebe4c3" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1a219ef55aee2cdd03d8da8469ea3972c9" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1ab559ab0949cbb9e934ca5cc26f8e8a1c" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1a6787e05f2a9c950235668e56bc02b7a6" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
@@ -302,7 +302,7 @@
     <member refid="group__async__file__io__dispatcher__base____misc_1ga006bef030dab5c7bc67fbdc5bc352cef" kind="function"><name>complete_async_op</name></member>
     <member refid="group__async__file__io__dispatcher__base____misc_1ga39bb6e878d9ad0b4b926e31ced073177" kind="function"><name>complete_async_op</name></member>
     <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a735e7a659db8e76f0bfb77123c38f23b" kind="function"><name>write</name></member>
-    <member refid="group__async__file__io__dispatcher__base____misc_1ga2985fb8a06fe014d74fbcf7f4302d82b" kind="function"><name>page_size</name></member>
+    <member refid="group__async__file__io__dispatcher__base____misc_1ga0dbf229a0b5733133f74aabf22d47609" kind="function"><name>page_size</name></member>
   </compound>
   <compound refid="classboost_1_1afio_1_1async__io__handle" kind="class"><name>boost::afio::async_io_handle</name>
     <member refid="classboost_1_1afio_1_1async__io__handle_1a1685977cc7dfdfbb243e56330e81c929" kind="friend"><name>async_file_io_dispatcher_base</name></member>
@@ -364,9 +364,9 @@
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a58aaf07ba0547ac61cc851ab5b7aed2f" kind="variable"><name>where</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a6254251003f2789fdaa0a68f69752955" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1abd9a9356e74c66dbf2e5a9668f3da464" kind="function"><name>async_data_op_req_impl</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a816df9608ad9c427a1a2eea8784c5883" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a74c8488b866a7baec1b9585020e96a32" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a597b07864ae6c22b02dfd083a0e4e779" kind="function"><name>operator=</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aa76af6ca2102763ca2e6a7503e65f1f3" kind="function"><name>operator=</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a96cac690389490ea7e19e92c12f775db" kind="function"><name>operator=</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1ae981a8e7b643b718a60c85a817e09593" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1ab76aaade08201c661d3341e18ab5d806" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a10b6962eeb176b008847f16245922115" kind="function"><name>async_data_op_req_impl</name></member>
@@ -380,11 +380,11 @@
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1afa3705cacc7b93d4513f20225c7c3d76" kind="variable"><name>where</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aadec13f2add68372932a8b26360d98dd" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aef0669fca58b816cbc8b6e36375f062b" kind="function"><name>async_data_op_req_impl</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1ac1e3b8a1f6f23583b3b2114dc5eb0dd1" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a205a02480c5303822919c1d5883e3691" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a9780163187ac238e67b81f9ea04e2c97" kind="function"><name>async_data_op_req_impl</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a5084c4c95d78503210a7d7ce8b44a86f" kind="function"><name>async_data_op_req_impl</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1ae364c27423a2cd8bb3300fa7732cb276" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a360e610764b1147cfedd9c16cdb3866d" kind="function"><name>operator=</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1ac09094aee48d893e561b69d14ecf1aa4" kind="function"><name>operator=</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a37e91501f1c76de829ef4b2828922d0f" kind="function"><name>operator=</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1af8da7dede4533395a74fea6faaaeb391" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aab7fb0d133ded6696d4a8a4b8eafd42e" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aa8ab110c45c33fb6fa85ebfb28cbd5c4" kind="function"><name>async_data_op_req_impl</name></member>
@@ -407,8 +407,8 @@
     <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a8106e683974cda887bef5997d3e54244" kind="variable"><name>p</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a0e7a5f4b14204194ee75761780b89d99" kind="function"><name>validate</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a984de73341d2813eb2643cc34774d5f4" kind="function"><name>enqueued_task_impl</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a62aaa276831fb78f4d7dd814a7e1c3c4" kind="function"><name>valid</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a341d57749b4cedc954099a9a3f985254" kind="function"><name>swap</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a6b46a0d413d1f615f82c92e5c8267387" kind="function"><name>valid</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1afd3e4e74249bbc0aaf667d8516847702" kind="function"><name>swap</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1ad744e2c93c8a34eef5823249b2f2abb9" kind="function"><name>reset</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1ae569f6b76499c7c175c18388bc3214bb" kind="function"><name>set_task</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a34fe12e54b29bb8196661ae198e3d67b" kind="function"><name>get_future</name></member>
@@ -459,14 +459,14 @@
     <member refid="classboost_1_1afio_1_1directory__entry_1a5b879de5d50d7acbbdb2acd62803770d" kind="function"><name>operator=</name></member>
     <member refid="classboost_1_1afio_1_1directory__entry_1a26153f1ef545955c8a78185f79940c90" kind="function"><name>directory_entry</name></member>
     <member refid="classboost_1_1afio_1_1directory__entry_1a8d5e8442f064b0308cc4334719fe3d9f" kind="function"><name>operator=</name></member>
-    <member refid="classboost_1_1afio_1_1directory__entry_1ad4d78f7936075e9d92571ceaad5495a2" kind="function"><name>operator==</name></member>
-    <member refid="classboost_1_1afio_1_1directory__entry_1a495f2f6fb3ba8217847768d8e670144f" kind="function"><name>operator!=</name></member>
-    <member refid="classboost_1_1afio_1_1directory__entry_1adeb1659127f145042243d2b00a0c80c2" kind="function"><name>operator&lt;</name></member>
-    <member refid="classboost_1_1afio_1_1directory__entry_1ae0d452f7bf827cf7d841cc83313f26d7" kind="function"><name>operator&lt;=</name></member>
-    <member refid="classboost_1_1afio_1_1directory__entry_1a3fba46df3e3027daf8514bc9efd99291" kind="function"><name>operator&gt;</name></member>
-    <member refid="classboost_1_1afio_1_1directory__entry_1a1a16dc394a086d5df7ecb8d2e6cbc4fd" kind="function"><name>operator&gt;=</name></member>
-    <member refid="classboost_1_1afio_1_1directory__entry_1af9b4910c6d0898e741cfbc44d2625565" kind="function"><name>name</name></member>
-    <member refid="classboost_1_1afio_1_1directory__entry_1aa6998394593e4bf5614f9f4f955bb7da" kind="function"><name>metadata_ready</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a02aa5405eb8125714b87e70fad55a2e0" kind="function"><name>operator==</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a36eaa107a21c178f7177f6d240f1f54e" kind="function"><name>operator!=</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a0902fdeb81e01ca17f7002753fcc9a76" kind="function"><name>operator&lt;</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a08ff1802403b5006dbfb1d694ef98644" kind="function"><name>operator&lt;=</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a085ba3cc68a8e8a2526ad88f9a00400e" kind="function"><name>operator&gt;</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a3085873a15136077df50e639467e6fc8" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1aabde5ce747d6092a4d69c23b6519251a" kind="function"><name>name</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a5f15a6e3fd1be98932d6ef47cc90f170" kind="function"><name>metadata_ready</name></member>
     <member refid="classboost_1_1afio_1_1directory__entry_1ac7fdc301cf47a4964a3c91fad7b21368" kind="function"><name>fetch_metadata</name></member>
     <member refid="classboost_1_1afio_1_1directory__entry_1a17bd6beaafd480dfd193c86462e56f54" kind="function"><name>fetch_lstat</name></member>
     <member refid="classboost_1_1afio_1_1directory__entry_1a2e798a994154158fecc6efda9920cdc6" kind="function"><name>st_dev</name></member>
@@ -487,9 +487,9 @@
     <member refid="classboost_1_1afio_1_1directory__entry_1aa22079e727e0314323e6511a60b4e53a" kind="function"><name>st_flags</name></member>
     <member refid="classboost_1_1afio_1_1directory__entry_1a77f716b223ef9123d18fa2f66369ffaa" kind="function"><name>st_gen</name></member>
     <member refid="classboost_1_1afio_1_1directory__entry_1afc8cbcad44546653218dba9f20c443fd" kind="function"><name>st_birthtim</name></member>
-    <member refid="classboost_1_1afio_1_1directory__entry_1a6f5ac31e50f4298140548b0214454aa4" kind="function"><name>metadata_supported</name></member>
-    <member refid="classboost_1_1afio_1_1directory__entry_1ad4b6107f53eeda85fc01a451ee7bcb38" kind="function"><name>metadata_fastpath</name></member>
-    <member refid="classboost_1_1afio_1_1directory__entry_1af3873881a5ad795462dd41125be01804" kind="function"><name>compatibility_maximum</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1ac58aa01a5ffde92e6725f7ec11946197" kind="function"><name>metadata_supported</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a3ffc87e0e2d28facff8e2c5dd82c9e60" kind="function"><name>metadata_fastpath</name></member>
+    <member refid="classboost_1_1afio_1_1directory__entry_1a20770ff6a8c0589b3eebf933cf7c0475" kind="function"><name>compatibility_maximum</name></member>
   </compound>
   <compound refid="structboost_1_1afio_1_1directory__entry__hash" kind="struct"><name>boost::afio::directory_entry_hash</name>
     <member refid="structboost_1_1afio_1_1directory__entry__hash_1a0c8a97366252c636d922448876bce4e8" kind="function"><name>operator()</name></member>
@@ -498,8 +498,8 @@
     <member refid="classboost_1_1afio_1_1enqueued__task_3_01_r_07_08_4_1ae4ffed9500fec824b7b520ceba1ba2a2" kind="typedef"><name>Base</name></member>
     <member refid="classboost_1_1afio_1_1enqueued__task_3_01_r_07_08_4_1a2175060cc84cc301fb06810ed161064a" kind="function"><name>enqueued_task</name></member>
     <member refid="classboost_1_1afio_1_1enqueued__task_3_01_r_07_08_4_1a19a4295263c0d61b3e69b554df642d31" kind="function"><name>operator()</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a62aaa276831fb78f4d7dd814a7e1c3c4" kind="function"><name>valid</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a341d57749b4cedc954099a9a3f985254" kind="function"><name>swap</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a6b46a0d413d1f615f82c92e5c8267387" kind="function"><name>valid</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1afd3e4e74249bbc0aaf667d8516847702" kind="function"><name>swap</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1ad744e2c93c8a34eef5823249b2f2abb9" kind="function"><name>reset</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1ae569f6b76499c7c175c18388bc3214bb" kind="function"><name>set_task</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a34fe12e54b29bb8196661ae198e3d67b" kind="function"><name>get_future</name></member>
@@ -514,8 +514,8 @@
     <member refid="classboost_1_1afio_1_1enqueued__task_3_01void_07_08_4_1a433066dcc250b3aba58a93f72ebae82a" kind="typedef"><name>Base</name></member>
     <member refid="classboost_1_1afio_1_1enqueued__task_3_01void_07_08_4_1af73c1a662ef9d3fdb4e2ce98635e3723" kind="function"><name>enqueued_task</name></member>
     <member refid="classboost_1_1afio_1_1enqueued__task_3_01void_07_08_4_1a49be89ca9f00718fda61a3130bd3f684" kind="function"><name>operator()</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a62aaa276831fb78f4d7dd814a7e1c3c4" kind="function"><name>valid</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a341d57749b4cedc954099a9a3f985254" kind="function"><name>swap</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a6b46a0d413d1f615f82c92e5c8267387" kind="function"><name>valid</name></member>
+    <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1afd3e4e74249bbc0aaf667d8516847702" kind="function"><name>swap</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1ad744e2c93c8a34eef5823249b2f2abb9" kind="function"><name>reset</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1ae569f6b76499c7c175c18388bc3214bb" kind="function"><name>set_task</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl_1a34fe12e54b29bb8196661ae198e3d67b" kind="function"><name>get_future</name></member>
@@ -551,15 +551,7 @@
     <member refid="structboost_1_1afio_1_1stat__t_1a2d68ccbef69bb7d3786eea023c00cd62" kind="function"><name>stat_t</name></member>
   </compound>
   <compound refid="structboost_1_1afio_1_1statfs__t" kind="struct"><name>boost::afio::statfs_t</name>
-    <member refid="structboost_1_1afio_1_1statfs__t_1aeb255520f59657035d68027c40319793" kind="variable"><name>rdonly</name></member>
-    <member refid="structboost_1_1afio_1_1statfs__t_1afef574b6d3c653607339480af7f8f1d0" kind="variable"><name>noexec</name></member>
-    <member refid="structboost_1_1afio_1_1statfs__t_1aa1550f4bae8818480e1ca87c0dce8b16" kind="variable"><name>nosuid</name></member>
-    <member refid="structboost_1_1afio_1_1statfs__t_1a6c5f44fa8758b70731f852168a834f48" kind="variable"><name>acls</name></member>
-    <member refid="structboost_1_1afio_1_1statfs__t_1a299ca1747a32bc3a7a48abf5fc00621c" kind="variable"><name>xattr</name></member>
-    <member refid="structboost_1_1afio_1_1statfs__t_1a82124c5a27571086f460268c228273dc" kind="variable"><name>compression</name></member>
-    <member refid="structboost_1_1afio_1_1statfs__t_1ac9603c97cf4260235ebd637efb0fe8d8" kind="variable"><name>extents</name></member>
-    <member refid="structboost_1_1afio_1_1statfs__t_1aa930c6f19577d987732e5dcae0cb6c58" kind="variable"><name>filecompression</name></member>
-    <member refid="structboost_1_1afio_1_1statfs__t_1adb57dac2b75ef1a885ff77ceca75b313" kind="variable"><name>f_flags</name></member>
+    <member refid="structboost_1_1afio_1_1statfs__t_1add183a52cb4485786fe9cfb95807c8a7" kind="variable"><name>f_flags</name></member>
     <member refid="structboost_1_1afio_1_1statfs__t_1a56c9834357f55ecfa5d37dae1da1a53d" kind="variable"><name>f_bsize</name></member>
     <member refid="structboost_1_1afio_1_1statfs__t_1a0d313cc9be574b042e08c2e1aa3dbe01" kind="variable"><name>f_iosize</name></member>
     <member refid="structboost_1_1afio_1_1statfs__t_1af1b9c19237057e5a999f66a7dd3dcd99" kind="variable"><name>f_blocks</name></member>
@@ -574,6 +566,16 @@
     <member refid="structboost_1_1afio_1_1statfs__t_1aad749b64137ac49245ef96fe4d605f43" kind="variable"><name>f_mntfromname</name></member>
     <member refid="structboost_1_1afio_1_1statfs__t_1aeecd85aeec5d11a06fb1d24daa7ccfb7" kind="variable"><name>f_mntonname</name></member>
     <member refid="structboost_1_1afio_1_1statfs__t_1a7b28f874a3c1b8af62d3e7eb34ac2e9b" kind="function"><name>statfs_t</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1statfs__t_1_1f__flags__t" kind="struct"><name>boost::afio::statfs_t::f_flags_t</name>
+    <member refid="structboost_1_1afio_1_1statfs__t_1_1f__flags__t_1a1eabd43053a6d7c8fe38a44787d429a4" kind="variable"><name>rdonly</name></member>
+    <member refid="structboost_1_1afio_1_1statfs__t_1_1f__flags__t_1a4d4e2dad0d22ba4b6700e82a446d7b29" kind="variable"><name>noexec</name></member>
+    <member refid="structboost_1_1afio_1_1statfs__t_1_1f__flags__t_1a9309f2af2ebdb7a249667b829d8f4a8b" kind="variable"><name>nosuid</name></member>
+    <member refid="structboost_1_1afio_1_1statfs__t_1_1f__flags__t_1a9f98cd66b9f3c17bd65579ada9e1b68a" kind="variable"><name>acls</name></member>
+    <member refid="structboost_1_1afio_1_1statfs__t_1_1f__flags__t_1a412daa9d83a95d862235808298fbb44e" kind="variable"><name>xattr</name></member>
+    <member refid="structboost_1_1afio_1_1statfs__t_1_1f__flags__t_1a07e383607daf3794aa619eddc432268b" kind="variable"><name>compression</name></member>
+    <member refid="structboost_1_1afio_1_1statfs__t_1_1f__flags__t_1ac783f6c68405c699c2121ef8e3ce1d32" kind="variable"><name>extents</name></member>
+    <member refid="structboost_1_1afio_1_1statfs__t_1_1f__flags__t_1a03b1bee953af4ca4015a1bb7a2c749e6" kind="variable"><name>filecompression</name></member>
   </compound>
   <compound refid="classboost_1_1afio_1_1std__thread__pool" kind="class"><name>boost::afio::std_thread_pool</name>
     <member refid="classboost_1_1afio_1_1std__thread__pool_1a4636d2eabf003b9aa517f234ac288a6c" kind="friend"><name>worker</name></member>
@@ -908,8 +910,8 @@
     <member refid="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a08ce3747edf979603fcfe8c7b151723a" kind="enumvalue"><name>mntonname</name></member>
     <member refid="namespaceboost_1_1afio_1gadc548bc518f40378c9c9c97f4a994438a0b6c15d8f7aeebc47c400a5dd9b1c44c" kind="enumvalue"><name>All</name></member>
     <member refid="namespaceboost_1_1afio_1a90c6d3eb9c6ffd8c9b90e0d4578415e0" kind="typedef"><name>off_t</name></member>
-    <member refid="group__process__threadpool_1ga508fdd37661e739fc26a5dec80db56a5" kind="function"><name>process_threadpool</name></member>
-    <member refid="group__async__file__io__dispatcher_1ga422c01cd3653e6bb316a985ab3a1c6d1" kind="function"><name>make_async_file_io_dispatcher</name></member>
+    <member refid="group__process__threadpool_1gabb4747cc11ef3ee1bbb969bc78c238bb" kind="function"><name>process_threadpool</name></member>
+    <member refid="group__async__file__io__dispatcher_1ga412e5ba3eaf5c1df0499dad2ddd79fb8" kind="function"><name>make_async_file_io_dispatcher</name></member>
     <member refid="group__when__all__ops_1gadd8ae93c91c23b1011dfdf002db07e9e" kind="function"><name>when_all</name></member>
     <member refid="group__when__all__ops_1ga85c6d5c463b1ecffdc2a6bda4f040bb0" kind="function"><name>when_any</name></member>
     <member refid="group__when__all__ops_1ga5598f81e0788f6acd2258263009de875" kind="function"><name>when_all</name></member>
@@ -967,6 +969,8 @@
     <member refid="afio_8hpp_1a401610ff222fc25b2f5194a628d0ca52" kind="define"><name>BOOST_AFIO_V1_NAMESPACE</name></member>
     <member refid="afio_8hpp_1a58c3ce35d210f818df9f4e3cf4c6575f" kind="define"><name>BOOST_AFIO_V1_NAMESPACE_BEGIN</name></member>
     <member refid="afio_8hpp_1a2052639d8e84836a73d90c595e5dd1a6" kind="define"><name>BOOST_AFIO_V1_NAMESPACE_END</name></member>
+    <member refid="afio_8hpp_1a5a75b0e1ac1a86e60b2666ed2f64d36f" kind="define"><name>BOOST_AFIO_HEADERS_ONLY_MEMFUNC_SPEC</name></member>
+    <member refid="afio_8hpp_1ab4f63024aa1238f1d6a067b3d7fb23c7" kind="define"><name>BOOST_AFIO_HEADERS_ONLY_VIRTUAL_SPEC</name></member>
     <member refid="group__macros_1ga8abeb465d2ca6fa15b3c3754697e5577" kind="define"><name>BOOST_AFIO_VALIDATE_INPUTS</name></member>
     <member refid="afio_8hpp_1a933046d7a31248aa271a978579ee8977" kind="define"><name>BOOST_AFIO_DECLARE_CLASS_ENUM_AS_BITFIELD</name></member>
     <member refid="afio_8hpp_1ac794ed8c3e9fc1a99bd54d5b993d2b6c" kind="define"><name>BOOST_AFIO_DIRECTORY_ENTRY_ACCESS_METHOD</name></member>
@@ -993,10 +997,10 @@
     <member refid="group__when__all__ops_1ga3a4b5bc5ed128e7ef337fe164f897782" kind="function"><name>when_all</name></member>
   </compound>
   <compound refid="group__async__file__io__dispatcher" kind="group"><name>async_file_io_dispatcher</name>
-    <member refid="group__async__file__io__dispatcher_1ga422c01cd3653e6bb316a985ab3a1c6d1" kind="function"><name>make_async_file_io_dispatcher</name></member>
+    <member refid="group__async__file__io__dispatcher_1ga412e5ba3eaf5c1df0499dad2ddd79fb8" kind="function"><name>make_async_file_io_dispatcher</name></member>
   </compound>
   <compound refid="group__async__file__io__dispatcher__base____misc" kind="group"><name>async_file_io_dispatcher_base__misc</name>
-    <member refid="group__async__file__io__dispatcher__base____misc_1ga2985fb8a06fe014d74fbcf7f4302d82b" kind="function"><name>page_size</name></member>
+    <member refid="group__async__file__io__dispatcher__base____misc_1ga0dbf229a0b5733133f74aabf22d47609" kind="function"><name>page_size</name></member>
     <member refid="group__async__file__io__dispatcher__base____misc_1ga006bef030dab5c7bc67fbdc5bc352cef" kind="function"><name>complete_async_op</name></member>
     <member refid="group__async__file__io__dispatcher__base____misc_1ga39bb6e878d9ad0b4b926e31ced073177" kind="function"><name>complete_async_op</name></member>
   </compound>
@@ -1137,7 +1141,7 @@
   <compound refid="group__when__all__futures" kind="group"><name>when_all_futures</name>
   </compound>
   <compound refid="group__process__threadpool" kind="group"><name>process_threadpool</name>
-    <member refid="group__process__threadpool_1ga508fdd37661e739fc26a5dec80db56a5" kind="function"><name>process_threadpool</name></member>
+    <member refid="group__process__threadpool_1gabb4747cc11ef3ee1bbb969bc78c238bb" kind="function"><name>process_threadpool</name></member>
   </compound>
   <compound refid="dir_d46f54565c8d3a5be4cc965304f49b91" kind="dir"><name>/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/</name>
   </compound>

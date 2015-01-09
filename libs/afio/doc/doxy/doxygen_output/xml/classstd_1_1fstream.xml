@@ -8,76 +8,76 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="476">
-        <label>std::basic_fstream&lt; char &gt;</label>
-        <childnode refid="477" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="478">
-        <label>std::basic_istream&lt; Char &gt;</label>
-        <childnode refid="479" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="477">
-        <label>std::basic_iostream&lt; Char &gt;</label>
-        <childnode refid="478" relation="public-inheritance">
-        </childnode>
-        <childnode refid="481" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="481">
-        <label>std::basic_ostream&lt; Char &gt;</label>
-        <childnode refid="479" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="479">
-        <label>std::basic_ios&lt; Char &gt;</label>
+        <label>std::basic_fstream&lt; char &gt;</label>
         <childnode refid="480" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="481">
+        <label>std::basic_istream&lt; Char &gt;</label>
+        <childnode refid="482" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="480">
+        <label>std::basic_iostream&lt; Char &gt;</label>
+        <childnode refid="481" relation="public-inheritance">
+        </childnode>
+        <childnode refid="484" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="484">
+        <label>std::basic_ostream&lt; Char &gt;</label>
+        <childnode refid="482" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="482">
+        <label>std::basic_ios&lt; Char &gt;</label>
+        <childnode refid="483" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="483">
         <label>std::ios_base</label>
       </node>
-      <node id="475">
+      <node id="478">
         <label>std::fstream</label>
-        <childnode refid="476" relation="public-inheritance">
+        <childnode refid="479" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="483">
-        <label>std::basic_fstream&lt; char &gt;</label>
-        <childnode refid="484" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="485">
-        <label>std::basic_istream&lt; Char &gt;</label>
-        <childnode refid="486" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="484">
-        <label>std::basic_iostream&lt; Char &gt;</label>
-        <childnode refid="485" relation="public-inheritance">
-        </childnode>
-        <childnode refid="488" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="488">
-        <label>std::basic_ostream&lt; Char &gt;</label>
-        <childnode refid="486" relation="public-inheritance">
-        </childnode>
-      </node>
       <node id="486">
-        <label>std::basic_ios&lt; Char &gt;</label>
+        <label>std::basic_fstream&lt; char &gt;</label>
         <childnode refid="487" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="488">
+        <label>std::basic_istream&lt; Char &gt;</label>
+        <childnode refid="489" relation="public-inheritance">
+        </childnode>
+      </node>
       <node id="487">
+        <label>std::basic_iostream&lt; Char &gt;</label>
+        <childnode refid="488" relation="public-inheritance">
+        </childnode>
+        <childnode refid="491" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="491">
+        <label>std::basic_ostream&lt; Char &gt;</label>
+        <childnode refid="489" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="489">
+        <label>std::basic_ios&lt; Char &gt;</label>
+        <childnode refid="490" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="490">
         <label>std::ios_base</label>
       </node>
-      <node id="482">
+      <node id="485">
         <label>std::fstream</label>
-        <childnode refid="483" relation="public-inheritance">
+        <childnode refid="486" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

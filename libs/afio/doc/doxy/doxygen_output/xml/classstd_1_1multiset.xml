@@ -33,12 +33,12 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="636">
+      <node id="639">
         <label>K</label>
       </node>
-      <node id="635">
+      <node id="638">
         <label>std::multiset&lt; K &gt;</label>
-        <childnode refid="636" relation="usage">
+        <childnode refid="639" relation="usage">
           <edgelabel>keys</edgelabel>
         </childnode>
       </node>

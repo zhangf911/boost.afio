@@ -14,6 +14,7 @@
     <includes local="no">BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, ratio)</includes>
     <includes local="no">BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, thread)</includes>
     <includes local="yes">spinlock/include/boost/spinlock/concurrent_unordered_map.hpp</includes>
+    <includes local="no">boost/config/auto_link.hpp</includes>
     <includes local="yes">detail/Undoer.hpp</includes>
     <includes local="no">utility</includes>
     <includes local="yes">detail/ErrorHandling.hpp</includes>
@@ -27,46 +28,49 @@
     <includes local="no">algorithm</includes>
     <includes local="no">functional</includes>
     <incdepgraph>
+      <node id="17">
+        <label>boost/config/auto_link.hpp</label>
+      </node>
       <node id="6">
         <label>bindlib/include/import.h</label>
       </node>
       <node id="13">
         <label>BOOST_BINDLIB_INCLUDE_STL1z(bindlib, boost, networking)</label>
       </node>
-      <node id="28">
+      <node id="29">
         <label>functional</label>
       </node>
-      <node id="23">
+      <node id="24">
         <label>boost/exception/diagnostic_information.hpp</label>
       </node>
       <node id="8">
         <label>BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, chrono)</label>
       </node>
-      <node id="21">
+      <node id="22">
         <label>stdexcept</label>
       </node>
       <node id="16">
         <label>spinlock/include/boost/spinlock/concurrent_unordered_map.hpp</label>
       </node>
-      <node id="20">
+      <node id="21">
         <label>string</label>
       </node>
       <node id="9">
         <label>BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, condition_variable)</label>
       </node>
-      <node id="25">
+      <node id="26">
         <label>exception</label>
       </node>
-      <node id="17">
+      <node id="18">
         <label>detail/Undoer.hpp</label>
       </node>
-      <node id="22">
+      <node id="23">
         <label>detail/Utility.hpp</label>
       </node>
       <node id="5">
         <label>config.hpp</label>
       </node>
-      <node id="19">
+      <node id="20">
         <label>detail/ErrorHandling.hpp</label>
       </node>
       <node id="10">
@@ -78,13 +82,13 @@
       <node id="15">
         <label>BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, thread)</label>
       </node>
-      <node id="18">
+      <node id="19">
         <label>utility</label>
       </node>
       <node id="14">
         <label>BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, ratio)</label>
       </node>
-      <node id="26">
+      <node id="27">
         <label>iostream</label>
       </node>
       <node id="7">
@@ -93,10 +97,10 @@
       <node id="12">
         <label>BOOST_BINDLIB_INCLUDE_STL11(bindlib, std, mutex)</label>
       </node>
-      <node id="24">
+      <node id="25">
         <label>type_traits</label>
       </node>
-      <node id="27">
+      <node id="28">
         <label>algorithm</label>
       </node>
       <node id="4">
@@ -150,6 +154,8 @@
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <innerclass refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl" prot="public">boost::afio::detail::enqueued_task_impl</innerclass>
@@ -161,6 +167,7 @@
     <innerclass refid="classboost_1_1afio_1_1std__thread__pool_1_1worker" prot="private">boost::afio::std_thread_pool::worker</innerclass>
     <innerclass refid="structboost_1_1afio_1_1stat__t" prot="public">boost::afio::stat_t</innerclass>
     <innerclass refid="structboost_1_1afio_1_1statfs__t" prot="public">boost::afio::statfs_t</innerclass>
+    <innerclass refid="structboost_1_1afio_1_1statfs__t_1_1f__flags__t" prot="public">boost::afio::statfs_t::f_flags_t</innerclass>
     <innerclass refid="classboost_1_1afio_1_1directory__entry" prot="public">boost::afio::directory_entry</innerclass>
     <innerclass refid="structboost_1_1afio_1_1directory__entry__hash" prot="public">boost::afio::directory_entry_hash</innerclass>
     <innerclass refid="classboost_1_1afio_1_1async__io__handle" prot="public">boost::afio::async_io_handle</innerclass>
@@ -202,7 +209,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="afio_8hpp_1a7d6cb43e029a76765081fb3a2f47187d" prot="public" static="no">
         <name>BOOST_AFIO_HEADERS_ONLY</name>
-        <initializer>1</initializer>
+        <initializer>0</initializer>
         <briefdescription>
 <para>Determines if AFIO is compiled as headers only. Defaults to 1. </para>        </briefdescription>
         <detaileddescription>
@@ -253,7 +260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="45" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="45" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="48" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="afio_8hpp_1a58c3ce35d210f818df9f4e3cf4c6575f" prot="public" static="no">
         <name>BOOST_AFIO_V1_NAMESPACE_BEGIN</name>
@@ -264,7 +271,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="46" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="46" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="49" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="afio_8hpp_1a2052639d8e84836a73d90c595e5dd1a6" prot="public" static="no">
         <name>BOOST_AFIO_V1_NAMESPACE_END</name>
@@ -275,7 +282,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="47" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="47" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="50" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="afio_8hpp_1a5a75b0e1ac1a86e60b2666ed2f64d36f" prot="public" static="no">
+        <name>BOOST_AFIO_HEADERS_ONLY_MEMFUNC_SPEC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="51" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="afio_8hpp_1ab4f63024aa1238f1d6a067b3d7fb23c7" prot="public" static="no">
+        <name>BOOST_AFIO_HEADERS_ONLY_VIRTUAL_SPEC</name>
+        <initializer>virtual</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="52" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__macros_1ga8abeb465d2ca6fa15b3c3754697e5577" prot="public" static="no">
         <name>BOOST_AFIO_VALIDATE_INPUTS</name>
@@ -286,7 +314,7 @@
 <para>Turns on the checking of inputs for validity and throwing of exception conditions at the point of instantiation rather than waiting until those inputs are sent for dispatch. This, being very useful for debugging, defaults to 1 except when `NDEBUG` is defined i.e. final release builds. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="70" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="70" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="75" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="afio_8hpp_1a933046d7a31248aa271a978579ee8977" prot="public" static="no">
         <name>BOOST_AFIO_DECLARE_CLASS_ENUM_AS_BITFIELD</name>
@@ -313,7 +341,7 @@ inline BOOST_CONSTEXPR bool operator!(type a) \
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="370" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="354" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="375" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="359" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="afio_8hpp_1ac794ed8c3e9fc1a99bd54d5b993d2b6c" prot="public" static="no">
         <name>BOOST_AFIO_DIRECTORY_ENTRY_ACCESS_METHOD</name>
@@ -325,7 +353,7 @@ inline BOOST_CONSTEXPR bool operator!(type a) \
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="744" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="743" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="753" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="752" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

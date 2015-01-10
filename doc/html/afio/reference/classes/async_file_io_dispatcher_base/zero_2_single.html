@@ -28,7 +28,7 @@
           (single)</a>
 </h5></div></div></div>
 <p>
-            <a class="indexterm" name="idp17759392"></a>
+            <a class="indexterm" name="idp17784984"></a>
 Schedule an asynchronous zero and deallocation of physical storage ("hole
             punching") after a preceding operation.
           </p>
@@ -214,10 +214,14 @@ Schedule an asynchronous zero and deallocation of physical storage ("hole
     <span class="comment">// Get the list of allocated extents</span>
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span><span class="identifier">std</span><span class="special">::</span><span class="identifier">pair</span><span class="special">&lt;</span><span class="identifier">off_t</span><span class="special">,</span> <span class="identifier">off_t</span><span class="special">&gt;&gt;</span> <span class="identifier">extents</span><span class="special">=</span>
         <span class="identifier">dispatcher</span><span class="special">-&gt;</span><span class="identifier">extents</span><span class="special">(</span><span class="identifier">logfilea</span><span class="special">).</span><span class="identifier">first</span><span class="special">.</span><span class="identifier">get</span><span class="special">();</span>
-    <span class="identifier">extents</span><span class="special">.</span><span class="identifier">resize</span><span class="special">(</span><span class="number">1</span><span class="special">);</span>
-    <span class="identifier">extents</span><span class="special">.</span><span class="identifier">front</span><span class="special">().</span><span class="identifier">second</span><span class="special">-=</span><span class="number">1024</span><span class="special">;</span>
-    <span class="comment">// Fire and forget chopping off the front of the log file</span>
-    <span class="identifier">dispatcher</span><span class="special">-&gt;</span><span class="identifier">zero</span><span class="special">(</span><span class="identifier">logfilez</span><span class="special">,</span> <span class="identifier">extents</span><span class="special">);</span>
+    <span class="comment">// Filing system may not yet have allocated any storage ...</span>
+    <span class="keyword">if</span><span class="special">(!</span><span class="identifier">extents</span><span class="special">.</span><span class="identifier">empty</span><span class="special">())</span>
+    <span class="special">{</span>
+      <span class="identifier">extents</span><span class="special">.</span><span class="identifier">resize</span><span class="special">(</span><span class="number">1</span><span class="special">);</span>
+      <span class="identifier">extents</span><span class="special">.</span><span class="identifier">front</span><span class="special">().</span><span class="identifier">second</span><span class="special">-=</span><span class="number">1024</span><span class="special">;</span>
+      <span class="comment">// Fire and forget chopping off the front of the log file</span>
+      <span class="identifier">dispatcher</span><span class="special">-&gt;</span><span class="identifier">zero</span><span class="special">(</span><span class="identifier">logfilez</span><span class="special">,</span> <span class="identifier">extents</span><span class="special">);</span>
+    <span class="special">}</span>
   <span class="special">}</span>
 <span class="special">}</span>
 </pre>

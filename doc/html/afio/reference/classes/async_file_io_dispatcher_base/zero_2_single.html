@@ -28,7 +28,7 @@
           (single)</a>
 </h5></div></div></div>
 <p>
-            <a class="indexterm" name="idp17800520"></a>
+            <a class="indexterm" name="idp33601232"></a>
 Schedule an asynchronous zero and deallocation of physical storage ("hole
             punching") after a preceding operation.
           </p>
@@ -183,7 +183,7 @@ Schedule an asynchronous zero and deallocation of physical storage ("hole
 <span class="comment">// Retrieve any errors which occurred</span>
 <span class="identifier">logfilez</span><span class="special">.</span><span class="identifier">get</span><span class="special">();</span> <span class="identifier">logfilea</span><span class="special">.</span><span class="identifier">get</span><span class="special">();</span>
 <span class="comment">// Initialise a random number generator</span>
-<span class="identifier">ranctx</span> <span class="identifier">ctx</span><span class="special">;</span> <span class="identifier">raninit</span><span class="special">(&amp;</span><span class="identifier">ctx</span><span class="special">,</span> <span class="identifier">n</span><span class="special">);</span>
+<span class="identifier">ranctx</span> <span class="identifier">ctx</span><span class="special">;</span> <span class="identifier">raninit</span><span class="special">(&amp;</span><span class="identifier">ctx</span><span class="special">,</span> <span class="special">(</span><span class="identifier">u4</span><span class="special">)</span> <span class="identifier">n</span><span class="special">);</span>
 <span class="keyword">while</span><span class="special">(!</span><span class="identifier">done</span><span class="special">)</span>
 <span class="special">{</span>
   <span class="comment">// Each log entry is 32 bytes in length</span>

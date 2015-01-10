@@ -28,7 +28,7 @@
           (single)</a>
 </h5></div></div></div>
 <p>
-            <a class="indexterm" name="idp17832016"></a>
+            <a class="indexterm" name="idp17735344"></a>
 Schedule an asynchronous zero and deallocation of physical storage ("hole
             punching") after a preceding operation.
           </p>
@@ -205,10 +205,9 @@ Schedule an asynchronous zero and deallocation of physical storage ("hole
   <span class="comment">// to complete, then fetch the new size of the log file.</span>
   <span class="identifier">stat_t</span> <span class="identifier">s</span><span class="special">=</span><span class="identifier">dispatcher</span><span class="special">-&gt;</span><span class="identifier">write</span><span class="special">(</span><span class="identifier">make_async_data_op_req</span><span class="special">(</span><span class="identifier">logfilea</span><span class="special">,</span>
     <span class="identifier">buffer</span><span class="special">.</span><span class="identifier">bytes</span><span class="special">,</span> <span class="number">32</span><span class="special">,</span> <span class="number">0</span><span class="special">))-&gt;</span><span class="identifier">lstat</span><span class="special">();</span>
-  <span class="identifier">off_t</span> <span class="identifier">allocated</span><span class="special">=</span><span class="identifier">s</span><span class="special">.</span><span class="identifier">st_allocated</span><span class="special">*</span><span class="identifier">s</span><span class="special">.</span><span class="identifier">st_blksize</span><span class="special">;</span>
-  <span class="keyword">if</span><span class="special">(</span><span class="identifier">allocated</span><span class="special">&gt;</span><span class="number">1024</span><span class="special">)</span>
+  <span class="keyword">if</span><span class="special">(</span><span class="identifier">s</span><span class="special">.</span><span class="identifier">st_allocated</span><span class="special">&gt;</span><span class="number">8192</span><span class="special">)</span>
   <span class="special">{</span>
-    <span class="comment">// Allocated space exceeds 1Kb. The actual file size reported may be</span>
+    <span class="comment">// Allocated space exceeds 8Kb. The actual file size reported may be</span>
     <span class="comment">// many times larger if the filing system supports hole punching.</span>
 
     <span class="comment">// Get the list of allocated extents</span>
@@ -217,10 +216,22 @@ Schedule an asynchronous zero and deallocation of physical storage ("hole
     <span class="comment">// Filing system may not yet have allocated any storage ...</span>
     <span class="keyword">if</span><span class="special">(!</span><span class="identifier">extents</span><span class="special">.</span><span class="identifier">empty</span><span class="special">())</span>
     <span class="special">{</span>
-      <span class="identifier">extents</span><span class="special">.</span><span class="identifier">resize</span><span class="special">(</span><span class="number">1</span><span class="special">);</span>
-      <span class="identifier">extents</span><span class="special">.</span><span class="identifier">front</span><span class="special">().</span><span class="identifier">second</span><span class="special">-=</span><span class="number">1024</span><span class="special">;</span>
-      <span class="comment">// Fire and forget chopping off the front of the log file</span>
-      <span class="identifier">dispatcher</span><span class="special">-&gt;</span><span class="identifier">zero</span><span class="special">(</span><span class="identifier">logfilez</span><span class="special">,</span> <span class="identifier">extents</span><span class="special">);</span>
+      <span class="comment">//std::cout &lt;&lt; "Allocated=" &lt;&lt; s.st_allocated &lt;&lt; ". Extents are ";</span>
+      <span class="comment">//for(auto &amp;i : extents)</span>
+      <span class="comment">//  std::cout &lt;&lt; i.first &lt;&lt; ", " &lt;&lt; i.second &lt;&lt; "; ";</span>
+      <span class="comment">//std::cout &lt;&lt; std::endl;</span>
+      <span class="keyword">if</span><span class="special">(</span><span class="identifier">extents</span><span class="special">.</span><span class="identifier">back</span><span class="special">().</span><span class="identifier">second</span><span class="special">&gt;=</span><span class="number">1024</span><span class="special">)</span>
+        <span class="identifier">extents</span><span class="special">.</span><span class="identifier">back</span><span class="special">().</span><span class="identifier">second</span><span class="special">-=</span><span class="number">1024</span><span class="special">;</span>
+      <span class="keyword">else</span>
+        <span class="identifier">extents</span><span class="special">.</span><span class="identifier">resize</span><span class="special">(</span><span class="identifier">extents</span><span class="special">.</span><span class="identifier">size</span><span class="special">()-</span><span class="number">1</span><span class="special">);</span>
+      <span class="keyword">if</span><span class="special">(!</span><span class="identifier">extents</span><span class="special">.</span><span class="identifier">empty</span><span class="special">())</span>
+      <span class="special">{</span>
+        <span class="comment">//std::cout &lt;&lt; "Zeroing ";</span>
+        <span class="comment">//for(auto &amp;i : extents)</span>
+        <span class="comment">//  std::cout &lt;&lt; i.first &lt;&lt; ", " &lt;&lt; i.second &lt;&lt; "; ";</span>
+        <span class="comment">//std::cout &lt;&lt; std::endl;</span>
+        <span class="identifier">dispatcher</span><span class="special">-&gt;</span><span class="identifier">zero</span><span class="special">(</span><span class="identifier">logfilez</span><span class="special">,</span> <span class="identifier">extents</span><span class="special">).</span><span class="identifier">get</span><span class="special">();</span>
+      <span class="special">}</span>
     <span class="special">}</span>
   <span class="special">}</span>
 <span class="special">}</span>

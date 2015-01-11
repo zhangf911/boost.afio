@@ -28,7 +28,7 @@
           (batch)</a>
 </h5></div></div></div>
 <p>
-            <a class="indexterm" name="idp18003984"></a>
+            <a class="indexterm" name="idp17952712"></a>
 Schedule a batch of asynchronous extent enumerations after preceding
             operations.
           </p>
@@ -190,7 +190,7 @@ Schedule a batch of asynchronous extent enumerations after preceding
       <span class="comment">// Note that some operating systems (Windows) will supply you sizes,</span>
       <span class="comment">// allocations and extents which oscillate i.e. they do NOT monotonically</span>
       <span class="comment">// increase</span>
-      <span class="keyword">if</span> <span class="special">(</span><span class="identifier">extents</span><span class="special">.</span><span class="identifier">back</span><span class="special">().</span><span class="identifier">second</span> <span class="special">&gt;=</span> <span class="number">1024</span><span class="special">)</span>
+      <span class="keyword">if</span> <span class="special">(</span><span class="identifier">extents</span><span class="special">.</span><span class="identifier">back</span><span class="special">().</span><span class="identifier">second</span> <span class="special">&gt;</span> <span class="number">1024</span><span class="special">)</span>
         <span class="identifier">extents</span><span class="special">.</span><span class="identifier">back</span><span class="special">().</span><span class="identifier">second</span> <span class="special">-=</span> <span class="number">1024</span><span class="special">;</span>
       <span class="keyword">else</span>
         <span class="identifier">extents</span><span class="special">.</span><span class="identifier">resize</span><span class="special">(</span><span class="identifier">extents</span><span class="special">.</span><span class="identifier">size</span><span class="special">()</span> <span class="special">-</span> <span class="number">1</span><span class="special">);</span>

@@ -85,7 +85,7 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Schedule a batch of asynchronous zeroing and deallocations of physical storage ("hole punching") after preceding operations. </p>
-<p>Most extent based filing systems provide an optimised way of zeroing parts of a file by deallocating the storage backing those regions, and marking those regions as unwritten instead of actually writing zero bytes to storage. They appear as zeroes to anything reading those ranges, and have the big advantage of not consuming any actual physical storage. On Windows, extent deallocation writes zeros for ordinary files and only actually deallocates physical storage if the file is sparse or compressed (note that AFIO by default creates sparse files where possible, and converts any file opened for writing to a sparse file). For your information, deallocation on NTFS is on a 64Kb granularity, but the zeros are written at a byte granularity. On Linux, an attempt is made to use FALLOC_FL_PUNCH_HOLE which if it fails then a write of zeros corresponding to the same ranges is made instead. On FreeBSD, an attempt is made to use DIOCGDELETE which if it fails then a write of zeros corresponding to the same ranges is made instead. On OS X, there is no formal hole punching API that we are aware of, and so zeros are simply written.</p>
+<p>Most extent based filing systems provide an optimised way of zeroing parts of a file by deallocating the storage backing those regions, and marking those regions as unwritten instead of actually writing zero bytes to storage. They appear as zeroes to anything reading those ranges, and have the big advantage of not consuming any actual physical storage. On Windows, extent deallocation writes zeros for ordinary files and only actually deallocates physical storage if the file is sparse or compressed (note that AFIO by default creates sparse files where possible, and converts any file opened for writing to a sparse file). For your information, deallocation on NTFS is on a 64Kb granularity, but the zeros are written at a byte granularity. On Linux, an attempt is made to use FALLOC_FL_PUNCH_HOLE which if it fails then a write of zeros corresponding to the same ranges is made instead. On FreeBSD, long runs of zeros are automatically detected and eliminated on physical storage, and so zeros are simply written. On OS X, there is no formal hole punching API that we are aware of, and so zeros are simply written.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A batch of op handles. </dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -123,7 +123,7 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Schedule an asynchronous zero and deallocation of physical storage ("hole punching") after a preceding operation. </p>
-<p>Most extent based filing systems provide an optimised way of zeroing parts of a file by deallocating the storage backing those regions, and marking those regions as unwritten instead of actually writing zero bytes to storage. They appear as zeroes to anything reading those ranges, and have the big advantage of not consuming any actual physical storage. On Windows, extent deallocation writes zeros for ordinary files and only actually deallocates physical storage if the file is sparse or compressed (note that AFIO by default creates sparse files where possible, and converts any file opened for writing to a sparse file). For your information, deallocation on NTFS is on a 64Kb granularity, but the zeros are written at a byte granularity. On Linux, an attempt is made to use FALLOC_FL_PUNCH_HOLE which if it fails then a write of zeros corresponding to the same ranges is made instead. On FreeBSD, an attempt is made to use DIOCGDELETE which if it fails then a write of zeros corresponding to the same ranges is made instead. On OS X, there is no formal hole punching API that we are aware of, and so zeros are simply written.</p>
+<p>Most extent based filing systems provide an optimised way of zeroing parts of a file by deallocating the storage backing those regions, and marking those regions as unwritten instead of actually writing zero bytes to storage. They appear as zeroes to anything reading those ranges, and have the big advantage of not consuming any actual physical storage. On Windows, extent deallocation writes zeros for ordinary files and only actually deallocates physical storage if the file is sparse or compressed (note that AFIO by default creates sparse files where possible, and converts any file opened for writing to a sparse file). For your information, deallocation on NTFS is on a 64Kb granularity, but the zeros are written at a byte granularity. On Linux, an attempt is made to use FALLOC_FL_PUNCH_HOLE which if it fails then a write of zeros corresponding to the same ranges is made instead. On FreeBSD, long runs of zeros are automatically detected and eliminated on physical storage, and so zeros are simply written. On OS X, there is no formal hole punching API that we are aware of, and so zeros are simply written.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>An op handle. </dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -133,7 +133,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
     
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02922">2922</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02926">2926</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -153,7 +153,7 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Schedule a batch of asynchronous extent enumerations after preceding operations. </p>
-<p>In a sparsely allocated file, it can be useful to know which extents contain non-zero data. Note that this call is racy when other threads or processes are concurrently calling <a class="el" href="group__async__file__io__dispatcher__base____extents.html#ga48ad1fa0d998d6764b8ee28efaa3a62f" title="Schedule a batch of asynchronous zeroing and deallocations of physical storage (&quot;hole punching&quot;) afte...">zero()</a> or <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga2489d452720accc47d1bfeb5525cfd5b" title="Schedule a batch of asynchronous data writes after preceding operations, where offset and total data ...">write()</a> - this is a host OS API limitation.</p>
+<p>In a sparsely allocated file, it can be useful to know which extents contain non-zero data. Note that this call is racy (i.e. the extents are enumerated one by one on some platforms, this means they may be out of date with respect to one another) when other threads or processes are concurrently calling <a class="el" href="group__async__file__io__dispatcher__base____extents.html#ga48ad1fa0d998d6764b8ee28efaa3a62f" title="Schedule a batch of asynchronous zeroing and deallocations of physical storage (&quot;hole punching&quot;) afte...">zero()</a> or <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga2489d452720accc47d1bfeb5525cfd5b" title="Schedule a batch of asynchronous data writes after preceding operations, where offset and total data ...">write()</a> - this is a host OS API limitation.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A batch of future vectors of extents. </dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -180,7 +180,7 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Schedule an asynchronous extent enumeration after a preceding operation. </p>
-<p>In a sparsely allocated file, it can be useful to know which extents contain non-zero data. Note that this call is racy when other threads or processes are concurrently calling <a class="el" href="group__async__file__io__dispatcher__base____extents.html#ga48ad1fa0d998d6764b8ee28efaa3a62f" title="Schedule a batch of asynchronous zeroing and deallocations of physical storage (&quot;hole punching&quot;) afte...">zero()</a> or <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga2489d452720accc47d1bfeb5525cfd5b" title="Schedule a batch of asynchronous data writes after preceding operations, where offset and total data ...">write()</a> - this is a host OS API limitation.</p>
+<p>In a sparsely allocated file, it can be useful to know which extents contain non-zero data. Note that this call is racy (i.e. the extents are enumerated one by one on some platforms, this means they may be out of date with respect to one another) when other threads or processes are concurrently calling <a class="el" href="group__async__file__io__dispatcher__base____extents.html#ga48ad1fa0d998d6764b8ee28efaa3a62f" title="Schedule a batch of asynchronous zeroing and deallocations of physical storage (&quot;hole punching&quot;) afte...">zero()</a> or <a class="el" href="group__async__file__io__dispatcher__base____filedirops.html#ga2489d452720accc47d1bfeb5525cfd5b" title="Schedule a batch of asynchronous data writes after preceding operations, where offset and total data ...">write()</a> - this is a host OS API limitation.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A future vector of extents. </dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -189,7 +189,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
     
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02981">2981</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02985">2985</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>

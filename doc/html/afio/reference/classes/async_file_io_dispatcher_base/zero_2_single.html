@@ -28,7 +28,7 @@
           (single)</a>
 </h5></div></div></div>
 <p>
-            <a class="indexterm" name="idp17666688"></a>
+            <a class="indexterm" name="idp17802608"></a>
 Schedule an asynchronous zero and deallocation of physical storage ("hole
             punching") after a preceding operation.
           </p>
@@ -226,10 +226,10 @@ Schedule an asynchronous zero and deallocation of physical storage ("hole
         <span class="identifier">extents</span><span class="special">.</span><span class="identifier">resize</span><span class="special">(</span><span class="identifier">extents</span><span class="special">.</span><span class="identifier">size</span><span class="special">()-</span><span class="number">1</span><span class="special">);</span>
       <span class="keyword">if</span><span class="special">(!</span><span class="identifier">extents</span><span class="special">.</span><span class="identifier">empty</span><span class="special">())</span>
       <span class="special">{</span>
-        <span class="comment">//std::cout &lt;&lt; "Zeroing ";</span>
-        <span class="comment">//for(auto &amp;i : extents)</span>
-        <span class="comment">//  std::cout &lt;&lt; i.first &lt;&lt; ", " &lt;&lt; i.second &lt;&lt; "; ";</span>
-        <span class="comment">//std::cout &lt;&lt; std::endl;</span>
+        <span class="identifier">std</span><span class="special">::</span><span class="identifier">cout</span> <span class="special">&lt;&lt;</span> <span class="string">"Allocated="</span> <span class="special">&lt;&lt;</span> <span class="identifier">s</span><span class="special">.</span><span class="identifier">st_allocated</span> <span class="special">&lt;&lt;</span> <span class="string">" Size="</span> <span class="special">&lt;&lt;</span> <span class="identifier">s</span><span class="special">.</span><span class="identifier">st_size</span> <span class="special">&lt;&lt;</span> <span class="string">" Zeroing "</span><span class="special">;</span>
+        <span class="keyword">for</span><span class="special">(</span><span class="keyword">auto</span> <span class="special">&amp;</span><span class="identifier">i</span> <span class="special">:</span> <span class="identifier">extents</span><span class="special">)</span>
+          <span class="identifier">std</span><span class="special">::</span><span class="identifier">cout</span> <span class="special">&lt;&lt;</span> <span class="identifier">i</span><span class="special">.</span><span class="identifier">first</span> <span class="special">&lt;&lt;</span> <span class="string">", "</span> <span class="special">&lt;&lt;</span> <span class="identifier">i</span><span class="special">.</span><span class="identifier">second</span> <span class="special">&lt;&lt;</span> <span class="string">"; "</span><span class="special">;</span>
+        <span class="identifier">std</span><span class="special">::</span><span class="identifier">cout</span> <span class="special">&lt;&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">endl</span><span class="special">;</span>
         <span class="identifier">dispatcher</span><span class="special">-&gt;</span><span class="identifier">zero</span><span class="special">(</span><span class="identifier">logfilez</span><span class="special">,</span> <span class="identifier">extents</span><span class="special">).</span><span class="identifier">get</span><span class="special">();</span>
       <span class="special">}</span>
     <span class="special">}</span>

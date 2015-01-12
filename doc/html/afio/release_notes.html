@@ -31,35 +31,36 @@
       <span><a name="afio.release_notes.anticipated_forthcoming_features"></a></span><a class="link" href="release_notes.html#afio.release_notes.anticipated_forthcoming_features">Anticipated
       forthcoming features in future versions</a>
     </h4>
-<div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem">
-          The v1.4 engine will have an async fast batch hash engine which provides
-          transparent hashing of all async reads and writes.
-          <div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem">
-                New completion handler metaprogramming letting you bind add hash
-                to each op easily.
-                <div class="itemizedlist"><ul class="itemizedlist" type="square"><li class="listitem">
-                      Automatic ASIO callback prototype spec support.
-                    </li></ul></div>
-              </li></ul></div>
-        </li></ul></div>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem">
+          The v1.4 engine will be rewritten yet again to use a new custom future
+          implementation whereby async_io_op shall become afio::future&lt;T&gt;.
+          This should let the API no longer return two sets of futures when returning
+          results (async_io_op therefore matches afio::future&lt;void&gt;).
+        </li>
+<li class="listitem">
+          The v1.4 engine afio::future&lt;T&gt; ought to transparently support Boost.Fiber,
+          this should let you program against AFIO using awaitable resumable functions
+          which is much cleaner
+        </li>
+<li class="listitem">
+          Finally, making good use of the new coroutine support the v1.4 engine should
+          have an async fast batch hash engine which provides transparent hashing
+          of all async reads and writes. Chances are good one can also choose to
+          generate SECDED Error Correcting Codes as I have a test implementation
+          here which can process ~500Mb/sec for an enormous (32784, 32768) Hamming
+          code which lets you heal one bit flip per 4Kb page, ideal for working with
+          very long lived storage.
+        </li>
+</ul></div>
 <h6>
 <a name="afio.release_notes.h1"></a>
-      <span><a name="afio.release_notes.in_some_later_version"></a></span><a class="link" href="release_notes.html#afio.release_notes.in_some_later_version">In
-      some later version:</a>
+      <span><a name="afio.release_notes.in_some_later_version_in_order"></a></span><a class="link" href="release_notes.html#afio.release_notes.in_some_later_version_in_order">In
+      some later version, in order:</a>
     </h6>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
           Extended attributes support
-        </li>
-<li class="listitem">
-          ACL support
-        </li>
-<li class="listitem">
-          Multiple dispatcher support
-          <div class="itemizedlist"><ul class="itemizedlist" type="circle"><li class="listitem">
-                Integration of direct proposed Boost.Fiber library support as a secondary
-                thread_source to std_thread_source.
-              </li></ul></div>
         </li>
 <li class="listitem">
           async_io_dispatcher_base::read_partial() to read as much of a single buffer
@@ -73,6 +74,13 @@
           Fast, scalable portable directory contents change monitoring. It should
           be able to monitor a 1M entry directory experiencing 1% entry changes per
           second without using a shocking amount of RAM.
+        </li>
+<li class="listitem">
+          ACL support
+        </li>
+<li class="listitem">
+          Asynchronous file handle closing in ~async_io_handle() (currently if not
+          explicitly closed, the async_io_handle destructor must synchronously close)
         </li>
 </ul></div>
 <h4>
@@ -115,7 +123,7 @@
         </li>
 <li class="listitem">
           AFIO's unit test suite no longer requires Boost.Test, and can now alternatively
-          use CATCH C++ (BOOST_AFIO_USE_BOOST_UNIT_TEST=0).
+          use CATCH C++ (BOOST_AFIO_USE_BOOST_UNIT_TEST=0) via BindLib.
         </li>
 <li class="listitem">
           Dropped support for these compiler versions due to insufficient C++ 11
@@ -132,15 +140,43 @@
 </ul></div>
         </li>
 <li class="listitem">
-          ** FIXME BEFORE RELEASE ***
-          <div class="itemizedlist"><ul class="itemizedlist" type="circle">
+          symlink() now can create file symbolic links on Windows (it'll probably
+          error out due to lack of privileges held by the user, but it can now at
+          least try).
+        </li>
 <li class="listitem">
-                Add file symbolic link creation for Windows
-              </li>
+          Added sparse file support. AFIO now always creates sparse file where possible,
+          and converts any files it opens for writing into a sparse file where possible.
+          You can disable that behaviour using the NoSparse flag.
+        </li>
 <li class="listitem">
-                File handle closing should become asynchronous
-              </li>
-</ul></div>
+          stat_t now contains member flags indicating if a file entry is sparse and/or
+          compressed.
+        </li>
+<li class="listitem">
+          Added a new api zero() which can very efficiently zero ranges in a file
+          by deallocating them on physical storage (<span class="quote">&#8220;<span class="quote">hole punching</span>&#8221;</span>).
+        </li>
+<li class="listitem">
+          Added a new api extents() which lets you query which ranges in a file contain
+          valid data.
+        </li>
+<li class="listitem">
+          Added a new api statfs() which returns a statfs_t which lets you query
+          the volume on which a file or directory lives. Again, thanks to using the
+          NT kernel API directly the structure on Windows is almost as complete as
+          on POSIX.
+        </li>
+<li class="listitem">
+          Improved unit testing, especially unit testing of error handling, and indeed
+          found that on Windows an invalid handle object generated by a failed open
+          or an explicit close caused the next dependant operation to segfault. Also
+          on Windows any errors generated during read() and write() were being lost
+          and the dispatcher hanged instead of being reported (oops!).
+        </li>
+<li class="listitem">
+          Added an extra section to the tutorial on how to implement an atomic log
+          file using the new features in AFIO.
         </li>
 </ul></div>
 <h4>

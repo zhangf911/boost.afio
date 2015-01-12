@@ -28,7 +28,7 @@
           (batch)</a>
 </h5></div></div></div>
 <p>
-            <a class="indexterm" name="idp11492552"></a>
+            <a class="indexterm" name="idp17689928"></a>
 Schedule a batch of asynchronous zeroing and deallocations of physical
             storage ("hole punching") after preceding operations.
           </p>
@@ -217,23 +217,12 @@ Schedule a batch of asynchronous zeroing and deallocations of physical
     <span class="comment">// Filing system may not yet have allocated any storage ...</span>
     <span class="keyword">if</span> <span class="special">(!</span><span class="identifier">extents</span><span class="special">.</span><span class="identifier">empty</span><span class="special">())</span>
     <span class="special">{</span>
-      <span class="comment">//std::cout &lt;&lt; "Allocated=" &lt;&lt; s.st_allocated &lt;&lt; ". Extents are ";</span>
-      <span class="comment">//for (auto &amp;i : extents)</span>
-      <span class="comment">//  std::cout &lt;&lt; i.first &lt;&lt; ", " &lt;&lt; i.second &lt;&lt; "; ";</span>
-      <span class="comment">//std::cout &lt;&lt; std::endl;</span>
-      <span class="comment">// Note that some operating systems (Windows) will supply you sizes,</span>
-      <span class="comment">// allocations and extents which oscillate i.e. they do NOT monotonically</span>
-      <span class="comment">// increase</span>
       <span class="keyword">if</span> <span class="special">(</span><span class="identifier">extents</span><span class="special">.</span><span class="identifier">back</span><span class="special">().</span><span class="identifier">second</span> <span class="special">&gt;</span> <span class="number">1024</span><span class="special">)</span>
         <span class="identifier">extents</span><span class="special">.</span><span class="identifier">back</span><span class="special">().</span><span class="identifier">second</span> <span class="special">-=</span> <span class="number">1024</span><span class="special">;</span>
       <span class="keyword">else</span>
         <span class="identifier">extents</span><span class="special">.</span><span class="identifier">resize</span><span class="special">(</span><span class="identifier">extents</span><span class="special">.</span><span class="identifier">size</span><span class="special">()</span> <span class="special">-</span> <span class="number">1</span><span class="special">);</span>
       <span class="keyword">if</span> <span class="special">(!</span><span class="identifier">extents</span><span class="special">.</span><span class="identifier">empty</span><span class="special">())</span>
       <span class="special">{</span>
-        <span class="identifier">std</span><span class="special">::</span><span class="identifier">cout</span> <span class="special">&lt;&lt;</span> <span class="string">"Allocated="</span> <span class="special">&lt;&lt;</span> <span class="identifier">s</span><span class="special">.</span><span class="identifier">st_allocated</span> <span class="special">&lt;&lt;</span> <span class="string">" Size="</span> <span class="special">&lt;&lt;</span> <span class="identifier">s</span><span class="special">.</span><span class="identifier">st_size</span> <span class="special">&lt;&lt;</span> <span class="string">" Zeroing "</span><span class="special">;</span>
-        <span class="keyword">for</span> <span class="special">(</span><span class="keyword">auto</span> <span class="special">&amp;</span><span class="identifier">i</span> <span class="special">:</span> <span class="identifier">extents</span><span class="special">)</span>
-          <span class="identifier">std</span><span class="special">::</span><span class="identifier">cout</span> <span class="special">&lt;&lt;</span> <span class="identifier">i</span><span class="special">.</span><span class="identifier">first</span> <span class="special">&lt;&lt;</span> <span class="string">", "</span> <span class="special">&lt;&lt;</span> <span class="identifier">i</span><span class="special">.</span><span class="identifier">second</span> <span class="special">&lt;&lt;</span> <span class="string">"; "</span><span class="special">;</span>
-        <span class="identifier">std</span><span class="special">::</span><span class="identifier">cout</span> <span class="special">&lt;&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">endl</span><span class="special">;</span>
         <span class="identifier">dispatcher</span><span class="special">-&gt;</span><span class="identifier">zero</span><span class="special">(</span><span class="identifier">logfilez</span><span class="special">,</span> <span class="identifier">extents</span><span class="special">).</span><span class="identifier">get</span><span class="special">();</span>
       <span class="special">}</span>
     <span class="special">}</span>

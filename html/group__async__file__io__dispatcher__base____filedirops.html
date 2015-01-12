@@ -149,7 +149,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
     
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02870">2870</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02879">2879</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -205,7 +205,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
     
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02877">2877</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02886">2886</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -259,7 +259,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
     
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02884">2884</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02893">2893</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -315,7 +315,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
     
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02891">2891</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02900">2900</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -369,7 +369,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
     
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02898">2898</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02907">2907</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -427,7 +427,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
     
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02905">2905</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02914">2914</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -481,7 +481,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
     
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02912">2912</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02921">2921</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -535,7 +535,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
     
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02919">2919</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02928">2928</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -555,6 +555,7 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Schedule a batch of asynchronous file or directory handle closes after preceding operations. </p>
+<p>Note that failure to explicitly schedule closing a file handle using this call means it will be [*synchronously] closed on last reference count by <a class="el" href="classboost_1_1afio_1_1async__io__handle.html" title="The abstract base class encapsulating a platform-specific file handle.">async_io_handle</a>. This can consume considerable time, especially if SyncOnClose is enabled.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>A batch of op handles. </dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -581,6 +582,7 @@ Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Schedule an asynchronous file or directory handle close after a preceding operation. </p>
+<p>Note that failure to explicitly schedule closing a file handle using this call means it will be [*synchronously] closed on last reference count by <a class="el" href="classboost_1_1afio_1_1async__io__handle.html" title="The abstract base class encapsulating a platform-specific file handle.">async_io_handle</a>. This can consume considerable time, especially if SyncOnClose is enabled.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>An op handle. </dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
@@ -589,7 +591,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
     
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02936">2936</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02945">2945</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -626,7 +628,7 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
     
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02959">2959</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02968">2968</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -807,7 +809,7 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
     
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02967">2967</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02976">2976</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>

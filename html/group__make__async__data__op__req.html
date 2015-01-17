@@ -44,25 +44,25 @@
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">async_data_op_req&lt; typename <br class="typebreak"/>
-std::remove_pointer&lt; typename <br class="typebreak"/>
-std::decay&lt; T &gt;::type &gt;::type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__make__async__data__op__req.html#ga9f62915b030e2f2ed5115b034e9721a1">boost::afio::make_async_data_op_req</a> (async_io_op _precondition, T &amp;&amp;v, off_t _where)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience instantiator of a <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a single `T *`...">async_data_op_req</a>, letting the compiler deduce the template specialisation to use.  <a href="#ga9f62915b030e2f2ed5115b034e9721a1"></a><br/></td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__make__async__data__op__req.html#gaff49f3ca9c8a8796ab7972a40f324122">boost::afio::make_async_data_op_req</a> (async_io_op _precondition, T &amp;&amp;v, off_t _where)-&gt; decltype(detail</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience instantiator of a <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a T as specified by its to_asio...">async_data_op_req</a>, letting the compiler deduce the template specialisation to use.  <a href="#gaff49f3ca9c8a8796ab7972a40f324122"></a><br/></td></tr>
 <tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">async_data_op_req&lt; typename <br class="typebreak"/>
-std::remove_pointer&lt; typename <br class="typebreak"/>
-std::decay&lt; T &gt;::type &gt;::type &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__make__async__data__op__req.html#gaaefe9a4cc37c21ba775399a66749b10b">boost::afio::make_async_data_op_req</a> (async_io_op _precondition, T &amp;&amp;v, size_t _length, off_t _where)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience instantiator of a <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a single `T *`...">async_data_op_req</a>, letting the compiler deduce the template specialisation to use.  <a href="#gaaefe9a4cc37c21ba775399a66749b10b"></a><br/></td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">async_data_op_req&lt; const <br class="typebreak"/>
+std::initializer_list&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__make__async__data__op__req.html#ga40032d509f14a1c60cbf9989bc06d038">boost::afio::make_async_data_op_req</a> (async_io_op _precondition, const std::initializer_list&lt; T &gt; &amp;v, off_t _where)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience instantiator of a <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a T as specified by its to_asio...">async_data_op_req</a>, letting the compiler deduce the template specialisation to use.  <a href="#ga40032d509f14a1c60cbf9989bc06d038"></a><br/></td></tr>
+<tr><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__make__async__data__op__req.html#ga878313b5b405a1c2c73aabc1078bf57c">boost::afio::make_async_data_op_req</a> (async_io_op _precondition, T &amp;&amp;v, size_t _length, off_t _where)-&gt; decltype(detail</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience instantiator of a <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a T as specified by its to_asio...">async_data_op_req</a>, letting the compiler deduce the template specialisation to use.  <a href="#ga878313b5b405a1c2c73aabc1078bf57c"></a><br/></td></tr>
 </table>
 <hr/><h2>Function Documentation</h2>
-<a class="anchor" id="ga9f62915b030e2f2ed5115b034e9721a1"></a><!-- doxytag: member="boost::afio::make_async_data_op_req" ref="ga9f62915b030e2f2ed5115b034e9721a1" args="(async_io_op _precondition, T &amp;&amp;v, off_t _where)" -->
+<a class="anchor" id="gaff49f3ca9c8a8796ab7972a40f324122"></a><!-- doxytag: member="boost::afio::make_async_data_op_req" ref="gaff49f3ca9c8a8796ab7972a40f324122" args="(async_io_op _precondition, T &amp;&amp;v, off_t _where)&#45;&gt; decltype(detail" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">async_data_op_req&lt;typename std::remove_pointer&lt;typename std::decay&lt;T&gt;::type&gt;::type&gt; boost::afio::make_async_data_op_req </td>
+          <td class="memname">auto boost::afio::make_async_data_op_req </td>
           <td>(</td>
           <td class="paramtype">async_io_op&#160;</td>
           <td class="paramname"><em>_precondition</em>, </td>
@@ -88,8 +88,8 @@ template&lt;class T &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Convenience instantiator of a <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a single `T *`...">async_data_op_req</a>, letting the compiler deduce the template specialisation to use. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>An <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a single `T *`...">async_data_op_req</a> matching the supplied parameter type. Constructs an instance. </dd></dl>
+<p>Convenience instantiator of a <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a T as specified by its to_asio...">async_data_op_req</a>, letting the compiler deduce the template specialisation to use. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a T as specified by its to_asio...">async_data_op_req</a> matching the supplied parameter type. Constructs an instance. </dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">_precondition</td><td>An optional precondition for this operation </td></tr>
@@ -99,18 +99,66 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
   
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02711">2711</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02611">2611</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="gaaefe9a4cc37c21ba775399a66749b10b"></a><!-- doxytag: member="boost::afio::make_async_data_op_req" ref="gaaefe9a4cc37c21ba775399a66749b10b" args="(async_io_op _precondition, T &amp;&amp;v, size_t _length, off_t _where)" -->
+<a class="anchor" id="ga40032d509f14a1c60cbf9989bc06d038"></a><!-- doxytag: member="boost::afio::make_async_data_op_req" ref="ga40032d509f14a1c60cbf9989bc06d038" args="(async_io_op _precondition, const std::initializer_list&lt; T &gt; &amp;v, off_t _where)" -->
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">async_data_op_req&lt;typename std::remove_pointer&lt;typename std::decay&lt;T&gt;::type&gt;::type&gt; boost::afio::make_async_data_op_req </td>
+          <td class="memname">async_data_op_req&lt;const std::initializer_list&lt;T&gt; &gt; boost::afio::make_async_data_op_req </td>
+          <td>(</td>
+          <td class="paramtype">async_io_op&#160;</td>
+          <td class="paramname"><em>_precondition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::initializer_list&lt; T &gt; &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">off_t&#160;</td>
+          <td class="paramname"><em>_where</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Convenience instantiator of a <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a T as specified by its to_asio...">async_data_op_req</a>, letting the compiler deduce the template specialisation to use. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a T as specified by its to_asio...">async_data_op_req</a> matching the supplied parameter type. Constructs an instance. </dd></dl>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_precondition</td><td>An optional precondition for this operation </td></tr>
+    <tr><td class="paramname">v</td><td>A pointer to memory or reference to object into which to read or write </td></tr>
+    <tr><td class="paramname">_where</td><td>The offset at which to transfer</td></tr>
+  </table>
+  </dd>
+</dl>
+  
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02626">2626</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ga878313b5b405a1c2c73aabc1078bf57c"></a><!-- doxytag: member="boost::afio::make_async_data_op_req" ref="ga878313b5b405a1c2c73aabc1078bf57c" args="(async_io_op _precondition, T &amp;&amp;v, size_t _length, off_t _where)&#45;&gt; decltype(detail" -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto boost::afio::make_async_data_op_req </td>
           <td>(</td>
           <td class="paramtype">async_io_op&#160;</td>
           <td class="paramname"><em>_precondition</em>, </td>
@@ -142,8 +190,8 @@ template&lt;class T &gt; </div>
 </div>
 <div class="memdoc">
 
-<p>Convenience instantiator of a <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a single `T *`...">async_data_op_req</a>, letting the compiler deduce the template specialisation to use. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>An <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a single `T *`...">async_data_op_req</a> matching the supplied parameter type. Constructs an instance. </dd></dl>
+<p>Convenience instantiator of a <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a T as specified by its to_asio...">async_data_op_req</a>, letting the compiler deduce the template specialisation to use. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>An <a class="el" href="structboost_1_1afio_1_1async__data__op__req.html" title="A convenience bundle of precondition, data and where for reading into a T as specified by its to_asio...">async_data_op_req</a> matching the supplied parameter type. Constructs an instance. </dd></dl>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">_precondition</td><td>An optional precondition for this operation </td></tr>
@@ -154,7 +202,7 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
   
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02728">2728</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02642">2642</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>

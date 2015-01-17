@@ -63,14 +63,8 @@ Inheritance diagram for boost::afio::detail::async_data_op_req_impl&lt; true &gt
  <div class="center">
   <img src="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.png" usemap="#boost::afio::detail::async_data_op_req_impl&lt; true &gt;_map" alt=""/>
   <map id="boost::afio::detail::async_data_op_req_impl&lt; true &gt;_map" name="boost::afio::detail::async_data_op_req_impl&lt; true &gt;_map">
-<area href="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4.html" title="A convenience bundle of precondition, data and where for writing from a `asio::const_buffer`. Data MUST stay around until the operation completes." alt="boost::afio::async_data_op_req&lt; asio::const_buffer &gt;" shape="rect" coords="420,56,830,80"/>
-<area href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html" title="A convenience bundle of precondition, data and where for writing from a `const std::array&lt;T, N&gt;`. Data MUST stay around until the operation completes." alt="boost::afio::async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;" shape="rect" coords="420,112,830,136"/>
-<area href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html" title="A convenience bundle of precondition, data and where for writing from a `const std::basic_string&lt;C, T, A&gt;`. Data MUST stay around until the operation completes." alt="boost::afio::async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;" shape="rect" coords="420,168,830,192"/>
-<area href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html" title="A convenience bundle of precondition, data and where for writing from a `const std::vector&lt;T, A&gt;`. Data MUST stay around until the operation completes." alt="boost::afio::async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;" shape="rect" coords="420,224,830,248"/>
-<area href="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4.html" title="A convenience bundle of precondition, data and where for writing from a single `const T *`..." alt="boost::afio::async_data_op_req&lt; const T &gt;" shape="rect" coords="420,280,830,304"/>
-<area href="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4.html" title="A convenience bundle of precondition, data and where for writing from a `const void *`..." alt="boost::afio::async_data_op_req&lt; const void &gt;" shape="rect" coords="420,336,830,360"/>
-<area href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4.html" title="A convenience bundle of precondition, data and where for writing from a `std::array&lt;asio::const_buffe..." alt="boost::afio::async_data_op_req&lt; std::array&lt; asio::const_buffer, N &gt; &gt;" shape="rect" coords="420,392,830,416"/>
-<area href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4.html" title="A convenience bundle of precondition, data and where for writing from a `std::vector&lt;asio::const_buff..." alt="boost::afio::async_data_op_req&lt; std::vector&lt; asio::const_buffer, A &gt; &gt;" shape="rect" coords="420,448,830,472"/>
+<area href="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4.html" title="A convenience bundle of precondition, data and where for reading into a T as specified by its to_asio..." alt="boost::afio::async_data_op_req&lt; const T &gt;" shape="rect" coords="0,56,297,80"/>
+<area href="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4.html" title="A convenience bundle of precondition, data and where for reading into a T as specified by its to_asio..." alt="boost::afio::async_data_op_req&lt; const void &gt;" shape="rect" coords="307,56,604,80"/>
 </map>
  </div></div>
 
@@ -92,20 +86,10 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy assignment.  <a href="#a360e610764b1147cfedd9c16cdb3866d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#aadec13f2add68372932a8b26360d98dd">async_data_op_req_impl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#a37e91501f1c76de829ef4b2828922d0f">operator=</a> (<a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#aadec13f2add68372932a8b26360d98dd">async_data_op_req_impl</a> &amp;&amp;o) noexcept</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Move assignment.  <a href="#a37e91501f1c76de829ef4b2828922d0f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#af8da7dede4533395a74fea6faaaeb391">async_data_op_req_impl</a> (<a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> _precondition, const void *v, size_t _length, off_t _where)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an instance.  <a href="#af8da7dede4533395a74fea6faaaeb391"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#aab7fb0d133ded6696d4a8a4b8eafd42e">async_data_op_req_impl</a> (<a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> _precondition, std::vector&lt; asio::const_buffer &gt; _buffers, off_t _where)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an instance.  <a href="#aab7fb0d133ded6696d4a8a4b8eafd42e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#aa8ab110c45c33fb6fa85ebfb28cbd5c4">async_data_op_req_impl</a> (<a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> _precondition, std::vector&lt; asio::mutable_buffer &gt; _buffers, off_t _where)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an instance.  <a href="#aa8ab110c45c33fb6fa85ebfb28cbd5c4"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#a8a40230853cdf00fcb8e71bfd2bb0cd8">async_data_op_req_impl</a> (<a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> _precondition, std::array&lt; asio::const_buffer, N &gt; _buffers, off_t _where)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an instance.  <a href="#a8a40230853cdf00fcb8e71bfd2bb0cd8"></a><br/></td></tr>
-<tr><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
-<tr><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#a702aba20985ed1432ae458601ac24dc2">async_data_op_req_impl</a> (<a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> _precondition, std::array&lt; asio::mutable_buffer, N &gt; _buffers, off_t _where)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an instance.  <a href="#a702aba20985ed1432ae458601ac24dc2"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#a53f54cc7bbde1aa552e1650f69ff2443">async_data_op_req_impl</a> (<a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a> _precondition, asio::const_buffer _buffer, off_t _where)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an instance.  <a href="#a53f54cc7bbde1aa552e1650f69ff2443"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#aefb64535213c4439ca7f472c546b164b">validate</a> () const </td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates contents for correctness.  <a href="#aefb64535213c4439ca7f472c546b164b"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
@@ -122,7 +106,7 @@ Public Attributes</h2></td></tr>
 class boost::afio::detail::async_data_op_req_impl&lt; true &gt;</h3>
 
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02200">2200</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02380">2380</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 </div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aadec13f2add68372932a8b26360d98dd"></a><!-- doxytag: member="boost::afio::detail::async_data_op_req_impl&lt; true &gt;::async_data_op_req_impl" ref="aadec13f2add68372932a8b26360d98dd" args="()" -->
 <div class="memitem">
@@ -140,7 +124,7 @@ class boost::afio::detail::async_data_op_req_impl&lt; true &gt;</h3>
 
 <p>Default constructor. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02210">2210</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02390">2390</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -161,7 +145,7 @@ class boost::afio::detail::async_data_op_req_impl&lt; true &gt;</h3>
 
 <p>Copy constructor. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02212">2212</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02392">2392</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -182,7 +166,7 @@ class boost::afio::detail::async_data_op_req_impl&lt; true &gt;</h3>
 
 <p>Move constructor. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02214">2214</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02394">2394</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -203,7 +187,7 @@ class boost::afio::detail::async_data_op_req_impl&lt; true &gt;</h3>
 
 <p>Copy constructor. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02216">2216</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02396">2396</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -224,59 +208,7 @@ class boost::afio::detail::async_data_op_req_impl&lt; true &gt;</h3>
 
 <p>Move constructor. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02218">2218</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af8da7dede4533395a74fea6faaaeb391"></a><!-- doxytag: member="boost::afio::detail::async_data_op_req_impl&lt; true &gt;::async_data_op_req_impl" ref="af8da7dede4533395a74fea6faaaeb391" args="(async_io_op _precondition, const void *v, size_t _length, off_t _where)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::afio::detail::async_data_op_req_impl&lt; true &gt;::<a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#aadec13f2add68372932a8b26360d98dd">async_data_op_req_impl</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a>&#160;</td>
-          <td class="paramname"><em>_precondition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>_length</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">off_t&#160;</td>
-          <td class="paramname"><em>_where</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Constructs an instance. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_precondition</td><td>An optional precondition for this operation </td></tr>
-    <tr><td class="paramname">v</td><td>A pointer to memory or reference to object into which to read or write </td></tr>
-    <tr><td class="paramname">_where</td><td>The offset at which to transfer </td></tr>
-    <tr><td class="paramname">_length</td><td>The number of bytes to transfer </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02224">2224</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02398">2398</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -321,7 +253,7 @@ class boost::afio::detail::async_data_op_req_impl&lt; true &gt;</h3>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02226">2226</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02404">2404</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -366,158 +298,7 @@ class boost::afio::detail::async_data_op_req_impl&lt; true &gt;</h3>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02228">2228</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8a40230853cdf00fcb8e71bfd2bb0cd8"></a><!-- doxytag: member="boost::afio::detail::async_data_op_req_impl&lt; true &gt;::async_data_op_req_impl" ref="a8a40230853cdf00fcb8e71bfd2bb0cd8" args="(async_io_op _precondition, std::array&lt; asio::const_buffer, N &gt; _buffers, off_t _where)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::afio::detail::async_data_op_req_impl&lt; true &gt;::<a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#aadec13f2add68372932a8b26360d98dd">async_data_op_req_impl</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a>&#160;</td>
-          <td class="paramname"><em>_precondition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::array&lt; asio::const_buffer, N &gt;&#160;</td>
-          <td class="paramname"><em>_buffers</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">off_t&#160;</td>
-          <td class="paramname"><em>_where</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Constructs an instance. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_precondition</td><td>An optional precondition for this operation </td></tr>
-    <tr><td class="paramname">_buffers</td><td>A sequence of mutable/const Boost.ASIO buffers to read into/write from </td></tr>
-    <tr><td class="paramname">_where</td><td>The offset at which to transfer </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class=""><dt><b>Template Parameters:</b></dt><dd>
-  <table class="">
-    <tr><td class="paramname">N</td><td>Number of asio::const_buffer </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02236">2236</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a702aba20985ed1432ae458601ac24dc2"></a><!-- doxytag: member="boost::afio::detail::async_data_op_req_impl&lt; true &gt;::async_data_op_req_impl" ref="a702aba20985ed1432ae458601ac24dc2" args="(async_io_op _precondition, std::array&lt; asio::mutable_buffer, N &gt; _buffers, off_t _where)" -->
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t N&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::afio::detail::async_data_op_req_impl&lt; true &gt;::<a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#aadec13f2add68372932a8b26360d98dd">async_data_op_req_impl</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a>&#160;</td>
-          <td class="paramname"><em>_precondition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::array&lt; asio::mutable_buffer, N &gt;&#160;</td>
-          <td class="paramname"><em>_buffers</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">off_t&#160;</td>
-          <td class="paramname"><em>_where</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Constructs an instance. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_precondition</td><td>An optional precondition for this operation </td></tr>
-    <tr><td class="paramname">_buffers</td><td>A sequence of mutable/const Boost.ASIO buffers to read into/write from </td></tr>
-    <tr><td class="paramname">_where</td><td>The offset at which to transfer </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class=""><dt><b>Template Parameters:</b></dt><dd>
-  <table class="">
-    <tr><td class="paramname">N</td><td>Number of asio::mutable_buffer </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02238">2238</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a53f54cc7bbde1aa552e1650f69ff2443"></a><!-- doxytag: member="boost::afio::detail::async_data_op_req_impl&lt; true &gt;::async_data_op_req_impl" ref="a53f54cc7bbde1aa552e1650f69ff2443" args="(async_io_op _precondition, asio::const_buffer _buffer, off_t _where)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::afio::detail::async_data_op_req_impl&lt; true &gt;::<a class="el" href="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4.html#aadec13f2add68372932a8b26360d98dd">async_data_op_req_impl</a> </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structboost_1_1afio_1_1async__io__op.html">async_io_op</a>&#160;</td>
-          <td class="paramname"><em>_precondition</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">asio::const_buffer&#160;</td>
-          <td class="paramname"><em>_buffer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">off_t&#160;</td>
-          <td class="paramname"><em>_where</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Constructs an instance. </p>
-<dl class="params"><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">_precondition</td><td>An optional precondition for this operation </td></tr>
-    <tr><td class="paramname">_buffer</td><td>A mutable/const Boost.ASIO buffer to read into/write from </td></tr>
-    <tr><td class="paramname">_where</td><td>The offset at which to transfer </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02246">2246</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02406">2406</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -539,7 +320,7 @@ template&lt;size_t N&gt; </div>
 
 <p>Copy assignment. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02220">2220</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02400">2400</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -560,7 +341,7 @@ template&lt;size_t N&gt; </div>
 
 <p>Move assignment. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02222">2222</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02402">2402</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -581,7 +362,7 @@ template&lt;size_t N&gt; </div>
 <p>Validates contents for correctness. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>True if contents are correct </dd></dl>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02248">2248</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02414">2414</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -599,9 +380,9 @@ template&lt;size_t N&gt; </div>
 
 <p>An optional precondition for this operation. </p>
 
-<p>Reimplemented in <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4.html#ade8e06f28b16e81944e0c75989ee55cf">boost::afio::async_data_op_req&lt; asio::const_buffer &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#a0b42df7a3593ecfbc4982307a35b7294">boost::afio::async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4.html#a1d86acc62838d686576976fb308b2369">boost::afio::async_data_op_req&lt; std::array&lt; asio::const_buffer, N &gt; &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4.html#ac993575c2bf84ce9821dd2d75ce582bb">boost::afio::async_data_op_req&lt; std::vector&lt; asio::const_buffer, A &gt; &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#a321e863d9d92edde7e842e807ef50232">boost::afio::async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#a0504187fb2d0158c9b3b8314f465ec99">boost::afio::async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4.html#a4953895962497a2b23a93d76a3127a9f">boost::afio::async_data_op_req&lt; const void &gt;</a>, and <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4.html#aefaee94e09b38ec15d60e339ef2ad2da">boost::afio::async_data_op_req&lt; const T &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4.html#a4953895962497a2b23a93d76a3127a9f">boost::afio::async_data_op_req&lt; const void &gt;</a>, and <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4.html#aefaee94e09b38ec15d60e339ef2ad2da">boost::afio::async_data_op_req&lt; const T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02204">2204</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02384">2384</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -618,9 +399,9 @@ template&lt;size_t N&gt; </div>
 
 <p>A sequence of mutable Boost.ASIO buffers to read into. </p>
 
-<p>Reimplemented in <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4.html#ab6b7f50675c5f84611f63e104d9f99ce">boost::afio::async_data_op_req&lt; asio::const_buffer &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#af65c9a5ca44e5e71ba40c46fbd6db7b3">boost::afio::async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4.html#a758d0b148dea45949be27bcc58e837c1">boost::afio::async_data_op_req&lt; std::array&lt; asio::const_buffer, N &gt; &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4.html#a84448671467428c7d494221e3c384201">boost::afio::async_data_op_req&lt; std::vector&lt; asio::const_buffer, A &gt; &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#a4b9b7c4addaa0a1544180807835cf769">boost::afio::async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#a300f0fd7d5262287a6843aac30355c05">boost::afio::async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4.html#a649ee46622844f74b006eb77562622b0">boost::afio::async_data_op_req&lt; const void &gt;</a>, and <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4.html#a6062a7970b0919abe2318751538d130e">boost::afio::async_data_op_req&lt; const T &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4.html#a649ee46622844f74b006eb77562622b0">boost::afio::async_data_op_req&lt; const void &gt;</a>, and <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4.html#a6062a7970b0919abe2318751538d130e">boost::afio::async_data_op_req&lt; const T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02206">2206</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02386">2386</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -637,9 +418,9 @@ template&lt;size_t N&gt; </div>
 
 <p>The offset from which to read. </p>
 
-<p>Reimplemented in <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4.html#adfed3b3e2ddbb09ff894dccfcdc75307">boost::afio::async_data_op_req&lt; asio::const_buffer &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4.html#a3d5820c983d028b7c3ab76716fc3d784">boost::afio::async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4.html#abc01193d74fb6eca9b16f83330b96bf1">boost::afio::async_data_op_req&lt; std::array&lt; asio::const_buffer, N &gt; &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4.html#a759497aaa667d83a47eca6b3018f6ca8">boost::afio::async_data_op_req&lt; std::vector&lt; asio::const_buffer, A &gt; &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html#a0260637ed3624ac6d7718e1a13d37295">boost::afio::async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4.html#a82fe0967bcf9b0622f42d1388ad8da08">boost::afio::async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</a>, <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4.html#a91d54e07ed50772d70a9960a2ede06f0">boost::afio::async_data_op_req&lt; const void &gt;</a>, and <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4.html#aea304b5a721b670335d849985bf6b901">boost::afio::async_data_op_req&lt; const T &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4.html#a91d54e07ed50772d70a9960a2ede06f0">boost::afio::async_data_op_req&lt; const void &gt;</a>, and <a class="el" href="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4.html#aea304b5a721b670335d849985bf6b901">boost::afio::async_data_op_req&lt; const T &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02208">2208</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l02388">2388</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>

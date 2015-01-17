@@ -36,12 +36,22 @@
           The v1.4 engine will be rewritten yet again to use a new custom future
           implementation whereby async_io_op shall become afio::future&lt;T&gt;.
           This should let the API no longer return two sets of futures when returning
-          results (async_io_op therefore matches afio::future&lt;void&gt;).
+          results (async_io_op therefore matches afio::future&lt;void&gt;), plus
+          make best use of the proposed concurrent_unordered_map by finally actually
+          processing batches of operations as a batch, instead of one at a time.
         </li>
 <li class="listitem">
           The v1.4 engine afio::future&lt;T&gt; ought to transparently support Boost.Fiber,
           this should let you program against AFIO using awaitable resumable functions
-          which is much cleaner
+          which is much cleaner. A big hope is that the stochastic variance in op
+          processing latency should be heavily reduced (currently a 300k cycle average,
+          min 10k cycles).
+        </li>
+<li class="listitem">
+          The v1.4 engine will finally make use of the API support for alternative
+          async_io_dispatcher implementations, adding at least one for temp file
+          support with special temp file semantics, and maybe others with transparent
+          hashing and bit flip healing (see below).
         </li>
 <li class="listitem">
           Finally, making good use of the new coroutine support the v1.4 engine should
@@ -60,15 +70,21 @@
     </h6>
 <div class="itemizedlist"><ul class="itemizedlist" type="disc">
 <li class="listitem">
-          Extended attributes support
-        </li>
-<li class="listitem">
-          async_io_dispatcher_base::read_partial() to read as much of a single buffer
-          as possible, rather than only complete buffers.
+          Individual file change monitoring. This would be very useful for implementing
+          distributed mutual exclusion algorithms to avoid spinning on file updates.
         </li>
 <li class="listitem">
           Portable fast file locking which works across network shares, but can still
           utilise shared memory when possible.
+        </li>
+<li class="listitem">
+          Extended attributes support. TripleGit could use this to avoid a second
+          file handle open of metadata per graph object read. Unsure if NTFS is any
+          faster opening EA though, need to test.
+        </li>
+<li class="listitem">
+          async_io_dispatcher_base::read_partial() to read as much of a single buffer
+          as possible, rather than only complete buffers.
         </li>
 <li class="listitem">
           Fast, scalable portable directory contents change monitoring. It should
@@ -177,6 +193,26 @@
 <li class="listitem">
           Added an extra section to the tutorial on how to implement an atomic log
           file using the new features in AFIO.
+        </li>
+<li class="listitem">
+          Completely rewrote the async_data_op_req metaprogramming which assembles
+          ASIO scatter gather buffers from types and containers supplied to read()
+          and write(). The old system which had to work on VS2010 was basically a
+          set of repetitive hardcoded template specialisation overloads for void
+          *, T *, std::array, std::vector and std::basic_string. The new much more
+          sophisticated metaprogramming (with an unfortunate corresponding increase
+          in compilation times) now understands any STL like container (detected
+          using SFINAE std::begin() and std::end()), including nested STL like containers,
+          and will correctly generate ASIO scatter gather buffers from say something
+          like a std::list&lt;std::list&lt;std::string&gt;&gt; but also correctly
+          coalesce buffers for trivial types such as std::vector&lt;std::array&lt;trivial
+          type, N&gt;&gt; where it spots that only one ASIO scatter gather buffer
+          is needed. Const types were supported before in that only an asio::const_buffer
+          could be constructed from the limited list of supported input types, but
+          now the metaprogramming asks STL like containers if their values are const
+          (e.g. unordered_set), and if so it will always generate an asio::const_buffer,
+          which of course means that such STL like containers can only be used for
+          writing only and not reading.
         </li>
 </ul></div>
 <h4>

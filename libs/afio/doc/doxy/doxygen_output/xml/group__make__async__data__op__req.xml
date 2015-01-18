@@ -4,15 +4,15 @@
     <compoundname>make_async_data_op_req</compoundname>
     <title>x</title>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__make__async__data__op__req_1ga9f62915b030e2f2ed5115b034e9721a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="group__make__async__data__op__req_1gaff49f3ca9c8a8796ab7972a40f324122" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>class T</type>
           </param>
         </templateparamlist>
-        <type>async_data_op_req&lt; typename std::remove_pointer&lt; typename std::decay&lt; T &gt;::type &gt;::type &gt;</type>
-        <definition>async_data_op_req&lt;typename std::remove_pointer&lt;typename std::decay&lt;T&gt;::type&gt;::type&gt; boost::afio::make_async_data_op_req</definition>
-        <argsstring>(async_io_op _precondition, T &amp;&amp;v, off_t _where)</argsstring>
+        <type>auto</type>
+        <definition>auto boost::afio::make_async_data_op_req</definition>
+        <argsstring>(async_io_op _precondition, T &amp;&amp;v, off_t _where)-&gt; decltype(detail</argsstring>
         <name>make_async_data_op_req</name>
         <param>
           <type>async_io_op</type>
@@ -58,17 +58,73 @@
 </qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2712" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2711" bodyend="2715"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2612" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2611" bodyend="2614"/>
       </memberdef>
-      <memberdef kind="function" id="group__make__async__data__op__req_1gaaefe9a4cc37c21ba775399a66749b10b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="group__make__async__data__op__req_1ga40032d509f14a1c60cbf9989bc06d038" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>class T</type>
           </param>
         </templateparamlist>
-        <type>async_data_op_req&lt; typename std::remove_pointer&lt; typename std::decay&lt; T &gt;::type &gt;::type &gt;</type>
-        <definition>async_data_op_req&lt;typename std::remove_pointer&lt;typename std::decay&lt;T&gt;::type&gt;::type&gt; boost::afio::make_async_data_op_req</definition>
-        <argsstring>(async_io_op _precondition, T &amp;&amp;v, size_t _length, off_t _where)</argsstring>
+        <type>async_data_op_req&lt; const std::initializer_list&lt; T &gt; &gt;</type>
+        <definition>async_data_op_req&lt;const std::initializer_list&lt;T&gt; &gt; boost::afio::make_async_data_op_req</definition>
+        <argsstring>(async_io_op _precondition, const std::initializer_list&lt; T &gt; &amp;v, off_t _where)</argsstring>
+        <name>make_async_data_op_req</name>
+        <param>
+          <type>async_io_op</type>
+          <declname>_precondition</declname>
+        </param>
+        <param>
+          <type>const std::initializer_list&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>off_t</type>
+          <declname>_where</declname>
+        </param>
+        <briefdescription>
+<para>Convenience instantiator of a <ref refid="structboost_1_1afio_1_1async__data__op__req" kindref="compound">async_data_op_req</ref>, letting the compiler deduce the template specialisation to use. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>An <ref refid="structboost_1_1afio_1_1async__data__op__req" kindref="compound">async_data_op_req</ref> matching the supplied parameter type. Constructs an instance. </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_precondition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional precondition for this operation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to memory or reference to object into which to read or write </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_where</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset at which to transfer</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+ <qbk.distinguish> length deducing</qbk.distinguish>   <qbk>
+[heading Example]
+[readwrite_example]
+</qbk>  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2627" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2626" bodyend="2629"/>
+      </memberdef>
+      <memberdef kind="function" id="group__make__async__data__op__req_1ga878313b5b405a1c2c73aabc1078bf57c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto boost::afio::make_async_data_op_req</definition>
+        <argsstring>(async_io_op _precondition, T &amp;&amp;v, size_t _length, off_t _where)-&gt; decltype(detail</argsstring>
         <name>make_async_data_op_req</name>
         <param>
           <type>async_io_op</type>
@@ -125,7 +181,7 @@
 </qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2729" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2728" bodyend="2732"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2643" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2642" bodyend="2645"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

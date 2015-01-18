@@ -14,77 +14,77 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="468">
+      <node id="400">
         <label>std::logic_error</label>
-        <childnode refid="462" relation="public-inheritance">
+        <childnode refid="394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="463">
+      <node id="395">
         <label>std::bad_alloc</label>
-        <childnode refid="462" relation="public-inheritance">
+        <childnode refid="394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="470">
+      <node id="402">
         <label>std::invalid_argument</label>
-        <childnode refid="468" relation="public-inheritance">
+        <childnode refid="400" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="466">
+      <node id="398">
         <label>std::bad_typeid</label>
-        <childnode refid="462" relation="public-inheritance">
+        <childnode refid="394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="472">
+      <node id="404">
         <label>std::out_of_range</label>
-        <childnode refid="468" relation="public-inheritance">
+        <childnode refid="400" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="469">
+      <node id="401">
         <label>std::domain_error</label>
-        <childnode refid="468" relation="public-inheritance">
+        <childnode refid="400" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="473">
+      <node id="405">
         <label>std::runtime_error</label>
-        <childnode refid="462" relation="public-inheritance">
+        <childnode refid="394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="467">
+      <node id="399">
         <label>std::ios_base::failure</label>
-        <childnode refid="462" relation="public-inheritance">
+        <childnode refid="394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="462">
+      <node id="394">
         <label>std::exception</label>
       </node>
-      <node id="471">
+      <node id="403">
         <label>std::length_error</label>
-        <childnode refid="468" relation="public-inheritance">
+        <childnode refid="400" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="474">
+      <node id="406">
         <label>std::overflow_error</label>
-        <childnode refid="473" relation="public-inheritance">
+        <childnode refid="405" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="465">
+      <node id="397">
         <label>std::bad_exception</label>
-        <childnode refid="462" relation="public-inheritance">
+        <childnode refid="394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="464">
+      <node id="396">
         <label>std::bad_cast</label>
-        <childnode refid="462" relation="public-inheritance">
+        <childnode refid="394" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="476">
+      <node id="408">
         <label>std::underflow_error</label>
-        <childnode refid="473" relation="public-inheritance">
+        <childnode refid="405" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="475">
+      <node id="407">
         <label>std::range_error</label>
-        <childnode refid="473" relation="public-inheritance">
+        <childnode refid="405" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

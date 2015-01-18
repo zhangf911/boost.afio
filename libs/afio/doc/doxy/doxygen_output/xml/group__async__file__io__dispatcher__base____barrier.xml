@@ -29,7 +29,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N) to complete.</qbk>   <qbk>[heading Exception Model]See detailed description above.</qbk>   <qbk>[heading Example][barrier_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1721"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1730"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

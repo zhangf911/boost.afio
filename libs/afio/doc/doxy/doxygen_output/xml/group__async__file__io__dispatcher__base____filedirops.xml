@@ -28,7 +28,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][adopt_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1237"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1246"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gaa3f199f010ded1399b4f903a194b9cd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async_io_op</type>
@@ -54,7 +54,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if directory creation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][adopt_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1252" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2879" bodyend="2885"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1261" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2792" bodyend="2798"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gaf6386ba1f9bd0e829470837bef6c7d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; async_io_op &gt;</type>
@@ -80,7 +80,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if directory creation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1266"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1275"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gacceb89d11308e3137186aaccec282a17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async_io_op</type>
@@ -106,7 +106,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if directory creation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1280" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2886" bodyend="2892"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1289" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2799" bodyend="2805"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga41e799782c22f41b16d408a977460153" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; async_io_op &gt;</type>
@@ -132,7 +132,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if directory deletion is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1291"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1300"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gadb64fc6cabd8e1f394b112cf2361a20a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async_io_op</type>
@@ -158,7 +158,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if directory deletion is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1302" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2893" bodyend="2899"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1311" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2806" bodyend="2812"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga5da57c9cb811cea214a1e36f007ecffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; async_io_op &gt;</type>
@@ -184,7 +184,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if file creation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1316"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1325"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga59910bc569f75eac27c406c47ccd0643" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async_io_op</type>
@@ -210,7 +210,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if file creation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1330" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2900" bodyend="2906"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1339" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2813" bodyend="2819"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga1e2c1e20ed7a8d04c3dc63490f8e2580" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; async_io_op &gt;</type>
@@ -236,7 +236,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if file deletion is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1341"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1350"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gaa222f0e9e966ddddf823166105589316" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async_io_op</type>
@@ -262,7 +262,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if file deletion is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1352" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2907" bodyend="2913"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1361" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2820" bodyend="2826"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga831d3e585fab96f70b71b1b1a41bd858" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; async_io_op &gt;</type>
@@ -288,7 +288,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if symlink creation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1369"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1378"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gac56fe0c4aa9d3ead576ff210b3bb3b92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async_io_op</type>
@@ -314,7 +314,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if symlink creation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1386" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2914" bodyend="2920"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1395" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2827" bodyend="2833"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga5f83cde9b9428423ab6cfbefbe0865b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; async_io_op &gt;</type>
@@ -340,7 +340,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if symlink deletion is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1397"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1406"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga3d4a61ff8c31bade2d3a5f3aa7e1cb60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async_io_op</type>
@@ -366,7 +366,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if symlink deletion is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1408" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2921" bodyend="2927"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1417" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2834" bodyend="2840"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gab2bbf924a104039e4fb5b9a31f14e81e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; async_io_op &gt;</type>
@@ -392,7 +392,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if content synchronisation is constant time (which is extremely unlikely).</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1419"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1428"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga7cb40ff0cb3eee7096f0a126bc509db8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async_io_op</type>
@@ -418,7 +418,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if content synchronisation is constant time (which is extremely unlikely).</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1430" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2928" bodyend="2934"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1439" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2841" bodyend="2847"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga56db87e1d05cf4c17c7587216b2413c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; async_io_op &gt;</type>
@@ -444,7 +444,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if closing handles is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1488"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1497"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga269273113b9ec5eea764791852cbd53a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async_io_op</type>
@@ -470,7 +470,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if closing handles is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1502" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2945" bodyend="2951"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1511" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2858" bodyend="2864"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga389a54f126d95872fa3981bbb0f4ca49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
         <templateparamlist>
@@ -509,7 +509,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if reading data is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1521" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2968" bodyend="2971"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1530" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2881" bodyend="2884"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga2f99a4c769b6d769e829cee1679763c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -548,7 +548,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if reading data is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1539"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1548"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga2489d452720accc47d1bfeb5525cfd5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <templateparamlist>
@@ -587,7 +587,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if writing data is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1558"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1567"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gaccfb68e7fb84c36f418215e4d792988f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -626,7 +626,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if writing data is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1576"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1585"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gae3f243608a9f97af2461ead5bb8189af" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; async_io_op &gt;</type>
@@ -663,7 +663,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if truncating file lengths is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1590"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1599"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gaa6d63c51183b6f637a723b00155e1cac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>async_io_op</type>
@@ -700,7 +700,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if truncating file lengths is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1602" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2976" bodyend="2985"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1611" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2889" bodyend="2898"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

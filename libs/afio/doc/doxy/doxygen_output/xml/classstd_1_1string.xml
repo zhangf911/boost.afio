@@ -12,22 +12,22 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="725">
+      <node id="657">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="724">
+      <node id="656">
         <label>std::string</label>
-        <childnode refid="725" relation="public-inheritance">
+        <childnode refid="657" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="727">
+      <node id="659">
         <label>std::basic_string&lt; char &gt;</label>
       </node>
-      <node id="726">
+      <node id="658">
         <label>std::string</label>
-        <childnode refid="727" relation="public-inheritance">
+        <childnode refid="659" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

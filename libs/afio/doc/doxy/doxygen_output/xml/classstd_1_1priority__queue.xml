@@ -29,12 +29,12 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="690">
+      <node id="622">
         <label>T</label>
       </node>
-      <node id="689">
+      <node id="621">
         <label>std::priority_queue&lt; T &gt;</label>
-        <childnode refid="690" relation="usage">
+        <childnode refid="622" relation="usage">
           <edgelabel>elements</edgelabel>
         </childnode>
       </node>

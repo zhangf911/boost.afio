@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2282" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2282" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2448" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2448" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structboost_1_1afio_1_1async__data__op__req_1a10c1dd4dbd476d505abfc7567af5bba3" prot="public" static="no" mutable="no">
         <type>std::vector&lt; asio::mutable_buffer &gt;</type>
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2284" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2284" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2450" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2450" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structboost_1_1afio_1_1async__data__op__req_1a5b08da89b3bc55fc93f9869a33b95f46" prot="public" static="no" mutable="no">
         <type>off_t</type>
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2286" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2286" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2452" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2452" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2290" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2289" bodyend="2292"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2455" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2455" bodyend="2455"/>
       </memberdef>
       <memberdef kind="function" id="structboost_1_1afio_1_1async__data__op__req_1a9018b975d69aa29888f4a6696644483f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2294" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2294" bodyend="2294"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2457" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2457" bodyend="2457"/>
       </memberdef>
       <memberdef kind="function" id="structboost_1_1afio_1_1async__data__op__req_1a03366d64916ffe640e0dd4c1589fab50" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2296" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2296" bodyend="2296"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2459" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2459" bodyend="2459"/>
       </memberdef>
       <memberdef kind="function" id="structboost_1_1afio_1_1async__data__op__req_1a4af66c5f8712fe1b2334d3a4fec54def" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__data__op__req" kindref="compound">async_data_op_req</ref> &amp;</type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2298" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2298" bodyend="2298"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2461" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2461" bodyend="2461"/>
       </memberdef>
       <memberdef kind="function" id="structboost_1_1afio_1_1async__data__op__req_1ac3cc7ebe33551b6f6298bac8f645d6ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__data__op__req" kindref="compound">async_data_op_req</ref> &amp;</type>
@@ -135,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2300" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2300" bodyend="2300"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2463" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2463" bodyend="2463"/>
       </memberdef>
       <memberdef kind="function" id="structboost_1_1afio_1_1async__data__op__req_1ac728e8b290ea2b43de0e2ec8083fef08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -187,16 +187,71 @@
 <parametername>_length</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The number of bytes to transfer </para></parameterdescription>
+<para>The number of items to transfer </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2302" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2302" bodyend="2302"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2465" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2465" bodyend="2465"/>
       </memberdef>
-      <memberdef kind="function" id="structboost_1_1afio_1_1async__data__op__req_1a800508a41db402d30eaf4c0e204b9248" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="structboost_1_1afio_1_1async__data__op__req_1ad459bb623005f17c86b16aacc2898292" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>boost::afio::async_data_op_req&lt; T &gt;::async_data_op_req</definition>
+        <argsstring>(async_io_op _precondition, U &amp;v, off_t _where)</argsstring>
+        <name>async_data_op_req</name>
+        <param>
+          <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
+          <declname>_precondition</declname>
+        </param>
+        <param>
+          <type>U &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>off_t</type>
+          <declname>_where</declname>
+        </param>
+        <briefdescription>
+<para>Constructs an instance. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_precondition</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An optional precondition for this operation </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to memory or reference to object into which to read or write </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_where</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset at which to transfer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2467" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2467" bodyend="2467"/>
+      </memberdef>
+      <memberdef kind="function" id="structboost_1_1afio_1_1async__data__op__req_1a46845b4558f1f15dbe11c654190530e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class U</type>
+          </param>
           <param>
             <type>size_t</type>
             <declname>N</declname>
@@ -205,14 +260,14 @@
         </templateparamlist>
         <type></type>
         <definition>boost::afio::async_data_op_req&lt; T &gt;::async_data_op_req</definition>
-        <argsstring>(async_io_op _precondition, T(&amp;v)[N], off_t _where)</argsstring>
+        <argsstring>(async_io_op _precondition, U(&amp;v)[N], off_t _where)</argsstring>
         <name>async_data_op_req</name>
         <param>
           <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
           <declname>_precondition</declname>
         </param>
         <param>
-          <type>T(&amp;)</type>
+          <type>U(&amp;)</type>
           <declname>v</declname>
           <array>[N]</array>
         </param>
@@ -244,19 +299,18 @@
 <parameterdescription>
 <para>The offset at which to transfer </para></parameterdescription>
 </parameteritem>
-</parameterlist>
-<parameterlist kind="templateparam"><parameteritem>
+<parameteritem>
 <parameternamelist>
 <parametername>N</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The size of the array </para></parameterdescription>
+<para>The number of items in the array </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2304" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2304" bodyend="2304"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2469" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2469" bodyend="2469"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -270,18 +324,18 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2178" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2177" bodyend="2190"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2358" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2357" bodyend="2370"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>A convenience bundle of precondition, data and where for reading into a single `T *`. Data <bold>MUST</bold> stay around until the operation completes. </para>    </briefdescription>
+<para>A convenience bundle of precondition, data and where for reading into a T as specified by its to_asio_buffers() overload. Data <bold>MUST</bold> stay around until the operation completes. </para>    </briefdescription>
     <detaileddescription>
 <para><parameterlist kind="templateparam"><parameteritem>
 <parameternamelist>
 <parametername>T</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Any readable type T </para></parameterdescription>
+<para>Any readable (if const) or writable (if non-const) type T as specified by its to_asio_buffers() overload. </para></parameterdescription>
 </parameteritem>
 </parameterlist>
 </para>    </detaileddescription>
@@ -335,20 +389,18 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2279" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2278" bodyend="2305"/>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2445" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2444" bodyend="2470"/>
     <listofallmembers>
       <member refid="structboost_1_1afio_1_1async__data__op__req_1a05b517168fa205fe996613cf4f75c499" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>async_data_op_req</name></member>
       <member refid="structboost_1_1afio_1_1async__data__op__req_1a9018b975d69aa29888f4a6696644483f" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>async_data_op_req</name></member>
       <member refid="structboost_1_1afio_1_1async__data__op__req_1a03366d64916ffe640e0dd4c1589fab50" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>async_data_op_req</name></member>
       <member refid="structboost_1_1afio_1_1async__data__op__req_1ac728e8b290ea2b43de0e2ec8083fef08" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>async_data_op_req</name></member>
-      <member refid="structboost_1_1afio_1_1async__data__op__req_1a800508a41db402d30eaf4c0e204b9248" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>async_data_op_req</name></member>
+      <member refid="structboost_1_1afio_1_1async__data__op__req_1ad459bb623005f17c86b16aacc2898292" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>async_data_op_req</name></member>
+      <member refid="structboost_1_1afio_1_1async__data__op__req_1a46845b4558f1f15dbe11c654190530e9" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>async_data_op_req</name></member>
       <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a6254251003f2789fdaa0a68f69752955" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>async_data_op_req_impl</name></member>
       <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1abd9a9356e74c66dbf2e5a9668f3da464" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>async_data_op_req_impl</name></member>
       <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a74c8488b866a7baec1b9585020e96a32" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>async_data_op_req_impl</name></member>
-      <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1ae981a8e7b643b718a60c85a817e09593" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>async_data_op_req_impl</name></member>
       <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1ab76aaade08201c661d3341e18ab5d806" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>async_data_op_req_impl</name></member>
-      <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a10b6962eeb176b008847f16245922115" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>async_data_op_req_impl</name></member>
-      <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a21b9403dd0eaae3386c88b441572c4ae" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>async_data_op_req_impl</name></member>
       <member refid="structboost_1_1afio_1_1async__data__op__req_1a10c1dd4dbd476d505abfc7567af5bba3" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>buffers</name></member>
       <member refid="structboost_1_1afio_1_1async__data__op__req_1a4af66c5f8712fe1b2334d3a4fec54def" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>operator=</name></member>
       <member refid="structboost_1_1afio_1_1async__data__op__req_1ac3cc7ebe33551b6f6298bac8f645d6ac" prot="public" virt="non-virtual"><scope>boost::afio::async_data_op_req</scope><name>operator=</name></member>

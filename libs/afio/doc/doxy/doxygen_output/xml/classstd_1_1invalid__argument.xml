@@ -8,32 +8,32 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="505">
+      <node id="437">
         <label>std::logic_error</label>
-        <childnode refid="506" relation="public-inheritance">
+        <childnode refid="438" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="504">
+      <node id="436">
         <label>std::invalid_argument</label>
-        <childnode refid="505" relation="public-inheritance">
+        <childnode refid="437" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="506">
+      <node id="438">
         <label>std::exception</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="508">
+      <node id="440">
         <label>std::logic_error</label>
-        <childnode refid="509" relation="public-inheritance">
+        <childnode refid="441" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="507">
+      <node id="439">
         <label>std::invalid_argument</label>
-        <childnode refid="508" relation="public-inheritance">
+        <childnode refid="440" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="509">
+      <node id="441">
         <label>std::exception</label>
       </node>
     </collaborationgraph>

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1063" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1063" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1072" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1072" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__async__file__io__dispatcher__base____filter_1ga303b84424610f3834b70b0778ae1f0b3" prot="public" static="no">
         <type>void</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1065" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1065" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1074" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1074" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__async__file__io__dispatcher__base____completion_1ga384aa77fea0f91d58814c50feeee44dc" prot="public" static="no">
         <type>std::pair&lt; bool, std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt;</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1108" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1108" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1117" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1117" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__async__file__io__dispatcher__base____completion_1ga54bf743efd9a69d7dd11d01ce25fe304" prot="public" static="no">
         <type><ref refid="group__async__file__io__dispatcher__base____completion_1ga384aa77fea0f91d58814c50feeee44dc" kindref="member">completion_returntype</ref></type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1110" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1110" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1119" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1119" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="friend">
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1025" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1025" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1034" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1034" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a4f789025521b0e1f43e78056a480daf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend struct</type>
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1026" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1026" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1035" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1035" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a56f496ba01c9b613e83758582f2b06c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1027" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1027" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1036" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1036" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a7eb74be36e15618561c7df1fbdacea5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -108,7 +108,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1028" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1028" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1037" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1037" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a06e10cc6179894e1e8bab39ccba6c476" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -121,7 +121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1029" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1029" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1038" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1038" bodyend="-1"/>
       </memberdef>
       <memberdef kind="friend" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a4fb6d073a418fd80cc2b81450cc82687" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>friend class</type>
@@ -134,7 +134,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1030" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1030" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1039" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1039" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -149,7 +149,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1032" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1032" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1041" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1041" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -172,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1033"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1042"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a997cb149876c5afa6669dba9e5b6eacd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -189,7 +189,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1034"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1043"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a8ded155f7a322783093a576f72f21fa1" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
@@ -206,7 +206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1035"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1044"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -233,7 +233,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1037"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1046"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a9fc400c45bc79eb50db8b74e5d310368" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::pair&lt; bool, std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt;</type>
@@ -256,7 +256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1039" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1038" bodyend="1041"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1048" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1047" bodyend="1050"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a0e93a8a2ee8ce47e38f2b62ce7b7767f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group__async__file__io__dispatcher__base____completion_1ga384aa77fea0f91d58814c50feeee44dc" kindref="member">completion_returntype</ref></type>
@@ -281,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1749"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1758"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1adb3120d27c9c3b469d30223f7ad63567" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group__async__file__io__dispatcher__base____completion_1ga384aa77fea0f91d58814c50feeee44dc" kindref="member">completion_returntype</ref></type>
@@ -306,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1750"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1759"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1abb9709f262eac032e28894ad0816ee66" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -347,7 +347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1751"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1760"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1acdd8dac6f24e9669392a48d9076dbea7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -384,7 +384,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1752"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1761"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a40280aef4a028fe6e3407e582277ece4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -418,7 +418,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1753"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1762"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1aa77f30d0bbf428a4ac00bd5970b2656f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -452,7 +452,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1754"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1763"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1af17a821515f54bdac6b6f792c751d01f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -491,7 +491,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1755"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1764"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a06bed7cee8e7ec9ecfb1c6cfad57151c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -525,7 +525,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1756"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1765"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a8e1831ca95cea942db1b103df98a4c0b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -559,7 +559,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1757"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1766"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a6507c066dec0a35f324d4ac39f46d5d1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -597,7 +597,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1758"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1767"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a95c2ee11e4c7dc653543eea219c41b3b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -626,7 +626,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1759"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1768"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a0e25bd9ab26e1a945d14c984a6192e29" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -665,7 +665,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1762"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1771"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a1f3f249fa5da4f26b5dc19d7fe8de69b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -712,7 +712,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1763"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1772"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -727,7 +727,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1044"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1053"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1ae49a5daedd876d48fc131bca5f0d2b93" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1thread__source" kindref="compound">thread_source</ref> &gt;</type>
@@ -740,7 +740,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1047"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1056"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1ad0eda011c34511f0d25de9902e16b2b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="group__file__flags_1ga1615042683add1802cfc6dc86bd078ee" kindref="member">file_flags</ref></type>
@@ -757,7 +757,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1049"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1058"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a360e6404ee3f0949209836b8184ee007" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>size_t</type>
@@ -770,7 +770,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1051"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1060"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1aabd3bce4b20a99a5c25668a7b229ae6f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>size_t</type>
@@ -783,7 +783,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1053"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1062"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1ac0a315fe8eb87c7827567ef8e916a413" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
@@ -809,7 +809,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1060"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1069"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filter_1gacc15e280c64ab2f734b097069ed86240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -822,7 +822,7 @@
 <para> <qbk>[heading Complexity]O(1).</qbk>   <qbk>[heading Example][filter_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1072"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1081"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filter_1ga9e25e1fbc055efe53bd63f6d700866f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -847,7 +847,7 @@
  <qbk>[heading Complexity]O(N) where N is the total number of filters currently configured.</qbk>   <qbk>[heading Example][filter_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1087"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1096"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filter_1ga820758ad7b27f3fa3ca9fa4445db50ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -872,7 +872,7 @@
  <qbk>[heading Complexity]O(N) where N is the total number of filters currently configured.</qbk>   <qbk>[heading Example][filter_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1105"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1114"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____completion_1ga6cb87e3ca62468c8027a0cf052a9ff24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -909,7 +909,7 @@
  <qbk.distinguish> batch bound functions</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][completion_example1]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1128"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1137"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____completion_1gac745f6f5424e142086cf45cc583f5aac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
@@ -946,7 +946,7 @@
  <qbk.distinguish> single bound function</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][completion_example1]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1140" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2826" bodyend="2834"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1149" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2739" bodyend="2747"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____call_1gaa144378bedc4272b44c9b8f358a04fb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -996,7 +996,7 @@
  <qbk.distinguish> batch bound functions</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][call_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1157" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2842" bodyend="2857"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1166" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2755" bodyend="2770"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____call_1ga9ccdb35979566b5852e1817388f6a39b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -1035,7 +1035,7 @@
  <qbk.distinguish> batch bound functions without preconditions</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][call_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1173" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1173" bodyend="1173"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1182" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1182" bodyend="1182"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1ab10c6c273f3e7825fea188cd6c2788b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -1085,7 +1085,7 @@
  <qbk.distinguish> single bound function</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][call_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1190" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2858" bodyend="2867"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1199" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2771" bodyend="2780"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____call_1gaf3bde0b207a33ac44e61a09ca93be50f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -1158,7 +1158,7 @@
  <qbk.distinguish> single unbound callable</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][call_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1218" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2872" bodyend="2877"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1227" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2785" bodyend="2790"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga284b1612b2c0a3ea813660bc9fd6a54b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -1184,7 +1184,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][adopt_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1237"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1246"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gaa3f199f010ded1399b4f903a194b9cd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
@@ -1210,7 +1210,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if directory creation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][adopt_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1252" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2879" bodyend="2885"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1261" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2792" bodyend="2798"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gaf6386ba1f9bd0e829470837bef6c7d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -1236,7 +1236,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if directory creation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1266"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1275"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gacceb89d11308e3137186aaccec282a17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
@@ -1262,7 +1262,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if directory creation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1280" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2886" bodyend="2892"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1289" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2799" bodyend="2805"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga41e799782c22f41b16d408a977460153" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -1288,7 +1288,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if directory deletion is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1291"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1300"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gadb64fc6cabd8e1f394b112cf2361a20a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
@@ -1314,7 +1314,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if directory deletion is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1302" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2893" bodyend="2899"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1311" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2806" bodyend="2812"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga5da57c9cb811cea214a1e36f007ecffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -1340,7 +1340,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if file creation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1316"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1325"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga59910bc569f75eac27c406c47ccd0643" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
@@ -1366,7 +1366,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if file creation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1330" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2900" bodyend="2906"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1339" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2813" bodyend="2819"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga1e2c1e20ed7a8d04c3dc63490f8e2580" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -1392,7 +1392,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if file deletion is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1341"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1350"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gaa222f0e9e966ddddf823166105589316" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
@@ -1418,7 +1418,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if file deletion is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1352" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2907" bodyend="2913"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1361" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2820" bodyend="2826"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga831d3e585fab96f70b71b1b1a41bd858" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -1444,7 +1444,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if symlink creation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1369"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1378"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gac56fe0c4aa9d3ead576ff210b3bb3b92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
@@ -1470,7 +1470,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if symlink creation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1386" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2914" bodyend="2920"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1395" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2827" bodyend="2833"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga5f83cde9b9428423ab6cfbefbe0865b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -1496,7 +1496,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if symlink deletion is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1397"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1406"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga3d4a61ff8c31bade2d3a5f3aa7e1cb60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
@@ -1522,7 +1522,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if symlink deletion is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1408" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2921" bodyend="2927"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1417" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2834" bodyend="2840"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gab2bbf924a104039e4fb5b9a31f14e81e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -1548,7 +1548,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if content synchronisation is constant time (which is extremely unlikely).</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1419"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1428"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga7cb40ff0cb3eee7096f0a126bc509db8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
@@ -1574,7 +1574,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if content synchronisation is constant time (which is extremely unlikely).</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1430" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2928" bodyend="2934"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1439" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2841" bodyend="2847"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____extents_1ga48ad1fa0d998d6764b8ee28efaa3a62f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -1611,7 +1611,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if deallocation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][extents_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1452"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1461"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____extents_1ga4addd95d8cb11a94efc4712147b128fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
@@ -1648,7 +1648,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if deallocation is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][extents_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1474" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2935" bodyend="2944"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1483" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2848" bodyend="2857"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga56db87e1d05cf4c17c7587216b2413c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -1674,7 +1674,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if closing handles is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1488"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1497"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga269273113b9ec5eea764791852cbd53a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
@@ -1700,7 +1700,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if closing handles is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][filedir_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1502" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2945" bodyend="2951"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1511" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2858" bodyend="2864"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga389a54f126d95872fa3981bbb0f4ca49" prot="public" static="no" const="no" explicit="no" inline="yes" virt="pure-virtual">
         <templateparamlist>
@@ -1739,7 +1739,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if reading data is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1521" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2968" bodyend="2971"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1530" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2881" bodyend="2884"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga2f99a4c769b6d769e829cee1679763c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -1778,7 +1778,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if reading data is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1539"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1548"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1ga2489d452720accc47d1bfeb5525cfd5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <templateparamlist>
@@ -1817,7 +1817,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if writing data is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1558"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1567"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gaccfb68e7fb84c36f418215e4d792988f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -1856,7 +1856,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if writing data is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1576"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1585"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gae3f243608a9f97af2461ead5bb8189af" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -1893,7 +1893,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool) to complete if truncating file lengths is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1590"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1599"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____filedirops_1gaa6d63c51183b6f637a723b00155e1cac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref></type>
@@ -1930,7 +1930,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete if truncating file lengths is constant time.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][readwrite_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1602" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2976" bodyend="2985"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1611" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2889" bodyend="2898"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____enumerate_1ga9463c9d43626c23e5ef4c7c840d36fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::pair&lt; std::vector&lt; future&lt; std::pair&lt; std::vector&lt; <ref refid="classboost_1_1afio_1_1directory__entry" kindref="compound">directory_entry</ref> &gt;, bool &gt; &gt; &gt;, std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt; &gt;</type>
@@ -1956,7 +1956,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool*M) to complete where M is the average number of entries in each directory.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][enumerate_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1623"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1632"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____enumerate_1ga0695e33450ba820ebcb378f8b33d9ac1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::pair&lt; future&lt; std::pair&lt; std::vector&lt; <ref refid="classboost_1_1afio_1_1directory__entry" kindref="compound">directory_entry</ref> &gt;, bool &gt; &gt;, <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -1982,7 +1982,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(M) to complete where M is the average number of entries in each directory.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][enumerate_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1644" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2986" bodyend="2993"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1653" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2899" bodyend="2906"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____extents_1ga7897bcac1891a7ffee77cf3c1eb870e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::pair&lt; std::vector&lt; future&lt; std::vector&lt; std::pair&lt; off_t, off_t &gt; &gt; &gt; &gt;, std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt; &gt;</type>
@@ -2008,7 +2008,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool*M) to complete where M is the average number of extents in each file.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][extents_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1660"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1669"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____extents_1ga6fab7605a3e8e0bd5be61cb41eb514e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::pair&lt; future&lt; std::vector&lt; std::pair&lt; off_t, off_t &gt; &gt; &gt;, <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -2034,7 +2034,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(M) to complete where M is the average number of extents in each file.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][extents_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1676" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2994" bodyend="3001"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1685" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2907" bodyend="2914"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____statfs_1gacbeafa55623e83a890db62e190fc6c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>std::pair&lt; std::vector&lt; future&lt; <ref refid="structboost_1_1afio_1_1statfs__t" kindref="compound">statfs_t</ref> &gt; &gt;, std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt; &gt;</type>
@@ -2071,7 +2071,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N/threadpool*M) to complete where M is the average number of entries in each directory.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][statfs_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1688"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1697"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____statfs_1gacde9af80f4041fee04f759ad70e615d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::pair&lt; future&lt; <ref refid="structboost_1_1afio_1_1statfs__t" kindref="compound">statfs_t</ref> &gt;, <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -2108,7 +2108,7 @@
  <qbk.distinguish> single</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(1) to dispatch. Amortised O(1) to complete.</qbk>   <qbk>[heading Exception Model]Propagates exceptions of any input preconditions with an errored state at the point of dispatch, and throws a `std::invalid_argument` if any inputs have values which could not possibly be correct. Once a batch of input ops has been verified at the point of entry as not errored, you are guaranteed that the batch is atomically scheduled as a whole, unless a failure to allocate memory occurs.</qbk>   <qbk>[heading Example][statfs_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1700" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="3002" bodyend="3012"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1709" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2915" bodyend="2925"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____barrier_1gacc278eff00d3740305863354cca4660b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="structboost_1_1afio_1_1async__io__op" kindref="compound">async_io_op</ref> &gt;</type>
@@ -2135,7 +2135,7 @@
  <qbk.distinguish> batch</qbk.distinguish>   <qbk>[heading Complexity]Amortised O(N) to dispatch. Amortised O(N) to complete.</qbk>   <qbk>[heading Exception Model]See detailed description above.</qbk>   <qbk>[heading Example][barrier_example]</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1721"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1730"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____misc_1ga006bef030dab5c7bc67fbdc5bc352cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2161,7 +2161,7 @@
 <para> <qbk.distinguish> normal</qbk.distinguish>   <qbk>[heading Complexity]O(N) where N is the number of completions dependent on this op.</qbk>   <qbk>[heading Exception Model]Should not throw any exception except for out of memory.</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1739"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1748"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____misc_1ga39bb6e878d9ad0b4b926e31ced073177" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -2182,7 +2182,7 @@
 <para> <qbk.distinguish> errored</qbk.distinguish>   <qbk>[heading Complexity]O(N) where N is the number of completions dependent on this op.</qbk>   <qbk>[heading Exception Model]Should not throw any exception except for out of memory.</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1747" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1747" bodyend="1747"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1756" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1756" bodyend="1756"/>
       </memberdef>
       <memberdef kind="function" id="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a735e7a659db8e76f0bfb77123c38f23b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2204,7 +2204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2973" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2972" bodyend="2975"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2886" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2885" bodyend="2888"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -2220,7 +2220,7 @@
  <qbk>[heading Complexity]Whatever the system API takes (one would hope constant time).</qbk>   <qbk>[heading Exception Model]Never throws any exception.</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1730"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1739"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -2238,7 +2238,7 @@
 [include generated/group_async_file_io_dispatcher_base__statfs.qbk]
 [include generated/group_async_file_io_dispatcher_base__misc.qbk]
 </qbk>  </para>    </detaileddescription>
-    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1023" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1022" bodyend="1764"/>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1032" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1031" bodyend="1773"/>
     <listofallmembers>
       <member refid="group__async__file__io__dispatcher__base____filedirops_1ga284b1612b2c0a3ea813660bc9fd6a54b" prot="public" virt="non-virtual"><scope>boost::afio::async_file_io_dispatcher_base</scope><name>adopt</name></member>
       <member refid="group__async__file__io__dispatcher__base____filedirops_1gaa3f199f010ded1399b4f903a194b9cd3" prot="public" virt="non-virtual"><scope>boost::afio::async_file_io_dispatcher_base</scope><name>adopt</name></member>

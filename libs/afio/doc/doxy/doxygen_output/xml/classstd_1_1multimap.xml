@@ -51,18 +51,18 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="627">
+      <node id="559">
         <label>K</label>
       </node>
-      <node id="628">
+      <node id="560">
         <label>T</label>
       </node>
-      <node id="626">
+      <node id="558">
         <label>std::multimap&lt; K, T &gt;</label>
-        <childnode refid="627" relation="usage">
+        <childnode refid="559" relation="usage">
           <edgelabel>keys</edgelabel>
         </childnode>
-        <childnode refid="628" relation="usage">
+        <childnode refid="560" relation="usage">
           <edgelabel>elements</edgelabel>
         </childnode>
       </node>

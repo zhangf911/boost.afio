@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2750" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2750" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2663" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2663" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structboost_1_1afio_1_1async__enumerate__op__req_1a15fdfa2ce921f73499f1d7c103b1acf2" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2751" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2751" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2664" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2664" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structboost_1_1afio_1_1async__enumerate__op__req_1a298f40232240a52a4036c146890c2c1a" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2752" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2752" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2665" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2665" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structboost_1_1afio_1_1async__enumerate__op__req_1a0899f55980e182d25e13b46c85653f9d" prot="public" static="no" mutable="no">
         <type>filesystem::path</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2753" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2753" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2666" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2666" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structboost_1_1afio_1_1async__enumerate__op__req_1a546fae278cf10bf3c9d9bb2751b1800d" prot="public" static="no" mutable="no">
         <type><ref refid="group__metadata__flags_1ga228a95ca96f053e74e69e6d1ab23eccb" kindref="member">metadata_flags</ref></type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2755" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2754" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2668" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2667" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2756" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2756" bodyend="2756"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2669" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2669" bodyend="2669"/>
       </memberdef>
       <memberdef kind="function" id="structboost_1_1afio_1_1async__enumerate__op__req_1ac922fb13ada0d190b81f341378f50484" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -155,7 +155,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2765" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2765" bodyend="2765"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2678" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2678" bodyend="2678"/>
       </memberdef>
       <memberdef kind="function" id="structboost_1_1afio_1_1async__enumerate__op__req_1afb41ebfd5800b4765126b74b89eadfa3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -227,7 +227,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2774" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2774" bodyend="2774"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2687" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2687" bodyend="2687"/>
       </memberdef>
       <memberdef kind="function" id="structboost_1_1afio_1_1async__enumerate__op__req_1ab3f56b565ce75401dc13ad354925f0ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -299,7 +299,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2783" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2783" bodyend="2783"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2696" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2696" bodyend="2696"/>
       </memberdef>
       <memberdef kind="function" id="structboost_1_1afio_1_1async__enumerate__op__req_1a437e9cc90c9a9ddeca6d15c601b073fd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -312,7 +312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2786" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2785" bodyend="2789"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2699" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2698" bodyend="2702"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -327,7 +327,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2792" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2791" bodyend="2797"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2705" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2704" bodyend="2710"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -335,26 +335,26 @@
     <detaileddescription>
 <para>You should note that shell globs must use a restricted form for portability:</para><para>Microsoft Windows NT oddly does not specify what wildcards are permitted, but I think the documentation for the kernel function FsRtlIsNameInExpression() is probably sound: * means zero or more characters, ? means any one character. Do not use &lt;, &gt; or " as these have special MS-DOS compatibility inducing consequences. Do not use ^ as this is the Windows wildcard escape character.</para><para>POSIX further extends NT&apos;s wildcards with \[seq\] which is a subset of characters and \[!seq\] which is not any subset of characters. Here a \ is the wildcard escape character. </para>    </detaileddescription>
     <collaborationgraph>
-      <node id="114">
+      <node id="30">
         <label>boost::afio::async_io_op</label>
         <link refid="structboost_1_1afio_1_1async__io__op"/>
-        <childnode refid="115" relation="usage">
+        <childnode refid="31" relation="usage">
           <edgelabel>parent</edgelabel>
         </childnode>
       </node>
-      <node id="113">
+      <node id="29">
         <label>boost::afio::async_enumerate_op_req</label>
         <link refid="structboost_1_1afio_1_1async__enumerate__op__req"/>
-        <childnode refid="114" relation="usage">
+        <childnode refid="30" relation="usage">
           <edgelabel>precondition</edgelabel>
         </childnode>
       </node>
-      <node id="115">
+      <node id="31">
         <label>boost::afio::async_file_io_dispatcher_base</label>
         <link refid="classboost_1_1afio_1_1async__file__io__dispatcher__base"/>
       </node>
     </collaborationgraph>
-    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2749" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2748" bodyend="2798"/>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2662" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2661" bodyend="2711"/>
     <listofallmembers>
       <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1a6a42d7fcc688f9189aec9068b99b227e" prot="private" virt="non-virtual"><scope>boost::afio::async_enumerate_op_req</scope><name>_validate</name></member>
       <member refid="structboost_1_1afio_1_1async__enumerate__op__req_1ae66aaf796fad21b63b95c3d00d23e619" prot="public" virt="non-virtual"><scope>boost::afio::async_enumerate_op_req</scope><name>async_enumerate_op_req</name></member>

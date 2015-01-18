@@ -20,17 +20,17 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="416">
+      <node id="348">
         <label>std::string&lt; char &gt;</label>
-        <childnode refid="415" relation="public-inheritance">
+        <childnode refid="347" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="415">
+      <node id="347">
         <label>std::basic_string&lt; Char &gt;</label>
       </node>
-      <node id="417">
+      <node id="349">
         <label>std::wstring&lt; wchar_t &gt;</label>
-        <childnode refid="415" relation="public-inheritance">
+        <childnode refid="347" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

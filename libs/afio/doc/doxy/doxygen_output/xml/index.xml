@@ -10,76 +10,9 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_1a4af66c5f8712fe1b2334d3a4fec54def" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_1ac3cc7ebe33551b6f6298bac8f645d6ac" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_1ac728e8b290ea2b43de0e2ec8083fef08" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_1a800508a41db402d30eaf4c0e204b9248" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_1ad459bb623005f17c86b16aacc2898292" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_1a46845b4558f1f15dbe11c654190530e9" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
-  </compound>
-  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; asio::const_buffer &gt;</name>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1ade8e06f28b16e81944e0c75989ee55cf" kind="variable"><name>precondition</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1ab6b7f50675c5f84611f63e104d9f99ce" kind="variable"><name>buffers</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1adfed3b3e2ddbb09ff894dccfcdc75307" kind="variable"><name>where</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a577358eee6db4ccca036b34c554bf302" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a81d72743a2672d16646bbdcc0050033c" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a32319b8d65f26da26bf2528632ce7662" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a9878272e7f43ee6c2f2ed5b19b4ed0e6" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a0306e3624e5f56f707a07c42294a1fc6" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a40af87d47ed5d3b12a215e634368c32b" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1ab54b90a145c77435fe0ea6484b5d785e" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1const__buffer_01_4_1a26b4dce2c32ebcf2a9b79f76800c1cc6" kind="function"><name>async_data_op_req</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
-  </compound>
-  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; asio::mutable_buffer &gt;</name>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1ad3b89b77e73bab30ed0d4891ba738a1a" kind="variable"><name>precondition</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1aad12126ed5ece030a175b02153b34173" kind="variable"><name>buffers</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1af1d36b8303d6d4339784c21d33047180" kind="variable"><name>where</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1a9dd1b230715301c297a167c33f45b587" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1a2c210c1e6be3e41c5f997e371d0e66ed" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1a66cdd43d67afb31900653df5538f2333" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1ad0f18857a3db1064946929ae0b7830eb" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1ad65c303fd7900f780fdf5d7717d2fc74" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01asio_1_1mutable__buffer_01_4_1adcd2fbfe9d44af60efa79c2f3aad6285" kind="function"><name>async_data_op_req</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
-  </compound>
-  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; const std::array&lt; T, N &gt; &gt;</name>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a321e863d9d92edde7e842e807ef50232" kind="variable"><name>precondition</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a4b9b7c4addaa0a1544180807835cf769" kind="variable"><name>buffers</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a0260637ed3624ac6d7718e1a13d37295" kind="variable"><name>where</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a9b0b7c675886996d7287f0ed4d800b15" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a862d86da25d602403f41130be2cce810" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a5eb983690a4cdd9583ca194c8489f1f2" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a02927eb0c6caf7a3e6ca80e207f7c997" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1abd64008fd87dd1cf6d7538acf2635d8b" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a56d96490189430b6b1fa134327cc5020" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a02e32e7474b2de554c2ca61d3fd55273" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1ac58f9a075ff52c447a3178c74dc46d92" kind="function"><name>async_data_op_req</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
-  </compound>
-  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; const std::basic_string&lt; C, T, A &gt; &gt;</name>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a0b42df7a3593ecfbc4982307a35b7294" kind="variable"><name>precondition</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1af65c9a5ca44e5e71ba40c46fbd6db7b3" kind="variable"><name>buffers</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a3d5820c983d028b7c3ab76716fc3d784" kind="variable"><name>where</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a84f5ff0b4a29aadf4e73c2a436c05e80" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1aafd627487673ea9d53cce8385fda69ce" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1aa5d380e8ec439c3a1d7e9b2d44d26b57" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a4b2b0d0cac50595f94a546a312d858e8" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1acb9ca8677ebad63dd2c289ddc2c34565" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a4195d4eb37d44ffe3683ef486ca2a963" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1aa036243df783ec2afe233dd821aa5e7f" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a6500d3414c73147a0cbd31a304385ec5" kind="function"><name>async_data_op_req</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
-  </compound>
-  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; const std::vector&lt; T, A &gt; &gt;</name>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a0504187fb2d0158c9b3b8314f465ec99" kind="variable"><name>precondition</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a300f0fd7d5262287a6843aac30355c05" kind="variable"><name>buffers</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a82fe0967bcf9b0622f42d1388ad8da08" kind="variable"><name>where</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a8ee82cc15661260baad403dc672ec2ea" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a5b8d0d90b6f7782f1d03a6e17c01e809" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1acd40396862ac305eb40c0cfc98341eb2" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a950b1d9a5d13cd836269303ce66255ca" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1aa9d839c5146f86596ff39f71dd9f9385" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1ae413e275b82ba5f23b08dac2b303e98f" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a3609a3958fd2c672b10871716b3d9779" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a292c69a845da09a865543928944ec667" kind="function"><name>async_data_op_req</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
   </compound>
   <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; const T &gt;</name>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1aefaee94e09b38ec15d60e339ef2ad2da" kind="variable"><name>precondition</name></member>
@@ -93,7 +26,8 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a95293a732a23fe4305ead4dd2a35dd25" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a487aece13cee353165124fbda22c8381" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a04c0ed35b14d2c0ee75aedf8bdab2542" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1aebdaaad1c817a4182a505e2e009be987" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a1a585e881b3c82c2f1a7c5aec4a1ba63" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01_t_01_4_1a6fe0163909c628428b52f05d2908bb78" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
   </compound>
   <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; const void &gt;</name>
@@ -105,97 +39,10 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a60d5e6d33757dcf03c1ef231ccf9d077" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1ab743fb5aee996ca0306680b8015b25ce" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a4b2d2a7183f08ff3f7b2fd92f538acc3" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a7512261428eaf5120c70110d1c25e878" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1ac0478b0602ff814f5a1c517963325d58" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1a2a6c466b41025f72fb945036fc2d7851" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01const_01void_01_4_1ab231569cc7522ef657e7c9410ccbcdd6" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
-  </compound>
-  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; std::array&lt; asio::const_buffer, N &gt; &gt;</name>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1a1d86acc62838d686576976fb308b2369" kind="variable"><name>precondition</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1a758d0b148dea45949be27bcc58e837c1" kind="variable"><name>buffers</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1abc01193d74fb6eca9b16f83330b96bf1" kind="variable"><name>where</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1a05df3bfc244974f27d2f2744870545ad" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1a1e0717936564cb0fe1c60dfc0e109acf" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1a44ed9e2a1d30cc367decd203e47e055c" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1a480e98a8669d2ce290cc0bc464bb6d3a" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1aba2c2a8ed4933cb7410f063c5fdbc54b" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1a1ec3d6e338b1931412246d17be688478" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1aea3d3fa62bd0b90d51fddac60c430ad7" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1const__buffer_00_01_n_01_4_01_4_1aa752a1f9526a5c3194ce5a143a941ab7" kind="function"><name>async_data_op_req</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
-  </compound>
-  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; std::array&lt; asio::mutable_buffer, N &gt; &gt;</name>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1a965be234d5de058477a21b6e18983bdd" kind="variable"><name>precondition</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1aab641eb0cded51625e995931349ec6b3" kind="variable"><name>buffers</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1acbb84e3e57ae22484d345f464ab0bd6d" kind="variable"><name>where</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1a12654ce7695580b4eef7e8083f277e61" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1ad254e58b057f1bab7adba22bf01d440b" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1a0f92fd89df1d33c176064200a73a45a8" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1aa8603117a37a4c18f40fabd37141b15d" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1a87254c0f7ab9bd7f343cff25b97e2be8" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01asio_1_1mutable__buffer_00_01_n_01_4_01_4_1afb1acae887cdc9543090070d1dcf5329" kind="function"><name>async_data_op_req</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
-  </compound>
-  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; std::array&lt; T, N &gt; &gt;</name>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1af3904087164983f881ec0a42b180fae7" kind="variable"><name>precondition</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a96192aa4f1818d3ae9d6b8849106ed2a" kind="variable"><name>buffers</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a01f3f441efc1fcef374f57a6835156cd" kind="variable"><name>where</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1ad57471ca8372b95aa5f9a652e8dc9982" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1ab7c07eb0c700f8e37cdf618d0abb2458" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1ad33e00654ef082620aad1bef53b2850b" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a9a35b62efcc40be57e1a3e2c4ad3eb15" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a97de0fa673d127f54c06412f14c07df1" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4_1a05866030d1064910286edbfd2807bbfa" kind="function"><name>async_data_op_req</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
-  </compound>
-  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; std::basic_string&lt; C, T, A &gt; &gt;</name>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1aa57bec75ffaa60187beb806fd9f6cd7b" kind="variable"><name>precondition</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a328f95dd2fcb7a270e538bb1dfb7e8ec" kind="variable"><name>buffers</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a991f001fb9c1a19a9804c51f6896afab" kind="variable"><name>where</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1abf3b4ab7ad6409ada96f910c11ffa793" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a548cf2e2303cd68df22f0f5d9372ad9c" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a8432b9d6c57660f4c9c29958b61566d7" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1ad3a95bc2e87e1303fde0065a3bf934e0" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1aa6ded9695af9e66e507366777a66eb54" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1basic__string_3_01_c_00_01_t_00_01_a_01_4_01_4_1a443e5b3eb85546383469ca547eb81496" kind="function"><name>async_data_op_req</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
-  </compound>
-  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; std::vector&lt; asio::const_buffer, A &gt; &gt;</name>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1ac993575c2bf84ce9821dd2d75ce582bb" kind="variable"><name>precondition</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a84448671467428c7d494221e3c384201" kind="variable"><name>buffers</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a759497aaa667d83a47eca6b3018f6ca8" kind="variable"><name>where</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a49ac2452bc357dde4c013f7ff0cee38b" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a1fb4ce04a7220af8ed0c9ea8796bb81d" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a2ff460003841015bcaedd652fd7be3f6" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1aea303a94cbd5cc73b8b64a13b0fc0c57" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a953c4b8184c61bc74e6d8d2d14eb98ee" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a47635d6659ef471306ef87d0b525cc49" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1ac821aa67b7d49ad72e257c165e2b305a" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1const__buffer_00_01_a_01_4_01_4_1a118b4000e6c37a724728d46d313120d8" kind="function"><name>async_data_op_req</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
-  </compound>
-  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; std::vector&lt; asio::mutable_buffer, A &gt; &gt;</name>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1acf49b38c25aa121dab759bd3eed92047" kind="variable"><name>precondition</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1aa83d154f8b7b3ae179056ee58865939e" kind="variable"><name>buffers</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a32f11615c7052163c56ba2a1b68feea6" kind="variable"><name>where</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a6e42a86723057c91ac08ba5ca5c7126c" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a1c1bf455dbc1b5c6084bbe0f05def6db" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a1027cc3ed3cd31dd1eb341161dcb2dc4" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1a5f55e22e6d87f91b1ab1ab3241d406e4" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1ab1f05b190468fbc13e436bfa4626d56e" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01asio_1_1mutable__buffer_00_01_a_01_4_01_4_1aa69f4792d56f36cd84586a6b9c990681" kind="function"><name>async_data_op_req</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
-  </compound>
-  <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; std::vector&lt; T, A &gt; &gt;</name>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a36831fbdb1dd6d2100c9e76b1cb6faa9" kind="variable"><name>precondition</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a144958f51fc39d30af3c709648dd6558" kind="variable"><name>buffers</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a6e0888105ef07616c3220cc4b28ab814" kind="variable"><name>where</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a2b6ba3610d3de491df67f3b6e6d6ab44" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a260630f768bb9ab916c05220a71d6957" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a45875004e0123fde8a16b3809a1f76fe" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1aa800805b0140b3a6f4ffc50ffa095fb2" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1a0d4e39d86c5975a05a20e732a98b395c" kind="function"><name>operator=</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01std_1_1vector_3_01_t_00_01_a_01_4_01_4_1ae813be2aac919f1056dd8f31349cf078" kind="function"><name>async_data_op_req</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
   </compound>
   <compound refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4" kind="struct"><name>boost::afio::async_data_op_req&lt; void &gt;</name>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1abe3f009be721aa6f5a118a9d2336af49" kind="variable"><name>precondition</name></member>
@@ -204,8 +51,9 @@
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1a368d87c0cf266aa1e4c5882f85cd2d2b" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1ad100c8bfc368f3416ec55add5515b8fa" kind="function"><name>async_data_op_req</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1a219ef55aee2cdd03d8da8469ea3972c9" kind="function"><name>async_data_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1a57058512b6b79243255855e5b708b457" kind="function"><name>operator=</name></member>
+    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1af9bce3f94c5d160dc6fc6100dc4d0d5d" kind="function"><name>operator=</name></member>
     <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1ab559ab0949cbb9e934ca5cc26f8e8a1c" kind="function"><name>async_data_op_req</name></member>
-    <member refid="structboost_1_1afio_1_1async__data__op__req_3_01void_01_4_1a6787e05f2a9c950235668e56bc02b7a6" kind="function"><name>async_data_op_req</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
   </compound>
   <compound refid="structboost_1_1afio_1_1async__enumerate__op__req" kind="struct"><name>boost::afio::async_enumerate_op_req</name>
@@ -306,8 +154,8 @@
   </compound>
   <compound refid="classboost_1_1afio_1_1async__io__handle" kind="class"><name>boost::afio::async_io_handle</name>
     <member refid="classboost_1_1afio_1_1async__io__handle_1a1685977cc7dfdfbb243e56330e81c929" kind="friend"><name>async_file_io_dispatcher_base</name></member>
-    <member refid="classboost_1_1afio_1_1async__io__handle_1a2121b2bc574e3bd2b048ec448603c93c" kind="friend"><name>async_io_handle_posix</name></member>
-    <member refid="classboost_1_1afio_1_1async__io__handle_1a6312b7f088cb1c8a056b19453961f636" kind="friend"><name>async_io_handle_windows</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a196118fdfdc083334123c10fbebd60c3" kind="friend"><name>detail::async_io_handle_posix</name></member>
+    <member refid="classboost_1_1afio_1_1async__io__handle_1a4f789025521b0e1f43e78056a480daf6" kind="friend"><name>detail::async_io_handle_windows</name></member>
     <member refid="classboost_1_1afio_1_1async__io__handle_1a56f496ba01c9b613e83758582f2b06c9" kind="friend"><name>detail::async_file_io_dispatcher_compat</name></member>
     <member refid="classboost_1_1afio_1_1async__io__handle_1a7eb74be36e15618561c7df1fbdacea5c" kind="friend"><name>detail::async_file_io_dispatcher_windows</name></member>
     <member refid="classboost_1_1afio_1_1async__io__handle_1a06e10cc6179894e1e8bab39ccba6c476" kind="friend"><name>detail::async_file_io_dispatcher_linux</name></member>
@@ -367,10 +215,7 @@
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a74c8488b866a7baec1b9585020e96a32" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a597b07864ae6c22b02dfd083a0e4e779" kind="function"><name>operator=</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a96cac690389490ea7e19e92c12f775db" kind="function"><name>operator=</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1ae981a8e7b643b718a60c85a817e09593" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1ab76aaade08201c661d3341e18ab5d806" kind="function"><name>async_data_op_req_impl</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a10b6962eeb176b008847f16245922115" kind="function"><name>async_data_op_req_impl</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a21b9403dd0eaae3386c88b441572c4ae" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1aede4076a13fe0b744667334f2127e2e8" kind="function"><name>validate</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01false_01_4_1a75339528b3a5cca0abcc07271ad177fa" kind="function"><name>_validate</name></member>
   </compound>
@@ -385,18 +230,26 @@
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1ae364c27423a2cd8bb3300fa7732cb276" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a360e610764b1147cfedd9c16cdb3866d" kind="function"><name>operator=</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a37e91501f1c76de829ef4b2828922d0f" kind="function"><name>operator=</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1af8da7dede4533395a74fea6faaaeb391" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aab7fb0d133ded6696d4a8a4b8eafd42e" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aa8ab110c45c33fb6fa85ebfb28cbd5c4" kind="function"><name>async_data_op_req_impl</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a8a40230853cdf00fcb8e71bfd2bb0cd8" kind="function"><name>async_data_op_req_impl</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a702aba20985ed1432ae458601ac24dc2" kind="function"><name>async_data_op_req_impl</name></member>
-    <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1a53f54cc7bbde1aa552e1650f69ff2443" kind="function"><name>async_data_op_req_impl</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1aefb64535213c4439ca7f472c546b164b" kind="function"><name>validate</name></member>
     <member refid="classboost_1_1afio_1_1detail_1_1async__data__op__req__impl_3_01true_01_4_1ac69071caf3a63762c12619a55b3e6188" kind="function"><name>_validate</name></member>
   </compound>
   <compound refid="structboost_1_1afio_1_1detail_1_1async__file__io__dispatcher__rwconverter" kind="struct"><name>boost::afio::detail::async_file_io_dispatcher_rwconverter</name>
     <member refid="structboost_1_1afio_1_1detail_1_1async__file__io__dispatcher__rwconverter_1ae687791e77670a8467d9a279da469f2a" kind="typedef"><name>return_type</name></member>
-    <member refid="structboost_1_1afio_1_1detail_1_1async__file__io__dispatcher__rwconverter_1a575cd32b4270a7547b39052744e8e0bb" kind="function"><name>operator()</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1async__file__io__dispatcher__rwconverter_1ad7ae649aa3b405d66f96b412aba072d4" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1container__to__asio__buffers__helper" kind="struct"><name>boost::afio::detail::container_to_asio_buffers_helper</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1container__to__asio__buffers__helper_1ab4ce69be4887bdb48621d94fb33537e7" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1container__to__asio__buffers__helper_3_01_r_00_01std_1_1array_31d265f3bd056d3edf5412f1bb8b25367" kind="struct"><name>boost::afio::detail::container_to_asio_buffers_helper&lt; R, std::array&lt; T, N &gt;, _T, is_const, true &gt;</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1container__to__asio__buffers__helper_3_01_r_00_01std_1_1array_31d265f3bd056d3edf5412f1bb8b25367_1aceaa12125d351e6ec2408099e1bca234" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1container__to__asio__buffers__helper_3_01_r_00_01std_1_1basic__8d2c39514aeb002e005e9bc3cdcf8588" kind="struct"><name>boost::afio::detail::container_to_asio_buffers_helper&lt; R, std::basic_string&lt; C, T, A &gt;, _C, is_const, true &gt;</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1container__to__asio__buffers__helper_3_01_r_00_01std_1_1basic__8d2c39514aeb002e005e9bc3cdcf8588_1a8d055b4d711a760b4826c12a159443c9" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1container__to__asio__buffers__helper_3_01_r_00_01std_1_1vector_08cceb32b20cab5c10bc02eea27ecdef" kind="struct"><name>boost::afio::detail::container_to_asio_buffers_helper&lt; R, std::vector&lt; T, A &gt;, _T, is_const, true &gt;</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1container__to__asio__buffers__helper_3_01_r_00_01std_1_1vector_08cceb32b20cab5c10bc02eea27ecdef_1a7ccf83f7e2880689e44e099d8da08c25" kind="function"><name>operator()</name></member>
   </compound>
   <compound refid="structboost_1_1afio_1_1detail_1_1enable__if__async__op" kind="struct"><name>boost::afio::detail::enable_if_async_op</name>
   </compound>
@@ -425,11 +278,46 @@
     <member refid="structboost_1_1afio_1_1detail_1_1enqueued__task__impl_1_1_private_1a96206d91423305cfcbb734bd408fa3ad" kind="variable"><name>done</name></member>
     <member refid="structboost_1_1afio_1_1detail_1_1enqueued__task__impl_1_1_private_1aadf2556a47251fdc8f4e17df208224e5" kind="function"><name>Private</name></member>
   </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1make__async__data__op__req" kind="struct"><name>boost::afio::detail::make_async_data_op_req</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1make__async__data__op__req_1af7e688d2f700dfb5d9b8f8f0d9d1eae2" kind="typedef"><name>_T</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1make__async__data__op__req_1ad4a7975df6d90804b75df376425a4b80" kind="typedef"><name>type</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1make__async__data__op__req_1a27afbb4afdd991131af6cb9049feeb4c" kind="function"><name>operator()</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1make__async__data__op__req_1a709ebaac0b07d4f185895dc3cbee29f4" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1make__async__data__op__req_3_01_t_00_01true_01_4" kind="struct"><name>boost::afio::detail::make_async_data_op_req&lt; T, true &gt;</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1make__async__data__op__req_3_01_t_00_01true_01_4_1a2a39787a01edb09f4bfe3180e6f13296" kind="typedef"><name>__T</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1make__async__data__op__req_3_01_t_00_01true_01_4_1a9f81e0a86f27b7bd4078ef94080ecbd8" kind="typedef"><name>_T</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1make__async__data__op__req_3_01_t_00_01true_01_4_1a7fb60bc6a66c5cbb209c9eb027af6b00" kind="typedef"><name>type</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1make__async__data__op__req_3_01_t_00_01true_01_4_1aaf6dd394a33efc70381bbba6f1322a9e" kind="variable"><name>is_container_contents_const</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1make__async__data__op__req_3_01_t_00_01true_01_4_1a2d987c6b532547c6e3d0b5b437b08db6" kind="function"><name>operator()</name></member>
+    <member refid="structboost_1_1afio_1_1detail_1_1make__async__data__op__req_3_01_t_00_01true_01_4_1a6480e47b4d3691e325497af180f586e8" kind="function"><name>operator()</name></member>
+  </compound>
   <compound refid="structboost_1_1afio_1_1detail_1_1select__when__ops__return__type" kind="struct"><name>boost::afio::detail::select_when_ops_return_type</name>
     <member refid="structboost_1_1afio_1_1detail_1_1select__when__ops__return__type_1ae6e6d60905c8fe655f776e72a3d13cb1" kind="typedef"><name>type</name></member>
   </compound>
   <compound refid="structboost_1_1afio_1_1detail_1_1select__when__ops__return__type_3_01false_01_4" kind="struct"><name>boost::afio::detail::select_when_ops_return_type&lt; false &gt;</name>
     <member refid="structboost_1_1afio_1_1detail_1_1select__when__ops__return__type_3_01false_01_4_1addb99f0ff2ff706cbfa51ffab2b1e269" kind="typedef"><name>type</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1to__asio__buffers__helper" kind="struct"><name>boost::afio::detail::to_asio_buffers_helper</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1to__asio__buffers__helper_1adb50d8644da2efa4f288df5a00884539" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1to__asio__buffers__helper_3_01is__const_00_01_r_00_01std_1_1arr7698302ecba29743ef4e88d006e0ea0e" kind="struct"><name>boost::afio::detail::to_asio_buffers_helper&lt; is_const, R, std::array&lt; asio::const_buffer, N &gt;, false, true &gt;</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1to__asio__buffers__helper_3_01is__const_00_01_r_00_01std_1_1arr7698302ecba29743ef4e88d006e0ea0e_1a5ab7f576e94027cecbe04d8ac3cea369" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1to__asio__buffers__helper_3_01is__const_00_01_r_00_01std_1_1arr71ff4d886b752dc4ea6a8a63c5132139" kind="struct"><name>boost::afio::detail::to_asio_buffers_helper&lt; is_const, R, std::array&lt; asio::mutable_buffer, N &gt;, false, true &gt;</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1to__asio__buffers__helper_3_01is__const_00_01_r_00_01std_1_1arr71ff4d886b752dc4ea6a8a63c5132139_1a9b7506a9b722202673223d48bacf9356" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1to__asio__buffers__helper_3_01is__const_00_01_r_00_01std_1_1vecf0033e923d262694df69e5de182cb274" kind="struct"><name>boost::afio::detail::to_asio_buffers_helper&lt; is_const, R, std::vector&lt; asio::const_buffer &gt;, false, true &gt;</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1to__asio__buffers__helper_3_01is__const_00_01_r_00_01std_1_1vecf0033e923d262694df69e5de182cb274_1adc454973f3b918e6438b098e1bd15401" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1to__asio__buffers__helper_3_01is__const_00_01_r_00_01std_1_1vec015c9a1671103d5540a40db22dcf2c1f" kind="struct"><name>boost::afio::detail::to_asio_buffers_helper&lt; is_const, R, std::vector&lt; asio::mutable_buffer &gt;, false, true &gt;</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1to__asio__buffers__helper_3_01is__const_00_01_r_00_01std_1_1vec015c9a1671103d5540a40db22dcf2c1f_1aef5296e9b0d9f460d6a76f09f65ef1a4" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1to__asio__buffers__helper_3_01is__const_00_01_r_00_01_t_00_01is__trivial_00_01true_01_4" kind="struct"><name>boost::afio::detail::to_asio_buffers_helper&lt; is_const, R, T, is_trivial, true &gt;</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1container__to__asio__buffers__helper_1ab4ce69be4887bdb48621d94fb33537e7" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1detail_1_1to__asio__buffers__helper_3_01is__const_00_01_r_00_01_t_00_01true_00_01false_01_4" kind="struct"><name>boost::afio::detail::to_asio_buffers_helper&lt; is_const, R, T, true, false &gt;</name>
+    <member refid="structboost_1_1afio_1_1detail_1_1to__asio__buffers__helper_3_01is__const_00_01_r_00_01_t_00_01true_00_01false_01_4_1a960ef136ed7e857101e56281aa8babee" kind="function"><name>operator()</name></member>
   </compound>
   <compound refid="structboost_1_1afio_1_1detail_1_1vs2013__variadic__overload__resolution__workaround" kind="struct"><name>boost::afio::detail::vs2013_variadic_overload_resolution_workaround</name>
     <member refid="structboost_1_1afio_1_1detail_1_1vs2013__variadic__overload__resolution__workaround_1aab89406bb18ab80458cabf9193413573" kind="typedef"><name>type</name></member>
@@ -922,8 +810,19 @@
     <member refid="group__when__all__ops_1ga4a98962e8807e8f5fa31bb14fa430374" kind="function"><name>when_any</name></member>
     <member refid="group__when__all__ops_1ga175bb31dd07b8c716c85f5bfdc17c9df" kind="function"><name>when_all</name></member>
     <member refid="group__when__all__ops_1ga3a4b5bc5ed128e7ef337fe164f897782" kind="function"><name>when_all</name></member>
-    <member refid="group__make__async__data__op__req_1ga9f62915b030e2f2ed5115b034e9721a1" kind="function"><name>make_async_data_op_req</name></member>
-    <member refid="group__make__async__data__op__req_1gaaefe9a4cc37c21ba775399a66749b10b" kind="function"><name>make_async_data_op_req</name></member>
+    <member refid="group__to__asio__buffers_1ga772fe53eebaa2177dc53227bbef03f3f" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1ga0967653554334e6532eeaf4de0f7fe07" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1ga403430fff790e5142116cfbf562cdf07" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1gac055cc87431a0c5700e9cda29453f3bb" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1ga4d5b48b8b62041f0eb1d332b6ee3c8a9" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1gaad8ba2d78365cbb49705467d8e3923b8" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1gae9038306b955f1af06f765ae0f2880a1" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1gad414435390ce9e4cfe4bf85d43447c0b" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1ga6d517384616b5648508780391b3e8f5f" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1ga42be30127e97be9c73906906e74b24b0" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__make__async__data__op__req_1gaff49f3ca9c8a8796ab7972a40f324122" kind="function"><name>make_async_data_op_req</name></member>
+    <member refid="group__make__async__data__op__req_1ga40032d509f14a1c60cbf9989bc06d038" kind="function"><name>make_async_data_op_req</name></member>
+    <member refid="group__make__async__data__op__req_1ga878313b5b405a1c2c73aabc1078bf57c" kind="function"><name>make_async_data_op_req</name></member>
   </compound>
   <compound refid="namespaceboost_1_1afio_1_1detail" kind="namespace"><name>boost::afio::detail</name>
     <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959" kind="enum"><name>OpType</name></member>
@@ -975,12 +874,22 @@
     <member refid="afio_8hpp_1a933046d7a31248aa271a978579ee8977" kind="define"><name>BOOST_AFIO_DECLARE_CLASS_ENUM_AS_BITFIELD</name></member>
     <member refid="afio_8hpp_1ac794ed8c3e9fc1a99bd54d5b993d2b6c" kind="define"><name>BOOST_AFIO_DIRECTORY_ENTRY_ACCESS_METHOD</name></member>
   </compound>
-  <compound refid="group__macros" kind="group"><name>macros</name>
-    <member refid="group__macros_1ga8abeb465d2ca6fa15b3c3754697e5577" kind="define"><name>BOOST_AFIO_VALIDATE_INPUTS</name></member>
+  <compound refid="group__to__asio__buffers" kind="group"><name>to_asio_buffers</name>
+    <member refid="group__to__asio__buffers_1ga4d5b48b8b62041f0eb1d332b6ee3c8a9" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1gaad8ba2d78365cbb49705467d8e3923b8" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1gae9038306b955f1af06f765ae0f2880a1" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1gad414435390ce9e4cfe4bf85d43447c0b" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1ga6d517384616b5648508780391b3e8f5f" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1ga42be30127e97be9c73906906e74b24b0" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1ga772fe53eebaa2177dc53227bbef03f3f" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1ga0967653554334e6532eeaf4de0f7fe07" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1ga403430fff790e5142116cfbf562cdf07" kind="function"><name>to_asio_buffers</name></member>
+    <member refid="group__to__asio__buffers_1gac055cc87431a0c5700e9cda29453f3bb" kind="function"><name>to_asio_buffers</name></member>
   </compound>
   <compound refid="group__make__async__data__op__req" kind="group"><name>make_async_data_op_req</name>
-    <member refid="group__make__async__data__op__req_1ga9f62915b030e2f2ed5115b034e9721a1" kind="function"><name>make_async_data_op_req</name></member>
-    <member refid="group__make__async__data__op__req_1gaaefe9a4cc37c21ba775399a66749b10b" kind="function"><name>make_async_data_op_req</name></member>
+    <member refid="group__make__async__data__op__req_1gaff49f3ca9c8a8796ab7972a40f324122" kind="function"><name>make_async_data_op_req</name></member>
+    <member refid="group__make__async__data__op__req_1ga40032d509f14a1c60cbf9989bc06d038" kind="function"><name>make_async_data_op_req</name></member>
+    <member refid="group__make__async__data__op__req_1ga878313b5b405a1c2c73aabc1078bf57c" kind="function"><name>make_async_data_op_req</name></member>
   </compound>
   <compound refid="group__async__data__op__req" kind="group"><name>async_data_op_req</name>
   </compound>
@@ -1142,6 +1051,9 @@
   </compound>
   <compound refid="group__process__threadpool" kind="group"><name>process_threadpool</name>
     <member refid="group__process__threadpool_1gabb4747cc11ef3ee1bbb969bc78c238bb" kind="function"><name>process_threadpool</name></member>
+  </compound>
+  <compound refid="group__macros" kind="group"><name>macros</name>
+    <member refid="group__macros_1ga8abeb465d2ca6fa15b3c3754697e5577" kind="define"><name>BOOST_AFIO_VALIDATE_INPUTS</name></member>
   </compound>
   <compound refid="dir_d46f54565c8d3a5be4cc965304f49b91" kind="dir"><name>/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/</name>
   </compound>

@@ -53,9 +53,9 @@
           you are unfairly penalised for especially large transactions over others
           with smaller transactions as lock complexity is worse than linear. Nevertheless
           performance is actually not bad: these are results for my 3.9Ghz i7-3770K
-          workstation using AFIO to implement the lock file with two concurrent writers
-          (note that Windows provides magic flags for telling it about lock files,
-          if not used expect a 40% performance reduction):
+          workstation using AFIO to implement the lock file with various numbers
+          of concurrent writers (note that Windows provides magic flags for telling
+          it about lock files, if not used expect a 40% performance reduction):
         </p>
 <div class="table">
 <a name="afio.quickstart.async_file_io.atomic_logging.lock_file_performance"></a><p class="title"><b>Table&#160;1.4.&#160;Lock file performance on various operating systems:</b></p>
@@ -108,12 +108,12 @@
                 </td>
 <td>
                   <p>
-                    ?
+                    2468
                   </p>
                 </td>
 <td>
                   <p>
-                    ?
+                    2295
                   </p>
                 </td>
 <td>
@@ -135,12 +135,12 @@
                 </td>
 <td>
                   <p>
-                    ?
+                    2507
                   </p>
                 </td>
 <td>
                   <p>
-                    ?
+                    2385
                   </p>
                 </td>
 <td>
@@ -162,12 +162,12 @@
                 </td>
 <td>
                   <p>
-                    ?
+                    1966
                   </p>
                 </td>
 <td>
                   <p>
-                    ?
+                    2161
                   </p>
                 </td>
 <td>
@@ -189,12 +189,12 @@
                 </td>
 <td>
                   <p>
-                    ?
+                    1400
                   </p>
                 </td>
 <td>
                   <p>
-                    ?
+                    1851
                   </p>
                 </td>
 <td>
@@ -216,12 +216,12 @@
                 </td>
 <td>
                   <p>
-                    ?
+                    742
                   </p>
                 </td>
 <td>
                   <p>
-                    ?
+                    602
                   </p>
                 </td>
 <td>
@@ -244,12 +244,12 @@
                 </td>
 <td>
                   <p>
-                    ?
+                    826
                   </p>
                 </td>
 <td>
                   <p>
-                    ?
+                    888
                   </p>
                 </td>
 <td>
@@ -271,12 +271,12 @@
                 </td>
 <td>
                   <p>
-                    ?
+                    508
                   </p>
                 </td>
 <td>
                   <p>
-                    ?
+                    637
                   </p>
                 </td>
 <td>
@@ -298,12 +298,12 @@
                 </td>
 <td>
                   <p>
-                    ?
+                    67
                   </p>
                 </td>
 <td>
                   <p>
-                    ?
+                    167
                   </p>
                 </td>
 <td>
@@ -325,12 +325,12 @@
                 </td>
 <td>
                   <p>
-                    ?
+                    37
                   </p>
                 </td>
 <td>
                   <p>
-                    ?
+                    117
                   </p>
                 </td>
 <td>
@@ -352,12 +352,12 @@
                 </td>
 <td>
                   <p>
-                    ?
+                    33
                   </p>
                 </td>
 <td>
                   <p>
-                    ?
+                    77
                   </p>
                 </td>
 <td>
@@ -455,7 +455,7 @@
       <span class="identifier">PRINT_FIELD</span><span class="special">(</span><span class="identifier">bavail</span><span class="special">,</span> <span class="special">&lt;&lt;</span> <span class="string">" ("</span> <span class="special">&lt;&lt;</span> <span class="special">(</span><span class="identifier">statfs</span><span class="special">.</span><span class="identifier">f_bavail</span><span class="special">*</span><span class="identifier">statfs</span><span class="special">.</span><span class="identifier">f_bsize</span> <span class="special">/</span> <span class="number">1024.0</span> <span class="special">/</span> <span class="number">1024.0</span> <span class="special">/</span> <span class="number">1024.0</span><span class="special">)</span> <span class="special">&lt;&lt;</span> <span class="string">" Gb)"</span><span class="special">);</span>
 <span class="preprocessor">#undef</span> <span class="identifier">PRINT_FIELD</span>
     <span class="special">}</span>
-    <span class="keyword">if</span><span class="special">(</span><span class="number">0</span><span class="special">)</span>
+    <span class="keyword">if</span><span class="special">(</span><span class="number">1</span><span class="special">)</span>
     <span class="special">{</span>
       <span class="identifier">std</span><span class="special">::</span><span class="identifier">cout</span> <span class="special">&lt;&lt;</span> <span class="string">"\nBenchmarking a single traditional lock file with "</span> <span class="special">&lt;&lt;</span> <span class="identifier">writers</span> <span class="special">&lt;&lt;</span> <span class="string">" concurrent writers ...\n"</span><span class="special">;</span>
       <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span><span class="identifier">thread</span><span class="special">&gt;</span> <span class="identifier">threads</span><span class="special">;</span>

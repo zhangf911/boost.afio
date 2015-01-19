@@ -747,6 +747,8 @@
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaeafb311263d328603431d2bf231c6a0e" kind="enumvalue"><name>NoSparse</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea8e7a42449e906c304998c81e7490fd16" kind="enumvalue"><name>FastDirectoryEnumeration</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeae2b4f36c7d426549b211d89ffcd02e12" kind="enumvalue"><name>UniqueDirectoryHandle</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea70411777b52492bfe0bac4e4294a3357" kind="enumvalue"><name>TemporaryFile</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea47a4fbfd2b202e3b9e28a4dcccde84b5" kind="enumvalue"><name>DeleteOnClose</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea45296419ce890d99a255351f4ac9f1fa" kind="enumvalue"><name>OSDirect</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaba7941781a18ef1d3a4f5345b9d44a53" kind="enumvalue"><name>OSMMap</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea05738a480cd6f577ef828ca2637bdf29" kind="enumvalue"><name>AlwaysSync</name></member>
@@ -1039,6 +1041,8 @@
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaeafb311263d328603431d2bf231c6a0e" kind="enumvalue"><name>NoSparse</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea8e7a42449e906c304998c81e7490fd16" kind="enumvalue"><name>FastDirectoryEnumeration</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeae2b4f36c7d426549b211d89ffcd02e12" kind="enumvalue"><name>UniqueDirectoryHandle</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea70411777b52492bfe0bac4e4294a3357" kind="enumvalue"><name>TemporaryFile</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea47a4fbfd2b202e3b9e28a4dcccde84b5" kind="enumvalue"><name>DeleteOnClose</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea45296419ce890d99a255351f4ac9f1fa" kind="enumvalue"><name>OSDirect</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaba7941781a18ef1d3a4f5345b9d44a53" kind="enumvalue"><name>OSMMap</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea05738a480cd6f577ef828ca2637bdf29" kind="enumvalue"><name>AlwaysSync</name></member>

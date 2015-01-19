@@ -16,7 +16,7 @@
  <qbk>[heading Complexity]Whatever the system API takes (one would hope constant time).</qbk>   <qbk>[heading Exception Model]Never throws any exception.</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1739"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1741"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____misc_1ga006bef030dab5c7bc67fbdc5bc352cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -42,7 +42,7 @@
 <para> <qbk.distinguish> normal</qbk.distinguish>   <qbk>[heading Complexity]O(N) where N is the number of completions dependent on this op.</qbk>   <qbk>[heading Exception Model]Should not throw any exception except for out of memory.</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1748"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1750"/>
       </memberdef>
       <memberdef kind="function" id="group__async__file__io__dispatcher__base____misc_1ga39bb6e878d9ad0b4b926e31ced073177" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -63,7 +63,7 @@
 <para> <qbk.distinguish> errored</qbk.distinguish>   <qbk>[heading Complexity]O(N) where N is the number of completions dependent on this op.</qbk>   <qbk>[heading Exception Model]Should not throw any exception except for out of memory.</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1756" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1756" bodyend="1756"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1758" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1758" bodyend="1758"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

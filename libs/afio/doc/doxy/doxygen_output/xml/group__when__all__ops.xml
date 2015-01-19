@@ -63,7 +63,7 @@
  <qbk.distinguish> iterator batch of ops not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1940" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1939" bodyend="1944"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1942" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1941" bodyend="1946"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1ga85c6d5c463b1ecffdc2a6bda4f040bb0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -124,7 +124,7 @@
  <qbk.distinguish> iterator batch of ops not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1958" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1957" bodyend="1962"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1960" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1959" bodyend="1964"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1ga5598f81e0788f6acd2258263009de875" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>future&lt; std::vector&lt; std::shared_ptr&lt; async_io_handle &gt; &gt; &gt;</type>
@@ -161,7 +161,7 @@
  <qbk.distinguish> vector batch of ops not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1974" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1973" bodyend="1978"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1976" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1975" bodyend="1980"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1gaeb4173eee90e57cc0646056bd14603de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>future&lt; std::shared_ptr&lt; async_io_handle &gt; &gt;</type>
@@ -198,7 +198,7 @@
  <qbk.distinguish> vector batch of ops not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1990" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1989" bodyend="1994"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1992" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1991" bodyend="1996"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1gaaf00f394b0af6575df503d4527788c5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -248,7 +248,7 @@
  <qbk.distinguish> iterator batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2007" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2006" bodyend="2011"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2009" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2008" bodyend="2013"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1ga1a452f7d0c7a0517e824cddb0816e872" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -298,7 +298,7 @@
  <qbk.distinguish> iterator batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2024" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2023" bodyend="2028"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2026" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2025" bodyend="2030"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1ga6591b9bbaf576183995ba8612f1c86d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>future&lt; std::vector&lt; std::shared_ptr&lt; async_io_handle &gt; &gt; &gt;</type>
@@ -324,7 +324,7 @@
  <qbk.distinguish> vector batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2039" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2038" bodyend="2043"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2041" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2040" bodyend="2045"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1ga4a98962e8807e8f5fa31bb14fa430374" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>future&lt; std::shared_ptr&lt; async_io_handle &gt; &gt;</type>
@@ -350,7 +350,7 @@
  <qbk.distinguish> vector batch of ops exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(N).</qbk>   <qbk>[heading Exception Model]Propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2054" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2053" bodyend="2058"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2056" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2055" bodyend="2060"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1ga175bb31dd07b8c716c85f5bfdc17c9df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>future&lt; std::vector&lt; std::shared_ptr&lt; async_io_handle &gt; &gt; &gt;</type>
@@ -387,7 +387,7 @@
  <qbk.distinguish> convenience single op not exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(1).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2070" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2069" bodyend="2073"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2072" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2071" bodyend="2075"/>
       </memberdef>
       <memberdef kind="function" id="group__when__all__ops_1ga3a4b5bc5ed128e7ef337fe164f897782" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>future&lt; std::vector&lt; std::shared_ptr&lt; async_io_handle &gt; &gt; &gt;</type>
@@ -413,7 +413,7 @@
  <qbk.distinguish> convenience single op exception propagating</qbk.distinguish>   <qbk>[heading Complexity]O(1).</qbk>   <qbk>[heading Exception Model]Non propagating</qbk>  </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2084" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2083" bodyend="2087"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="2086" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="2085" bodyend="2089"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

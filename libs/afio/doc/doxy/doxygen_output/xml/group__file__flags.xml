@@ -118,6 +118,22 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea70411777b52492bfe0bac4e4294a3357" prot="public">
+          <name>TemporaryFile</name>
+          <initializer>(1&lt;&lt;12)</initializer>
+          <briefdescription>
+<para>On some systems causes dirty cache data to not be written to physical storage until file close. Useful for temporary files and lock files, especially on Windows when combined with DeleteOnClose as this avoids an fsync of the containing directory on file close. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea47a4fbfd2b202e3b9e28a4dcccde84b5" prot="public">
+          <name>DeleteOnClose</name>
+          <initializer>(1&lt;&lt;13)</initializer>
+          <briefdescription>
+<para>Only when combined with CreateOnlyIfNotExist, deletes the file on close. This is especially useful on Windows with temporary and lock files where normally closing a file is an implicit fsync of its containing directory. Note on POSIX this unlinks the file on first close by AFIO, whereas on Windows the operating system unlinks the file on last close including sudden application exit. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea45296419ce890d99a255351f4ac9f1fa" prot="public">
           <name>OSDirect</name>
           <initializer>(1&lt;&lt;16)</initializer>
@@ -180,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="390" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="386" bodyend="417"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="390" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="386" bodyend="419"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

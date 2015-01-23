@@ -118,6 +118,7 @@ Classes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1make__async__data__op__req_3_01_t_00_01true_01_4.html">boost::afio::detail::make_async_data_op_req&lt; T, true &gt;</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__enumerate__op__req.html">boost::afio::async_enumerate_op_req</a></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">A convenience bundle of precondition, number of items to enumerate, item pattern match and metadata to prefetch.  <a href="structboost_1_1afio_1_1async__enumerate__op__req.html#details">More...</a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1async__lock__op__req.html">boost::afio::async_lock_op_req</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structboost_1_1afio_1_1detail_1_1async__file__io__dispatcher__rwconverter.html">boost::afio::detail::async_file_io_dispatcher_rwconverter&lt; iswrite, T &gt;</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstd_1_1hash_3_01boost_1_1afio_1_1directory__entry_01_4.html">std::hash&lt; boost::afio::directory_entry &gt;</a></td></tr>
 <tr><td colspan="2"><h2><a name="namespaces"></a>
@@ -179,12 +180,15 @@ Enumerations</h2></td></tr>
 <br/>
 &#160;&#160;<b>boost::afio::OSDirect</b> = (1&lt;&lt;16), 
 <b>boost::afio::OSMMap</b> = (1&lt;&lt;17), 
+<b>OSLockable</b> = (1&lt;&lt;18), 
 <b>boost::afio::AlwaysSync</b> = (1&lt;&lt;24), 
-<b>boost::afio::SyncOnClose</b> = (1&lt;&lt;25), 
 <br/>
-&#160;&#160;<b>boost::afio::EnforceDependencyWriteOrder</b> = (1&lt;&lt;26), 
+&#160;&#160;<b>boost::afio::SyncOnClose</b> = (1&lt;&lt;25), 
+<b>boost::afio::EnforceDependencyWriteOrder</b> = (1&lt;&lt;26), 
+<b>boost::afio::int_file_share_delete</b> = (1&lt;&lt;28), 
 <b>boost::afio::int_opening_link</b> = (1&lt;&lt;29), 
-<b>boost::afio::int_opening_dir</b> = (1&lt;&lt;30)
+<br/>
+&#160;&#160;<b>boost::afio::int_opening_dir</b> = (1&lt;&lt;30)
 <br/>
  }</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise file and directory open flags.  <a href="group__file__flags.html#ga1615042683add1802cfc6dc86bd078ee">More...</a><br/></td></tr>
@@ -216,7 +220,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>zero</b>, 
 <b>extents</b>, 
 <b>statfs</b>, 
-<b>Last</b>
+<b>lock</b>, 
+<br/>
+&#160;&#160;<b>Last</b>
 <br/>
  }</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of operation.  <a href="namespaceboost_1_1afio_1_1detail.html#a0988089f34c099ad2ef946d6ff03c959">More...</a><br/></td></tr>
@@ -486,7 +492,7 @@ inline BOOST_CONSTEXPR <span class="keywordtype">bool</span> operator!(type a) \
     return 0==<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(a); \
 }
 </pre></div>
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00361">361</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00362">362</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>

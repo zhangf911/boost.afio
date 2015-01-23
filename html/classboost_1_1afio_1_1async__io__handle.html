@@ -134,7 +134,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 <div class="textblock"><p>The abstract base class encapsulating a platform-specific file handle. </p>
 <p>Note that failure to explicitly schedule closing a file handle in the dispatcher means it will be synchronously closed on last reference count by <a class="el" href="classboost_1_1afio_1_1async__io__handle.html" title="The abstract base class encapsulating a platform-specific file handle.">async_io_handle</a>. This can consume considerable time, especially if SyncOnClose is enabled. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00837">837</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00842">842</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 </div><hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a5fbdc8e0c84387a9444771424983eb66"></a><!-- doxytag: member="boost::afio::async_io_handle::parent" ref="a5fbdc8e0c84387a9444771424983eb66" args="() const " -->
 <div class="memitem">
@@ -152,7 +152,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns the parent of this io handle. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00859">859</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00864">864</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -172,7 +172,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns a handle to the directory containing this handle. Only works if `file_flags::FastDirectoryEnumeration` was specified when this handle was opened. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00861">861</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00866">866</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -210,7 +210,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns when this handle was opened. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00865">865</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00870">870</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -230,7 +230,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns the path of this io handle. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00867">867</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00872">872</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -250,7 +250,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns the final flags used when this handle was opened. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00869">869</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00874">874</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -270,7 +270,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>True if this handle was opened as a file. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00871">871</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00876">876</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -290,7 +290,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>True if this handle was opened as a directory. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00873">873</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00878">878</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -310,7 +310,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>True if this handle was opened as a symlink. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00875">875</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00880">880</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -330,7 +330,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns how many bytes have been read since this handle was opened. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00877">877</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00882">882</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -350,7 +350,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns how many bytes have been written since this handle was opened. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00879">879</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00884">884</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -370,7 +370,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns how many bytes have been written since this handle was last fsynced. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00881">881</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00886">886</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>
@@ -410,7 +410,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>detail::async_file_i
 
 <p>Returns a mostly filled <a class="el" href="structboost_1_1afio_1_1stat__t.html" title="Metadata about a directory entry.">stat_t</a> structure for the file or directory referenced by this handle. Use `metadata_flags::All` if you want it as complete as your platform allows, even at the cost of severe performance loss. </p>
 
-<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00885">885</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
+<p>Definition at line <a class="el" href="afio_8hpp_source.html#l00890">890</a> of file <a class="el" href="afio_8hpp_source.html">afio.hpp</a>.</p>
 
 </div>
 </div>

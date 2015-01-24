@@ -574,9 +574,10 @@
 </div>
 <br class="table-break"><p>
           Linux once against does a great job of O(1) to waiters complexity, but
-          at the third of the speed of a simple lock file. Windows does better than
-          Linux here especially on SSDs, but doesn't scale to waiters once they pass
-          CPU core count.
+          at the third of the speed of a simple lock file and up to half the speed
+          of Windows. Windows does better than Linux here especially on SSDs where
+          it is faster than a simple lock file, but doesn't scale to waiters once
+          they pass CPU core count.
         </p>
 <p>
           This introduces the final potential solution which is that of the quagmire
@@ -654,7 +655,7 @@
                 </td>
 <td>
                   <p>
-                    4627
+                    3466
                   </p>
                 </td>
 </tr>
@@ -681,7 +682,7 @@
                 </td>
 <td>
                   <p>
-                    7615
+                    2215
                   </p>
                 </td>
 </tr>
@@ -708,7 +709,7 @@
                 </td>
 <td>
                   <p>
-                    15500
+                    1073
                   </p>
                 </td>
 </tr>
@@ -735,7 +736,7 @@
                 </td>
 <td>
                   <p>
-                    32827
+                    518
                   </p>
                 </td>
 </tr>
@@ -762,7 +763,7 @@
                 </td>
 <td>
                   <p>
-                    52552
+                    360
                   </p>
                 </td>
 </tr>
@@ -770,8 +771,61 @@
 </table></div>
 </div>
 <br class="table-break"><p>
-          This is clearly the fastest option for all platforms, and O(1) or better
-          to waiters scalability.
+          Fascinatingly the tables suddenly switch here: Windows sees O(1) to waiters
+          complexity and really superb performance, whilst Linux sees a mostly O(N)
+          to waiters complexity drop in performance. I should add here that because
+          POSIX advisory locks are per process, the Linux benchmarks were generated
+          by running N copies of the benchmark program whereas the NT kernel inherits
+          the really excellent and well thought through file byte range locking model
+          of DEC VMS and treats locks as effectively reference counted byte ranges,
+          and therefore works as expected from a single process. I have yet to add
+          process-local byte range locking to simulate sane range locking for POSIX,
+          so expect the numbers above to worsen.
+        </p>
+<p>
+          After all of that, we are left with this locking strategy matrix for TripleGit:
+        </p>
+<div class="table">
+<a name="afio.quickstart.async_file_io.atomic_logging.best_locking_strategy_matrix"></a><p class="title"><b>Table&#160;1.7.&#160;Fastest file system locking strategy for various operating systems:</b></p>
+<div class="table-contents"><table class="table" summary="Fastest file system locking strategy for various operating systems:">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead><tr>
+<th>
+                  <p>
+                    Win8.1 x64 NTFS
+                  </p>
+                </th>
+<th>
+                  <p>
+                    Advisory locks fastest, then atomic append locks, finally lock
+                    files
+                  </p>
+                </th>
+</tr></thead>
+<tbody><tr>
+<td>
+                  <p>
+                    Linux x64 ext4
+                  </p>
+                </td>
+<td>
+                  <p>
+                    Lock files fastest, then advisory locks, finally atomic append
+                    locks
+                  </p>
+                </td>
+</tr></tbody>
+</table></div>
+</div>
+<br class="table-break"><p>
+          I should <span class="bold"><strong>emphasise</strong></span> once again that the
+          advisory locking code is riddled with bugs and you should not use it in
+          your code at this time. Once I have a CI testing all possible combinations
+          of locking and nothing is erroring out I'll release that code for production
+          use.
         </p>
 <p>
           All these benchmarks came from this benchmarking program I wrote using
@@ -827,7 +881,7 @@
       <span class="identifier">PRINT_FIELD</span><span class="special">(</span><span class="identifier">bavail</span><span class="special">,</span> <span class="special">&lt;&lt;</span> <span class="string">" ("</span> <span class="special">&lt;&lt;</span> <span class="special">(</span><span class="identifier">statfs</span><span class="special">.</span><span class="identifier">f_bavail</span><span class="special">*</span><span class="identifier">statfs</span><span class="special">.</span><span class="identifier">f_bsize</span> <span class="special">/</span> <span class="number">1024.0</span> <span class="special">/</span> <span class="number">1024.0</span> <span class="special">/</span> <span class="number">1024.0</span><span class="special">)</span> <span class="special">&lt;&lt;</span> <span class="string">" Gb)"</span><span class="special">);</span>
 <span class="preprocessor">#undef</span> <span class="identifier">PRINT_FIELD</span>
     <span class="special">}</span>
-    <span class="keyword">if</span><span class="special">(</span><span class="number">0</span><span class="special">)</span>
+    <span class="keyword">if</span><span class="special">(</span><span class="number">1</span><span class="special">)</span>
     <span class="special">{</span>
       <span class="identifier">std</span><span class="special">::</span><span class="identifier">cout</span> <span class="special">&lt;&lt;</span> <span class="string">"\nBenchmarking a single traditional lock file with "</span> <span class="special">&lt;&lt;</span> <span class="identifier">writers</span> <span class="special">&lt;&lt;</span> <span class="string">" concurrent writers ...\n"</span><span class="special">;</span>
       <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span><span class="identifier">thread</span><span class="special">&gt;</span> <span class="identifier">threads</span><span class="special">;</span>
@@ -887,7 +941,7 @@
       <span class="identifier">traditional_locks</span><span class="special">=</span><span class="identifier">successes</span><span class="special">/</span><span class="identifier">diff</span><span class="special">.</span><span class="identifier">count</span><span class="special">();</span>
     <span class="special">}</span>
 
-    <span class="keyword">if</span><span class="special">(</span><span class="number">0</span><span class="special">)</span>
+    <span class="keyword">if</span><span class="special">(</span><span class="number">1</span><span class="special">)</span>
     <span class="special">{</span>
       <span class="identifier">std</span><span class="special">::</span><span class="identifier">cout</span> <span class="special">&lt;&lt;</span> <span class="string">"\nBenchmarking eight traditional lock files with "</span> <span class="special">&lt;&lt;</span> <span class="identifier">writers</span> <span class="special">&lt;&lt;</span> <span class="string">" concurrent writers ...\n"</span><span class="special">;</span>
       <span class="identifier">std</span><span class="special">::</span><span class="identifier">vector</span><span class="special">&lt;</span><span class="identifier">thread</span><span class="special">&gt;</span> <span class="identifier">threads</span><span class="special">;</span>
@@ -1274,7 +1328,7 @@
       <span class="string">"success rate of "</span> <span class="special">&lt;&lt;</span> <span class="special">(</span><span class="identifier">successes</span><span class="special">/</span><span class="identifier">diff</span><span class="special">.</span><span class="identifier">count</span><span class="special">())</span> <span class="special">&lt;&lt;</span> <span class="string">" writes per second which is a "</span> <span class="special">&lt;&lt;</span> <span class="special">(</span><span class="number">100.0</span><span class="special">*</span><span class="identifier">successes</span><span class="special">/</span><span class="identifier">attempts</span><span class="special">)</span> <span class="special">&lt;&lt;</span> <span class="string">"% success rate."</span> <span class="special">&lt;&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">endl</span><span class="special">;</span>
       <span class="identifier">atomic_log_locks</span><span class="special">=</span><span class="identifier">successes</span><span class="special">/</span><span class="identifier">diff</span><span class="special">.</span><span class="identifier">count</span><span class="special">();</span>
     <span class="special">}</span>
-    <span class="comment">//filesystem::remove_all("testdir");</span>
+    <span class="identifier">filesystem</span><span class="special">::</span><span class="identifier">remove_all</span><span class="special">(</span><span class="string">"testdir"</span><span class="special">);</span>
     <span class="identifier">std</span><span class="special">::</span><span class="identifier">cout</span> <span class="special">&lt;&lt;</span> <span class="string">"Traditional locks were "</span> <span class="special">&lt;&lt;</span> <span class="special">(</span><span class="identifier">traditional_locks</span><span class="special">/</span><span class="identifier">atomic_log_locks</span><span class="special">)</span> <span class="special">&lt;&lt;</span> <span class="string">" times faster."</span> <span class="special">&lt;&lt;</span> <span class="identifier">std</span><span class="special">::</span><span class="identifier">endl</span><span class="special">;</span>
     <span class="keyword">return</span> <span class="number">0</span><span class="special">;</span>
 <span class="special">}</span>

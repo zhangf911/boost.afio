@@ -150,6 +150,14 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeafd4ddd5281971322ab40e76c0dec74f3" prot="public">
+          <name>OSLockable</name>
+          <initializer>(1&lt;&lt;18)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea05738a480cd6f577ef828ca2637bdf29" prot="public">
           <name>AlwaysSync</name>
           <initializer>(1&lt;&lt;24)</initializer>
@@ -171,6 +179,14 @@
           <initializer>(1&lt;&lt;26)</initializer>
           <briefdescription>
 <para>Ensure that data writes to files reach physical storage in the same order as the op dependencies close files. Does NOT enforce ordering of individual data writes, ONLY all file writes accumulated before a file close. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea420a8327f0dc60ed25e8441e15df9e57" prot="public">
+          <name>int_file_share_delete</name>
+          <initializer>(1&lt;&lt;28)</initializer>
+          <briefdescription>
+<para>Internal use only. Don&apos;t use. </para>          </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
@@ -196,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="390" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="386" bodyend="419"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="391" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="387" bodyend="422"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

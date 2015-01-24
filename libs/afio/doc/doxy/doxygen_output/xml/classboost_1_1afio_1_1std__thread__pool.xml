@@ -227,26 +227,26 @@
     <detaileddescription>
 <para>This instantiates a `asio::io_service` and a latchable `asio::io_service::work` to keep any threads working until the instance is destructed. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="130">
+      <node id="134">
         <label>boost::afio::thread_source</label>
         <link refid="classboost_1_1afio_1_1thread__source"/>
       </node>
-      <node id="129">
+      <node id="133">
         <label>boost::afio::std_thread_pool</label>
         <link refid="classboost_1_1afio_1_1std__thread__pool"/>
-        <childnode refid="130" relation="public-inheritance">
+        <childnode refid="134" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="132">
+      <node id="136">
         <label>boost::afio::thread_source</label>
         <link refid="classboost_1_1afio_1_1thread__source"/>
       </node>
-      <node id="131">
+      <node id="135">
         <label>boost::afio::std_thread_pool</label>
         <link refid="classboost_1_1afio_1_1std__thread__pool"/>
-        <childnode refid="132" relation="public-inheritance">
+        <childnode refid="136" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

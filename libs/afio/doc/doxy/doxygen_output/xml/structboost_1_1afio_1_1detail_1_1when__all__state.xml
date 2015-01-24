@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1798" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1798" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1837" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1837" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structboost_1_1afio_1_1detail_1_1when__all__state_1ab8d0da10009b890cf06b4b7cd47e8828" prot="public" static="no" mutable="no">
         <type>std::vector&lt; shared_future&lt; std::shared_ptr&lt; <ref refid="classboost_1_1afio_1_1async__io__handle" kindref="compound">async_io_handle</ref> &gt; &gt; &gt;</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1799" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1799" bodyend="-1"/>
+        <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1838" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1838" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -35,18 +35,18 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="104">
+      <node id="108">
         <label>std::vector&lt; shared_future&lt; std::shared_ptr&lt; async_io_handle &gt; &gt; &gt;</label>
       </node>
-      <node id="103">
+      <node id="107">
         <label>boost::afio::detail::when_all_state</label>
         <link refid="structboost_1_1afio_1_1detail_1_1when__all__state"/>
-        <childnode refid="104" relation="usage">
+        <childnode refid="108" relation="usage">
           <edgelabel>in</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1797" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1796" bodyend="1800"/>
+    <location file="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" line="1836" bodyfile="/home/jenkins-slave/workspace/Boost.AFIO Build Documentation/boost-local/libs/afio/include/boost/afio/afio.hpp" bodystart="1835" bodyend="1839"/>
     <listofallmembers>
       <member refid="structboost_1_1afio_1_1detail_1_1when__all__state_1ab8d0da10009b890cf06b4b7cd47e8828" prot="public" virt="non-virtual"><scope>boost::afio::detail::when_all_state</scope><name>in</name></member>
       <member refid="structboost_1_1afio_1_1detail_1_1when__all__state_1aad7d312a61649648454a8f6e83f354aa" prot="public" virt="non-virtual"><scope>boost::afio::detail::when_all_state</scope><name>out</name></member>

@@ -234,25 +234,25 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="112">
+      <node id="116">
         <label>boost::afio::enqueued_task&lt; R()&gt;</label>
         <link refid="classboost_1_1afio_1_1enqueued__task_3_01_r_07_08_4"/>
-        <childnode refid="113" relation="public-inheritance">
+        <childnode refid="117" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="113">
+      <node id="117">
         <label>boost::afio::detail::enqueued_task_impl&lt; R &gt;</label>
         <link refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="114">
+      <node id="118">
         <label>boost::afio::enqueued_task&lt; R()&gt;</label>
         <link refid="classboost_1_1afio_1_1enqueued__task_3_01_r_07_08_4"/>
-        <childnode refid="115" relation="public-inheritance">
+        <childnode refid="119" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="115">
+      <node id="119">
         <label>boost::afio::detail::enqueued_task_impl&lt; R &gt;</label>
         <link refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl"/>
       </node>

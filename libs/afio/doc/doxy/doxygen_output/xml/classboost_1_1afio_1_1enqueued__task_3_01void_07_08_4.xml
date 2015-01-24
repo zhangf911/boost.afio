@@ -226,26 +226,26 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="117">
+      <node id="121">
         <label>boost::afio::detail::enqueued_task_impl&lt; void &gt;</label>
         <link refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl"/>
       </node>
-      <node id="116">
+      <node id="120">
         <label>boost::afio::enqueued_task&lt; void()&gt;</label>
         <link refid="classboost_1_1afio_1_1enqueued__task_3_01void_07_08_4"/>
-        <childnode refid="117" relation="public-inheritance">
+        <childnode refid="121" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="119">
+      <node id="123">
         <label>boost::afio::detail::enqueued_task_impl&lt; void &gt;</label>
         <link refid="classboost_1_1afio_1_1detail_1_1enqueued__task__impl"/>
       </node>
-      <node id="118">
+      <node id="122">
         <label>boost::afio::enqueued_task&lt; void()&gt;</label>
         <link refid="classboost_1_1afio_1_1enqueued__task_3_01void_07_08_4"/>
-        <childnode refid="119" relation="public-inheritance">
+        <childnode refid="123" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

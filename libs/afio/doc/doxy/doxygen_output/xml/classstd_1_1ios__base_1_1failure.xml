@@ -8,22 +8,22 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="498">
+      <node id="502">
         <label>std::ios_base::failure</label>
-        <childnode refid="499" relation="public-inheritance">
+        <childnode refid="503" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="499">
+      <node id="503">
         <label>std::exception</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="500">
+      <node id="504">
         <label>std::ios_base::failure</label>
-        <childnode refid="501" relation="public-inheritance">
+        <childnode refid="505" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="501">
+      <node id="505">
         <label>std::exception</label>
       </node>
     </collaborationgraph>

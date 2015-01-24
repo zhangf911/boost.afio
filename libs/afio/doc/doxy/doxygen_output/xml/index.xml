@@ -96,6 +96,7 @@
     <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a06bed7cee8e7ec9ecfb1c6cfad57151c" kind="function"><name>chain_async_ops</name></member>
     <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a8e1831ca95cea942db1b103df98a4c0b" kind="function"><name>chain_async_ops</name></member>
     <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a6507c066dec0a35f324d4ac39f46d5d1" kind="function"><name>chain_async_ops</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1aeb54b1979419b169165a72abd3d831f5" kind="function"><name>chain_async_ops</name></member>
     <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a95c2ee11e4c7dc653543eea219c41b3b" kind="function"><name>dobarrier</name></member>
     <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a0e25bd9ab26e1a945d14c984a6192e29" kind="function"><name>invoke_async_op_completions</name></member>
     <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1a1f3f249fa5da4f26b5dc19d7fe8de69b" kind="function"><name>chain_async_op</name></member>
@@ -146,6 +147,7 @@
     <member refid="group__async__file__io__dispatcher__base____extents_1ga6fab7605a3e8e0bd5be61cb41eb514e4" kind="function"><name>extents</name></member>
     <member refid="group__async__file__io__dispatcher__base____statfs_1gacbeafa55623e83a890db62e190fc6c04" kind="function"><name>statfs</name></member>
     <member refid="group__async__file__io__dispatcher__base____statfs_1gacde9af80f4041fee04f759ad70e615d1" kind="function"><name>statfs</name></member>
+    <member refid="classboost_1_1afio_1_1async__file__io__dispatcher__base_1aa6c989e2c9e5d3d5c425bebc986bc06c" kind="function"><name>lock</name></member>
     <member refid="group__async__file__io__dispatcher__base____barrier_1gacc278eff00d3740305863354cca4660b" kind="function"><name>barrier</name></member>
     <member refid="group__async__file__io__dispatcher__base____misc_1ga006bef030dab5c7bc67fbdc5bc352cef" kind="function"><name>complete_async_op</name></member>
     <member refid="group__async__file__io__dispatcher__base____misc_1ga39bb6e878d9ad0b4b926e31ced073177" kind="function"><name>complete_async_op</name></member>
@@ -191,6 +193,24 @@
   <compound refid="structboost_1_1afio_1_1async__io__op" kind="struct"><name>boost::afio::async_io_op</name>
     <member refid="structboost_1_1afio_1_1async__io__op_1a778623f04c79226fa4f8e0f633cfdae2" kind="variable"><name>parent</name></member>
     <member refid="structboost_1_1afio_1_1async__io__op_1a0ffc8dd6ac6251a2f53b99bfef3b448e" kind="variable"><name>id</name></member>
+  </compound>
+  <compound refid="structboost_1_1afio_1_1async__lock__op__req" kind="struct"><name>boost::afio::async_lock_op_req</name>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1ad1535005b067f4dac06a30fdb44fdb57" kind="enum"><name>Type</name></member>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1ad1535005b067f4dac06a30fdb44fdb57a0fb59f917c0d28d39ae0f9ea8de99bf7" kind="enumvalue"><name>unknown</name></member>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1ad1535005b067f4dac06a30fdb44fdb57a5815f9340ff0bb8f149afe748d862b4d" kind="enumvalue"><name>read_lock</name></member>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1ad1535005b067f4dac06a30fdb44fdb57a355c01f10bab545664bffab92e6001c8" kind="enumvalue"><name>write_lock</name></member>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1ad1535005b067f4dac06a30fdb44fdb57a0738ae871e47257bed4cbdaa8b26c527" kind="enumvalue"><name>unlock</name></member>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1a01c6906c47209586538378aad388b021" kind="variable"><name>precondition</name></member>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1a8a9d41d3b935ef89c333a04dca3da051" kind="variable"><name>type</name></member>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1a8f728c7df215b1c70063c7b7581d862d" kind="variable"><name>offset</name></member>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1ae44f81abfb016bc94cb36a8ccb0526d4" kind="variable"><name>length</name></member>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1a7aa143ad6a35966a2a4143b2d92a4137" kind="function"><name>async_lock_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1a98417e8934bd5b7e9a5d5a301614d8f4" kind="function"><name>async_lock_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1a2c60b48c8ab109917d4b72537724ecab" kind="function"><name>async_lock_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1a996b42a53f4a87e27736f598c9d08878" kind="function"><name>async_lock_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1ad34c967732ddae3962f8b45a47e6bf19" kind="function"><name>async_lock_op_req</name></member>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1a56952783cc68fc77ef833d875d67fb2a" kind="function"><name>validate</name></member>
+    <member refid="structboost_1_1afio_1_1async__lock__op__req_1a93dd113391b2f6a60551540a0f45b330" kind="function"><name>_validate</name></member>
   </compound>
   <compound refid="structboost_1_1afio_1_1async__path__op__req" kind="struct"><name>boost::afio::async_path_op_req</name>
     <member refid="structboost_1_1afio_1_1async__path__op__req_1af61a2cbd2c0686cd9f1d965d3b1d6cbe" kind="variable"><name>path</name></member>
@@ -751,9 +771,11 @@
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea47a4fbfd2b202e3b9e28a4dcccde84b5" kind="enumvalue"><name>DeleteOnClose</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea45296419ce890d99a255351f4ac9f1fa" kind="enumvalue"><name>OSDirect</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaba7941781a18ef1d3a4f5345b9d44a53" kind="enumvalue"><name>OSMMap</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeafd4ddd5281971322ab40e76c0dec74f3" kind="enumvalue"><name>OSLockable</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea05738a480cd6f577ef828ca2637bdf29" kind="enumvalue"><name>AlwaysSync</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaad1d36e2219ffcd464bb8d37a0c42adc" kind="enumvalue"><name>SyncOnClose</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea6d91e48b65e695d61a43d7e867babebd" kind="enumvalue"><name>EnforceDependencyWriteOrder</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea420a8327f0dc60ed25e8441e15df9e57" kind="enumvalue"><name>int_file_share_delete</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeac3128415027844faf71bc34a5f6de5b8" kind="enumvalue"><name>int_opening_link</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeae4d81f61126d0b6609dbebf8d21de2fa" kind="enumvalue"><name>int_opening_dir</name></member>
     <member refid="group__async__op__flags_1ga3d03d4b42e2ae303e282d0a1dec22976" kind="enum"><name>async_op_flags</name></member>
@@ -847,6 +869,7 @@
     <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a30ff563832406f28c408e0cfbcc91a78" kind="enumvalue"><name>zero</name></member>
     <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a2d5beaf69a400e9891e657825a73aa74" kind="enumvalue"><name>extents</name></member>
     <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a849e6c51cfc3780b0b42bbfb4fc105cc" kind="enumvalue"><name>statfs</name></member>
+    <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959a40b91b2feecf5e96925ba2b7b8f6b819" kind="enumvalue"><name>lock</name></member>
     <member refid="namespaceboost_1_1afio_1_1detail_1a0988089f34c099ad2ef946d6ff03c959aff0871a017a958de7ea24b4fb3673d36" kind="enumvalue"><name>Last</name></member>
     <member refid="namespaceboost_1_1afio_1_1detail_1aad9426571fbc2fb9d9d54fd3f252ff21" kind="variable"><name>optypes</name></member>
     <member refid="namespaceboost_1_1afio_1_1detail_1aa676bdf762c5e8d6f8826e199cae924f" kind="function"><name>static_assert</name></member>
@@ -1045,9 +1068,11 @@
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea47a4fbfd2b202e3b9e28a4dcccde84b5" kind="enumvalue"><name>DeleteOnClose</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea45296419ce890d99a255351f4ac9f1fa" kind="enumvalue"><name>OSDirect</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaba7941781a18ef1d3a4f5345b9d44a53" kind="enumvalue"><name>OSMMap</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeafd4ddd5281971322ab40e76c0dec74f3" kind="enumvalue"><name>OSLockable</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea05738a480cd6f577ef828ca2637bdf29" kind="enumvalue"><name>AlwaysSync</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeaad1d36e2219ffcd464bb8d37a0c42adc" kind="enumvalue"><name>SyncOnClose</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea6d91e48b65e695d61a43d7e867babebd" kind="enumvalue"><name>EnforceDependencyWriteOrder</name></member>
+    <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eea420a8327f0dc60ed25e8441e15df9e57" kind="enumvalue"><name>int_file_share_delete</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeac3128415027844faf71bc34a5f6de5b8" kind="enumvalue"><name>int_opening_link</name></member>
     <member refid="namespaceboost_1_1afio_1ga1615042683add1802cfc6dc86bd078eeae4d81f61126d0b6609dbebf8d21de2fa" kind="enumvalue"><name>int_opening_dir</name></member>
   </compound>
